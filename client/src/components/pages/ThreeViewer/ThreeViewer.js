@@ -26,8 +26,6 @@ class ThreeViewer extends React.Component {
     this.onDocumentKeyUp = this.onDocumentKeyUp.bind(this);
 
     this.onWindowResize = this.onWindowResize.bind(this);
-
-    this.render3D = this.render3D.bind(this);
   }
 
   componentDidMount() {
@@ -74,22 +72,18 @@ class ThreeViewer extends React.Component {
       opacity: 0.5,
       transparent: true
     });
-    this.componentDidCatchrollOverMesh = new THREE.Mesh(
-      rollOverGeo,
-      this.rollOverMaterial
-    );
+    this.rollOverMesh = new THREE.Mesh(rollOverGeo, this.rollOverMaterial);
     this.scene.add(this.rollOverMesh);
     // cubes
     this.cubeGeo = new THREE.BoxGeometry(50, 50, 50);
     this.cubeMaterial = new THREE.MeshLambertMaterial({
       color: 0xfeb74c,
-      map: new THREE.TextureLoader().load(
-        "textures/square-outline-textured.png"
-      )
+      map: new THREE.TextureLoader().load("textures/square-outline-texture.png")
     });
     // grid
     let gridHelper = new THREE.GridHelper(1000, 20);
     this.scene.add(gridHelper);
+
     //
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
