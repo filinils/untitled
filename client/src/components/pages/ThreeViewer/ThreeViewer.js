@@ -58,10 +58,7 @@ class ThreeViewer extends React.Component {
 
     this.info = this.infoElement(infoStyle, infoInnerHtml);
 
-    this.camera = new THREE.PerspectiveCamera(
-      45, window.innerWidth / window.innerHeight, 1,
-      10000
-    );
+    this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
 
     this.camera.position.set(300, 500, 1300);
     this.camera.lookAt(new THREE.Vector3());
@@ -213,13 +210,8 @@ class ThreeViewer extends React.Component {
   }
 
   render() {
-    return( <
-      div className = "_layout-diagram"
-      ref = {
-        el => {
-          this.container = el;
-        }
-      }
+    return( < div className = "_layout-diagram"
+      ref = { el => { this.container = el; } }
       />
     );
   }
