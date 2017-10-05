@@ -9,7 +9,7 @@ class ThreeViewer extends React.Component {
   constructor(props) {
     super(props);
 
-    this.camera, this.scene, this.renderer;
+    this.camera, this.scene, this.renderer, this.helper;
     this.plane, this.cube;
     this.mouse, this.raycaster, (this.isShiftDown = false);
     this.rollOverMesh, this.rollOverMaterial;
@@ -32,14 +32,17 @@ class ThreeViewer extends React.Component {
     this.init();
     this.render3D();
   }
+
   render3D() {
-    if (this.renderer) {
+    if(this.renderer) {
       this.renderer.render(this.scene, this.camera);
     }
   }
 
   infoElement(style, innerHtml) {
-    return <div style={style} dangerouslySetInnerHTML={innerHtml} />;
+    return <div style = { style }
+    dangerouslySetInnerHTML = { innerHtml }
+    />;
   }
 
   init() {
@@ -55,31 +58,34 @@ class ThreeViewer extends React.Component {
 
     this.info = this.infoElement(infoStyle, infoInnerHtml);
 
-    this.camera = new THREE.PerspectiveCamera(
-      45,
-      window.innerWidth / window.innerHeight,
-      1,
-      10000
-    );
-    this.camera.position.set(500, 800, 1300);
+    this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
+
+    this.camera.position.set(300, 500, 1300);
     this.camera.lookAt(new THREE.Vector3());
     this.scene = new THREE.Scene();
     this.scene.background = new THREE.Color(0xf0f0f0);
+
     // roll-over helpers
     let rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
+
     this.rollOverMaterial = new THREE.MeshBasicMaterial({
       color: 0xff0000,
       opacity: 0.5,
       transparent: true
     });
+
+    this.helper = new THREE.CameraHelper(this.camera);
+    this.scene.add(this.helper);
     this.rollOverMesh = new THREE.Mesh(rollOverGeo, this.rollOverMaterial);
     this.scene.add(this.rollOverMesh);
+
     // cubes
     this.cubeGeo = new THREE.BoxGeometry(50, 50, 50);
     this.cubeMaterial = new THREE.MeshLambertMaterial({
       color: 0xfeb74c,
       map: new THREE.TextureLoader().load("textures/square-outline-texture.png")
     });
+
     // grid
     let gridHelper = new THREE.GridHelper(1000, 20);
     this.scene.add(gridHelper);
@@ -87,24 +93,36 @@ class ThreeViewer extends React.Component {
     //
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
+
     let geometry = new THREE.PlaneBufferGeometry(1000, 1000);
     geometry.rotateX(-Math.PI / 2);
+
     this.plane = new THREE.Mesh(
       geometry,
-      new THREE.MeshBasicMaterial({ visible: false })
+      new THREE.MeshBasicMaterial({
+        visible: false
+      })
     );
+
     this.scene.add(this.plane);
     this.objects.push(this.plane);
+
     // Lights
     let ambientLight = new THREE.AmbientLight(0x606060);
     this.scene.add(ambientLight);
+
     let directionalLight = new THREE.DirectionalLight(0xffffff);
     directionalLight.position.set(1, 0.75, 0.5).normalize();
+
     this.scene.add(directionalLight);
-    this.renderer = new THREE.WebGLRenderer({ antialias: true });
+    this.renderer = new THREE.WebGLRenderer({
+      antialias: true
+    });
+
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.container.appendChild(this.renderer.domElement);
+
     document.addEventListener("mousemove", this.onDocumentMouseMove, false);
     document.addEventListener("mousedown", this.onDocumentMouseDown, false);
     document.addEventListener("keydown", this.onDocumentKeyDown, false);
@@ -116,15 +134,15 @@ class ThreeViewer extends React.Component {
   onDocumentMouseMove() {
     event.preventDefault();
     this.mouse.set(
-      event.clientX / window.innerWidth * 2 - 1,
-      -(event.clientY / window.innerHeight) * 2 + 1
+      event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1
     );
+
     this.raycaster.setFromCamera(this.mouse, this.camera);
     let intersects = this.raycaster.intersectObjects(this.objects);
-    if (intersects.length > 0) {
+
+    if(intersects.length > 0) {
       let intersect = intersects[0];
-      this.rollOverMesh.position
-        .copy(intersect.point)
+      this.rollOverMesh.position.copy(intersect.point)
         .add(intersect.face.normal);
       this.rollOverMesh.position
         .divideScalar(50)
@@ -136,19 +154,20 @@ class ThreeViewer extends React.Component {
     this.container.appendChild(this.renderer.domElement);
     this.render3D();
   }
+
   onDocumentMouseDown() {
     event.preventDefault();
     this.mouse.set(
-      event.clientX / window.innerWidth * 2 - 1,
-      -(event.clientY / window.innerHeight) * 2 + 1
+      event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1
     );
+
     this.raycaster.setFromCamera(this.mouse, this.camera);
     let intersects = this.raycaster.intersectObjects(this.objects);
-    if (intersects.length > 0) {
+    if(intersects.length > 0) {
       let intersect = intersects[0];
       // delete cube
-      if (this.isShiftDown) {
-        if (intersect.object != this.plane) {
+      if(this.isShiftDown) {
+        if(intersect.object != this.plane) {
           this.scene.remove(intersect.object);
           this.objects.splice(this.objects.indexOf(intersect.object), 1);
         }
@@ -167,20 +186,23 @@ class ThreeViewer extends React.Component {
       this.render3D();
     }
   }
+
   onDocumentKeyDown() {
-    switch (event.keyCode) {
+    switch(event.keyCode) {
       case 16:
         this.isShiftDown = true;
         break;
     }
   }
+
   onDocumentKeyUp() {
-    switch (event.keyCode) {
+    switch(event.keyCode) {
       case 16:
         this.isShiftDown = false;
         break;
     }
   }
+
   onWindowResize() {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
@@ -188,17 +210,15 @@ class ThreeViewer extends React.Component {
   }
 
   render() {
-    return (
-      <div
-        className="_layout-diagram"
-        ref={el => {
-          this.container = el;
-        }}
+    return( < div className = "_layout-diagram"
+      ref = { el => { this.container = el; } }
       />
     );
   }
 }
+
 ThreeViewer.propTypes = {};
+
 function mapStateToProps(state, ownProps) {
   return {};
 }
