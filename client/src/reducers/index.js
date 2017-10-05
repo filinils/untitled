@@ -1,11 +1,8 @@
-import {combineReducers} from 'redux';
-import persons from './personReducer';
-import skills from './skillReducer';
-
+import { combineReducers } from "redux";
+import persons from "./personReducer";
 
 const rootReducer = combineReducers({
-    persons,
-    skills
+  persons
 });
 
 export default rootReducer;

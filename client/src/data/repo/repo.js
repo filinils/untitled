@@ -1,19 +1,11 @@
-
-import person from './repo.person';
-import skill from './repo.skill';
-
-
+import person from "./repo.person";
 
 let repos = [];
 
-repos['person'] = person;
-repos['skill'] = skill;
+repos["person"] = person;
 
-
-
-
-const repo = (repoName)=>{       
-    return repos[repoName]();
+const repo = repoName => {
+  return repos[repoName]();
 };
 
 export default repo;

@@ -1,5 +1,3 @@
 export default {
-    persons:[],
-    skills:[]
-   
+  persons: []
 };

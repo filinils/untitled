@@ -3,7 +3,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import * as skillActions from "../../../actions/skillActions";
 
 class ThreeViewer extends React.Component {
   constructor(props) {
@@ -34,15 +33,13 @@ class ThreeViewer extends React.Component {
   }
 
   render3D() {
-    if(this.renderer) {
+    if (this.renderer) {
       this.renderer.render(this.scene, this.camera);
     }
   }
 
   infoElement(style, innerHtml) {
-    return <div style = { style }
-    dangerouslySetInnerHTML = { innerHtml }
-    />;
+    return <div style={style} dangerouslySetInnerHTML={innerHtml} />;
   }
 
   init() {
@@ -58,7 +55,12 @@ class ThreeViewer extends React.Component {
 
     this.info = this.infoElement(infoStyle, infoInnerHtml);
 
-    this.camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
+    this.camera = new THREE.PerspectiveCamera(
+      45,
+      window.innerWidth / window.innerHeight,
+      1,
+      10000
+    );
 
     this.camera.position.set(300, 500, 1300);
     this.camera.lookAt(new THREE.Vector3());
@@ -134,15 +136,17 @@ class ThreeViewer extends React.Component {
   onDocumentMouseMove() {
     event.preventDefault();
     this.mouse.set(
-      event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1
+      event.clientX / window.innerWidth * 2 - 1,
+      -(event.clientY / window.innerHeight) * 2 + 1
     );
 
     this.raycaster.setFromCamera(this.mouse, this.camera);
     let intersects = this.raycaster.intersectObjects(this.objects);
 
-    if(intersects.length > 0) {
+    if (intersects.length > 0) {
       let intersect = intersects[0];
-      this.rollOverMesh.position.copy(intersect.point)
+      this.rollOverMesh.position
+        .copy(intersect.point)
         .add(intersect.face.normal);
       this.rollOverMesh.position
         .divideScalar(50)
@@ -158,16 +162,17 @@ class ThreeViewer extends React.Component {
   onDocumentMouseDown() {
     event.preventDefault();
     this.mouse.set(
-      event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1
+      event.clientX / window.innerWidth * 2 - 1,
+      -(event.clientY / window.innerHeight) * 2 + 1
     );
 
     this.raycaster.setFromCamera(this.mouse, this.camera);
     let intersects = this.raycaster.intersectObjects(this.objects);
-    if(intersects.length > 0) {
+    if (intersects.length > 0) {
       let intersect = intersects[0];
       // delete cube
-      if(this.isShiftDown) {
-        if(intersect.object != this.plane) {
+      if (this.isShiftDown) {
+        if (intersect.object != this.plane) {
           this.scene.remove(intersect.object);
           this.objects.splice(this.objects.indexOf(intersect.object), 1);
         }
@@ -188,7 +193,7 @@ class ThreeViewer extends React.Component {
   }
 
   onDocumentKeyDown() {
-    switch(event.keyCode) {
+    switch (event.keyCode) {
       case 16:
         this.isShiftDown = true;
         break;
@@ -196,7 +201,7 @@ class ThreeViewer extends React.Component {
   }
 
   onDocumentKeyUp() {
-    switch(event.keyCode) {
+    switch (event.keyCode) {
       case 16:
         this.isShiftDown = false;
         break;
@@ -210,8 +215,12 @@ class ThreeViewer extends React.Component {
   }
 
   render() {
-    return( < div className = "_layout-diagram"
-      ref = { el => { this.container = el; } }
+    return (
+      <div
+        className="_layout-diagram"
+        ref={el => {
+          this.container = el;
+        }}
       />
     );
   }
