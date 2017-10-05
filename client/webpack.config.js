@@ -54,6 +54,11 @@ module.exports = {
         ]
       },
       {
+        test: /\.(obj|mtl)$/i,
+        exclude: [/node_modules/],
+        loaders: ["file-loader"]
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         exclude: [/node_modules/],
         loaders: [

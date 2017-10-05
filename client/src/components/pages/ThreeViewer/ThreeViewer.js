@@ -4,6 +4,14 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import * as skillActions from "../../../actions/skillActions";
+// import obj from "./assets/Sofa.obj";
+// import mtl from "./assets/Sofa.mtl";
+// import obj from "./assets/male02.obj";
+// import mtl from "./assets/male02.mtl";
+import OBJLoader from "three-react-obj-loader";
+import MTLLoader from "three-react-mtl-loader";
+
+// OBJLoader(THREE);
 
 class ThreeViewer extends React.Component {
   constructor(props) {
@@ -84,6 +92,26 @@ class ThreeViewer extends React.Component {
     let gridHelper = new THREE.GridHelper(1000, 20);
     this.scene.add(gridHelper);
 
+    // Import object (Jerry)
+
+    let objLoader = new OBJLoader();
+    objLoader.setPath("assets/");
+    objLoader.load("male02.obj", mesh => this.scene.add(mesh));
+
+    // var mtlLoader = new MTLLoader();
+    // mtlLoader.setPath("assets/");
+    // mtlLoader.load("male02.mtl", materials => {
+    //   materials.preload();
+
+    //   var objLoader = new OBJLoader();
+    //   objLoader.setMaterials(materials);
+    //   objLoader.setPath("assets/");
+    //   objLoader.load("male02.obj", object => {
+    //     object.position.y = 100;
+    //     this.scene.add(object);
+    //   });
+    // });
+
     //
     this.raycaster = new THREE.Raycaster();
     this.mouse = new THREE.Vector2();
@@ -98,8 +126,10 @@ class ThreeViewer extends React.Component {
     // Lights
     let ambientLight = new THREE.AmbientLight(0x606060);
     this.scene.add(ambientLight);
+
     let directionalLight = new THREE.DirectionalLight(0xffffff);
     directionalLight.position.set(1, 0.75, 0.5).normalize();
+
     this.scene.add(directionalLight);
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.renderer.setPixelRatio(window.devicePixelRatio);
