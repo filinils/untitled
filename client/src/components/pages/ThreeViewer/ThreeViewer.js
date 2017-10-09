@@ -3,28 +3,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { loadModel } from "./init";
+import { loadModel, loadWireframeModel } from "./modelLoaders";
+import { initCamera } from "./init";
 
 class ThreeViewer extends React.Component {
 	constructor(props) {
 		super(props);
-
-		this.camera, this.scene, this.renderer, this.helper;
-		this.plane, this.cube;
-		this.mouse, this.raycaster, (this.isShiftDown = false);
-		this.rollOverMesh, this.rollOverMaterial;
-		this.cubeGeo, this.cubeMaterial;
+		this.isShiftDown = false;
 		this.objects = [];
 
 		this.info = {};
 
 		this.init = this.init.bind(this);
 
-		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
-		this.onDocumentMouseDown = this.onDocumentMouseDown.bind(this);
 		this.onDocumentKeyDown = this.onDocumentKeyDown.bind(this);
 		this.onDocumentKeyUp = this.onDocumentKeyUp.bind(this);
-
+		this.onDocumentMouseDown = this.onDocumentMouseDown.bind(this);
+		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
 		this.onWindowResize = this.onWindowResize.bind(this);
 	}
 
@@ -71,30 +66,12 @@ class ThreeViewer extends React.Component {
 		// roll-over helpers
 		let rollOverGeo = new THREE.BoxGeometry(50, 50, 50);
 
-		this.rollOverMaterial = new THREE.MeshBasicMaterial({
-			color: 0xff0000,
-			opacity: 0.5,
-			transparent: true
-		});
-
 		this.helper = new THREE.CameraHelper(this.camera);
 		this.scene.add(this.helper);
-		// this.rollOverMesh = new THREE.Mesh(rollOverGeo, this.rollOverMaterial);
-		// this.rollOverMesh =
-		loadModel("male02", object => {
+
+		loadWireframeModel("male02", object => {
 			this.rollOverMesh = object;
-			console.log("LOADED", object);
-
 			this.scene.add(this.rollOverMesh);
-		});
-
-		// cubes
-		this.cubeGeo = new THREE.BoxGeometry(50, 50, 50);
-		this.cubeMaterial = new THREE.MeshLambertMaterial({
-			color: 0xfeb74c,
-			map: new THREE.TextureLoader().load(
-				"textures/square-outline-texture.png"
-			)
 		});
 
 		// grid
@@ -138,11 +115,10 @@ class ThreeViewer extends React.Component {
 		document.addEventListener("mousedown", this.onDocumentMouseDown, false);
 		document.addEventListener("keydown", this.onDocumentKeyDown, false);
 		document.addEventListener("keyup", this.onDocumentKeyUp, false);
-		//
 		window.addEventListener("resize", this.onWindowResize, false);
 	}
 
-	onDocumentMouseMove() {
+	onDocumentMouseMove(event) {
 		event.preventDefault();
 		this.mouse.set(
 			event.clientX / window.innerWidth * 2 - 1,
@@ -168,7 +144,7 @@ class ThreeViewer extends React.Component {
 		this.render3D();
 	}
 
-	onDocumentMouseDown() {
+	onDocumentMouseDown(event) {
 		event.preventDefault();
 		this.mouse.set(
 			event.clientX / window.innerWidth * 2 - 1,
@@ -188,9 +164,7 @@ class ThreeViewer extends React.Component {
 						1
 					);
 				}
-				// create cube
 			} else {
-				// let voxel = new THREE.Mesh(this.cubeGeo, this.cubeMaterial);
 				loadModel("male02", voxel => {
 					console.log(voxel);
 					voxel.position
@@ -209,7 +183,7 @@ class ThreeViewer extends React.Component {
 		}
 	}
 
-	onDocumentKeyDown() {
+	onDocumentKeyDown(event) {
 		switch (event.keyCode) {
 			case 16:
 				this.isShiftDown = true;
@@ -217,7 +191,7 @@ class ThreeViewer extends React.Component {
 		}
 	}
 
-	onDocumentKeyUp() {
+	onDocumentKeyUp(event) {
 		switch (event.keyCode) {
 			case 16:
 				this.isShiftDown = false;
