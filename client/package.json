@@ -25,7 +25,9 @@
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "three": "^0.86.0"
+    "three": "^0.86.0",
+    "three-obj-loader": "^1.1.3",
+    "three-react-mtl-loader": "^1.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
