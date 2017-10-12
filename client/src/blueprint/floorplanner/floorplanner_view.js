@@ -46,61 +46,53 @@ export default (floorplan, viewmodel, canvas) => {
 
   /** */
 
-  this.canvasElement = document.getElementById(canvas);
-  this.context = this.canvasElement.getContext("2d");
+  canvasElement = document.getElementById(canvas);
+  context = canvasElement.getContext("2d");
 
   var scope = this;
+
   //TODO: redo resize wothout jQuery
   //   $(window).resize(() => {
   //     scope.handleWindowResize();
   //   });
-  //   this.handleWindowResize();
+  //   handleWindowResize();
   // }
 
   /** */
   // function handleWindowResize() {
-  //   var canvasSel = $("#" + this.canvas);
+  //   var canvasSel = $("#" + canvas);
   //   var parent = canvasSel.parent();
   //   canvasSel.height(parent.innerHeight());
   //   canvasSel.width(parent.innerWidth());
-  //   this.canvasElement.height = parent.innerHeight();
-  //   this.canvasElement.width = parent.innerWidth();
-  //   this.draw();
+  //   canvasElement.height = parent.innerHeight();
+  //   canvasElement.width = parent.innerWidth();
+  //   draw();
   // }
 
   /** */
   function draw() {
-    this.context.clearRect(
-      0,
-      0,
-      this.canvasElement.width,
-      this.canvasElement.height
-    );
+    context.clearRect(0, 0, canvasElement.width, canvasElement.height);
 
-    this.drawGrid();
+    drawGrid();
 
-    this.floorplan.getRooms().forEach(room => {
-      this.drawRoom(room);
+    floorplan.getRooms().forEach(room => {
+      drawRoom(room);
     });
 
-    this.floorplan.getWalls().forEach(wall => {
-      this.drawWall(wall);
+    floorplan.getWalls().forEach(wall => {
+      drawWall(wall);
     });
 
-    this.floorplan.getCorners().forEach(corner => {
-      this.drawCorner(corner);
+    floorplan.getCorners().forEach(corner => {
+      drawCorner(corner);
     });
 
-    if (this.viewmodel.mode == floorplannerModes.DRAW) {
-      this.drawTarget(
-        this.viewmodel.targetX,
-        this.viewmodel.targetY,
-        this.viewmodel.lastNode
-      );
+    if (viewmodel.mode == floorplannerModes.DRAW) {
+      drawTarget(viewmodel.targetX, viewmodel.targetY, viewmodel.lastNode);
     }
 
-    this.floorplan.getWalls().forEach(wall => {
-      this.drawWallLabels(wall);
+    floorplan.getWalls().forEach(wall => {
+      drawWallLabels(wall);
     });
   }
 
@@ -109,39 +101,39 @@ export default (floorplan, viewmodel, canvas) => {
     // we'll just draw the shorter label... idk
     if (wall.backEdge && wall.frontEdge) {
       if (wall.backEdge.interiorDistance < wall.frontEdge.interiorDistance) {
-        this.drawEdgeLabel(wall.backEdge);
+        drawEdgeLabel(wall.backEdge);
       } else {
-        this.drawEdgeLabel(wall.frontEdge);
+        drawEdgeLabel(wall.frontEdge);
       }
     } else if (wall.backEdge) {
-      this.drawEdgeLabel(wall.backEdge);
+      drawEdgeLabel(wall.backEdge);
     } else if (wall.frontEdge) {
-      this.drawEdgeLabel(wall.frontEdge);
+      drawEdgeLabel(wall.frontEdge);
     }
   }
 
   /** */
   function drawWall(wall) {
-    var hover = wall === this.viewmodel.activeWall;
+    var hover = wall === viewmodel.activeWall;
     var color = wallColor;
-    if (hover && this.viewmodel.mode == floorplannerModes.DELETE) {
+    if (hover && viewmodel.mode == floorplannerModes.DELETE) {
       color = deleteColor;
     } else if (hover) {
       color = wallColorHover;
     }
-    this.drawLine(
-      this.viewmodel.convertX(wall.getStartX()),
-      this.viewmodel.convertY(wall.getStartY()),
-      this.viewmodel.convertX(wall.getEndX()),
-      this.viewmodel.convertY(wall.getEndY()),
+    drawLine(
+      viewmodel.convertX(wall.getStartX()),
+      viewmodel.convertY(wall.getStartY()),
+      viewmodel.convertX(wall.getEndX()),
+      viewmodel.convertY(wall.getEndY()),
       hover ? wallWidthHover : wallWidth,
       color
     );
     if (!hover && wall.frontEdge) {
-      this.drawEdge(wall.frontEdge, hover);
+      drawEdge(wall.frontEdge, hover);
     }
     if (!hover && wall.backEdge) {
-      this.drawEdge(wall.backEdge, hover);
+      drawEdge(wall.backEdge, hover);
     }
   }
 
@@ -153,29 +145,29 @@ export default (floorplan, viewmodel, canvas) => {
       // dont draw labels on walls this short
       return;
     }
-    this.context.font = "normal 12px Arial";
-    this.context.fillStyle = "#000000";
-    this.context.textBaseline = "middle";
-    this.context.textAlign = "center";
-    this.context.strokeStyle = "#ffffff";
-    this.context.lineWidth = 4;
+    context.font = "normal 12px Arial";
+    context.fillStyle = "#000000";
+    context.textBaseline = "middle";
+    context.textAlign = "center";
+    context.strokeStyle = "#ffffff";
+    context.lineWidth = 4;
 
-    this.context.strokeText(
+    context.strokeText(
       Dimensioning.cmToMeasure(length),
-      this.viewmodel.convertX(pos.x),
-      this.viewmodel.convertY(pos.y)
+      viewmodel.convertX(pos.x),
+      viewmodel.convertY(pos.y)
     );
-    this.context.fillText(
+    context.fillText(
       Dimensioning.cmToMeasure(length),
-      this.viewmodel.convertX(pos.x),
-      this.viewmodel.convertY(pos.y)
+      viewmodel.convertX(pos.x),
+      viewmodel.convertY(pos.y)
     );
   }
 
   /** */
   function drawEdge(edge, hover) {
     var color = edgeColor;
-    if (hover && this.viewmodel.mode == floorplannerModes.DELETE) {
+    if (hover && viewmodel.mode == floorplannerModes.DELETE) {
       color = deleteColor;
     } else if (hover) {
       color = edgeColorHover;
@@ -183,7 +175,7 @@ export default (floorplan, viewmodel, canvas) => {
     var corners = edge.corners();
 
     var scope = this;
-    this.drawPolygon(
+    drawPolygon(
       Utils.map(corners, function(corner) {
         return scope.viewmodel.convertX(corner.x);
       }),
@@ -201,7 +193,7 @@ export default (floorplan, viewmodel, canvas) => {
   /** */
   function drawRoom(room) {
     var scope = this;
-    this.drawPolygon(
+    drawPolygon(
       Utils.map(room.corners, corner => {
         return scope.viewmodel.convertX(corner.x);
       }),
@@ -215,16 +207,16 @@ export default (floorplan, viewmodel, canvas) => {
 
   /** */
   function drawCorner(corner) {
-    var hover = corner === this.viewmodel.activeCorner;
+    var hover = corner === viewmodel.activeCorner;
     var color = cornerColor;
-    if (hover && this.viewmodel.mode == floorplannerModes.DELETE) {
+    if (hover && viewmodel.mode == floorplannerModes.DELETE) {
       color = deleteColor;
     } else if (hover) {
       color = cornerColorHover;
     }
-    this.drawCircle(
-      this.viewmodel.convertX(corner.x),
-      this.viewmodel.convertY(corner.y),
+    drawCircle(
+      viewmodel.convertX(corner.x),
+      viewmodel.convertY(corner.y),
       hover ? cornerRadiusHover : cornerRadius,
       color
     );
@@ -232,18 +224,18 @@ export default (floorplan, viewmodel, canvas) => {
 
   /** */
   function drawTarget(x, y, lastNode) {
-    this.drawCircle(
-      this.viewmodel.convertX(x),
-      this.viewmodel.convertY(y),
+    drawCircle(
+      viewmodel.convertX(x),
+      viewmodel.convertY(y),
       cornerRadiusHover,
       cornerColorHover
     );
-    if (this.viewmodel.lastNode) {
-      this.drawLine(
-        this.viewmodel.convertX(lastNode.x),
-        this.viewmodel.convertY(lastNode.y),
-        this.viewmodel.convertX(x),
-        this.viewmodel.convertY(y),
+    if (viewmodel.lastNode) {
+      drawLine(
+        viewmodel.convertX(lastNode.x),
+        viewmodel.convertY(lastNode.y),
+        viewmodel.convertX(x),
+        viewmodel.convertY(y),
         wallWidthHover,
         wallColorHover
       );
@@ -254,12 +246,12 @@ export default (floorplan, viewmodel, canvas) => {
   function drawLine(startX, startY, endX, endY, width, color) {
     // width is an integer
     // color is a hex string, i.e. #ff0000
-    this.context.beginPath();
-    this.context.moveTo(startX, startY);
-    this.context.lineTo(endX, endY);
-    this.context.lineWidth = width;
-    this.context.strokeStyle = color;
-    this.context.stroke();
+    context.beginPath();
+    context.moveTo(startX, startY);
+    context.lineTo(endX, endY);
+    context.lineWidth = width;
+    context.strokeStyle = color;
+    context.stroke();
   }
 
   /** */
@@ -275,29 +267,29 @@ export default (floorplan, viewmodel, canvas) => {
     // fillColor is a hex string, i.e. #ff0000
     fill = fill || false;
     stroke = stroke || false;
-    this.context.beginPath();
-    this.context.moveTo(xArr[0], yArr[0]);
+    context.beginPath();
+    context.moveTo(xArr[0], yArr[0]);
     for (var i = 1; i < xArr.length; i++) {
-      this.context.lineTo(xArr[i], yArr[i]);
+      context.lineTo(xArr[i], yArr[i]);
     }
-    this.context.closePath();
+    context.closePath();
     if (fill) {
-      this.context.fillStyle = fillColor;
-      this.context.fill();
+      context.fillStyle = fillColor;
+      context.fill();
     }
     if (stroke) {
-      this.context.lineWidth = strokeWidth;
-      this.context.strokeStyle = strokeColor;
-      this.context.stroke();
+      context.lineWidth = strokeWidth;
+      context.strokeStyle = strokeColor;
+      context.stroke();
     }
   }
 
   /** */
   function drawCircle(centerX, centerY, radius, fillColor) {
-    this.context.beginPath();
-    this.context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-    this.context.fillStyle = fillColor;
-    this.context.fill();
+    context.beginPath();
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+    context.fillStyle = fillColor;
+    context.fill();
   }
 
   /** returns n where -gridSize/2 < n <= gridSize/2  */
@@ -311,12 +303,12 @@ export default (floorplan, viewmodel, canvas) => {
 
   /** */
   function drawGrid() {
-    var offsetX = this.calculateGridOffset(-this.viewmodel.originX);
-    var offsetY = this.calculateGridOffset(-this.viewmodel.originY);
-    var width = this.canvasElement.width;
-    var height = this.canvasElement.height;
+    var offsetX = calculateGridOffset(-viewmodel.originX);
+    var offsetY = calculateGridOffset(-viewmodel.originY);
+    var width = canvasElement.width;
+    var height = canvasElement.height;
     for (var x = 0; x <= width / gridSpacing; x++) {
-      this.drawLine(
+      drawLine(
         gridSpacing * x + offsetX,
         0,
         gridSpacing * x + offsetX,
@@ -326,7 +318,7 @@ export default (floorplan, viewmodel, canvas) => {
       );
     }
     for (var y = 0; y <= height / gridSpacing; y++) {
-      this.drawLine(
+      drawLine(
         0,
         gridSpacing * y + offsetY,
         width,
@@ -338,6 +330,6 @@ export default (floorplan, viewmodel, canvas) => {
   }
 
   return {
-    handleWindowResize
-  }
+    //handleWindowResize
+  };
 };

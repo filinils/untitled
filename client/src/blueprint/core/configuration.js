@@ -43,9 +43,17 @@ export default (() => {
     switch (key) {
       case configWallHeight:
       case configWallThickness:
-        return this.data[key];
+        return data[key];
       default:
         throw new Error("Invalid numeric configuration parameter: " + key);
     }
+  }
+  return {
+
+    getNumericValue,
+    getStringValue,
+    
+
+
   }
 })();

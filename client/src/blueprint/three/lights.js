@@ -35,7 +35,7 @@ export default function(scene, floorplan) {
     scene.add(dirLight);
     scene.add(dirLight.target);
 
-   // floorplan.fireOnUpdatedRooms(updateShadowCamera);
+    // floorplan.fireOnUpdatedRooms(updateShadowCamera);
   }
 
   function updateShadowCamera() {
@@ -63,4 +63,4 @@ export default function(scene, floorplan) {
   }
 
   init();
-};
+}

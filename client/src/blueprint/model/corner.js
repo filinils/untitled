@@ -16,21 +16,21 @@ export default (floorplan, x, y, id) => {
      * @param func The function to be added.
     */
   function fireOnMove(func) {
-    this.moved_callbacks.add(func);
+    //this.moved_callbacks.add(func);
   }
 
   /** Add function to deleted callbacks.
      * @param func The function to be added.
      */
   function fireOnDelete(func) {
-    this.deleted_callbacks.add(func);
+    //this.deleted_callbacks.add(func);
   }
 
   /** Add function to action callbacks.
      * @param func The function to be added.
      */
   function fireOnAction(func) {
-    this.action_callbacks.add(func);
+    // this.action_callbacks.add(func);
   }
 
   /**
@@ -323,4 +323,10 @@ export default (floorplan, x, y, id) => {
       }
     }
   }
+
+  return {
+    fireOnDelete,
+    fireAction,
+    fireOnMove
+  };
 };
