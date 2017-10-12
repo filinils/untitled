@@ -1,7 +1,7 @@
 import repo from "./repo/repo.js";
 
 const datacontext = () => {
-  let repoNames = ["person", "skill", "leg"];
+  let repoNames = ["person", "skill"];
 
   let service = {};
 

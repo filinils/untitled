@@ -2,6 +2,7 @@ import App from "./components/App";
 import StartPage from "./components/pages/start/StartPage";
 
 import ThreeViewer from "./components/pages/ThreeViewer/ThreeViewer";
+import PlannerExample from "./components/pages/PlannerExample/PlannerExample";
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
         title: "3D",
         path: "/threeviewer",
         component: ThreeViewer
+      },
+      {
+        title: "Planner",
+        path: "/planner",
+        component: PlannerExample
       }
     ]
   }
