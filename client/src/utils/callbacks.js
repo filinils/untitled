@@ -1,24 +1,24 @@
 export default () => {
-  let callbacks = [];
+	let callbacks = [];
 
-  function fire(arg1, arg2) {
-    callbacks.forEach(callback => {
-      callback(arg1, arg2);
-    });
-  }
-  function add(callback) {
-    callbacks.push(callback);
-  }
+	function fire(arg1, arg2) {
+		callbacks.forEach(callback => {
+			callback(arg1, arg2);
+		});
+	}
+	function add(callback) {
+		callbacks.push(callback);
+	}
 
-  function remove(callback) {
-    let index = callbacks.indexOf(callback);
+	function remove(callback) {
+		let index = callbacks.indexOf(callback);
 
-    callbacks = callbacks.splice(index, 1);
-  }
+		callbacks = callbacks.splice(index, 1);
+	}
 
-  return {
-    fire,
-    add,
-    remove
-  };
+	return {
+		fire,
+		add,
+		remove
+	};
 };
