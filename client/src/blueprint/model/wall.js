@@ -17,7 +17,6 @@ const defaultWallTexture = {
    */
 export default () => {
   /** The unique id of each wall. */
-  let id;
 
   /** Front is the plane from start to end. */
   let frontEdge = null;
@@ -54,13 +53,16 @@ export default () => {
      * @param end End corner.
      */
 
-  this.id = this.getUuid();
+  let id = getUuid();
 
-  this.start.attachStart(this);
-  this.end.attachEnd(this);
+  let start;
+  let end;
+
+  start.attachStart(this);
+  end.attachEnd(this);
 
   function getUuid() {
-    return [this.start.id, this.end.id].join();
+    return [start.id, end.id].join();
   }
 
   function resetFrontBack() {
@@ -71,8 +73,8 @@ export default () => {
 
   function snapToAxis(tolerance) {
     // order here is important, but unfortunately arbitrary
-    this.start.snapToAxis(tolerance);
-    this.end.snapToAxis(tolerance);
+    start.snapToAxis(tolerance);
+    end.snapToAxis(tolerance);
   }
 
   function fireOnMove(func) {
@@ -96,8 +98,8 @@ export default () => {
   }
 
   function relativeMove(dx, dy) {
-    this.start.relativeMove(dx, dy);
-    this.end.relativeMove(dx, dy);
+    start.relativeMove(dx, dy);
+    end.relativeMove(dx, dy);
   }
 
   function fireMoved() {
@@ -114,46 +116,46 @@ export default () => {
   }
 
   function getStart() {
-    return this.start;
+    return start;
   }
 
   function getEnd() {
-    return this.end;
+    return end;
   }
 
   function getStartX() {
-    return this.start.getX();
+    return start.getX();
   }
 
   function getEndX() {
-    return this.end.getX();
+    return end.getX();
   }
 
   function getStartY() {
-    return this.start.getY();
+    return start.getY();
   }
 
   function getEndY() {
-    return this.end.getY();
+    return end.getY();
   }
 
   function remove() {
-    this.start.detachWall(this);
-    this.end.detachWall(this);
+    start.detachWall(this);
+    end.detachWall(this);
     this.deleted_callbacks.fire(this);
   }
 
   function setStart(corner) {
-    this.start.detachWall(this);
+    start.detachWall(this);
     corner.attachStart(this);
-    this.start = corner;
+    start = corner;
     this.fireMoved();
   }
 
   function setEnd(corner) {
-    this.end.detachWall(this);
+    end.detachWall(this);
     corner.attachEnd(this);
-    this.end = corner;
+    end = corner;
     this.fireMoved();
   }
 
@@ -173,10 +175,10 @@ export default () => {
      * @returns The opposite corner.
      */
   function oppositeCorner(corner) {
-    if (this.start === corner) {
-      return this.end;
-    } else if (this.end === corner) {
-      return this.start;
+    if (start === corner) {
+      return end;
+    } else if (end === corner) {
+      return start;
     } else {
       console.log("Wall does not connect to corner");
     }

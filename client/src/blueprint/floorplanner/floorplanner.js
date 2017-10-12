@@ -271,7 +271,7 @@ export default (canvas, floorplan) => {
 
   /** */
   function resizeView() {
-   // view.handleWindowResize();
+    // view.handleWindowResize();
   }
 
   /** */

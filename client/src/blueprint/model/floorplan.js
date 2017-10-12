@@ -22,12 +22,14 @@ export default () => {
   /** Constructs a floorplan. */
 
   let corners = [];
+  let walls = [];
+  let rooms = [];
 
   // hack
   function wallEdges() {
     var edges = [];
 
-    this.walls.forEach(wall => {
+    walls.forEach(wall => {
       if (wall.frontEdge) {
         edges.push(wall.frontEdge);
       }
@@ -41,7 +43,7 @@ export default () => {
   // hack
   function wallEdgePlanes() {
     var planes = [];
-    this.walls.forEach(wall => {
+    walls.forEach(wall => {
       if (wall.frontEdge) {
         planes.push(wall.frontEdge.plane);
       }
@@ -71,10 +73,8 @@ export default () => {
   }
 
   function fireOnUpdatedRooms(callback) {
-
     //TODO: Add callback array
-
-   // this.updated_rooms.add(callback);
+    // this.updated_rooms.add(callback);
   }
 
   /**
@@ -85,7 +85,7 @@ export default () => {
      */
   function newWall(start, end) {
     var wall = new Wall(start, end);
-    this.walls.push(wall);
+    walls.push(wall);
     var scope = this;
     wall.fireOnDelete(() => {
       scope.removeWall(wall);
@@ -99,7 +99,7 @@ export default () => {
      * @param wall The wall to be removed.
      */
   function removeWall(wall) {
-    Utils.removeValue(this.walls, wall);
+    Utils.removeValue(walls, wall);
     this.update();
   }
 
@@ -112,11 +112,11 @@ export default () => {
      */
   function newCorner(x, y, id) {
     var corner = new Corner(this, x, y, id);
-    this.corners.push(corner);
+    corners.push(corner);
     corner.fireOnDelete(() => {
-      this.removeCorner;
+     removeCorner;
     });
-    this.new_corner_callbacks.fire(corner);
+    //this.new_corner_callbacks.fire(corner);
     return corner;
   }
 
@@ -124,29 +124,29 @@ export default () => {
      * @param corner The corner to be removed.
      */
   function removeCorner(corner) {
-    Utils.removeValue(this.corners, corner);
+    Utils.removeValue(corners, corner);
   }
 
   /** Gets the walls. */
   function getWalls() {
-    return this.walls;
+    return walls;
   }
 
   /** Gets the corners. */
   function getCorners() {
-    return this.corners;
+    return corners;
   }
 
   /** Gets the rooms. */
   function getRooms() {
-    return this.rooms;
+    return rooms;
   }
 
   function overlappedCorner(x, y, tolerance) {
     tolerance = tolerance || defaultFloorPlanTolerance;
-    for (var i = 0; i < this.corners.length; i++) {
-      if (this.corners[i].distanceFrom(x, y) < tolerance) {
-        return this.corners[i];
+    for (var i = 0; i < corners.length; i++) {
+      if (corners[i].distanceFrom(x, y) < tolerance) {
+        return corners[i];
       }
     }
     return null;
@@ -154,9 +154,9 @@ export default () => {
 
   function overlappedWall(x, y, tolerance) {
     tolerance = tolerance || defaultFloorPlanTolerance;
-    for (var i = 0; i < this.walls.length; i++) {
-      if (this.walls[i].distanceFrom(x, y) < tolerance) {
-        return this.walls[i];
+    for (var i = 0; i < walls.length; i++) {
+      if (walls[i].distanceFrom(x, y) < tolerance) {
+        return walls[i];
       }
     }
     return null;
@@ -173,14 +173,14 @@ export default () => {
       newFloorTextures: {}
     };
 
-    this.corners.forEach(corner => {
+    corners.forEach(corner => {
       floorplan.corners[corner.id] = {
         x: corner.x,
         y: corner.y
       };
     });
 
-    this.walls.forEach(wall => {
+    walls.forEach(wall => {
       floorplan.walls.push({
         corner1: wall.getStart().id,
         corner2: wall.getEnd().id,
@@ -193,9 +193,9 @@ export default () => {
   }
 
   function loadFloorplan(floorplan) {
-    this.reset();
+    reset();
 
-    corners = {};
+    corners = [];
     if (
       floorplan == null ||
       !("corners" in floorplan) ||
@@ -205,16 +205,16 @@ export default () => {
     }
     for (var id in floorplan.corners) {
       var corner = floorplan.corners[id];
-      corners[id] = this.newCorner(corner.x, corner.y, id);
+      corners[id] = newCorner(corner.x, corner.y, id);
     }
     var scope = this;
     floorplan.walls.forEach(wall => {
-      var newWall = scope.newWall(corners[wall.corner1], corners[wall.corner2]);
+      var _newWall = newWall(corners[wall.corner1], corners[wall.corner2]);
       if (wall.frontTexture) {
-        newWall.frontTexture = wall.frontTexture;
+        _newWall.frontTexture = wall.frontTexture;
       }
       if (wall.backTexture) {
-        newWall.backTexture = wall.backTexture;
+        _newWall.backTexture = wall.backTexture;
       }
     });
 
@@ -255,27 +255,27 @@ export default () => {
 
   /** */
   function reset() {
-    var tmpCorners = this.corners.slice(0);
-    var tmpWalls = this.walls.slice(0);
+    var tmpCorners = corners.slice(0);
+    var tmpWalls = walls.slice(0);
     tmpCorners.forEach(corner => {
       corner.remove();
     });
     tmpWalls.forEach(wall => {
       wall.remove();
     });
-    this.corners = [];
-    this.walls = [];
+    corners = [];
+    walls = [];
   }
 
   /** 
      * Update rooms
      */
   function update() {
-    this.walls.forEach(wall => {
+    walls.forEach(wall => {
       wall.resetFrontBack();
     });
 
-    var roomCorners = this.findRooms(this.corners);
+    var roomCorners = this.findRooms(corners);
     this.rooms = [];
     var scope = this;
     roomCorners.forEach(corners => {

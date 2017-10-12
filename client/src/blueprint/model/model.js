@@ -15,7 +15,7 @@ export default textureDir => {
      * @param textureDir The directory containing the textures.
      */
 
-  let floorplan = new FloorPlan();
+  let _floorplan = new FloorPlan();
   let scene = new Scene(this, textureDir);
 
   function loadSerialized(json) {
@@ -50,7 +50,7 @@ export default textureDir => {
     }
 
     var room = {
-      floorplan: floorplan.saveFloorplan(),
+      _floorplan: _floorplan.saveFloorplan(),
       items: items_arr
     };
 
@@ -59,7 +59,7 @@ export default textureDir => {
 
   function newRoom(floorplan, items) {
     scene.clearItems();
-    floorplan.loadFloorplan(floorplan);
+    _floorplan.loadFloorplan(floorplan);
     items.forEach(item => {
       var position = new THREE.Vector3(item.xpos, item.ypos, item.zpos);
       var metadata = {
@@ -82,7 +82,7 @@ export default textureDir => {
   }
   return {
     scene,
-    floorplan,
+    floorplan:_floorplan,
     loadSerialized
   };
 };
