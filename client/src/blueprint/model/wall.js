@@ -29,6 +29,7 @@ export default class Wall {
 		this.end = end;
 		this.id = this.getUuid();
 
+		let name = "Jerry";
 		this.start.attachStart(this);
 		this.end.attachEnd(this);
 
