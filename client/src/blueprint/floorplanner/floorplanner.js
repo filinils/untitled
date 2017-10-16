@@ -4,7 +4,6 @@ import callbacks from "../../utils/callbacks";
 
 /** how much will we move a corner to make a wall axis aligned (cm) */
 const snapTolerance = 25;
-
 /** 
    * The Floorplanner implements an interactive tool for creation of floorplans.
    */
@@ -35,7 +34,7 @@ export default class Floorplanner {
 		);
 		this.canvasElement.addEventListener("mouseup", () => scope.mouseup());
 
-		this.canvasElement.mouseleave(() => {
+		this.canvasElement.addEventListener("mouseleave", () => {
 			scope.mouseleave();
 		});
 

@@ -14,10 +14,10 @@ export default function(blueprint3d) {
 		//TODO: Loading based o react- window.requestAnimationFrame?
 		if (itemsLoading > 0) {
 			// $("#loading-modal").show();
-			// document.getElementById("loading-modal").style.display = true;
+			document.getElementById("loading-modal").style.display = true;
 		} else {
 			// $("#loading-modal").hide();
-			// document.getElementById("loading-modal").style.display = false;
+			document.getElementById("loading-modal").style.display = false;
 		}
 	}
 

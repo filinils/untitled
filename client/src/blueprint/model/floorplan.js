@@ -508,6 +508,7 @@ export default () => {
 		loadFloorplan,
 		getRooms,
 		fireOnRedraw,
-		getWalls
+		getWalls,
+		roomLoadedCallbacks
 	};
 };
