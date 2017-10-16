@@ -39,6 +39,8 @@ const cornerColorHover = "#008cba";
    */
 export default (floorplan, viewmodel, canvas) => {
 	/** The canvas element. */
+	let scope = this;
+	this.floorplan = floorplan;
 	let canvasElement = document.getElementById(canvas);
 
 	/** The 2D context. */
@@ -50,11 +52,11 @@ export default (floorplan, viewmodel, canvas) => {
 
 	function handleWindowResize() {
 		var canvasSel = document.getElementById(canvas);
-		var parent = canvasSel.parent();
-		canvasSel.height(parent.innerHeight());
-		canvasSel.width(parent.innerWidth());
-		canvasElement.height = parent.innerHeight();
-		canvasElement.width = parent.innerWidth();
+		var parent = canvasSel.parentNode;
+		canvasSel.height = parent.clientHeight;
+		canvasSel.width = parent.clientWidth;
+		canvasElement.height = parent.clientHeight;
+		canvasElement.width = parent.clientWidth;
 		draw();
 	}
 
@@ -64,7 +66,7 @@ export default (floorplan, viewmodel, canvas) => {
 
 		drawGrid();
 
-		floorplan.getRooms().forEach(room => {
+		scope.floorplan.getRooms().forEach(room => {
 			drawRoom(room);
 		});
 
@@ -324,6 +326,7 @@ export default (floorplan, viewmodel, canvas) => {
 	}
 
 	return {
-		handleWindowResize
+		handleWindowResize,
+		draw
 	};
 };

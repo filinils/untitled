@@ -6,13 +6,16 @@ import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
 import Factory from "../items/factory";
 import Item from "../items/item";
+import callbacks from "../../utils/callbacks";
+
 /**
    * The Scene is a manager of Items and also links to a ThreeJS scene.
    */
 export default (model, textureDir) => {
 	/** The associated ThreeJS scene. */
 	let scene;
-
+	let itemLoadingCallbacks = new callbacks();
+	let itemLoadedCallbacks = new callbacks();
 	/** */
 	let items = [];
 
@@ -143,7 +146,9 @@ export default (model, textureDir) => {
 	}
 
 	let service = {
-		clearItems
+		clearItems,
+		itemLoadingCallbacks,
+		itemLoadedCallbacks
 	};
 
 	return Object.assign(scene, service);

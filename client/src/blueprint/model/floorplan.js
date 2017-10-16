@@ -19,6 +19,7 @@ export default () => {
     * floorTextures is a map of room UUIDs (string) to a object with
     * url and scale attributes.
     */
+	let floorTextures = {};
 
 	/** Constructs a floorplan. */
 
@@ -28,6 +29,8 @@ export default () => {
 
 	let new_wall_callbacks = new callbacks();
 	let new_corner_callbacks = new callbacks();
+	let updated_rooms = new callbacks();
+	let roomLoadedCallbacks = new callbacks();
 	// hack
 	function wallEdges() {
 		var edges = [];
@@ -503,7 +506,8 @@ export default () => {
 		getCorners,
 		fireOnUpdatedRooms,
 		loadFloorplan,
-
-		fireOnRedraw
+		getRooms,
+		fireOnRedraw,
+		getWalls
 	};
 };

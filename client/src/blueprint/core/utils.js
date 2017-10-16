@@ -427,6 +427,10 @@ export default (() => {
 		removeValue,
 		subtract,
 		hasValue,
-		isClockwise
+		isClockwise,
+		angle2pi,
+		distance,
+		angle,
+		map
 	};
 })();
