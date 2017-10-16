@@ -1,5 +1,6 @@
 import THREE from "three";
 import Corner from "./corner";
+import Utils from "../core/utils";
 import Item from "../items/item";
 import HalfEdge from "./half_edge";
 import Configuration from "../core/configuration";
@@ -155,7 +156,7 @@ export default class Wall {
 	}
 
 	distanceFrom(x, y) {
-		return Core.Utils.pointDistanceFromLine(
+		return Utils.pointDistanceFromLine(
 			x,
 			y,
 			this.getStartX(),

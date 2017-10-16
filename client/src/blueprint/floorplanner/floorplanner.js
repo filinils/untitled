@@ -155,11 +155,11 @@ export default class Floorplanner {
 		this.rawMouseY = event.clientY;
 
 		this.mouseX =
-			(event.clientX - this.canvasElement.offset().left) *
+			(event.clientX - this.canvasElement.offsetLeft) *
 				this.cmPerPixel +
 			this.originX * this.cmPerPixel;
 		this.mouseY =
-			(event.clientY - this.canvasElement.offset().top) *
+			(event.clientY - this.canvasElement.offsetTop) *
 				this.cmPerPixel +
 			this.originY * this.cmPerPixel;
 
@@ -274,8 +274,8 @@ export default class Floorplanner {
 
 	/** Sets the origin so that floorplan is centered */
 	resetOrigin() {
-		var centerX = this.canvasElement.innerWidth() / 2.0;
-		var centerY = this.canvasElement.innerHeight() / 2.0;
+		var centerX = this.canvasElement.offsetWidth / 2.0;
+		var centerY = this.canvasElement.offsetHeight / 2.0;
 		var centerFloorplan = this.floorplan.getCenter();
 		this.originX = centerFloorplan.x * this.pixelsPerCm - centerX;
 		this.originY = centerFloorplan.z * this.pixelsPerCm - centerY;

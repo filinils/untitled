@@ -32,7 +32,7 @@ export default (() => {
   function getStringValue(key) {
     switch (key) {
       case configDimUnit:
-        return this.data[key];
+        return data[key];
       default:
         throw new Error("Invalid string configuration parameter: " + key);
     }

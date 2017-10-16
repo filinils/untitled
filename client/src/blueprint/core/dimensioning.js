@@ -34,4 +34,8 @@ export default (() => {
         return "" + Math.round(10 * cm) / 1000 + " m";
     }
   }
+
+  return {
+    cmToMeasure
+  };
 })();

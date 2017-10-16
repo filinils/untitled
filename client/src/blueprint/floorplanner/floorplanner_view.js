@@ -163,6 +163,8 @@ export default (floorplan, viewmodel, canvas) => {
 
 	/** */
 	function drawEdge(edge, hover) {
+
+		let self = this;
 		var color = edgeColor;
 		if (hover && viewmodel.mode == floorplannerModes.DELETE) {
 			color = deleteColor;
@@ -171,13 +173,12 @@ export default (floorplan, viewmodel, canvas) => {
 		}
 		var corners = edge.corners();
 
-		var scope = this;
 		drawPolygon(
 			Utils.map(corners, function(corner) {
-				return scope.viewmodel.convertX(corner.x);
+				return viewmodel.convertX(corner.x);
 			}),
 			Utils.map(corners, function(corner) {
-				return scope.viewmodel.convertY(corner.y);
+				return viewmodel.convertY(corner.y);
 			}),
 			false,
 			null,
