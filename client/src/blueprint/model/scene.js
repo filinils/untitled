@@ -29,6 +29,7 @@ export default (model, textureDir) => {
      */
 
 	scene = new THREE.Scene();
+	window.scene = scene;
 
 	// init item loader
 	let loader = new THREE.JSONLoader();
@@ -122,7 +123,7 @@ export default (model, textureDir) => {
 				model,
 				metadata,
 				geometry,
-				new THREE.MeshFaceMaterial(materials),
+				materials,
 				position,
 				rotation,
 				scale
