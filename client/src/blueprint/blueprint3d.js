@@ -7,36 +7,30 @@ import Main from "./three/main";
 
 /** Blueprint3D core application. */
 export default options => {
-  let model;
+	let model;
+	let three; // Three.Main;
+	let floorplanner;
 
-  let three; // Three.Main;
+	model = new Model(options.textureDir);
+	this.three = new Main(
+		model,
+		options.threeElement,
+		options.threeCanvasElement,
+		{}
+	);
 
-  let floorplanner;
+	if (!options.widget) {
+		floorplanner = new Floorplanner(
+			options.floorplannerElement,
+			model.floorplan
+		);
+	} else {
+		this.three.getController().enabled = false;
+	}
 
-  /** Creates an instance.
-     * @param options The initialization options.
-     */
-
-  model = new Model(options.textureDir);
-  this.three = new Main(
-    model,
-    options.threeElement,
-    options.threeCanvasElement,
-    {}
-  );
-
-  if (!options.widget) {
-    floorplanner = new Floorplanner(
-      options.floorplannerElement,
-      model.floorplan
-    );
-  } else {
-    this.three.getController().enabled = false;
-  }
-
-  return {
-    model,
-    three,
-    floorplanner
-  }
+	return {
+		model,
+		three,
+		floorplanner
+	};
 };

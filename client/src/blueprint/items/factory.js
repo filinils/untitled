@@ -12,18 +12,22 @@ import * as Core from "../core/configuration";
 
 /** Enumeration of item types. */
 const item_types = {
-  1: FloorItem,
-  2: WallItem,
-  3: InWallItem,
-  7: InWallFloorItem,
-  8: OnFloorItem,
-  9: WallFloorItem
+	1: FloorItem,
+	2: WallItem,
+	3: InWallItem,
+	7: InWallFloorItem,
+	8: OnFloorItem,
+	9: WallFloorItem
 };
 
 /** Factory class to create items. */
 export default (() => {
-  /** Gets the class for the specified item. */
-  function getClass(itemType) {
-    return item_types[itemType];
-  }
+	/** Gets the class for the specified item. */
+	function getClass(itemType) {
+		return item_types[itemType];
+	}
+
+	return {
+		getClass
+	};
 })();

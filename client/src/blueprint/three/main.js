@@ -63,9 +63,9 @@ export default function(model, element, canvasElement, opts) {
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
 		});
-		(renderer.autoClear = false), (renderer.shadowMapEnabled = true);
+		(renderer.autoClear = false), (renderer.shadowMap.enabled = true);
 		renderer.shadowMapSoft = true;
-		renderer.shadowMapType = THREE.PCFSoftShadowMap;
+		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 		var skybox = new Skybox(scene);
 
@@ -92,7 +92,7 @@ export default function(model, element, canvasElement, opts) {
 
 		// setup camera nicely
 		scope.centerCamera();
-		//model.floorplan.fireOnUpdatedRooms(scope.centerCamera);
+		model.floorplan.fireOnUpdatedRooms(scope.centerCamera);
 
 		var lights = new Lights(scene, model.floorplan);
 
@@ -158,6 +158,7 @@ export default function(model, element, canvasElement, opts) {
 	function shouldRender() {
 		// Do we need to draw a new frame
 		if (
+			true || // Debug
 			scope.controls.needsUpdate ||
 			controller.needsUpdate ||
 			needsUpdate ||
@@ -233,6 +234,7 @@ export default function(model, element, canvasElement, opts) {
 		var distance = model.floorplan.getSize().z * 1.5;
 
 		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
+		// Line below was originally commented out
 		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);
 

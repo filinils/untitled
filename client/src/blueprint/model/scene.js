@@ -22,9 +22,6 @@ export default (model, textureDir) => {
 	/** */
 	let needsUpdate = false;
 
-	/** The Json loader. */
-	let loader;
-
 	/**
      * Constructs a scene.
      * @param model The associated model.
@@ -34,8 +31,8 @@ export default (model, textureDir) => {
 	scene = new THREE.Scene();
 
 	// init item loader
-	this.loader = new THREE.JSONLoader();
-	this.loader.crossOrigin = "";
+	let loader = new THREE.JSONLoader();
+	loader.crossOrigin = "";
 
 	/** Adds a non-item, basically a mesh, to the scene.
      * @param mesh The mesh to be added.
@@ -138,7 +135,7 @@ export default (model, textureDir) => {
 		};
 
 		this.itemLoadingCallbacks.fire();
-		this.loader.load(
+		loader.load(
 			fileName,
 			loaderCallback,
 			undefined // TODO_Ekki
@@ -148,7 +145,8 @@ export default (model, textureDir) => {
 	let service = {
 		clearItems,
 		itemLoadingCallbacks,
-		itemLoadedCallbacks
+		itemLoadedCallbacks,
+		addItem
 	};
 
 	return Object.assign(scene, service);

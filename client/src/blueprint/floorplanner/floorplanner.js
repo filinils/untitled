@@ -155,12 +155,10 @@ export default class Floorplanner {
 		this.rawMouseY = event.clientY;
 
 		this.mouseX =
-			(event.clientX - this.canvasElement.offsetLeft) *
-				this.cmPerPixel +
+			(event.clientX - this.canvasElement.offsetLeft) * this.cmPerPixel +
 			this.originX * this.cmPerPixel;
 		this.mouseY =
-			(event.clientY - this.canvasElement.offsetTop) *
-				this.cmPerPixel +
+			(event.clientY - this.canvasElement.offsetTop) * this.cmPerPixel +
 			this.originY * this.cmPerPixel;
 
 		// update target (snapped position of actual mouse)
