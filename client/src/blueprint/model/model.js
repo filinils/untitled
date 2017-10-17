@@ -29,7 +29,6 @@ export default textureDir => {
 		roomLoadingCallbacks.fire();
 
 		var data = JSON.parse(json);
-		console.log("FLOORPLAB ", data);
 		newRoom(data.floorplan, data.items);
 
 		roomLoadedCallbacks.fire();
