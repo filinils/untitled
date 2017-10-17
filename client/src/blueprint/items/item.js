@@ -1,340 +1,347 @@
 import * as THREE from "three";
 import Utils from "../core/utils";
 
-export default (
-	model,
-	metadata,
-	geometry,
-	material,
-	position,
-	rotation,
-	scale
-) => {
-	let base = new THREE.Mesh();
-	let scene = model.scene;
-	let errorColor = 0xff0000;
-	let resizable = metadata.resizable;
-	let castShadow = true;
-	let receiveShadow = false;
+export default class Item extends THREE.Mesh {
+  /** Constructs an item. 
+		 * @param model TODO
+		 * @param metadata TODO
+		 * @param geometry TODO
+		 * @param material TODO
+		 * @param position TODO
+		 * @param rotation TODO
+		 * @param scale TODO 
+		 */
+  constructor(model, metadata, geometry, material, position, rotation, scale) {
+    super();
 
-	if (position) {
-		position.copy(position);
-		position_set = true;
-	} else {
-		position_set = false;
-	}
+    /** */
+    this.scene;
 
-	// center in its boundingbox
-	geometry.computeBoundingBox();
-	geometry.applyMatrix(
-		new THREE.Matrix4().makeTranslation(
-			-0.5 * (geometry.boundingBox.max.x + geometry.boundingBox.min.x),
-			-0.5 * (geometry.boundingBox.max.y + geometry.boundingBox.min.y),
-			-0.5 * (geometry.boundingBox.max.z + geometry.boundingBox.min.z)
-		)
-	);
-	geometry.computeBoundingBox();
-	halfSize = objectHalfSize();
+    /** */
+    this.errorGlow = new THREE.Mesh();
 
-	if (rotation) {
-		rotation.y = rotation;
-	}
+    /** */
+    this.hover = false;
 
-	if (scale != null) {
-		setScale(scale.x, scale.y, scale.z);
-	}
+    /** */
+    this.selected = false;
 
-	/** */
-	let errorGlow = new THREE.Mesh();
+    /** */
+    this.highlighted = false;
 
-	/** */
-	let hover = false;
+    /** */
+    this.error = false;
 
-	/** */
-	let selected = false;
+    /** */
+    this.emissiveColor = 0x444444;
 
-	/** */
-	let highlighted = false;
+    /** */
+    this.errorColor = 0xff0000;
 
-	/** */
-	let error = false;
+    /** */
 
-	/** */
-	let emissiveColor = 0x444444;
+    /** Does this object affect other floor items */
+    this.obstructFloorMoves = true;
 
-	/** Does this object affect other floor items */
-	let obstructFloorMoves = true;
+    /** */
 
-	/** */
-	let position_set;
+    /** Show rotate option in context menu */
+    this.allowRotate = true;
 
-	/** Show rotate option in context menu */
-	let allowRotate = true;
+    /** */
+    this.fixed = false;
 
-	/** */
-	let fixed = false;
+    /** dragging */
+    this.dragOffset = new THREE.Vector3();
 
-	/** dragging */
-	let dragOffset = new THREE.Vector3();
+    /** */
 
-	/** */
-	let halfSize;
+    this.scene = this.model.scene;
+    this.geometry = geometry;
+    this.material = material;
 
-	/** Constructs an item. 
-        * @param model TODO
-        * @param metadata TODO
-        * @param geometry TODO
-        * @param material TODO
-        * @param position TODO
-        * @param rotation TODO
-        * @param scale TODO 
-        */
+    this.errorColor = 0xff0000;
 
-	/** */
-	function remove() {
-		scene.removeItem(this);
-	}
+    this.resizable = metadata.resizable;
 
-	/** */
-	function resize(height, width, depth) {
-		var x = width / getWidth();
-		var y = height / getHeight();
-		var z = depth / getDepth();
-		setScale(x, y, z);
-	}
+    this.castShadow = true;
+    this.receiveShadow = false;
 
-	/** */
-	function setScale(x, y, z) {
-		var scaleVec = new THREE.Vector3(x, y, z);
-		halfSize.multiply(scaleVec);
-		scaleVec.multiply(scale);
-		scale.set(scaleVec.x, scaleVec.y, scaleVec.z);
-		resized();
-		scene.needsUpdate = true;
-	}
+    this.geometry = geometry;
+    this.material = material;
 
-	/** */
-	function setFixed(fixed) {
-		fixed = fixed;
-	}
+    if (position) {
+      this.position.copy(position);
+      this.position_set = true;
+    } else {
+      this.position_set = false;
+    }
 
-	/** Subclass can define to take action after a resize. */
+    // center in its boundingbox
+    this.geometry.computeBoundingBox();
+    this.geometry.applyMatrix(
+      new THREE.Matrix4().makeTranslation(
+        -0.5 *
+          (this.geometry.boundingBox.max.x + this.geometry.boundingBox.min.x),
+        -0.5 *
+          (this.geometry.boundingBox.max.y + this.geometry.boundingBox.min.y),
+        -0.5 *
+          (this.geometry.boundingBox.max.z + this.geometry.boundingBox.min.z)
+      )
+    );
+    this.geometry.computeBoundingBox();
+    this.halfSize = this.objectHalfSize();
 
-	/** */
-	function getHeight() {
-		return halfSize.y * 2.0;
-	}
+    if (rotation) {
+      this.rotation.y = rotation;
+    }
 
-	/** */
-	function getWidth() {
-		return halfSize.x * 2.0;
-	}
+    if (scale != null) {
+      this.setScale(scale.x, scale.y, scale.z);
+    }
+  }
 
-	/** */
-	function getDepth() {
-		return halfSize.z * 2.0;
-	}
+  /** */
+  remove() {
+    this.scene.removeItem(this);
+  }
 
-	/** */
+  /** */
+  resize(height, width, depth) {
+    var x = width / this.getWidth();
+    var y = height / this.getHeight();
+    var z = depth / this.getDepth();
+    this.setScale(x, y, z);
+  }
 
-	/** */
-	function initObject() {
-		placeInRoom();
-		// select and stuff
-		scene.needsUpdate = true;
-	}
+  /** */
+  setScale(x, y, z) {
+    var scaleVec = new THREE.Vector3(x, y, z);
+    this.halfSize.multiply(scaleVec);
+    scaleVec.multiply(this.scale);
+    this.scale.set(scaleVec.x, scaleVec.y, scaleVec.z);
+    this.resized();
+    this.scene.needsUpdate = true;
+  }
 
-	/** */
-	function removed() {}
+  /** */
+  setFixed(fixed) {
+    this.fixed = fixed;
+  }
 
-	/** on is a bool */
-	function updateHighlight() {
-		var on = hover || selected;
-		highlighted = on;
-		var hex = on ? emissiveColor : 0x000000;
-		material.materials.forEach(material => {
-			// TODO_Ekki emissive doesn't exist anymore?
-			material.emissive.setHex(hex);
-		});
-	}
+  /** Subclass can define to take action after a resize. */
 
-	/** */
-	function mouseOver() {
-		hover = true;
-		updateHighlight();
-	}
+  /** */
+  getHeight() {
+    return this.halfSize.y * 2.0;
+  }
 
-	/** */
-	function mouseOff() {
-		hover = false;
-		updateHighlight();
-	}
+  /** */
+  getWidth() {
+    return this.halfSize.x * 2.0;
+  }
 
-	/** */
-	function setSelected() {
-		selected = true;
-		updateHighlight();
-	}
+  /** */
+  getDepth() {
+    return this.halfSize.z * 2.0;
+  }
 
-	/** */
-	function setUnselected() {
-		selected = false;
-		updateHighlight();
-	}
+  /** */
 
-	/** intersection has attributes point (vec3) and object (THREE.Mesh) */
-	function clickPressed(intersection) {
-		dragOffset.copy(intersection.point).sub(position);
-	}
+  /** */
+  initObject() {
+    this.placeInRoom();
+    // select and stuff
+    this.scene.needsUpdate = true;
+  }
 
-	/** */
-	function clickDragged(intersection) {
-		if (intersection) {
-			moveToPosition(intersection.point.sub(dragOffset), intersection);
-		}
-	}
+  /** */
+  removed() {}
 
-	/** */
-	function rotate(intersection) {
-		if (intersection) {
-			let angle = Utils.angle(
-				0,
-				1,
-				intersection.point.x - position.x,
-				intersection.point.z - position.z
-			);
+  /** on is a bool */
+  updateHighlight() {
+    var on = this.hover || this.selected;
+    this.highlighted = on;
+    var hex = on ? this.emissiveColor : 0x000000;
+    this.material.materials.forEach(material => {
+      // TODO_Ekki emissive doesn't exist anymore?
+      material.emissive.setHex(hex);
+    });
+  }
 
-			var snapTolerance = Math.PI / 16.0;
+  /** */
+  mouseOver() {
+    this.hover = true;
+    this.updateHighlight();
+  }
 
-			// snap to intervals near Math.PI/2
-			for (var i = -4; i <= 4; i++) {
-				if (Math.abs(angle - i * (Math.PI / 2)) < snapTolerance) {
-					angle = i * (Math.PI / 2);
-					break;
-				}
-			}
+  /** */
+  mouseOff() {
+    this.hover = false;
+    this.updateHighlight();
+  }
 
-			rotation.y = angle;
-		}
-	}
+  /** */
+  setSelected() {
+    this.selected = true;
+    this.updateHighlight();
+  }
 
-	/** */
-	function moveToPosition(vec3, intersection) {
-		position.copy(vec3);
-	}
+  /** */
+  setUnselected() {
+    this.selected = false;
+    this.updateHighlight();
+  }
 
-	/** */
-	function clickReleased() {
-		if (error) {
-			hideError();
-		}
-	}
+  /** intersection has attributes point (vec3) and object (THREE.Mesh) */
+  clickPressed(intersection) {
+    this.dragOffset.copy(intersection.point).sub(this.position);
+  }
 
-	/**
-        * Returns an array of planes to use other than the ground plane
-        * for passing intersection to clickPressed and clickDragged
-        */
-	function customIntersectionPlanes() {
-		return [];
-	}
+  /** */
+  clickDragged(intersection) {
+    if (intersection) {
+      this.moveToPosition(
+        intersection.point.sub(this.dragOffset),
+        intersection
+      );
+    }
+  }
 
-	/** 
-        * returns the 2d corners of the bounding polygon
-        * 
-        * offset is Vector3 (used for getting corners of object at a new position)
-        * 
-        * TODO: handle rotated objects better!
-        */
-	function getCorners(xDim, yDim, position) {
-		position = position || position;
+  /** */
+  rotate(intersection) {
+    if (intersection) {
+      var angle = Core.Utils.angle(
+        0,
+        1,
+        intersection.point.x - this.position.x,
+        intersection.point.z - this.position.z
+      );
 
-		var halfSize = halfSize.clone();
+      var snapTolerance = Math.PI / 16.0;
 
-		var c1 = new THREE.Vector3(-halfSize.x, 0, -halfSize.z);
-		var c2 = new THREE.Vector3(halfSize.x, 0, -halfSize.z);
-		var c3 = new THREE.Vector3(halfSize.x, 0, halfSize.z);
-		var c4 = new THREE.Vector3(-halfSize.x, 0, halfSize.z);
+      // snap to intervals near Math.PI/2
+      for (var i = -4; i <= 4; i++) {
+        if (Math.abs(angle - i * (Math.PI / 2)) < snapTolerance) {
+          angle = i * (Math.PI / 2);
+          break;
+        }
+      }
 
-		var transform = new THREE.Matrix4();
-		//console.log(rotation.y);
-		transform.makeRotationY(rotation.y); //  + Math.PI/2)
+      this.rotation.y = angle;
+    }
+  }
 
-		c1.applyMatrix4(transform);
-		c2.applyMatrix4(transform);
-		c3.applyMatrix4(transform);
-		c4.applyMatrix4(transform);
+  /** */
+  moveToPosition(vec3, intersection) {
+    this.position.copy(vec3);
+  }
 
-		c1.add(position);
-		c2.add(position);
-		c3.add(position);
-		c4.add(position);
+  /** */
+  clickReleased() {
+    if (this.error) {
+      this.hideError();
+    }
+  }
 
-		//halfSize.applyMatrix4(transform);
+  /**
+		 * Returns an array of planes to use other than the ground plane
+		 * for passing intersection to clickPressed and clickDragged
+		 */
+  customIntersectionPlanes() {
+    return [];
+  }
 
-		//var min = position.clone().sub(halfSize);
-		//var max = position.clone().add(halfSize);
+  /** 
+		 * returns the 2d corners of the bounding polygon
+		 * 
+		 * offset is Vector3 (used for getting corners of object at a new position)
+		 * 
+		 * TODO: handle rotated objects better!
+		 */
+  getCorners(xDim, yDim, position) {
+    position = position || this.position;
 
-		var corners = [
-			{ x: c1.x, y: c1.z },
-			{ x: c2.x, y: c2.z },
-			{ x: c3.x, y: c3.z },
-			{ x: c4.x, y: c4.z }
-		];
+    var halfSize = this.halfSize.clone();
 
-		return corners;
-	}
+    var c1 = new THREE.Vector3(-halfSize.x, 0, -halfSize.z);
+    var c2 = new THREE.Vector3(halfSize.x, 0, -halfSize.z);
+    var c3 = new THREE.Vector3(halfSize.x, 0, halfSize.z);
+    var c4 = new THREE.Vector3(-halfSize.x, 0, halfSize.z);
 
-	/** */
+    var transform = new THREE.Matrix4();
+    //console.log(this.rotation.y);
+    transform.makeRotationY(this.rotation.y); //  + Math.PI/2)
+    c1.applyMatrix4(transform);
+    c2.applyMatrix4(transform);
+    c3.applyMatrix4(transform);
+    c4.applyMatrix4(transform);
 
-	/** */
-	function showError(vec3) {
-		vec3 = vec3 || position;
-		if (!error) {
-			error = true;
-			errorGlow = createGlow(errorColor, 0.8, true);
-			scene.add(errorGlow);
-		}
-		errorGlow.position.copy(vec3);
-	}
+    c1.add(position);
+    c2.add(position);
+    c3.add(position);
+    c4.add(position);
 
-	/** */
-	function hideError() {
-		if (error) {
-			error = false;
-			scene.remove(errorGlow);
-		}
-	}
+    //halfSize.applyMatrix4(transform);
+    //var min = position.clone().sub(halfSize);
+    //var max = position.clone().add(halfSize);
+    var corners = [
+      { x: c1.x, y: c1.z },
+      { x: c2.x, y: c2.z },
+      { x: c3.x, y: c3.z },
+      { x: c4.x, y: c4.z }
+    ];
 
-	/** */
-	function objectHalfSize() {
-		var objectBox = new THREE.Box3();
-		objectBox.setFromObject(this);
-		return objectBox.max
-			.clone()
-			.sub(objectBox.min)
-			.divideScalar(2);
-	}
+    return corners;
+  }
 
-	/** */
-	function createGlow(color, opacity, ignoreDepth) {
-		ignoreDepth = ignoreDepth || false;
-		opacity = opacity || 0.2;
-		var glowMaterial = new THREE.MeshBasicMaterial({
-			color: color,
-			blending: THREE.AdditiveBlending,
-			opacity: 0.2,
-			transparent: true,
-			depthTest: !ignoreDepth
-		});
+  /** */
 
-		var glow = new THREE.Mesh(geometry.clone(), glowMaterial);
-		glow.position.copy(position);
-		glow.rotation.copy(rotation);
-		glow.scale.copy(scale);
-		return glow;
-	}
+  /** */
+  showError(vec3) {
+    vec3 = vec3 || this.position;
+    if (!this.error) {
+      this.error = true;
+      this.errorGlow = this.createGlow(this.errorColor, 0.8, true);
+      this.scene.add(this.errorGlow);
+    }
+    this.errorGlow.position.copy(vec3);
+  }
 
-	return {
-		initObject
-	};
-};
+  /** */
+  hideError() {
+    if (this.error) {
+      this.error = false;
+      this.scene.remove(this.errorGlow);
+    }
+  }
+
+  /** */
+  objectHalfSize() {
+    var objectBox = new THREE.Box3();
+    objectBox.setFromObject(this);
+    return objectBox.max
+      .clone()
+      .sub(objectBox.min)
+      .divideScalar(2);
+  }
+
+  /** */
+  createGlow(color, opacity, ignoreDepth) {
+    ignoreDepth = ignoreDepth || false;
+    opacity = opacity || 0.2;
+    var glowMaterial = new THREE.MeshBasicMaterial({
+      color: color,
+      blending: THREE.AdditiveBlending,
+      opacity: 0.2,
+      transparent: true,
+      depthTest: !ignoreDepth
+    });
+
+    var glow = new THREE.Mesh(this.geometry.clone(), glowMaterial);
+    glow.position.copy(this.position);
+    glow.rotation.copy(this.rotation);
+    glow.scale.copy(this.scale);
+    return glow;
+  }
+}
