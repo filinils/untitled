@@ -1,25 +1,16 @@
 import InWallItem from "./in_wall_item";
 
-export default (
-  model,
-  metadata,
-  geometry,
-  material,
-  position,
-  rotation,
-  scale
-) => {
-  let service = new InWallItem(
-    model,
-    metadata,
-    geometry,
-    material,
-    position,
-    rotation,
-    scale
-  );
-
-  service.boundToFloor = true;
-
-  return service;
-};
+export default class InWallFloorItem extends InWallItem {
+	constructor(
+		model,
+		metadata,
+		geometry,
+		material,
+		position,
+		rotation,
+		scale
+	) {
+		super(model, metadata, geometry, material, position, rotation, scale);
+		this.boundToFloor = true;
+	}
+}
