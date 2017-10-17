@@ -502,6 +502,7 @@ export default () => {
     getWalls,
     roomLoadedCallbacks,
     overlappedCorner,
-    overlappedWall
+    overlappedWall,
+    wallEdges
   };
 };

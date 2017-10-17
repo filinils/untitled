@@ -40,6 +40,7 @@ export default class WallItem extends Item {
     this.backVisible = false;
 
     this.allowRotate = false;
+    
   }
 
   /** Get the closet wall edge.

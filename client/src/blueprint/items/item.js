@@ -13,6 +13,7 @@ export default class Item extends THREE.Mesh {
 		 */
   constructor(model, metadata, geometry, material, position, rotation, scale) {
     super();
+    this.model = model;
 
     /** */
     this.scene;
@@ -56,7 +57,7 @@ export default class Item extends THREE.Mesh {
 
     /** */
 
-    this.scene = this.model.scene;
+    this.scene = model.scene;
     this.geometry = geometry;
     this.material = material;
 
