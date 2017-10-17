@@ -119,7 +119,7 @@ export default (model, textureDir) => {
 		var scope = this;
 		var loaderCallback = function(geometry, materials) {
 			var item = new (Factory.getClass(itemType))(
-				scope.model,
+				model,
 				metadata,
 				geometry,
 				new THREE.MeshFaceMaterial(materials),
