@@ -1,61 +1,58 @@
 import * as THREE from "three";
 import Utils from "../core/utils";
+import Item from "./item";
 
-export default (
-  model,
-  metadata,
-  geometry,
-  material,
-  position,
-  rotation,
-  scale
-) => {
+export default class WallItem extends Item {
   /** The currently applied wall edge. */
-  let currentWallEdge = null;
-  /* TODO:
+
+  constructor(model, metadata, geometry, material, position, rotation, scale) {
+    super(model, metadata, geometry, material, position, rotation, scale);
+    this.currentWallEdge = null;
+    /* TODO:
        This caused a huge headache.
        HalfEdges get destroyed/created every time floorplan is edited.
        This item should store a reference to a wall and front/back,
        and grab its edge reference dynamically whenever it needs it.
      */
 
-  /** used for finding rotations */
-  let refVec = new THREE.Vector2(0, 1.0);
+    /** used for finding rotations */
+    this.refVec = new THREE.Vector2(0, 1.0);
 
-  /** */
-  let wallOffsetScalar = 0;
+    /** */
+    this.wallOffsetScalar = 0;
 
-  /** */
-  let sizeX = 0;
+    /** */
+    this.sizeX = 0;
 
-  /** */
-  let sizeY = 0;
+    /** */
+    this.sizeY = 0;
 
-  /** */
-  let addToWall = false;
+    /** */
+    this.addToWall = false;
 
-  /** */
-  let boundToFloor = false;
+    /** */
+    this.boundToFloor = false;
 
-  /** */
-  let frontVisible = false;
+    /** */
+    this.frontVisible = false;
 
-  /** */
-  let backVisible = false;
+    /** */
+    this.backVisible = false;
 
-  let allowRotate = false;
+    this.allowRotate = false;
+  }
 
   /** Get the closet wall edge.
-     * @returns The wall edge.
-     */
-  function closestWallEdge() {
-    var wallEdges = model.floorplan.wallEdges();
+   * @returns The wall edge.
+   */
+  closestWallEdge() {
+    var wallEdges = this.model.floorplan.wallEdges();
 
     var wallEdge = null;
     var minDistance = null;
 
-    var itemX = position.x;
-    var itemZ = position.z;
+    var itemX = this.position.x;
+    var itemZ = this.position.z;
 
     wallEdges.forEach(edge => {
       var distance = edge.distanceTo(itemX, itemZ);
@@ -69,59 +66,65 @@ export default (
   }
 
   /** */
-  function removed() {
-    if (currentWallEdge != null && addToWall) {
-      Utils.removeValue(currentWallEdge.wall.items, this);
-      redrawWall();
+  removed() {
+    if (this.currentWallEdge != null && this.addToWall) {
+      Utils.removeValue(this.currentWallEdge.wall.items, this);
+      this.redrawWall();
     }
   }
 
   /** */
-  function redrawWall() {
-    if (addToWall) {
-      currentWallEdge.wall.fireRedraw();
+  redrawWall() {
+    if (this.addToWall) {
+      this.currentWallEdge.wall.fireRedraw();
     }
   }
 
   /** */
-  function updateEdgeVisibility(visible, front) {
+  updateEdgeVisibility(visible, front) {
     if (front) {
-      frontVisible = visible;
+      this.frontVisible = visible;
     } else {
-      backVisible = visible;
+      this.backVisible = visible;
     }
-    visible = frontVisible || backVisible;
+    this.visible = this.frontVisible || this.backVisible;
   }
 
   /** */
-  function updateSize() {
-    wallOffsetScalar =
-      (geometry.boundingBox.max.z - geometry.boundingBox.min.z) * scale.z / 2.0;
-    sizeX = (geometry.boundingBox.max.x - geometry.boundingBox.min.x) * scale.x;
-    sizeY = (geometry.boundingBox.max.y - geometry.boundingBox.min.y) * scale.y;
+  updateSize() {
+    this.wallOffsetScalar =
+      (this.geometry.boundingBox.max.z - this.geometry.boundingBox.min.z) *
+      this.scale.z /
+      2.0;
+    this.sizeX =
+      (this.geometry.boundingBox.max.x - this.geometry.boundingBox.min.x) *
+      this.scale.x;
+    this.sizeY =
+      (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) *
+      this.scale.y;
   }
 
   /** */
-  function resized() {
-    if (boundToFloor) {
-      position.y =
+  resized() {
+    if (this.boundToFloor) {
+      this.position.y =
         0.5 *
-          (geometry.boundingBox.max.y - geometry.boundingBox.min.y) *
-          scale.y +
+          (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) *
+          this.scale.y +
         0.01;
     }
 
-    updateSize();
-    redrawWall();
+    this.updateSize();
+    this.redrawWall();
   }
 
   /** */
-  function placeInRoom() {
-    var closestWallEdge = closestWallEdge();
-    changeWallEdge(closestWallEdge);
-    updateSize();
+  placeInRoom() {
+    var closestWallEdge = this.closestWallEdge();
+    this.changeWallEdge(closestWallEdge);
+    this.updateSize();
 
-    if (!position_set) {
+    if (!this.position_set) {
       // position not set
       var center = closestWallEdge.interiorCenter();
       var newPos = new THREE.Vector3(
@@ -129,41 +132,41 @@ export default (
         closestWallEdge.wall.height / 2.0,
         center.y
       );
-      boundMove(newPos);
-      position.copy(newPos);
-      redrawWall();
+      this.boundMove(newPos);
+      this.position.copy(newPos);
+      this.redrawWall();
     }
   }
 
   /** */
-  function moveToPosition(vec3, intersection) {
-    changeWallEdge(intersection.object.edge);
-    boundMove(vec3);
-    position.copy(vec3);
-    redrawWall();
+  moveToPosition(vec3, intersection) {
+    this.changeWallEdge(intersection.object.edge);
+    this.boundMove(vec3);
+    this.position.copy(vec3);
+    this.redrawWall();
   }
 
   /** */
-  function getWallOffset() {
-    return wallOffsetScalar;
+  getWallOffset() {
+    return this.wallOffsetScalar;
   }
 
   /** */
-  function changeWallEdge(wallEdge) {
-    if (currentWallEdge != null) {
-      if (addToWall) {
-        Utils.removeValue(currentWallEdge.wall.items, this);
-        redrawWall();
+  changeWallEdge(wallEdge) {
+    if (this.currentWallEdge != null) {
+      if (this.addToWall) {
+        Utils.removeValue(this.currentWallEdge.wall.items, this);
+        this.redrawWall();
       } else {
-        Utils.removeValue(currentWallEdge.wall.onItems, this);
+        Utils.removeValue(this.currentWallEdge.wall.onItems, this);
       }
     }
 
     // handle subscription to wall being removed
-    if (currentWallEdge != null) {
-      currentWallEdge.wall.dontFireOnDelete(remove.bind(this));
+    if (this.currentWallEdge != null) {
+      this.currentWallEdge.wall.dontFireOnDelete(this.remove.bind(this));
     }
-    wallEdge.wall.fireOnDelete(remove.bind(this));
+    wallEdge.wall.fireOnDelete(this.remove.bind(this));
 
     // find angle between wall normals
     var normal2 = new THREE.Vector2();
@@ -171,53 +174,56 @@ export default (
     normal2.x = normal3.x;
     normal2.y = normal3.z;
 
-    var angle = Utils.angle(refVec.x, refVec.y, normal2.x, normal2.y);
-    rotation.y = angle;
+    var angle = Utils.angle(this.refVec.x, this.refVec.y, normal2.x, normal2.y);
+    this.rotation.y = angle;
 
     // update currentWall
-    currentWallEdge = wallEdge;
-    if (addToWall) {
+    this.currentWallEdge = wallEdge;
+    if (this.addToWall) {
       wallEdge.wall.items.push(this);
-      redrawWall();
+      this.redrawWall();
     } else {
       wallEdge.wall.onItems.push(this);
     }
   }
 
   /** Returns an array of planes to use other than the ground plane
-     * for passing intersection to clickPressed and clickDragged */
-  function customIntersectionPlanes() {
-    return model.floorplan.wallEdgePlanes();
+   * for passing intersection to clickPressed and clickDragged */
+  customIntersectionPlanes() {
+    return this.model.floorplan.wallEdgePlanes();
   }
 
   /** takes the move vec3, and makes sure object stays bounded on plane */
-  function boundMove(vec3) {
+  boundMove(vec3) {
     var tolerance = 1;
-    var edge = currentWallEdge;
+    var edge = this.currentWallEdge;
     vec3.applyMatrix4(edge.interiorTransform);
 
-    if (vec3.x < sizeX / 2.0 + tolerance) {
-      vec3.x = sizeX / 2.0 + tolerance;
-    } else if (vec3.x > edge.interiorDistance() - sizeX / 2.0 - tolerance) {
-      vec3.x = edge.interiorDistance() - sizeX / 2.0 - tolerance;
+    if (vec3.x < this.sizeX / 2.0 + tolerance) {
+      vec3.x = this.sizeX / 2.0 + tolerance;
+    } else if (
+      vec3.x >
+      edge.interiorDistance() - this.sizeX / 2.0 - tolerance
+    ) {
+      vec3.x = edge.interiorDistance() - this.sizeX / 2.0 - tolerance;
     }
 
-    if (boundToFloor) {
+    if (this.boundToFloor) {
       vec3.y =
         0.5 *
-          (geometry.boundingBox.max.y - geometry.boundingBox.min.y) *
-          scale.y +
+          (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) *
+          this.scale.y +
         0.01;
     } else {
-      if (vec3.y < sizeY / 2.0 + tolerance) {
-        vec3.y = sizeY / 2.0 + tolerance;
-      } else if (vec3.y > edge.height - sizeY / 2.0 - tolerance) {
-        vec3.y = edge.height - sizeY / 2.0 - tolerance;
+      if (vec3.y < this.sizeY / 2.0 + tolerance) {
+        vec3.y = this.sizeY / 2.0 + tolerance;
+      } else if (vec3.y > edge.height - this.sizeY / 2.0 - tolerance) {
+        vec3.y = edge.height - this.sizeY / 2.0 - tolerance;
       }
     }
 
-    vec3.z = getWallOffset();
+    vec3.z = this.getWallOffset();
 
     vec3.applyMatrix4(edge.invInteriorTransform);
   }
-};
+}

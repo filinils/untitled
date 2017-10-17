@@ -27,7 +27,7 @@ export default (
     scale
   );
   /** */
-  service.placeInRoom = () => {
+  function placeInRoom() {
     if (!this.position_set) {
       var center = this.model.floorplan.getCenter();
       this.position.x = center.x;
@@ -36,7 +36,7 @@ export default (
         0.5 *
         (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y);
     }
-  };
+  }
 
   /** Take action after a resize */
   service.resized = () => {
@@ -95,5 +95,5 @@ export default (
     return true;
   };
 
-  return service;
+  return Object.assign(service, this);
 };

@@ -1,207 +1,221 @@
 import * as THREE from "three";
 import Utils from "../core/utils";
 
-export default (
-  model,
-  metadata,
-  geometry,
-  material,
-  position,
-  rotation,
-  scale
-) => {
-
-  let self = this;
-  let base = new THREE.Mesh();
-  let scene = model.scene;
-  let errorColor = 0xff0000;
-  let resizable = metadata.resizable;
-  let castShadow = true;
-  let receiveShadow = false;
-
-  if (position) {
-    position.copy(position);
-    position_set = true;
-  } else {
-    position_set = false;
-  }
-
-  // center in its boundingbox
-  geometry.computeBoundingBox();
-  geometry.applyMatrix(
-    new THREE.Matrix4().makeTranslation(
-      -0.5 * (geometry.boundingBox.max.x + geometry.boundingBox.min.x),
-      -0.5 * (geometry.boundingBox.max.y + geometry.boundingBox.min.y),
-      -0.5 * (geometry.boundingBox.max.z + geometry.boundingBox.min.z)
-    )
-  );
-  geometry.computeBoundingBox();
-  halfSize = objectHalfSize();
-
-  if (rotation) {
-    rotation.y = rotation;
-  }
-
-  if (scale != null) {
-    setScale(scale.x, scale.y, scale.z);
-  }
-
-  /** */
-  let errorGlow = new THREE.Mesh();
-
-  /** */
-  let hover = false;
-
-  /** */
-  let selected = false;
-
-  /** */
-  let highlighted = false;
-
-  /** */
-  let error = false;
-
-  /** */
-  let emissiveColor = 0x444444;
-
-  /** Does this object affect other floor items */
-  let obstructFloorMoves = true;
-
-  /** */
-  let position_set;
-
-  /** Show rotate option in context menu */
-  let allowRotate = true;
-
-  /** */
-  let fixed = false;
-
-  /** dragging */
-  let dragOffset = new THREE.Vector3();
-
-  /** */
-  let halfSize;
-
+export default class Item extends THREE.Mesh {
   /** Constructs an item. 
-        * @param model TODO
-        * @param metadata TODO
-        * @param geometry TODO
-        * @param material TODO
-        * @param position TODO
-        * @param rotation TODO
-        * @param scale TODO 
-        */
+		 * @param model TODO
+		 * @param metadata TODO
+		 * @param geometry TODO
+		 * @param material TODO
+		 * @param position TODO
+		 * @param rotation TODO
+		 * @param scale TODO 
+		 */
+  constructor(model, metadata, geometry, material, position, rotation, scale) {
+    super();
 
-  /** */
-  function remove() {
-    scene.removeItem(this);
+    /** */
+    this.scene;
+
+    /** */
+    this.errorGlow = new THREE.Mesh();
+
+    /** */
+    this.hover = false;
+
+    /** */
+    this.selected = false;
+
+    /** */
+    this.highlighted = false;
+
+    /** */
+    this.error = false;
+
+    /** */
+    this.emissiveColor = 0x444444;
+
+    /** */
+    this.errorColor = 0xff0000;
+
+    /** */
+
+    /** Does this object affect other floor items */
+    this.obstructFloorMoves = true;
+
+    /** */
+
+    /** Show rotate option in context menu */
+    this.allowRotate = true;
+
+    /** */
+    this.fixed = false;
+
+    /** dragging */
+    this.dragOffset = new THREE.Vector3();
+
+    /** */
+
+    this.scene = this.model.scene;
+    this.geometry = geometry;
+    this.material = material;
+
+    this.errorColor = 0xff0000;
+
+    this.resizable = metadata.resizable;
+
+    this.castShadow = true;
+    this.receiveShadow = false;
+
+    this.geometry = geometry;
+    this.material = material;
+
+    if (position) {
+      this.position.copy(position);
+      this.position_set = true;
+    } else {
+      this.position_set = false;
+    }
+
+    // center in its boundingbox
+    this.geometry.computeBoundingBox();
+    this.geometry.applyMatrix(
+      new THREE.Matrix4().makeTranslation(
+        -0.5 *
+          (this.geometry.boundingBox.max.x + this.geometry.boundingBox.min.x),
+        -0.5 *
+          (this.geometry.boundingBox.max.y + this.geometry.boundingBox.min.y),
+        -0.5 *
+          (this.geometry.boundingBox.max.z + this.geometry.boundingBox.min.z)
+      )
+    );
+    this.geometry.computeBoundingBox();
+    this.halfSize = this.objectHalfSize();
+
+    if (rotation) {
+      this.rotation.y = rotation;
+    }
+
+    if (scale != null) {
+      this.setScale(scale.x, scale.y, scale.z);
+    }
   }
 
   /** */
-  function resize(height, width, depth) {
-    var x = width / getWidth();
-    var y = height / getHeight();
-    var z = depth / getDepth();
-    setScale(x, y, z);
+  remove() {
+    this.scene.removeItem(this);
   }
 
   /** */
-  function setScale(x, y, z) {
+  resize(height, width, depth) {
+    var x = width / this.getWidth();
+    var y = height / this.getHeight();
+    var z = depth / this.getDepth();
+    this.setScale(x, y, z);
+  }
+
+  /** */
+  setScale(x, y, z) {
     var scaleVec = new THREE.Vector3(x, y, z);
-    halfSize.multiply(scaleVec);
-    scaleVec.multiply(scale);
-    scale.set(scaleVec.x, scaleVec.y, scaleVec.z);
-    resized();
-    scene.needsUpdate = true;
+    this.halfSize.multiply(scaleVec);
+    scaleVec.multiply(this.scale);
+    this.scale.set(scaleVec.x, scaleVec.y, scaleVec.z);
+    this.resized();
+    this.scene.needsUpdate = true;
   }
 
   /** */
-  function setFixed(fixed) {}
+  setFixed(fixed) {
+    this.fixed = fixed;
+  }
 
   /** Subclass can define to take action after a resize. */
 
   /** */
-  function getHeight() {
-    return halfSize.y * 2.0;
+  getHeight() {
+    return this.halfSize.y * 2.0;
   }
 
   /** */
-  function getWidth() {
-    return halfSize.x * 2.0;
+  getWidth() {
+    return this.halfSize.x * 2.0;
   }
 
   /** */
-  function getDepth() {
-    return halfSize.z * 2.0;
+  getDepth() {
+    return this.halfSize.z * 2.0;
   }
 
   /** */
 
   /** */
-  function initObject() {
-    placeInRoom();
+  initObject() {
+    this.placeInRoom();
     // select and stuff
-    scene.needsUpdate = true;
+    this.scene.needsUpdate = true;
   }
 
   /** */
-  function removed() {}
+  removed() {}
 
   /** on is a bool */
-  function updateHighlight() {
-    var on = hover || selected;
-    highlighted = on;
-    var hex = on ? emissiveColor : 0x000000;
-    material.materials.forEach(material => {
+  updateHighlight() {
+    var on = this.hover || this.selected;
+    this.highlighted = on;
+    var hex = on ? this.emissiveColor : 0x000000;
+    this.material.materials.forEach(material => {
       // TODO_Ekki emissive doesn't exist anymore?
       material.emissive.setHex(hex);
     });
   }
 
   /** */
-  function mouseOver() {
-    hover = true;
-    updateHighlight();
+  mouseOver() {
+    this.hover = true;
+    this.updateHighlight();
   }
 
   /** */
-  function mouseOff() {
-    hover = false;
-    updateHighlight();
+  mouseOff() {
+    this.hover = false;
+    this.updateHighlight();
   }
 
   /** */
-  function setSelected() {
-    selected = true;
-    updateHighlight();
+  setSelected() {
+    this.selected = true;
+    this.updateHighlight();
   }
 
   /** */
-  function setUnselected() {
-    selected = false;
-    updateHighlight();
+  setUnselected() {
+    this.selected = false;
+    this.updateHighlight();
   }
 
   /** intersection has attributes point (vec3) and object (THREE.Mesh) */
-  function clickPressed(intersection) {
-    dragOffset.copy(intersection.point).sub(position);
+  clickPressed(intersection) {
+    this.dragOffset.copy(intersection.point).sub(this.position);
   }
 
   /** */
-  function clickDragged(intersection) {
+  clickDragged(intersection) {
     if (intersection) {
-      moveToPosition(intersection.point.sub(dragOffset), intersection);
+      this.moveToPosition(
+        intersection.point.sub(this.dragOffset),
+        intersection
+      );
     }
   }
 
   /** */
-  function rotate(intersection) {
+  rotate(intersection) {
     if (intersection) {
-      let angle = Utils.angle(
+      var angle = Core.Utils.angle(
         0,
         1,
-        intersection.point.x - position.x,
-        intersection.point.z - position.z
+        intersection.point.x - this.position.x,
+        intersection.point.z - this.position.z
       );
 
       var snapTolerance = Math.PI / 16.0;
@@ -214,41 +228,41 @@ export default (
         }
       }
 
-      rotation.y = angle;
+      this.rotation.y = angle;
     }
   }
 
   /** */
-  function moveToPosition(vec3, intersection) {
-    position.copy(vec3);
+  moveToPosition(vec3, intersection) {
+    this.position.copy(vec3);
   }
 
   /** */
-  function clickReleased() {
-    if (error) {
-      hideError();
+  clickReleased() {
+    if (this.error) {
+      this.hideError();
     }
   }
 
   /**
-        * Returns an array of planes to use other than the ground plane
-        * for passing intersection to clickPressed and clickDragged
-        */
-  function customIntersectionPlanes() {
+		 * Returns an array of planes to use other than the ground plane
+		 * for passing intersection to clickPressed and clickDragged
+		 */
+  customIntersectionPlanes() {
     return [];
   }
 
   /** 
-        * returns the 2d corners of the bounding polygon
-        * 
-        * offset is Vector3 (used for getting corners of object at a new position)
-        * 
-        * TODO: handle rotated objects better!
-        */
-  function getCorners(xDim, yDim, position) {
-    position = position || position;
+		 * returns the 2d corners of the bounding polygon
+		 * 
+		 * offset is Vector3 (used for getting corners of object at a new position)
+		 * 
+		 * TODO: handle rotated objects better!
+		 */
+  getCorners(xDim, yDim, position) {
+    position = position || this.position;
 
-    var halfSize = halfSize.clone();
+    var halfSize = this.halfSize.clone();
 
     var c1 = new THREE.Vector3(-halfSize.x, 0, -halfSize.z);
     var c2 = new THREE.Vector3(halfSize.x, 0, -halfSize.z);
@@ -256,9 +270,8 @@ export default (
     var c4 = new THREE.Vector3(-halfSize.x, 0, halfSize.z);
 
     var transform = new THREE.Matrix4();
-    //console.log(rotation.y);
-    transform.makeRotationY(rotation.y); //  + Math.PI/2)
-
+    //console.log(this.rotation.y);
+    transform.makeRotationY(this.rotation.y); //  + Math.PI/2)
     c1.applyMatrix4(transform);
     c2.applyMatrix4(transform);
     c3.applyMatrix4(transform);
@@ -270,10 +283,8 @@ export default (
     c4.add(position);
 
     //halfSize.applyMatrix4(transform);
-
     //var min = position.clone().sub(halfSize);
     //var max = position.clone().add(halfSize);
-
     var corners = [
       { x: c1.x, y: c1.z },
       { x: c2.x, y: c2.z },
@@ -287,26 +298,26 @@ export default (
   /** */
 
   /** */
-  function showError(vec3) {
-    vec3 = vec3 || position;
-    if (!error) {
-      error = true;
-      errorGlow = createGlow(errorColor, 0.8, true);
-      scene.add(errorGlow);
+  showError(vec3) {
+    vec3 = vec3 || this.position;
+    if (!this.error) {
+      this.error = true;
+      this.errorGlow = this.createGlow(this.errorColor, 0.8, true);
+      this.scene.add(this.errorGlow);
     }
-    errorGlow.position.copy(vec3);
+    this.errorGlow.position.copy(vec3);
   }
 
   /** */
-  function hideError() {
-    if (error) {
-      error = false;
-      scene.remove(errorGlow);
+  hideError() {
+    if (this.error) {
+      this.error = false;
+      this.scene.remove(this.errorGlow);
     }
   }
 
   /** */
-  function objectHalfSize() {
+  objectHalfSize() {
     var objectBox = new THREE.Box3();
     objectBox.setFromObject(this);
     return objectBox.max
@@ -316,7 +327,7 @@ export default (
   }
 
   /** */
-  function createGlow(color, opacity, ignoreDepth) {
+  createGlow(color, opacity, ignoreDepth) {
     ignoreDepth = ignoreDepth || false;
     opacity = opacity || 0.2;
     var glowMaterial = new THREE.MeshBasicMaterial({
@@ -327,14 +338,10 @@ export default (
       depthTest: !ignoreDepth
     });
 
-    var glow = new THREE.Mesh(geometry.clone(), glowMaterial);
-    glow.position.copy(position);
-    glow.rotation.copy(rotation);
-    glow.scale.copy(scale);
+    var glow = new THREE.Mesh(this.geometry.clone(), glowMaterial);
+    glow.position.copy(this.position);
+    glow.rotation.copy(this.rotation);
+    glow.scale.copy(this.scale);
     return glow;
   }
-
-  return {
-    self
-  };
-};
+}
