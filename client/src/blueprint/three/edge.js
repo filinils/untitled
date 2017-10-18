@@ -234,7 +234,6 @@ export default function(scene, edge, controls) {
 			shape.holes.push(new THREE.Path(holePoints));
 		});
 
-		console.log(shape);
 		var geometry = new THREE.ShapeGeometry(shape);
 
 		geometry.vertices.forEach(v => {

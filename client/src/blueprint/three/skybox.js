@@ -3,7 +3,7 @@ import * as THREE from "three";
 export default function(scene) {
 	var scope = this;
 
-	var topColor = 0xff0000; //0xD8ECF9; Should be set back to 0xffffff
+	var topColor = 0xffffff; //0xD8ECF9; Should be set back to 0xffffff
 	var bottomColor = 0xe9e9e9; //0xf9f9f9;//0x565e63
 	var verticalOffset = 500;
 	var sphereRadius = 4000;

@@ -57,7 +57,7 @@ export default class HalfEdge {
 		this.invExteriorTransform = new THREE.Matrix4();
 
 		/** */
-		this.redrawCallbacks = callbacks();
+		this.redrawCallbacks = new callbacks();
 		this.generatePlane = this.generatePlane.bind(this);
 	}
 
