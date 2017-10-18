@@ -147,7 +147,8 @@ export default (model, textureDir) => {
 		clearItems,
 		itemLoadingCallbacks,
 		itemLoadedCallbacks,
-		addItem
+		addItem,
+		getItems
 	};
 
 	return Object.assign(scene, service);

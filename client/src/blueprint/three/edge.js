@@ -11,7 +11,7 @@ export default function(scene, edge, controls) {
 	var basePlanes = []; // always visible
 	var texture = null;
 
-	var lightMap = THREE.ImageUtils.loadTexture(
+	var lightMap = THREE.TextureLoader(
 		"assets/rooms/textures/walllightmap.png"
 	);
 	var fillerColor = 0xdddddd;
