@@ -3,12 +3,15 @@ import Controller from "./controller";
 import Floorplan from "./floorplan";
 import Controls from "./controls";
 import Lights from "./lights";
-
 import Skybox from "./skybox";
 import HUD from "./hud";
+import callbacks from "../../utils/callbacks";
 
 export default function(model, element, canvasElement, opts) {
 	var scope = this;
+
+	this.itemSelectedCallbacks = new callbacks();
+	this.itemUnselectedCallbacks = new callbacks();
 
 	var options = {
 		resize: true,
