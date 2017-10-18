@@ -12,7 +12,7 @@ export default function(scene, edge, controls) {
 	var texture = null;
 
 	var lightMap = THREE.ImageUtils.loadTexture(
-		"rooms/textures/walllightmap.png"
+		"assets/rooms/textures/walllightmap.png"
 	);
 	var fillerColor = 0xdddddd;
 	var sideColor = 0xcccccc;
