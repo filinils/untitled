@@ -1,4 +1,3 @@
-import THREE from "three";
 import Corner from "./corner";
 import Utils from "../core/utils";
 import Item from "../items/item";
@@ -30,7 +29,6 @@ export default class Wall {
 		this.end = end;
 		this.id = this.getUuid();
 
-		let name = "Jerry";
 		this.start.attachStart(this);
 		this.end.attachEnd(this);
 
@@ -49,12 +47,12 @@ export default class Wall {
 
 		this.deleted_callbacks = new callbacks();
 		/** Actions to be applied after movement. */
-		this.moved_callbacks = callbacks();
+		this.moved_callbacks = new callbacks();
 
 		// /** Actions to be applied on removal. */
 
 		// /** Actions to be applied explicitly. */
-		this.action_callbacks = callbacks();
+		this.action_callbacks = new callbacks();
 	}
 
 	getUuid() {

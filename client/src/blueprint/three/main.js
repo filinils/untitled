@@ -225,15 +225,17 @@ export default function(model, element, canvasElement, opts) {
 
 	this.centerCamera = function() {
 		var yOffset = 150.0;
-
+		console.log("CENTER CAMERA");
 		var pan = model.floorplan.getCenter();
 		pan.y = yOffset;
 
 		scope.controls.target = pan;
 
 		var distance = model.floorplan.getSize().z * 1.5;
+		console.log("model floorplan: ", model.floorplan.getSize());
 
-		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
+		// var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
+		var offset = pan.clone().add(new THREE.Vector3(0, distance, -1000));
 		// Line below was originally commented out
 		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);
