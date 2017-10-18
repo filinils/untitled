@@ -232,8 +232,7 @@ export default function(model, element, canvasElement, opts) {
 
 		var distance = model.floorplan.getSize().z * 1.5;
 
-		// var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
-		var offset = pan.clone().add(new THREE.Vector3(0, distance, -1000));
+		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
 		// Line below was originally commented out
 		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);

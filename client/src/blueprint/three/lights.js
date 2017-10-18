@@ -30,12 +30,12 @@ export default function(scene, floorplan) {
 		dirLight.shadow.bias = -0.0001;
 		dirLight.shadow.darkness = 0.2;
 		dirLight.visible = true;
-		// dirLight.shadowCameraVisible = false;
+		dirLight.shadowCameraVisible = false;
 
 		scene.add(dirLight);
 		scene.add(dirLight.target);
 
-		// floorplan.fireOnUpdatedRooms(updateShadowCamera);
+		floorplan.fireOnUpdatedRooms(updateShadowCamera);
 	}
 
 	function updateShadowCamera() {
