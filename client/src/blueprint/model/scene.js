@@ -9,6 +9,7 @@ import * as Core from "../core/configuration";
 import Factory from "../items/factory";
 import Item from "../items/item";
 import callbacks from "../../utils/callbacks";
+FBXLoader(THREE);
 
 /**
    * The Scene is a manager of Items and also links to a ThreeJS scene.
@@ -36,7 +37,7 @@ export default (model, textureDir) => {
 	// init item loader
 	let loader = new THREE.JSONLoader();
 
-	let fbXLoader = new THREE.FBXLoader();
+	let fbxLoader = THREE.FBXLoader();
 
 	loader.crossOrigin = "";
 
