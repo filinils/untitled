@@ -48,10 +48,10 @@ export default function(scene, floorplan) {
 		dirLight.target.position.copy(center);
 		//dirLight.updateMatrix();
 		//dirLight.updateWorldMatrix()
-		dirLight.shadowCameraLeft = -d;
-		dirLight.shadowCameraRight = d;
-		dirLight.shadowCameraTop = d;
-		dirLight.shadowCameraBottom = -d;
+		dirLight.shadow.camera.left = -d;
+		dirLight.shadow.camera.right = d;
+		dirLight.shadow.camera.top = d;
+		dirLight.shadow.camera.bottom = -d;
 		// this is necessary for updates
 		if (dirLight.shadowCamera) {
 			dirLight.shadowCamera.left = dirLight.shadowCameraLeft;
