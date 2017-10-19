@@ -27,7 +27,6 @@ export default function(scene, floorplan, controls) {
 
 		// draw floors
 		scope.floorplan.getRooms().forEach(room => {
-			alert("TEST");
 			var threeFloor = new Floor(scene, room);
 			scope.floors.push(threeFloor);
 			threeFloor.addToScene();

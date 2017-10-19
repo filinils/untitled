@@ -253,7 +253,11 @@ export default class Floorplan {
 
 	/** clear out obsolete floor textures */
 	updateFloorTextures() {
+
+
 		var uuids = Utils.map(this.rooms, function(room) {
+
+			
 			return room.getUuid();
 		});
 		for (var uuid in this.floorTextures) {

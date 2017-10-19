@@ -352,6 +352,10 @@ export default (floorplan, x, y, newId) => {
 		relativeMove,
 		x,
 		y,
-		id
+		id,
+		wallTo,
+		wallToOrFrom,
+		wallStarts,
+		wallFrom
 	};
 };

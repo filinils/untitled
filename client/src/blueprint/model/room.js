@@ -4,6 +4,7 @@ import FloorPlan from "./floorplan";
 import HalfEdge from "./half_edge";
 import Utils from "../core/utils";
 import * as Core from "../core/configuration";
+import Callbacks from "../../utils/callbacks";
 
 /** Default texture to be used if nothing is provided. */
 const defaultRoomTexture = {
@@ -14,25 +15,35 @@ const defaultRoomTexture = {
 /** 
    * A Room is the combination of a Floorplan with a floor plane. 
    */
-export default (floorplan, corners) => {
-	let interiorCorners = [];
-	let edgePointer = null;
-	let floorPlane = null;
-	let customTexture = false;
+export default class Room {
+	constructor(floorplan, corners) {
+		this.floorplan = floorplan;
+		this.corners = corners;
+		this.interiorCorners = [];
 
-	this.getUuid = () => {
+		this.floorPlane = null;
+		this.customTexture = false;
+		this.edgePointer = null;
+
+		this.floorChangeCallbacks = new Callbacks();
+		this.updateWalls();
+		this.updateInteriorCorners();
+		this.generatePlane();
+	}
+
+	getUuid() {
 		var cornerUuids = Utils.map(this.corners, function(c) {
 			return c.id;
 		});
 		cornerUuids.sort();
 		return cornerUuids.join();
-	};
+	}
 
-	function fireOnFloorChange(callback) {
+	fireOnFloorChange(callback) {
 		this.floorChangeCallbacks.add(callback);
 	}
 
-	function getTexture() {
+	getTexture() {
 		var uuid = this.getUuid();
 		var tex = this.floorplan.getFloorTexture(uuid);
 		return tex || defaultRoomTexture;
@@ -41,13 +52,13 @@ export default (floorplan, corners) => {
 	/** 
 	 * textureStretch always true, just an argument for consistency with walls
      */
-	function setTexture(textureUrl, textureStretch, textureScale) {
+	setTexture(textureUrl, textureStretch, textureScale) {
 		var uuid = this.getUuid();
 		this.floorplan.setFloorTexture(uuid, textureUrl, textureScale);
 		this.floorChangeCallbacks.fire();
 	}
 
-	function generatePlane() {
+	generatePlane() {
 		var points = [];
 		this.interiorCorners.forEach(corner => {
 			points.push(new THREE.Vector2(corner.x, corner.y));
@@ -65,7 +76,7 @@ export default (floorplan, corners) => {
 		this.floorPlane.room = this; // js monkey patch
 	}
 
-	function cycleIndex(index) {
+	cycleIndex(index) {
 		if (index < 0) {
 			return (index += this.corners.length);
 		} else {
@@ -73,7 +84,7 @@ export default (floorplan, corners) => {
 		}
 	}
 
-	function updateInteriorCorners() {
+	updateInteriorCorners() {
 		var edge = this.edgePointer;
 		while (true) {
 			this.interiorCorners.push(edge.interiorStart());
@@ -90,7 +101,7 @@ export default (floorplan, corners) => {
 	 * Populates each wall's half edge relating to this room
 	 * this creates a fancy doubly connected edge list (DCEL)
      */
-	this.updateWalls = () => {
+	updateWalls() {
 		var prevEdge = null;
 		var firstEdge = null;
 
@@ -123,12 +134,9 @@ export default (floorplan, corners) => {
 				}
 			}
 			prevEdge = edge;
+			this.edgePointer = firstEdge;
 		}
 
-		this.updateWalls();
-		this.updateInteriorCorners();
-		this.generatePlane();
 		// hold on to an edge reference
-		this.edgePointer = firstEdge;
-	};
-};
+	}
+}

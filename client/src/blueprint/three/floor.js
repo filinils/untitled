@@ -28,7 +28,14 @@ export default function(scene, room) {
 	function buildFloor() {
 		var textureSettings = scope.room.getTexture();
 		// setup texture
-		var floorTexture = THREE.TextureLoader(textureSettings.url);
+
+		let textureLoader = new THREE.TextureLoader();
+		let floorTexture = textureLoader.load(textureSettings.url,(texture)=>{
+
+			
+		});
+
+
 		floorTexture.wrapS = THREE.RepeatWrapping;
 		floorTexture.wrapT = THREE.RepeatWrapping;
 		floorTexture.repeat.set(1, 1);
