@@ -150,12 +150,13 @@ export default (floorplan, x, y, newId) => {
      * @returns True in case of connection.
      */
 	function isWallConnected(wall) {
-		for (var i = 0; i < wallStarts.length; i++) {
+		let i;
+		for (i = 0; i < wallStarts.length; i++) {
 			if (wallStarts[i] == wall) {
 				return true;
 			}
 		}
-		for (var i = 0; i < wallEnds.length; i++) {
+		for (i = 0; i < wallEnds.length; i++) {
 			if (wallEnds[i] == wall) {
 				return true;
 			}

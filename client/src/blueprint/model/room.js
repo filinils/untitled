@@ -5,13 +5,6 @@ import HalfEdge from "./half_edge";
 import Utils from "../core/utils";
 import * as Core from "../core/configuration";
 
-/*
-TODO
-var Vec2 = require('vec2')
-var segseg = require('segseg')
-var Polygon = require('polygon')
-*/
-
 /** Default texture to be used if nothing is provided. */
 const defaultRoomTexture = {
 	url: "assets/rooms/textures/hardwood.png",
@@ -22,23 +15,10 @@ const defaultRoomTexture = {
    * A Room is the combination of a Floorplan with a floor plane. 
    */
 export default (floorplan, corners) => {
-	/** */
 	let interiorCorners = [];
-
-	/** */
 	let edgePointer = null;
-
-	/** floor plane for intersection testing */
 	let floorPlane = null;
-
-	/** */
 	let customTexture = false;
-
-	/** */
-
-	/**
-     *  ordered CCW
-     */
 
 	this.updateWalls();
 	this.updateInteriorCorners();
