@@ -30,6 +30,8 @@ export default class Floorplan {
   * url and scale attributes.
   */
 		this.floorTextures = {};
+
+		this.updateFloorTextures = this.updateFloorTextures.bind(this);
 	}
 
 	// hack
@@ -404,7 +406,6 @@ export default class Floorplan {
 
 		function _findTightestCycle(firstCorner, secondCorner) {
 			var stack = [];
-
 			var next = {
 				corner: secondCorner,
 				previousCorners: [firstCorner]
@@ -424,7 +425,6 @@ export default class Floorplan {
 				) {
 					return next.previousCorners;
 				}
-
 				var addToStack = [];
 				var adjacentCorners = next.corner.adjacentCorners();
 				for (var i = 0; i < adjacentCorners.length; i++) {

@@ -12,7 +12,7 @@ export default function(model, element, canvasElement, opts) {
 
 	this.itemSelectedCallbacks = new callbacks();
 	this.itemUnselectedCallbacks = new callbacks();
-	this.nothingClickedCallbacks = new callbacks();
+	this.nothingClicked = new callbacks();
 
 	var options = {
 		resize: true,
