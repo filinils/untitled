@@ -20,17 +20,13 @@ export default (floorplan, corners) => {
 	let floorPlane = null;
 	let customTexture = false;
 
-	this.updateWalls();
-	this.updateInteriorCorners();
-	this.generatePlane();
-
-	function getUuid() {
+	this.getUuid = () => {
 		var cornerUuids = Utils.map(this.corners, function(c) {
 			return c.id;
 		});
 		cornerUuids.sort();
 		return cornerUuids.join();
-	}
+	};
 
 	function fireOnFloorChange(callback) {
 		this.floorChangeCallbacks.add(callback);
@@ -43,7 +39,7 @@ export default (floorplan, corners) => {
 	}
 
 	/** 
-     * textureStretch always true, just an argument for consistency with walls
+	 * textureStretch always true, just an argument for consistency with walls
      */
 	function setTexture(textureUrl, textureStretch, textureScale) {
 		var uuid = this.getUuid();
@@ -91,10 +87,10 @@ export default (floorplan, corners) => {
 	}
 
 	/** 
-     * Populates each wall's half edge relating to this room
-     * this creates a fancy doubly connected edge list (DCEL)
+	 * Populates each wall's half edge relating to this room
+	 * this creates a fancy doubly connected edge list (DCEL)
      */
-	function updateWalls() {
+	this.updateWalls = () => {
 		var prevEdge = null;
 		var firstEdge = null;
 
@@ -129,7 +125,10 @@ export default (floorplan, corners) => {
 			prevEdge = edge;
 		}
 
+		this.updateWalls();
+		this.updateInteriorCorners();
+		this.generatePlane();
 		// hold on to an edge reference
 		this.edgePointer = firstEdge;
-	}
+	};
 };

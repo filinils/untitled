@@ -1,11 +1,8 @@
 import Wall from "./wall";
 import FloorPlan from "./floorplan";
-
 import Callbacks from "../../utils/callbacks";
-
 import Utils from "../core/utils";
 
-/** */
 const cornerTolerance = 20;
 
 /**
@@ -28,7 +25,7 @@ export default (floorplan, x, y, newId) => {
      * @param func The function to be added.
     */
 	function fireOnMove(func) {
-		//moved_callbacks.add(func);
+		moved_callbacks.add(func);
 	}
 
 	/** Add function to deleted callbacks.
@@ -42,7 +39,7 @@ export default (floorplan, x, y, newId) => {
      * @param func The function to be added.
      */
 	function fireOnAction(func) {
-		// action_callbacks.add(func);
+		action_callbacks.add(func);
 	}
 
 	/**
@@ -135,12 +132,13 @@ export default (floorplan, x, y, newId) => {
      * @returns Array of corners.
      */
 	function adjacentCorners() {
-		var retArray = [];
-		for (var i = 0; i < wallStarts.length; i++) {
-			retArray.push(wallStarts[i].getEnd());
+		let retArray = [];
+		let i;
+		for (i = 0; i < wallStarts.length; i++) {
+			retArray.push(wallStarts[i].end);
 		}
-		for (var i = 0; i < wallEnds.length; i++) {
-			retArray.push(wallEnds[i].getStart());
+		for (i = 0; i < wallEnds.length; i++) {
+			retArray.push(wallEnds[i].start);
 		}
 		return retArray;
 	}
@@ -353,6 +351,7 @@ export default (floorplan, x, y, newId) => {
 		snapToAxis,
 		relativeMove,
 		x,
-		y
+		y,
+		id
 	};
 };
