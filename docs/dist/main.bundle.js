@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b67eac0a2ce92892e45f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3a19b032e6c6fc775f1f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11885,7 +11885,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot?v=4.7.0") + ");\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot") + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff2?v=4.7.0") + ") format(\"woff2\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff?v=4.7.0") + ") format(\"woff\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.ttf?v=4.7.0") + ") format(\"truetype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.svg?v=4.7.0") + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%; }\n\n.fa-2x {\n  font-size: 2em; }\n\n.fa-3x {\n  font-size: 3em; }\n\n.fa-4x {\n  font-size: 4em; }\n\n.fa-5x {\n  font-size: 5em; }\n\n.fa-fw {\n  width: 1.28571em;\n  text-align: center; }\n\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none; }\n  .fa-ul > li {\n    position: relative; }\n\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center; }\n  .fa-li.fa-lg {\n    left: -1.85714em; }\n\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em; }\n\n.fa-pull-left {\n  float: left; }\n\n.fa-pull-right {\n  float: right; }\n\n.fa.fa-pull-left {\n  margin-right: .3em; }\n\n.fa.fa-pull-right {\n  margin-left: .3em; }\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right; }\n\n.pull-left {\n  float: left; }\n\n.fa.pull-left {\n  margin-right: .3em; }\n\n.fa.pull-right {\n  margin-left: .3em; }\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear; }\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8); }\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg); }\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg); }\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1); }\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1); }\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none; }\n\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle; }\n\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center; }\n\n.fa-stack-1x {\n  line-height: inherit; }\n\n.fa-stack-2x {\n  font-size: 2em; }\n\n.fa-inverse {\n  color: #fff; }\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\"; }\n\n.fa-music:before {\n  content: \"\\F001\"; }\n\n.fa-search:before {\n  content: \"\\F002\"; }\n\n.fa-envelope-o:before {\n  content: \"\\F003\"; }\n\n.fa-heart:before {\n  content: \"\\F004\"; }\n\n.fa-star:before {\n  content: \"\\F005\"; }\n\n.fa-star-o:before {\n  content: \"\\F006\"; }\n\n.fa-user:before {\n  content: \"\\F007\"; }\n\n.fa-film:before {\n  content: \"\\F008\"; }\n\n.fa-th-large:before {\n  content: \"\\F009\"; }\n\n.fa-th:before {\n  content: \"\\F00A\"; }\n\n.fa-th-list:before {\n  content: \"\\F00B\"; }\n\n.fa-check:before {\n  content: \"\\F00C\"; }\n\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\"; }\n\n.fa-search-plus:before {\n  content: \"\\F00E\"; }\n\n.fa-search-minus:before {\n  content: \"\\F010\"; }\n\n.fa-power-off:before {\n  content: \"\\F011\"; }\n\n.fa-signal:before {\n  content: \"\\F012\"; }\n\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\"; }\n\n.fa-trash-o:before {\n  content: \"\\F014\"; }\n\n.fa-home:before {\n  content: \"\\F015\"; }\n\n.fa-file-o:before {\n  content: \"\\F016\"; }\n\n.fa-clock-o:before {\n  content: \"\\F017\"; }\n\n.fa-road:before {\n  content: \"\\F018\"; }\n\n.fa-download:before {\n  content: \"\\F019\"; }\n\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\"; }\n\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\"; }\n\n.fa-inbox:before {\n  content: \"\\F01C\"; }\n\n.fa-play-circle-o:before {\n  content: \"\\F01D\"; }\n\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\"; }\n\n.fa-refresh:before {\n  content: \"\\F021\"; }\n\n.fa-list-alt:before {\n  content: \"\\F022\"; }\n\n.fa-lock:before {\n  content: \"\\F023\"; }\n\n.fa-flag:before {\n  content: \"\\F024\"; }\n\n.fa-headphones:before {\n  content: \"\\F025\"; }\n\n.fa-volume-off:before {\n  content: \"\\F026\"; }\n\n.fa-volume-down:before {\n  content: \"\\F027\"; }\n\n.fa-volume-up:before {\n  content: \"\\F028\"; }\n\n.fa-qrcode:before {\n  content: \"\\F029\"; }\n\n.fa-barcode:before {\n  content: \"\\F02A\"; }\n\n.fa-tag:before {\n  content: \"\\F02B\"; }\n\n.fa-tags:before {\n  content: \"\\F02C\"; }\n\n.fa-book:before {\n  content: \"\\F02D\"; }\n\n.fa-bookmark:before {\n  content: \"\\F02E\"; }\n\n.fa-print:before {\n  content: \"\\F02F\"; }\n\n.fa-camera:before {\n  content: \"\\F030\"; }\n\n.fa-font:before {\n  content: \"\\F031\"; }\n\n.fa-bold:before {\n  content: \"\\F032\"; }\n\n.fa-italic:before {\n  content: \"\\F033\"; }\n\n.fa-text-height:before {\n  content: \"\\F034\"; }\n\n.fa-text-width:before {\n  content: \"\\F035\"; }\n\n.fa-align-left:before {\n  content: \"\\F036\"; }\n\n.fa-align-center:before {\n  content: \"\\F037\"; }\n\n.fa-align-right:before {\n  content: \"\\F038\"; }\n\n.fa-align-justify:before {\n  content: \"\\F039\"; }\n\n.fa-list:before {\n  content: \"\\F03A\"; }\n\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\"; }\n\n.fa-indent:before {\n  content: \"\\F03C\"; }\n\n.fa-video-camera:before {\n  content: \"\\F03D\"; }\n\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\"; }\n\n.fa-pencil:before {\n  content: \"\\F040\"; }\n\n.fa-map-marker:before {\n  content: \"\\F041\"; }\n\n.fa-adjust:before {\n  content: \"\\F042\"; }\n\n.fa-tint:before {\n  content: \"\\F043\"; }\n\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\"; }\n\n.fa-share-square-o:before {\n  content: \"\\F045\"; }\n\n.fa-check-square-o:before {\n  content: \"\\F046\"; }\n\n.fa-arrows:before {\n  content: \"\\F047\"; }\n\n.fa-step-backward:before {\n  content: \"\\F048\"; }\n\n.fa-fast-backward:before {\n  content: \"\\F049\"; }\n\n.fa-backward:before {\n  content: \"\\F04A\"; }\n\n.fa-play:before {\n  content: \"\\F04B\"; }\n\n.fa-pause:before {\n  content: \"\\F04C\"; }\n\n.fa-stop:before {\n  content: \"\\F04D\"; }\n\n.fa-forward:before {\n  content: \"\\F04E\"; }\n\n.fa-fast-forward:before {\n  content: \"\\F050\"; }\n\n.fa-step-forward:before {\n  content: \"\\F051\"; }\n\n.fa-eject:before {\n  content: \"\\F052\"; }\n\n.fa-chevron-left:before {\n  content: \"\\F053\"; }\n\n.fa-chevron-right:before {\n  content: \"\\F054\"; }\n\n.fa-plus-circle:before {\n  content: \"\\F055\"; }\n\n.fa-minus-circle:before {\n  content: \"\\F056\"; }\n\n.fa-times-circle:before {\n  content: \"\\F057\"; }\n\n.fa-check-circle:before {\n  content: \"\\F058\"; }\n\n.fa-question-circle:before {\n  content: \"\\F059\"; }\n\n.fa-info-circle:before {\n  content: \"\\F05A\"; }\n\n.fa-crosshairs:before {\n  content: \"\\F05B\"; }\n\n.fa-times-circle-o:before {\n  content: \"\\F05C\"; }\n\n.fa-check-circle-o:before {\n  content: \"\\F05D\"; }\n\n.fa-ban:before {\n  content: \"\\F05E\"; }\n\n.fa-arrow-left:before {\n  content: \"\\F060\"; }\n\n.fa-arrow-right:before {\n  content: \"\\F061\"; }\n\n.fa-arrow-up:before {\n  content: \"\\F062\"; }\n\n.fa-arrow-down:before {\n  content: \"\\F063\"; }\n\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\"; }\n\n.fa-expand:before {\n  content: \"\\F065\"; }\n\n.fa-compress:before {\n  content: \"\\F066\"; }\n\n.fa-plus:before {\n  content: \"\\F067\"; }\n\n.fa-minus:before {\n  content: \"\\F068\"; }\n\n.fa-asterisk:before {\n  content: \"\\F069\"; }\n\n.fa-exclamation-circle:before {\n  content: \"\\F06A\"; }\n\n.fa-gift:before {\n  content: \"\\F06B\"; }\n\n.fa-leaf:before {\n  content: \"\\F06C\"; }\n\n.fa-fire:before {\n  content: \"\\F06D\"; }\n\n.fa-eye:before {\n  content: \"\\F06E\"; }\n\n.fa-eye-slash:before {\n  content: \"\\F070\"; }\n\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\"; }\n\n.fa-plane:before {\n  content: \"\\F072\"; }\n\n.fa-calendar:before {\n  content: \"\\F073\"; }\n\n.fa-random:before {\n  content: \"\\F074\"; }\n\n.fa-comment:before {\n  content: \"\\F075\"; }\n\n.fa-magnet:before {\n  content: \"\\F076\"; }\n\n.fa-chevron-up:before {\n  content: \"\\F077\"; }\n\n.fa-chevron-down:before {\n  content: \"\\F078\"; }\n\n.fa-retweet:before {\n  content: \"\\F079\"; }\n\n.fa-shopping-cart:before {\n  content: \"\\F07A\"; }\n\n.fa-folder:before {\n  content: \"\\F07B\"; }\n\n.fa-folder-open:before {\n  content: \"\\F07C\"; }\n\n.fa-arrows-v:before {\n  content: \"\\F07D\"; }\n\n.fa-arrows-h:before {\n  content: \"\\F07E\"; }\n\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\"; }\n\n.fa-twitter-square:before {\n  content: \"\\F081\"; }\n\n.fa-facebook-square:before {\n  content: \"\\F082\"; }\n\n.fa-camera-retro:before {\n  content: \"\\F083\"; }\n\n.fa-key:before {\n  content: \"\\F084\"; }\n\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\"; }\n\n.fa-comments:before {\n  content: \"\\F086\"; }\n\n.fa-thumbs-o-up:before {\n  content: \"\\F087\"; }\n\n.fa-thumbs-o-down:before {\n  content: \"\\F088\"; }\n\n.fa-star-half:before {\n  content: \"\\F089\"; }\n\n.fa-heart-o:before {\n  content: \"\\F08A\"; }\n\n.fa-sign-out:before {\n  content: \"\\F08B\"; }\n\n.fa-linkedin-square:before {\n  content: \"\\F08C\"; }\n\n.fa-thumb-tack:before {\n  content: \"\\F08D\"; }\n\n.fa-external-link:before {\n  content: \"\\F08E\"; }\n\n.fa-sign-in:before {\n  content: \"\\F090\"; }\n\n.fa-trophy:before {\n  content: \"\\F091\"; }\n\n.fa-github-square:before {\n  content: \"\\F092\"; }\n\n.fa-upload:before {\n  content: \"\\F093\"; }\n\n.fa-lemon-o:before {\n  content: \"\\F094\"; }\n\n.fa-phone:before {\n  content: \"\\F095\"; }\n\n.fa-square-o:before {\n  content: \"\\F096\"; }\n\n.fa-bookmark-o:before {\n  content: \"\\F097\"; }\n\n.fa-phone-square:before {\n  content: \"\\F098\"; }\n\n.fa-twitter:before {\n  content: \"\\F099\"; }\n\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\"; }\n\n.fa-github:before {\n  content: \"\\F09B\"; }\n\n.fa-unlock:before {\n  content: \"\\F09C\"; }\n\n.fa-credit-card:before {\n  content: \"\\F09D\"; }\n\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\"; }\n\n.fa-hdd-o:before {\n  content: \"\\F0A0\"; }\n\n.fa-bullhorn:before {\n  content: \"\\F0A1\"; }\n\n.fa-bell:before {\n  content: \"\\F0F3\"; }\n\n.fa-certificate:before {\n  content: \"\\F0A3\"; }\n\n.fa-hand-o-right:before {\n  content: \"\\F0A4\"; }\n\n.fa-hand-o-left:before {\n  content: \"\\F0A5\"; }\n\n.fa-hand-o-up:before {\n  content: \"\\F0A6\"; }\n\n.fa-hand-o-down:before {\n  content: \"\\F0A7\"; }\n\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\"; }\n\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\"; }\n\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\"; }\n\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\"; }\n\n.fa-globe:before {\n  content: \"\\F0AC\"; }\n\n.fa-wrench:before {\n  content: \"\\F0AD\"; }\n\n.fa-tasks:before {\n  content: \"\\F0AE\"; }\n\n.fa-filter:before {\n  content: \"\\F0B0\"; }\n\n.fa-briefcase:before {\n  content: \"\\F0B1\"; }\n\n.fa-arrows-alt:before {\n  content: \"\\F0B2\"; }\n\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\"; }\n\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\"; }\n\n.fa-cloud:before {\n  content: \"\\F0C2\"; }\n\n.fa-flask:before {\n  content: \"\\F0C3\"; }\n\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\"; }\n\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\"; }\n\n.fa-paperclip:before {\n  content: \"\\F0C6\"; }\n\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\"; }\n\n.fa-square:before {\n  content: \"\\F0C8\"; }\n\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\"; }\n\n.fa-list-ul:before {\n  content: \"\\F0CA\"; }\n\n.fa-list-ol:before {\n  content: \"\\F0CB\"; }\n\n.fa-strikethrough:before {\n  content: \"\\F0CC\"; }\n\n.fa-underline:before {\n  content: \"\\F0CD\"; }\n\n.fa-table:before {\n  content: \"\\F0CE\"; }\n\n.fa-magic:before {\n  content: \"\\F0D0\"; }\n\n.fa-truck:before {\n  content: \"\\F0D1\"; }\n\n.fa-pinterest:before {\n  content: \"\\F0D2\"; }\n\n.fa-pinterest-square:before {\n  content: \"\\F0D3\"; }\n\n.fa-google-plus-square:before {\n  content: \"\\F0D4\"; }\n\n.fa-google-plus:before {\n  content: \"\\F0D5\"; }\n\n.fa-money:before {\n  content: \"\\F0D6\"; }\n\n.fa-caret-down:before {\n  content: \"\\F0D7\"; }\n\n.fa-caret-up:before {\n  content: \"\\F0D8\"; }\n\n.fa-caret-left:before {\n  content: \"\\F0D9\"; }\n\n.fa-caret-right:before {\n  content: \"\\F0DA\"; }\n\n.fa-columns:before {\n  content: \"\\F0DB\"; }\n\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\"; }\n\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\"; }\n\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\"; }\n\n.fa-envelope:before {\n  content: \"\\F0E0\"; }\n\n.fa-linkedin:before {\n  content: \"\\F0E1\"; }\n\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\"; }\n\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\"; }\n\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\"; }\n\n.fa-comment-o:before {\n  content: \"\\F0E5\"; }\n\n.fa-comments-o:before {\n  content: \"\\F0E6\"; }\n\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\"; }\n\n.fa-sitemap:before {\n  content: \"\\F0E8\"; }\n\n.fa-umbrella:before {\n  content: \"\\F0E9\"; }\n\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\"; }\n\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\"; }\n\n.fa-exchange:before {\n  content: \"\\F0EC\"; }\n\n.fa-cloud-download:before {\n  content: \"\\F0ED\"; }\n\n.fa-cloud-upload:before {\n  content: \"\\F0EE\"; }\n\n.fa-user-md:before {\n  content: \"\\F0F0\"; }\n\n.fa-stethoscope:before {\n  content: \"\\F0F1\"; }\n\n.fa-suitcase:before {\n  content: \"\\F0F2\"; }\n\n.fa-bell-o:before {\n  content: \"\\F0A2\"; }\n\n.fa-coffee:before {\n  content: \"\\F0F4\"; }\n\n.fa-cutlery:before {\n  content: \"\\F0F5\"; }\n\n.fa-file-text-o:before {\n  content: \"\\F0F6\"; }\n\n.fa-building-o:before {\n  content: \"\\F0F7\"; }\n\n.fa-hospital-o:before {\n  content: \"\\F0F8\"; }\n\n.fa-ambulance:before {\n  content: \"\\F0F9\"; }\n\n.fa-medkit:before {\n  content: \"\\F0FA\"; }\n\n.fa-fighter-jet:before {\n  content: \"\\F0FB\"; }\n\n.fa-beer:before {\n  content: \"\\F0FC\"; }\n\n.fa-h-square:before {\n  content: \"\\F0FD\"; }\n\n.fa-plus-square:before {\n  content: \"\\F0FE\"; }\n\n.fa-angle-double-left:before {\n  content: \"\\F100\"; }\n\n.fa-angle-double-right:before {\n  content: \"\\F101\"; }\n\n.fa-angle-double-up:before {\n  content: \"\\F102\"; }\n\n.fa-angle-double-down:before {\n  content: \"\\F103\"; }\n\n.fa-angle-left:before {\n  content: \"\\F104\"; }\n\n.fa-angle-right:before {\n  content: \"\\F105\"; }\n\n.fa-angle-up:before {\n  content: \"\\F106\"; }\n\n.fa-angle-down:before {\n  content: \"\\F107\"; }\n\n.fa-desktop:before {\n  content: \"\\F108\"; }\n\n.fa-laptop:before {\n  content: \"\\F109\"; }\n\n.fa-tablet:before {\n  content: \"\\F10A\"; }\n\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\"; }\n\n.fa-circle-o:before {\n  content: \"\\F10C\"; }\n\n.fa-quote-left:before {\n  content: \"\\F10D\"; }\n\n.fa-quote-right:before {\n  content: \"\\F10E\"; }\n\n.fa-spinner:before {\n  content: \"\\F110\"; }\n\n.fa-circle:before {\n  content: \"\\F111\"; }\n\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\"; }\n\n.fa-github-alt:before {\n  content: \"\\F113\"; }\n\n.fa-folder-o:before {\n  content: \"\\F114\"; }\n\n.fa-folder-open-o:before {\n  content: \"\\F115\"; }\n\n.fa-smile-o:before {\n  content: \"\\F118\"; }\n\n.fa-frown-o:before {\n  content: \"\\F119\"; }\n\n.fa-meh-o:before {\n  content: \"\\F11A\"; }\n\n.fa-gamepad:before {\n  content: \"\\F11B\"; }\n\n.fa-keyboard-o:before {\n  content: \"\\F11C\"; }\n\n.fa-flag-o:before {\n  content: \"\\F11D\"; }\n\n.fa-flag-checkered:before {\n  content: \"\\F11E\"; }\n\n.fa-terminal:before {\n  content: \"\\F120\"; }\n\n.fa-code:before {\n  content: \"\\F121\"; }\n\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\"; }\n\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\"; }\n\n.fa-location-arrow:before {\n  content: \"\\F124\"; }\n\n.fa-crop:before {\n  content: \"\\F125\"; }\n\n.fa-code-fork:before {\n  content: \"\\F126\"; }\n\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\"; }\n\n.fa-question:before {\n  content: \"\\F128\"; }\n\n.fa-info:before {\n  content: \"\\F129\"; }\n\n.fa-exclamation:before {\n  content: \"\\F12A\"; }\n\n.fa-superscript:before {\n  content: \"\\F12B\"; }\n\n.fa-subscript:before {\n  content: \"\\F12C\"; }\n\n.fa-eraser:before {\n  content: \"\\F12D\"; }\n\n.fa-puzzle-piece:before {\n  content: \"\\F12E\"; }\n\n.fa-microphone:before {\n  content: \"\\F130\"; }\n\n.fa-microphone-slash:before {\n  content: \"\\F131\"; }\n\n.fa-shield:before {\n  content: \"\\F132\"; }\n\n.fa-calendar-o:before {\n  content: \"\\F133\"; }\n\n.fa-fire-extinguisher:before {\n  content: \"\\F134\"; }\n\n.fa-rocket:before {\n  content: \"\\F135\"; }\n\n.fa-maxcdn:before {\n  content: \"\\F136\"; }\n\n.fa-chevron-circle-left:before {\n  content: \"\\F137\"; }\n\n.fa-chevron-circle-right:before {\n  content: \"\\F138\"; }\n\n.fa-chevron-circle-up:before {\n  content: \"\\F139\"; }\n\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\"; }\n\n.fa-html5:before {\n  content: \"\\F13B\"; }\n\n.fa-css3:before {\n  content: \"\\F13C\"; }\n\n.fa-anchor:before {\n  content: \"\\F13D\"; }\n\n.fa-unlock-alt:before {\n  content: \"\\F13E\"; }\n\n.fa-bullseye:before {\n  content: \"\\F140\"; }\n\n.fa-ellipsis-h:before {\n  content: \"\\F141\"; }\n\n.fa-ellipsis-v:before {\n  content: \"\\F142\"; }\n\n.fa-rss-square:before {\n  content: \"\\F143\"; }\n\n.fa-play-circle:before {\n  content: \"\\F144\"; }\n\n.fa-ticket:before {\n  content: \"\\F145\"; }\n\n.fa-minus-square:before {\n  content: \"\\F146\"; }\n\n.fa-minus-square-o:before {\n  content: \"\\F147\"; }\n\n.fa-level-up:before {\n  content: \"\\F148\"; }\n\n.fa-level-down:before {\n  content: \"\\F149\"; }\n\n.fa-check-square:before {\n  content: \"\\F14A\"; }\n\n.fa-pencil-square:before {\n  content: \"\\F14B\"; }\n\n.fa-external-link-square:before {\n  content: \"\\F14C\"; }\n\n.fa-share-square:before {\n  content: \"\\F14D\"; }\n\n.fa-compass:before {\n  content: \"\\F14E\"; }\n\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\"; }\n\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\"; }\n\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\"; }\n\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\"; }\n\n.fa-gbp:before {\n  content: \"\\F154\"; }\n\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\"; }\n\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\"; }\n\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\"; }\n\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\"; }\n\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\"; }\n\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\"; }\n\n.fa-file:before {\n  content: \"\\F15B\"; }\n\n.fa-file-text:before {\n  content: \"\\F15C\"; }\n\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\"; }\n\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\"; }\n\n.fa-sort-amount-asc:before {\n  content: \"\\F160\"; }\n\n.fa-sort-amount-desc:before {\n  content: \"\\F161\"; }\n\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\"; }\n\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\"; }\n\n.fa-thumbs-up:before {\n  content: \"\\F164\"; }\n\n.fa-thumbs-down:before {\n  content: \"\\F165\"; }\n\n.fa-youtube-square:before {\n  content: \"\\F166\"; }\n\n.fa-youtube:before {\n  content: \"\\F167\"; }\n\n.fa-xing:before {\n  content: \"\\F168\"; }\n\n.fa-xing-square:before {\n  content: \"\\F169\"; }\n\n.fa-youtube-play:before {\n  content: \"\\F16A\"; }\n\n.fa-dropbox:before {\n  content: \"\\F16B\"; }\n\n.fa-stack-overflow:before {\n  content: \"\\F16C\"; }\n\n.fa-instagram:before {\n  content: \"\\F16D\"; }\n\n.fa-flickr:before {\n  content: \"\\F16E\"; }\n\n.fa-adn:before {\n  content: \"\\F170\"; }\n\n.fa-bitbucket:before {\n  content: \"\\F171\"; }\n\n.fa-bitbucket-square:before {\n  content: \"\\F172\"; }\n\n.fa-tumblr:before {\n  content: \"\\F173\"; }\n\n.fa-tumblr-square:before {\n  content: \"\\F174\"; }\n\n.fa-long-arrow-down:before {\n  content: \"\\F175\"; }\n\n.fa-long-arrow-up:before {\n  content: \"\\F176\"; }\n\n.fa-long-arrow-left:before {\n  content: \"\\F177\"; }\n\n.fa-long-arrow-right:before {\n  content: \"\\F178\"; }\n\n.fa-apple:before {\n  content: \"\\F179\"; }\n\n.fa-windows:before {\n  content: \"\\F17A\"; }\n\n.fa-android:before {\n  content: \"\\F17B\"; }\n\n.fa-linux:before {\n  content: \"\\F17C\"; }\n\n.fa-dribbble:before {\n  content: \"\\F17D\"; }\n\n.fa-skype:before {\n  content: \"\\F17E\"; }\n\n.fa-foursquare:before {\n  content: \"\\F180\"; }\n\n.fa-trello:before {\n  content: \"\\F181\"; }\n\n.fa-female:before {\n  content: \"\\F182\"; }\n\n.fa-male:before {\n  content: \"\\F183\"; }\n\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\"; }\n\n.fa-sun-o:before {\n  content: \"\\F185\"; }\n\n.fa-moon-o:before {\n  content: \"\\F186\"; }\n\n.fa-archive:before {\n  content: \"\\F187\"; }\n\n.fa-bug:before {\n  content: \"\\F188\"; }\n\n.fa-vk:before {\n  content: \"\\F189\"; }\n\n.fa-weibo:before {\n  content: \"\\F18A\"; }\n\n.fa-renren:before {\n  content: \"\\F18B\"; }\n\n.fa-pagelines:before {\n  content: \"\\F18C\"; }\n\n.fa-stack-exchange:before {\n  content: \"\\F18D\"; }\n\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\"; }\n\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\"; }\n\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\"; }\n\n.fa-dot-circle-o:before {\n  content: \"\\F192\"; }\n\n.fa-wheelchair:before {\n  content: \"\\F193\"; }\n\n.fa-vimeo-square:before {\n  content: \"\\F194\"; }\n\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\"; }\n\n.fa-plus-square-o:before {\n  content: \"\\F196\"; }\n\n.fa-space-shuttle:before {\n  content: \"\\F197\"; }\n\n.fa-slack:before {\n  content: \"\\F198\"; }\n\n.fa-envelope-square:before {\n  content: \"\\F199\"; }\n\n.fa-wordpress:before {\n  content: \"\\F19A\"; }\n\n.fa-openid:before {\n  content: \"\\F19B\"; }\n\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\"; }\n\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\"; }\n\n.fa-yahoo:before {\n  content: \"\\F19E\"; }\n\n.fa-google:before {\n  content: \"\\F1A0\"; }\n\n.fa-reddit:before {\n  content: \"\\F1A1\"; }\n\n.fa-reddit-square:before {\n  content: \"\\F1A2\"; }\n\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\"; }\n\n.fa-stumbleupon:before {\n  content: \"\\F1A4\"; }\n\n.fa-delicious:before {\n  content: \"\\F1A5\"; }\n\n.fa-digg:before {\n  content: \"\\F1A6\"; }\n\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\"; }\n\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\"; }\n\n.fa-drupal:before {\n  content: \"\\F1A9\"; }\n\n.fa-joomla:before {\n  content: \"\\F1AA\"; }\n\n.fa-language:before {\n  content: \"\\F1AB\"; }\n\n.fa-fax:before {\n  content: \"\\F1AC\"; }\n\n.fa-building:before {\n  content: \"\\F1AD\"; }\n\n.fa-child:before {\n  content: \"\\F1AE\"; }\n\n.fa-paw:before {\n  content: \"\\F1B0\"; }\n\n.fa-spoon:before {\n  content: \"\\F1B1\"; }\n\n.fa-cube:before {\n  content: \"\\F1B2\"; }\n\n.fa-cubes:before {\n  content: \"\\F1B3\"; }\n\n.fa-behance:before {\n  content: \"\\F1B4\"; }\n\n.fa-behance-square:before {\n  content: \"\\F1B5\"; }\n\n.fa-steam:before {\n  content: \"\\F1B6\"; }\n\n.fa-steam-square:before {\n  content: \"\\F1B7\"; }\n\n.fa-recycle:before {\n  content: \"\\F1B8\"; }\n\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\"; }\n\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\"; }\n\n.fa-tree:before {\n  content: \"\\F1BB\"; }\n\n.fa-spotify:before {\n  content: \"\\F1BC\"; }\n\n.fa-deviantart:before {\n  content: \"\\F1BD\"; }\n\n.fa-soundcloud:before {\n  content: \"\\F1BE\"; }\n\n.fa-database:before {\n  content: \"\\F1C0\"; }\n\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\"; }\n\n.fa-file-word-o:before {\n  content: \"\\F1C2\"; }\n\n.fa-file-excel-o:before {\n  content: \"\\F1C3\"; }\n\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\"; }\n\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\"; }\n\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\"; }\n\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\"; }\n\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\"; }\n\n.fa-file-code-o:before {\n  content: \"\\F1C9\"; }\n\n.fa-vine:before {\n  content: \"\\F1CA\"; }\n\n.fa-codepen:before {\n  content: \"\\F1CB\"; }\n\n.fa-jsfiddle:before {\n  content: \"\\F1CC\"; }\n\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\"; }\n\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\"; }\n\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\"; }\n\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\"; }\n\n.fa-git-square:before {\n  content: \"\\F1D2\"; }\n\n.fa-git:before {\n  content: \"\\F1D3\"; }\n\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\"; }\n\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\"; }\n\n.fa-qq:before {\n  content: \"\\F1D6\"; }\n\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\"; }\n\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\"; }\n\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\"; }\n\n.fa-history:before {\n  content: \"\\F1DA\"; }\n\n.fa-circle-thin:before {\n  content: \"\\F1DB\"; }\n\n.fa-header:before {\n  content: \"\\F1DC\"; }\n\n.fa-paragraph:before {\n  content: \"\\F1DD\"; }\n\n.fa-sliders:before {\n  content: \"\\F1DE\"; }\n\n.fa-share-alt:before {\n  content: \"\\F1E0\"; }\n\n.fa-share-alt-square:before {\n  content: \"\\F1E1\"; }\n\n.fa-bomb:before {\n  content: \"\\F1E2\"; }\n\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\"; }\n\n.fa-tty:before {\n  content: \"\\F1E4\"; }\n\n.fa-binoculars:before {\n  content: \"\\F1E5\"; }\n\n.fa-plug:before {\n  content: \"\\F1E6\"; }\n\n.fa-slideshare:before {\n  content: \"\\F1E7\"; }\n\n.fa-twitch:before {\n  content: \"\\F1E8\"; }\n\n.fa-yelp:before {\n  content: \"\\F1E9\"; }\n\n.fa-newspaper-o:before {\n  content: \"\\F1EA\"; }\n\n.fa-wifi:before {\n  content: \"\\F1EB\"; }\n\n.fa-calculator:before {\n  content: \"\\F1EC\"; }\n\n.fa-paypal:before {\n  content: \"\\F1ED\"; }\n\n.fa-google-wallet:before {\n  content: \"\\F1EE\"; }\n\n.fa-cc-visa:before {\n  content: \"\\F1F0\"; }\n\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\"; }\n\n.fa-cc-discover:before {\n  content: \"\\F1F2\"; }\n\n.fa-cc-amex:before {\n  content: \"\\F1F3\"; }\n\n.fa-cc-paypal:before {\n  content: \"\\F1F4\"; }\n\n.fa-cc-stripe:before {\n  content: \"\\F1F5\"; }\n\n.fa-bell-slash:before {\n  content: \"\\F1F6\"; }\n\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\"; }\n\n.fa-trash:before {\n  content: \"\\F1F8\"; }\n\n.fa-copyright:before {\n  content: \"\\F1F9\"; }\n\n.fa-at:before {\n  content: \"\\F1FA\"; }\n\n.fa-eyedropper:before {\n  content: \"\\F1FB\"; }\n\n.fa-paint-brush:before {\n  content: \"\\F1FC\"; }\n\n.fa-birthday-cake:before {\n  content: \"\\F1FD\"; }\n\n.fa-area-chart:before {\n  content: \"\\F1FE\"; }\n\n.fa-pie-chart:before {\n  content: \"\\F200\"; }\n\n.fa-line-chart:before {\n  content: \"\\F201\"; }\n\n.fa-lastfm:before {\n  content: \"\\F202\"; }\n\n.fa-lastfm-square:before {\n  content: \"\\F203\"; }\n\n.fa-toggle-off:before {\n  content: \"\\F204\"; }\n\n.fa-toggle-on:before {\n  content: \"\\F205\"; }\n\n.fa-bicycle:before {\n  content: \"\\F206\"; }\n\n.fa-bus:before {\n  content: \"\\F207\"; }\n\n.fa-ioxhost:before {\n  content: \"\\F208\"; }\n\n.fa-angellist:before {\n  content: \"\\F209\"; }\n\n.fa-cc:before {\n  content: \"\\F20A\"; }\n\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\"; }\n\n.fa-meanpath:before {\n  content: \"\\F20C\"; }\n\n.fa-buysellads:before {\n  content: \"\\F20D\"; }\n\n.fa-connectdevelop:before {\n  content: \"\\F20E\"; }\n\n.fa-dashcube:before {\n  content: \"\\F210\"; }\n\n.fa-forumbee:before {\n  content: \"\\F211\"; }\n\n.fa-leanpub:before {\n  content: \"\\F212\"; }\n\n.fa-sellsy:before {\n  content: \"\\F213\"; }\n\n.fa-shirtsinbulk:before {\n  content: \"\\F214\"; }\n\n.fa-simplybuilt:before {\n  content: \"\\F215\"; }\n\n.fa-skyatlas:before {\n  content: \"\\F216\"; }\n\n.fa-cart-plus:before {\n  content: \"\\F217\"; }\n\n.fa-cart-arrow-down:before {\n  content: \"\\F218\"; }\n\n.fa-diamond:before {\n  content: \"\\F219\"; }\n\n.fa-ship:before {\n  content: \"\\F21A\"; }\n\n.fa-user-secret:before {\n  content: \"\\F21B\"; }\n\n.fa-motorcycle:before {\n  content: \"\\F21C\"; }\n\n.fa-street-view:before {\n  content: \"\\F21D\"; }\n\n.fa-heartbeat:before {\n  content: \"\\F21E\"; }\n\n.fa-venus:before {\n  content: \"\\F221\"; }\n\n.fa-mars:before {\n  content: \"\\F222\"; }\n\n.fa-mercury:before {\n  content: \"\\F223\"; }\n\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\"; }\n\n.fa-transgender-alt:before {\n  content: \"\\F225\"; }\n\n.fa-venus-double:before {\n  content: \"\\F226\"; }\n\n.fa-mars-double:before {\n  content: \"\\F227\"; }\n\n.fa-venus-mars:before {\n  content: \"\\F228\"; }\n\n.fa-mars-stroke:before {\n  content: \"\\F229\"; }\n\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\"; }\n\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\"; }\n\n.fa-neuter:before {\n  content: \"\\F22C\"; }\n\n.fa-genderless:before {\n  content: \"\\F22D\"; }\n\n.fa-facebook-official:before {\n  content: \"\\F230\"; }\n\n.fa-pinterest-p:before {\n  content: \"\\F231\"; }\n\n.fa-whatsapp:before {\n  content: \"\\F232\"; }\n\n.fa-server:before {\n  content: \"\\F233\"; }\n\n.fa-user-plus:before {\n  content: \"\\F234\"; }\n\n.fa-user-times:before {\n  content: \"\\F235\"; }\n\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\"; }\n\n.fa-viacoin:before {\n  content: \"\\F237\"; }\n\n.fa-train:before {\n  content: \"\\F238\"; }\n\n.fa-subway:before {\n  content: \"\\F239\"; }\n\n.fa-medium:before {\n  content: \"\\F23A\"; }\n\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\"; }\n\n.fa-optin-monster:before {\n  content: \"\\F23C\"; }\n\n.fa-opencart:before {\n  content: \"\\F23D\"; }\n\n.fa-expeditedssl:before {\n  content: \"\\F23E\"; }\n\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\"; }\n\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\"; }\n\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\"; }\n\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\"; }\n\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\"; }\n\n.fa-mouse-pointer:before {\n  content: \"\\F245\"; }\n\n.fa-i-cursor:before {\n  content: \"\\F246\"; }\n\n.fa-object-group:before {\n  content: \"\\F247\"; }\n\n.fa-object-ungroup:before {\n  content: \"\\F248\"; }\n\n.fa-sticky-note:before {\n  content: \"\\F249\"; }\n\n.fa-sticky-note-o:before {\n  content: \"\\F24A\"; }\n\n.fa-cc-jcb:before {\n  content: \"\\F24B\"; }\n\n.fa-cc-diners-club:before {\n  content: \"\\F24C\"; }\n\n.fa-clone:before {\n  content: \"\\F24D\"; }\n\n.fa-balance-scale:before {\n  content: \"\\F24E\"; }\n\n.fa-hourglass-o:before {\n  content: \"\\F250\"; }\n\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\"; }\n\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\"; }\n\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\"; }\n\n.fa-hourglass:before {\n  content: \"\\F254\"; }\n\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\"; }\n\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\"; }\n\n.fa-hand-scissors-o:before {\n  content: \"\\F257\"; }\n\n.fa-hand-lizard-o:before {\n  content: \"\\F258\"; }\n\n.fa-hand-spock-o:before {\n  content: \"\\F259\"; }\n\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\"; }\n\n.fa-hand-peace-o:before {\n  content: \"\\F25B\"; }\n\n.fa-trademark:before {\n  content: \"\\F25C\"; }\n\n.fa-registered:before {\n  content: \"\\F25D\"; }\n\n.fa-creative-commons:before {\n  content: \"\\F25E\"; }\n\n.fa-gg:before {\n  content: \"\\F260\"; }\n\n.fa-gg-circle:before {\n  content: \"\\F261\"; }\n\n.fa-tripadvisor:before {\n  content: \"\\F262\"; }\n\n.fa-odnoklassniki:before {\n  content: \"\\F263\"; }\n\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\"; }\n\n.fa-get-pocket:before {\n  content: \"\\F265\"; }\n\n.fa-wikipedia-w:before {\n  content: \"\\F266\"; }\n\n.fa-safari:before {\n  content: \"\\F267\"; }\n\n.fa-chrome:before {\n  content: \"\\F268\"; }\n\n.fa-firefox:before {\n  content: \"\\F269\"; }\n\n.fa-opera:before {\n  content: \"\\F26A\"; }\n\n.fa-internet-explorer:before {\n  content: \"\\F26B\"; }\n\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\"; }\n\n.fa-contao:before {\n  content: \"\\F26D\"; }\n\n.fa-500px:before {\n  content: \"\\F26E\"; }\n\n.fa-amazon:before {\n  content: \"\\F270\"; }\n\n.fa-calendar-plus-o:before {\n  content: \"\\F271\"; }\n\n.fa-calendar-minus-o:before {\n  content: \"\\F272\"; }\n\n.fa-calendar-times-o:before {\n  content: \"\\F273\"; }\n\n.fa-calendar-check-o:before {\n  content: \"\\F274\"; }\n\n.fa-industry:before {\n  content: \"\\F275\"; }\n\n.fa-map-pin:before {\n  content: \"\\F276\"; }\n\n.fa-map-signs:before {\n  content: \"\\F277\"; }\n\n.fa-map-o:before {\n  content: \"\\F278\"; }\n\n.fa-map:before {\n  content: \"\\F279\"; }\n\n.fa-commenting:before {\n  content: \"\\F27A\"; }\n\n.fa-commenting-o:before {\n  content: \"\\F27B\"; }\n\n.fa-houzz:before {\n  content: \"\\F27C\"; }\n\n.fa-vimeo:before {\n  content: \"\\F27D\"; }\n\n.fa-black-tie:before {\n  content: \"\\F27E\"; }\n\n.fa-fonticons:before {\n  content: \"\\F280\"; }\n\n.fa-reddit-alien:before {\n  content: \"\\F281\"; }\n\n.fa-edge:before {\n  content: \"\\F282\"; }\n\n.fa-credit-card-alt:before {\n  content: \"\\F283\"; }\n\n.fa-codiepie:before {\n  content: \"\\F284\"; }\n\n.fa-modx:before {\n  content: \"\\F285\"; }\n\n.fa-fort-awesome:before {\n  content: \"\\F286\"; }\n\n.fa-usb:before {\n  content: \"\\F287\"; }\n\n.fa-product-hunt:before {\n  content: \"\\F288\"; }\n\n.fa-mixcloud:before {\n  content: \"\\F289\"; }\n\n.fa-scribd:before {\n  content: \"\\F28A\"; }\n\n.fa-pause-circle:before {\n  content: \"\\F28B\"; }\n\n.fa-pause-circle-o:before {\n  content: \"\\F28C\"; }\n\n.fa-stop-circle:before {\n  content: \"\\F28D\"; }\n\n.fa-stop-circle-o:before {\n  content: \"\\F28E\"; }\n\n.fa-shopping-bag:before {\n  content: \"\\F290\"; }\n\n.fa-shopping-basket:before {\n  content: \"\\F291\"; }\n\n.fa-hashtag:before {\n  content: \"\\F292\"; }\n\n.fa-bluetooth:before {\n  content: \"\\F293\"; }\n\n.fa-bluetooth-b:before {\n  content: \"\\F294\"; }\n\n.fa-percent:before {\n  content: \"\\F295\"; }\n\n.fa-gitlab:before {\n  content: \"\\F296\"; }\n\n.fa-wpbeginner:before {\n  content: \"\\F297\"; }\n\n.fa-wpforms:before {\n  content: \"\\F298\"; }\n\n.fa-envira:before {\n  content: \"\\F299\"; }\n\n.fa-universal-access:before {\n  content: \"\\F29A\"; }\n\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\"; }\n\n.fa-question-circle-o:before {\n  content: \"\\F29C\"; }\n\n.fa-blind:before {\n  content: \"\\F29D\"; }\n\n.fa-audio-description:before {\n  content: \"\\F29E\"; }\n\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\"; }\n\n.fa-braille:before {\n  content: \"\\F2A1\"; }\n\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\"; }\n\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\"; }\n\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\"; }\n\n.fa-glide:before {\n  content: \"\\F2A5\"; }\n\n.fa-glide-g:before {\n  content: \"\\F2A6\"; }\n\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\"; }\n\n.fa-low-vision:before {\n  content: \"\\F2A8\"; }\n\n.fa-viadeo:before {\n  content: \"\\F2A9\"; }\n\n.fa-viadeo-square:before {\n  content: \"\\F2AA\"; }\n\n.fa-snapchat:before {\n  content: \"\\F2AB\"; }\n\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\"; }\n\n.fa-snapchat-square:before {\n  content: \"\\F2AD\"; }\n\n.fa-pied-piper:before {\n  content: \"\\F2AE\"; }\n\n.fa-first-order:before {\n  content: \"\\F2B0\"; }\n\n.fa-yoast:before {\n  content: \"\\F2B1\"; }\n\n.fa-themeisle:before {\n  content: \"\\F2B2\"; }\n\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\"; }\n\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\"; }\n\n.fa-handshake-o:before {\n  content: \"\\F2B5\"; }\n\n.fa-envelope-open:before {\n  content: \"\\F2B6\"; }\n\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\"; }\n\n.fa-linode:before {\n  content: \"\\F2B8\"; }\n\n.fa-address-book:before {\n  content: \"\\F2B9\"; }\n\n.fa-address-book-o:before {\n  content: \"\\F2BA\"; }\n\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\"; }\n\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\"; }\n\n.fa-user-circle:before {\n  content: \"\\F2BD\"; }\n\n.fa-user-circle-o:before {\n  content: \"\\F2BE\"; }\n\n.fa-user-o:before {\n  content: \"\\F2C0\"; }\n\n.fa-id-badge:before {\n  content: \"\\F2C1\"; }\n\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\"; }\n\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\"; }\n\n.fa-quora:before {\n  content: \"\\F2C4\"; }\n\n.fa-free-code-camp:before {\n  content: \"\\F2C5\"; }\n\n.fa-telegram:before {\n  content: \"\\F2C6\"; }\n\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\"; }\n\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\"; }\n\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\"; }\n\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\"; }\n\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\"; }\n\n.fa-shower:before {\n  content: \"\\F2CC\"; }\n\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\"; }\n\n.fa-podcast:before {\n  content: \"\\F2CE\"; }\n\n.fa-window-maximize:before {\n  content: \"\\F2D0\"; }\n\n.fa-window-minimize:before {\n  content: \"\\F2D1\"; }\n\n.fa-window-restore:before {\n  content: \"\\F2D2\"; }\n\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\"; }\n\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\"; }\n\n.fa-bandcamp:before {\n  content: \"\\F2D5\"; }\n\n.fa-grav:before {\n  content: \"\\F2D6\"; }\n\n.fa-etsy:before {\n  content: \"\\F2D7\"; }\n\n.fa-imdb:before {\n  content: \"\\F2D8\"; }\n\n.fa-ravelry:before {\n  content: \"\\F2D9\"; }\n\n.fa-eercast:before {\n  content: \"\\F2DA\"; }\n\n.fa-microchip:before {\n  content: \"\\F2DB\"; }\n\n.fa-snowflake-o:before {\n  content: \"\\F2DC\"; }\n\n.fa-superpowers:before {\n  content: \"\\F2DD\"; }\n\n.fa-wpexplorer:before {\n  content: \"\\F2DE\"; }\n\n.fa-meetup:before {\n  content: \"\\F2E0\"; }\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0; }\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto; }\n\nbody {\n  margin: 0;\n  padding: 0; }\n\nul {\n  list-style: none; }\n\ninput {\n  width: 100%;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  font-size: 25px;\n  color: darkgray;\n  border: 1px lightgrey solid; }\n\ninput[type=submit] {\n  background-color: white; }\n\ntextarea {\n  width: 100%;\n  border: 1px lightgrey solid;\n  height: 150px;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 25px;\n  color: darkgrey; }\n\nselect {\n  border: none;\n  border-radius: 0px 0px 0px 0px;\n  border-bottom-right-radius: 0px;\n  font-size: 25px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  width: 90%;\n  margin: 5%; }\n\ninput[placeholder] {\n  color: lightgrey; }\n\ntextarea[placeholder] {\n  color: lightgrey; }\n\nh1 {\n  font-family: 'Oswald', sans-serif; }\n\nh2 {\n  font-family: 'Oswald', sans-serif; }\n\nh3 {\n  font-family: 'Oswald', sans-serif; }\n\nh4 {\n  font-family: 'Oswald', sans-serif; }\n\nh5 {\n  font-family: 'Oswald', sans-serif; }\n\nh1, h2, h3, h4, h5 {\n  color: darkgray; }\n\ni {\n  color: darkgray; }\n\np {\n  font-family: 'Alegreya', serif;\n  color: darkgray; }\n\na {\n  font-family: 'Oswald', sans-serif;\n  font-style: none;\n  text-decoration: none;\n  color: #4F6457; }\n\na:visited {\n  color: #4F6457; }\n\na:hover {\n  color: seagreen; }\n\nbody {\n  background-color: #ffffff; }\n\n.layout-content {\n  padding-left: 5px;\n  padding-right: 5px; }\n\n.layout-head {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.layout-daydash {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n._layout-diagram {\n  display: flex;\n  justify-content: center; }\n\n.component-navigation {\n  flex-grow: 1; }\n\n.component-navigation.nav-list {\n  display: inline; }\n\n.component-navigation.nav-list.nav-listitem {\n  padding: 5px; }\n\n.component-usercontext {\n  flex-grow: 1; }\n\n.component-dayblock {\n  width: 250px;\n  height: 300px;\n  cursor: pointer; }\n\n.component-dayblock:hover {\n  background-color: rgba(137, 137, 137, 0.4); }\n\n.component-user.heading {\n  margin-bottom: 2px; }\n\n._component-diagram {\n  flex-grow: 1; }\n\n.node {\n  cursor: pointer; }\n\n.node:hover {\n  stroke: #000;\n  stroke-width: 1.5px; }\n\n.node--leaf {\n  fill: white; }\n\n.label {\n  font-family: 'Oswald', sans-serif;\n  text-anchor: middle;\n  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }\n\n.label,\n.node--root,\n.node--leaf {\n  pointer-events: none; }\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot?v=4.7.0") + ");\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot") + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff2?v=4.7.0") + ") format(\"woff2\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff?v=4.7.0") + ") format(\"woff\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.ttf?v=4.7.0") + ") format(\"truetype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.svg?v=4.7.0") + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%; }\n\n.fa-2x {\n  font-size: 2em; }\n\n.fa-3x {\n  font-size: 3em; }\n\n.fa-4x {\n  font-size: 4em; }\n\n.fa-5x {\n  font-size: 5em; }\n\n.fa-fw {\n  width: 1.28571em;\n  text-align: center; }\n\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none; }\n  .fa-ul > li {\n    position: relative; }\n\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center; }\n  .fa-li.fa-lg {\n    left: -1.85714em; }\n\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em; }\n\n.fa-pull-left {\n  float: left; }\n\n.fa-pull-right {\n  float: right; }\n\n.fa.fa-pull-left {\n  margin-right: .3em; }\n\n.fa.fa-pull-right {\n  margin-left: .3em; }\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right; }\n\n.pull-left {\n  float: left; }\n\n.fa.pull-left {\n  margin-right: .3em; }\n\n.fa.pull-right {\n  margin-left: .3em; }\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear; }\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8); }\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg); }\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg); }\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1); }\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1); }\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none; }\n\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle; }\n\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center; }\n\n.fa-stack-1x {\n  line-height: inherit; }\n\n.fa-stack-2x {\n  font-size: 2em; }\n\n.fa-inverse {\n  color: #fff; }\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\"; }\n\n.fa-music:before {\n  content: \"\\F001\"; }\n\n.fa-search:before {\n  content: \"\\F002\"; }\n\n.fa-envelope-o:before {\n  content: \"\\F003\"; }\n\n.fa-heart:before {\n  content: \"\\F004\"; }\n\n.fa-star:before {\n  content: \"\\F005\"; }\n\n.fa-star-o:before {\n  content: \"\\F006\"; }\n\n.fa-user:before {\n  content: \"\\F007\"; }\n\n.fa-film:before {\n  content: \"\\F008\"; }\n\n.fa-th-large:before {\n  content: \"\\F009\"; }\n\n.fa-th:before {\n  content: \"\\F00A\"; }\n\n.fa-th-list:before {\n  content: \"\\F00B\"; }\n\n.fa-check:before {\n  content: \"\\F00C\"; }\n\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\"; }\n\n.fa-search-plus:before {\n  content: \"\\F00E\"; }\n\n.fa-search-minus:before {\n  content: \"\\F010\"; }\n\n.fa-power-off:before {\n  content: \"\\F011\"; }\n\n.fa-signal:before {\n  content: \"\\F012\"; }\n\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\"; }\n\n.fa-trash-o:before {\n  content: \"\\F014\"; }\n\n.fa-home:before {\n  content: \"\\F015\"; }\n\n.fa-file-o:before {\n  content: \"\\F016\"; }\n\n.fa-clock-o:before {\n  content: \"\\F017\"; }\n\n.fa-road:before {\n  content: \"\\F018\"; }\n\n.fa-download:before {\n  content: \"\\F019\"; }\n\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\"; }\n\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\"; }\n\n.fa-inbox:before {\n  content: \"\\F01C\"; }\n\n.fa-play-circle-o:before {\n  content: \"\\F01D\"; }\n\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\"; }\n\n.fa-refresh:before {\n  content: \"\\F021\"; }\n\n.fa-list-alt:before {\n  content: \"\\F022\"; }\n\n.fa-lock:before {\n  content: \"\\F023\"; }\n\n.fa-flag:before {\n  content: \"\\F024\"; }\n\n.fa-headphones:before {\n  content: \"\\F025\"; }\n\n.fa-volume-off:before {\n  content: \"\\F026\"; }\n\n.fa-volume-down:before {\n  content: \"\\F027\"; }\n\n.fa-volume-up:before {\n  content: \"\\F028\"; }\n\n.fa-qrcode:before {\n  content: \"\\F029\"; }\n\n.fa-barcode:before {\n  content: \"\\F02A\"; }\n\n.fa-tag:before {\n  content: \"\\F02B\"; }\n\n.fa-tags:before {\n  content: \"\\F02C\"; }\n\n.fa-book:before {\n  content: \"\\F02D\"; }\n\n.fa-bookmark:before {\n  content: \"\\F02E\"; }\n\n.fa-print:before {\n  content: \"\\F02F\"; }\n\n.fa-camera:before {\n  content: \"\\F030\"; }\n\n.fa-font:before {\n  content: \"\\F031\"; }\n\n.fa-bold:before {\n  content: \"\\F032\"; }\n\n.fa-italic:before {\n  content: \"\\F033\"; }\n\n.fa-text-height:before {\n  content: \"\\F034\"; }\n\n.fa-text-width:before {\n  content: \"\\F035\"; }\n\n.fa-align-left:before {\n  content: \"\\F036\"; }\n\n.fa-align-center:before {\n  content: \"\\F037\"; }\n\n.fa-align-right:before {\n  content: \"\\F038\"; }\n\n.fa-align-justify:before {\n  content: \"\\F039\"; }\n\n.fa-list:before {\n  content: \"\\F03A\"; }\n\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\"; }\n\n.fa-indent:before {\n  content: \"\\F03C\"; }\n\n.fa-video-camera:before {\n  content: \"\\F03D\"; }\n\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\"; }\n\n.fa-pencil:before {\n  content: \"\\F040\"; }\n\n.fa-map-marker:before {\n  content: \"\\F041\"; }\n\n.fa-adjust:before {\n  content: \"\\F042\"; }\n\n.fa-tint:before {\n  content: \"\\F043\"; }\n\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\"; }\n\n.fa-share-square-o:before {\n  content: \"\\F045\"; }\n\n.fa-check-square-o:before {\n  content: \"\\F046\"; }\n\n.fa-arrows:before {\n  content: \"\\F047\"; }\n\n.fa-step-backward:before {\n  content: \"\\F048\"; }\n\n.fa-fast-backward:before {\n  content: \"\\F049\"; }\n\n.fa-backward:before {\n  content: \"\\F04A\"; }\n\n.fa-play:before {\n  content: \"\\F04B\"; }\n\n.fa-pause:before {\n  content: \"\\F04C\"; }\n\n.fa-stop:before {\n  content: \"\\F04D\"; }\n\n.fa-forward:before {\n  content: \"\\F04E\"; }\n\n.fa-fast-forward:before {\n  content: \"\\F050\"; }\n\n.fa-step-forward:before {\n  content: \"\\F051\"; }\n\n.fa-eject:before {\n  content: \"\\F052\"; }\n\n.fa-chevron-left:before {\n  content: \"\\F053\"; }\n\n.fa-chevron-right:before {\n  content: \"\\F054\"; }\n\n.fa-plus-circle:before {\n  content: \"\\F055\"; }\n\n.fa-minus-circle:before {\n  content: \"\\F056\"; }\n\n.fa-times-circle:before {\n  content: \"\\F057\"; }\n\n.fa-check-circle:before {\n  content: \"\\F058\"; }\n\n.fa-question-circle:before {\n  content: \"\\F059\"; }\n\n.fa-info-circle:before {\n  content: \"\\F05A\"; }\n\n.fa-crosshairs:before {\n  content: \"\\F05B\"; }\n\n.fa-times-circle-o:before {\n  content: \"\\F05C\"; }\n\n.fa-check-circle-o:before {\n  content: \"\\F05D\"; }\n\n.fa-ban:before {\n  content: \"\\F05E\"; }\n\n.fa-arrow-left:before {\n  content: \"\\F060\"; }\n\n.fa-arrow-right:before {\n  content: \"\\F061\"; }\n\n.fa-arrow-up:before {\n  content: \"\\F062\"; }\n\n.fa-arrow-down:before {\n  content: \"\\F063\"; }\n\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\"; }\n\n.fa-expand:before {\n  content: \"\\F065\"; }\n\n.fa-compress:before {\n  content: \"\\F066\"; }\n\n.fa-plus:before {\n  content: \"\\F067\"; }\n\n.fa-minus:before {\n  content: \"\\F068\"; }\n\n.fa-asterisk:before {\n  content: \"\\F069\"; }\n\n.fa-exclamation-circle:before {\n  content: \"\\F06A\"; }\n\n.fa-gift:before {\n  content: \"\\F06B\"; }\n\n.fa-leaf:before {\n  content: \"\\F06C\"; }\n\n.fa-fire:before {\n  content: \"\\F06D\"; }\n\n.fa-eye:before {\n  content: \"\\F06E\"; }\n\n.fa-eye-slash:before {\n  content: \"\\F070\"; }\n\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\"; }\n\n.fa-plane:before {\n  content: \"\\F072\"; }\n\n.fa-calendar:before {\n  content: \"\\F073\"; }\n\n.fa-random:before {\n  content: \"\\F074\"; }\n\n.fa-comment:before {\n  content: \"\\F075\"; }\n\n.fa-magnet:before {\n  content: \"\\F076\"; }\n\n.fa-chevron-up:before {\n  content: \"\\F077\"; }\n\n.fa-chevron-down:before {\n  content: \"\\F078\"; }\n\n.fa-retweet:before {\n  content: \"\\F079\"; }\n\n.fa-shopping-cart:before {\n  content: \"\\F07A\"; }\n\n.fa-folder:before {\n  content: \"\\F07B\"; }\n\n.fa-folder-open:before {\n  content: \"\\F07C\"; }\n\n.fa-arrows-v:before {\n  content: \"\\F07D\"; }\n\n.fa-arrows-h:before {\n  content: \"\\F07E\"; }\n\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\"; }\n\n.fa-twitter-square:before {\n  content: \"\\F081\"; }\n\n.fa-facebook-square:before {\n  content: \"\\F082\"; }\n\n.fa-camera-retro:before {\n  content: \"\\F083\"; }\n\n.fa-key:before {\n  content: \"\\F084\"; }\n\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\"; }\n\n.fa-comments:before {\n  content: \"\\F086\"; }\n\n.fa-thumbs-o-up:before {\n  content: \"\\F087\"; }\n\n.fa-thumbs-o-down:before {\n  content: \"\\F088\"; }\n\n.fa-star-half:before {\n  content: \"\\F089\"; }\n\n.fa-heart-o:before {\n  content: \"\\F08A\"; }\n\n.fa-sign-out:before {\n  content: \"\\F08B\"; }\n\n.fa-linkedin-square:before {\n  content: \"\\F08C\"; }\n\n.fa-thumb-tack:before {\n  content: \"\\F08D\"; }\n\n.fa-external-link:before {\n  content: \"\\F08E\"; }\n\n.fa-sign-in:before {\n  content: \"\\F090\"; }\n\n.fa-trophy:before {\n  content: \"\\F091\"; }\n\n.fa-github-square:before {\n  content: \"\\F092\"; }\n\n.fa-upload:before {\n  content: \"\\F093\"; }\n\n.fa-lemon-o:before {\n  content: \"\\F094\"; }\n\n.fa-phone:before {\n  content: \"\\F095\"; }\n\n.fa-square-o:before {\n  content: \"\\F096\"; }\n\n.fa-bookmark-o:before {\n  content: \"\\F097\"; }\n\n.fa-phone-square:before {\n  content: \"\\F098\"; }\n\n.fa-twitter:before {\n  content: \"\\F099\"; }\n\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\"; }\n\n.fa-github:before {\n  content: \"\\F09B\"; }\n\n.fa-unlock:before {\n  content: \"\\F09C\"; }\n\n.fa-credit-card:before {\n  content: \"\\F09D\"; }\n\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\"; }\n\n.fa-hdd-o:before {\n  content: \"\\F0A0\"; }\n\n.fa-bullhorn:before {\n  content: \"\\F0A1\"; }\n\n.fa-bell:before {\n  content: \"\\F0F3\"; }\n\n.fa-certificate:before {\n  content: \"\\F0A3\"; }\n\n.fa-hand-o-right:before {\n  content: \"\\F0A4\"; }\n\n.fa-hand-o-left:before {\n  content: \"\\F0A5\"; }\n\n.fa-hand-o-up:before {\n  content: \"\\F0A6\"; }\n\n.fa-hand-o-down:before {\n  content: \"\\F0A7\"; }\n\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\"; }\n\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\"; }\n\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\"; }\n\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\"; }\n\n.fa-globe:before {\n  content: \"\\F0AC\"; }\n\n.fa-wrench:before {\n  content: \"\\F0AD\"; }\n\n.fa-tasks:before {\n  content: \"\\F0AE\"; }\n\n.fa-filter:before {\n  content: \"\\F0B0\"; }\n\n.fa-briefcase:before {\n  content: \"\\F0B1\"; }\n\n.fa-arrows-alt:before {\n  content: \"\\F0B2\"; }\n\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\"; }\n\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\"; }\n\n.fa-cloud:before {\n  content: \"\\F0C2\"; }\n\n.fa-flask:before {\n  content: \"\\F0C3\"; }\n\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\"; }\n\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\"; }\n\n.fa-paperclip:before {\n  content: \"\\F0C6\"; }\n\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\"; }\n\n.fa-square:before {\n  content: \"\\F0C8\"; }\n\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\"; }\n\n.fa-list-ul:before {\n  content: \"\\F0CA\"; }\n\n.fa-list-ol:before {\n  content: \"\\F0CB\"; }\n\n.fa-strikethrough:before {\n  content: \"\\F0CC\"; }\n\n.fa-underline:before {\n  content: \"\\F0CD\"; }\n\n.fa-table:before {\n  content: \"\\F0CE\"; }\n\n.fa-magic:before {\n  content: \"\\F0D0\"; }\n\n.fa-truck:before {\n  content: \"\\F0D1\"; }\n\n.fa-pinterest:before {\n  content: \"\\F0D2\"; }\n\n.fa-pinterest-square:before {\n  content: \"\\F0D3\"; }\n\n.fa-google-plus-square:before {\n  content: \"\\F0D4\"; }\n\n.fa-google-plus:before {\n  content: \"\\F0D5\"; }\n\n.fa-money:before {\n  content: \"\\F0D6\"; }\n\n.fa-caret-down:before {\n  content: \"\\F0D7\"; }\n\n.fa-caret-up:before {\n  content: \"\\F0D8\"; }\n\n.fa-caret-left:before {\n  content: \"\\F0D9\"; }\n\n.fa-caret-right:before {\n  content: \"\\F0DA\"; }\n\n.fa-columns:before {\n  content: \"\\F0DB\"; }\n\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\"; }\n\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\"; }\n\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\"; }\n\n.fa-envelope:before {\n  content: \"\\F0E0\"; }\n\n.fa-linkedin:before {\n  content: \"\\F0E1\"; }\n\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\"; }\n\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\"; }\n\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\"; }\n\n.fa-comment-o:before {\n  content: \"\\F0E5\"; }\n\n.fa-comments-o:before {\n  content: \"\\F0E6\"; }\n\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\"; }\n\n.fa-sitemap:before {\n  content: \"\\F0E8\"; }\n\n.fa-umbrella:before {\n  content: \"\\F0E9\"; }\n\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\"; }\n\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\"; }\n\n.fa-exchange:before {\n  content: \"\\F0EC\"; }\n\n.fa-cloud-download:before {\n  content: \"\\F0ED\"; }\n\n.fa-cloud-upload:before {\n  content: \"\\F0EE\"; }\n\n.fa-user-md:before {\n  content: \"\\F0F0\"; }\n\n.fa-stethoscope:before {\n  content: \"\\F0F1\"; }\n\n.fa-suitcase:before {\n  content: \"\\F0F2\"; }\n\n.fa-bell-o:before {\n  content: \"\\F0A2\"; }\n\n.fa-coffee:before {\n  content: \"\\F0F4\"; }\n\n.fa-cutlery:before {\n  content: \"\\F0F5\"; }\n\n.fa-file-text-o:before {\n  content: \"\\F0F6\"; }\n\n.fa-building-o:before {\n  content: \"\\F0F7\"; }\n\n.fa-hospital-o:before {\n  content: \"\\F0F8\"; }\n\n.fa-ambulance:before {\n  content: \"\\F0F9\"; }\n\n.fa-medkit:before {\n  content: \"\\F0FA\"; }\n\n.fa-fighter-jet:before {\n  content: \"\\F0FB\"; }\n\n.fa-beer:before {\n  content: \"\\F0FC\"; }\n\n.fa-h-square:before {\n  content: \"\\F0FD\"; }\n\n.fa-plus-square:before {\n  content: \"\\F0FE\"; }\n\n.fa-angle-double-left:before {\n  content: \"\\F100\"; }\n\n.fa-angle-double-right:before {\n  content: \"\\F101\"; }\n\n.fa-angle-double-up:before {\n  content: \"\\F102\"; }\n\n.fa-angle-double-down:before {\n  content: \"\\F103\"; }\n\n.fa-angle-left:before {\n  content: \"\\F104\"; }\n\n.fa-angle-right:before {\n  content: \"\\F105\"; }\n\n.fa-angle-up:before {\n  content: \"\\F106\"; }\n\n.fa-angle-down:before {\n  content: \"\\F107\"; }\n\n.fa-desktop:before {\n  content: \"\\F108\"; }\n\n.fa-laptop:before {\n  content: \"\\F109\"; }\n\n.fa-tablet:before {\n  content: \"\\F10A\"; }\n\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\"; }\n\n.fa-circle-o:before {\n  content: \"\\F10C\"; }\n\n.fa-quote-left:before {\n  content: \"\\F10D\"; }\n\n.fa-quote-right:before {\n  content: \"\\F10E\"; }\n\n.fa-spinner:before {\n  content: \"\\F110\"; }\n\n.fa-circle:before {\n  content: \"\\F111\"; }\n\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\"; }\n\n.fa-github-alt:before {\n  content: \"\\F113\"; }\n\n.fa-folder-o:before {\n  content: \"\\F114\"; }\n\n.fa-folder-open-o:before {\n  content: \"\\F115\"; }\n\n.fa-smile-o:before {\n  content: \"\\F118\"; }\n\n.fa-frown-o:before {\n  content: \"\\F119\"; }\n\n.fa-meh-o:before {\n  content: \"\\F11A\"; }\n\n.fa-gamepad:before {\n  content: \"\\F11B\"; }\n\n.fa-keyboard-o:before {\n  content: \"\\F11C\"; }\n\n.fa-flag-o:before {\n  content: \"\\F11D\"; }\n\n.fa-flag-checkered:before {\n  content: \"\\F11E\"; }\n\n.fa-terminal:before {\n  content: \"\\F120\"; }\n\n.fa-code:before {\n  content: \"\\F121\"; }\n\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\"; }\n\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\"; }\n\n.fa-location-arrow:before {\n  content: \"\\F124\"; }\n\n.fa-crop:before {\n  content: \"\\F125\"; }\n\n.fa-code-fork:before {\n  content: \"\\F126\"; }\n\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\"; }\n\n.fa-question:before {\n  content: \"\\F128\"; }\n\n.fa-info:before {\n  content: \"\\F129\"; }\n\n.fa-exclamation:before {\n  content: \"\\F12A\"; }\n\n.fa-superscript:before {\n  content: \"\\F12B\"; }\n\n.fa-subscript:before {\n  content: \"\\F12C\"; }\n\n.fa-eraser:before {\n  content: \"\\F12D\"; }\n\n.fa-puzzle-piece:before {\n  content: \"\\F12E\"; }\n\n.fa-microphone:before {\n  content: \"\\F130\"; }\n\n.fa-microphone-slash:before {\n  content: \"\\F131\"; }\n\n.fa-shield:before {\n  content: \"\\F132\"; }\n\n.fa-calendar-o:before {\n  content: \"\\F133\"; }\n\n.fa-fire-extinguisher:before {\n  content: \"\\F134\"; }\n\n.fa-rocket:before {\n  content: \"\\F135\"; }\n\n.fa-maxcdn:before {\n  content: \"\\F136\"; }\n\n.fa-chevron-circle-left:before {\n  content: \"\\F137\"; }\n\n.fa-chevron-circle-right:before {\n  content: \"\\F138\"; }\n\n.fa-chevron-circle-up:before {\n  content: \"\\F139\"; }\n\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\"; }\n\n.fa-html5:before {\n  content: \"\\F13B\"; }\n\n.fa-css3:before {\n  content: \"\\F13C\"; }\n\n.fa-anchor:before {\n  content: \"\\F13D\"; }\n\n.fa-unlock-alt:before {\n  content: \"\\F13E\"; }\n\n.fa-bullseye:before {\n  content: \"\\F140\"; }\n\n.fa-ellipsis-h:before {\n  content: \"\\F141\"; }\n\n.fa-ellipsis-v:before {\n  content: \"\\F142\"; }\n\n.fa-rss-square:before {\n  content: \"\\F143\"; }\n\n.fa-play-circle:before {\n  content: \"\\F144\"; }\n\n.fa-ticket:before {\n  content: \"\\F145\"; }\n\n.fa-minus-square:before {\n  content: \"\\F146\"; }\n\n.fa-minus-square-o:before {\n  content: \"\\F147\"; }\n\n.fa-level-up:before {\n  content: \"\\F148\"; }\n\n.fa-level-down:before {\n  content: \"\\F149\"; }\n\n.fa-check-square:before {\n  content: \"\\F14A\"; }\n\n.fa-pencil-square:before {\n  content: \"\\F14B\"; }\n\n.fa-external-link-square:before {\n  content: \"\\F14C\"; }\n\n.fa-share-square:before {\n  content: \"\\F14D\"; }\n\n.fa-compass:before {\n  content: \"\\F14E\"; }\n\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\"; }\n\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\"; }\n\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\"; }\n\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\"; }\n\n.fa-gbp:before {\n  content: \"\\F154\"; }\n\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\"; }\n\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\"; }\n\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\"; }\n\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\"; }\n\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\"; }\n\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\"; }\n\n.fa-file:before {\n  content: \"\\F15B\"; }\n\n.fa-file-text:before {\n  content: \"\\F15C\"; }\n\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\"; }\n\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\"; }\n\n.fa-sort-amount-asc:before {\n  content: \"\\F160\"; }\n\n.fa-sort-amount-desc:before {\n  content: \"\\F161\"; }\n\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\"; }\n\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\"; }\n\n.fa-thumbs-up:before {\n  content: \"\\F164\"; }\n\n.fa-thumbs-down:before {\n  content: \"\\F165\"; }\n\n.fa-youtube-square:before {\n  content: \"\\F166\"; }\n\n.fa-youtube:before {\n  content: \"\\F167\"; }\n\n.fa-xing:before {\n  content: \"\\F168\"; }\n\n.fa-xing-square:before {\n  content: \"\\F169\"; }\n\n.fa-youtube-play:before {\n  content: \"\\F16A\"; }\n\n.fa-dropbox:before {\n  content: \"\\F16B\"; }\n\n.fa-stack-overflow:before {\n  content: \"\\F16C\"; }\n\n.fa-instagram:before {\n  content: \"\\F16D\"; }\n\n.fa-flickr:before {\n  content: \"\\F16E\"; }\n\n.fa-adn:before {\n  content: \"\\F170\"; }\n\n.fa-bitbucket:before {\n  content: \"\\F171\"; }\n\n.fa-bitbucket-square:before {\n  content: \"\\F172\"; }\n\n.fa-tumblr:before {\n  content: \"\\F173\"; }\n\n.fa-tumblr-square:before {\n  content: \"\\F174\"; }\n\n.fa-long-arrow-down:before {\n  content: \"\\F175\"; }\n\n.fa-long-arrow-up:before {\n  content: \"\\F176\"; }\n\n.fa-long-arrow-left:before {\n  content: \"\\F177\"; }\n\n.fa-long-arrow-right:before {\n  content: \"\\F178\"; }\n\n.fa-apple:before {\n  content: \"\\F179\"; }\n\n.fa-windows:before {\n  content: \"\\F17A\"; }\n\n.fa-android:before {\n  content: \"\\F17B\"; }\n\n.fa-linux:before {\n  content: \"\\F17C\"; }\n\n.fa-dribbble:before {\n  content: \"\\F17D\"; }\n\n.fa-skype:before {\n  content: \"\\F17E\"; }\n\n.fa-foursquare:before {\n  content: \"\\F180\"; }\n\n.fa-trello:before {\n  content: \"\\F181\"; }\n\n.fa-female:before {\n  content: \"\\F182\"; }\n\n.fa-male:before {\n  content: \"\\F183\"; }\n\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\"; }\n\n.fa-sun-o:before {\n  content: \"\\F185\"; }\n\n.fa-moon-o:before {\n  content: \"\\F186\"; }\n\n.fa-archive:before {\n  content: \"\\F187\"; }\n\n.fa-bug:before {\n  content: \"\\F188\"; }\n\n.fa-vk:before {\n  content: \"\\F189\"; }\n\n.fa-weibo:before {\n  content: \"\\F18A\"; }\n\n.fa-renren:before {\n  content: \"\\F18B\"; }\n\n.fa-pagelines:before {\n  content: \"\\F18C\"; }\n\n.fa-stack-exchange:before {\n  content: \"\\F18D\"; }\n\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\"; }\n\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\"; }\n\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\"; }\n\n.fa-dot-circle-o:before {\n  content: \"\\F192\"; }\n\n.fa-wheelchair:before {\n  content: \"\\F193\"; }\n\n.fa-vimeo-square:before {\n  content: \"\\F194\"; }\n\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\"; }\n\n.fa-plus-square-o:before {\n  content: \"\\F196\"; }\n\n.fa-space-shuttle:before {\n  content: \"\\F197\"; }\n\n.fa-slack:before {\n  content: \"\\F198\"; }\n\n.fa-envelope-square:before {\n  content: \"\\F199\"; }\n\n.fa-wordpress:before {\n  content: \"\\F19A\"; }\n\n.fa-openid:before {\n  content: \"\\F19B\"; }\n\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\"; }\n\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\"; }\n\n.fa-yahoo:before {\n  content: \"\\F19E\"; }\n\n.fa-google:before {\n  content: \"\\F1A0\"; }\n\n.fa-reddit:before {\n  content: \"\\F1A1\"; }\n\n.fa-reddit-square:before {\n  content: \"\\F1A2\"; }\n\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\"; }\n\n.fa-stumbleupon:before {\n  content: \"\\F1A4\"; }\n\n.fa-delicious:before {\n  content: \"\\F1A5\"; }\n\n.fa-digg:before {\n  content: \"\\F1A6\"; }\n\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\"; }\n\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\"; }\n\n.fa-drupal:before {\n  content: \"\\F1A9\"; }\n\n.fa-joomla:before {\n  content: \"\\F1AA\"; }\n\n.fa-language:before {\n  content: \"\\F1AB\"; }\n\n.fa-fax:before {\n  content: \"\\F1AC\"; }\n\n.fa-building:before {\n  content: \"\\F1AD\"; }\n\n.fa-child:before {\n  content: \"\\F1AE\"; }\n\n.fa-paw:before {\n  content: \"\\F1B0\"; }\n\n.fa-spoon:before {\n  content: \"\\F1B1\"; }\n\n.fa-cube:before {\n  content: \"\\F1B2\"; }\n\n.fa-cubes:before {\n  content: \"\\F1B3\"; }\n\n.fa-behance:before {\n  content: \"\\F1B4\"; }\n\n.fa-behance-square:before {\n  content: \"\\F1B5\"; }\n\n.fa-steam:before {\n  content: \"\\F1B6\"; }\n\n.fa-steam-square:before {\n  content: \"\\F1B7\"; }\n\n.fa-recycle:before {\n  content: \"\\F1B8\"; }\n\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\"; }\n\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\"; }\n\n.fa-tree:before {\n  content: \"\\F1BB\"; }\n\n.fa-spotify:before {\n  content: \"\\F1BC\"; }\n\n.fa-deviantart:before {\n  content: \"\\F1BD\"; }\n\n.fa-soundcloud:before {\n  content: \"\\F1BE\"; }\n\n.fa-database:before {\n  content: \"\\F1C0\"; }\n\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\"; }\n\n.fa-file-word-o:before {\n  content: \"\\F1C2\"; }\n\n.fa-file-excel-o:before {\n  content: \"\\F1C3\"; }\n\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\"; }\n\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\"; }\n\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\"; }\n\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\"; }\n\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\"; }\n\n.fa-file-code-o:before {\n  content: \"\\F1C9\"; }\n\n.fa-vine:before {\n  content: \"\\F1CA\"; }\n\n.fa-codepen:before {\n  content: \"\\F1CB\"; }\n\n.fa-jsfiddle:before {\n  content: \"\\F1CC\"; }\n\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\"; }\n\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\"; }\n\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\"; }\n\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\"; }\n\n.fa-git-square:before {\n  content: \"\\F1D2\"; }\n\n.fa-git:before {\n  content: \"\\F1D3\"; }\n\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\"; }\n\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\"; }\n\n.fa-qq:before {\n  content: \"\\F1D6\"; }\n\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\"; }\n\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\"; }\n\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\"; }\n\n.fa-history:before {\n  content: \"\\F1DA\"; }\n\n.fa-circle-thin:before {\n  content: \"\\F1DB\"; }\n\n.fa-header:before {\n  content: \"\\F1DC\"; }\n\n.fa-paragraph:before {\n  content: \"\\F1DD\"; }\n\n.fa-sliders:before {\n  content: \"\\F1DE\"; }\n\n.fa-share-alt:before {\n  content: \"\\F1E0\"; }\n\n.fa-share-alt-square:before {\n  content: \"\\F1E1\"; }\n\n.fa-bomb:before {\n  content: \"\\F1E2\"; }\n\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\"; }\n\n.fa-tty:before {\n  content: \"\\F1E4\"; }\n\n.fa-binoculars:before {\n  content: \"\\F1E5\"; }\n\n.fa-plug:before {\n  content: \"\\F1E6\"; }\n\n.fa-slideshare:before {\n  content: \"\\F1E7\"; }\n\n.fa-twitch:before {\n  content: \"\\F1E8\"; }\n\n.fa-yelp:before {\n  content: \"\\F1E9\"; }\n\n.fa-newspaper-o:before {\n  content: \"\\F1EA\"; }\n\n.fa-wifi:before {\n  content: \"\\F1EB\"; }\n\n.fa-calculator:before {\n  content: \"\\F1EC\"; }\n\n.fa-paypal:before {\n  content: \"\\F1ED\"; }\n\n.fa-google-wallet:before {\n  content: \"\\F1EE\"; }\n\n.fa-cc-visa:before {\n  content: \"\\F1F0\"; }\n\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\"; }\n\n.fa-cc-discover:before {\n  content: \"\\F1F2\"; }\n\n.fa-cc-amex:before {\n  content: \"\\F1F3\"; }\n\n.fa-cc-paypal:before {\n  content: \"\\F1F4\"; }\n\n.fa-cc-stripe:before {\n  content: \"\\F1F5\"; }\n\n.fa-bell-slash:before {\n  content: \"\\F1F6\"; }\n\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\"; }\n\n.fa-trash:before {\n  content: \"\\F1F8\"; }\n\n.fa-copyright:before {\n  content: \"\\F1F9\"; }\n\n.fa-at:before {\n  content: \"\\F1FA\"; }\n\n.fa-eyedropper:before {\n  content: \"\\F1FB\"; }\n\n.fa-paint-brush:before {\n  content: \"\\F1FC\"; }\n\n.fa-birthday-cake:before {\n  content: \"\\F1FD\"; }\n\n.fa-area-chart:before {\n  content: \"\\F1FE\"; }\n\n.fa-pie-chart:before {\n  content: \"\\F200\"; }\n\n.fa-line-chart:before {\n  content: \"\\F201\"; }\n\n.fa-lastfm:before {\n  content: \"\\F202\"; }\n\n.fa-lastfm-square:before {\n  content: \"\\F203\"; }\n\n.fa-toggle-off:before {\n  content: \"\\F204\"; }\n\n.fa-toggle-on:before {\n  content: \"\\F205\"; }\n\n.fa-bicycle:before {\n  content: \"\\F206\"; }\n\n.fa-bus:before {\n  content: \"\\F207\"; }\n\n.fa-ioxhost:before {\n  content: \"\\F208\"; }\n\n.fa-angellist:before {\n  content: \"\\F209\"; }\n\n.fa-cc:before {\n  content: \"\\F20A\"; }\n\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\"; }\n\n.fa-meanpath:before {\n  content: \"\\F20C\"; }\n\n.fa-buysellads:before {\n  content: \"\\F20D\"; }\n\n.fa-connectdevelop:before {\n  content: \"\\F20E\"; }\n\n.fa-dashcube:before {\n  content: \"\\F210\"; }\n\n.fa-forumbee:before {\n  content: \"\\F211\"; }\n\n.fa-leanpub:before {\n  content: \"\\F212\"; }\n\n.fa-sellsy:before {\n  content: \"\\F213\"; }\n\n.fa-shirtsinbulk:before {\n  content: \"\\F214\"; }\n\n.fa-simplybuilt:before {\n  content: \"\\F215\"; }\n\n.fa-skyatlas:before {\n  content: \"\\F216\"; }\n\n.fa-cart-plus:before {\n  content: \"\\F217\"; }\n\n.fa-cart-arrow-down:before {\n  content: \"\\F218\"; }\n\n.fa-diamond:before {\n  content: \"\\F219\"; }\n\n.fa-ship:before {\n  content: \"\\F21A\"; }\n\n.fa-user-secret:before {\n  content: \"\\F21B\"; }\n\n.fa-motorcycle:before {\n  content: \"\\F21C\"; }\n\n.fa-street-view:before {\n  content: \"\\F21D\"; }\n\n.fa-heartbeat:before {\n  content: \"\\F21E\"; }\n\n.fa-venus:before {\n  content: \"\\F221\"; }\n\n.fa-mars:before {\n  content: \"\\F222\"; }\n\n.fa-mercury:before {\n  content: \"\\F223\"; }\n\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\"; }\n\n.fa-transgender-alt:before {\n  content: \"\\F225\"; }\n\n.fa-venus-double:before {\n  content: \"\\F226\"; }\n\n.fa-mars-double:before {\n  content: \"\\F227\"; }\n\n.fa-venus-mars:before {\n  content: \"\\F228\"; }\n\n.fa-mars-stroke:before {\n  content: \"\\F229\"; }\n\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\"; }\n\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\"; }\n\n.fa-neuter:before {\n  content: \"\\F22C\"; }\n\n.fa-genderless:before {\n  content: \"\\F22D\"; }\n\n.fa-facebook-official:before {\n  content: \"\\F230\"; }\n\n.fa-pinterest-p:before {\n  content: \"\\F231\"; }\n\n.fa-whatsapp:before {\n  content: \"\\F232\"; }\n\n.fa-server:before {\n  content: \"\\F233\"; }\n\n.fa-user-plus:before {\n  content: \"\\F234\"; }\n\n.fa-user-times:before {\n  content: \"\\F235\"; }\n\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\"; }\n\n.fa-viacoin:before {\n  content: \"\\F237\"; }\n\n.fa-train:before {\n  content: \"\\F238\"; }\n\n.fa-subway:before {\n  content: \"\\F239\"; }\n\n.fa-medium:before {\n  content: \"\\F23A\"; }\n\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\"; }\n\n.fa-optin-monster:before {\n  content: \"\\F23C\"; }\n\n.fa-opencart:before {\n  content: \"\\F23D\"; }\n\n.fa-expeditedssl:before {\n  content: \"\\F23E\"; }\n\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\"; }\n\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\"; }\n\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\"; }\n\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\"; }\n\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\"; }\n\n.fa-mouse-pointer:before {\n  content: \"\\F245\"; }\n\n.fa-i-cursor:before {\n  content: \"\\F246\"; }\n\n.fa-object-group:before {\n  content: \"\\F247\"; }\n\n.fa-object-ungroup:before {\n  content: \"\\F248\"; }\n\n.fa-sticky-note:before {\n  content: \"\\F249\"; }\n\n.fa-sticky-note-o:before {\n  content: \"\\F24A\"; }\n\n.fa-cc-jcb:before {\n  content: \"\\F24B\"; }\n\n.fa-cc-diners-club:before {\n  content: \"\\F24C\"; }\n\n.fa-clone:before {\n  content: \"\\F24D\"; }\n\n.fa-balance-scale:before {\n  content: \"\\F24E\"; }\n\n.fa-hourglass-o:before {\n  content: \"\\F250\"; }\n\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\"; }\n\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\"; }\n\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\"; }\n\n.fa-hourglass:before {\n  content: \"\\F254\"; }\n\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\"; }\n\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\"; }\n\n.fa-hand-scissors-o:before {\n  content: \"\\F257\"; }\n\n.fa-hand-lizard-o:before {\n  content: \"\\F258\"; }\n\n.fa-hand-spock-o:before {\n  content: \"\\F259\"; }\n\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\"; }\n\n.fa-hand-peace-o:before {\n  content: \"\\F25B\"; }\n\n.fa-trademark:before {\n  content: \"\\F25C\"; }\n\n.fa-registered:before {\n  content: \"\\F25D\"; }\n\n.fa-creative-commons:before {\n  content: \"\\F25E\"; }\n\n.fa-gg:before {\n  content: \"\\F260\"; }\n\n.fa-gg-circle:before {\n  content: \"\\F261\"; }\n\n.fa-tripadvisor:before {\n  content: \"\\F262\"; }\n\n.fa-odnoklassniki:before {\n  content: \"\\F263\"; }\n\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\"; }\n\n.fa-get-pocket:before {\n  content: \"\\F265\"; }\n\n.fa-wikipedia-w:before {\n  content: \"\\F266\"; }\n\n.fa-safari:before {\n  content: \"\\F267\"; }\n\n.fa-chrome:before {\n  content: \"\\F268\"; }\n\n.fa-firefox:before {\n  content: \"\\F269\"; }\n\n.fa-opera:before {\n  content: \"\\F26A\"; }\n\n.fa-internet-explorer:before {\n  content: \"\\F26B\"; }\n\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\"; }\n\n.fa-contao:before {\n  content: \"\\F26D\"; }\n\n.fa-500px:before {\n  content: \"\\F26E\"; }\n\n.fa-amazon:before {\n  content: \"\\F270\"; }\n\n.fa-calendar-plus-o:before {\n  content: \"\\F271\"; }\n\n.fa-calendar-minus-o:before {\n  content: \"\\F272\"; }\n\n.fa-calendar-times-o:before {\n  content: \"\\F273\"; }\n\n.fa-calendar-check-o:before {\n  content: \"\\F274\"; }\n\n.fa-industry:before {\n  content: \"\\F275\"; }\n\n.fa-map-pin:before {\n  content: \"\\F276\"; }\n\n.fa-map-signs:before {\n  content: \"\\F277\"; }\n\n.fa-map-o:before {\n  content: \"\\F278\"; }\n\n.fa-map:before {\n  content: \"\\F279\"; }\n\n.fa-commenting:before {\n  content: \"\\F27A\"; }\n\n.fa-commenting-o:before {\n  content: \"\\F27B\"; }\n\n.fa-houzz:before {\n  content: \"\\F27C\"; }\n\n.fa-vimeo:before {\n  content: \"\\F27D\"; }\n\n.fa-black-tie:before {\n  content: \"\\F27E\"; }\n\n.fa-fonticons:before {\n  content: \"\\F280\"; }\n\n.fa-reddit-alien:before {\n  content: \"\\F281\"; }\n\n.fa-edge:before {\n  content: \"\\F282\"; }\n\n.fa-credit-card-alt:before {\n  content: \"\\F283\"; }\n\n.fa-codiepie:before {\n  content: \"\\F284\"; }\n\n.fa-modx:before {\n  content: \"\\F285\"; }\n\n.fa-fort-awesome:before {\n  content: \"\\F286\"; }\n\n.fa-usb:before {\n  content: \"\\F287\"; }\n\n.fa-product-hunt:before {\n  content: \"\\F288\"; }\n\n.fa-mixcloud:before {\n  content: \"\\F289\"; }\n\n.fa-scribd:before {\n  content: \"\\F28A\"; }\n\n.fa-pause-circle:before {\n  content: \"\\F28B\"; }\n\n.fa-pause-circle-o:before {\n  content: \"\\F28C\"; }\n\n.fa-stop-circle:before {\n  content: \"\\F28D\"; }\n\n.fa-stop-circle-o:before {\n  content: \"\\F28E\"; }\n\n.fa-shopping-bag:before {\n  content: \"\\F290\"; }\n\n.fa-shopping-basket:before {\n  content: \"\\F291\"; }\n\n.fa-hashtag:before {\n  content: \"\\F292\"; }\n\n.fa-bluetooth:before {\n  content: \"\\F293\"; }\n\n.fa-bluetooth-b:before {\n  content: \"\\F294\"; }\n\n.fa-percent:before {\n  content: \"\\F295\"; }\n\n.fa-gitlab:before {\n  content: \"\\F296\"; }\n\n.fa-wpbeginner:before {\n  content: \"\\F297\"; }\n\n.fa-wpforms:before {\n  content: \"\\F298\"; }\n\n.fa-envira:before {\n  content: \"\\F299\"; }\n\n.fa-universal-access:before {\n  content: \"\\F29A\"; }\n\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\"; }\n\n.fa-question-circle-o:before {\n  content: \"\\F29C\"; }\n\n.fa-blind:before {\n  content: \"\\F29D\"; }\n\n.fa-audio-description:before {\n  content: \"\\F29E\"; }\n\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\"; }\n\n.fa-braille:before {\n  content: \"\\F2A1\"; }\n\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\"; }\n\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\"; }\n\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\"; }\n\n.fa-glide:before {\n  content: \"\\F2A5\"; }\n\n.fa-glide-g:before {\n  content: \"\\F2A6\"; }\n\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\"; }\n\n.fa-low-vision:before {\n  content: \"\\F2A8\"; }\n\n.fa-viadeo:before {\n  content: \"\\F2A9\"; }\n\n.fa-viadeo-square:before {\n  content: \"\\F2AA\"; }\n\n.fa-snapchat:before {\n  content: \"\\F2AB\"; }\n\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\"; }\n\n.fa-snapchat-square:before {\n  content: \"\\F2AD\"; }\n\n.fa-pied-piper:before {\n  content: \"\\F2AE\"; }\n\n.fa-first-order:before {\n  content: \"\\F2B0\"; }\n\n.fa-yoast:before {\n  content: \"\\F2B1\"; }\n\n.fa-themeisle:before {\n  content: \"\\F2B2\"; }\n\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\"; }\n\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\"; }\n\n.fa-handshake-o:before {\n  content: \"\\F2B5\"; }\n\n.fa-envelope-open:before {\n  content: \"\\F2B6\"; }\n\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\"; }\n\n.fa-linode:before {\n  content: \"\\F2B8\"; }\n\n.fa-address-book:before {\n  content: \"\\F2B9\"; }\n\n.fa-address-book-o:before {\n  content: \"\\F2BA\"; }\n\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\"; }\n\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\"; }\n\n.fa-user-circle:before {\n  content: \"\\F2BD\"; }\n\n.fa-user-circle-o:before {\n  content: \"\\F2BE\"; }\n\n.fa-user-o:before {\n  content: \"\\F2C0\"; }\n\n.fa-id-badge:before {\n  content: \"\\F2C1\"; }\n\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\"; }\n\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\"; }\n\n.fa-quora:before {\n  content: \"\\F2C4\"; }\n\n.fa-free-code-camp:before {\n  content: \"\\F2C5\"; }\n\n.fa-telegram:before {\n  content: \"\\F2C6\"; }\n\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\"; }\n\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\"; }\n\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\"; }\n\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\"; }\n\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\"; }\n\n.fa-shower:before {\n  content: \"\\F2CC\"; }\n\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\"; }\n\n.fa-podcast:before {\n  content: \"\\F2CE\"; }\n\n.fa-window-maximize:before {\n  content: \"\\F2D0\"; }\n\n.fa-window-minimize:before {\n  content: \"\\F2D1\"; }\n\n.fa-window-restore:before {\n  content: \"\\F2D2\"; }\n\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\"; }\n\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\"; }\n\n.fa-bandcamp:before {\n  content: \"\\F2D5\"; }\n\n.fa-grav:before {\n  content: \"\\F2D6\"; }\n\n.fa-etsy:before {\n  content: \"\\F2D7\"; }\n\n.fa-imdb:before {\n  content: \"\\F2D8\"; }\n\n.fa-ravelry:before {\n  content: \"\\F2D9\"; }\n\n.fa-eercast:before {\n  content: \"\\F2DA\"; }\n\n.fa-microchip:before {\n  content: \"\\F2DB\"; }\n\n.fa-snowflake-o:before {\n  content: \"\\F2DC\"; }\n\n.fa-superpowers:before {\n  content: \"\\F2DD\"; }\n\n.fa-wpexplorer:before {\n  content: \"\\F2DE\"; }\n\n.fa-meetup:before {\n  content: \"\\F2E0\"; }\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0; }\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto; }\n\nbody {\n  margin: 0;\n  padding: 0; }\n\nul {\n  list-style: none; }\n\ninput {\n  width: 100%;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  font-size: 25px;\n  color: darkgray;\n  border: 1px lightgrey solid; }\n\ninput[type=submit] {\n  background-color: white; }\n\ntextarea {\n  width: 100%;\n  border: 1px lightgrey solid;\n  height: 150px;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 25px;\n  color: darkgrey; }\n\nselect {\n  border: none;\n  border-radius: 0px 0px 0px 0px;\n  border-bottom-right-radius: 0px;\n  font-size: 25px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  width: 90%;\n  margin: 5%; }\n\ninput[placeholder] {\n  color: lightgrey; }\n\ntextarea[placeholder] {\n  color: lightgrey; }\n\nh1 {\n  font-family: 'Oswald', sans-serif; }\n\nh2 {\n  font-family: 'Oswald', sans-serif; }\n\nh3 {\n  font-family: 'Oswald', sans-serif; }\n\nh4 {\n  font-family: 'Oswald', sans-serif; }\n\nh5 {\n  font-family: 'Oswald', sans-serif; }\n\nh1, h2, h3, h4, h5 {\n  color: darkgray; }\n\ni {\n  color: darkgray; }\n\np {\n  font-family: 'Alegreya', serif;\n  color: darkgray; }\n\na {\n  font-family: 'Oswald', sans-serif;\n  font-style: none;\n  text-decoration: none;\n  color: #4F6457; }\n\na:visited {\n  color: #4F6457; }\n\na:hover {\n  color: seagreen; }\n\nbody {\n  background-color: #ffffff; }\n\n.layout-content {\n  padding-left: 5px;\n  padding-right: 5px; }\n\n.layout-head {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.layout-daydash {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n._layout-diagram {\n  display: flex;\n  justify-content: center; }\n\n.component-navigation {\n  flex-grow: 1; }\n\n.component-navigation.nav-list {\n  display: inline; }\n\n.component-navigation.nav-list.nav-listitem {\n  padding: 5px; }\n\n.component-usercontext {\n  flex-grow: 1; }\n\n.component-dayblock {\n  width: 250px;\n  height: 300px;\n  cursor: pointer; }\n\n.component-dayblock:hover {\n  background-color: rgba(137, 137, 137, 0.4); }\n\n.component-user.heading {\n  margin-bottom: 2px; }\n\n._component-diagram {\n  flex-grow: 1; }\n\n.node {\n  cursor: pointer; }\n\n.node:hover {\n  stroke: #000;\n  stroke-width: 1.5px; }\n\n.node--leaf {\n  fill: white; }\n\n.label {\n  font-family: 'Oswald', sans-serif;\n  text-anchor: middle;\n  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }\n\n.label,\n.node--root,\n.node--leaf {\n  pointer-events: none; }\n\n/*\n * General Formatting\n */\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%; }\n\ndiv {\n  margin: 0;\n  padding: 0; }\n\n/*\n   * Sidebar\n   */\n.main-row {\n  padding: 0; }\n\n.sidebar {\n  padding: 20px;\n  overflow-x: hidden;\n  overflow-y: auto;\n  border-right: 1px solid #eee; }\n\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px; }\n\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px; }\n\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca; }\n\n/*\n   * Main content\n   */\n.main {\n  padding: 0; }\n\n/*\n   * \"Loading\" modal\n   */\n#loading-modal {\n  position: absolute;\n  z-index: 10;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n  background-color: rgba(50, 50, 50, 0.9); }\n\n#loading-modal h1 {\n  text-align: center;\n  margin-top: 30%;\n  color: #fff; }\n\n/*\n   * Design\n   */\n#viewer {\n  display: block; }\n\n#floorplanner {\n  display: none; }\n\n#add-items {\n  display: none;\n  padding: 20px;\n  overflow-y: auto; }\n\n#main-controls {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  padding: 0; }\n\n#camera-controls {\n  position: absolute;\n  bottom: 20px;\n  right: 0;\n  padding: 0 20px;\n  text-align: right; }\n\n#floorplanner-controls {\n  position: absolute;\n  left: 0;\n  top: 0;\n  margin: 20px 0;\n  padding: 0 20px;\n  width: 100%; }\n\n#draw-walls-hint {\n  position: absolute;\n  left: 20px;\n  bottom: 20px;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #ffffff;\n  padding: 5px 10px;\n  z-index: 10;\n  display: none; }\n\n.add-item {\n  cursor: pointer; }\n\n.btn-file {\n  display: inline-block;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden; }\n\n.btn-file input[type=\"file\"] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  min-width: 100%;\n  min-height: 100%;\n  filter: alpha(opacity=0);\n  opacity: 0;\n  cursor: inherit;\n  display: block; }\n", ""]);
 
 // exports
 
@@ -58201,390 +58201,1604 @@ function symbolObservablePonyfill(root) {
 
 /***/ }),
 
+/***/ "../node_modules/three-obj-loader/dist/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function defaultOnError(err) {
+  throw new Error(err);
+}
+
+module.exports = function (THREE) {
+
+  /**
+   * @author mrdoob / http://mrdoob.com/
+   */
+
+  THREE.OBJLoader = function (manager) {
+
+    this.manager = manager !== undefined ? manager : THREE.DefaultLoadingManager;
+
+    this.materials = null;
+
+    this.regexp = {
+      // v float float float
+      vertex_pattern: /^v\s+([\d|\.|\+|\-|e|E]+)\s+([\d|\.|\+|\-|e|E]+)\s+([\d|\.|\+|\-|e|E]+)/,
+      // vn float float float
+      normal_pattern: /^vn\s+([\d|\.|\+|\-|e|E]+)\s+([\d|\.|\+|\-|e|E]+)\s+([\d|\.|\+|\-|e|E]+)/,
+      // vt float float
+      uv_pattern: /^vt\s+([\d|\.|\+|\-|e|E]+)\s+([\d|\.|\+|\-|e|E]+)/,
+      // f vertex vertex vertex
+      face_vertex: /^f\s+(-?\d+)\s+(-?\d+)\s+(-?\d+)(?:\s+(-?\d+))?/,
+      // f vertex/uv vertex/uv vertex/uv
+      face_vertex_uv: /^f\s+(-?\d+)\/(-?\d+)\s+(-?\d+)\/(-?\d+)\s+(-?\d+)\/(-?\d+)(?:\s+(-?\d+)\/(-?\d+))?/,
+      // f vertex/uv/normal vertex/uv/normal vertex/uv/normal
+      face_vertex_uv_normal: /^f\s+(-?\d+)\/(-?\d+)\/(-?\d+)\s+(-?\d+)\/(-?\d+)\/(-?\d+)\s+(-?\d+)\/(-?\d+)\/(-?\d+)(?:\s+(-?\d+)\/(-?\d+)\/(-?\d+))?/,
+      // f vertex//normal vertex//normal vertex//normal
+      face_vertex_normal: /^f\s+(-?\d+)\/\/(-?\d+)\s+(-?\d+)\/\/(-?\d+)\s+(-?\d+)\/\/(-?\d+)(?:\s+(-?\d+)\/\/(-?\d+))?/,
+      // o object_name | g group_name
+      object_pattern: /^[og]\s*(.+)?/,
+      // s boolean
+      smoothing_pattern: /^s\s+(\d+|on|off)/,
+      // mtllib file_reference
+      material_library_pattern: /^mtllib /,
+      // usemtl material_name
+      material_use_pattern: /^usemtl /
+    };
+  };
+
+  THREE.OBJLoader.prototype = {
+
+    constructor: THREE.OBJLoader,
+
+    load: function load(url, onLoad, onProgress, onError) {
+
+      var scope = this;
+      this.onError = onError || defaultOnError;
+
+      var loader = new THREE.FileLoader(scope.manager);
+      loader.setPath(this.path);
+      loader.load(url, function (text) {
+
+        onLoad(scope.parse(text));
+      }, onProgress, onError);
+    },
+
+    setPath: function setPath(value) {
+
+      this.path = value;
+    },
+
+    setMaterials: function setMaterials(materials) {
+
+      this.materials = materials;
+    },
+
+    _createParserState: function _createParserState() {
+
+      var state = {
+        objects: [],
+        object: {},
+
+        vertices: [],
+        normals: [],
+        uvs: [],
+
+        materialLibraries: [],
+
+        startObject: function startObject(name, fromDeclaration) {
+
+          // If the current object (initial from reset) is not from a g/o declaration in the parsed
+          // file. We need to use it for the first parsed g/o to keep things in sync.
+          if (this.object && this.object.fromDeclaration === false) {
+
+            this.object.name = name;
+            this.object.fromDeclaration = fromDeclaration !== false;
+            return;
+          }
+
+          var previousMaterial = this.object && typeof this.object.currentMaterial === 'function' ? this.object.currentMaterial() : undefined;
+
+          if (this.object && typeof this.object._finalize === 'function') {
+
+            this.object._finalize(true);
+          }
+
+          this.object = {
+            name: name || '',
+            fromDeclaration: fromDeclaration !== false,
+
+            geometry: {
+              vertices: [],
+              normals: [],
+              uvs: []
+            },
+            materials: [],
+            smooth: true,
+
+            startMaterial: function startMaterial(name, libraries) {
+
+              var previous = this._finalize(false);
+
+              // New usemtl declaration overwrites an inherited material, except if faces were declared
+              // after the material, then it must be preserved for proper MultiMaterial continuation.
+              if (previous && (previous.inherited || previous.groupCount <= 0)) {
+
+                this.materials.splice(previous.index, 1);
+              }
+
+              var material = {
+                index: this.materials.length,
+                name: name || '',
+                mtllib: Array.isArray(libraries) && libraries.length > 0 ? libraries[libraries.length - 1] : '',
+                smooth: previous !== undefined ? previous.smooth : this.smooth,
+                groupStart: previous !== undefined ? previous.groupEnd : 0,
+                groupEnd: -1,
+                groupCount: -1,
+                inherited: false,
+
+                clone: function clone(index) {
+                  var cloned = {
+                    index: typeof index === 'number' ? index : this.index,
+                    name: this.name,
+                    mtllib: this.mtllib,
+                    smooth: this.smooth,
+                    groupStart: 0,
+                    groupEnd: -1,
+                    groupCount: -1,
+                    inherited: false
+                  };
+                  cloned.clone = this.clone.bind(cloned);
+                  return cloned;
+                }
+              };
+
+              this.materials.push(material);
+
+              return material;
+            },
+
+            currentMaterial: function currentMaterial() {
+
+              if (this.materials.length > 0) {
+                return this.materials[this.materials.length - 1];
+              }
+
+              return undefined;
+            },
+
+            _finalize: function _finalize(end) {
+
+              var lastMultiMaterial = this.currentMaterial();
+              if (lastMultiMaterial && lastMultiMaterial.groupEnd === -1) {
+
+                lastMultiMaterial.groupEnd = this.geometry.vertices.length / 3;
+                lastMultiMaterial.groupCount = lastMultiMaterial.groupEnd - lastMultiMaterial.groupStart;
+                lastMultiMaterial.inherited = false;
+              }
+
+              // Ignore objects tail materials if no face declarations followed them before a new o/g started.
+              if (end && this.materials.length > 1) {
+
+                for (var mi = this.materials.length - 1; mi >= 0; mi--) {
+                  if (this.materials[mi].groupCount <= 0) {
+                    this.materials.splice(mi, 1);
+                  }
+                }
+              }
+
+              // Guarantee at least one empty material, this makes the creation later more straight forward.
+              if (end && this.materials.length === 0) {
+
+                this.materials.push({
+                  name: '',
+                  smooth: this.smooth
+                });
+              }
+
+              return lastMultiMaterial;
+            }
+          };
+
+          // Inherit previous objects material.
+          // Spec tells us that a declared material must be set to all objects until a new material is declared.
+          // If a usemtl declaration is encountered while this new object is being parsed, it will
+          // overwrite the inherited material. Exception being that there was already face declarations
+          // to the inherited material, then it will be preserved for proper MultiMaterial continuation.
+
+          if (previousMaterial && previousMaterial.name && typeof previousMaterial.clone === "function") {
+
+            var declared = previousMaterial.clone(0);
+            declared.inherited = true;
+            this.object.materials.push(declared);
+          }
+
+          this.objects.push(this.object);
+        },
+
+        finalize: function finalize() {
+
+          if (this.object && typeof this.object._finalize === 'function') {
+
+            this.object._finalize(true);
+          }
+        },
+
+        parseVertexIndex: function parseVertexIndex(value, len) {
+
+          var index = parseInt(value, 10);
+          return (index >= 0 ? index - 1 : index + len / 3) * 3;
+        },
+
+        parseNormalIndex: function parseNormalIndex(value, len) {
+
+          var index = parseInt(value, 10);
+          return (index >= 0 ? index - 1 : index + len / 3) * 3;
+        },
+
+        parseUVIndex: function parseUVIndex(value, len) {
+
+          var index = parseInt(value, 10);
+          return (index >= 0 ? index - 1 : index + len / 2) * 2;
+        },
+
+        addVertex: function addVertex(a, b, c) {
+
+          var src = this.vertices;
+          var dst = this.object.geometry.vertices;
+
+          dst.push(src[a + 0]);
+          dst.push(src[a + 1]);
+          dst.push(src[a + 2]);
+          dst.push(src[b + 0]);
+          dst.push(src[b + 1]);
+          dst.push(src[b + 2]);
+          dst.push(src[c + 0]);
+          dst.push(src[c + 1]);
+          dst.push(src[c + 2]);
+        },
+
+        addVertexLine: function addVertexLine(a) {
+
+          var src = this.vertices;
+          var dst = this.object.geometry.vertices;
+
+          dst.push(src[a + 0]);
+          dst.push(src[a + 1]);
+          dst.push(src[a + 2]);
+        },
+
+        addNormal: function addNormal(a, b, c) {
+
+          var src = this.normals;
+          var dst = this.object.geometry.normals;
+
+          dst.push(src[a + 0]);
+          dst.push(src[a + 1]);
+          dst.push(src[a + 2]);
+          dst.push(src[b + 0]);
+          dst.push(src[b + 1]);
+          dst.push(src[b + 2]);
+          dst.push(src[c + 0]);
+          dst.push(src[c + 1]);
+          dst.push(src[c + 2]);
+        },
+
+        addUV: function addUV(a, b, c) {
+
+          var src = this.uvs;
+          var dst = this.object.geometry.uvs;
+
+          dst.push(src[a + 0]);
+          dst.push(src[a + 1]);
+          dst.push(src[b + 0]);
+          dst.push(src[b + 1]);
+          dst.push(src[c + 0]);
+          dst.push(src[c + 1]);
+        },
+
+        addUVLine: function addUVLine(a) {
+
+          var src = this.uvs;
+          var dst = this.object.geometry.uvs;
+
+          dst.push(src[a + 0]);
+          dst.push(src[a + 1]);
+        },
+
+        addFace: function addFace(a, b, c, d, ua, ub, uc, ud, na, nb, nc, nd) {
+
+          var vLen = this.vertices.length;
+
+          var ia = this.parseVertexIndex(a, vLen);
+          var ib = this.parseVertexIndex(b, vLen);
+          var ic = this.parseVertexIndex(c, vLen);
+          var id;
+
+          if (d === undefined) {
+
+            this.addVertex(ia, ib, ic);
+          } else {
+
+            id = this.parseVertexIndex(d, vLen);
+
+            this.addVertex(ia, ib, id);
+            this.addVertex(ib, ic, id);
+          }
+
+          if (ua !== undefined) {
+
+            var uvLen = this.uvs.length;
+
+            ia = this.parseUVIndex(ua, uvLen);
+            ib = this.parseUVIndex(ub, uvLen);
+            ic = this.parseUVIndex(uc, uvLen);
+
+            if (d === undefined) {
+
+              this.addUV(ia, ib, ic);
+            } else {
+
+              id = this.parseUVIndex(ud, uvLen);
+
+              this.addUV(ia, ib, id);
+              this.addUV(ib, ic, id);
+            }
+          }
+
+          if (na !== undefined) {
+
+            // Normals are many times the same. If so, skip function call and parseInt.
+            var nLen = this.normals.length;
+            ia = this.parseNormalIndex(na, nLen);
+
+            ib = na === nb ? ia : this.parseNormalIndex(nb, nLen);
+            ic = na === nc ? ia : this.parseNormalIndex(nc, nLen);
+
+            if (d === undefined) {
+
+              this.addNormal(ia, ib, ic);
+            } else {
+
+              id = this.parseNormalIndex(nd, nLen);
+
+              this.addNormal(ia, ib, id);
+              this.addNormal(ib, ic, id);
+            }
+          }
+        },
+
+        addLineGeometry: function addLineGeometry(vertices, uvs) {
+
+          this.object.geometry.type = 'Line';
+
+          var vLen = this.vertices.length;
+          var uvLen = this.uvs.length;
+
+          for (var vi = 0, l = vertices.length; vi < l; vi++) {
+
+            this.addVertexLine(this.parseVertexIndex(vertices[vi], vLen));
+          }
+
+          for (var uvi = 0, l = uvs.length; uvi < l; uvi++) {
+
+            this.addUVLine(this.parseUVIndex(uvs[uvi], uvLen));
+          }
+        }
+
+      };
+
+      state.startObject('', false);
+
+      return state;
+    },
+
+    parse: function parse(text, debug) {
+      if (typeof debug === 'undefined') {
+        debug = true;
+      }
+
+      if (debug) {
+        console.time('OBJLoader');
+      }
+
+      var state = this._createParserState();
+
+      if (text.indexOf('\r\n') !== -1) {
+
+        // This is faster than String.split with regex that splits on both
+        text = text.replace(/\r\n/g, '\n');
+      }
+
+      if (text.indexOf('\\\n') !== -1) {
+
+        // join lines separated by a line continuation character (\)
+        text = text.replace(/\\\n/g, '');
+      }
+
+      var lines = text.split('\n');
+      var line = '',
+          lineFirstChar = '',
+          lineSecondChar = '';
+      var lineLength = 0;
+      var result = [];
+
+      // Faster to just trim left side of the line. Use if available.
+      var trimLeft = typeof ''.trimLeft === 'function';
+
+      for (var i = 0, l = lines.length; i < l; i++) {
+
+        line = lines[i];
+
+        line = trimLeft ? line.trimLeft() : line.trim();
+
+        lineLength = line.length;
+
+        if (lineLength === 0) continue;
+
+        lineFirstChar = line.charAt(0);
+
+        // @todo invoke passed in handler if any
+        if (lineFirstChar === '#') continue;
+
+        if (lineFirstChar === 'v') {
+
+          lineSecondChar = line.charAt(1);
+
+          if (lineSecondChar === ' ' && (result = this.regexp.vertex_pattern.exec(line)) !== null) {
+
+            // 0                  1      2      3
+            // ["v 1.0 2.0 3.0", "1.0", "2.0", "3.0"]
+
+            state.vertices.push(parseFloat(result[1]), parseFloat(result[2]), parseFloat(result[3]));
+          } else if (lineSecondChar === 'n' && (result = this.regexp.normal_pattern.exec(line)) !== null) {
+
+            // 0                   1      2      3
+            // ["vn 1.0 2.0 3.0", "1.0", "2.0", "3.0"]
+
+            state.normals.push(parseFloat(result[1]), parseFloat(result[2]), parseFloat(result[3]));
+          } else if (lineSecondChar === 't' && (result = this.regexp.uv_pattern.exec(line)) !== null) {
+
+            // 0               1      2
+            // ["vt 0.1 0.2", "0.1", "0.2"]
+
+            state.uvs.push(parseFloat(result[1]), parseFloat(result[2]));
+          } else {
+
+            this.onError("Unexpected vertex/normal/uv line: '" + line + "'");
+          }
+        } else if (lineFirstChar === "f") {
+
+          if ((result = this.regexp.face_vertex_uv_normal.exec(line)) !== null) {
+
+            // f vertex/uv/normal vertex/uv/normal vertex/uv/normal
+            // 0                        1    2    3    4    5    6    7    8    9   10         11         12
+            // ["f 1/1/1 2/2/2 3/3/3", "1", "1", "1", "2", "2", "2", "3", "3", "3", undefined, undefined, undefined]
+
+            state.addFace(result[1], result[4], result[7], result[10], result[2], result[5], result[8], result[11], result[3], result[6], result[9], result[12]);
+          } else if ((result = this.regexp.face_vertex_uv.exec(line)) !== null) {
+
+            // f vertex/uv vertex/uv vertex/uv
+            // 0                  1    2    3    4    5    6   7          8
+            // ["f 1/1 2/2 3/3", "1", "1", "2", "2", "3", "3", undefined, undefined]
+
+            state.addFace(result[1], result[3], result[5], result[7], result[2], result[4], result[6], result[8]);
+          } else if ((result = this.regexp.face_vertex_normal.exec(line)) !== null) {
+
+            // f vertex//normal vertex//normal vertex//normal
+            // 0                     1    2    3    4    5    6   7          8
+            // ["f 1//1 2//2 3//3", "1", "1", "2", "2", "3", "3", undefined, undefined]
+
+            state.addFace(result[1], result[3], result[5], result[7], undefined, undefined, undefined, undefined, result[2], result[4], result[6], result[8]);
+          } else if ((result = this.regexp.face_vertex.exec(line)) !== null) {
+
+            // f vertex vertex vertex
+            // 0            1    2    3   4
+            // ["f 1 2 3", "1", "2", "3", undefined]
+
+            state.addFace(result[1], result[2], result[3], result[4]);
+          } else {
+
+            this.onError("Unexpected face line: '" + line + "'");
+          }
+        } else if (lineFirstChar === "l") {
+
+          var lineParts = line.substring(1).trim().split(" ");
+          var lineVertices = [],
+              lineUVs = [];
+
+          if (line.indexOf("/") === -1) {
+
+            lineVertices = lineParts;
+          } else {
+
+            for (var li = 0, llen = lineParts.length; li < llen; li++) {
+
+              var parts = lineParts[li].split("/");
+
+              if (parts[0] !== "") lineVertices.push(parts[0]);
+              if (parts[1] !== "") lineUVs.push(parts[1]);
+            }
+          }
+          state.addLineGeometry(lineVertices, lineUVs);
+        } else if ((result = this.regexp.object_pattern.exec(line)) !== null) {
+
+          // o object_name
+          // or
+          // g group_name
+
+          // WORKAROUND: https://bugs.chromium.org/p/v8/issues/detail?id=2869
+          // var name = result[ 0 ].substr( 1 ).trim();
+          var name = (" " + result[0].substr(1).trim()).substr(1);
+
+          state.startObject(name);
+        } else if (this.regexp.material_use_pattern.test(line)) {
+
+          // material
+
+          state.object.startMaterial(line.substring(7).trim(), state.materialLibraries);
+        } else if (this.regexp.material_library_pattern.test(line)) {
+
+          // mtl file
+
+          state.materialLibraries.push(line.substring(7).trim());
+        } else if ((result = this.regexp.smoothing_pattern.exec(line)) !== null) {
+
+          // smooth shading
+
+          // @todo Handle files that have varying smooth values for a set of faces inside one geometry,
+          // but does not define a usemtl for each face set.
+          // This should be detected and a dummy material created (later MultiMaterial and geometry groups).
+          // This requires some care to not create extra material on each smooth value for "normal" obj files.
+          // where explicit usemtl defines geometry groups.
+          // Example asset: examples/models/obj/cerberus/Cerberus.obj
+
+          var value = result[1].trim().toLowerCase();
+          state.object.smooth = value === '1' || value === 'on';
+
+          var material = state.object.currentMaterial();
+          if (material) {
+
+            material.smooth = state.object.smooth;
+          }
+        } else {
+
+          // Handle null terminated files without exception
+          if (line === '\0') continue;
+
+          this.onError("Unexpected line: '" + line + "'");
+        }
+      }
+
+      state.finalize();
+
+      var container = new THREE.Group();
+      container.materialLibraries = [].concat(state.materialLibraries);
+
+      for (var i = 0, l = state.objects.length; i < l; i++) {
+
+        var object = state.objects[i];
+        var geometry = object.geometry;
+        var materials = object.materials;
+        var isLine = geometry.type === 'Line';
+
+        // Skip o/g line declarations that did not follow with any faces
+        if (geometry.vertices.length === 0) continue;
+
+        var buffergeometry = new THREE.BufferGeometry();
+
+        buffergeometry.addAttribute('position', new THREE.BufferAttribute(new Float32Array(geometry.vertices), 3));
+
+        if (geometry.normals.length > 0) {
+
+          buffergeometry.addAttribute('normal', new THREE.BufferAttribute(new Float32Array(geometry.normals), 3));
+        } else {
+
+          buffergeometry.computeVertexNormals();
+        }
+
+        if (geometry.uvs.length > 0) {
+
+          buffergeometry.addAttribute('uv', new THREE.BufferAttribute(new Float32Array(geometry.uvs), 2));
+        }
+
+        // Create materials
+
+        var createdMaterials = [];
+
+        for (var mi = 0, miLen = materials.length; mi < miLen; mi++) {
+
+          var sourceMaterial = materials[mi];
+          var material = undefined;
+
+          if (this.materials !== null) {
+
+            material = this.materials.create(sourceMaterial.name);
+
+            // mtl etc. loaders probably can't create line materials correctly, copy properties to a line material.
+            if (isLine && material && !(material instanceof THREE.LineBasicMaterial)) {
+
+              var materialLine = new THREE.LineBasicMaterial();
+              materialLine.copy(material);
+              material = materialLine;
+            }
+          }
+
+          if (!material) {
+
+            material = !isLine ? new THREE.MeshPhongMaterial() : new THREE.LineBasicMaterial();
+            material.name = sourceMaterial.name;
+          }
+
+          material.shading = sourceMaterial.smooth ? THREE.SmoothShading : THREE.FlatShading;
+
+          createdMaterials.push(material);
+        }
+
+        // Create mesh
+
+        var mesh;
+
+        if (createdMaterials.length > 1) {
+
+          for (var mi = 0, miLen = materials.length; mi < miLen; mi++) {
+
+            var sourceMaterial = materials[mi];
+            buffergeometry.addGroup(sourceMaterial.groupStart, sourceMaterial.groupCount, mi);
+          }
+
+          var multiMaterial = new THREE.MultiMaterial(createdMaterials);
+          mesh = !isLine ? new THREE.Mesh(buffergeometry, multiMaterial) : new THREE.LineSegments(buffergeometry, multiMaterial);
+        } else {
+
+          mesh = !isLine ? new THREE.Mesh(buffergeometry, createdMaterials[0]) : new THREE.LineSegments(buffergeometry, createdMaterials[0]);
+        }
+
+        mesh.name = object.name;
+
+        container.add(mesh);
+      }
+
+      if (debug) {
+        console.timeEnd('OBJLoader');
+      }
+
+      return container;
+    }
+
+  };
+};
+
+/***/ }),
+
+/***/ "../node_modules/three-react-mtl-loader/index.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/**
+ * Loads a Wavefront .mtl file specifying materials
+ *
+ * @author angelxuanchang
+ * edited by lucascassiano as an ES6 module - http://lucascassiano.github.io
+ */
+
+
+class MTLLoader {
+
+	constructor(manager) {
+		this.manager = (manager !== undefined) ? manager : __WEBPACK_IMPORTED_MODULE_0_three__["DefaultLoadingManager"];
+
+	}
+
+	/**
+	 * Loads and parses a MTL asset from a URL.
+	 *
+	 * @param {String} url - URL to the MTL file.
+	 * @param {Function} [onLoad] - Callback invoked with the loaded object.
+	 * @param {Function} [onProgress] - Callback for download progress.
+	 * @param {Function} [onError] - Callback for download errors.
+	 *
+	 * @see setPath setTexturePath
+	 *
+	 * @note In order for relative texture references to resolve correctly
+	 * you must call setPath and/or setTexturePath explicitly prior to load.
+	 */
+	load(url, onLoad, onProgress, onError) {
+
+		var scope = this;
+
+		var loader = new __WEBPACK_IMPORTED_MODULE_0_three__["FileLoader"](this.manager);
+		loader.setPath(this.path);
+		loader.load(url, function (text) {
+
+			onLoad(scope.parse(text));
+
+		}, onProgress, onError);
+
+	}
+
+	/**
+	 * Set base path for resolving references.
+	 * If set this path will be prepended to each loaded and found reference.
+	 *
+	 * @see setTexturePath
+	 * @param {String} path
+	 *
+	 * @example
+	 *     mtlLoader.setPath( 'assets/obj/' );
+	 *     mtlLoader.load( 'my.mtl', ... );
+	 */
+	setPath(path) {
+		this.path = path;
+	}
+
+	/**
+	 * Set base path for resolving texture references.
+	 * If set this path will be prepended found texture reference.
+	 * If not set and setPath is, it will be used as texture base path.
+	 *
+	 * @see setPath
+	 * @param {String} path
+	 *
+	 * @example
+	 *     mtlLoader.setPath( 'assets/obj/' );
+	 *     mtlLoader.setTexturePath( 'assets/textures/' );
+	 *     mtlLoader.load( 'my.mtl', ... );
+	 */
+	setTexturePath(path) {
+
+		this.texturePath = path;
+
+	}
+
+	setBaseUrl(path) {
+
+		console.warn('THREE.MTLLoader: .setBaseUrl() is deprecated. Use .setTexturePath( path ) for texture path or .setPath( path ) for general base path instead.');
+
+		this.setTexturePath(path);
+
+	}
+
+	setCrossOrigin(value) {
+
+		this.crossOrigin = value;
+
+	}
+
+	setMaterialOptions(value) {
+
+		this.materialOptions = value;
+
+	}
+
+	/**
+	 * Parses a MTL file.
+	 *
+	 * @param {String} text - Content of MTL file
+	 * @return {THREE.MTLLoader.MaterialCreator}
+	 *
+	 * @see setPath setTexturePath
+	 *
+	 * @note In order for relative texture references to resolve correctly
+	 * you must call setPath and/or setTexturePath explicitly prior to parse.
+	 */
+	parse(text) {
+
+		var lines = text.split('\n');
+		var info = {};
+		var delimiter_pattern = /\s+/;
+		var materialsInfo = {};
+
+		for (var i = 0; i < lines.length; i++) {
+
+			var line = lines[i];
+			line = line.trim();
+
+			if (line.length === 0 || line.charAt(0) === '#') {
+
+				// Blank line or comment ignore
+				continue;
+
+			}
+
+			var pos = line.indexOf(' ');
+
+			var key = (pos >= 0) ? line.substring(0, pos) : line;
+			key = key.toLowerCase();
+
+			var value = (pos >= 0) ? line.substring(pos + 1) : '';
+			value = value.trim();
+
+			if (key === 'newmtl') {
+
+				// New material
+
+				info = { name: value };
+				materialsInfo[value] = info;
+
+			} else if (info) {
+
+				if (key === 'ka' || key === 'kd' || key === 'ks') {
+
+					var ss = value.split(delimiter_pattern, 3);
+					info[key] = [parseFloat(ss[0]), parseFloat(ss[1]), parseFloat(ss[2])];
+
+				} else {
+
+					info[key] = value;
+
+				}
+
+			}
+
+		}
+
+		var materialCreator = new MaterialCreator(this.texturePath || this.path, this.materialOptions);
+		materialCreator.setCrossOrigin(this.crossOrigin);
+		materialCreator.setManager(this.manager);
+		materialCreator.setMaterials(materialsInfo);
+		return materialCreator;
+
+	}
+}
+
+class MaterialCreator {
+	constructor(baseUrl, options) {
+
+		this.baseUrl = baseUrl || '';
+		this.options = options;
+		this.materialsInfo = {};
+		this.materials = {};
+		this.materialsArray = [];
+		this.nameLookup = {};
+
+		this.side = (this.options && this.options.side) ? this.options.side : __WEBPACK_IMPORTED_MODULE_0_three__["FrontSide"];
+		this.wrap = (this.options && this.options.wrap) ? this.options.wrap : __WEBPACK_IMPORTED_MODULE_0_three__["RepeatWrapping"];
+		this.crossOrigin = 'Anonymous';
+	}
+
+	
+
+	setCrossOrigin(value) {
+
+		this.crossOrigin = value;
+
+	}
+
+	setManager(value) {
+
+		this.manager = value;
+
+	}
+
+	setMaterials(materialsInfo) {
+
+		this.materialsInfo = this.convert(materialsInfo);
+		this.materials = {};
+		this.materialsArray = [];
+		this.nameLookup = {};
+
+	}
+
+	convert(materialsInfo) {
+
+		if (!this.options) return materialsInfo;
+
+		var converted = {};
+
+		for (var mn in materialsInfo) {
+
+			// Convert materials info into normalized form based on options
+
+			var mat = materialsInfo[mn];
+
+			var covmat = {};
+
+			converted[mn] = covmat;
+
+			for (var prop in mat) {
+
+				var save = true;
+				var value = mat[prop];
+				var lprop = prop.toLowerCase();
+
+				switch (lprop) {
+
+					case 'kd':
+					case 'ka':
+					case 'ks':
+
+						// Diffuse color (color under white light) using RGB values
+
+						if (this.options && this.options.normalizeRGB) {
+
+							value = [value[0] / 255, value[1] / 255, value[2] / 255];
+
+						}
+
+						if (this.options && this.options.ignoreZeroRGBs) {
+
+							if (value[0] === 0 && value[1] === 0 && value[2] === 0) {
+
+								// ignore
+
+								save = false;
+
+							}
+
+						}
+
+						break;
+
+					default:
+
+						break;
+
+				}
+
+				if (save) {
+
+					covmat[lprop] = value;
+
+				}
+
+			}
+
+		}
+
+		return converted;
+
+	}
+
+	preload() {
+
+		for (var mn in this.materialsInfo) {
+
+			this.create(mn);
+
+		}
+
+	}
+
+	getIndex(materialName) {
+
+		return this.nameLookup[materialName];
+
+	}
+
+	getAsArray() {
+
+		var index = 0;
+
+		for (var mn in this.materialsInfo) {
+
+			this.materialsArray[index] = this.create(mn);
+			this.nameLookup[mn] = index;
+			index++;
+
+		}
+
+		return this.materialsArray;
+
+	}
+
+	create(materialName) {
+
+		if (this.materials[materialName] === undefined) {
+
+			this.createMaterial_(materialName);
+
+		}
+
+		return this.materials[materialName];
+
+	}
+
+	createMaterial_(materialName) {
+
+		// Create material
+
+		var scope = this;
+		var mat = this.materialsInfo[materialName];
+		var params = {
+
+			name: materialName,
+			side: this.side
+
+		};
+
+		function resolveURL(baseUrl, url) {
+
+			if (typeof url !== 'string' || url === '')
+				return '';
+
+			// Absolute URL
+			if (/^https?:\/\//i.test(url)) return url;
+
+			return baseUrl + url;
+
+		}
+
+		function setMapForType(mapType, value) {
+
+			if (params[mapType]) return; // Keep the first encountered texture
+
+			var texParams = scope.getTextureParams(value, params);
+			var map = scope.loadTexture(resolveURL(scope.baseUrl, texParams.url));
+
+			map.repeat.copy(texParams.scale);
+			map.offset.copy(texParams.offset);
+
+			map.wrapS = scope.wrap;
+			map.wrapT = scope.wrap;
+
+			params[mapType] = map;
+
+		}
+
+		for (var prop in mat) {
+
+			var value = mat[prop];
+			var n;
+
+			if (value === '') continue;
+
+			switch (prop.toLowerCase()) {
+
+				// Ns is material specular exponent
+
+				case 'kd':
+
+					// Diffuse color (color under white light) using RGB values
+
+					params.color = new __WEBPACK_IMPORTED_MODULE_0_three__["Color"]().fromArray(value);
+
+					break;
+
+				case 'ks':
+
+					// Specular color (color when light is reflected from shiny surface) using RGB values
+					params.specular = new __WEBPACK_IMPORTED_MODULE_0_three__["Color"]().fromArray(value);
+
+					break;
+
+				case 'map_kd':
+
+					// Diffuse texture map
+
+					setMapForType("map", value);
+
+					break;
+
+				case 'map_ks':
+
+					// Specular map
+
+					setMapForType("specularMap", value);
+
+					break;
+
+				case 'norm':
+
+					setMapForType("normalMap", value);
+
+					break;
+
+				case 'map_bump':
+				case 'bump':
+
+					// Bump texture map
+
+					setMapForType("bumpMap", value);
+
+					break;
+
+				case 'ns':
+
+					// The specular exponent (defines the focus of the specular highlight)
+					// A high exponent results in a tight, concentrated highlight. Ns values normally range from 0 to 1000.
+
+					params.shininess = parseFloat(value);
+
+					break;
+
+				case 'd':
+					n = parseFloat(value);
+
+					if (n < 1) {
+
+						params.opacity = n;
+						params.transparent = true;
+
+					}
+
+					break;
+
+				case 'tr':
+					n = parseFloat(value);
+
+					if (n > 0) {
+
+						params.opacity = 1 - n;
+						params.transparent = true;
+
+					}
+
+					break;
+
+				default:
+					break;
+
+			}
+
+		}
+
+		this.materials[materialName] = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshPhongMaterial"](params);
+		return this.materials[materialName];
+
+	}
+
+	getTextureParams(value, matParams) {
+
+		var texParams = {
+
+			scale: new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](1, 1),
+			offset: new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0, 0)
+
+		};
+
+		var items = value.split(/\s+/);
+		var pos;
+
+		pos = items.indexOf('-bm');
+
+		if (pos >= 0) {
+
+			matParams.bumpScale = parseFloat(items[pos + 1]);
+			items.splice(pos, 2);
+
+		}
+
+		pos = items.indexOf('-s');
+
+		if (pos >= 0) {
+
+			texParams.scale.set(parseFloat(items[pos + 1]), parseFloat(items[pos + 2]));
+			items.splice(pos, 4); // we expect 3 parameters here!
+
+		}
+
+		pos = items.indexOf('-o');
+
+		if (pos >= 0) {
+
+			texParams.offset.set(parseFloat(items[pos + 1]), parseFloat(items[pos + 2]));
+			items.splice(pos, 4); // we expect 3 parameters here!
+
+		}
+
+		texParams.url = items.join(' ').trim();
+		return texParams;
+
+	}
+
+	loadTexture(url, mapping, onLoad, onProgress, onError) {
+
+		var texture;
+		var loader = __WEBPACK_IMPORTED_MODULE_0_three__["Loader"].Handlers.get(url);
+		var manager = (this.manager !== undefined) ? this.manager : __WEBPACK_IMPORTED_MODULE_0_three__["DefaultLoadingManager"];
+
+		if (loader === null) {
+
+			loader = new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"](manager);
+
+		}
+
+		if (loader.setCrossOrigin) loader.setCrossOrigin(this.crossOrigin);
+		texture = loader.load(url, onLoad, onProgress, onError);
+
+		if (mapping !== undefined) texture.mapping = mapping;
+
+		return texture;
+
+	}
+
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (MTLLoader);
+
+
+
+/***/ }),
+
 /***/ "../node_modules/three/build/three.module.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export WebGLRenderTargetCube */
-/* unused harmony export WebGLRenderTarget */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return WebGLRenderer; });
-/* unused harmony export ShaderLib */
-/* unused harmony export UniformsLib */
-/* unused harmony export UniformsUtils */
-/* unused harmony export ShaderChunk */
-/* unused harmony export FogExp2 */
-/* unused harmony export Fog */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Scene; });
-/* unused harmony export LensFlare */
-/* unused harmony export Sprite */
-/* unused harmony export LOD */
-/* unused harmony export SkinnedMesh */
-/* unused harmony export Skeleton */
-/* unused harmony export Bone */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Mesh; });
-/* unused harmony export LineSegments */
-/* unused harmony export LineLoop */
-/* unused harmony export Line */
-/* unused harmony export Points */
-/* unused harmony export Group */
-/* unused harmony export VideoTexture */
-/* unused harmony export DataTexture */
-/* unused harmony export CompressedTexture */
-/* unused harmony export CubeTexture */
-/* unused harmony export CanvasTexture */
-/* unused harmony export DepthTexture */
-/* unused harmony export Texture */
-/* unused harmony export CompressedTextureLoader */
-/* unused harmony export DataTextureLoader */
-/* unused harmony export CubeTextureLoader */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return TextureLoader; });
-/* unused harmony export ObjectLoader */
-/* unused harmony export MaterialLoader */
-/* unused harmony export BufferGeometryLoader */
-/* unused harmony export DefaultLoadingManager */
-/* unused harmony export LoadingManager */
-/* unused harmony export JSONLoader */
-/* unused harmony export ImageLoader */
-/* unused harmony export FontLoader */
-/* unused harmony export FileLoader */
-/* unused harmony export Loader */
-/* unused harmony export Cache */
-/* unused harmony export AudioLoader */
-/* unused harmony export SpotLightShadow */
-/* unused harmony export SpotLight */
-/* unused harmony export PointLight */
-/* unused harmony export RectAreaLight */
-/* unused harmony export HemisphereLight */
-/* unused harmony export DirectionalLightShadow */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return DirectionalLight; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AmbientLight; });
-/* unused harmony export LightShadow */
-/* unused harmony export Light */
-/* unused harmony export StereoCamera */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return PerspectiveCamera; });
-/* unused harmony export OrthographicCamera */
-/* unused harmony export CubeCamera */
-/* unused harmony export ArrayCamera */
-/* unused harmony export Camera */
-/* unused harmony export AudioListener */
-/* unused harmony export PositionalAudio */
-/* unused harmony export AudioContext */
-/* unused harmony export AudioAnalyser */
-/* unused harmony export Audio */
-/* unused harmony export VectorKeyframeTrack */
-/* unused harmony export StringKeyframeTrack */
-/* unused harmony export QuaternionKeyframeTrack */
-/* unused harmony export NumberKeyframeTrack */
-/* unused harmony export ColorKeyframeTrack */
-/* unused harmony export BooleanKeyframeTrack */
-/* unused harmony export PropertyMixer */
-/* unused harmony export PropertyBinding */
-/* unused harmony export KeyframeTrack */
-/* unused harmony export AnimationUtils */
-/* unused harmony export AnimationObjectGroup */
-/* unused harmony export AnimationMixer */
-/* unused harmony export AnimationClip */
-/* unused harmony export Uniform */
-/* unused harmony export InstancedBufferGeometry */
-/* unused harmony export BufferGeometry */
-/* unused harmony export GeometryIdCount */
-/* unused harmony export Geometry */
-/* unused harmony export InterleavedBufferAttribute */
-/* unused harmony export InstancedInterleavedBuffer */
-/* unused harmony export InterleavedBuffer */
-/* unused harmony export InstancedBufferAttribute */
-/* unused harmony export Face3 */
-/* unused harmony export Object3D */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Raycaster; });
-/* unused harmony export Layers */
-/* unused harmony export EventDispatcher */
-/* unused harmony export Clock */
-/* unused harmony export QuaternionLinearInterpolant */
-/* unused harmony export LinearInterpolant */
-/* unused harmony export DiscreteInterpolant */
-/* unused harmony export CubicInterpolant */
-/* unused harmony export Interpolant */
-/* unused harmony export Triangle */
-/* unused harmony export Math */
-/* unused harmony export Spherical */
-/* unused harmony export Cylindrical */
-/* unused harmony export Plane */
-/* unused harmony export Frustum */
-/* unused harmony export Sphere */
-/* unused harmony export Ray */
-/* unused harmony export Matrix4 */
-/* unused harmony export Matrix3 */
-/* unused harmony export Box3 */
-/* unused harmony export Box2 */
-/* unused harmony export Line3 */
-/* unused harmony export Euler */
-/* unused harmony export Vector4 */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return Vector3; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Vector2; });
-/* unused harmony export Quaternion */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Color; });
-/* unused harmony export MorphBlendMesh */
-/* unused harmony export ImmediateRenderObject */
-/* unused harmony export VertexNormalsHelper */
-/* unused harmony export SpotLightHelper */
-/* unused harmony export SkeletonHelper */
-/* unused harmony export PointLightHelper */
-/* unused harmony export RectAreaLightHelper */
-/* unused harmony export HemisphereLightHelper */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return GridHelper; });
-/* unused harmony export PolarGridHelper */
-/* unused harmony export FaceNormalsHelper */
-/* unused harmony export DirectionalLightHelper */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CameraHelper; });
-/* unused harmony export BoxHelper */
-/* unused harmony export ArrowHelper */
-/* unused harmony export AxisHelper */
-/* unused harmony export CatmullRomCurve3 */
-/* unused harmony export CubicBezierCurve3 */
-/* unused harmony export QuadraticBezierCurve3 */
-/* unused harmony export LineCurve3 */
-/* unused harmony export ArcCurve */
-/* unused harmony export EllipseCurve */
-/* unused harmony export SplineCurve */
-/* unused harmony export CubicBezierCurve */
-/* unused harmony export QuadraticBezierCurve */
-/* unused harmony export LineCurve */
-/* unused harmony export Shape */
-/* unused harmony export Path */
-/* unused harmony export ShapePath */
-/* unused harmony export Font */
-/* unused harmony export CurvePath */
-/* unused harmony export Curve */
-/* unused harmony export ShapeUtils */
-/* unused harmony export SceneUtils */
-/* unused harmony export WireframeGeometry */
-/* unused harmony export ParametricGeometry */
-/* unused harmony export ParametricBufferGeometry */
-/* unused harmony export TetrahedronGeometry */
-/* unused harmony export TetrahedronBufferGeometry */
-/* unused harmony export OctahedronGeometry */
-/* unused harmony export OctahedronBufferGeometry */
-/* unused harmony export IcosahedronGeometry */
-/* unused harmony export IcosahedronBufferGeometry */
-/* unused harmony export DodecahedronGeometry */
-/* unused harmony export DodecahedronBufferGeometry */
-/* unused harmony export PolyhedronGeometry */
-/* unused harmony export PolyhedronBufferGeometry */
-/* unused harmony export TubeGeometry */
-/* unused harmony export TubeBufferGeometry */
-/* unused harmony export TorusKnotGeometry */
-/* unused harmony export TorusKnotBufferGeometry */
-/* unused harmony export TorusGeometry */
-/* unused harmony export TorusBufferGeometry */
-/* unused harmony export TextGeometry */
-/* unused harmony export TextBufferGeometry */
-/* unused harmony export SphereGeometry */
-/* unused harmony export SphereBufferGeometry */
-/* unused harmony export RingGeometry */
-/* unused harmony export RingBufferGeometry */
-/* unused harmony export PlaneGeometry */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return PlaneBufferGeometry; });
-/* unused harmony export LatheGeometry */
-/* unused harmony export LatheBufferGeometry */
-/* unused harmony export ShapeGeometry */
-/* unused harmony export ShapeBufferGeometry */
-/* unused harmony export ExtrudeGeometry */
-/* unused harmony export ExtrudeBufferGeometry */
-/* unused harmony export EdgesGeometry */
-/* unused harmony export ConeGeometry */
-/* unused harmony export ConeBufferGeometry */
-/* unused harmony export CylinderGeometry */
-/* unused harmony export CylinderBufferGeometry */
-/* unused harmony export CircleGeometry */
-/* unused harmony export CircleBufferGeometry */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return BoxGeometry; });
-/* unused harmony export BoxBufferGeometry */
-/* unused harmony export ShadowMaterial */
-/* unused harmony export SpriteMaterial */
-/* unused harmony export RawShaderMaterial */
-/* unused harmony export ShaderMaterial */
-/* unused harmony export PointsMaterial */
-/* unused harmony export MeshPhysicalMaterial */
-/* unused harmony export MeshStandardMaterial */
-/* unused harmony export MeshPhongMaterial */
-/* unused harmony export MeshToonMaterial */
-/* unused harmony export MeshNormalMaterial */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return MeshLambertMaterial; });
-/* unused harmony export MeshDepthMaterial */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return MeshBasicMaterial; });
-/* unused harmony export LineDashedMaterial */
-/* unused harmony export LineBasicMaterial */
-/* unused harmony export Material */
-/* unused harmony export Float64BufferAttribute */
-/* unused harmony export Float32BufferAttribute */
-/* unused harmony export Uint32BufferAttribute */
-/* unused harmony export Int32BufferAttribute */
-/* unused harmony export Uint16BufferAttribute */
-/* unused harmony export Int16BufferAttribute */
-/* unused harmony export Uint8ClampedBufferAttribute */
-/* unused harmony export Uint8BufferAttribute */
-/* unused harmony export Int8BufferAttribute */
-/* unused harmony export BufferAttribute */
-/* unused harmony export REVISION */
-/* unused harmony export MOUSE */
-/* unused harmony export CullFaceNone */
-/* unused harmony export CullFaceBack */
-/* unused harmony export CullFaceFront */
-/* unused harmony export CullFaceFrontBack */
-/* unused harmony export FrontFaceDirectionCW */
-/* unused harmony export FrontFaceDirectionCCW */
-/* unused harmony export BasicShadowMap */
-/* unused harmony export PCFShadowMap */
-/* unused harmony export PCFSoftShadowMap */
-/* unused harmony export FrontSide */
-/* unused harmony export BackSide */
-/* unused harmony export DoubleSide */
-/* unused harmony export FlatShading */
-/* unused harmony export SmoothShading */
-/* unused harmony export NoColors */
-/* unused harmony export FaceColors */
-/* unused harmony export VertexColors */
-/* unused harmony export NoBlending */
-/* unused harmony export NormalBlending */
-/* unused harmony export AdditiveBlending */
-/* unused harmony export SubtractiveBlending */
-/* unused harmony export MultiplyBlending */
-/* unused harmony export CustomBlending */
-/* unused harmony export AddEquation */
-/* unused harmony export SubtractEquation */
-/* unused harmony export ReverseSubtractEquation */
-/* unused harmony export MinEquation */
-/* unused harmony export MaxEquation */
-/* unused harmony export ZeroFactor */
-/* unused harmony export OneFactor */
-/* unused harmony export SrcColorFactor */
-/* unused harmony export OneMinusSrcColorFactor */
-/* unused harmony export SrcAlphaFactor */
-/* unused harmony export OneMinusSrcAlphaFactor */
-/* unused harmony export DstAlphaFactor */
-/* unused harmony export OneMinusDstAlphaFactor */
-/* unused harmony export DstColorFactor */
-/* unused harmony export OneMinusDstColorFactor */
-/* unused harmony export SrcAlphaSaturateFactor */
-/* unused harmony export NeverDepth */
-/* unused harmony export AlwaysDepth */
-/* unused harmony export LessDepth */
-/* unused harmony export LessEqualDepth */
-/* unused harmony export EqualDepth */
-/* unused harmony export GreaterEqualDepth */
-/* unused harmony export GreaterDepth */
-/* unused harmony export NotEqualDepth */
-/* unused harmony export MultiplyOperation */
-/* unused harmony export MixOperation */
-/* unused harmony export AddOperation */
-/* unused harmony export NoToneMapping */
-/* unused harmony export LinearToneMapping */
-/* unused harmony export ReinhardToneMapping */
-/* unused harmony export Uncharted2ToneMapping */
-/* unused harmony export CineonToneMapping */
-/* unused harmony export UVMapping */
-/* unused harmony export CubeReflectionMapping */
-/* unused harmony export CubeRefractionMapping */
-/* unused harmony export EquirectangularReflectionMapping */
-/* unused harmony export EquirectangularRefractionMapping */
-/* unused harmony export SphericalReflectionMapping */
-/* unused harmony export CubeUVReflectionMapping */
-/* unused harmony export CubeUVRefractionMapping */
-/* unused harmony export RepeatWrapping */
-/* unused harmony export ClampToEdgeWrapping */
-/* unused harmony export MirroredRepeatWrapping */
-/* unused harmony export NearestFilter */
-/* unused harmony export NearestMipMapNearestFilter */
-/* unused harmony export NearestMipMapLinearFilter */
-/* unused harmony export LinearFilter */
-/* unused harmony export LinearMipMapNearestFilter */
-/* unused harmony export LinearMipMapLinearFilter */
-/* unused harmony export UnsignedByteType */
-/* unused harmony export ByteType */
-/* unused harmony export ShortType */
-/* unused harmony export UnsignedShortType */
-/* unused harmony export IntType */
-/* unused harmony export UnsignedIntType */
-/* unused harmony export FloatType */
-/* unused harmony export HalfFloatType */
-/* unused harmony export UnsignedShort4444Type */
-/* unused harmony export UnsignedShort5551Type */
-/* unused harmony export UnsignedShort565Type */
-/* unused harmony export UnsignedInt248Type */
-/* unused harmony export AlphaFormat */
-/* unused harmony export RGBFormat */
-/* unused harmony export RGBAFormat */
-/* unused harmony export LuminanceFormat */
-/* unused harmony export LuminanceAlphaFormat */
-/* unused harmony export RGBEFormat */
-/* unused harmony export DepthFormat */
-/* unused harmony export DepthStencilFormat */
-/* unused harmony export RGB_S3TC_DXT1_Format */
-/* unused harmony export RGBA_S3TC_DXT1_Format */
-/* unused harmony export RGBA_S3TC_DXT3_Format */
-/* unused harmony export RGBA_S3TC_DXT5_Format */
-/* unused harmony export RGB_PVRTC_4BPPV1_Format */
-/* unused harmony export RGB_PVRTC_2BPPV1_Format */
-/* unused harmony export RGBA_PVRTC_4BPPV1_Format */
-/* unused harmony export RGBA_PVRTC_2BPPV1_Format */
-/* unused harmony export RGB_ETC1_Format */
-/* unused harmony export LoopOnce */
-/* unused harmony export LoopRepeat */
-/* unused harmony export LoopPingPong */
-/* unused harmony export InterpolateDiscrete */
-/* unused harmony export InterpolateLinear */
-/* unused harmony export InterpolateSmooth */
-/* unused harmony export ZeroCurvatureEnding */
-/* unused harmony export ZeroSlopeEnding */
-/* unused harmony export WrapAroundEnding */
-/* unused harmony export TrianglesDrawMode */
-/* unused harmony export TriangleStripDrawMode */
-/* unused harmony export TriangleFanDrawMode */
-/* unused harmony export LinearEncoding */
-/* unused harmony export sRGBEncoding */
-/* unused harmony export GammaEncoding */
-/* unused harmony export RGBEEncoding */
-/* unused harmony export LogLuvEncoding */
-/* unused harmony export RGBM7Encoding */
-/* unused harmony export RGBM16Encoding */
-/* unused harmony export RGBDEncoding */
-/* unused harmony export BasicDepthPacking */
-/* unused harmony export RGBADepthPacking */
-/* unused harmony export CubeGeometry */
-/* unused harmony export Face4 */
-/* unused harmony export LineStrip */
-/* unused harmony export LinePieces */
-/* unused harmony export MeshFaceMaterial */
-/* unused harmony export MultiMaterial */
-/* unused harmony export PointCloud */
-/* unused harmony export Particle */
-/* unused harmony export ParticleSystem */
-/* unused harmony export PointCloudMaterial */
-/* unused harmony export ParticleBasicMaterial */
-/* unused harmony export ParticleSystemMaterial */
-/* unused harmony export Vertex */
-/* unused harmony export DynamicBufferAttribute */
-/* unused harmony export Int8Attribute */
-/* unused harmony export Uint8Attribute */
-/* unused harmony export Uint8ClampedAttribute */
-/* unused harmony export Int16Attribute */
-/* unused harmony export Uint16Attribute */
-/* unused harmony export Int32Attribute */
-/* unused harmony export Uint32Attribute */
-/* unused harmony export Float32Attribute */
-/* unused harmony export Float64Attribute */
-/* unused harmony export ClosedSplineCurve3 */
-/* unused harmony export SplineCurve3 */
-/* unused harmony export Spline */
-/* unused harmony export BoundingBoxHelper */
-/* unused harmony export EdgesHelper */
-/* unused harmony export WireframeHelper */
-/* unused harmony export XHRLoader */
-/* unused harmony export BinaryTextureLoader */
-/* unused harmony export GeometryUtils */
-/* unused harmony export ImageUtils */
-/* unused harmony export Projector */
-/* unused harmony export CanvasRenderer */
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WebGLRenderTargetCube", function() { return WebGLRenderTargetCube; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WebGLRenderTarget", function() { return WebGLRenderTarget; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WebGLRenderer", function() { return WebGLRenderer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShaderLib", function() { return ShaderLib; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UniformsLib", function() { return UniformsLib; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UniformsUtils", function() { return UniformsUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShaderChunk", function() { return ShaderChunk; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FogExp2", function() { return FogExp2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Fog", function() { return Fog; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Scene", function() { return Scene; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LensFlare", function() { return LensFlare; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sprite", function() { return Sprite; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOD", function() { return LOD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkinnedMesh", function() { return SkinnedMesh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Skeleton", function() { return Skeleton; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bone", function() { return Bone; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Mesh", function() { return Mesh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineSegments", function() { return LineSegments; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineLoop", function() { return LineLoop; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Line", function() { return Line; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Points", function() { return Points; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Group", function() { return Group; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VideoTexture", function() { return VideoTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataTexture", function() { return DataTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompressedTexture", function() { return CompressedTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeTexture", function() { return CubeTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanvasTexture", function() { return CanvasTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepthTexture", function() { return DepthTexture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Texture", function() { return Texture; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompressedTextureLoader", function() { return CompressedTextureLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataTextureLoader", function() { return DataTextureLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeTextureLoader", function() { return CubeTextureLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextureLoader", function() { return TextureLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ObjectLoader", function() { return ObjectLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialLoader", function() { return MaterialLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BufferGeometryLoader", function() { return BufferGeometryLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultLoadingManager", function() { return DefaultLoadingManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadingManager", function() { return LoadingManager; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JSONLoader", function() { return JSONLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageLoader", function() { return ImageLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FontLoader", function() { return FontLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FileLoader", function() { return FileLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Loader", function() { return Loader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cache", function() { return Cache; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AudioLoader", function() { return AudioLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotLightShadow", function() { return SpotLightShadow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotLight", function() { return SpotLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointLight", function() { return PointLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RectAreaLight", function() { return RectAreaLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HemisphereLight", function() { return HemisphereLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectionalLightShadow", function() { return DirectionalLightShadow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectionalLight", function() { return DirectionalLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AmbientLight", function() { return AmbientLight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LightShadow", function() { return LightShadow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Light", function() { return Light; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StereoCamera", function() { return StereoCamera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerspectiveCamera", function() { return PerspectiveCamera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrthographicCamera", function() { return OrthographicCamera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeCamera", function() { return CubeCamera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrayCamera", function() { return ArrayCamera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Camera", function() { return Camera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AudioListener", function() { return AudioListener; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PositionalAudio", function() { return PositionalAudio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AudioContext", function() { return AudioContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AudioAnalyser", function() { return AudioAnalyser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Audio", function() { return Audio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VectorKeyframeTrack", function() { return VectorKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StringKeyframeTrack", function() { return StringKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuaternionKeyframeTrack", function() { return QuaternionKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NumberKeyframeTrack", function() { return NumberKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ColorKeyframeTrack", function() { return ColorKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BooleanKeyframeTrack", function() { return BooleanKeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PropertyMixer", function() { return PropertyMixer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PropertyBinding", function() { return PropertyBinding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KeyframeTrack", function() { return KeyframeTrack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationUtils", function() { return AnimationUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationObjectGroup", function() { return AnimationObjectGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationMixer", function() { return AnimationMixer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationClip", function() { return AnimationClip; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uniform", function() { return Uniform; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstancedBufferGeometry", function() { return InstancedBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BufferGeometry", function() { return BufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeometryIdCount", function() { return GeometryIdCount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Geometry", function() { return Geometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterleavedBufferAttribute", function() { return InterleavedBufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstancedInterleavedBuffer", function() { return InstancedInterleavedBuffer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterleavedBuffer", function() { return InterleavedBuffer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InstancedBufferAttribute", function() { return InstancedBufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Face3", function() { return Face3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Object3D", function() { return Object3D; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Raycaster", function() { return Raycaster; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Layers", function() { return Layers; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventDispatcher", function() { return EventDispatcher; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Clock", function() { return Clock; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuaternionLinearInterpolant", function() { return QuaternionLinearInterpolant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearInterpolant", function() { return LinearInterpolant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiscreteInterpolant", function() { return DiscreteInterpolant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubicInterpolant", function() { return CubicInterpolant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Interpolant", function() { return Interpolant; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Triangle", function() { return Triangle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Math", function() { return _Math; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spherical", function() { return Spherical; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cylindrical", function() { return Cylindrical; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Plane", function() { return Plane; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Frustum", function() { return Frustum; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sphere", function() { return Sphere; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ray", function() { return Ray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Matrix4", function() { return Matrix4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Matrix3", function() { return Matrix3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Box3", function() { return Box3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Box2", function() { return Box2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Line3", function() { return Line3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Euler", function() { return Euler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Vector4", function() { return Vector4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Vector3", function() { return Vector3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Vector2", function() { return Vector2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Quaternion", function() { return Quaternion; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Color", function() { return Color; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MorphBlendMesh", function() { return MorphBlendMesh; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImmediateRenderObject", function() { return ImmediateRenderObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VertexNormalsHelper", function() { return VertexNormalsHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpotLightHelper", function() { return SpotLightHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkeletonHelper", function() { return SkeletonHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointLightHelper", function() { return PointLightHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RectAreaLightHelper", function() { return RectAreaLightHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HemisphereLightHelper", function() { return HemisphereLightHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GridHelper", function() { return GridHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolarGridHelper", function() { return PolarGridHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaceNormalsHelper", function() { return FaceNormalsHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DirectionalLightHelper", function() { return DirectionalLightHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CameraHelper", function() { return CameraHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoxHelper", function() { return BoxHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArrowHelper", function() { return ArrowHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AxisHelper", function() { return AxisHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CatmullRomCurve3", function() { return CatmullRomCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubicBezierCurve3", function() { return CubicBezierCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuadraticBezierCurve3", function() { return QuadraticBezierCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineCurve3", function() { return LineCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArcCurve", function() { return ArcCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EllipseCurve", function() { return EllipseCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SplineCurve", function() { return SplineCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubicBezierCurve", function() { return CubicBezierCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QuadraticBezierCurve", function() { return QuadraticBezierCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineCurve", function() { return LineCurve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Shape", function() { return Shape; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Path", function() { return Path; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShapePath", function() { return ShapePath; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Font", function() { return Font; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurvePath", function() { return CurvePath; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Curve", function() { return Curve; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShapeUtils", function() { return ShapeUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SceneUtils", function() { return SceneUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WireframeGeometry", function() { return WireframeGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParametricGeometry", function() { return ParametricGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParametricBufferGeometry", function() { return ParametricBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TetrahedronGeometry", function() { return TetrahedronGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TetrahedronBufferGeometry", function() { return TetrahedronBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OctahedronGeometry", function() { return OctahedronGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OctahedronBufferGeometry", function() { return OctahedronBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IcosahedronGeometry", function() { return IcosahedronGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IcosahedronBufferGeometry", function() { return IcosahedronBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DodecahedronGeometry", function() { return DodecahedronGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DodecahedronBufferGeometry", function() { return DodecahedronBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolyhedronGeometry", function() { return PolyhedronGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PolyhedronBufferGeometry", function() { return PolyhedronBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TubeGeometry", function() { return TubeGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TubeBufferGeometry", function() { return TubeBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TorusKnotGeometry", function() { return TorusKnotGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TorusKnotBufferGeometry", function() { return TorusKnotBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TorusGeometry", function() { return TorusGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TorusBufferGeometry", function() { return TorusBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextGeometry", function() { return TextGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TextBufferGeometry", function() { return TextBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SphereGeometry", function() { return SphereGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SphereBufferGeometry", function() { return SphereBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RingGeometry", function() { return RingGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RingBufferGeometry", function() { return RingBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaneGeometry", function() { return PlaneGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlaneBufferGeometry", function() { return PlaneBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LatheGeometry", function() { return LatheGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LatheBufferGeometry", function() { return LatheBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShapeGeometry", function() { return ShapeGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShapeBufferGeometry", function() { return ShapeBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExtrudeGeometry", function() { return ExtrudeGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExtrudeBufferGeometry", function() { return ExtrudeBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EdgesGeometry", function() { return EdgesGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConeGeometry", function() { return ConeGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConeBufferGeometry", function() { return ConeBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CylinderGeometry", function() { return CylinderGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CylinderBufferGeometry", function() { return CylinderBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CircleGeometry", function() { return CircleGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CircleBufferGeometry", function() { return CircleBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoxGeometry", function() { return BoxGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoxBufferGeometry", function() { return BoxBufferGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShadowMaterial", function() { return ShadowMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpriteMaterial", function() { return SpriteMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RawShaderMaterial", function() { return RawShaderMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShaderMaterial", function() { return ShaderMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointsMaterial", function() { return PointsMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshPhysicalMaterial", function() { return MeshPhysicalMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshStandardMaterial", function() { return MeshStandardMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshPhongMaterial", function() { return MeshPhongMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshToonMaterial", function() { return MeshToonMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshNormalMaterial", function() { return MeshNormalMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshLambertMaterial", function() { return MeshLambertMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshDepthMaterial", function() { return MeshDepthMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshBasicMaterial", function() { return MeshBasicMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineDashedMaterial", function() { return LineDashedMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineBasicMaterial", function() { return LineBasicMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Material", function() { return Material; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Float64BufferAttribute", function() { return Float64BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Float32BufferAttribute", function() { return Float32BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint32BufferAttribute", function() { return Uint32BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int32BufferAttribute", function() { return Int32BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint16BufferAttribute", function() { return Uint16BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int16BufferAttribute", function() { return Int16BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint8ClampedBufferAttribute", function() { return Uint8ClampedBufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint8BufferAttribute", function() { return Uint8BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int8BufferAttribute", function() { return Int8BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BufferAttribute", function() { return BufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "REVISION", function() { return REVISION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MOUSE", function() { return MOUSE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CullFaceNone", function() { return CullFaceNone; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CullFaceBack", function() { return CullFaceBack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CullFaceFront", function() { return CullFaceFront; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CullFaceFrontBack", function() { return CullFaceFrontBack; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrontFaceDirectionCW", function() { return FrontFaceDirectionCW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrontFaceDirectionCCW", function() { return FrontFaceDirectionCCW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BasicShadowMap", function() { return BasicShadowMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PCFShadowMap", function() { return PCFShadowMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PCFSoftShadowMap", function() { return PCFSoftShadowMap; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FrontSide", function() { return FrontSide; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BackSide", function() { return BackSide; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DoubleSide", function() { return DoubleSide; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlatShading", function() { return FlatShading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SmoothShading", function() { return SmoothShading; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoColors", function() { return NoColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaceColors", function() { return FaceColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VertexColors", function() { return VertexColors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoBlending", function() { return NoBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NormalBlending", function() { return NormalBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdditiveBlending", function() { return AdditiveBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubtractiveBlending", function() { return SubtractiveBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MultiplyBlending", function() { return MultiplyBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomBlending", function() { return CustomBlending; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddEquation", function() { return AddEquation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubtractEquation", function() { return SubtractEquation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReverseSubtractEquation", function() { return ReverseSubtractEquation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MinEquation", function() { return MinEquation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaxEquation", function() { return MaxEquation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZeroFactor", function() { return ZeroFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OneFactor", function() { return OneFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SrcColorFactor", function() { return SrcColorFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OneMinusSrcColorFactor", function() { return OneMinusSrcColorFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SrcAlphaFactor", function() { return SrcAlphaFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OneMinusSrcAlphaFactor", function() { return OneMinusSrcAlphaFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DstAlphaFactor", function() { return DstAlphaFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OneMinusDstAlphaFactor", function() { return OneMinusDstAlphaFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DstColorFactor", function() { return DstColorFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OneMinusDstColorFactor", function() { return OneMinusDstColorFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SrcAlphaSaturateFactor", function() { return SrcAlphaSaturateFactor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NeverDepth", function() { return NeverDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlwaysDepth", function() { return AlwaysDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LessDepth", function() { return LessDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LessEqualDepth", function() { return LessEqualDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EqualDepth", function() { return EqualDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GreaterEqualDepth", function() { return GreaterEqualDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GreaterDepth", function() { return GreaterDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NotEqualDepth", function() { return NotEqualDepth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MultiplyOperation", function() { return MultiplyOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MixOperation", function() { return MixOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddOperation", function() { return AddOperation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoToneMapping", function() { return NoToneMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearToneMapping", function() { return LinearToneMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReinhardToneMapping", function() { return ReinhardToneMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uncharted2ToneMapping", function() { return Uncharted2ToneMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CineonToneMapping", function() { return CineonToneMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UVMapping", function() { return UVMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeReflectionMapping", function() { return CubeReflectionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeRefractionMapping", function() { return CubeRefractionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EquirectangularReflectionMapping", function() { return EquirectangularReflectionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EquirectangularRefractionMapping", function() { return EquirectangularRefractionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SphericalReflectionMapping", function() { return SphericalReflectionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeUVReflectionMapping", function() { return CubeUVReflectionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeUVRefractionMapping", function() { return CubeUVRefractionMapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RepeatWrapping", function() { return RepeatWrapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClampToEdgeWrapping", function() { return ClampToEdgeWrapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MirroredRepeatWrapping", function() { return MirroredRepeatWrapping; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NearestFilter", function() { return NearestFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NearestMipMapNearestFilter", function() { return NearestMipMapNearestFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NearestMipMapLinearFilter", function() { return NearestMipMapLinearFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearFilter", function() { return LinearFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearMipMapNearestFilter", function() { return LinearMipMapNearestFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearMipMapLinearFilter", function() { return LinearMipMapLinearFilter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedByteType", function() { return UnsignedByteType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ByteType", function() { return ByteType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ShortType", function() { return ShortType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedShortType", function() { return UnsignedShortType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IntType", function() { return IntType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedIntType", function() { return UnsignedIntType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FloatType", function() { return FloatType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HalfFloatType", function() { return HalfFloatType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedShort4444Type", function() { return UnsignedShort4444Type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedShort5551Type", function() { return UnsignedShort5551Type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedShort565Type", function() { return UnsignedShort565Type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UnsignedInt248Type", function() { return UnsignedInt248Type; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlphaFormat", function() { return AlphaFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBFormat", function() { return RGBFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBAFormat", function() { return RGBAFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LuminanceFormat", function() { return LuminanceFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LuminanceAlphaFormat", function() { return LuminanceAlphaFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBEFormat", function() { return RGBEFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepthFormat", function() { return DepthFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DepthStencilFormat", function() { return DepthStencilFormat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGB_S3TC_DXT1_Format", function() { return RGB_S3TC_DXT1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBA_S3TC_DXT1_Format", function() { return RGBA_S3TC_DXT1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBA_S3TC_DXT3_Format", function() { return RGBA_S3TC_DXT3_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBA_S3TC_DXT5_Format", function() { return RGBA_S3TC_DXT5_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGB_PVRTC_4BPPV1_Format", function() { return RGB_PVRTC_4BPPV1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGB_PVRTC_2BPPV1_Format", function() { return RGB_PVRTC_2BPPV1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBA_PVRTC_4BPPV1_Format", function() { return RGBA_PVRTC_4BPPV1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBA_PVRTC_2BPPV1_Format", function() { return RGBA_PVRTC_2BPPV1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGB_ETC1_Format", function() { return RGB_ETC1_Format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoopOnce", function() { return LoopOnce; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoopRepeat", function() { return LoopRepeat; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoopPingPong", function() { return LoopPingPong; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterpolateDiscrete", function() { return InterpolateDiscrete; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterpolateLinear", function() { return InterpolateLinear; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InterpolateSmooth", function() { return InterpolateSmooth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZeroCurvatureEnding", function() { return ZeroCurvatureEnding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZeroSlopeEnding", function() { return ZeroSlopeEnding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WrapAroundEnding", function() { return WrapAroundEnding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TrianglesDrawMode", function() { return TrianglesDrawMode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TriangleStripDrawMode", function() { return TriangleStripDrawMode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TriangleFanDrawMode", function() { return TriangleFanDrawMode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinearEncoding", function() { return LinearEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sRGBEncoding", function() { return sRGBEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GammaEncoding", function() { return GammaEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBEEncoding", function() { return RGBEEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogLuvEncoding", function() { return LogLuvEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBM7Encoding", function() { return RGBM7Encoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBM16Encoding", function() { return RGBM16Encoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBDEncoding", function() { return RGBDEncoding; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BasicDepthPacking", function() { return BasicDepthPacking; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RGBADepthPacking", function() { return RGBADepthPacking; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CubeGeometry", function() { return BoxGeometry; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Face4", function() { return Face4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LineStrip", function() { return LineStrip; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinePieces", function() { return LinePieces; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeshFaceMaterial", function() { return MeshFaceMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MultiMaterial", function() { return MultiMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointCloud", function() { return PointCloud; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Particle", function() { return Particle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParticleSystem", function() { return ParticleSystem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PointCloudMaterial", function() { return PointCloudMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParticleBasicMaterial", function() { return ParticleBasicMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParticleSystemMaterial", function() { return ParticleSystemMaterial; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Vertex", function() { return Vertex; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DynamicBufferAttribute", function() { return DynamicBufferAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int8Attribute", function() { return Int8Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint8Attribute", function() { return Uint8Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint8ClampedAttribute", function() { return Uint8ClampedAttribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int16Attribute", function() { return Int16Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint16Attribute", function() { return Uint16Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Int32Attribute", function() { return Int32Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Uint32Attribute", function() { return Uint32Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Float32Attribute", function() { return Float32Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Float64Attribute", function() { return Float64Attribute; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClosedSplineCurve3", function() { return ClosedSplineCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SplineCurve3", function() { return SplineCurve3; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Spline", function() { return Spline; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoundingBoxHelper", function() { return BoundingBoxHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EdgesHelper", function() { return EdgesHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WireframeHelper", function() { return WireframeHelper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XHRLoader", function() { return XHRLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BinaryTextureLoader", function() { return BinaryTextureLoader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeometryUtils", function() { return GeometryUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImageUtils", function() { return ImageUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Projector", function() { return Projector; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CanvasRenderer", function() { return CanvasRenderer; });
 // Polyfills
 
 if ( Number.EPSILON === undefined ) {
@@ -104554,6 +105768,6537 @@ var _temp = function () {
 
 /***/ }),
 
+/***/ "./blueprint/blueprint3d.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__floorplanner_floorplanner__ = __webpack_require__("./blueprint/floorplanner/floorplanner.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model_model__ = __webpack_require__("./blueprint/model/model.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__three_main__ = __webpack_require__("./blueprint/three/main.js");
+var _this = this;
+
+
+/// <reference path="floorplanner/floorplanner.ts" />
+/// <reference path="three/main.ts" />
+
+
+
+
+/** Blueprint3D core application. */
+
+var _default = function _default(options) {
+	var model = void 0;
+	var three = void 0; // Three.Main;
+	var floorplanner = void 0;
+
+	model = new __WEBPACK_IMPORTED_MODULE_2__model_model__["a" /* default */](options.textureDir);
+	_this.three = new __WEBPACK_IMPORTED_MODULE_3__three_main__["a" /* default */](model, options.threeElement, options.threeCanvasElement, {});
+
+	if (!options.widget) {
+		floorplanner = new __WEBPACK_IMPORTED_MODULE_1__floorplanner_floorplanner__["a" /* default */](options.floorplannerElement, model.floorplan);
+	} else {
+		_this.three.getController().enabled = false;
+	}
+
+	return {
+		model: model,
+		three: three,
+		floorplanner: floorplanner
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/blueprint3d.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/blueprint3d.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/blueprint3d.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/core/configuration.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return configDimUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return configWallHeight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return configWallThickness; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dimensioning__ = __webpack_require__("./blueprint/core/dimensioning.js");
+// GENERAL:
+
+
+
+/** The dimensioning unit for 2D floorplan measurements. */
+var configDimUnit = "dimUnit";
+
+// WALL:
+
+/** The initial wall height in cm. */
+var configWallHeight = "wallHeight";
+
+/** The initial wall thickness in cm. */
+var configWallThickness = "wallThickness";
+
+/** Global configuration to customize the whole system.  */
+
+var _default = function () {
+  /** Configuration data loaded from/stored to extern. */
+  var data = {
+    dimUnit: __WEBPACK_IMPORTED_MODULE_0__dimensioning__["b" /* dimInch */],
+
+    wallHeight: 250,
+    wallThickness: 10
+  };
+
+  /** Set a configuration parameter. */
+  function setValue(key, value) {
+    this.data[key] = value;
+  }
+
+  /** Get a string configuration parameter. */
+  function getStringValue(key) {
+    switch (key) {
+      case configDimUnit:
+        return data[key];
+      default:
+        throw new Error("Invalid string configuration parameter: " + key);
+    }
+  }
+
+  /** Get a numeric configuration parameter. */
+  function getNumericValue(key) {
+    switch (key) {
+      case configWallHeight:
+      case configWallThickness:
+        return data[key];
+      default:
+        throw new Error("Invalid numeric configuration parameter: " + key);
+    }
+  }
+  return {
+
+    getNumericValue: getNumericValue,
+    getStringValue: getStringValue
+
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["e"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(configDimUnit, "configDimUnit", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+
+  __REACT_HOT_LOADER__.register(configWallHeight, "configWallHeight", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+
+  __REACT_HOT_LOADER__.register(configWallThickness, "configWallThickness", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/core/dimensioning.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return dimInch; });
+/* unused harmony export dimMeter */
+/* unused harmony export dimCentiMeter */
+/* unused harmony export dimMilliMeter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+var dimInch = "inch";
+
+
+
+
+/** Dimensioning in Meter. */
+var dimMeter = "m";
+
+/** Dimensioning in Centi Meter. */
+var dimCentiMeter = "cm";
+
+/** Dimensioning in Milli Meter. */
+var dimMilliMeter = "mm";
+
+/** Dimensioning functions. */
+
+var _default = function () {
+  /** Converts cm to dimensioning string.
+     * @param cm Centi meter value to be converted.
+     * @returns String representation.
+     */
+  function cmToMeasure(cm) {
+    switch (__WEBPACK_IMPORTED_MODULE_0__configuration__["e" /* default */].getStringValue(__WEBPACK_IMPORTED_MODULE_0__configuration__["b" /* configDimUnit */])) {
+      case dimInch:
+        var realFeet = cm * 0.3937 / 12;
+        var feet = Math.floor(realFeet);
+        var inches = Math.round((realFeet - feet) * 12);
+        return feet + "'" + inches + '"';
+      case dimMilliMeter:
+        return "" + Math.round(10 * cm) + " mm";
+      case dimCentiMeter:
+        return "" + Math.round(10 * cm) / 10 + " cm";
+      case dimMeter:
+      default:
+        return "" + Math.round(10 * cm) / 1000 + " m";
+    }
+  }
+
+  return {
+    cmToMeasure: cmToMeasure
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(dimInch, "dimInch", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js");
+
+  __REACT_HOT_LOADER__.register(dimMeter, "dimMeter", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js");
+
+  __REACT_HOT_LOADER__.register(dimCentiMeter, "dimCentiMeter", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js");
+
+  __REACT_HOT_LOADER__.register(dimMilliMeter, "dimMilliMeter", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js");
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/dimensioning.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/core/utils.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {var _default = function () {
+  /** Determines the distance of a point from a line.
+     * @param x Point's x coordinate.
+     * @param y Point's y coordinate.
+     * @param x1 Line-Point 1's x coordinate.
+     * @param y1 Line-Point 1's y coordinate.
+     * @param x2 Line-Point 2's x coordinate.
+     * @param y2 Line-Point 2's y coordinate.
+     * @returns The distance.
+     */
+  function pointDistanceFromLine(x, y, x1, y1, x2, y2) {
+    var tPoint = closestPointOnLine(x, y, x1, y1, x2, y2);
+    var tDx = x - tPoint.x;
+    var tDy = y - tPoint.y;
+    return Math.sqrt(tDx * tDx + tDy * tDy);
+  }
+
+  /** Gets the projection of a point onto a line.
+     * @param x Point's x coordinate.
+     * @param y Point's y coordinate.
+     * @param x1 Line-Point 1's x coordinate.
+     * @param y1 Line-Point 1's y coordinate.
+     * @param x2 Line-Point 2's x coordinate.
+     * @param y2 Line-Point 2's y coordinate.
+     * @returns The point.
+     */
+  function closestPointOnLine(x, y, x1, y1, x2, y2) {
+    // Inspired by: http://stackoverflow.com/a/6853926
+    var tA = x - x1;
+    var tB = y - y1;
+    var tC = x2 - x1;
+    var tD = y2 - y1;
+
+    var tDot = tA * tC + tB * tD;
+    var tLenSq = tC * tC + tD * tD;
+    var tParam = tDot / tLenSq;
+
+    var tXx, tYy;
+
+    if (tParam < 0 || x1 == x2 && y1 == y2) {
+      tXx = x1;
+      tYy = y1;
+    } else if (tParam > 1) {
+      tXx = x2;
+      tYy = y2;
+    } else {
+      tXx = x1 + tParam * tC;
+      tYy = y1 + tParam * tD;
+    }
+
+    return {
+      x: tXx,
+      y: tYy
+    };
+  }
+
+  /** Gets the distance of two points.
+     * @param x1 X part of first point.
+     * @param y1 Y part of first point.
+     * @param x2 X part of second point.
+     * @param y2 Y part of second point.
+     * @returns The distance.
+     */
+  function distance(x1, y1, x2, y2) {
+    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+  }
+
+  /**  Gets the angle between 0,0 -> x1,y1 and 0,0 -> x2,y2 (-pi to pi)
+     * @returns The angle.
+     */
+  function angle(x1, y1, x2, y2) {
+    var tDot = x1 * x2 + y1 * y2;
+    var tDet = x1 * y2 - y1 * x2;
+    var tAngle = -Math.atan2(tDet, tDot);
+    return tAngle;
+  }
+
+  /** shifts angle to be 0 to 2pi */
+  function angle2pi(x1, y1, x2, y2) {
+    var tTheta = angle(x1, y1, x2, y2);
+    if (tTheta < 0) {
+      tTheta += 2 * Math.PI;
+    }
+    return tTheta;
+  }
+
+  /** Checks if an array of points is clockwise.
+     * @param points Is array of points with x,y attributes
+     * @returns True if clockwise.
+     */
+  function isClockwise(points) {
+    // make positive
+    var tSubX = Math.min(0, Math.min.apply(null, map(points, function (p) {
+      return p.x;
+    })));
+    var tSubY = Math.min(0, Math.min.apply(null, map(points, function (p) {
+      return p.x;
+    })));
+
+    var tNewPoints = map(points, function (p) {
+      return {
+        x: p.x - tSubX,
+        y: p.y - tSubY
+      };
+    });
+
+    // determine CW/CCW, based on:
+    // http://stackoverflow.com/questions/1165647
+    var tSum = 0;
+    for (var tI = 0; tI < tNewPoints.length; tI++) {
+      var tC1 = tNewPoints[tI];
+      var tC2;
+      if (tI == tNewPoints.length - 1) {
+        tC2 = tNewPoints[0];
+      } else {
+        tC2 = tNewPoints[tI + 1];
+      }
+      tSum += (tC2.x - tC1.x) * (tC2.y + tC1.y);
+    }
+    return tSum >= 0;
+  }
+
+  /** Creates a Guid.
+     * @returns A new Guid.
+     */
+  function guid() {
+    var tS4 = function tS4() {
+      return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+    };
+
+    return tS4() + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + tS4() + tS4();
+  }
+
+  /** both arguments are arrays of corners with x,y attributes */
+  function polygonPolygonIntersect(firstCorners, secondCorners) {
+    for (var tI = 0; tI < firstCorners.length; tI++) {
+      var tFirstCorner = firstCorners[tI],
+          tSecondCorner;
+
+      if (tI == firstCorners.length - 1) {
+        tSecondCorner = firstCorners[0];
+      } else {
+        tSecondCorner = firstCorners[tI + 1];
+      }
+
+      if (linePolygonIntersect(tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y, secondCorners)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /** Corners is an array of points with x,y attributes */
+  function linePolygonIntersect(x1, y1, x2, y2, corners) {
+    for (var tI = 0; tI < corners.length; tI++) {
+      var tFirstCorner = corners[tI],
+          tSecondCorner;
+      if (tI == corners.length - 1) {
+        tSecondCorner = corners[0];
+      } else {
+        tSecondCorner = corners[tI + 1];
+      }
+
+      if (lineLineIntersect(x1, y1, x2, y2, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /** */
+  function lineLineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
+    function tCCW(p1, p2, p3) {
+      var tA = p1.x,
+          tB = p1.y,
+          tC = p2.x,
+          tD = p2.y,
+          tE = p3.x,
+          tF = p3.y;
+      return (tF - tB) * (tC - tA) > (tD - tB) * (tE - tA);
+    }
+
+    var tP1 = { x: x1, y: y1 },
+        tP2 = { x: x2, y: y2 },
+        tP3 = { x: x3, y: y3 },
+        tP4 = { x: x4, y: y4 };
+    return tCCW(tP1, tP3, tP4) != tCCW(tP2, tP3, tP4) && tCCW(tP1, tP2, tP3) != tCCW(tP1, tP2, tP4);
+  }
+
+  /**
+     @param corners Is an array of points with x,y attributes
+      @param startX X start coord for raycast
+      @param startY Y start coord for raycast
+    */
+  function pointInPolygon(x, y, corners, startX, startY) {
+    startX = startX || 0;
+    startY = startY || 0;
+
+    //ensure that point(startX, startY) is outside the polygon consists of corners
+    var tMinX = 0,
+        tMinY = 0;
+
+    if (startX === undefined || startY === undefined) {
+      for (var tI = 0; tI < corners.length; tI++) {
+        tMinX = Math.min(tMinX, corners[tI].x);
+        tMinY = Math.min(tMinX, corners[tI].y);
+      }
+      startX = tMinX - 10;
+      startY = tMinY - 10;
+    }
+
+    var tIntersects = 0;
+    for (var tI = 0; tI < corners.length; tI++) {
+      var tFirstCorner = corners[tI],
+          tSecondCorner;
+      if (tI == corners.length - 1) {
+        tSecondCorner = corners[0];
+      } else {
+        tSecondCorner = corners[tI + 1];
+      }
+
+      if (lineLineIntersect(startX, startY, x, y, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
+        tIntersects++;
+      }
+    }
+    // odd intersections means the point is in the polygon
+    return tIntersects % 2 == 1;
+  }
+
+  /** Checks if all corners of insideCorners are inside the polygon described by outsideCorners */
+  function polygonInsidePolygon(insideCorners, outsideCorners, startX, startY) {
+    startX = startX || 0;
+    startY = startY || 0;
+
+    for (var tI = 0; tI < insideCorners.length; tI++) {
+      if (!pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /** Checks if any corners of firstCorners is inside the polygon described by secondCorners */
+  function polygonOutsidePolygon(insideCorners, outsideCorners, startX, startY) {
+    startX = startX || 0;
+    startY = startY || 0;
+
+    for (var tI = 0; tI < insideCorners.length; tI++) {
+      if (pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  // arrays
+
+  function forEach(array, action) {
+    for (var tI = 0; tI < array.length; tI++) {
+      action(array[tI]);
+    }
+  }
+
+  function forEachIndexed(array, action) {
+    for (var tI = 0; tI < array.length; tI++) {
+      action(tI, array[tI]);
+    }
+  }
+
+  function map(array, func) {
+    var tResult = [];
+    array.forEach(function (element) {
+      tResult.push(func(element));
+    });
+    return tResult;
+  }
+
+  /** Remove elements in array if func(element) returns true */
+  function removeIf(array, func) {
+    var tResult = [];
+    array.forEach(function (element) {
+      if (!func(element)) {
+        tResult.push(element);
+      }
+    });
+    return tResult;
+  }
+
+  /** Shift the items in an array by shift (positive integer) */
+  function cycle(arr, shift) {
+    var tReturn = arr.slice(0);
+    for (var tI = 0; tI < shift; tI++) {
+      var tmp = tReturn.shift();
+      tReturn.push(tmp);
+    }
+    return tReturn;
+  }
+
+  /** Returns in the unique elemnts in arr */
+  function unique(arr, hashFunc) {
+    var tResults = [];
+    var tMap = {};
+    for (var tI = 0; tI < arr.length; tI++) {
+      if (!tMap.hasOwnProperty(arr[tI])) {
+        tResults.push(arr[tI]);
+        tMap[hashFunc(arr[tI])] = true;
+      }
+    }
+    return tResults;
+  }
+
+  /** Remove value from array, if it is present */
+  function removeValue(array, value) {
+    for (var tI = array.length - 1; tI >= 0; tI--) {
+      if (array[tI] === value) {
+        array.splice(tI, 1);
+      }
+    }
+  }
+
+  /** Checks if value is in array */
+  function hasValue(array, value) {
+    for (var tI = 0; tI < array.length; tI++) {
+      if (array[tI] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /** Subtracts the elements in subArray from array */
+  function subtract(array, subArray) {
+    return removeIf(array, function (el) {
+      return hasValue(subArray, el);
+    });
+  }
+
+  return {
+    removeIf: removeIf,
+    removeValue: removeValue,
+    subtract: subtract,
+    hasValue: hasValue,
+    isClockwise: isClockwise,
+    angle2pi: angle2pi,
+    distance: distance,
+    angle: angle,
+    map: map,
+    pointDistanceFromLine: pointDistanceFromLine
+  };
+}();
+
+/** Collection of utility functions. */
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/utils.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/utils.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/utils.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/floorplanner/floorplanner.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__model_floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__ = __webpack_require__("./blueprint/floorplanner/floorplanner_view.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+/** how much will we move a corner to make a wall axis aligned (cm) */
+var snapTolerance = 25;
+/** 
+   * The Floorplanner implements an interactive tool for creation of floorplans.
+   */
+
+var Floorplanner = function () {
+	function Floorplanner(canvas, floorplan) {
+		_classCallCheck(this, Floorplanner);
+
+		this.canvasElement = document.getElementById(canvas);
+		this.modeResetCallbacks = new __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */]();
+
+		this.canvas = canvas;
+		this.floorplan = floorplan;
+		this.view = new __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["a" /* default */](this.floorplan, this, canvas);
+
+		var cmPerFoot = 30.48;
+		var pixelsPerFoot = 15.0;
+		this.cmPerPixel = cmPerFoot * (1.0 / pixelsPerFoot);
+		this.pixelsPerCm = 1.0 / this.cmPerPixel;
+
+		this.wallWidth = 10.0 * this.pixelsPerCm;
+		this.setMode(__WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE);
+
+		var scope = this;
+
+		this.canvasElement.addEventListener("mousedown", function () {
+			return scope.mousedown();
+		});
+		this.canvasElement.addEventListener("mousemove", function (e) {
+			return scope.mousemove(event);
+		});
+		this.canvasElement.addEventListener("mouseup", function () {
+			return scope.mouseup();
+		});
+
+		this.canvasElement.addEventListener("mouseleave", function () {
+			scope.mouseleave();
+		});
+
+		document.addEventListener("keyup", function (e) {
+			if (e.keyCode == 27) {
+				scope.escapeKey();
+			}
+		});
+
+		floorplan.roomLoadedCallbacks.add(function () {
+			scope.reset();
+		});
+
+		var mode = 0;
+
+		var activeWall = null;
+
+		var activeCorner = null;
+
+		var originX = 0;
+
+		var originY = 0;
+
+		var targetX = 0;
+
+		var targetY = 0;
+
+		var lastNode = null;
+
+		var wallWidth = void 0;
+
+		var modeResetCallbacks = new __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */]();
+
+		var canvasElement = void 0;
+
+		var view = void 0;
+
+		var mouseDown = false;
+
+		var mouseMoved = false;
+
+		var mouseX = 0;
+
+		var mouseY = 0;
+
+		var rawMouseX = 0;
+
+		/** in ThreeJS coords */
+		var rawMouseY = 0;
+
+		/** mouse position at last click */
+		var lastX = 0;
+
+		/** mouse position at last click */
+		var lastY = 0;
+
+		/** */
+		var cmPerPixel = void 0;
+
+		/** */
+		var pixelsPerCm = void 0;
+
+		/* Bindings */
+		this.updateTarget = this.updateTarget.bind(this);
+	}
+
+	/** */
+
+
+	_createClass(Floorplanner, [{
+		key: "escapeKey",
+		value: function escapeKey() {
+			this.setMode(__WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE);
+		}
+
+		/** */
+
+	}, {
+		key: "updateTarget",
+		value: function updateTarget() {
+			if (this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].DRAW && this.lastNode) {
+				if (Math.abs(this.mouseX - this.lastNode.x) < snapTolerance) {
+					this.targetX = this.lastNode.x;
+				} else {
+					this.targetX = this.mouseX;
+				}
+				if (Math.abs(this.mouseY - this.lastNode.y) < snapTolerance) {
+					this.targetY = this.lastNode.y;
+				} else {
+					this.targetY = this.mouseY;
+				}
+			} else {
+				this.targetX = this.mouseX;
+				this.targetY = this.mouseY;
+			}
+
+			this.view.draw();
+		}
+
+		/** */
+
+	}, {
+		key: "mousedown",
+		value: function mousedown() {
+			this.mouseDown = true;
+			this.mouseMoved = false;
+			this.lastX = this.rawMouseX;
+			this.lastY = this.rawMouseY;
+
+			// delete
+			if (this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].DELETE) {
+				if (this.activeCorner) {
+					this.activeCorner.removeAll();
+				} else if (this.activeWall) {
+					this.activeWall.remove();
+				} else {
+					this.setMode(__WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE);
+				}
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "mousemove",
+		value: function mousemove(event) {
+			this.mouseMoved = true;
+
+			// update mouse
+			this.rawMouseX = event.clientX;
+			this.rawMouseY = event.clientY;
+
+			this.mouseX = (event.clientX - this.canvasElement.offsetLeft) * this.cmPerPixel + this.originX * this.cmPerPixel;
+			this.mouseY = (event.clientY - this.canvasElement.offsetTop) * this.cmPerPixel + this.originY * this.cmPerPixel;
+
+			// update target (snapped position of actual mouse)
+			if (this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].DRAW || this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE && this.mouseDown) {
+				this.updateTarget();
+			}
+
+			// update object target
+			if (this.mode != __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].DRAW && !this.mouseDown) {
+				var hoverCorner = this.floorplan.overlappedCorner(this.mouseX, this.mouseY);
+				var hoverWall = this.floorplan.overlappedWall(this.mouseX, this.mouseY);
+				var draw = false;
+				if (hoverCorner != this.activeCorner) {
+					this.activeCorner = hoverCorner;
+					draw = true;
+				}
+				// corner takes precendence
+				if (this.activeCorner == null) {
+					if (hoverWall != this.activeWall) {
+						this.activeWall = hoverWall;
+						draw = true;
+					}
+				} else {
+					this.activeWall = null;
+				}
+				if (draw) {
+					this.view.draw();
+				}
+			}
+
+			// panning
+			if (this.mouseDown && !this.activeCorner && !this.activeWall) {
+				this.originX += this.lastX - this.rawMouseX;
+				this.originY += this.lastY - this.rawMouseY;
+				this.lastX = this.rawMouseX;
+				this.lastY = this.rawMouseY;
+				this.view.draw();
+			}
+
+			// dragging
+			if (this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE && this.mouseDown) {
+				if (this.activeCorner) {
+					this.activeCorner.move(this.mouseX, this.mouseY);
+					this.activeCorner.snapToAxis(snapTolerance);
+				} else if (this.activeWall) {
+					this.activeWall.relativeMove((this.rawMouseX - this.lastX) * this.cmPerPixel, (this.rawMouseY - this.lastY) * this.cmPerPixel);
+					this.activeWall.snapToAxis(snapTolerance);
+					this.lastX = this.rawMouseX;
+					this.lastY = this.rawMouseY;
+				}
+				this.view.draw();
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "mouseup",
+		value: function mouseup() {
+			this.mouseDown = false;
+
+			// drawing
+			if (this.mode == __WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].DRAW && !this.mouseMoved) {
+				var corner = this.floorplan.newCorner(this.targetX, this.targetY);
+				if (this.lastNode != null) {
+					this.floorplan.newWall(this.lastNode, corner);
+				}
+				if (corner.mergeWithIntersected() && this.lastNode != null) {
+					this.setMode(__WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE);
+				}
+				this.lastNode = corner;
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "mouseleave",
+		value: function mouseleave() {
+			this.mouseDown = false;
+			// Commentet out originally
+			//scope.setMode(scope.modes.MOVE);
+		}
+
+		/** */
+
+	}, {
+		key: "reset",
+		value: function reset() {
+			this.resizeView();
+			this.setMode(__WEBPACK_IMPORTED_MODULE_1__floorplanner_view__["b" /* floorplannerModes */].MOVE);
+			this.resetOrigin();
+			this.view.draw();
+		}
+
+		/** */
+
+	}, {
+		key: "resizeView",
+		value: function resizeView() {
+			this.view.handleWindowResize();
+		}
+
+		/** */
+
+	}, {
+		key: "setMode",
+		value: function setMode(mode) {
+			this.lastNode = null;
+			this.mode = mode;
+			this.modeResetCallbacks.fire(mode);
+			this.updateTarget();
+		}
+
+		/** Sets the origin so that floorplan is centered */
+
+	}, {
+		key: "resetOrigin",
+		value: function resetOrigin() {
+			var centerX = this.canvasElement.offsetWidth / 2.0;
+			var centerY = this.canvasElement.offsetHeight / 2.0;
+			var centerFloorplan = this.floorplan.getCenter();
+			this.originX = centerFloorplan.x * this.pixelsPerCm - centerX;
+			this.originY = centerFloorplan.z * this.pixelsPerCm - centerY;
+		}
+
+		/** Convert from THREEjs coords to canvas coords. */
+
+	}, {
+		key: "convertX",
+		value: function convertX(x) {
+			return (x - this.originX * this.cmPerPixel) * this.pixelsPerCm;
+		}
+
+		/** Convert from THREEjs coords to canvas coords. */
+
+	}, {
+		key: "convertY",
+		value: function convertY(y) {
+			return (y - this.originY * this.cmPerPixel) * this.pixelsPerCm;
+		}
+	}]);
+
+	return Floorplanner;
+}();
+
+var _default = Floorplanner;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(snapTolerance, "snapTolerance", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner.js");
+
+	__REACT_HOT_LOADER__.register(Floorplanner, "Floorplanner", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/floorplanner/floorplanner_view.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return floorplannerModes; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_dimensioning__ = __webpack_require__("./blueprint/core/dimensioning.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+var _this = this;
+
+
+
+
+
+/** */
+var floorplannerModes = {
+	MOVE: 0,
+	DRAW: 1,
+	DELETE: 2
+};
+
+// grid parameters
+var gridSpacing = 20; // pixels
+var gridWidth = 1;
+var gridColor = "#f1f1f1";
+
+// room config
+var roomColor = "#f9f9f9";
+
+// wall config
+var wallWidth = 5;
+var wallWidthHover = 7;
+var wallColor = "#dddddd";
+var wallColorHover = "#008cba";
+var edgeColor = "#888888";
+var edgeColorHover = "#008cba";
+var edgeWidth = 1;
+
+var deleteColor = "#ff0000";
+
+// corner config
+var cornerRadius = 0;
+var cornerRadiusHover = 7;
+var cornerColor = "#cccccc";
+var cornerColorHover = "#008cba";
+
+/**
+   * The View to be used by a Floorplanner to render in/interact with.
+   */
+
+var _default = function _default(floorplan, viewmodel, canvas) {
+	/** The canvas element. */
+	var scope = _this;
+	_this.floorplan = floorplan;
+	var canvasElement = document.getElementById(canvas);
+
+	/** The 2D context. */
+	var context = canvasElement.getContext("2d");
+
+	// TODO: redo resize wothout jQuery
+	window.addEventListener("resize", function () {
+		return handleWindowResize();
+	});
+	handleWindowResize();
+
+	function handleWindowResize() {
+		var canvasSel = document.getElementById(canvas);
+		var parent = canvasSel.parentNode;
+		canvasSel.height = parent.clientHeight;
+		canvasSel.width = parent.clientWidth;
+		canvasElement.height = parent.clientHeight;
+		canvasElement.width = parent.clientWidth;
+		draw();
+	}
+
+	/** */
+	function draw() {
+		context.clearRect(0, 0, canvasElement.width, canvasElement.height);
+
+		drawGrid();
+
+		scope.floorplan.getRooms().forEach(function (room) {
+			drawRoom(room);
+		});
+
+		floorplan.getWalls().forEach(function (wall) {
+			drawWall(wall);
+		});
+
+		floorplan.getCorners().forEach(function (corner) {
+			drawCorner(corner);
+		});
+
+		if (viewmodel.mode == floorplannerModes.DRAW) {
+			drawTarget(viewmodel.targetX, viewmodel.targetY, viewmodel.lastNode);
+		}
+
+		floorplan.getWalls().forEach(function (wall) {
+			drawWallLabels(wall);
+		});
+	}
+
+	/** */
+	function drawWallLabels(wall) {
+		// we'll just draw the shorter label... idk
+		if (wall.backEdge && wall.frontEdge) {
+			if (wall.backEdge.interiorDistance < wall.frontEdge.interiorDistance) {
+				drawEdgeLabel(wall.backEdge);
+			} else {
+				drawEdgeLabel(wall.frontEdge);
+			}
+		} else if (wall.backEdge) {
+			drawEdgeLabel(wall.backEdge);
+		} else if (wall.frontEdge) {
+			drawEdgeLabel(wall.frontEdge);
+		}
+	}
+
+	/** */
+	function drawWall(wall) {
+		var hover = wall === viewmodel.activeWall;
+		var color = wallColor;
+		if (hover && viewmodel.mode == floorplannerModes.DELETE) {
+			color = deleteColor;
+		} else if (hover) {
+			color = wallColorHover;
+		}
+		drawLine(viewmodel.convertX(wall.getStartX()), viewmodel.convertY(wall.getStartY()), viewmodel.convertX(wall.getEndX()), viewmodel.convertY(wall.getEndY()), hover ? wallWidthHover : wallWidth, color);
+		if (!hover && wall.frontEdge) {
+			drawEdge(wall.frontEdge, hover);
+		}
+		if (!hover && wall.backEdge) {
+			drawEdge(wall.backEdge, hover);
+		}
+	}
+
+	/** */
+	function drawEdgeLabel(edge) {
+		var pos = edge.interiorCenter();
+		var length = edge.interiorDistance();
+		if (length < 60) {
+			// dont draw labels on walls this short
+			return;
+		}
+		context.font = "normal 12px Arial";
+		context.fillStyle = "#000000";
+		context.textBaseline = "middle";
+		context.textAlign = "center";
+		context.strokeStyle = "#ffffff";
+		context.lineWidth = 4;
+
+		context.strokeText(__WEBPACK_IMPORTED_MODULE_1__core_dimensioning__["a" /* default */].cmToMeasure(length), viewmodel.convertX(pos.x), viewmodel.convertY(pos.y));
+		context.fillText(__WEBPACK_IMPORTED_MODULE_1__core_dimensioning__["a" /* default */].cmToMeasure(length), viewmodel.convertX(pos.x), viewmodel.convertY(pos.y));
+	}
+
+	/** */
+	function drawEdge(edge, hover) {
+
+		var self = this;
+		var color = edgeColor;
+		if (hover && viewmodel.mode == floorplannerModes.DELETE) {
+			color = deleteColor;
+		} else if (hover) {
+			color = edgeColorHover;
+		}
+		var corners = edge.corners();
+
+		drawPolygon(__WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].map(corners, function (corner) {
+			return viewmodel.convertX(corner.x);
+		}), __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].map(corners, function (corner) {
+			return viewmodel.convertY(corner.y);
+		}), false, null, true, color, edgeWidth);
+	}
+
+	/** */
+	function drawRoom(room) {
+		drawPolygon(__WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].map(room.corners, function (corner) {
+			return viewmodel.convertX(corner.x);
+		}), __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].map(room.corners, function (corner) {
+			return viewmodel.convertY(corner.y);
+		}), true, roomColor);
+	}
+
+	/** */
+	function drawCorner(corner) {
+		var hover = corner === viewmodel.activeCorner;
+		var color = cornerColor;
+		if (hover && viewmodel.mode == floorplannerModes.DELETE) {
+			color = deleteColor;
+		} else if (hover) {
+			color = cornerColorHover;
+		}
+		drawCircle(viewmodel.convertX(corner.x), viewmodel.convertY(corner.y), hover ? cornerRadiusHover : cornerRadius, color);
+	}
+
+	/** */
+	function drawTarget(x, y, lastNode) {
+		drawCircle(viewmodel.convertX(x), viewmodel.convertY(y), cornerRadiusHover, cornerColorHover);
+		if (viewmodel.lastNode) {
+			drawLine(viewmodel.convertX(lastNode.x), viewmodel.convertY(lastNode.y), viewmodel.convertX(x), viewmodel.convertY(y), wallWidthHover, wallColorHover);
+		}
+	}
+
+	/** */
+	function drawLine(startX, startY, endX, endY, width, color) {
+		// width is an integer
+		// color is a hex string, i.e. #ff0000
+		context.beginPath();
+		context.moveTo(startX, startY);
+		context.lineTo(endX, endY);
+		context.lineWidth = width;
+		context.strokeStyle = color;
+		context.stroke();
+	}
+
+	/** */
+	function drawPolygon(xArr, yArr, fill, fillColor, stroke, strokeColor, strokeWidth) {
+		// fillColor is a hex string, i.e. #ff0000
+		fill = fill || false;
+		stroke = stroke || false;
+		context.beginPath();
+		context.moveTo(xArr[0], yArr[0]);
+		for (var i = 1; i < xArr.length; i++) {
+			context.lineTo(xArr[i], yArr[i]);
+		}
+		context.closePath();
+		if (fill) {
+			context.fillStyle = fillColor;
+			context.fill();
+		}
+		if (stroke) {
+			context.lineWidth = strokeWidth;
+			context.strokeStyle = strokeColor;
+			context.stroke();
+		}
+	}
+
+	/** */
+	function drawCircle(centerX, centerY, radius, fillColor) {
+		context.beginPath();
+		context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		context.fillStyle = fillColor;
+		context.fill();
+	}
+
+	/** returns n where -gridSize/2 < n <= gridSize/2  */
+	function calculateGridOffset(n) {
+		if (n >= 0) {
+			return (n + gridSpacing / 2.0) % gridSpacing - gridSpacing / 2.0;
+		} else {
+			return (n - gridSpacing / 2.0) % gridSpacing + gridSpacing / 2.0;
+		}
+	}
+
+	/** */
+	function drawGrid() {
+		var offsetX = calculateGridOffset(-viewmodel.originX);
+		var offsetY = calculateGridOffset(-viewmodel.originY);
+		var width = canvasElement.width;
+		var height = canvasElement.height;
+		for (var x = 0; x <= width / gridSpacing; x++) {
+			drawLine(gridSpacing * x + offsetX, 0, gridSpacing * x + offsetX, height, gridWidth, gridColor);
+		}
+		for (var y = 0; y <= height / gridSpacing; y++) {
+			drawLine(0, gridSpacing * y + offsetY, width, gridSpacing * y + offsetY, gridWidth, gridColor);
+		}
+	}
+
+	return {
+		handleWindowResize: handleWindowResize,
+		draw: draw
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(floorplannerModes, "floorplannerModes", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(gridSpacing, "gridSpacing", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(gridWidth, "gridWidth", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(gridColor, "gridColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(roomColor, "roomColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(wallWidth, "wallWidth", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(wallWidthHover, "wallWidthHover", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(wallColor, "wallColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(wallColorHover, "wallColorHover", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(edgeColor, "edgeColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(edgeColorHover, "edgeColorHover", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(edgeWidth, "edgeWidth", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(deleteColor, "deleteColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(cornerRadius, "cornerRadius", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(cornerRadiusHover, "cornerRadiusHover", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(cornerColor, "cornerColor", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(cornerColorHover, "cornerColorHover", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/floorplanner/floorplanner_view.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/factory.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__floor_item__ = __webpack_require__("./blueprint/items/floor_item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__wall_item__ = __webpack_require__("./blueprint/items/wall_item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__in_wall_item__ = __webpack_require__("./blueprint/items/in_wall_item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__in_wall_floor_item__ = __webpack_require__("./blueprint/items/in_wall_floor_item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__on_floor_item__ = __webpack_require__("./blueprint/items/on_floor_item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__wall_floor_item__ = __webpack_require__("./blueprint/items/wall_floor_item.js");
+
+
+
+
+
+
+
+
+
+
+
+
+/** Enumeration of item types. */
+var item_types = {
+	1: __WEBPACK_IMPORTED_MODULE_3__floor_item__["a" /* default */],
+	2: __WEBPACK_IMPORTED_MODULE_4__wall_item__["a" /* default */],
+	3: __WEBPACK_IMPORTED_MODULE_5__in_wall_item__["a" /* default */],
+	7: __WEBPACK_IMPORTED_MODULE_6__in_wall_floor_item__["a" /* default */],
+	8: __WEBPACK_IMPORTED_MODULE_7__on_floor_item__["a" /* default */],
+	9: __WEBPACK_IMPORTED_MODULE_8__wall_floor_item__["a" /* default */]
+};
+
+/** Factory class to create items. */
+
+var _default = function () {
+	/** Gets the class for the specified item. */
+	function getClass(itemType) {
+		return item_types[itemType];
+	}
+
+	return {
+		getClass: getClass
+	};
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(item_types, "item_types", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/factory.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/factory.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/factory.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/factory.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/floor_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item__ = __webpack_require__("./blueprint/items/item.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+var FloorItem = function (_Item) {
+	_inherits(FloorItem, _Item);
+
+	function FloorItem(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, FloorItem);
+
+		return _possibleConstructorReturn(this, (FloorItem.__proto__ || Object.getPrototypeOf(FloorItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+	}
+
+	/** */
+
+
+	_createClass(FloorItem, [{
+		key: "placeInRoom",
+		value: function placeInRoom() {
+			if (!this.position_set) {
+				var center = this.model.floorplan.getCenter();
+				this.position.x = center.x;
+				this.position.z = center.z;
+				this.position.y = 0.5 * (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y);
+			}
+		}
+
+		/** Take action after a resize */
+
+	}, {
+		key: "resized",
+		value: function resized() {
+			this.position.y = this.halfSize.y;
+		}
+
+		/** */
+
+	}, {
+		key: "moveToPosition",
+		value: function moveToPosition(vec3, intersection) {
+			// keeps the position in the room and on the floor
+			if (!this.isValidPosition(vec3)) {
+				this.showError(vec3);
+				return;
+			} else {
+				this.hideError();
+				vec3.y = this.position.y; // keep it on the floor!
+				this.position.copy(vec3);
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "isValidPosition",
+		value: function isValidPosition(vec3) {
+			var corners = this.getCorners("x", "z", vec3);
+
+			// check if we are in a room
+			var rooms = this.model.floorplan.getRooms();
+			var isInARoom = false;
+			for (var i = 0; i < rooms.length; i++) {
+				if (__WEBPACK_IMPORTED_MODULE_2__core_configuration__["Utils"].pointInPolygon(vec3.x, vec3.z, rooms[i].interiorCorners) && !__WEBPACK_IMPORTED_MODULE_2__core_configuration__["Utils"].polygonPolygonIntersect(corners, rooms[i].interiorCorners)) {
+					isInARoom = true;
+				}
+			}
+			if (!isInARoom) {
+				//console.log('object not in a room');
+				return false;
+			}
+
+			// check if we are outside all other objects
+			/*
+     if (this.obstructFloorMoves) {
+         var objects = this.model.items.getItems();
+         for (var i = 0; i < objects.length; i++) {
+             if (objects[i] === this || !objects[i].obstructFloorMoves) {
+                 continue;
+             }
+             if (!utils.polygonOutsidePolygon(corners, objects[i].getCorners('x', 'z')) ||
+                 utils.polygonPolygonIntersect(corners, objects[i].getCorners('x', 'z'))) {
+                 //console.log('object not outside other objects');
+                 return false;
+             }
+         }
+     }*/
+
+			return true;
+		}
+	}]);
+
+	return FloorItem;
+}(__WEBPACK_IMPORTED_MODULE_3__item__["a" /* default */]);
+
+var _default = FloorItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(FloorItem, "FloorItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/floor_item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/floor_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/floor_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/floor_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/in_wall_floor_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__in_wall_item__ = __webpack_require__("./blueprint/items/in_wall_item.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var InWallFloorItem = function (_InWallItem) {
+	_inherits(InWallFloorItem, _InWallItem);
+
+	function InWallFloorItem(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, InWallFloorItem);
+
+		var _this = _possibleConstructorReturn(this, (InWallFloorItem.__proto__ || Object.getPrototypeOf(InWallFloorItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+
+		_this.boundToFloor = true;
+		return _this;
+	}
+
+	return InWallFloorItem;
+}(__WEBPACK_IMPORTED_MODULE_0__in_wall_item__["a" /* default */]);
+
+var _default = InWallFloorItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(InWallFloorItem, "InWallFloorItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_floor_item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_floor_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_floor_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_floor_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/in_wall_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wall_item__ = __webpack_require__("./blueprint/items/wall_item.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var InWallItem = function (_WallItem) {
+	_inherits(InWallItem, _WallItem);
+
+	function InWallItem(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, InWallItem);
+
+		var _this = _possibleConstructorReturn(this, (InWallItem.__proto__ || Object.getPrototypeOf(InWallItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+
+		_this.addToWall = true;
+		return _this;
+	}
+
+	_createClass(InWallItem, [{
+		key: "getWallOffset",
+		value: function getWallOffset() {
+			// fudge factor so it saves to the right wall
+			return -this.currentWallEdge.offset + 0.5;
+		}
+	}]);
+
+	return InWallItem;
+}(__WEBPACK_IMPORTED_MODULE_0__wall_item__["a" /* default */]);
+
+var _default = InWallItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(InWallItem, "InWallItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/in_wall_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var Item = function (_THREE$Mesh) {
+	_inherits(Item, _THREE$Mesh);
+
+	/** Constructs an item. 
+ 	 * @param model TODO
+ 	 * @param metadata TODO
+ 	 * @param geometry TODO
+ 	 * @param material TODO
+ 	 * @param position TODO
+ 	 * @param rotation TODO
+ 	 * @param scale TODO 
+ 	 */
+	function Item(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, Item);
+
+		var _this = _possibleConstructorReturn(this, (Item.__proto__ || Object.getPrototypeOf(Item)).call(this));
+
+		_this.model = model;
+		_this.scene;
+		_this.errorGlow = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"]();
+		_this.hover = false;
+		_this.selected = false;
+		_this.highlighted = false;
+		_this.error = false;
+		_this.emissiveColor = 0x444444;
+		_this.errorColor = 0xff0000;
+
+		/** Does this object affect other floor items */
+		_this.obstructFloorMoves = true;
+
+		/** Show rotate option in context menu */
+		_this.allowRotate = true;
+
+		_this.fixed = false;
+
+		/** dragging */
+		_this.dragOffset = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
+
+		_this.scene = model.scene;
+		_this.geometry = geometry;
+		_this.material = material;
+
+		_this.errorColor = 0xff0000;
+
+		_this.resizable = metadata.resizable;
+
+		_this.castShadow = true;
+		_this.receiveShadow = false;
+
+		_this.geometry = geometry;
+		_this.material = material;
+
+		if (position) {
+			_this.position.copy(position);
+			_this.position_set = true;
+		} else {
+			_this.position_set = false;
+		}
+
+		// center in its boundingbox
+		_this.geometry.computeBoundingBox();
+		_this.geometry.applyMatrix(new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]().makeTranslation(-0.5 * (_this.geometry.boundingBox.max.x + _this.geometry.boundingBox.min.x), -0.5 * (_this.geometry.boundingBox.max.y + _this.geometry.boundingBox.min.y), -0.5 * (_this.geometry.boundingBox.max.z + _this.geometry.boundingBox.min.z)));
+		_this.geometry.computeBoundingBox();
+		_this.halfSize = _this.objectHalfSize();
+
+		if (rotation) {
+			_this.rotation.y = rotation;
+		}
+
+		if (scale != null) {
+			_this.setScale(scale.x, scale.y, scale.z);
+		}
+
+		_this.updateHighlight = _this.updateHighlight.bind(_this);
+		return _this;
+	}
+
+	/** */
+
+
+	_createClass(Item, [{
+		key: "remove",
+		value: function remove() {
+			this.scene.removeItem(this);
+		}
+
+		/** */
+
+	}, {
+		key: "resize",
+		value: function resize(height, width, depth) {
+			var x = width / this.getWidth();
+			var y = height / this.getHeight();
+			var z = depth / this.getDepth();
+			this.setScale(x, y, z);
+		}
+
+		/** */
+
+	}, {
+		key: "setScale",
+		value: function setScale(x, y, z) {
+			var scaleVec = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](x, y, z);
+			this.halfSize.multiply(scaleVec);
+			scaleVec.multiply(this.scale);
+			this.scale.set(scaleVec.x, scaleVec.y, scaleVec.z);
+			this.resized();
+			this.scene.needsUpdate = true;
+		}
+
+		/** */
+
+	}, {
+		key: "setFixed",
+		value: function setFixed(fixed) {
+			this.fixed = fixed;
+		}
+
+		/** Subclass can define to take action after a resize. */
+
+		/** */
+
+	}, {
+		key: "getHeight",
+		value: function getHeight() {
+			return this.halfSize.y * 2.0;
+		}
+
+		/** */
+
+	}, {
+		key: "getWidth",
+		value: function getWidth() {
+			return this.halfSize.x * 2.0;
+		}
+
+		/** */
+
+	}, {
+		key: "getDepth",
+		value: function getDepth() {
+			return this.halfSize.z * 2.0;
+		}
+
+		/** */
+
+		/** */
+
+	}, {
+		key: "initObject",
+		value: function initObject() {
+			this.placeInRoom();
+			// select and stuff
+			this.scene.needsUpdate = true;
+		}
+
+		/** */
+
+	}, {
+		key: "removed",
+		value: function removed() {}
+
+		/** on is a bool */
+
+	}, {
+		key: "updateHighlight",
+		value: function updateHighlight() {
+			var on = this.hover || this.selected;
+			this.highlighted = on;
+			var hex = on ? this.emissiveColor : 0x000000;
+			this.material.forEach(function (material) {
+				// TODO_Ekki emissive doesn't exist anymore?
+				material.emissive.setHex(hex);
+			});
+		}
+
+		/** */
+
+	}, {
+		key: "mouseOver",
+		value: function mouseOver() {
+			this.hover = true;
+			this.updateHighlight();
+		}
+
+		/** */
+
+	}, {
+		key: "mouseOff",
+		value: function mouseOff() {
+			this.hover = false;
+			this.updateHighlight();
+		}
+
+		/** */
+
+	}, {
+		key: "setSelected",
+		value: function setSelected() {
+			this.selected = true;
+			this.updateHighlight();
+		}
+
+		/** */
+
+	}, {
+		key: "setUnselected",
+		value: function setUnselected() {
+			this.selected = false;
+			this.updateHighlight();
+		}
+
+		/** intersection has attributes point (vec3) and object (THREE.Mesh) */
+
+	}, {
+		key: "clickPressed",
+		value: function clickPressed(intersection) {
+			this.dragOffset.copy(intersection.point).sub(this.position);
+		}
+
+		/** */
+
+	}, {
+		key: "clickDragged",
+		value: function clickDragged(intersection) {
+			if (intersection) {
+				this.moveToPosition(intersection.point.sub(this.dragOffset), intersection);
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "rotate",
+		value: function rotate(intersection) {
+			if (intersection) {
+				var angle = Core.Utils.angle(0, 1, intersection.point.x - this.position.x, intersection.point.z - this.position.z);
+
+				var snapTolerance = Math.PI / 16.0;
+
+				// snap to intervals near Math.PI/2
+				for (var i = -4; i <= 4; i++) {
+					if (Math.abs(angle - i * (Math.PI / 2)) < snapTolerance) {
+						angle = i * (Math.PI / 2);
+						break;
+					}
+				}
+
+				this.rotation.y = angle;
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "moveToPosition",
+		value: function moveToPosition(vec3, intersection) {
+			this.position.copy(vec3);
+		}
+
+		/** */
+
+	}, {
+		key: "clickReleased",
+		value: function clickReleased() {
+			if (this.error) {
+				this.hideError();
+			}
+		}
+
+		/**
+  	 * Returns an array of planes to use other than the ground plane
+  	 * for passing intersection to clickPressed and clickDragged
+  	 */
+
+	}, {
+		key: "customIntersectionPlanes",
+		value: function customIntersectionPlanes() {
+			return [];
+		}
+
+		/** 
+  	 * returns the 2d corners of the bounding polygon
+  	 * 
+  	 * offset is Vector3 (used for getting corners of object at a new position)
+  	 * 
+  	 * TODO: handle rotated objects better!
+  	 */
+
+	}, {
+		key: "getCorners",
+		value: function getCorners(xDim, yDim, position) {
+			position = position || this.position;
+
+			var halfSize = this.halfSize.clone();
+
+			var c1 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](-halfSize.x, 0, -halfSize.z);
+			var c2 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](halfSize.x, 0, -halfSize.z);
+			var c3 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](halfSize.x, 0, halfSize.z);
+			var c4 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](-halfSize.x, 0, halfSize.z);
+
+			var transform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+			//console.log(this.rotation.y);
+			transform.makeRotationY(this.rotation.y); //  + Math.PI/2)
+			c1.applyMatrix4(transform);
+			c2.applyMatrix4(transform);
+			c3.applyMatrix4(transform);
+			c4.applyMatrix4(transform);
+
+			c1.add(position);
+			c2.add(position);
+			c3.add(position);
+			c4.add(position);
+
+			//halfSize.applyMatrix4(transform);
+			//var min = position.clone().sub(halfSize);
+			//var max = position.clone().add(halfSize);
+			var corners = [{ x: c1.x, y: c1.z }, { x: c2.x, y: c2.z }, { x: c3.x, y: c3.z }, { x: c4.x, y: c4.z }];
+
+			return corners;
+		}
+
+		/** */
+
+		/** */
+
+	}, {
+		key: "showError",
+		value: function showError(vec3) {
+			vec3 = vec3 || this.position;
+			if (!this.error) {
+				this.error = true;
+				this.errorGlow = this.createGlow(this.errorColor, 0.8, true);
+				this.scene.add(this.errorGlow);
+			}
+			this.errorGlow.position.copy(vec3);
+		}
+
+		/** */
+
+	}, {
+		key: "hideError",
+		value: function hideError() {
+			if (this.error) {
+				this.error = false;
+				this.scene.remove(this.errorGlow);
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "objectHalfSize",
+		value: function objectHalfSize() {
+			var objectBox = new __WEBPACK_IMPORTED_MODULE_0_three__["Box3"]();
+			objectBox.setFromObject(this);
+			return objectBox.max.clone().sub(objectBox.min).divideScalar(2);
+		}
+
+		/** */
+
+	}, {
+		key: "createGlow",
+		value: function createGlow(color, opacity, ignoreDepth) {
+			ignoreDepth = ignoreDepth || false;
+			opacity = opacity || 0.2;
+			var glowMaterial = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
+				color: color,
+				blending: __WEBPACK_IMPORTED_MODULE_0_three__["AdditiveBlending"],
+				opacity: 0.2,
+				transparent: true,
+				depthTest: !ignoreDepth
+			});
+
+			var glow = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](this.geometry.clone(), glowMaterial);
+			glow.position.copy(this.position);
+			glow.rotation.copy(this.rotation);
+			glow.scale.copy(this.scale);
+			return glow;
+		}
+	}]);
+
+	return Item;
+}(__WEBPACK_IMPORTED_MODULE_0_three__["Mesh"]);
+
+var _default = Item;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Item, "Item", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/on_floor_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__floor_item__ = __webpack_require__("./blueprint/items/floor_item.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var OnFloorItem = function (_FloorItem) {
+	_inherits(OnFloorItem, _FloorItem);
+
+	function OnFloorItem(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, OnFloorItem);
+
+		var _this = _possibleConstructorReturn(this, (OnFloorItem.__proto__ || Object.getPrototypeOf(OnFloorItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+
+		_this.obstructFloorMoves = false;
+		_this.receiveShadow = true;
+		return _this;
+	}
+
+	return OnFloorItem;
+}(__WEBPACK_IMPORTED_MODULE_0__floor_item__["a" /* default */]);
+
+var _default = OnFloorItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(OnFloorItem, "OnFloorItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/on_floor_item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/on_floor_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/on_floor_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/on_floor_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/wall_floor_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wall_item__ = __webpack_require__("./blueprint/items/wall_item.js");
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var WallFloorItem = function (_WallItem) {
+	_inherits(WallFloorItem, _WallItem);
+
+	function WallFloorItem(model, metadata, geometry, material, position, rotation, scale) {
+		_classCallCheck(this, WallFloorItem);
+
+		var _this = _possibleConstructorReturn(this, (WallFloorItem.__proto__ || Object.getPrototypeOf(WallFloorItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+
+		_this.boundToFloor = true;
+		return _this;
+	}
+
+	return WallFloorItem;
+}(__WEBPACK_IMPORTED_MODULE_0__wall_item__["a" /* default */]);
+
+var _default = WallFloorItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(WallFloorItem, "WallFloorItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_floor_item.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_floor_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_floor_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_floor_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/items/wall_item.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__item__ = __webpack_require__("./blueprint/items/item.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var WallItem = function (_Item) {
+  _inherits(WallItem, _Item);
+
+  /** The currently applied wall edge. */
+
+  function WallItem(model, metadata, geometry, material, position, rotation, scale) {
+    _classCallCheck(this, WallItem);
+
+    var _this = _possibleConstructorReturn(this, (WallItem.__proto__ || Object.getPrototypeOf(WallItem)).call(this, model, metadata, geometry, material, position, rotation, scale));
+
+    _this.currentWallEdge = null;
+    /* TODO:
+       This caused a huge headache.
+       HalfEdges get destroyed/created every time floorplan is edited.
+       This item should store a reference to a wall and front/back,
+       and grab its edge reference dynamically whenever it needs it.
+     */
+
+    /** used for finding rotations */
+    _this.refVec = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](0, 1.0);
+
+    /** */
+    _this.wallOffsetScalar = 0;
+
+    /** */
+    _this.sizeX = 0;
+
+    /** */
+    _this.sizeY = 0;
+
+    /** */
+    _this.addToWall = false;
+
+    /** */
+    _this.boundToFloor = false;
+
+    /** */
+    _this.frontVisible = false;
+
+    /** */
+    _this.backVisible = false;
+
+    _this.allowRotate = false;
+
+    return _this;
+  }
+
+  /** Get the closet wall edge.
+   * @returns The wall edge.
+   */
+
+
+  _createClass(WallItem, [{
+    key: "closestWallEdge",
+    value: function closestWallEdge() {
+      var wallEdges = this.model.floorplan.wallEdges();
+
+      var wallEdge = null;
+      var minDistance = null;
+
+      var itemX = this.position.x;
+      var itemZ = this.position.z;
+
+      wallEdges.forEach(function (edge) {
+        var distance = edge.distanceTo(itemX, itemZ);
+        if (minDistance === null || distance < minDistance) {
+          minDistance = distance;
+          wallEdge = edge;
+        }
+      });
+
+      return wallEdge;
+    }
+
+    /** */
+
+  }, {
+    key: "removed",
+    value: function removed() {
+      if (this.currentWallEdge != null && this.addToWall) {
+        __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.currentWallEdge.wall.items, this);
+        this.redrawWall();
+      }
+    }
+
+    /** */
+
+  }, {
+    key: "redrawWall",
+    value: function redrawWall() {
+      if (this.addToWall) {
+        this.currentWallEdge.wall.fireRedraw();
+      }
+    }
+
+    /** */
+
+  }, {
+    key: "updateEdgeVisibility",
+    value: function updateEdgeVisibility(visible, front) {
+      if (front) {
+        this.frontVisible = visible;
+      } else {
+        this.backVisible = visible;
+      }
+      this.visible = this.frontVisible || this.backVisible;
+    }
+
+    /** */
+
+  }, {
+    key: "updateSize",
+    value: function updateSize() {
+      this.wallOffsetScalar = (this.geometry.boundingBox.max.z - this.geometry.boundingBox.min.z) * this.scale.z / 2.0;
+      this.sizeX = (this.geometry.boundingBox.max.x - this.geometry.boundingBox.min.x) * this.scale.x;
+      this.sizeY = (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) * this.scale.y;
+    }
+
+    /** */
+
+  }, {
+    key: "resized",
+    value: function resized() {
+      if (this.boundToFloor) {
+        this.position.y = 0.5 * (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) * this.scale.y + 0.01;
+      }
+
+      this.updateSize();
+      this.redrawWall();
+    }
+
+    /** */
+
+  }, {
+    key: "placeInRoom",
+    value: function placeInRoom() {
+      var closestWallEdge = this.closestWallEdge();
+      this.changeWallEdge(closestWallEdge);
+      this.updateSize();
+
+      if (!this.position_set) {
+        // position not set
+        var center = closestWallEdge.interiorCenter();
+        var newPos = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](center.x, closestWallEdge.wall.height / 2.0, center.y);
+        this.boundMove(newPos);
+        this.position.copy(newPos);
+        this.redrawWall();
+      }
+    }
+
+    /** */
+
+  }, {
+    key: "moveToPosition",
+    value: function moveToPosition(vec3, intersection) {
+      this.changeWallEdge(intersection.object.edge);
+      this.boundMove(vec3);
+      this.position.copy(vec3);
+      this.redrawWall();
+    }
+
+    /** */
+
+  }, {
+    key: "getWallOffset",
+    value: function getWallOffset() {
+      return this.wallOffsetScalar;
+    }
+
+    /** */
+
+  }, {
+    key: "changeWallEdge",
+    value: function changeWallEdge(wallEdge) {
+      if (this.currentWallEdge != null) {
+        if (this.addToWall) {
+          __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.currentWallEdge.wall.items, this);
+          this.redrawWall();
+        } else {
+          __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.currentWallEdge.wall.onItems, this);
+        }
+      }
+
+      // handle subscription to wall being removed
+      if (this.currentWallEdge != null) {
+        this.currentWallEdge.wall.dontFireOnDelete(this.remove.bind(this));
+      }
+      wallEdge.wall.fireOnDelete(this.remove.bind(this));
+
+      // find angle between wall normals
+      var normal2 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]();
+      var normal3 = wallEdge.plane.geometry.faces[0].normal;
+      normal2.x = normal3.x;
+      normal2.y = normal3.z;
+
+      var angle = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].angle(this.refVec.x, this.refVec.y, normal2.x, normal2.y);
+      this.rotation.y = angle;
+
+      // update currentWall
+      this.currentWallEdge = wallEdge;
+      if (this.addToWall) {
+        wallEdge.wall.items.push(this);
+        this.redrawWall();
+      } else {
+        wallEdge.wall.onItems.push(this);
+      }
+    }
+
+    /** Returns an array of planes to use other than the ground plane
+     * for passing intersection to clickPressed and clickDragged */
+
+  }, {
+    key: "customIntersectionPlanes",
+    value: function customIntersectionPlanes() {
+      return this.model.floorplan.wallEdgePlanes();
+    }
+
+    /** takes the move vec3, and makes sure object stays bounded on plane */
+
+  }, {
+    key: "boundMove",
+    value: function boundMove(vec3) {
+      var tolerance = 1;
+      var edge = this.currentWallEdge;
+      vec3.applyMatrix4(edge.interiorTransform);
+
+      if (vec3.x < this.sizeX / 2.0 + tolerance) {
+        vec3.x = this.sizeX / 2.0 + tolerance;
+      } else if (vec3.x > edge.interiorDistance() - this.sizeX / 2.0 - tolerance) {
+        vec3.x = edge.interiorDistance() - this.sizeX / 2.0 - tolerance;
+      }
+
+      if (this.boundToFloor) {
+        vec3.y = 0.5 * (this.geometry.boundingBox.max.y - this.geometry.boundingBox.min.y) * this.scale.y + 0.01;
+      } else {
+        if (vec3.y < this.sizeY / 2.0 + tolerance) {
+          vec3.y = this.sizeY / 2.0 + tolerance;
+        } else if (vec3.y > edge.height - this.sizeY / 2.0 - tolerance) {
+          vec3.y = edge.height - this.sizeY / 2.0 - tolerance;
+        }
+      }
+
+      vec3.z = this.getWallOffset();
+
+      vec3.applyMatrix4(edge.invInteriorTransform);
+    }
+  }]);
+
+  return WallItem;
+}(__WEBPACK_IMPORTED_MODULE_2__item__["a" /* default */]);
+
+var _default = WallItem;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(WallItem, "WallItem", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_item.js");
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_item.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_item.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/items/wall_item.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/corner.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+
+
+
+
+
+
+
+/** */
+var cornerTolerance = 20;
+
+/**
+   * Corners are used to define Walls.
+   */
+
+var _default = function _default(floorplan, x, y, newId) {
+	var id = newId || __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].guid();
+	var wallStarts = [];
+	var wallEnds = [];
+
+	var moved_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+
+	/** Callbacks to be fired on removal. */
+	var deleted_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+
+	/** Callbacks to be fired in case of action. */
+	var action_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+
+	/** Add function to moved callbacks.
+     * @param func The function to be added.
+    */
+	function fireOnMove(func) {}
+	//moved_callbacks.add(func);
+
+
+	/** Add function to deleted callbacks.
+     * @param func The function to be added.
+     */
+	function fireOnDelete(func) {}
+	//deleted_callbacks.add(func);
+
+
+	/** Add function to action callbacks.
+     * @param func The function to be added.
+     */
+	function fireOnAction(func) {}
+	// action_callbacks.add(func);
+
+
+	/**
+     * @returns
+     * @deprecated
+     */
+	function getX() {
+		return x;
+	}
+
+	/**
+     * @returns
+     * @deprecated
+     */
+	function getY() {
+		return y;
+	}
+
+	/**
+     * 
+     */
+	function snapToAxis(tolerance) {
+		// try to snap this corner to an axis
+		var snapped = {
+			x: false,
+			y: false
+		};
+
+		adjacentCorners().forEach(function (corner) {
+			if (Math.abs(corner.x - x) < tolerance) {
+				x = corner.x;
+				snapped.x = true;
+			}
+			if (Math.abs(corner.y - y) < tolerance) {
+				y = corner.y;
+				snapped.y = true;
+			}
+		});
+		return snapped;
+	}
+
+	/** Moves corner relatively to new position.
+     * @param dx The delta x.
+     * @param dy The delta y.
+     */
+	function relativeMove(dx, dy) {
+		move(x + dx, y + dy);
+	}
+
+	function fireAction(action) {
+		action_callbacks.fire(action);
+	}
+
+	/** Remove callback. Fires the delete callbacks. */
+	function remove() {
+		deleted_callbacks.fire(this);
+	}
+
+	/** Removes all walls. */
+	function removeAll() {
+		for (var i = 0; i < wallStarts.length; i++) {
+			wallStarts[i].remove();
+		}
+		for (var i = 0; i < wallEnds.length; i++) {
+			wallEnds[i].remove();
+		}
+		remove();
+	}
+
+	/** Moves corner to new position.
+     * @param newX The new x position.
+     * @param newY The new y position.
+     */
+	function move(newX, newY) {
+		x = newX;
+		y = newY;
+		mergeWithIntersected();
+		moved_callbacks.fire(x, y);
+
+		wallStarts.forEach(function (wall) {
+			wall.fireMoved();
+		});
+
+		wallEnds.forEach(function (wall) {
+			wall.fireMoved();
+		});
+	}
+
+	/** Gets the adjacent corners.
+     * @returns Array of corners.
+     */
+	function adjacentCorners() {
+		var retArray = [];
+		for (var i = 0; i < wallStarts.length; i++) {
+			retArray.push(wallStarts[i].getEnd());
+		}
+		for (var i = 0; i < wallEnds.length; i++) {
+			retArray.push(wallEnds[i].getStart());
+		}
+		return retArray;
+	}
+
+	/** Checks if a wall is connected.
+     * @param wall A wall.
+     * @returns True in case of connection.
+     */
+	function isWallConnected(wall) {
+		for (var i = 0; i < wallStarts.length; i++) {
+			if (wallStarts[i] == wall) {
+				return true;
+			}
+		}
+		for (var i = 0; i < wallEnds.length; i++) {
+			if (wallEnds[i] == wall) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+     * 
+     */
+	function distanceFrom(x, y) {
+		var distance = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].distance(x, y, x, y);
+		return distance;
+	}
+
+	/** Gets the distance from a wall.
+     * @param wall A wall.
+     * @returns The distance.
+     */
+	function distanceFromWall(wall) {
+		return wall.distanceFrom(x, y);
+	}
+
+	/** Gets the distance from a corner.
+     * @param corner A corner.
+     * @returns The distance.
+     */
+	function distanceFromCorner(corner) {
+		return distanceFrom(corner.x, corner.y);
+	}
+
+	/** Detaches a wall.
+     * @param wall A wall.
+     */
+	function detachWall(wall) {
+		__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(wallStarts, wall);
+		__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(wallEnds, wall);
+		if (wallStarts.length == 0 && wallEnds.length == 0) {
+			remove();
+		}
+	}
+
+	/** Attaches a start wall.
+     * @param wall A wall.
+     */
+	function attachStart(wall) {
+		wallStarts.push(wall);
+	}
+
+	/** Attaches an end wall.
+     * @param wall A wall.
+     */
+	function attachEnd(wall) {
+		wallEnds.push(wall);
+	}
+
+	/** Get wall to corner.
+     * @param corner A corner.
+     * @return The associated wall or null.
+     */
+	function wallTo(corner) {
+		for (var i = 0; i < wallStarts.length; i++) {
+			if (wallStarts[i].getEnd() === corner) {
+				return wallStarts[i];
+			}
+		}
+		return null;
+	}
+
+	/** Get wall from corner.
+     * @param corner A corner.
+     * @return The associated wall or null.
+     */
+	function wallFrom(corner) {
+		for (var i = 0; i < wallEnds.length; i++) {
+			if (wallEnds[i].getStart() === corner) {
+				return wallEnds[i];
+			}
+		}
+		return null;
+	}
+
+	/** Get wall to or from corner.
+     * @param corner A corner.
+     * @return The associated wall or null.
+     */
+	function wallToOrFrom(corner) {
+		return wallTo(corner) || wallFrom(corner);
+	}
+
+	/**
+     * 
+     */
+	function combineWithCorner(corner) {
+		// update position to other corner's
+		x = corner.x;
+		y = corner.y;
+		// absorb the other corner's wallStarts and wallEnds
+		for (var i = corner.wallStarts.length - 1; i >= 0; i--) {
+			corner.wallStarts[i].setStart(this);
+		}
+		for (var i = corner.wallEnds.length - 1; i >= 0; i--) {
+			corner.wallEnds[i].setEnd(this);
+		}
+		// delete the other corner
+		corner.removeAll();
+		removeDuplicateWalls();
+		floorplan.update();
+	}
+
+	function mergeWithIntersected() {
+		//console.log('mergeWithIntersected for object: ' + type);
+		// check corners
+		for (var i = 0; i < floorplan.a().getCorners().length; i++) {
+			var corner = floorplan.getCorners()[i];
+			if (distanceFromCorner(corner) < cornerTolerance && corner != this) {
+				combineWithCorner(corner);
+				return true;
+			}
+		}
+		// check walls
+		for (var i = 0; i < floorplan.a().getWalls().length; i++) {
+			var wall = floorplan.getWalls()[i];
+			if (distanceFromWall(wall) < cornerTolerance && !isWallConnected(wall)) {
+				// update position to be on wall
+				var intersection = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].closestPointOnLine(x, y, wall.getStart().x, wall.getStart().y, wall.getEnd().x, wall.getEnd().y);
+				x = intersection.x;
+				y = intersection.y;
+				// merge this corner into wall by breaking wall into two parts
+				floorplan.newWall(this, wall.getEnd());
+				wall.setEnd(this);
+				floorplan.update();
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/** Ensure we do not have duplicate walls (i.e. same start and end points) */
+	function removeDuplicateWalls() {
+		// delete the wall between these corners, if it exists
+		var wallEndpoints = {};
+		var wallStartpoints = {};
+		for (var i = wallStarts.length - 1; i >= 0; i--) {
+			if (wallStarts[i].getEnd() === this) {
+				// remove zero length wall
+				wallStarts[i].remove();
+			} else if (wallStarts[i].getEnd().id in wallEndpoints) {
+				// remove duplicated wall
+				wallStarts[i].remove();
+			} else {
+				wallEndpoints[wallStarts[i].getEnd().id] = true;
+			}
+		}
+		for (var i = wallEnds.length - 1; i >= 0; i--) {
+			if (wallEnds[i].getStart() === this) {
+				// removed zero length wall
+				wallEnds[i].remove();
+			} else if (wallEnds[i].getStart().id in wallStartpoints) {
+				// removed duplicated wall
+				wallEnds[i].remove();
+			} else {
+				wallStartpoints[wallEnds[i].getStart().id] = true;
+			}
+		}
+	}
+
+	return {
+		fireOnDelete: fireOnDelete,
+		fireAction: fireAction,
+		fireOnMove: fireOnMove,
+		attachStart: attachStart,
+		attachEnd: attachEnd,
+		adjacentCorners: adjacentCorners,
+		getX: getX,
+		getY: getY,
+		distanceFrom: distanceFrom,
+		distanceFromWall: distanceFromWall,
+		distanceFromCorner: distanceFromCorner,
+		move: move,
+		snapToAxis: snapToAxis,
+		relativeMove: relativeMove,
+		x: x,
+		y: y
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(cornerTolerance, "cornerTolerance", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/floorplan.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__room__ = __webpack_require__("./blueprint/model/room.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__half_edge__ = __webpack_require__("./blueprint/model/half_edge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__corner__ = __webpack_require__("./blueprint/model/corner.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+
+
+
+
+var defaultFloorPlanTolerance = 10.0;
+
+/** 
+ * A Floorplan represents a number of Walls, Corners and Rooms.
+ */
+
+var Floorplan = function () {
+	/** Constructs a floorplan. */
+	function Floorplan() {
+		_classCallCheck(this, Floorplan);
+
+		this.walls = [];
+		this.corners = [];
+		this.rooms = [];
+		this.new_wall_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+		this.new_corner_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+		this.redraw_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+		this.updated_rooms = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+		this.roomLoadedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+
+		/** 
+  * Floor textures are owned by the floorplan, because room objects are 
+  * destroyed and created each time we change the floorplan.
+  * floorTextures is a map of room UUIDs (string) to a object with
+  * url and scale attributes.
+  */
+		this.floorTextures = {};
+	}
+
+	// hack
+
+
+	_createClass(Floorplan, [{
+		key: "wallEdges",
+		value: function wallEdges() {
+			var edges = [];
+
+			this.walls.forEach(function (wall) {
+				if (wall.frontEdge) {
+					edges.push(wall.frontEdge);
+				}
+				if (wall.backEdge) {
+					edges.push(wall.backEdge);
+				}
+			});
+			return edges;
+		}
+
+		// hack
+
+	}, {
+		key: "wallEdgePlanes",
+		value: function wallEdgePlanes() {
+			var planes = [];
+			this.walls.forEach(function (wall) {
+				if (wall.frontEdge) {
+					planes.push(wall.frontEdge.plane);
+				}
+				if (wall.backEdge) {
+					planes.push(wall.backEdge.plane);
+				}
+			});
+			return planes;
+		}
+	}, {
+		key: "floorPlanes",
+		value: function floorPlanes() {
+			return __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].map(this.rooms, function (room) {
+				return room.floorPlane;
+			});
+		}
+	}, {
+		key: "fireOnNewWall",
+		value: function fireOnNewWall(callback) {
+			this.new_wall_callbacks.add(callback);
+		}
+	}, {
+		key: "fireOnNewCorner",
+		value: function fireOnNewCorner(callback) {
+			this.new_corner_callbacks.add(callback);
+		}
+	}, {
+		key: "fireOnRedraw",
+		value: function fireOnRedraw(callback) {
+			this.redraw_callbacks.add(callback);
+		}
+	}, {
+		key: "fireOnUpdatedRooms",
+		value: function fireOnUpdatedRooms(callback) {
+			this.updated_rooms.add(callback);
+		}
+
+		/**
+    * Creates a new wall.
+    * @param start The start corner.
+    * @param end he end corner.
+    * @returns The new wall.
+    */
+
+	}, {
+		key: "newWall",
+		value: function newWall(start, end) {
+			var wall = new __WEBPACK_IMPORTED_MODULE_2__wall__["a" /* default */](start, end);
+			this.walls.push(wall);
+			var scope = this;
+			wall.fireOnDelete(function () {
+				scope.removeWall(wall);
+			});
+			this.new_wall_callbacks.fire(wall);
+			this.update();
+			return wall;
+		}
+
+		/** Removes a wall.
+    * @param wall The wall to be removed.
+    */
+
+	}, {
+		key: "removeWall",
+		value: function removeWall(wall) {
+			__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.walls, wall);
+			this.update();
+		}
+
+		/**
+    * Creates a new corner.
+    * @param x The x coordinate.
+    * @param y The y coordinate.
+    * @param id An optional id. If unspecified, the id will be created internally.
+    * @returns The new corner.
+    */
+
+	}, {
+		key: "newCorner",
+		value: function newCorner(x, y, id) {
+			var _this = this;
+
+			var corner = new __WEBPACK_IMPORTED_MODULE_5__corner__["a" /* default */](this, x, y, id);
+			this.corners.push(corner);
+			corner.fireOnDelete(function () {
+				_this.removeCorner;
+			});
+			this.new_corner_callbacks.fire(corner);
+			return corner;
+		}
+
+		/** Removes a corner.
+    * @param corner The corner to be removed.
+    */
+
+	}, {
+		key: "removeCorner",
+		value: function removeCorner(corner) {
+			__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.corners, corner);
+		}
+
+		/** Gets the walls. */
+
+	}, {
+		key: "getWalls",
+		value: function getWalls() {
+			return this.walls;
+		}
+
+		/** Gets the corners. */
+
+	}, {
+		key: "getCorners",
+		value: function getCorners() {
+			return this.corners;
+		}
+
+		/** Gets the rooms. */
+
+	}, {
+		key: "getRooms",
+		value: function getRooms() {
+			return this.rooms;
+		}
+	}, {
+		key: "overlappedCorner",
+		value: function overlappedCorner(x, y, tolerance) {
+			tolerance = tolerance || defaultFloorPlanTolerance;
+			for (var i = 0; i < this.corners.length; i++) {
+				if (this.corners[i].distanceFrom(x, y) < tolerance) {
+					return this.corners[i];
+				}
+			}
+			return null;
+		}
+	}, {
+		key: "overlappedWall",
+		value: function overlappedWall(x, y, tolerance) {
+			tolerance = tolerance || defaultFloorPlanTolerance;
+			for (var i = 0; i < this.walls.length; i++) {
+				if (this.walls[i].distanceFrom(x, y) < tolerance) {
+					return this.walls[i];
+				}
+			}
+			return null;
+		}
+
+		// import and export -- cleanup
+
+	}, {
+		key: "saveFloorplan",
+		value: function saveFloorplan() {
+			var floorplan = {
+				corners: {},
+				walls: [],
+				wallTextures: [],
+				floorTextures: {},
+				newFloorTextures: {}
+			};
+
+			this.corners.forEach(function (corner) {
+				floorplan.corners[corner.id] = {
+					x: corner.x,
+					y: corner.y
+				};
+			});
+
+			this.walls.forEach(function (wall) {
+				floorplan.walls.push({
+					corner1: wall.getStart().id,
+					corner2: wall.getEnd().id,
+					frontTexture: wall.frontTexture,
+					backTexture: wall.backTexture
+				});
+			});
+			floorplan.newFloorTextures = this.floorTextures;
+			return floorplan;
+		}
+	}, {
+		key: "loadFloorplan",
+		value: function loadFloorplan(floorplan) {
+			this.reset();
+
+			var corners = {};
+			if (floorplan == null || !("corners" in floorplan) || !("walls" in floorplan)) {
+				return;
+			}
+			for (var id in floorplan.corners) {
+				var corner = floorplan.corners[id];
+				corners[id] = this.newCorner(corner.x, corner.y, id);
+			}
+			var scope = this;
+			floorplan.walls.forEach(function (wall) {
+				var newWall = scope.newWall(corners[wall.corner1], corners[wall.corner2]);
+				if (wall.frontTexture) {
+					newWall.frontTexture = wall.frontTexture;
+				}
+				if (wall.backTexture) {
+					newWall.backTexture = wall.backTexture;
+				}
+			});
+
+			if ("newFloorTextures" in floorplan) {
+				this.floorTextures = floorplan.newFloorTextures;
+			}
+
+			this.update();
+			this.roomLoadedCallbacks.fire();
+		}
+	}, {
+		key: "getFloorTexture",
+		value: function getFloorTexture(uuid) {
+			if (uuid in this.floorTextures) {
+				return this.floorTextures[uuid];
+			} else {
+				return null;
+			}
+		}
+	}, {
+		key: "setFloorTexture",
+		value: function setFloorTexture(uuid, url, scale) {
+			this.floorTextures[uuid] = {
+				url: url,
+				scale: scale
+			};
+		}
+
+		/** clear out obsolete floor textures */
+
+	}, {
+		key: "updateFloorTextures",
+		value: function updateFloorTextures() {
+			var uuids = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].map(this.rooms, function (room) {
+				return room.getUuid();
+			});
+			for (var uuid in this.floorTextures) {
+				if (!__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].hasValue(uuids, uuid)) {
+					delete this.floorTextures[uuid];
+				}
+			}
+		}
+
+		/** */
+
+	}, {
+		key: "reset",
+		value: function reset() {
+			var tmpCorners = this.corners.slice(0);
+			var tmpWalls = this.walls.slice(0);
+			tmpCorners.forEach(function (corner) {
+				corner.remove();
+			});
+			tmpWalls.forEach(function (wall) {
+				wall.remove();
+			});
+			this.corners = [];
+			this.walls = [];
+		}
+
+		/** 
+    * Update rooms
+    */
+
+	}, {
+		key: "update",
+		value: function update() {
+			this.walls.forEach(function (wall) {
+				wall.resetFrontBack();
+			});
+
+			var roomCorners = this.findRooms(this.corners);
+			this.rooms = [];
+			var scope = this;
+			roomCorners.forEach(function (corners) {
+				scope.rooms.push(new __WEBPACK_IMPORTED_MODULE_3__room__["a" /* default */](scope, corners));
+			});
+			this.assignOrphanEdges();
+
+			this.updateFloorTextures();
+			this.updated_rooms.fire();
+		}
+
+		/** 
+    * Returns the center of the floorplan in the y plane
+    */
+
+	}, {
+		key: "getCenter",
+		value: function getCenter() {
+			return this.getDimensions(true);
+		}
+	}, {
+		key: "getSize",
+		value: function getSize() {
+			return this.getDimensions(false);
+		}
+	}, {
+		key: "getDimensions",
+		value: function getDimensions(center) {
+			center = center || false; // otherwise, get size
+			var xMin = Infinity;
+			var xMax = -Infinity;
+			var zMin = Infinity;
+			var zMax = -Infinity;
+			this.corners.forEach(function (corner) {
+				if (corner.x < xMin) xMin = corner.x;
+				if (corner.x > xMax) xMax = corner.x;
+				if (corner.y < zMin) zMin = corner.y;
+				if (corner.y > zMax) zMax = corner.y;
+			});
+			var ret;
+			if (xMin == Infinity || xMax == -Infinity || zMin == Infinity || zMax == -Infinity) {
+				ret = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
+			} else {
+				if (center) {
+					// center
+					ret = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]((xMin + xMax) * 0.5, 0, (zMin + zMax) * 0.5);
+				} else {
+					// size
+					ret = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](xMax - xMin, 0, zMax - zMin);
+				}
+			}
+			return ret;
+		}
+	}, {
+		key: "assignOrphanEdges",
+		value: function assignOrphanEdges() {
+			// kinda hacky
+			// find orphaned wall segments (i.e. not part of rooms) and
+			// give them edges
+			var orphanWalls = [];
+			this.walls.forEach(function (wall) {
+				if (!wall.backEdge && !wall.frontEdge) {
+					wall.orphan = true;
+					var back = new __WEBPACK_IMPORTED_MODULE_4__half_edge__["a" /* default */](null, wall, false);
+					back.generatePlane();
+					var front = new __WEBPACK_IMPORTED_MODULE_4__half_edge__["a" /* default */](null, wall, true);
+					front.generatePlane();
+					orphanWalls.push(wall);
+				}
+			});
+		}
+
+		/*
+     * Find the "rooms" in our planar straight-line graph.
+     * Rooms are set of the smallest (by area) possible cycles in this graph.
+     * @param corners The corners of the floorplan.
+     * @returns The rooms, each room as an array of corners.
+     */
+
+	}, {
+		key: "findRooms",
+		value: function findRooms(corners) {
+			function _calculateTheta(previousCorner, currentCorner, nextCorner) {
+				var theta = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].angle2pi(previousCorner.x - currentCorner.x, previousCorner.y - currentCorner.y, nextCorner.x - currentCorner.x, nextCorner.y - currentCorner.y);
+				return theta;
+			}
+
+			function _removeDuplicateRooms(roomArray) {
+				var results = [];
+				var lookup = {};
+				var hashFunc = function hashFunc(corner) {
+					return corner.id;
+				};
+				var sep = "-";
+				for (var i = 0; i < roomArray.length; i++) {
+					// rooms are cycles, shift it around to check uniqueness
+					var add = true;
+					var room = roomArray[i];
+					for (var j = 0; j < room.length; j++) {
+						var roomShift = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].cycle(room, j);
+						var str = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].map(roomShift, hashFunc).join(sep);
+						if (lookup.hasOwnProperty(str)) {
+							add = false;
+						}
+					}
+					if (add) {
+						results.push(roomArray[i]);
+						lookup[str] = true;
+					}
+				}
+				return results;
+			}
+
+			function _findTightestCycle(firstCorner, secondCorner) {
+				var stack = [];
+
+				var next = {
+					corner: secondCorner,
+					previousCorners: [firstCorner]
+				};
+				var visited = {};
+				visited[firstCorner.id] = true;
+
+				while (next) {
+					// update previous corners, current corner, and visited corners
+					var currentCorner = next.corner;
+					visited[currentCorner.id] = true;
+
+					// did we make it back to the startCorner?
+					if (next.corner === firstCorner && currentCorner !== secondCorner) {
+						return next.previousCorners;
+					}
+
+					var addToStack = [];
+					var adjacentCorners = next.corner.adjacentCorners();
+					for (var i = 0; i < adjacentCorners.length; i++) {
+						var nextCorner = adjacentCorners[i];
+
+						// is this where we came from?
+						// give an exception if its the first corner and we aren't at the second corner
+						if (nextCorner.id in visited && !(nextCorner === firstCorner && currentCorner !== secondCorner)) {
+							continue;
+						}
+
+						// nope, throw it on the queue
+						addToStack.push(nextCorner);
+					}
+
+					var previousCorners = next.previousCorners.slice(0);
+					previousCorners.push(currentCorner);
+					if (addToStack.length > 1) {
+						// visit the ones with smallest theta first
+						var previousCorner = next.previousCorners[next.previousCorners.length - 1];
+						addToStack.sort(function (a, b) {
+							return _calculateTheta(previousCorner, currentCorner, b) - _calculateTheta(previousCorner, currentCorner, a);
+						});
+					}
+
+					if (addToStack.length > 0) {
+						// add to the stack
+						addToStack.forEach(function (corner) {
+							stack.push({
+								corner: corner,
+								previousCorners: previousCorners
+							});
+						});
+					}
+
+					// pop off the next one
+					next = stack.pop();
+				}
+				return [];
+			}
+
+			// find tightest loops, for each corner, for each adjacent
+			// TODO: optimize this, only check corners with > 2 adjacents, or isolated cycles
+			var loops = [];
+
+			corners.forEach(function (firstCorner) {
+				firstCorner.adjacentCorners().forEach(function (secondCorner) {
+					loops.push(_findTightestCycle(firstCorner, secondCorner));
+				});
+			});
+
+			// remove duplicates
+			var uniqueLoops = _removeDuplicateRooms(loops);
+			//remove CW loops
+			var uniqueCCWLoops = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeIf(uniqueLoops, __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].isClockwise);
+
+			return uniqueCCWLoops;
+		}
+	}]);
+
+	return Floorplan;
+}();
+
+var _default = Floorplan;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(defaultFloorPlanTolerance, "defaultFloorPlanTolerance", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/floorplan.js");
+
+	__REACT_HOT_LOADER__.register(Floorplan, "Floorplan", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/floorplan.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/floorplan.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/floorplan.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/floorplan.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/half_edge.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+/**
+   * Half Edges are created by Room.
+   * 
+   * Once rooms have been identified, Half Edges are created for each interior wall.
+   * 
+   * A wall can have two half edges if it is visible from both sides.
+   */
+
+var HalfEdge = function () {
+	/**
+     * Constructs a half edge.
+     * @param room The associated room.
+     * @param wall The corresponding wall.
+     * @param front True if front side.
+     */
+	function HalfEdge(room, wall, front) {
+		_classCallCheck(this, HalfEdge);
+
+		this.wall = wall;
+		this.front = front || false;
+
+		this.offset = wall.thickness / 2.0;
+		this.height = wall.height;
+
+		if (this.front) {
+			this.wall.frontEdge = this;
+		} else {
+			this.wall.backEdge = this;
+		}
+
+		/** The successor edge in CCW ??? direction. */
+		this.next;
+
+		/** The predecessor edge in CCW ??? direction. */
+		this.prev;
+
+		/** */
+		this.offset;
+
+		/** */
+		this.height;
+
+		/** used for intersection testing... not convinced this belongs here */
+		this.plane = null;
+
+		/** transform from world coords to wall planes (z=0) */
+		this.interiorTransform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+
+		/** transform from world coords to wall planes (z=0) */
+		this.invInteriorTransform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+
+		/** transform from world coords to wall planes (z=0) */
+		this.exteriorTransform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+
+		/** transform from world coords to wall planes (z=0) */
+		this.invExteriorTransform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+
+		/** */
+		this.redrawCallbacks = new __WEBPACK_IMPORTED_MODULE_1__utils_callbacks__["a" /* default */]();
+		this.generatePlane = this.generatePlane.bind(this);
+	}
+
+	/**
+     * 
+     */
+
+
+	_createClass(HalfEdge, [{
+		key: "getTexture",
+		value: function getTexture() {
+			if (this.front) {
+				return this.wall.frontTexture;
+			} else {
+				return this.wall.backTexture;
+			}
+		}
+
+		/**
+      * 
+      */
+
+	}, {
+		key: "setTexture",
+		value: function setTexture(textureUrl, textureStretch, textureScale) {
+			var texture = {
+				url: textureUrl,
+				stretch: textureStretch,
+				scale: textureScale
+			};
+			if (this.front) {
+				this.wall.frontTexture = texture;
+			} else {
+				this.wall.backTexture = texture;
+			}
+			this.redrawCallbacks.fire();
+		}
+
+		/** 
+      * this feels hacky, but need wall items
+      */
+
+	}, {
+		key: "generatePlane",
+		value: function generatePlane() {
+			function transformCorner(corner) {
+				return new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](corner.x, 0, corner.y);
+			}
+
+			var v1 = transformCorner(this.interiorStart());
+			var v2 = transformCorner(this.interiorEnd());
+			var v3 = v2.clone();
+			v3.y = this.wall.height;
+			var v4 = v1.clone();
+			v4.y = this.wall.height;
+
+			var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["Geometry"]();
+			geometry.vertices = [v1, v2, v3, v4];
+
+			geometry.faces.push(new __WEBPACK_IMPORTED_MODULE_0_three__["Face3"](0, 1, 2));
+			geometry.faces.push(new __WEBPACK_IMPORTED_MODULE_0_three__["Face3"](0, 2, 3));
+			geometry.computeFaceNormals();
+			geometry.computeBoundingBox();
+
+			this.plane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]());
+			this.plane.visible = false;
+			this.plane.edge = this; // js monkey patch
+
+			this.computeTransforms(this.interiorTransform, this.invInteriorTransform, this.interiorStart(), this.interiorEnd());
+			this.computeTransforms(this.exteriorTransform, this.invExteriorTransform, this.exteriorStart(), this.exteriorEnd());
+		}
+	}, {
+		key: "interiorDistance",
+		value: function interiorDistance() {
+			var start = this.interiorStart();
+			var end = this.interiorEnd();
+			return __WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].distance(start.x, start.y, end.x, end.y);
+		}
+	}, {
+		key: "computeTransforms",
+		value: function computeTransforms(transform, invTransform, start, end) {
+			var v1 = start;
+			var v2 = end;
+
+			var angle = __WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].angle(1, 0, v2.x - v1.x, v2.y - v1.y);
+
+			var tt = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+			tt.makeTranslation(-v1.x, 0, -v1.y);
+			var tr = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
+			tr.makeRotationY(-angle);
+			transform.multiplyMatrices(tr, tt);
+			invTransform.getInverse(transform);
+		}
+
+		/** Gets the distance from specified point.
+      * @param x X coordinate of the point.
+      * @param y Y coordinate of the point.
+      * @returns The distance.
+      */
+
+	}, {
+		key: "distanceTo",
+		value: function distanceTo(x, y) {
+			// x, y, x1, y1, x2, y2
+			return __WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].pointDistanceFromLine(x, y, this.interiorStart().x, this.interiorStart().y, this.interiorEnd().x, this.interiorEnd().y);
+		}
+	}, {
+		key: "getStart",
+		value: function getStart() {
+			if (this.front) {
+				return this.wall.getStart();
+			} else {
+				return this.wall.getEnd();
+			}
+		}
+	}, {
+		key: "getEnd",
+		value: function getEnd() {
+			if (this.front) {
+				return this.wall.getEnd();
+			} else {
+				return this.wall.getStart();
+			}
+		}
+	}, {
+		key: "getOppositeEdge",
+		value: function getOppositeEdge() {
+			if (this.front) {
+				return this.wall.backEdge;
+			} else {
+				return this.wall.frontEdge;
+			}
+		}
+
+		// these return an object with attributes x, y
+
+	}, {
+		key: "interiorEnd",
+		value: function interiorEnd() {
+			var vec = this.halfAngleVector(this, this.next);
+			return {
+				x: this.getEnd().x + vec.x,
+				y: this.getEnd().y + vec.y
+			};
+		}
+	}, {
+		key: "interiorStart",
+		value: function interiorStart() {
+			var vec = this.halfAngleVector(this.prev, this);
+			return {
+				x: this.getStart().x + vec.x,
+				y: this.getStart().y + vec.y
+			};
+		}
+	}, {
+		key: "interiorCenter",
+		value: function interiorCenter() {
+			return {
+				x: (this.interiorStart().x + this.interiorEnd().x) / 2.0,
+				y: (this.interiorStart().y + this.interiorEnd().y) / 2.0
+			};
+		}
+	}, {
+		key: "exteriorEnd",
+		value: function exteriorEnd() {
+			var vec = this.halfAngleVector(this, this.next);
+			return {
+				x: this.getEnd().x - vec.x,
+				y: this.getEnd().y - vec.y
+			};
+		}
+	}, {
+		key: "exteriorStart",
+		value: function exteriorStart() {
+			var vec = this.halfAngleVector(this.prev, this);
+			return {
+				x: this.getStart().x - vec.x,
+				y: this.getStart().y - vec.y
+			};
+		}
+
+		/** Get the corners of the half edge.
+      * @returns An array of x,y pairs.
+      */
+
+	}, {
+		key: "corners",
+		value: function corners() {
+			return [this.interiorStart(), this.interiorEnd(), this.exteriorEnd(), this.exteriorStart()];
+		}
+
+		/** 
+      * Gets CCW angle from v1 to v2
+      */
+
+	}, {
+		key: "halfAngleVector",
+		value: function halfAngleVector(v1, v2) {
+			// make the best of things if we dont have prev or next
+			if (!v1) {
+				var v1startX = v2.getStart().x - (v2.getEnd().x - v2.getStart().x);
+				var v1startY = v2.getStart().y - (v2.getEnd().y - v2.getStart().y);
+				var v1endX = v2.getStart().x;
+				var v1endY = v2.getStart().y;
+			} else {
+				var v1startX = v1.getStart().x;
+				var v1startY = v1.getStart().y;
+				var v1endX = v1.getEnd().x;
+				var v1endY = v1.getEnd().y;
+			}
+
+			if (!v2) {
+				var v2startX = v1.getEnd().x;
+				var v2startY = v1.getEnd().y;
+				var v2endX = v1.getEnd().x + (v1.getEnd().x - v1.getStart().x);
+				var v2endY = v1.getEnd().y + (v1.getEnd().y - v1.getStart().y);
+			} else {
+				var v2startX = v2.getStart().x;
+				var v2startY = v2.getStart().y;
+				var v2endX = v2.getEnd().x;
+				var v2endY = v2.getEnd().y;
+			}
+
+			// CCW angle between edges
+			var theta = __WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].angle2pi(v1startX - v1endX, v1startY - v1endY, v2endX - v1endX, v2endY - v1endY);
+
+			// cosine and sine of half angle
+			var cs = Math.cos(theta / 2.0);
+			var sn = Math.sin(theta / 2.0);
+
+			// rotate v2
+			var v2dx = v2endX - v2startX;
+			var v2dy = v2endY - v2startY;
+
+			var vx = v2dx * cs - v2dy * sn;
+			var vy = v2dx * sn + v2dy * cs;
+
+			// normalize
+			var mag = __WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].distance(0, 0, vx, vy);
+			var desiredMag = this.offset / sn;
+			var scalar = desiredMag / mag;
+
+			var halfAngleVector = {
+				x: vx * scalar,
+				y: vy * scalar
+			};
+
+			return halfAngleVector;
+		}
+	}]);
+
+	return HalfEdge;
+}();
+
+var _default = HalfEdge;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(HalfEdge, "HalfEdge", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/half_edge.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/half_edge.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/half_edge.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/half_edge.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/model.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scene__ = __webpack_require__("./blueprint/model/scene.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+var _this = this;
+
+
+
+
+
+
+
+
+
+/** 
+   * A Model connects a Floorplan and a Scene. 
+   */
+
+var _default = function _default(textureDir) {
+	/** Constructs a new model.
+     * @param textureDir The directory containing the textures.
+     */
+	var scope = _this;
+
+	var roomLoadingCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+	var roomLoadedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+	var roomSavedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+	var roomDeletedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+
+	_this.floorplan = new __WEBPACK_IMPORTED_MODULE_3__floorplan__["a" /* default */]();
+	_this.scene = new __WEBPACK_IMPORTED_MODULE_4__scene__["a" /* default */](_this, textureDir);
+
+	function loadSerialized(json) {
+		// TODO: better documentation on serialization format.
+		// TODO: a much better serialization format.
+		roomLoadingCallbacks.fire();
+
+		var data = JSON.parse(json);
+		newRoom(data.floorplan, data.items);
+
+		roomLoadedCallbacks.fire();
+	}
+
+	function exportSerialized() {
+		var items_arr = [];
+		var objects = scope.scene.getItems();
+		for (var i = 0; i < objects.length; i++) {
+			var object = objects[i];
+			items_arr[i] = {
+				item_name: object.metadata.itemName,
+				item_type: object.metadata.itemType,
+				model_url: object.metadata.modelUrl,
+				xpos: object.position.x,
+				ypos: object.position.y,
+				zpos: object.position.z,
+				rotation: object.rotation.y,
+				scale_x: object.scale.x,
+				scale_y: object.scale.y,
+				scale_z: object.scale.z,
+				fixed: object.fixed
+			};
+		}
+
+		var room = {
+			floorplan: this.floorplan.saveFloorplan(),
+			items: items_arr
+		};
+
+		return JSON.stringify(room);
+	}
+
+	function newRoom(floorplan, items) {
+		scope.scene.clearItems();
+		scope.floorplan.loadFloorplan(floorplan);
+		items.forEach(function (item) {
+			var position = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](item.xpos, item.ypos, item.zpos);
+			var metadata = {
+				itemName: item.item_name,
+				resizable: item.resizable,
+				itemType: item.item_type,
+				modelUrl: item.model_url
+			};
+			var scale = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](item.scale_x, item.scale_y, item.scale_z);
+			scope.scene.addItem(item.item_type, item.model_url, metadata, position, item.rotation, scale, item.fixed);
+		});
+	}
+
+	return {
+		scene: _this.scene,
+		floorplan: _this.floorplan,
+		loadSerialized: loadSerialized
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/model.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/model.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/model.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/room.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__half_edge__ = __webpack_require__("./blueprint/model/half_edge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+var _this = this;
+
+
+
+
+
+
+
+
+/*
+TODO
+var Vec2 = require('vec2')
+var segseg = require('segseg')
+var Polygon = require('polygon')
+*/
+
+/** Default texture to be used if nothing is provided. */
+var defaultRoomTexture = {
+	url: "assets/rooms/textures/hardwood.png",
+	scale: 400
+};
+
+/** 
+   * A Room is the combination of a Floorplan with a floor plane. 
+   */
+
+var _default = function _default(floorplan, corners) {
+	/** */
+	var interiorCorners = [];
+
+	/** */
+	var edgePointer = null;
+
+	/** floor plane for intersection testing */
+	var floorPlane = null;
+
+	/** */
+	var customTexture = false;
+
+	/** */
+
+	/**
+     *  ordered CCW
+     */
+
+	_this.updateWalls();
+	_this.updateInteriorCorners();
+	_this.generatePlane();
+
+	function getUuid() {
+		var cornerUuids = __WEBPACK_IMPORTED_MODULE_4__core_utils__["a" /* default */].map(this.corners, function (c) {
+			return c.id;
+		});
+		cornerUuids.sort();
+		return cornerUuids.join();
+	}
+
+	function fireOnFloorChange(callback) {
+		this.floorChangeCallbacks.add(callback);
+	}
+
+	function getTexture() {
+		var uuid = this.getUuid();
+		var tex = this.floorplan.getFloorTexture(uuid);
+		return tex || defaultRoomTexture;
+	}
+
+	/** 
+     * textureStretch always true, just an argument for consistency with walls
+     */
+	function setTexture(textureUrl, textureStretch, textureScale) {
+		var uuid = this.getUuid();
+		this.floorplan.setFloorTexture(uuid, textureUrl, textureScale);
+		this.floorChangeCallbacks.fire();
+	}
+
+	function generatePlane() {
+		var points = [];
+		this.interiorCorners.forEach(function (corner) {
+			points.push(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](corner.x, corner.y));
+		});
+		var shape = new __WEBPACK_IMPORTED_MODULE_0_three__["Shape"](points);
+		var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["ShapeGeometry"](shape);
+		this.floorPlane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
+			side: __WEBPACK_IMPORTED_MODULE_0_three__["DoubleSide"]
+		}));
+		this.floorPlane.visible = false;
+		this.floorPlane.rotation.set(Math.PI / 2, 0, 0);
+		this.floorPlane.room = this; // js monkey patch
+	}
+
+	function cycleIndex(index) {
+		if (index < 0) {
+			return index += this.corners.length;
+		} else {
+			return index % this.corners.length;
+		}
+	}
+
+	function updateInteriorCorners() {
+		var edge = this.edgePointer;
+		while (true) {
+			this.interiorCorners.push(edge.interiorStart());
+			edge.generatePlane();
+			if (edge.next === this.edgePointer) {
+				break;
+			} else {
+				edge = edge.next;
+			}
+		}
+	}
+
+	/** 
+     * Populates each wall's half edge relating to this room
+     * this creates a fancy doubly connected edge list (DCEL)
+     */
+	function updateWalls() {
+		var prevEdge = null;
+		var firstEdge = null;
+
+		for (var i = 0; i < this.corners.length; i++) {
+			var firstCorner = this.corners[i];
+			var secondCorner = this.corners[(i + 1) % this.corners.length];
+
+			// find if wall is heading in that direction
+			var wallTo = firstCorner.wallTo(secondCorner);
+			var wallFrom = firstCorner.wallFrom(secondCorner);
+			var edge = null;
+
+			if (wallTo) {
+				edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallTo, true);
+			} else if (wallFrom) {
+				edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallFrom, false);
+			} else {
+				// something horrible has happened
+				console.log("corners arent connected by a wall, uh oh");
+			}
+
+			if (i == 0) {
+				firstEdge = edge;
+			} else {
+				edge.prev = prevEdge;
+				prevEdge.next = edge;
+				if (i + 1 == this.corners.length) {
+					firstEdge.prev = edge;
+					edge.next = firstEdge;
+				}
+			}
+			prevEdge = edge;
+		}
+
+		// hold on to an edge reference
+		this.edgePointer = firstEdge;
+	}
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(defaultRoomTexture, "defaultRoomTexture", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/scene.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__items_factory__ = __webpack_require__("./blueprint/items/factory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__items_item__ = __webpack_require__("./blueprint/items/item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+
+
+
+
+
+
+
+
+
+
+/**
+   * The Scene is a manager of Items and also links to a ThreeJS scene.
+   */
+
+var _default = function _default(model, textureDir) {
+	/** The associated ThreeJS scene. */
+	var scene = void 0;
+	var itemLoadingCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
+	var itemLoadedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
+	/** */
+	var items = [];
+
+	/** */
+	var needsUpdate = false;
+
+	/**
+     * Constructs a scene.
+     * @param model The associated model.
+     * @param textureDir The directory from which to load the textures.
+     */
+
+	scene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"]();
+	window.scene = scene;
+
+	// init item loader
+	var loader = new __WEBPACK_IMPORTED_MODULE_0_three__["JSONLoader"]();
+	loader.crossOrigin = "";
+
+	/** Adds a non-item, basically a mesh, to the scene.
+     * @param mesh The mesh to be added.
+     */
+	function add(mesh) {
+		scene.add(mesh);
+	}
+
+	/** Removes a non-item, basically a mesh, from the scene.
+     * @param mesh The mesh to be removed.
+     */
+	function remove(mesh) {
+		scene.remove(mesh);
+		__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.items, mesh);
+	}
+
+	/** Gets the scene.
+     * @returns The scene.
+     */
+	function getScene() {
+		return scene;
+	}
+
+	/** Gets the items.
+     * @returns The items.
+     */
+	function getItems() {
+		return this.items;
+	}
+
+	/** Gets the count of items.
+     * @returns The count.
+     */
+	function itemCount() {
+		return this.items.length;
+	}
+
+	/** Removes all items. */
+	function clearItems() {
+		var items_copy = this.items;
+		var scope = this;
+		items.forEach(function (item) {
+			scope.removeItem(item, true);
+		});
+		this.items = [];
+	}
+
+	/**
+     * Removes an item.
+     * @param item The item to be removed.
+     * @param dontRemove If not set, also remove the item from the items list.
+     */
+	function removeItem(item, dontRemove) {
+		dontRemove = dontRemove || false;
+		// use this for item meshes
+		this.itemRemovedCallbacks.fire(item);
+		item.removed();
+		scene.remove(item);
+		if (!dontRemove) {
+			__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.items, item);
+		}
+	}
+
+	/**
+     * Creates an item and adds it to the scene.
+     * @param itemType The type of the item given by an enumerator.
+     * @param fileName The name of the file to load.
+     * @param metadata TODO
+     * @param position The initial position.
+     * @param rotation The initial rotation around the y axis.
+     * @param scale The initial scaling.
+     * @param fixed True if fixed.
+     */
+	function addItem(itemType, fileName, metadata, position, rotation, scale, fixed) {
+		itemType = itemType || 1;
+		var scope = this;
+		var loaderCallback = function loaderCallback(geometry, materials) {
+			var item = new (__WEBPACK_IMPORTED_MODULE_5__items_factory__["a" /* default */].getClass(itemType))(model, metadata, geometry, materials, position, rotation, scale);
+			item.fixed = fixed || false;
+			scope.items.push(item);
+			scope.add(item);
+			item.initObject();
+			scope.itemLoadedCallbacks.fire(item);
+		};
+
+		this.itemLoadingCallbacks.fire();
+		loader.load(fileName, loaderCallback, undefined // TODO_Ekki
+		);
+	}
+
+	var service = {
+		clearItems: clearItems,
+		itemLoadingCallbacks: itemLoadingCallbacks,
+		itemLoadedCallbacks: itemLoadedCallbacks,
+		addItem: addItem,
+		getItems: getItems
+	};
+
+	return Object.assign(scene, service);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/scene.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/scene.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/scene.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/model/wall.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__corner__ = __webpack_require__("./blueprint/model/corner.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__items_item__ = __webpack_require__("./blueprint/items/item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__half_edge__ = __webpack_require__("./blueprint/model/half_edge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+
+
+
+
+/** The default wall texture. */
+var defaultWallTexture = {
+	url: "assets/rooms/textures/wallmap.png",
+	stretch: true,
+	scale: 0
+};
+
+/** 
+   * A Wall is the basic element to create Rooms.
+   * 
+   * Walls consists of two half edges.
+   */
+
+var Wall = function () {
+	/** 
+     * Constructs a new wall.
+     * @param start Start corner.
+     * @param end End corner.
+     */
+	function Wall(start, end) {
+		_classCallCheck(this, Wall);
+
+		this.start = start;
+		this.end = end;
+		this.id = this.getUuid();
+
+		this.start.attachStart(this);
+		this.end.attachEnd(this);
+
+		this.frontEdge = null;
+		this.backEdge = null;
+		this.orphan = false;
+		this.items = [];
+		this.onItems = [];
+		this.frontTexture = defaultWallTexture;
+		this.backTexture = defaultWallTexture;
+		this.thickness = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["e" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["d" /* configWallThickness */]);
+		this.height = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["e" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["c" /* configWallHeight */]);
+		this.getUuid = this.getUuid.bind(this);
+
+		this.deleted_callbacks = new __WEBPACK_IMPORTED_MODULE_5__utils_callbacks__["a" /* default */]();
+		/** Actions to be applied after movement. */
+		this.moved_callbacks = new __WEBPACK_IMPORTED_MODULE_5__utils_callbacks__["a" /* default */]();
+
+		// /** Actions to be applied on removal. */
+
+		// /** Actions to be applied explicitly. */
+		this.action_callbacks = new __WEBPACK_IMPORTED_MODULE_5__utils_callbacks__["a" /* default */]();
+	}
+
+	_createClass(Wall, [{
+		key: "getUuid",
+		value: function getUuid() {
+			return [this.start.id, this.end.id].join();
+		}
+	}, {
+		key: "resetFrontBack",
+		value: function resetFrontBack() {
+			this.frontEdge = null;
+			this.backEdge = null;
+			this.orphan = false;
+		}
+	}, {
+		key: "snapToAxis",
+		value: function snapToAxis(tolerance) {
+			// order here is important, but unfortunately arbitrary
+			this.start.snapToAxis(tolerance);
+			this.end.snapToAxis(tolerance);
+		}
+	}, {
+		key: "fireOnMove",
+		value: function fireOnMove(func) {
+			this.moved_callbacks.add(func);
+		}
+	}, {
+		key: "fireOnDelete",
+		value: function fireOnDelete(func) {
+			this.deleted_callbacks.add(func);
+		}
+	}, {
+		key: "dontFireOnDelete",
+		value: function dontFireOnDelete(func) {
+			this.deleted_callbacks.remove(func);
+		}
+	}, {
+		key: "fireOnAction",
+		value: function fireOnAction(func) {
+			this.action_callbacks.add(func);
+		}
+	}, {
+		key: "fireAction",
+		value: function fireAction(action) {
+			this.action_callbacks.fire(action);
+		}
+	}, {
+		key: "relativeMove",
+		value: function relativeMove(dx, dy) {
+			this.start.relativeMove(dx, dy);
+			this.end.relativeMove(dx, dy);
+		}
+	}, {
+		key: "fireMoved",
+		value: function fireMoved() {
+			this.moved_callbacks.fire();
+		}
+	}, {
+		key: "fireRedraw",
+		value: function fireRedraw() {
+			if (this.frontEdge) {
+				this.frontEdge.redrawCallbacks.fire();
+			}
+			if (this.backEdge) {
+				this.backEdge.redrawCallbacks.fire();
+			}
+		}
+	}, {
+		key: "getStart",
+		value: function getStart() {
+			return this.start;
+		}
+	}, {
+		key: "getEnd",
+		value: function getEnd() {
+			return this.end;
+		}
+	}, {
+		key: "getStartX",
+		value: function getStartX() {
+			return this.start.getX();
+		}
+	}, {
+		key: "getEndX",
+		value: function getEndX() {
+			return this.end.getX();
+		}
+	}, {
+		key: "getStartY",
+		value: function getStartY() {
+			return this.start.getY();
+		}
+	}, {
+		key: "getEndY",
+		value: function getEndY() {
+			return this.end.getY();
+		}
+	}, {
+		key: "remove",
+		value: function remove() {
+			this.start.detachWall(this);
+			this.end.detachWall(this);
+			this.deleted_callbacks.fire(this);
+		}
+	}, {
+		key: "setStart",
+		value: function setStart(corner) {
+			this.start.detachWall(this);
+			corner.attachStart(this);
+			this.start = corner;
+			this.fireMoved();
+		}
+	}, {
+		key: "setEnd",
+		value: function setEnd(corner) {
+			this.end.detachWall(this);
+			corner.attachEnd(this);
+			this.end = corner;
+			this.fireMoved();
+		}
+	}, {
+		key: "distanceFrom",
+		value: function distanceFrom(x, y) {
+			return __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].pointDistanceFromLine(x, y, this.getStartX(), this.getStartY(), this.getEndX(), this.getEndY());
+		}
+
+		/** Return the corner opposite of the one provided.
+      * @param corner The given corner.
+      * @returns The opposite corner.
+      */
+
+	}, {
+		key: "oppositeCorner",
+		value: function oppositeCorner(corner) {
+			if (this.start === corner) {
+				return this.end;
+			} else if (this.end === corner) {
+				return this.start;
+			} else {
+				console.log("Wall does not connect to corner");
+			}
+		}
+	}]);
+
+	return Wall;
+}();
+
+var _default = Wall;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(defaultWallTexture, "defaultWallTexture", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/wall.js");
+
+	__REACT_HOT_LOADER__.register(Wall, "Wall", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/wall.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/wall.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/wall.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/wall.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/controller.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+
+var _default = function _default(three, model, camera, element, controls, hud) {
+	var scope = this;
+
+	this.enabled = true;
+
+	var scene = model.scene;
+
+	var plane; // ground plane used for intersection testing
+
+	var mouse;
+	var intersectedObject;
+	var mouseoverObject;
+	var selectedObject;
+
+	var mouseDown = false;
+	var mouseMoved = false; // has mouse moved since down click
+
+	var rotateMouseOver = false;
+
+	var states = {
+		UNSELECTED: 0, // no object selected
+		SELECTED: 1, // selected but inactive
+		DRAGGING: 2, // performing an action while mouse depressed
+		ROTATING: 3, // rotating with mouse down
+		ROTATING_FREE: 4, // rotating with mouse up
+		PANNING: 5
+	};
+	var state = states.UNSELECTED;
+
+	this.needsUpdate = true;
+
+	function init() {
+		element.addEventListener("mousedown", mouseDownEvent);
+		element.addEventListener("mouseup", mouseUpEvent);
+		element.addEventListener("mousemove", mouseMoveEvent);
+
+		mouse = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+
+		//scene.itemRemovedCallbacks.add(itemRemoved);
+		// scene.itemLoadedCallbacks.add(itemLoaded);
+		setGroundPlane();
+	}
+
+	// invoked via callback when item is loaded
+	function itemLoaded(item) {
+		if (!item.position_set) {
+			scope.setSelectedObject(item);
+			switchState(states.DRAGGING);
+			var pos = item.position.clone();
+			pos.y = 0;
+			var vec = three.projectVector(pos);
+			clickPressed(vec);
+		}
+		item.position_set = true;
+	}
+
+	function clickPressed(vec2) {
+		vec2 = vec2 || mouse;
+		var intersection = scope.itemIntersection(mouse, selectedObject);
+		if (intersection) {
+			selectedObject.clickPressed(intersection);
+		}
+	}
+
+	function clickDragged(vec2) {
+		vec2 = vec2 || mouse;
+		var intersection = scope.itemIntersection(mouse, selectedObject);
+		if (intersection) {
+			if (scope.isRotating()) {
+				selectedObject.rotate(intersection);
+			} else {
+				selectedObject.clickDragged(intersection);
+			}
+		}
+	}
+
+	function itemRemoved(item) {
+		// invoked as a callback to event in Scene
+		if (item === selectedObject) {
+			selectedObject.setUnselected();
+			selectedObject.mouseOff();
+			scope.setSelectedObject(null);
+		}
+	}
+
+	function setGroundPlane() {
+		// ground plane used to find intersections
+		var size = 10000;
+		plane = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](new __WEBPACK_IMPORTED_MODULE_1_three__["PlaneGeometry"](size, size), new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]());
+		plane.rotation.x = -Math.PI / 2;
+		plane.visible = false;
+		scene.add(plane);
+	}
+
+	function checkWallsAndFloors(event) {
+		// double click on a wall or floor brings up texture change modal
+		if (state == states.UNSELECTED && mouseoverObject == null) {
+			// check walls
+			var wallEdgePlanes = model.floorplan.wallEdgePlanes();
+			var wallIntersects = scope.getIntersections(mouse, wallEdgePlanes, true);
+			if (wallIntersects.length > 0) {
+				var wall = wallIntersects[0].object.edge;
+				three.wallClicked.fire(wall);
+				return;
+			}
+
+			// check floors
+			var floorPlanes = model.floorplan.floorPlanes();
+			var floorIntersects = scope.getIntersections(mouse, floorPlanes, false);
+			if (floorIntersects.length > 0) {
+				var room = floorIntersects[0].object.room;
+				three.floorClicked.fire(room);
+				return;
+			}
+
+			three.nothingClicked.fire();
+		}
+	}
+
+	function mouseMoveEvent(event) {
+		if (scope.enabled) {
+			event.preventDefault();
+
+			mouseMoved = true;
+
+			mouse.x = event.clientX;
+			mouse.y = event.clientY;
+
+			if (!mouseDown) {
+				updateIntersections();
+			}
+
+			switch (state) {
+				case states.UNSELECTED:
+					updateMouseover();
+					break;
+				case states.SELECTED:
+					updateMouseover();
+					break;
+				case states.DRAGGING:
+				case states.ROTATING:
+				case states.ROTATING_FREE:
+					clickDragged();
+					hud.update();
+					scope.needsUpdate = true;
+					break;
+			}
+		}
+	}
+
+	this.isRotating = function () {
+		return state == states.ROTATING || state == states.ROTATING_FREE;
+	};
+
+	function mouseDownEvent(event) {
+		if (scope.enabled) {
+			event.preventDefault();
+
+			mouseMoved = false;
+			mouseDown = true;
+
+			switch (state) {
+				case states.SELECTED:
+					if (rotateMouseOver) {
+						switchState(states.ROTATING);
+					} else if (intersectedObject != null) {
+						scope.setSelectedObject(intersectedObject);
+						if (!intersectedObject.fixed) {
+							switchState(states.DRAGGING);
+						}
+					}
+					break;
+				case states.UNSELECTED:
+					if (intersectedObject != null) {
+						scope.setSelectedObject(intersectedObject);
+						if (!intersectedObject.fixed) {
+							switchState(states.DRAGGING);
+						}
+					}
+					break;
+				case states.DRAGGING:
+				case states.ROTATING:
+					break;
+				case states.ROTATING_FREE:
+					switchState(states.SELECTED);
+					break;
+			}
+		}
+	}
+
+	function mouseUpEvent(event) {
+		if (scope.enabled) {
+			mouseDown = false;
+
+			switch (state) {
+				case states.DRAGGING:
+					selectedObject.clickReleased();
+					switchState(states.SELECTED);
+					break;
+				case states.ROTATING:
+					if (!mouseMoved) {
+						switchState(states.ROTATING_FREE);
+					} else {
+						switchState(states.SELECTED);
+					}
+					break;
+				case states.UNSELECTED:
+					if (!mouseMoved) {
+						checkWallsAndFloors();
+					}
+					break;
+				case states.SELECTED:
+					if (intersectedObject == null && !mouseMoved) {
+						switchState(states.UNSELECTED);
+						checkWallsAndFloors();
+					}
+					break;
+				case states.ROTATING_FREE:
+					break;
+			}
+		}
+	}
+
+	function switchState(newState) {
+		if (newState != state) {
+			onExit(state);
+			onEntry(newState);
+		}
+		state = newState;
+		hud.setRotating(scope.isRotating());
+	}
+
+	function onEntry(state) {
+		switch (state) {
+			case states.UNSELECTED:
+				scope.setSelectedObject(null);
+				break;
+			case states.SELECTED:
+				controls.enabled = true;
+				break;
+			case states.ROTATING:
+			case states.ROTATING_FREE:
+				controls.enabled = false;
+				break;
+			case states.DRAGGING:
+				three.setCursorStyle("move");
+				clickPressed();
+				controls.enabled = false;
+				break;
+		}
+	}
+
+	function onExit(state) {
+		switch (state) {
+			case states.UNSELECTED:
+			case states.SELECTED:
+				break;
+			case states.DRAGGING:
+				if (mouseoverObject) {
+					three.setCursorStyle("pointer");
+				} else {
+					three.setCursorStyle("auto");
+				}
+				break;
+			case states.ROTATING:
+			case states.ROTATING_FREE:
+				break;
+		}
+	}
+
+	this.selectedObject = function () {
+		return selectedObject;
+	};
+
+	// updates the vector of the intersection with the plane of a given
+	// mouse position, and the intersected object
+	// both may be set to null if no intersection found
+	function updateIntersections() {
+		// check the rotate arrow
+		var hudObject = hud.getObject();
+		if (hudObject != null) {
+			var hudIntersects = scope.getIntersections(mouse, hudObject, false, false, true);
+			if (hudIntersects.length > 0) {
+				rotateMouseOver = true;
+				hud.setMouseover(true);
+				intersectedObject = null;
+				return;
+			}
+		}
+		rotateMouseOver = false;
+		hud.setMouseover(false);
+
+		// check objects
+		var items = model.scene.getItems();
+		var intersects = scope.getIntersections(mouse, items, false, true);
+
+		if (intersects.length > 0) {
+			intersectedObject = intersects[0].object;
+		} else {
+			intersectedObject = null;
+		}
+	}
+
+	// sets coords to -1 to 1
+	function normalizeVector2(vec2) {
+		var retVec = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+		retVec.x = (vec2.x - three.widthMargin) / (window.innerWidth - three.widthMargin) * 2 - 1;
+		retVec.y = -((vec2.y - three.heightMargin) / (window.innerHeight - three.heightMargin)) * 2 + 1;
+		return retVec;
+	}
+
+	//
+	function mouseToVec3(vec2) {
+		var normVec2 = normalizeVector2(vec2);
+		var vector = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](normVec2.x, normVec2.y, 0.5);
+		vector.unproject(camera);
+		return vector;
+	}
+
+	// returns the first intersection object
+	this.itemIntersection = function (vec2, item) {
+		var customIntersections = item.customIntersectionPlanes();
+		var intersections = null;
+		if (customIntersections && customIntersections.length > 0) {
+			intersections = this.getIntersections(vec2, customIntersections, true);
+		} else {
+			intersections = this.getIntersections(vec2, plane);
+		}
+		if (intersections.length > 0) {
+			return intersections[0];
+		} else {
+			return null;
+		}
+	};
+
+	// filter by normals will only return objects facing the camera
+	// objects can be an array of objects or a single object
+	this.getIntersections = function (vec2, objects, filterByNormals, onlyVisible, recursive, linePrecision) {
+		var vector = mouseToVec3(vec2);
+
+		onlyVisible = onlyVisible || false;
+		filterByNormals = filterByNormals || false;
+		recursive = recursive || false;
+		linePrecision = linePrecision || 20;
+
+		var direction = vector.sub(camera.position).normalize();
+		var raycaster = new __WEBPACK_IMPORTED_MODULE_1_three__["Raycaster"](camera.position, direction);
+		raycaster.linePrecision = linePrecision;
+		var intersections;
+		if (objects instanceof Array) {
+			intersections = raycaster.intersectObjects(objects, recursive);
+		} else {
+			intersections = raycaster.intersectObject(objects, recursive);
+		}
+		// filter by visible, if true
+		if (onlyVisible) {
+			intersections = __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].removeIf(intersections, function (intersection) {
+				return !intersection.object.visible;
+			});
+		}
+
+		// filter by normals, if true
+		if (filterByNormals) {
+			intersections = __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].removeIf(intersections, function (intersection) {
+				var dot = intersection.face.normal.dot(direction);
+				return dot > 0;
+			});
+		}
+		return intersections;
+	};
+
+	// manage the selected object
+	this.setSelectedObject = function (object) {
+		if (state === states.UNSELECTED) {
+			switchState(states.SELECTED);
+		}
+		if (selectedObject != null) {
+			selectedObject.setUnselected();
+		}
+		if (object != null) {
+			selectedObject = object;
+			selectedObject.setSelected();
+			three.itemSelectedCallbacks.fire(object);
+		} else {
+			selectedObject = null;
+			three.itemUnselectedCallbacks.fire();
+		}
+		this.needsUpdate = true;
+	};
+
+	// TODO: there MUST be simpler logic for expressing this
+	function updateMouseover() {
+		if (intersectedObject != null) {
+			if (mouseoverObject != null) {
+				if (mouseoverObject !== intersectedObject) {
+					mouseoverObject.mouseOff();
+					mouseoverObject = intersectedObject;
+					mouseoverObject.mouseOver();
+					scope.needsUpdate = true;
+				} else {
+					// do nothing, mouseover already set
+				}
+			} else {
+				mouseoverObject = intersectedObject;
+				mouseoverObject.mouseOver();
+				three.setCursorStyle("pointer");
+				scope.needsUpdate = true;
+			}
+		} else if (mouseoverObject != null) {
+			mouseoverObject.mouseOff();
+			three.setCursorStyle("auto");
+			mouseoverObject = null;
+			scope.needsUpdate = true;
+		}
+	}
+
+	init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controller.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controller.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controller.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/controls.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+/**
+This file is a modified version of THREE.OrbitControls
+Contributors:
+ * @author qiao / https://github.com/qiao
+ * @author mrdoob / http://mrdoob.com
+ * @author alteredq / http://alteredqualia.com/
+ * @author WestLangley / http://github.com/WestLangley
+ * @author erich666 / http://erichaines.com
+ */
+
+
+
+var _default = function _default(object, domElement) {
+	this.object = object;
+	this.domElement = domElement !== undefined ? domElement : document;
+
+	// Set to false to disable this control
+	this.enabled = true;
+
+	this.cameraMovedCallbacks = new __WEBPACK_IMPORTED_MODULE_0__utils_callbacks__["a" /* default */]();
+
+	// "target" sets the location of focus, where the control orbits around
+	// and where it pans with respect to.
+	this.target = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"]();
+	// center is old, deprecated; use "target" instead
+	this.center = this.target;
+
+	// This option actually enables dollying in and out; left as "zoom" for
+	// backwards compatibility
+	this.noZoom = false;
+	this.zoomSpeed = 1.0;
+	// Limits to how far you can dolly in and out
+	this.minDistance = 0;
+	this.maxDistance = 1500; //Infinity;
+
+	// Set to true to disable this control
+	this.noRotate = false;
+	this.rotateSpeed = 1.0;
+
+	// Set to true to disable this control
+	this.noPan = false;
+	this.keyPanSpeed = 40.0; // pixels moved per arrow key push
+
+	// Set to true to automatically rotate around the target
+	this.autoRotate = false;
+	this.autoRotateSpeed = 2.0; // 30 seconds per round when fps is 60
+
+	// How far you can orbit vertically, upper and lower limits.
+	// Range is 0 to Math.PI radians.
+	this.minPolarAngle = 0; // radians
+	this.maxPolarAngle = Math.PI / 2; // radians
+
+	// Set to true to disable use of the keys
+	this.noKeys = false;
+	// The four arrow keys
+	this.keys = { LEFT: 37, UP: 38, RIGHT: 39, BOTTOM: 40 };
+
+	this.needsUpdate = true;
+
+	// internals
+
+	var scope = this;
+
+	var EPS = 0.000001;
+
+	var rotateStart = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var rotateEnd = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var rotateDelta = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+
+	var panStart = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var panEnd = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var panDelta = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+
+	var dollyStart = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var dollyEnd = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+	var dollyDelta = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
+
+	var phiDelta = 0;
+	var thetaDelta = 0;
+	var scale = 1;
+	var pan = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"]();
+
+	var STATE = {
+		NONE: -1,
+		ROTATE: 0,
+		DOLLY: 1,
+		PAN: 2,
+		TOUCH_ROTATE: 3,
+		TOUCH_DOLLY: 4,
+		TOUCH_PAN: 5
+	};
+	var state = STATE.NONE;
+
+	this.controlsActive = function () {
+		return state === STATE.NONE;
+	};
+
+	this.setPan = function (vec3) {
+		pan = vec3;
+	};
+
+	this.panTo = function (vec3) {
+		var newTarget = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](vec3.x, scope.target.y, vec3.z);
+		var delta = scope.target.clone().sub(newTarget);
+		pan.sub(delta);
+		scope.update();
+	};
+
+	this.rotateLeft = function (angle) {
+		if (angle === undefined) {
+			angle = getAutoRotationAngle();
+		}
+		thetaDelta -= angle;
+	};
+
+	this.rotateUp = function (angle) {
+		if (angle === undefined) {
+			angle = getAutoRotationAngle();
+		}
+		phiDelta -= angle;
+	};
+
+	// pass in distance in world space to move left
+	this.panLeft = function (distance) {
+		var panOffset = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"]();
+		var te = this.object.matrix.elements;
+		// get X column of matrix
+		panOffset.set(te[0], 0, te[2]);
+		panOffset.normalize();
+
+		panOffset.multiplyScalar(-distance);
+
+		pan.add(panOffset);
+	};
+
+	// pass in distance in world space to move up
+	this.panUp = function (distance) {
+		var panOffset = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"]();
+		var te = this.object.matrix.elements;
+		// get Y column of matrix
+		panOffset.set(te[4], 0, te[6]);
+		panOffset.normalize();
+		panOffset.multiplyScalar(distance);
+
+		pan.add(panOffset);
+	};
+
+	// main entry point; pass in Vector2 of change desired in pixel space,
+	// right and down are positive
+	this.pan = function (delta) {
+		var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
+
+		if (scope.object.fov !== undefined) {
+			// perspective
+			var position = scope.object.position;
+			var offset = position.clone().sub(scope.target);
+			var targetDistance = offset.length();
+
+			// half of the fov is center to top of screen
+			targetDistance *= Math.tan(scope.object.fov / 2 * Math.PI / 180.0);
+			// we actually don't use screenWidth, since perspective camera is fixed to screen height
+			scope.panLeft(2 * delta.x * targetDistance / element.clientHeight);
+			scope.panUp(2 * delta.y * targetDistance / element.clientHeight);
+		} else if (scope.object.top !== undefined) {
+			// orthographic
+			scope.panLeft(delta.x * (scope.object.right - scope.object.left) / element.clientWidth);
+			scope.panUp(delta.y * (scope.object.top - scope.object.bottom) / element.clientHeight);
+		} else {
+			// camera neither orthographic or perspective - warn user
+			console.warn("WARNING: OrbitControls.js encountered an unknown camera type - pan disabled.");
+		}
+
+		scope.update();
+	};
+
+	this.panXY = function (x, y) {
+		scope.pan(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](x, y));
+	};
+
+	this.dollyIn = function (dollyScale) {
+		if (dollyScale === undefined) {
+			dollyScale = getZoomScale();
+		}
+
+		scale /= dollyScale;
+	};
+
+	this.dollyOut = function (dollyScale) {
+		if (dollyScale === undefined) {
+			dollyScale = getZoomScale();
+		}
+
+		scale *= dollyScale;
+	};
+
+	this.update = function () {
+		var position = this.object.position;
+		var offset = position.clone().sub(this.target);
+
+		// angle from z-axis around y-axis
+		var theta = Math.atan2(offset.x, offset.z);
+
+		// angle from y-axis
+		var phi = Math.atan2(Math.sqrt(offset.x * offset.x + offset.z * offset.z), offset.y);
+
+		if (this.autoRotate) {
+			this.rotateLeft(getAutoRotationAngle());
+		}
+
+		theta += thetaDelta;
+		phi += phiDelta;
+
+		// restrict phi to be between desired limits
+		phi = Math.max(this.minPolarAngle, Math.min(this.maxPolarAngle, phi));
+
+		// restrict phi to be betwee EPS and PI-EPS
+		phi = Math.max(EPS, Math.min(Math.PI - EPS, phi));
+
+		var radius = offset.length() * scale;
+
+		// restrict radius to be between desired limits
+		radius = Math.max(this.minDistance, Math.min(this.maxDistance, radius));
+
+		// move target to panned location
+		this.target.add(pan);
+
+		offset.x = radius * Math.sin(phi) * Math.sin(theta);
+		offset.y = radius * Math.cos(phi);
+		offset.z = radius * Math.sin(phi) * Math.cos(theta);
+
+		position.copy(this.target).add(offset);
+
+		this.object.lookAt(this.target);
+
+		thetaDelta = 0;
+		phiDelta = 0;
+		scale = 1;
+		pan.set(0, 0, 0);
+
+		// this.cameraMovedCallbacks.fire();
+		this.needsUpdate = true;
+	};
+
+	function getAutoRotationAngle() {
+		return 2 * Math.PI / 60 / 60 * scope.autoRotateSpeed;
+	}
+
+	function getZoomScale() {
+		return Math.pow(0.95, scope.zoomSpeed);
+	}
+
+	function onMouseDown(event) {
+		if (scope.enabled === false) {
+			return;
+		}
+		event.preventDefault();
+
+		if (event.button === 0) {
+			if (scope.noRotate === true) {
+				return;
+			}
+
+			state = STATE.ROTATE;
+
+			rotateStart.set(event.clientX, event.clientY);
+		} else if (event.button === 1) {
+			if (scope.noZoom === true) {
+				return;
+			}
+
+			state = STATE.DOLLY;
+
+			dollyStart.set(event.clientX, event.clientY);
+		} else if (event.button === 2) {
+			if (scope.noPan === true) {
+				return;
+			}
+
+			state = STATE.PAN;
+
+			panStart.set(event.clientX, event.clientY);
+		}
+
+		// Greggman fix: https://github.com/greggman/three.js/commit/fde9f9917d6d8381f06bf22cdff766029d1761be
+		scope.domElement.addEventListener("mousemove", onMouseMove, false);
+		scope.domElement.addEventListener("mouseup", onMouseUp, false);
+	}
+
+	function onMouseMove(event) {
+		if (scope.enabled === false) return;
+
+		event.preventDefault();
+
+		var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
+
+		if (state === STATE.ROTATE) {
+			if (scope.noRotate === true) return;
+
+			rotateEnd.set(event.clientX, event.clientY);
+			rotateDelta.subVectors(rotateEnd, rotateStart);
+
+			// rotating across whole screen goes 360 degrees around
+			scope.rotateLeft(2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed);
+			// rotating up and down along whole screen attempts to go 360, but limited to 180
+			scope.rotateUp(2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed);
+
+			rotateStart.copy(rotateEnd);
+		} else if (state === STATE.DOLLY) {
+			if (scope.noZoom === true) return;
+
+			dollyEnd.set(event.clientX, event.clientY);
+			dollyDelta.subVectors(dollyEnd, dollyStart);
+
+			if (dollyDelta.y > 0) {
+				scope.dollyIn();
+			} else {
+				scope.dollyOut();
+			}
+
+			dollyStart.copy(dollyEnd);
+		} else if (state === STATE.PAN) {
+			if (scope.noPan === true) return;
+
+			panEnd.set(event.clientX, event.clientY);
+			panDelta.subVectors(panEnd, panStart);
+
+			scope.pan(panDelta);
+
+			panStart.copy(panEnd);
+		}
+
+		// Greggman fix: https://github.com/greggman/three.js/commit/fde9f9917d6d8381f06bf22cdff766029d1761be
+		scope.update();
+	}
+
+	function onMouseUp() /* event */{
+		if (scope.enabled === false) return;
+
+		// Greggman fix: https://github.com/greggman/three.js/commit/fde9f9917d6d8381f06bf22cdff766029d1761be
+		scope.domElement.removeEventListener("mousemove", onMouseMove, false);
+		scope.domElement.removeEventListener("mouseup", onMouseUp, false);
+
+		state = STATE.NONE;
+	}
+
+	function onMouseWheel(event) {
+		if (scope.enabled === false || scope.noZoom === true) return;
+
+		var delta = 0;
+
+		if (event.wheelDelta) {
+			// WebKit / Opera / Explorer 9
+			delta = event.wheelDelta;
+		} else if (event.detail) {
+			// Firefox
+			delta = -event.detail;
+		}
+
+		if (delta > 0) {
+			scope.dollyOut();
+		} else {
+			scope.dollyIn();
+		}
+		scope.update();
+	}
+
+	function onKeyDown(event) {
+		if (scope.enabled === false) {
+			return;
+		}
+		if (scope.noKeys === true) {
+			return;
+		}
+		if (scope.noPan === true) {
+			return;
+		}
+
+		switch (event.keyCode) {
+			case scope.keys.UP:
+				scope.pan(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](0, scope.keyPanSpeed));
+				break;
+			case scope.keys.BOTTOM:
+				scope.pan(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](0, -scope.keyPanSpeed));
+				break;
+			case scope.keys.LEFT:
+				scope.pan(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](scope.keyPanSpeed, 0));
+				break;
+			case scope.keys.RIGHT:
+				scope.pan(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](-scope.keyPanSpeed, 0));
+				break;
+		}
+	}
+
+	function touchstart(event) {
+		if (scope.enabled === false) {
+			return;
+		}
+
+		switch (event.touches.length) {
+			case 1:
+				// one-fingered touch: rotate
+				if (scope.noRotate === true) {
+					return;
+				}
+
+				state = STATE.TOUCH_ROTATE;
+
+				rotateStart.set(event.touches[0].pageX, event.touches[0].pageY);
+				break;
+
+			case 2:
+				// two-fingered touch: dolly
+				if (scope.noZoom === true) {
+					return;
+				}
+
+				state = STATE.TOUCH_DOLLY;
+
+				var dx = event.touches[0].pageX - event.touches[1].pageX;
+				var dy = event.touches[0].pageY - event.touches[1].pageY;
+				var distance = Math.sqrt(dx * dx + dy * dy);
+				dollyStart.set(0, distance);
+				break;
+
+			case 3:
+				// three-fingered touch: pan
+				if (scope.noPan === true) {
+					return;
+				}
+
+				state = STATE.TOUCH_PAN;
+
+				panStart.set(event.touches[0].pageX, event.touches[0].pageY);
+				break;
+
+			default:
+				state = STATE.NONE;
+		}
+	}
+
+	function touchmove(event) {
+		if (scope.enabled === false) {
+			return;
+		}
+
+		event.preventDefault();
+		event.stopPropagation();
+
+		var element = scope.domElement === document ? scope.domElement.body : scope.domElement;
+
+		switch (event.touches.length) {
+			case 1:
+				// one-fingered touch: rotate
+				if (scope.noRotate === true) {
+					return;
+				}
+				if (state !== STATE.TOUCH_ROTATE) {
+					return;
+				}
+
+				rotateEnd.set(event.touches[0].pageX, event.touches[0].pageY);
+				rotateDelta.subVectors(rotateEnd, rotateStart);
+
+				// rotating across whole screen goes 360 degrees around
+				scope.rotateLeft(2 * Math.PI * rotateDelta.x / element.clientWidth * scope.rotateSpeed);
+				// rotating up and down along whole screen attempts to go 360, but limited to 180
+				scope.rotateUp(2 * Math.PI * rotateDelta.y / element.clientHeight * scope.rotateSpeed);
+
+				rotateStart.copy(rotateEnd);
+				break;
+
+			case 2:
+				// two-fingered touch: dolly
+				if (scope.noZoom === true) {
+					return;
+				}
+				if (state !== STATE.TOUCH_DOLLY) {
+					return;
+				}
+
+				var dx = event.touches[0].pageX - event.touches[1].pageX;
+				var dy = event.touches[0].pageY - event.touches[1].pageY;
+				var distance = Math.sqrt(dx * dx + dy * dy);
+
+				dollyEnd.set(0, distance);
+				dollyDelta.subVectors(dollyEnd, dollyStart);
+
+				if (dollyDelta.y > 0) {
+					scope.dollyOut();
+				} else {
+					scope.dollyIn();
+				}
+
+				dollyStart.copy(dollyEnd);
+				break;
+
+			case 3:
+				// three-fingered touch: pan
+				if (scope.noPan === true) {
+					return;
+				}
+				if (state !== STATE.TOUCH_PAN) {
+					return;
+				}
+
+				panEnd.set(event.touches[0].pageX, event.touches[0].pageY);
+				panDelta.subVectors(panEnd, panStart);
+
+				scope.pan(panDelta);
+
+				panStart.copy(panEnd);
+				break;
+
+			default:
+				state = STATE.NONE;
+		}
+	}
+
+	function touchend() /* event */{
+		if (scope.enabled === false) {
+			return;
+		}
+		state = STATE.NONE;
+	}
+
+	this.domElement.addEventListener("contextmenu", function (event) {
+		event.preventDefault();
+	}, false);
+	this.domElement.addEventListener("mousedown", onMouseDown, false);
+	this.domElement.addEventListener("mousewheel", onMouseWheel, false);
+	this.domElement.addEventListener("DOMMouseScroll", onMouseWheel, false); // firefox
+	this.domElement.addEventListener("touchstart", touchstart, false);
+	this.domElement.addEventListener("touchend", touchend, false);
+	this.domElement.addEventListener("touchmove", touchmove, false);
+
+	window.addEventListener("keydown", onKeyDown, false);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controls.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controls.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/controls.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/edge.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+
+var _default = function _default(scene, edge, controls) {
+	var scope = this;
+
+	var wall = edge.wall;
+	var front = edge.front;
+
+	var planes = [];
+	var basePlanes = []; // always visible
+	var texture = null;
+
+	var lightMap = __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"]("assets/rooms/textures/walllightmap.png");
+	var fillerColor = 0xdddddd;
+	var sideColor = 0xcccccc;
+	var baseColor = 0xdddddd;
+
+	this.visible = false;
+
+	this.remove = function () {
+		edge.redrawCallbacks.remove(redraw);
+		controls.cameraMovedCallbacks.remove(updateVisibility);
+		removeFromScene();
+	};
+
+	function init() {
+		edge.redrawCallbacks.add(redraw);
+		controls.cameraMovedCallbacks.add(updateVisibility);
+		updateTexture();
+		updatePlanes();
+		addToScene();
+	}
+
+	function redraw() {
+		removeFromScene();
+		updateTexture();
+		updatePlanes();
+		addToScene();
+	}
+
+	function removeFromScene() {
+		planes.forEach(function (plane) {
+			scene.remove(plane);
+		});
+		basePlanes.forEach(function (plane) {
+			scene.remove(plane);
+		});
+		planes = [];
+		basePlanes = [];
+	}
+
+	function addToScene() {
+		planes.forEach(function (plane) {
+			scene.add(plane);
+		});
+		basePlanes.forEach(function (plane) {
+			scene.add(plane);
+		});
+		updateVisibility();
+	}
+
+	function updateVisibility() {
+		// finds the normal from the specified edge
+		var start = edge.interiorStart();
+		var end = edge.interiorEnd();
+		var x = end.x - start.x;
+		var y = end.y - start.y;
+		// rotate 90 degrees CCW
+		var normal = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](-y, 0, x);
+		normal.normalize();
+
+		// setup camera
+		var position = controls.object.position.clone();
+		var focus = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"]((start.x + end.x) / 2.0, 0, (start.y + end.y) / 2.0);
+		var direction = position.sub(focus).normalize();
+
+		// find dot
+		var dot = normal.dot(direction);
+
+		// update visible
+		scope.visible = dot >= 0;
+
+		// show or hide plans
+		planes.forEach(function (plane) {
+			plane.visible = scope.visible;
+		});
+
+		updateObjectVisibility();
+	}
+
+	function updateObjectVisibility() {
+		wall.items.forEach(function (item) {
+			item.updateEdgeVisibility(scope.visible, front);
+		});
+		wall.onItems.forEach(function (item) {
+			item.updateEdgeVisibility(scope.visible, front);
+		});
+	}
+
+	function updateTexture(callback) {
+		// callback is fired when texture loads
+		callback = callback || function () {
+			scene.needsUpdate = true;
+		};
+		var textureData = edge.getTexture();
+		var stretch = textureData.stretch;
+		var url = textureData.url;
+		var scale = textureData.scale;
+		texture = __WEBPACK_IMPORTED_MODULE_1_three__["ImageUtils"].loadTexture(url, null, callback);
+		if (!stretch) {
+			var height = wall.height;
+			var width = edge.interiorDistance();
+			texture.wrapT = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
+			texture.wrapS = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
+			texture.repeat.set(width / scale, height / scale);
+			texture.needsUpdate = true;
+		}
+	}
+
+	function updatePlanes() {
+		var wallMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: 0xffffff,
+			// ambientColor: 0xffffff, TODO_Ekki
+			//ambient: scope.wall.color,
+			side: __WEBPACK_IMPORTED_MODULE_1_three__["FrontSide"],
+			map: texture
+			// lightMap: lightMap TODO_Ekki
+		});
+
+		var fillerMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: fillerColor,
+			side: __WEBPACK_IMPORTED_MODULE_1_three__["DoubleSide"]
+		});
+
+		// exterior plane
+		planes.push(makeWall(edge.exteriorStart(), edge.exteriorEnd(), edge.exteriorTransform, edge.invExteriorTransform, fillerMaterial));
+
+		// interior plane
+		planes.push(makeWall(edge.interiorStart(), edge.interiorEnd(), edge.interiorTransform, edge.invInteriorTransform, wallMaterial));
+
+		// bottom
+		// put into basePlanes since this is always visible
+		basePlanes.push(buildFiller(edge, 0, __WEBPACK_IMPORTED_MODULE_1_three__["BackSide"], baseColor));
+
+		// top
+		planes.push(buildFiller(edge, wall.height, __WEBPACK_IMPORTED_MODULE_1_three__["DoubleSide"], fillerColor));
+
+		// sides
+		planes.push(buildSideFillter(edge.interiorStart(), edge.exteriorStart(), wall.height, sideColor));
+
+		planes.push(buildSideFillter(edge.interiorEnd(), edge.exteriorEnd(), wall.height, sideColor));
+	}
+
+	// start, end have x and y attributes (i.e. corners)
+	function makeWall(start, end, transform, invTransform, material) {
+		var v1 = toVec3(start);
+		var v2 = toVec3(end);
+		var v3 = v2.clone();
+		v3.y = wall.height;
+		var v4 = v1.clone();
+		v4.y = wall.height;
+
+		var points = [v1.clone(), v2.clone(), v3.clone(), v4.clone()];
+
+		points.forEach(function (p) {
+			p.applyMatrix4(transform);
+		});
+
+		var shape = new __WEBPACK_IMPORTED_MODULE_1_three__["Shape"]([new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](points[0].x, points[0].y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](points[1].x, points[1].y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](points[2].x, points[2].y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](points[3].x, points[3].y)]);
+
+		// add holes for each wall item
+		wall.items.forEach(function (item) {
+			var pos = item.position.clone();
+			pos.applyMatrix4(transform);
+			var halfSize = item.halfSize;
+			var min = halfSize.clone().multiplyScalar(-1);
+			var max = halfSize.clone();
+			min.add(pos);
+			max.add(pos);
+
+			var holePoints = [new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](min.x, min.y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](max.x, min.y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](max.x, max.y), new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](min.x, max.y)];
+
+			shape.holes.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Path"](holePoints));
+		});
+
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["ShapeGeometry"](shape);
+
+		geometry.vertices.forEach(function (v) {
+			v.applyMatrix4(invTransform);
+		});
+
+		// make UVs
+		var totalDistance = __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].distance(v1.x, v1.z, v2.x, v2.z);
+		var height = wall.height;
+		geometry.faceVertexUvs[0] = [];
+
+		function vertexToUv(vertex) {
+			var x = __WEBPACK_IMPORTED_MODULE_0__core_utils__["a" /* default */].distance(v1.x, v1.z, vertex.x, vertex.z) / totalDistance;
+			var y = vertex.y / height;
+			return new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](x, y);
+		}
+
+		geometry.faces.forEach(function (face) {
+			var vertA = geometry.vertices[face.a];
+			var vertB = geometry.vertices[face.b];
+			var vertC = geometry.vertices[face.c];
+			geometry.faceVertexUvs[0].push([vertexToUv(vertA), vertexToUv(vertB), vertexToUv(vertC)]);
+		});
+
+		geometry.faceVertexUvs[1] = geometry.faceVertexUvs[0];
+
+		geometry.computeFaceNormals();
+		geometry.computeVertexNormals();
+
+		var mesh = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, material);
+
+		return mesh;
+	}
+
+	function buildSideFillter(p1, p2, height, color) {
+		var points = [toVec3(p1), toVec3(p2), toVec3(p2, height), toVec3(p1, height)];
+
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["Geometry"]();
+		points.forEach(function (p) {
+			geometry.vertices.push(p);
+		});
+		geometry.faces.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Face3"](0, 1, 2));
+		geometry.faces.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Face3"](0, 2, 3));
+
+		var fillerMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: color,
+			side: __WEBPACK_IMPORTED_MODULE_1_three__["DoubleSide"]
+		});
+
+		var filler = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, fillerMaterial);
+		return filler;
+	}
+
+	function buildFiller(edge, height, side, color) {
+		var points = [toVec2(edge.exteriorStart()), toVec2(edge.exteriorEnd()), toVec2(edge.interiorEnd()), toVec2(edge.interiorStart())];
+
+		var fillerMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: color,
+			side: side
+		});
+
+		var shape = new __WEBPACK_IMPORTED_MODULE_1_three__["Shape"](points);
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["ShapeGeometry"](shape);
+
+		var filler = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, fillerMaterial);
+		filler.rotation.set(Math.PI / 2, 0, 0);
+		filler.position.y = height;
+		return filler;
+	}
+
+	function toVec2(pos) {
+		return new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](pos.x, pos.y);
+	}
+
+	function toVec3(pos, height) {
+		height = height || 0;
+		return new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](pos.x, height, pos.y);
+	}
+
+	init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/edge.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/edge.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/edge.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/floor.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+
+var _default = function _default(scene, room) {
+	var scope = this;
+
+	this.room = room;
+	scene;
+
+	var floorPlane = null;
+	var roofPlane = null;
+
+	init();
+
+	function init() {
+		scope.room.fireOnFloorChange(redraw);
+		floorPlane = buildFloor();
+		// roofs look weird, so commented out
+		//roofPlane = buildRoof();
+	}
+
+	function redraw() {
+		scope.removeFromScene();
+		floorPlane = buildFloor();
+		scope.addToScene();
+	}
+
+	function buildFloor() {
+		var textureSettings = scope.room.getTexture();
+		// setup texture
+		var floorTexture = __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"](textureSettings.url);
+		floorTexture.wrapS = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
+		floorTexture.wrapT = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
+		floorTexture.repeat.set(1, 1);
+		var floorMaterialTop = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshPhongMaterial"]({
+			map: floorTexture,
+			side: __WEBPACK_IMPORTED_MODULE_1_three__["DoubleSide"],
+			// ambient: 0xffffff, TODO_Ekki
+			color: 0xcccccc,
+			specular: 0x0a0a0a
+		});
+
+		var textureScale = textureSettings.scale;
+		// http://stackoverflow.com/questions/19182298/how-to-texture-a-three-js-mesh-created-with-shapegeometry
+		// scale down coords to fit 0 -> 1, then rescale
+
+		var points = [];
+		scope.room.interiorCorners.forEach(function (corner) {
+			points.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](corner.x / textureScale, corner.y / textureScale));
+		});
+		var shape = new __WEBPACK_IMPORTED_MODULE_1_three__["Shape"](points);
+
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["ShapeGeometry"](shape);
+
+		var floor = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, floorMaterialTop);
+
+		floor.rotation.set(Math.PI / 2, 0, 0);
+		floor.scale.set(textureScale, textureScale, textureScale);
+		floor.receiveShadow = true;
+		floor.castShadow = false;
+		return floor;
+	}
+
+	function buildRoof() {
+		// setup texture
+		var roofMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			side: __WEBPACK_IMPORTED_MODULE_1_three__["FrontSide"],
+			color: 0xe5e5e5
+		});
+
+		var points = [];
+		scope.room.interiorCorners.forEach(function (corner) {
+			points.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"](corner.x, corner.y));
+		});
+		var shape = new __WEBPACK_IMPORTED_MODULE_1_three__["Shape"](points);
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["ShapeGeometry"](shape);
+		var roof = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, roofMaterial);
+
+		roof.rotation.set(Math.PI / 2, 0, 0);
+		roof.position.y = 250;
+		return roof;
+	}
+
+	this.addToScene = function () {
+		scene.add(floorPlane);
+		//scene.add(roofPlane);
+		// hack so we can do intersect testing
+		scene.add(room.floorPlane);
+	};
+
+	this.removeFromScene = function () {
+		scene.remove(floorPlane);
+		//scene.remove(roofPlane);
+		scene.remove(room.floorPlane);
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floor.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floor.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floor.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/floorplan.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__floor__ = __webpack_require__("./blueprint/three/floor.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edge__ = __webpack_require__("./blueprint/three/edge.js");
+
+
+
+var _default = function _default(scene, floorplan, controls) {
+  var scope = this;
+
+  this.scene = scene;
+  this.floorplan = floorplan;
+  this.controls = controls;
+
+  this.floors = [];
+  this.edges = [];
+
+  floorplan.fireOnUpdatedRooms(redraw);
+
+  function redraw() {
+    // clear scene
+    scope.floors.forEach(function (floor) {
+      floor.removeFromScene();
+    });
+
+    scope.edges.forEach(function (edge) {
+      edge.remove();
+    });
+    scope.floors = [];
+    scope.edges = [];
+
+    // draw floors
+    scope.floorplan.getRooms().forEach(function (room) {
+      var threeFloor = new __WEBPACK_IMPORTED_MODULE_0__floor__["a" /* default */](scene, room);
+      scope.floors.push(threeFloor);
+      threeFloor.addToScene();
+    });
+
+    // draw edges
+    scope.floorplan.wallEdges().forEach(function (edge) {
+      var threeEdge = new __WEBPACK_IMPORTED_MODULE_1__edge__["a" /* default */](scene, edge, scope.controls);
+      scope.edges.push(threeEdge);
+    });
+  }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floorplan.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floorplan.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floorplan.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/hud.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+
+/**
+   * Drawings on "top" of the scene. e.g. rotate arrows
+   */
+
+var _default = function _default(three) {
+  var scope = this;
+
+  var scene = new __WEBPACK_IMPORTED_MODULE_1_three__["Scene"]();
+
+  var selectedItem = null;
+
+  var rotating = false;
+  var mouseover = false;
+
+  var tolerance = 10;
+  var height = 5;
+  var distance = 20;
+  var color = "#ffffff";
+  var hoverColor = "#f1c40f";
+
+  var activeObject = null;
+
+  this.getScene = function () {
+    return scene;
+  };
+
+  this.getObject = function () {
+    return activeObject;
+  };
+
+  function init() {
+    //   three.itemSelectedCallbacks.add(itemSelected);
+    //   three.itemUnselectedCallbacks.add(itemUnselected);
+    //
+  }
+
+  function resetSelectedItem() {
+    selectedItem = null;
+    if (activeObject) {
+      scene.remove(activeObject);
+      activeObject = null;
+    }
+  }
+
+  function itemSelected(item) {
+    if (selectedItem != item) {
+      resetSelectedItem();
+      if (item.allowRotate && !item.fixed) {
+        selectedItem = item;
+        activeObject = makeObject(selectedItem);
+        scene.add(activeObject);
+      }
+    }
+  }
+
+  function itemUnselected() {
+    resetSelectedItem();
+  }
+
+  this.setRotating = function (isRotating) {
+    rotating = isRotating;
+    setColor();
+  };
+
+  this.setMouseover = function (isMousedOver) {
+    mouseover = isMousedOver;
+    setColor();
+  };
+
+  function setColor() {
+    if (activeObject) {
+      activeObject.children.forEach(function (obj) {
+        obj.material.color.set(getColor());
+      });
+    }
+    three.needsUpdate();
+  }
+
+  function getColor() {
+    return mouseover || rotating ? hoverColor : color;
+  }
+
+  this.update = function () {
+    if (activeObject) {
+      activeObject.rotation.y = selectedItem.rotation.y;
+      activeObject.position.x = selectedItem.position.x;
+      activeObject.position.z = selectedItem.position.z;
+    }
+  };
+
+  function makeLineGeometry(item) {
+    var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["Geometry"]();
+
+    geometry.vertices.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, 0), rotateVector(item));
+
+    return geometry;
+  }
+
+  function rotateVector(item) {
+    var vec = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, Math.max(item.halfSize.x, item.halfSize.z) + 1.4 + distance);
+    return vec;
+  }
+
+  function makeLineMaterial(rotating) {
+    var mat = new __WEBPACK_IMPORTED_MODULE_1_three__["LineBasicMaterial"]({
+      color: getColor(),
+      linewidth: 3
+    });
+    return mat;
+  }
+
+  function makeCone(item) {
+    var coneGeo = new __WEBPACK_IMPORTED_MODULE_1_three__["CylinderGeometry"](5, 0, 10);
+    var coneMat = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+      color: getColor()
+    });
+    var cone = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](coneGeo, coneMat);
+    cone.position.copy(rotateVector(item));
+
+    cone.rotation.x = -Math.PI / 2.0;
+
+    return cone;
+  }
+
+  function makeSphere(item) {
+    var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["SphereGeometry"](4, 16, 16);
+    var material = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+      color: getColor()
+    });
+    var sphere = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, material);
+    return sphere;
+  }
+
+  function makeObject(item) {
+    var object = new __WEBPACK_IMPORTED_MODULE_1_three__["Object3D"]();
+    var line = new __WEBPACK_IMPORTED_MODULE_1_three__["Line"](makeLineGeometry(item), makeLineMaterial(scope.rotating), __WEBPACK_IMPORTED_MODULE_1_three__["LinePieces"]);
+
+    var cone = makeCone(item);
+    var sphere = makeSphere(item);
+
+    object.add(line);
+    object.add(cone);
+    object.add(sphere);
+
+    object.rotation.y = item.rotation.y;
+    object.position.x = item.position.x;
+    object.position.z = item.position.z;
+    object.position.y = height;
+
+    return object;
+  }
+
+  init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/hud.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/hud.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/hud.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/lights.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+
+var _default = function _default(scene, floorplan) {
+	var scope = this;
+
+	var tol = 1;
+	var height = 300; // TODO: share with Blueprint.Wall
+
+	var dirLight;
+
+	this.getDirLight = function () {
+		return dirLight;
+	};
+
+	function init() {
+		var light = new __WEBPACK_IMPORTED_MODULE_1_three__["HemisphereLight"](0xffffff, 0x888888, 1.1);
+		light.position.set(0, height, 0);
+		scene.add(light);
+
+		dirLight = new __WEBPACK_IMPORTED_MODULE_1_three__["DirectionalLight"](0xffffff, 0);
+		dirLight.color.setHSL(1, 1, 0.1);
+
+		dirLight.castShadow = true;
+
+		dirLight.shadow.mapSize.width = 1024;
+		dirLight.shadow.mapSize.height = 1024;
+
+		dirLight.shadow.camera.far = height + tol;
+		dirLight.shadow.bias = -0.0001;
+		dirLight.shadow.darkness = 0.2;
+		dirLight.visible = true;
+		dirLight.shadowCameraVisible = false;
+
+		scene.add(dirLight);
+		scene.add(dirLight.target);
+
+		floorplan.fireOnUpdatedRooms(updateShadowCamera);
+	}
+
+	function updateShadowCamera() {
+		var size = floorplan.getSize();
+		var d = (Math.max(size.z, size.x) + tol) / 2.0;
+
+		var center = floorplan.getCenter();
+		var pos = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](center.x, height, center.z);
+		dirLight.position.copy(pos);
+		dirLight.target.position.copy(center);
+		//dirLight.updateMatrix();
+		//dirLight.updateWorldMatrix()
+		dirLight.shadowCameraLeft = -d;
+		dirLight.shadowCameraRight = d;
+		dirLight.shadowCameraTop = d;
+		dirLight.shadowCameraBottom = -d;
+		// this is necessary for updates
+		if (dirLight.shadowCamera) {
+			dirLight.shadowCamera.left = dirLight.shadowCameraLeft;
+			dirLight.shadowCamera.right = dirLight.shadowCameraRight;
+			dirLight.shadowCamera.top = dirLight.shadowCameraTop;
+			dirLight.shadowCamera.bottom = dirLight.shadowCameraBottom;
+			dirLight.shadowCamera.updateProjectionMatrix();
+		}
+	}
+
+	init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/lights.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/lights.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/lights.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/main.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__controller__ = __webpack_require__("./blueprint/three/controller.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__floorplan__ = __webpack_require__("./blueprint/three/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__controls__ = __webpack_require__("./blueprint/three/controls.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lights__ = __webpack_require__("./blueprint/three/lights.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__skybox__ = __webpack_require__("./blueprint/three/skybox.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hud__ = __webpack_require__("./blueprint/three/hud.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+
+
+
+
+
+
+
+
+
+var _default = function _default(model, element, canvasElement, opts) {
+	var scope = this;
+
+	this.itemSelectedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
+	this.itemUnselectedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
+
+	var options = {
+		resize: true,
+		pushHref: false,
+		spin: true,
+		spinSpeed: 0.00002,
+		clickPan: true,
+		canMoveFixedItems: false
+	};
+
+	// override with manually set options
+	for (var opt in options) {
+		if (options.hasOwnProperty(opt) && opts.hasOwnProperty(opt)) {
+			options[opt] = opts[opt];
+		}
+	}
+
+	var scene = model.scene;
+
+	this.element = document.getElementById(element);
+	var domElement;
+
+	var camera;
+	var renderer;
+	this.controls;
+	var canvas;
+	var controller;
+	var floorplan;
+
+	//var canvas;
+	//var canvasElement = canvasElement;
+
+	var needsUpdate = false;
+
+	var lastRender = Date.now();
+	var mouseOver = false;
+	var hasClicked = false;
+
+	var hud;
+
+	this.heightMargin;
+	this.widthMargin;
+	this.elementHeight;
+	this.elementWidth;
+
+	function init() {
+		__WEBPACK_IMPORTED_MODULE_0_three__["ImageUtils"].crossOrigin = "";
+
+		domElement = scope.element; // Container
+		camera = new __WEBPACK_IMPORTED_MODULE_0_three__["PerspectiveCamera"](45, 1, 1, 10000);
+		renderer = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderer"]({
+			antialias: true,
+			preserveDrawingBuffer: true // required to support .toDataURL()
+		});
+		renderer.autoClear = false, renderer.shadowMap.enabled = true;
+		renderer.shadowMapSoft = true;
+		renderer.shadowMap.type = __WEBPACK_IMPORTED_MODULE_0_three__["PCFSoftShadowMap"];
+
+		var skybox = new __WEBPACK_IMPORTED_MODULE_5__skybox__["a" /* default */](scene);
+
+		scope.controls = new __WEBPACK_IMPORTED_MODULE_3__controls__["a" /* default */](camera, domElement);
+
+		hud = new __WEBPACK_IMPORTED_MODULE_6__hud__["a" /* default */](scope);
+
+		controller = new __WEBPACK_IMPORTED_MODULE_1__controller__["a" /* default */](scope, model, camera, scope.element, scope.controls, hud);
+
+		domElement.appendChild(renderer.domElement);
+
+		// handle window resizing
+		scope.updateWindowSize();
+		if (options.resize) {
+			window.addEventListener("resize", function () {
+				return scope.updateWindowSize;
+			});
+		}
+
+		// setup camera nicely
+		scope.centerCamera();
+		model.floorplan.fireOnUpdatedRooms(scope.centerCamera);
+
+		var lights = new __WEBPACK_IMPORTED_MODULE_4__lights__["a" /* default */](scene, model.floorplan);
+
+		floorplan = new __WEBPACK_IMPORTED_MODULE_2__floorplan__["a" /* default */](scene, model.floorplan, scope.controls);
+
+		animate();
+		//TODO: eventhandling
+		scope.element.addEventListener("mouseenter", function () {
+			mouseOver = true;
+		});
+		scope.element.addEventListener("mouseenter", function () {
+			mouseOver = false;
+		});
+		scope.element.addEventListener("click", function () {
+			hasClicked = true;
+		});
+
+		// JODO: The line below was originally commented out.
+		// canvas = new ThreeCanvas(canvasElement, scope);
+	}
+
+	function spin() {
+		if (options.spin && !mouseOver && !hasClicked) {
+			var theta = 2 * Math.PI * options.spinSpeed * (Date.now() - lastRender);
+			scope.controls.rotateLeft(theta);
+			scope.controls.update();
+		}
+	}
+
+	this.dataUrl = function () {
+		var dataUrl = renderer.domElement.toDataURL("image/png");
+		return dataUrl;
+	};
+
+	this.stopSpin = function () {
+		hasClicked = true;
+	};
+
+	this.options = function () {
+		return options;
+	};
+
+	this.getModel = function () {
+		return model;
+	};
+
+	this.getScene = function () {
+		return scene;
+	};
+
+	this.getController = function () {
+		return controller;
+	};
+
+	this.getCamera = function () {
+		return camera;
+	};
+
+	this.needsUpdate = function () {
+		needsUpdate = true;
+	};
+	function shouldRender() {
+		// Do we need to draw a new frame
+		if (true) {
+			scope.controls.needsUpdate = false;
+			controller.needsUpdate = false;
+			needsUpdate = false;
+			model.scene.needsUpdate = false;
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	function render() {
+		spin();
+		if (shouldRender()) {
+			renderer.clear();
+			renderer.render(scene, camera);
+			renderer.clearDepth();
+			renderer.render(hud.getScene(), camera);
+		}
+		lastRender = Date.now();
+	}
+
+	function animate() {
+		var delay = 50;
+		setTimeout(function () {
+			requestAnimationFrame(animate);
+		}, delay);
+		render();
+	}
+
+	this.rotatePressed = function () {
+		controller.rotatePressed();
+	};
+
+	this.rotateReleased = function () {
+		controller.rotateReleased();
+	};
+
+	this.setCursorStyle = function (cursorStyle) {
+		domElement.style.cursor = cursorStyle;
+	};
+
+	this.updateWindowSize = function () {
+		scope.heightMargin = scope.element.offsetTop;
+		scope.widthMargin = scope.element.offsetLeft;
+
+		scope.elementWidth = scope.element.offsetWidth;
+		if (options.resize) {
+			scope.elementHeight = window.innerHeight - scope.heightMargin;
+		} else {
+			scope.elementHeight = scope.element.offsetHeight;
+		}
+
+		camera.aspect = scope.elementWidth / scope.elementHeight;
+		camera.updateProjectionMatrix();
+
+		renderer.setSize(scope.elementWidth, scope.elementHeight);
+		needsUpdate = true;
+	};
+
+	this.centerCamera = function () {
+		var yOffset = 150.0;
+		var pan = model.floorplan.getCenter();
+		pan.y = yOffset;
+
+		scope.controls.target = pan;
+
+		var distance = model.floorplan.getSize().z * 1.5;
+
+		var offset = pan.clone().add(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](0, distance, distance));
+		// Line below was originally commented out
+		//scope.controls.setOffset(offset);
+		camera.position.copy(offset);
+
+		scope.controls.update();
+	};
+
+	// projects the object's center point into x,y screen coords
+	// x,y are relative to top left corner of viewer
+	this.projectVector = function (vec3, ignoreMargin) {
+		ignoreMargin = ignoreMargin || false;
+
+		var widthHalf = scope.elementWidth / 2;
+		var heightHalf = scope.elementHeight / 2;
+
+		var vector = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]();
+		vector.copy(vec3);
+		vector.project(camera);
+
+		var vec2 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]();
+
+		vec2.x = vector.x * widthHalf + widthHalf;
+		vec2.y = -(vector.y * heightHalf) + heightHalf;
+
+		if (!ignoreMargin) {
+			vec2.x += scope.widthMargin;
+			vec2.y += scope.heightMargin;
+		}
+
+		return vec2;
+	};
+
+	init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/main.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/main.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/main.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./blueprint/three/skybox.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+var _default = function _default(scene) {
+	var scope = this;
+
+	var topColor = 0xffffff; //0xD8ECF9; Should be set back to 0xffffff
+	var bottomColor = 0xe9e9e9; //0xf9f9f9;//0x565e63
+	var verticalOffset = 500;
+	var sphereRadius = 4000;
+	var widthSegments = 32;
+	var heightSegments = 15;
+
+	var vertexShader = ["varying vec3 vWorldPosition;", "void main() {", "  vec4 worldPosition = modelMatrix * vec4( position, 1.0 );", "  vWorldPosition = worldPosition.xyz;", "  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );", "}"].join("\n");
+
+	var fragmentShader = ["uniform vec3 topColor;", "uniform vec3 bottomColor;", "uniform float offset;", "varying vec3 vWorldPosition;", "void main() {", "  float h = normalize( vWorldPosition + offset ).y;", "  gl_FragColor = vec4( mix( bottomColor, topColor, (h + 1.0) / 2.0), 1.0 );", "}"].join("\n");
+
+	function init() {
+		var uniforms = {
+			topColor: {
+				type: "c",
+				value: new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](topColor)
+			},
+			bottomColor: {
+				type: "c",
+				value: new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](bottomColor)
+			},
+			offset: {
+				type: "f",
+				value: verticalOffset
+			}
+		};
+
+		var skyGeo = new __WEBPACK_IMPORTED_MODULE_0_three__["SphereGeometry"](sphereRadius, widthSegments, heightSegments);
+		var skyMat = new __WEBPACK_IMPORTED_MODULE_0_three__["ShaderMaterial"]({
+			vertexShader: vertexShader,
+			fragmentShader: fragmentShader,
+			uniforms: uniforms,
+			side: __WEBPACK_IMPORTED_MODULE_0_three__["BackSide"]
+		});
+
+		var sky = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](skyGeo, skyMat);
+		scene.add(sky);
+	}
+
+	init();
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/skybox.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/skybox.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/skybox.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./components/App.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104855,6 +112600,247 @@ var _temp = function () {
 
 /***/ }),
 
+/***/ "./components/pages/PlannerExample/LoadingModal.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {var _default = function _default() {
+  return React.createElement(
+    "div",
+    { id: "loading-modal" },
+    React.createElement(
+      "h1",
+      null,
+      "Loading..."
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/LoadingModal.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/LoadingModal.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/LoadingModal.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/pages/PlannerExample/ModalEffects.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("../node_modules/react/react.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__LoadingModal__ = __webpack_require__("./components/pages/PlannerExample/LoadingModal.js");
+
+
+
+var _default = function _default(_ref) {
+  var showLoading = _ref.showLoading;
+
+  return showLoading ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__LoadingModal__["a" /* default */], null) : null;
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ModalEffects.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ModalEffects.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ModalEffects.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/pages/PlannerExample/PlannerExample.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("../node_modules/react/react.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__("../node_modules/prop-types/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_redux__ = __webpack_require__("../node_modules/react-redux/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__("../node_modules/react-router-dom/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blueprint_blueprint3d__ = __webpack_require__("./blueprint/blueprint3d.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ModalEffects__ = __webpack_require__("./components/pages/PlannerExample/ModalEffects.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__LoadingModal__ = __webpack_require__("./components/pages/PlannerExample/LoadingModal.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+
+
+
+
+var PlannerExample = function (_React$Component) {
+	_inherits(PlannerExample, _React$Component);
+
+	function PlannerExample(props) {
+		_classCallCheck(this, PlannerExample);
+
+		var _this = _possibleConstructorReturn(this, (PlannerExample.__proto__ || Object.getPrototypeOf(PlannerExample)).call(this, props));
+
+		_this.state = {
+			showLoading: false,
+			itemsLoading: 0
+		};
+
+		_this.isShiftDown = false;
+		_this.objects = [];
+
+		_this.info = {};
+
+		_this.onDocumentKeyDown = _this.onDocumentKeyDown.bind(_this);
+		_this.onDocumentKeyUp = _this.onDocumentKeyUp.bind(_this);
+		_this.onDocumentMouseDown = _this.onDocumentMouseDown.bind(_this);
+		_this.onDocumentMouseMove = _this.onDocumentMouseMove.bind(_this);
+		_this.onWindowResize = _this.onWindowResize.bind(_this);
+
+		// window.addEventListener("mousemove", this.onDocumentMouseMove);
+		return _this;
+	}
+
+	_createClass(PlannerExample, [{
+		key: "ViewerFloorplanner",
+		value: function ViewerFloorplanner(blueprint3d) {}
+	}, {
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			var opts = {
+				floorplannerElement: "floorplanner-canvas",
+				threeElement: "viewer",
+				// threeCanvasElement: "three-canvas", Isn't used in the original project
+				textureDir: "models/textures",
+				widget: false
+			};
+			this.blueprint3d = new __WEBPACK_IMPORTED_MODULE_5__blueprint_blueprint3d__["a" /* default */](opts);
+
+			this.viewerFloorplanner = new this.ViewerFloorplanner(this.blueprint3d);
+
+			// This serialization format needs work
+			// Load a simple rectangle room
+			this.blueprint3d.model.loadSerialized("{\n\t\t\t\t\"floorplan\": {\n\t\t\t\t  \"corners\": {\n\t\t\t\t\t\"56d9ebd1-91b2-875c-799d-54b3785fca1f\": {\n\t\t\t\t\t  \"x\": 630.555,\n\t\t\t\t\t  \"y\": -227.58400000000006\n\t\t\t\t\t},\n\t\t\t\t\t\"8f4a050d-e102-3c3f-5af9-3d9133555d76\": {\n\t\t\t\t\t  \"x\": 294.64,\n\t\t\t\t\t  \"y\": -227.58400000000006\n\t\t\t\t\t},\n\t\t\t\t\t\"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\": { \"x\": 294.64, \"y\": 232.664 },\n\t\t\t\t\t\"254656bf-8a53-3987-c810-66b349f49b19\": {\n\t\t\t\t\t  \"x\": 745.7439999999998,\n\t\t\t\t\t  \"y\": 232.664\n\t\t\t\t\t},\n\t\t\t\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b\": {\n\t\t\t\t\t  \"x\": 1044.7019999999998,\n\t\t\t\t\t  \"y\": 232.664\n\t\t\t\t\t},\n\t\t\t\t\t\"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t\t\t\t  \"x\": 1044.7019999999998,\n\t\t\t\t\t  \"y\": -105.66399999999999\n\t\t\t\t\t},\n\t\t\t\t\t\"e7db8654-efe1-bda2-099a-70585874d8c0\": {\n\t\t\t\t\t  \"x\": 745.7439999999998,\n\t\t\t\t\t  \"y\": -105.66399999999999\n\t\t\t\t\t}\n\t\t\t\t  },\n\t\t\t\t  \"walls\": [\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t\t\t\t  \"corner2\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t\t\t\t  \"corner2\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t\t\t\t  \"corner2\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"corner2\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t\t\t\t  \"corner2\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/light_brick.jpg\",\n\t\t\t\t\t\t\"stretch\": false,\n\t\t\t\t\t\t\"scale\": 100\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t\t\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"corner2\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t}\n\t\t\t\t  ],\n\t\t\t\t  \"wallTextures\": [],\n\t\t\t\t  \"floorTextures\": {},\n\t\t\t\t  \"newFloorTextures\": {\n\t\t\t\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b,254656bf-8a53-3987-c810-66b349f49b19,e7db8654-efe1-bda2-099a-70585874d8c0,edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t\t\t\t  \"url\": \"assets/rooms/textures/light_fine_wood.jpg\",\n\t\t\t\t\t  \"scale\": 300\n\t\t\t\t\t}\n\t\t\t\t  }\n\t\t\t\t},\n\t\t\t\t\"items\": [\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Full Bed\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik_nordli_full.js\",\n\t\t\t\t\t\"xpos\": 939.5525544513545,\n\t\t\t\t\t\"ypos\": 50,\n\t\t\t\t\t\"zpos\": -15.988409993966997,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Bedside table - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-archnight-white_baked.js\",\n\t\t\t\t\t\"xpos\": 1001.0862865204286,\n\t\t\t\t\t\"ypos\": 31.15939942141,\n\t\t\t\t\t\"zpos\": 86.4297300551338,\n\t\t\t\t\t\"rotation\": -0.7872847644705953,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Open Door\",\n\t\t\t\t\t\"item_type\": 7,\n\t\t\t\t\t\"model_url\": \"assets/models/js/open_door.js\",\n\t\t\t\t\t\"xpos\": 745.2440185546875,\n\t\t\t\t\t\"ypos\": 110.5,\n\t\t\t\t\t\"zpos\": 64.8291839065202,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1.7003089598352215,\n\t\t\t\t\t\"scale_y\": 0.997292171703541,\n\t\t\t\t\t\"scale_z\": 0.999415040540576,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 886.8841174461031,\n\t\t\t\t\t\"ypos\": 139.1510114697785,\n\t\t\t\t\t\"zpos\": -105.16400146484375,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Dresser - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/we-narrow6white_baked.js\",\n\t\t\t\t\t\"xpos\": 898.0548281668393,\n\t\t\t\t\t\"ypos\": 35.611997646165,\n\t\t\t\t\t\"zpos\": 201.10860458067486,\n\t\t\t\t\t\"rotation\": -3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 534.9620937975317,\n\t\t\t\t\t\"ypos\": 137.60931398864443,\n\t\t\t\t\t\"zpos\": -227.08399963378906,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 295.1400146484375,\n\t\t\t\t\t\"ypos\": 141.43383044055196,\n\t\t\t\t\t\"zpos\": 123.2280598724867,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Media Console - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-clapboard_baked.js\",\n\t\t\t\t\t\"xpos\": 658.6568227980731,\n\t\t\t\t\t\"ypos\": 67.88999754395999,\n\t\t\t\t\t\"zpos\": -141.50237235990153,\n\t\t\t\t\t\"rotation\": -0.8154064090423808,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Blue Rug\",\n\t\t\t\t\t\"item_type\": 8,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-blue-block-60x96.js\",\n\t\t\t\t\t\"xpos\": 905.8690190229256,\n\t\t\t\t\t\"ypos\": 0.250005,\n\t\t\t\t\t\"zpos\": 44.59927303228528,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"NYC Poster\",\n\t\t\t\t\t\"item_type\": 2,\n\t\t\t\t\t\"model_url\": \"assets/models/js/nyc-poster2.js\",\n\t\t\t\t\t\"xpos\": 1038.448276049687,\n\t\t\t\t\t\"ypos\": 146.22618581237782,\n\t\t\t\t\t\"zpos\": 148.65033715350484,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Sofa - Grey\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-rochelle-gray_baked.js\",\n\t\t\t\t\t\"xpos\": 356.92671999154373,\n\t\t\t\t\t\"ypos\": 42.54509923821,\n\t\t\t\t\t\"zpos\": -21.686174295784554,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Coffee Table - Wood\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik-stockholmcoffee-brown.js\",\n\t\t\t\t\t\"xpos\": 468.479104587435,\n\t\t\t\t\t\"ypos\": 24.01483158034958,\n\t\t\t\t\t\"zpos\": -23.468458996048412,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Floor Lamp\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ore-3legged-white_baked.js\",\n\t\t\t\t\t\"xpos\": 346.697102333121,\n\t\t\t\t\t\"ypos\": 72.163997943445,\n\t\t\t\t\t\"zpos\": -175.19915302127583,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Red Chair\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik-ekero-orange_baked.js\",\n\t\t\t\t\t\"xpos\": 397.676038151142,\n\t\t\t\t\t\"ypos\": 37.50235073007,\n\t\t\t\t\t\"zpos\": 156.31701312594373,\n\t\t\t\t\t\"rotation\": 2.4062972386507093,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 374.7738207971076,\n\t\t\t\t\t\"ypos\": 138.62749831597068,\n\t\t\t\t\t\"zpos\": -227.08399963378906,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Closed Door\",\n\t\t\t\t\t\"item_type\": 7,\n\t\t\t\t\t\"model_url\": \"assets/models/js/closed-door28x80_baked.js\",\n\t\t\t\t\t\"xpos\": 637.2176377788675,\n\t\t\t\t\t\"ypos\": 110.80000022010701,\n\t\t\t\t\t\"zpos\": 232.16400146484375,\n\t\t\t\t\t\"rotation\": 3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Bookshelf\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-kendallbookcasewalnut_baked.js\",\n\t\t\t\t\t\"xpos\": 533.1460416453955,\n\t\t\t\t\t\"ypos\": 92.17650034119151,\n\t\t\t\t\t\"zpos\": 207.7644213268835,\n\t\t\t\t\t\"rotation\": 3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  }\n\t\t\t\t]\n\t\t\t  }\n\t\t\t  "
+			// '{"floorplan":{"corners":{"f90da5e3-9e0e-eba7-173d-eb0b071e838e":{"x":204.85099999999989,"y":289.052},"da026c08-d76a-a944-8e7b-096b752da9ed":{"x":672.2109999999999,"y":289.052},"4e3d65cb-54c0-0681-28bf-bddcc7bdb571":{"x":672.2109999999999,"y":-178.308},"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2":{"x":204.85099999999989,"y":-178.308}},"walls":[{"corner1":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","corner2":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","corner2":"da026c08-d76a-a944-8e7b-096b752da9ed","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"da026c08-d76a-a944-8e7b-096b752da9ed","corner2":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","corner2":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}}],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},"items":[]}'
+			);
+		}
+	}, {
+		key: "infoElement",
+		value: function infoElement(style, innerHtml) {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { style: style, dangerouslySetInnerHTML: innerHtml });
+		}
+	}, {
+		key: "onDocumentMouseMove",
+		value: function onDocumentMouseMove(event) {
+			event.preventDefault();
+			this.mouse.set(event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1);
+
+			this.raycaster.setFromCamera(this.mouse, this.camera);
+			var intersects = this.raycaster.intersectObjects(this.objects);
+
+			if (intersects.length > 0) {
+				var intersect = intersects[0];
+				console.log(intersects[0]);
+				this.rollOverMesh.position.copy(intersect.point).add(intersect.face.normal);
+				this.rollOverMesh.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
+			}
+		}
+	}, {
+		key: "onDocumentMouseDown",
+		value: function onDocumentMouseDown(event) {}
+	}, {
+		key: "onDocumentKeyDown",
+		value: function onDocumentKeyDown(event) {
+			switch (event.keyCode) {
+				case 16:
+					this.isShiftDown = true;
+					break;
+			}
+		}
+	}, {
+		key: "onDocumentKeyUp",
+		value: function onDocumentKeyUp(event) {
+			switch (event.keyCode) {
+				case 16:
+					this.isShiftDown = false;
+					break;
+			}
+		}
+	}, {
+		key: "onWindowResize",
+		value: function onWindowResize() {
+			this.camera.aspect = window.innerWidth / window.innerHeight;
+			this.camera.updateProjectionMatrix();
+			this.renderer.setSize(window.innerWidth, window.innerHeight);
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				null,
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__ModalEffects__["a" /* default */], { showLoading: this.state.itemsLoading > 0 }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "viewer" }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"div",
+					{ id: "floorplanner" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "floorplanner-canvas" })
+				)
+			);
+		}
+	}]);
+
+	return PlannerExample;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+var _default = PlannerExample;
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(PlannerExample, "PlannerExample", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./components/pages/ThreeViewer/ThreeViewer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104866,6 +112852,8 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_redux__ = __webpack_require__("../node_modules/react-redux/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router_dom__ = __webpack_require__("../node_modules/react-router-dom/es/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modelLoaders__ = __webpack_require__("./components/pages/ThreeViewer/modelLoaders.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__init__ = __webpack_require__("./components/pages/ThreeViewer/init.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -104873,6 +112861,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -104888,22 +112878,17 @@ var ThreeViewer = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (ThreeViewer.__proto__ || Object.getPrototypeOf(ThreeViewer)).call(this, props));
 
-    _this.camera, _this.scene, _this.renderer, _this.helper;
-    _this.plane, _this.cube;
-    _this.mouse, _this.raycaster, _this.isShiftDown = false;
-    _this.rollOverMesh, _this.rollOverMaterial;
-    _this.cubeGeo, _this.cubeMaterial;
+    _this.isShiftDown = false;
     _this.objects = [];
 
     _this.info = {};
 
     _this.init = _this.init.bind(_this);
 
-    _this.onDocumentMouseMove = _this.onDocumentMouseMove.bind(_this);
-    _this.onDocumentMouseDown = _this.onDocumentMouseDown.bind(_this);
     _this.onDocumentKeyDown = _this.onDocumentKeyDown.bind(_this);
     _this.onDocumentKeyUp = _this.onDocumentKeyUp.bind(_this);
-
+    _this.onDocumentMouseDown = _this.onDocumentMouseDown.bind(_this);
+    _this.onDocumentMouseMove = _this.onDocumentMouseMove.bind(_this);
     _this.onWindowResize = _this.onWindowResize.bind(_this);
     return _this;
   }
@@ -104929,6 +112914,8 @@ var ThreeViewer = function (_React$Component) {
   }, {
     key: "init",
     value: function init() {
+      var _this2 = this;
+
       var infoStyle = {
         position: "absolute",
         top: "10px",
@@ -104940,46 +112927,36 @@ var ThreeViewer = function (_React$Component) {
 
       this.info = this.infoElement(infoStyle, infoInnerHtml);
 
-      this.camera = new __WEBPACK_IMPORTED_MODULE_0_three__["j" /* PerspectiveCamera */](45, window.innerWidth / window.innerHeight, 1, 10000);
+      this.camera = new __WEBPACK_IMPORTED_MODULE_0_three__["PerspectiveCamera"](45, window.innerWidth / window.innerHeight, 1, 10000);
 
       this.camera.position.set(300, 500, 1300);
-      this.camera.lookAt(new __WEBPACK_IMPORTED_MODULE_0_three__["p" /* Vector3 */]());
-      this.scene = new __WEBPACK_IMPORTED_MODULE_0_three__["m" /* Scene */]();
-      this.scene.background = new __WEBPACK_IMPORTED_MODULE_0_three__["d" /* Color */](0xf0f0f0);
+      this.camera.lookAt(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]());
+      this.scene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"]();
+      this.scene.background = new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](0xf0f0f0);
 
       // roll-over helpers
-      var rollOverGeo = new __WEBPACK_IMPORTED_MODULE_0_three__["b" /* BoxGeometry */](50, 50, 50);
+      var rollOverGeo = new __WEBPACK_IMPORTED_MODULE_0_three__["BoxGeometry"](50, 50, 50);
 
-      this.rollOverMaterial = new __WEBPACK_IMPORTED_MODULE_0_three__["h" /* MeshBasicMaterial */]({
-        color: 0xff0000,
-        opacity: 0.5,
-        transparent: true
-      });
-
-      this.helper = new __WEBPACK_IMPORTED_MODULE_0_three__["c" /* CameraHelper */](this.camera);
+      this.helper = new __WEBPACK_IMPORTED_MODULE_0_three__["CameraHelper"](this.camera);
       this.scene.add(this.helper);
-      this.rollOverMesh = new __WEBPACK_IMPORTED_MODULE_0_three__["g" /* Mesh */](rollOverGeo, this.rollOverMaterial);
-      this.scene.add(this.rollOverMesh);
 
-      // cubes
-      this.cubeGeo = new __WEBPACK_IMPORTED_MODULE_0_three__["b" /* BoxGeometry */](50, 50, 50);
-      this.cubeMaterial = new __WEBPACK_IMPORTED_MODULE_0_three__["i" /* MeshLambertMaterial */]({
-        color: 0xfeb74c,
-        map: new __WEBPACK_IMPORTED_MODULE_0_three__["n" /* TextureLoader */]().load("textures/square-outline-texture.png")
+      Object(__WEBPACK_IMPORTED_MODULE_5__modelLoaders__["b" /* loadWireframeModel */])("male02", function (object) {
+        _this2.rollOverMesh = object;
+        _this2.scene.add(_this2.rollOverMesh);
       });
 
       // grid
-      var gridHelper = new __WEBPACK_IMPORTED_MODULE_0_three__["f" /* GridHelper */](1000, 20);
+      var gridHelper = new __WEBPACK_IMPORTED_MODULE_0_three__["GridHelper"](1000, 20);
       this.scene.add(gridHelper);
 
       //
-      this.raycaster = new __WEBPACK_IMPORTED_MODULE_0_three__["l" /* Raycaster */]();
-      this.mouse = new __WEBPACK_IMPORTED_MODULE_0_three__["o" /* Vector2 */]();
+      this.raycaster = new __WEBPACK_IMPORTED_MODULE_0_three__["Raycaster"]();
+      this.mouse = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"]();
 
-      var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["k" /* PlaneBufferGeometry */](1000, 1000);
+      var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["PlaneBufferGeometry"](1000, 1000);
       geometry.rotateX(-Math.PI / 2);
 
-      this.plane = new __WEBPACK_IMPORTED_MODULE_0_three__["g" /* Mesh */](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["h" /* MeshBasicMaterial */]({
+      this.plane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
         visible: false
       }));
 
@@ -104987,14 +112964,14 @@ var ThreeViewer = function (_React$Component) {
       this.objects.push(this.plane);
 
       // Lights
-      var ambientLight = new __WEBPACK_IMPORTED_MODULE_0_three__["a" /* AmbientLight */](0x606060);
+      var ambientLight = new __WEBPACK_IMPORTED_MODULE_0_three__["AmbientLight"](0x606060);
       this.scene.add(ambientLight);
 
-      var directionalLight = new __WEBPACK_IMPORTED_MODULE_0_three__["e" /* DirectionalLight */](0xffffff);
+      var directionalLight = new __WEBPACK_IMPORTED_MODULE_0_three__["DirectionalLight"](0xffffff);
       directionalLight.position.set(1, 0.75, 0.5).normalize();
 
       this.scene.add(directionalLight);
-      this.renderer = new __WEBPACK_IMPORTED_MODULE_0_three__["q" /* WebGLRenderer */]({
+      this.renderer = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderer"]({
         antialias: true
       });
 
@@ -105006,12 +112983,11 @@ var ThreeViewer = function (_React$Component) {
       document.addEventListener("mousedown", this.onDocumentMouseDown, false);
       document.addEventListener("keydown", this.onDocumentKeyDown, false);
       document.addEventListener("keyup", this.onDocumentKeyUp, false);
-      //
       window.addEventListener("resize", this.onWindowResize, false);
     }
   }, {
     key: "onDocumentMouseMove",
-    value: function onDocumentMouseMove() {
+    value: function onDocumentMouseMove(event) {
       event.preventDefault();
       this.mouse.set(event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1);
 
@@ -105029,7 +113005,9 @@ var ThreeViewer = function (_React$Component) {
     }
   }, {
     key: "onDocumentMouseDown",
-    value: function onDocumentMouseDown() {
+    value: function onDocumentMouseDown(event) {
+      var _this3 = this;
+
       event.preventDefault();
       this.mouse.set(event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1);
 
@@ -105043,20 +113021,21 @@ var ThreeViewer = function (_React$Component) {
             this.scene.remove(intersect.object);
             this.objects.splice(this.objects.indexOf(intersect.object), 1);
           }
-          // create cube
         } else {
-          var voxel = new __WEBPACK_IMPORTED_MODULE_0_three__["g" /* Mesh */](this.cubeGeo, this.cubeMaterial);
-          voxel.position.copy(intersect.point).add(intersect.face.normal);
-          voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
-          this.scene.add(voxel);
-          this.objects.push(voxel);
+          Object(__WEBPACK_IMPORTED_MODULE_5__modelLoaders__["a" /* loadModel */])("male02", function (voxel) {
+            console.log(voxel);
+            voxel.position.copy(intersect.point).add(intersect.face.normal);
+            voxel.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
+            _this3.scene.add(voxel);
+            _this3.objects.push(voxel);
+          });
         }
         this.render3D();
       }
     }
   }, {
     key: "onDocumentKeyDown",
-    value: function onDocumentKeyDown() {
+    value: function onDocumentKeyDown(event) {
       switch (event.keyCode) {
         case 16:
           this.isShiftDown = true;
@@ -105065,7 +113044,7 @@ var ThreeViewer = function (_React$Component) {
     }
   }, {
     key: "onDocumentKeyUp",
-    value: function onDocumentKeyUp() {
+    value: function onDocumentKeyUp(event) {
       switch (event.keyCode) {
         case 16:
           this.isShiftDown = false;
@@ -105082,12 +113061,12 @@ var ThreeViewer = function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this4 = this;
 
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
         className: "_layout-diagram",
         ref: function ref(el) {
-          _this2.container = el;
+          _this4.container = el;
         }
       });
     }
@@ -105126,13 +113105,151 @@ var _temp = function () {
 
 /***/ }),
 
+/***/ "./components/pages/ThreeViewer/init.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+
+
+function initCamera() {
+	var camera = new __WEBPACK_IMPORTED_MODULE_0_three__["PerspectiveCamera"](45, window.innerWidth / window.innerHeight, 1, 10000);
+	camera.position.set(500, 800, 1300);
+	camera.lookAt(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"]());
+	return camera;
+}
+
+function init(data) {
+	var container, stats;
+	var camera, scene, renderer;
+
+	container = document.createElement("div");
+	document.body.appendChild(container);
+
+	scene = new __WEBPACK_IMPORTED_MODULE_0_three__["Scene"]();
+	scene.background = new __WEBPACK_IMPORTED_MODULE_0_three__["Color"](0xf0f0f0);
+
+	renderer = new __WEBPACK_IMPORTED_MODULE_0_three__["WebGLRenderer"]();
+	renderer.setPixelRatio(window.devicePixelRatio);
+	renderer.setSize(window.innerWidth, window.innerHeight);
+	container.appendChild(renderer.domElement);
+
+	return { container: container, stats: stats, camera: camera, scene: scene, renderer: renderer };
+}
+
+var _default = init;
+/* unused harmony default export */ var _unused_webpack_default_export = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(initCamera, "initCamera", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/init.js");
+
+	__REACT_HOT_LOADER__.register(init, "init", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/init.js");
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/init.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/init.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/init.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/pages/ThreeViewer/modelLoaders.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return loadModel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return loadWireframeModel; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three_react_mtl_loader__ = __webpack_require__("../node_modules/three-react-mtl-loader/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_three_obj_loader__ = __webpack_require__("../node_modules/three-obj-loader/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_three_obj_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_three_obj_loader__);
+
+
+
+__WEBPACK_IMPORTED_MODULE_2_three_obj_loader___default()(__WEBPACK_IMPORTED_MODULE_0_three__);
+
+var loadModel = function loadModel(modelName, callback) {
+	var onProgress = function onProgress(xhr) {
+		if (xhr.lengthComputable) {
+			var percentComplete = xhr.loaded / xhr.total * 100;
+			console.log(Math.round(percentComplete, 2) + "% downloaded");
+		}
+	};
+
+	var onError = function onError(xhr) {};
+
+	var mtlLoader = new __WEBPACK_IMPORTED_MODULE_1_three_react_mtl_loader__["a" /* default */]();
+	mtlLoader.setPath("assets/");
+	mtlLoader.load(modelName + ".mtl", function (materials) {
+		materials.preload();
+		var objLoader = new __WEBPACK_IMPORTED_MODULE_0_three__["OBJLoader"]();
+		objLoader.setMaterials(materials);
+		objLoader.setPath("assets/");
+		objLoader.load(modelName + ".obj", function (object) {
+			callback(object);
+		}, onProgress, onError);
+	});
+};
+
+var loadWireframeModel = function loadWireframeModel(modelName, callback) {
+	var onProgress = function onProgress(xhr) {
+		if (xhr.lengthComputable) {
+			var percentComplete = xhr.loaded / xhr.total * 100;
+			console.log(Math.round(percentComplete, 2) + "% downloaded");
+		}
+	};
+
+	var onError = function onError(xhr) {
+		console.log("Error in loadWireframeModel");
+	};
+	var objLoader = new __WEBPACK_IMPORTED_MODULE_0_three__["OBJLoader"]();
+	var material = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
+		color: 0xff0000,
+		opacity: 0.5,
+		transparent: true,
+		wireframe: true
+	});
+	objLoader.setPath("assets/");
+	objLoader.load(modelName + ".obj", function (object) {
+		console.log("WIREFRAMEOBJ: ", object);
+		object.children.forEach(function (c) {
+			return c.material = material;
+		});
+		callback(object);
+	}, onProgress, onError);
+};
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(loadModel, "loadModel", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/modelLoaders.js");
+
+	__REACT_HOT_LOADER__.register(loadWireframeModel, "loadWireframeModel", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/modelLoaders.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/modelLoaders.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/ThreeViewer/modelLoaders.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
 /***/ "./components/pages/start/StartPage.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("../node_modules/react/react.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_RouteWithSubRoutes__ = __webpack_require__("./config/RouteWithSubRoutes.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -105143,32 +113260,31 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
 var StartPage = function (_React$Component) {
-    _inherits(StartPage, _React$Component);
+  _inherits(StartPage, _React$Component);
 
-    function StartPage(props) {
-        _classCallCheck(this, StartPage);
+  function StartPage(props) {
+    _classCallCheck(this, StartPage);
 
-        return _possibleConstructorReturn(this, (StartPage.__proto__ || Object.getPrototypeOf(StartPage)).call(this, props));
+    return _possibleConstructorReturn(this, (StartPage.__proto__ || Object.getPrototypeOf(StartPage)).call(this, props));
+  }
+
+  _createClass(StartPage, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        "div",
+        { className: "layout-content" },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          "p",
+          null,
+          "Hello from start page!"
+        )
+      );
     }
+  }]);
 
-    _createClass(StartPage, [{
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'layout-content' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'p',
-                    null,
-                    'Hello from start page!'
-                )
-            );
-        }
-    }]);
-
-    return StartPage;
+  return StartPage;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 var _default = StartPage;
@@ -105178,13 +113294,13 @@ var _default = StartPage;
 ;
 
 var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
 
-    __REACT_HOT_LOADER__.register(StartPage, 'StartPage', '/Users/filinils/Documents/Projects/untitled/client/src/components/pages/start/StartPage.js');
+  __REACT_HOT_LOADER__.register(StartPage, "StartPage", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/start/StartPage.js");
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/filinils/Documents/Projects/untitled/client/src/components/pages/start/StartPage.js');
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/start/StartPage.js");
 }();
 
 ;
@@ -105290,7 +113406,7 @@ var _temp = function () {
 
 
 var datacontext = function datacontext() {
-  var repoNames = ["person", "skill", "leg"];
+  var repoNames = ["person", "skill"];
 
   var service = {};
 
@@ -105711,6 +113827,8 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_App__ = __webpack_require__("./components/App.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_pages_start_StartPage__ = __webpack_require__("./components/pages/start/StartPage.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_pages_ThreeViewer_ThreeViewer__ = __webpack_require__("./components/pages/ThreeViewer/ThreeViewer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_pages_PlannerExample_PlannerExample__ = __webpack_require__("./components/pages/PlannerExample/PlannerExample.js");
+
 
 
 
@@ -105727,6 +113845,10 @@ var routes = [{
     title: "3D",
     path: "/threeviewer",
     component: __WEBPACK_IMPORTED_MODULE_2__components_pages_ThreeViewer_ThreeViewer__["a" /* default */]
+  }, {
+    title: "Planner",
+    path: "/planner",
+    component: __WEBPACK_IMPORTED_MODULE_3__components_pages_PlannerExample_PlannerExample__["a" /* default */]
   }]
 }];
 
@@ -105821,6 +113943,53 @@ var _temp = function () {
 ;
 
  ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/store/configureStore.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/store/configureStore.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./utils/callbacks.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {var _default = function _default() {
+	var callbacks = [];
+
+	function fire(arg1, arg2) {
+		callbacks.forEach(function (callback) {
+			callback(arg1, arg2);
+		});
+	}
+	function add(callback) {
+		callbacks.push(callback);
+	}
+
+	function remove(callback) {
+		var index = callbacks.indexOf(callback);
+
+		callbacks = callbacks.splice(index, 1);
+	}
+
+	return {
+		fire: fire,
+		add: add,
+		remove: remove
+	};
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/utils/callbacks.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/utils/callbacks.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/utils/callbacks.js"); } } })();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
