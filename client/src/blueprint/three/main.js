@@ -3,12 +3,15 @@ import Controller from "./controller";
 import Floorplan from "./floorplan";
 import Controls from "./controls";
 import Lights from "./lights";
-
 import Skybox from "./skybox";
 import HUD from "./hud";
+import callbacks from "../../utils/callbacks";
 
 export default function(model, element, canvasElement, opts) {
 	var scope = this;
+
+	this.itemSelectedCallbacks = new callbacks();
+	this.itemUnselectedCallbacks = new callbacks();
 
 	var options = {
 		resize: true,
@@ -232,8 +235,7 @@ export default function(model, element, canvasElement, opts) {
 
 		var distance = model.floorplan.getSize().z * 1.5;
 
-		// var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
-		var offset = pan.clone().add(new THREE.Vector3(0, distance, -1000));
+		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
 		// Line below was originally commented out
 		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);

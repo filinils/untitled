@@ -168,7 +168,6 @@ export default (floorplan, x, y, newId) => {
      */
 	function distanceFrom(x, y) {
 		var distance = Utils.distance(x, y, x, y);
-		//console.log('x,y ' + x + ',' + y + ' to ' + getX() + ',' + getY() + ' is ' + distance);
 		return distance;
 	}
 
