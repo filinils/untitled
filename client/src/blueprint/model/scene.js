@@ -1,4 +1,6 @@
 import * as THREE from "three";
+
+import FBXLoader from "three-fbx-loader";
 import Utils from "../core/utils";
 import Wall from "./wall";
 import FloorPlan from "./floorplan";
@@ -33,6 +35,9 @@ export default (model, textureDir) => {
 
 	// init item loader
 	let loader = new THREE.JSONLoader();
+
+	let fbXLoader = new THREE.FBXLoader();
+
 	loader.crossOrigin = "";
 
 	/** Adds a non-item, basically a mesh, to the scene.
@@ -135,12 +140,38 @@ export default (model, textureDir) => {
 			scope.itemLoadedCallbacks.fire(item);
 		};
 
+		function fbxCallback(geometry, materials) {
+			var item = new (Factory.getClass())(
+				model,
+				metadata,
+				geometry,
+				materials,
+				position,
+				rotation,
+				scale
+			);
+			item.fixed = fixed || false;
+			scope.items.push(item);
+			var material = new THREE.MeshStandardMaterial();
+			var mesh = new THREE.Mesh(geometry, material);
+			scope.add(mesh);
+			item.initObject();
+			scope.itemLoadedCallbacks.fire(item);
+
+			scene.add(mesh);
+		}
+
 		this.itemLoadingCallbacks.fire();
-		loader.load(
-			fileName,
-			loaderCallback,
-			undefined // TODO_Ekki
-		);
+
+		if (fileName.includes(".fbx")) {
+			fbXLoader.load(fileName, fbxCallback);
+		} else {
+			loader.load(
+				fileName,
+				loaderCallback,
+				undefined // TODO_Ekki
+			);
+		}
 	}
 
 	let service = {
