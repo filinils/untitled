@@ -434,6 +434,7 @@ export default (() => {
 		angle,
 		map,
 		pointDistanceFromLine,
-		cycle
+		cycle,
+		guid
 	};
 })();

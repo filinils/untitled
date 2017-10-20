@@ -42,7 +42,7 @@ export default class PlannerExample extends React.Component {
 		);
 
 		this.floorPlanner;
-		this.setState({ plannerMode: "3d" });
+		this.setState({ plannerMode: "2d" });
 	}
 
 	infoElement(style, innerHtml) {

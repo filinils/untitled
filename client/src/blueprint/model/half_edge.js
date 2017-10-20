@@ -59,6 +59,9 @@ export default class HalfEdge {
 		/** */
 		this.redrawCallbacks = new callbacks();
 		this.generatePlane = this.generatePlane.bind(this);
+
+		this.exteriorStart = this.exteriorStart.bind(this);
+		this.exteriorEnd = this.exteriorEnd.bind(this);
 	}
 
 	/**
@@ -169,17 +172,17 @@ export default class HalfEdge {
 
 	getStart() {
 		if (this.front) {
-			return this.wall.getStart();
+			return this.wall.start;
 		} else {
-			return this.wall.getEnd();
+			return this.wall.end;
 		}
 	}
 
 	getEnd() {
 		if (this.front) {
-			return this.wall.getEnd();
+			return this.wall.end;
 		} else {
-			return this.wall.getStart();
+			return this.wall.start;
 		}
 	}
 
