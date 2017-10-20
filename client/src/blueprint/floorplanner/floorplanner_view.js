@@ -53,8 +53,8 @@ export default (floorplan, viewmodel, canvas) => {
 	function handleWindowResize() {
 		var canvasSel = document.getElementById(canvas);
 		var parent = canvasSel.parentNode;
-		canvasSel.height = parent.clientHeight;
-		canvasSel.width = parent.clientWidth;
+		canvasSel.height = parent.height;
+		canvasSel.width = parent.width;
 		canvasElement.height = parent.clientHeight;
 		canvasElement.width = parent.clientWidth;
 		draw();
@@ -163,7 +163,6 @@ export default (floorplan, viewmodel, canvas) => {
 
 	/** */
 	function drawEdge(edge, hover) {
-
 		let self = this;
 		var color = edgeColor;
 		if (hover && viewmodel.mode == floorplannerModes.DELETE) {

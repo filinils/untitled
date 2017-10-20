@@ -1,3 +1,9 @@
+import React from "react";
+
 export default () => {
-  return <div />;
+	return (
+		<div id="floorplanner">
+			<canvas id="floorplanner-canvas" />
+		</div>
+	);
 };

@@ -17,19 +17,7 @@ export default class PlannerExample extends React.Component {
 			showLoading: false,
 			itemsLoading: 0
 		};
-
-		this.isShiftDown = false;
-		this.objects = [];
-
 		this.info = {};
-
-		this.onDocumentKeyDown = this.onDocumentKeyDown.bind(this);
-		this.onDocumentKeyUp = this.onDocumentKeyUp.bind(this);
-		this.onDocumentMouseDown = this.onDocumentMouseDown.bind(this);
-		this.onDocumentMouseMove = this.onDocumentMouseMove.bind(this);
-		this.onWindowResize = this.onWindowResize.bind(this);
-
-		// window.addEventListener("mousemove", this.onDocumentMouseMove);
 	}
 
 	ViewerFloorplanner(blueprint3d) {}
@@ -52,52 +40,13 @@ export default class PlannerExample extends React.Component {
 			roomData
 			// '{"floorplan":{"corners":{"f90da5e3-9e0e-eba7-173d-eb0b071e838e":{"x":204.85099999999989,"y":289.052},"da026c08-d76a-a944-8e7b-096b752da9ed":{"x":672.2109999999999,"y":289.052},"4e3d65cb-54c0-0681-28bf-bddcc7bdb571":{"x":672.2109999999999,"y":-178.308},"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2":{"x":204.85099999999989,"y":-178.308}},"walls":[{"corner1":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","corner2":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","corner2":"da026c08-d76a-a944-8e7b-096b752da9ed","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"da026c08-d76a-a944-8e7b-096b752da9ed","corner2":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","corner2":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}}],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},"items":[]}'
 		);
+
+		this.floorPlanner;
+		this.setState({ plannerMode: "3d" });
 	}
 
 	infoElement(style, innerHtml) {
 		return <div style={style} dangerouslySetInnerHTML={innerHtml} />;
-	}
-
-	onDocumentMouseMove(event) {
-		event.preventDefault();
-		this.mouse.set(
-			event.clientX / window.innerWidth * 2 - 1,
-			-(event.clientY / window.innerHeight) * 2 + 1
-		);
-
-		this.raycaster.setFromCamera(this.mouse, this.camera);
-		let intersects = this.raycaster.intersectObjects(this.objects);
-
-		if (intersects.length > 0) {
-			let intersect = intersects[0];
-			console.log(intersects[0]);
-			this.rollOverMesh.position
-				.copy(intersect.point)
-				.add(intersect.face.normal);
-			this.rollOverMesh.position
-				.divideScalar(50)
-				.floor()
-				.multiplyScalar(50)
-				.addScalar(25);
-		}
-	}
-
-	onDocumentMouseDown(event) {}
-
-	onDocumentKeyDown(event) {
-		switch (event.keyCode) {
-			case 16:
-				this.isShiftDown = true;
-				break;
-		}
-	}
-
-	onDocumentKeyUp(event) {
-		switch (event.keyCode) {
-			case 16:
-				this.isShiftDown = false;
-				break;
-		}
 	}
 
 	onWindowResize() {
@@ -106,12 +55,34 @@ export default class PlannerExample extends React.Component {
 		this.renderer.setSize(window.innerWidth, window.innerHeight);
 	}
 
+	plannerMode2D() {
+		this.setState({ plannerMode: "2d" });
+	}
+
+	plannerMode3D() {
+		this.setState({ plannerMode: "3d" });
+	}
+
 	render() {
 		return (
-			<div>
+			<div id="program-window">
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
-				<div id="viewer" />
-				<div id="floorplanner">
+				<div id="floorplanner-controls">
+					<button onClick={() => this.plannerMode2D()}>
+						2D Planner
+					</button>
+					<button onClick={() => this.plannerMode3D()}>
+						3D Planner
+					</button>
+				</div>
+				<div
+					id="viewer"
+					className={this.state.plannerMode !== "2d" ? "" : "hide"}
+				/>
+				<div
+					id="floorplanner"
+					className={this.state.plannerMode !== "3d" ? "" : "hide"}
+				>
 					<canvas id="floorplanner-canvas" />
 				</div>
 			</div>
