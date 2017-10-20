@@ -163,8 +163,25 @@ export default `{
 		"scale_x": 1,
 		"scale_y": 1,
 		"scale_z": 1,
-		"fixed": false
-	  },
+		"fixed": false,
+		"texture_maps":[
+			{
+			"type":"map",
+			"url":"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg"
+		},
+			{
+			"type":"normal",
+			"url":"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg"
+		},
+			{
+			"type":"metallic",
+			"url":"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg"
+		},
+			{
+			"type":"roughness",
+			"url":"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg"
+		}
+	]},
 	  {
 		"item_name": "Bedside table - White",
 		"item_type": 1,
