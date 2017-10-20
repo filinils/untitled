@@ -46,7 +46,7 @@ export default `{
 		  "corner1": "254656bf-8a53-3987-c810-66b349f49b19",
 		  "corner2": "e7db8654-efe1-bda2-099a-70585874d8c0",
 		  "frontTexture": {
-			"url": "rooms/textures/wallmap.png",
+			"url": "assets/rooms/textures/wallmap.png",
 			"stretch": true,
 			"scale": 0
 		  },
@@ -60,7 +60,7 @@ export default `{
 		  "corner1": "56d9ebd1-91b2-875c-799d-54b3785fca1f",
 		  "corner2": "8f4a050d-e102-3c3f-5af9-3d9133555d76",
 		  "frontTexture": {
-			"url": "rooms/textures/wallmap.png",
+			"url": "assets/rooms/textures/wallmap.png",
 			"stretch": true,
 			"scale": 0
 		  },
@@ -116,12 +116,12 @@ export default `{
 		  "corner1": "edf0de13-df9f-cd6a-7d11-9bd13c36ce12",
 		  "corner2": "e7db8654-efe1-bda2-099a-70585874d8c0",
 		  "frontTexture": {
-			"url": "rooms/textures/wallmap.png",
+			"url": "assets/rooms/textures/wallmap.png",
 			"stretch": true,
 			"scale": 0
 		  },
 		  "backTexture": {
-			"url": "rooms/textures/wallmap.png",
+			"url": "assets/rooms/textures/wallmap.png",
 			"stretch": true,
 			"scale": 0
 		  }
@@ -130,7 +130,7 @@ export default `{
 		  "corner1": "e7db8654-efe1-bda2-099a-70585874d8c0",
 		  "corner2": "56d9ebd1-91b2-875c-799d-54b3785fca1f",
 		  "frontTexture": {
-			"url": "rooms/textures/wallmap.png",
+			"url": "assets/rooms/textures/wallmap.png",
 			"stretch": true,
 			"scale": 0
 		  },
@@ -151,10 +151,11 @@ export default `{
 	  }
 	},
 	"items": [
+
 	  {
-		"item_name": "Full Bed",
+		"item_name": "Bed",
 		"item_type": 1,
-		"model_url": "assets/models/js/ik_nordli_full.js",
+		"model_url": "assets/models/Bed/Bed_geo/bed_30k.fbx",
 		"xpos": 939.5525544513545,
 		"ypos": 50,
 		"zpos": -15.988409993966997,

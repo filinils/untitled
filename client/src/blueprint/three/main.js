@@ -162,7 +162,6 @@ export default function(model, element, canvasElement, opts) {
 	function shouldRender() {
 		// Do we need to draw a new frame
 		if (
-			true || // Debug
 			scope.controls.needsUpdate ||
 			controller.needsUpdate ||
 			needsUpdate ||

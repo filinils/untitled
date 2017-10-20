@@ -64,6 +64,7 @@ export default class Item extends THREE.Mesh {
 		}
 
 		// center in its boundingbox
+
 		this.geometry.computeBoundingBox();
 		this.geometry.applyMatrix(
 			new THREE.Matrix4().makeTranslation(
@@ -79,6 +80,7 @@ export default class Item extends THREE.Mesh {
 			)
 		);
 		this.geometry.computeBoundingBox();
+
 		this.halfSize = this.objectHalfSize();
 
 		if (rotation) {

@@ -9,6 +9,7 @@ import * as Core from "../core/configuration";
 import Factory from "../items/factory";
 import Item from "../items/item";
 import callbacks from "../../utils/callbacks";
+
 FBXLoader(THREE);
 
 /**
@@ -37,9 +38,10 @@ export default (model, textureDir) => {
 	// init item loader
 	let loader = new THREE.JSONLoader();
 
-	let fbxLoader = THREE.FBXLoader();
+	let fbxLoader = new THREE.FBXLoader();
 
 	loader.crossOrigin = "";
+	fbxLoader.crossOrigin = "";
 
 	/** Adds a non-item, basically a mesh, to the scene.
      * @param mesh The mesh to be added.
@@ -141,31 +143,43 @@ export default (model, textureDir) => {
 			scope.itemLoadedCallbacks.fire(item);
 		};
 
-		function fbxCallback(geometry, materials) {
-			var item = new (Factory.getClass())(
-				model,
-				metadata,
-				geometry,
-				materials,
-				position,
-				rotation,
-				scale
-			);
-			item.fixed = fixed || false;
-			scope.items.push(item);
-			var material = new THREE.MeshStandardMaterial();
-			var mesh = new THREE.Mesh(geometry, material);
-			scope.add(mesh);
-			item.initObject();
-			scope.itemLoadedCallbacks.fire(item);
-
-			scene.add(mesh);
-		}
-
 		this.itemLoadingCallbacks.fire();
 
 		if (fileName.includes(".fbx")) {
-			fbXLoader.load(fileName, fbxCallback);
+		
+
+			fbxLoader.load(
+				fileName,
+				group => {
+
+					var material = new THREE.MeshStandardMaterial();
+					var item = new (Factory.getClass(itemType))(
+						model,
+						metadata,
+						group.children[0].geometry,
+						material,
+						position,
+						rotation,
+						scale
+					);
+					item.fixed = fixed || false;
+					scope.items.push(item);
+					
+					
+					scope.add(item);
+					item.initObject();
+					scope.itemLoadedCallbacks.fire(item);
+
+					
+				},
+				prog => {
+					
+				},
+				e => {
+					
+					console.error(e);
+				}
+			);
 		} else {
 			loader.load(
 				fileName,
