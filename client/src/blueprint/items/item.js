@@ -21,6 +21,7 @@ export default class Item extends THREE.Mesh {
 		scale
 	) {
 		super();
+
 		this.model = model;
 		this.scene;
 		this.errorGlow = new THREE.Mesh();
@@ -51,7 +52,7 @@ export default class Item extends THREE.Mesh {
 		this.resizable = metadata.resizable;
 
 		this.castShadow = true;
-		this.receiveShadow = false;
+		this.receiveShadow = true;
 
 		this.geometry = geometry;
 		this.material = material;

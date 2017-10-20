@@ -146,37 +146,43 @@ export default (model, textureDir) => {
 		this.itemLoadingCallbacks.fire();
 
 		if (fileName.includes(".fbx")) {
-		
-
 			fbxLoader.load(
 				fileName,
 				group => {
+					let texturePromises = [];
 
-					var material = new THREE.MeshStandardMaterial();
-					var item = new (Factory.getClass(itemType))(
-						model,
-						metadata,
-						group.children[0].geometry,
-						material,
-						position,
-						rotation,
-						scale
-					);
-					item.fixed = fixed || false;
-					scope.items.push(item);
-					
-					
-					scope.add(item);
-					item.initObject();
-					scope.itemLoadedCallbacks.fire(item);
+					metadata.textureMaps.forEach(map => {
+						texturePromises.push(loadTexture(map.type, map.url));
+					});
 
-					
+					Promise.all(texturePromises).then(data => {
+						console.log("Texture was loaded", data);
+
+						var material = new THREE.MeshStandardMaterial({
+							map: data[0].texture,
+							normalMap: data[1].texture,
+							metalnessMap: data[2].texture,
+							roughnessMap: data[3].texture
+						});
+						var item = new (Factory.getClass(itemType))(
+							model,
+							metadata,
+							group.children[0].geometry,
+							material,
+							position,
+							rotation,
+							scale
+						);
+						item.fixed = fixed || false;
+						scope.items.push(item);
+
+						scope.add(item);
+						item.initObject();
+						scope.itemLoadedCallbacks.fire(item);
+					});
 				},
-				prog => {
-					
-				},
+				prog => {},
 				e => {
-					
 					console.error(e);
 				}
 			);
@@ -187,6 +193,23 @@ export default (model, textureDir) => {
 				undefined // TODO_Ekki
 			);
 		}
+	}
+
+	function loadTexture(type, url) {
+		return new Promise((resovle, reject) => {
+			let _resolve = resovle;
+			let _reject = reject;
+
+			let textureLoader = new THREE.TextureLoader();
+
+			textureLoader.load(
+				url,
+				texture => {
+					_resolve({ type: type, texture: texture });
+				},
+				_reject
+			);
+		});
 	}
 
 	let service = {

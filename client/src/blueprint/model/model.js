@@ -71,7 +71,8 @@ export default textureDir => {
 				itemName: item.item_name,
 				resizable: item.resizable,
 				itemType: item.item_type,
-				modelUrl: item.model_url
+				modelUrl: item.model_url,
+				textureMaps: item.texture_maps ? item.texture_maps : null
 			};
 			var scale = new THREE.Vector3(
 				item.scale_x,
