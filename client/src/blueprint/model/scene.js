@@ -131,7 +131,7 @@ export default (model, textureDir) => {
 				model,
 				metadata,
 				geometry,
-				materials,
+				materials[0],
 				position,
 				rotation,
 				scale
@@ -164,6 +164,7 @@ export default (model, textureDir) => {
 							metalnessMap: data[2].texture,
 							roughnessMap: data[3].texture
 						});
+
 						var item = new (Factory.getClass(itemType))(
 							model,
 							metadata,
