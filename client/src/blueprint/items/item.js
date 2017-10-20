@@ -55,7 +55,7 @@ export default class Item extends THREE.Mesh {
 		this.receiveShadow = true;
 
 		this.geometry = geometry;
-		this.material = material;
+	
 
 		if (position) {
 			this.position.copy(position);
@@ -157,10 +157,7 @@ export default class Item extends THREE.Mesh {
 		var on = this.hover || this.selected;
 		this.highlighted = on;
 		var hex = on ? this.emissiveColor : 0x000000;
-		this.material.forEach(material => {
-			// TODO_Ekki emissive doesn't exist anymore?
-			material.emissive.setHex(hex);
-		});
+		this.material.emissive.setHex(hex);
 	}
 
 	/** */
