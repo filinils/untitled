@@ -60,7 +60,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3a19b032e6c6fc775f1f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7f5dd14420463d57315c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -11885,7 +11885,7 @@ exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/c
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot?v=4.7.0") + ");\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot") + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff2?v=4.7.0") + ") format(\"woff2\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff?v=4.7.0") + ") format(\"woff\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.ttf?v=4.7.0") + ") format(\"truetype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.svg?v=4.7.0") + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%; }\n\n.fa-2x {\n  font-size: 2em; }\n\n.fa-3x {\n  font-size: 3em; }\n\n.fa-4x {\n  font-size: 4em; }\n\n.fa-5x {\n  font-size: 5em; }\n\n.fa-fw {\n  width: 1.28571em;\n  text-align: center; }\n\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none; }\n  .fa-ul > li {\n    position: relative; }\n\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center; }\n  .fa-li.fa-lg {\n    left: -1.85714em; }\n\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em; }\n\n.fa-pull-left {\n  float: left; }\n\n.fa-pull-right {\n  float: right; }\n\n.fa.fa-pull-left {\n  margin-right: .3em; }\n\n.fa.fa-pull-right {\n  margin-left: .3em; }\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right; }\n\n.pull-left {\n  float: left; }\n\n.fa.pull-left {\n  margin-right: .3em; }\n\n.fa.pull-right {\n  margin-left: .3em; }\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear; }\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8); }\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg); }\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg); }\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1); }\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1); }\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none; }\n\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle; }\n\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center; }\n\n.fa-stack-1x {\n  line-height: inherit; }\n\n.fa-stack-2x {\n  font-size: 2em; }\n\n.fa-inverse {\n  color: #fff; }\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\"; }\n\n.fa-music:before {\n  content: \"\\F001\"; }\n\n.fa-search:before {\n  content: \"\\F002\"; }\n\n.fa-envelope-o:before {\n  content: \"\\F003\"; }\n\n.fa-heart:before {\n  content: \"\\F004\"; }\n\n.fa-star:before {\n  content: \"\\F005\"; }\n\n.fa-star-o:before {\n  content: \"\\F006\"; }\n\n.fa-user:before {\n  content: \"\\F007\"; }\n\n.fa-film:before {\n  content: \"\\F008\"; }\n\n.fa-th-large:before {\n  content: \"\\F009\"; }\n\n.fa-th:before {\n  content: \"\\F00A\"; }\n\n.fa-th-list:before {\n  content: \"\\F00B\"; }\n\n.fa-check:before {\n  content: \"\\F00C\"; }\n\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\"; }\n\n.fa-search-plus:before {\n  content: \"\\F00E\"; }\n\n.fa-search-minus:before {\n  content: \"\\F010\"; }\n\n.fa-power-off:before {\n  content: \"\\F011\"; }\n\n.fa-signal:before {\n  content: \"\\F012\"; }\n\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\"; }\n\n.fa-trash-o:before {\n  content: \"\\F014\"; }\n\n.fa-home:before {\n  content: \"\\F015\"; }\n\n.fa-file-o:before {\n  content: \"\\F016\"; }\n\n.fa-clock-o:before {\n  content: \"\\F017\"; }\n\n.fa-road:before {\n  content: \"\\F018\"; }\n\n.fa-download:before {\n  content: \"\\F019\"; }\n\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\"; }\n\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\"; }\n\n.fa-inbox:before {\n  content: \"\\F01C\"; }\n\n.fa-play-circle-o:before {\n  content: \"\\F01D\"; }\n\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\"; }\n\n.fa-refresh:before {\n  content: \"\\F021\"; }\n\n.fa-list-alt:before {\n  content: \"\\F022\"; }\n\n.fa-lock:before {\n  content: \"\\F023\"; }\n\n.fa-flag:before {\n  content: \"\\F024\"; }\n\n.fa-headphones:before {\n  content: \"\\F025\"; }\n\n.fa-volume-off:before {\n  content: \"\\F026\"; }\n\n.fa-volume-down:before {\n  content: \"\\F027\"; }\n\n.fa-volume-up:before {\n  content: \"\\F028\"; }\n\n.fa-qrcode:before {\n  content: \"\\F029\"; }\n\n.fa-barcode:before {\n  content: \"\\F02A\"; }\n\n.fa-tag:before {\n  content: \"\\F02B\"; }\n\n.fa-tags:before {\n  content: \"\\F02C\"; }\n\n.fa-book:before {\n  content: \"\\F02D\"; }\n\n.fa-bookmark:before {\n  content: \"\\F02E\"; }\n\n.fa-print:before {\n  content: \"\\F02F\"; }\n\n.fa-camera:before {\n  content: \"\\F030\"; }\n\n.fa-font:before {\n  content: \"\\F031\"; }\n\n.fa-bold:before {\n  content: \"\\F032\"; }\n\n.fa-italic:before {\n  content: \"\\F033\"; }\n\n.fa-text-height:before {\n  content: \"\\F034\"; }\n\n.fa-text-width:before {\n  content: \"\\F035\"; }\n\n.fa-align-left:before {\n  content: \"\\F036\"; }\n\n.fa-align-center:before {\n  content: \"\\F037\"; }\n\n.fa-align-right:before {\n  content: \"\\F038\"; }\n\n.fa-align-justify:before {\n  content: \"\\F039\"; }\n\n.fa-list:before {\n  content: \"\\F03A\"; }\n\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\"; }\n\n.fa-indent:before {\n  content: \"\\F03C\"; }\n\n.fa-video-camera:before {\n  content: \"\\F03D\"; }\n\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\"; }\n\n.fa-pencil:before {\n  content: \"\\F040\"; }\n\n.fa-map-marker:before {\n  content: \"\\F041\"; }\n\n.fa-adjust:before {\n  content: \"\\F042\"; }\n\n.fa-tint:before {\n  content: \"\\F043\"; }\n\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\"; }\n\n.fa-share-square-o:before {\n  content: \"\\F045\"; }\n\n.fa-check-square-o:before {\n  content: \"\\F046\"; }\n\n.fa-arrows:before {\n  content: \"\\F047\"; }\n\n.fa-step-backward:before {\n  content: \"\\F048\"; }\n\n.fa-fast-backward:before {\n  content: \"\\F049\"; }\n\n.fa-backward:before {\n  content: \"\\F04A\"; }\n\n.fa-play:before {\n  content: \"\\F04B\"; }\n\n.fa-pause:before {\n  content: \"\\F04C\"; }\n\n.fa-stop:before {\n  content: \"\\F04D\"; }\n\n.fa-forward:before {\n  content: \"\\F04E\"; }\n\n.fa-fast-forward:before {\n  content: \"\\F050\"; }\n\n.fa-step-forward:before {\n  content: \"\\F051\"; }\n\n.fa-eject:before {\n  content: \"\\F052\"; }\n\n.fa-chevron-left:before {\n  content: \"\\F053\"; }\n\n.fa-chevron-right:before {\n  content: \"\\F054\"; }\n\n.fa-plus-circle:before {\n  content: \"\\F055\"; }\n\n.fa-minus-circle:before {\n  content: \"\\F056\"; }\n\n.fa-times-circle:before {\n  content: \"\\F057\"; }\n\n.fa-check-circle:before {\n  content: \"\\F058\"; }\n\n.fa-question-circle:before {\n  content: \"\\F059\"; }\n\n.fa-info-circle:before {\n  content: \"\\F05A\"; }\n\n.fa-crosshairs:before {\n  content: \"\\F05B\"; }\n\n.fa-times-circle-o:before {\n  content: \"\\F05C\"; }\n\n.fa-check-circle-o:before {\n  content: \"\\F05D\"; }\n\n.fa-ban:before {\n  content: \"\\F05E\"; }\n\n.fa-arrow-left:before {\n  content: \"\\F060\"; }\n\n.fa-arrow-right:before {\n  content: \"\\F061\"; }\n\n.fa-arrow-up:before {\n  content: \"\\F062\"; }\n\n.fa-arrow-down:before {\n  content: \"\\F063\"; }\n\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\"; }\n\n.fa-expand:before {\n  content: \"\\F065\"; }\n\n.fa-compress:before {\n  content: \"\\F066\"; }\n\n.fa-plus:before {\n  content: \"\\F067\"; }\n\n.fa-minus:before {\n  content: \"\\F068\"; }\n\n.fa-asterisk:before {\n  content: \"\\F069\"; }\n\n.fa-exclamation-circle:before {\n  content: \"\\F06A\"; }\n\n.fa-gift:before {\n  content: \"\\F06B\"; }\n\n.fa-leaf:before {\n  content: \"\\F06C\"; }\n\n.fa-fire:before {\n  content: \"\\F06D\"; }\n\n.fa-eye:before {\n  content: \"\\F06E\"; }\n\n.fa-eye-slash:before {\n  content: \"\\F070\"; }\n\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\"; }\n\n.fa-plane:before {\n  content: \"\\F072\"; }\n\n.fa-calendar:before {\n  content: \"\\F073\"; }\n\n.fa-random:before {\n  content: \"\\F074\"; }\n\n.fa-comment:before {\n  content: \"\\F075\"; }\n\n.fa-magnet:before {\n  content: \"\\F076\"; }\n\n.fa-chevron-up:before {\n  content: \"\\F077\"; }\n\n.fa-chevron-down:before {\n  content: \"\\F078\"; }\n\n.fa-retweet:before {\n  content: \"\\F079\"; }\n\n.fa-shopping-cart:before {\n  content: \"\\F07A\"; }\n\n.fa-folder:before {\n  content: \"\\F07B\"; }\n\n.fa-folder-open:before {\n  content: \"\\F07C\"; }\n\n.fa-arrows-v:before {\n  content: \"\\F07D\"; }\n\n.fa-arrows-h:before {\n  content: \"\\F07E\"; }\n\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\"; }\n\n.fa-twitter-square:before {\n  content: \"\\F081\"; }\n\n.fa-facebook-square:before {\n  content: \"\\F082\"; }\n\n.fa-camera-retro:before {\n  content: \"\\F083\"; }\n\n.fa-key:before {\n  content: \"\\F084\"; }\n\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\"; }\n\n.fa-comments:before {\n  content: \"\\F086\"; }\n\n.fa-thumbs-o-up:before {\n  content: \"\\F087\"; }\n\n.fa-thumbs-o-down:before {\n  content: \"\\F088\"; }\n\n.fa-star-half:before {\n  content: \"\\F089\"; }\n\n.fa-heart-o:before {\n  content: \"\\F08A\"; }\n\n.fa-sign-out:before {\n  content: \"\\F08B\"; }\n\n.fa-linkedin-square:before {\n  content: \"\\F08C\"; }\n\n.fa-thumb-tack:before {\n  content: \"\\F08D\"; }\n\n.fa-external-link:before {\n  content: \"\\F08E\"; }\n\n.fa-sign-in:before {\n  content: \"\\F090\"; }\n\n.fa-trophy:before {\n  content: \"\\F091\"; }\n\n.fa-github-square:before {\n  content: \"\\F092\"; }\n\n.fa-upload:before {\n  content: \"\\F093\"; }\n\n.fa-lemon-o:before {\n  content: \"\\F094\"; }\n\n.fa-phone:before {\n  content: \"\\F095\"; }\n\n.fa-square-o:before {\n  content: \"\\F096\"; }\n\n.fa-bookmark-o:before {\n  content: \"\\F097\"; }\n\n.fa-phone-square:before {\n  content: \"\\F098\"; }\n\n.fa-twitter:before {\n  content: \"\\F099\"; }\n\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\"; }\n\n.fa-github:before {\n  content: \"\\F09B\"; }\n\n.fa-unlock:before {\n  content: \"\\F09C\"; }\n\n.fa-credit-card:before {\n  content: \"\\F09D\"; }\n\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\"; }\n\n.fa-hdd-o:before {\n  content: \"\\F0A0\"; }\n\n.fa-bullhorn:before {\n  content: \"\\F0A1\"; }\n\n.fa-bell:before {\n  content: \"\\F0F3\"; }\n\n.fa-certificate:before {\n  content: \"\\F0A3\"; }\n\n.fa-hand-o-right:before {\n  content: \"\\F0A4\"; }\n\n.fa-hand-o-left:before {\n  content: \"\\F0A5\"; }\n\n.fa-hand-o-up:before {\n  content: \"\\F0A6\"; }\n\n.fa-hand-o-down:before {\n  content: \"\\F0A7\"; }\n\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\"; }\n\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\"; }\n\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\"; }\n\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\"; }\n\n.fa-globe:before {\n  content: \"\\F0AC\"; }\n\n.fa-wrench:before {\n  content: \"\\F0AD\"; }\n\n.fa-tasks:before {\n  content: \"\\F0AE\"; }\n\n.fa-filter:before {\n  content: \"\\F0B0\"; }\n\n.fa-briefcase:before {\n  content: \"\\F0B1\"; }\n\n.fa-arrows-alt:before {\n  content: \"\\F0B2\"; }\n\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\"; }\n\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\"; }\n\n.fa-cloud:before {\n  content: \"\\F0C2\"; }\n\n.fa-flask:before {\n  content: \"\\F0C3\"; }\n\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\"; }\n\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\"; }\n\n.fa-paperclip:before {\n  content: \"\\F0C6\"; }\n\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\"; }\n\n.fa-square:before {\n  content: \"\\F0C8\"; }\n\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\"; }\n\n.fa-list-ul:before {\n  content: \"\\F0CA\"; }\n\n.fa-list-ol:before {\n  content: \"\\F0CB\"; }\n\n.fa-strikethrough:before {\n  content: \"\\F0CC\"; }\n\n.fa-underline:before {\n  content: \"\\F0CD\"; }\n\n.fa-table:before {\n  content: \"\\F0CE\"; }\n\n.fa-magic:before {\n  content: \"\\F0D0\"; }\n\n.fa-truck:before {\n  content: \"\\F0D1\"; }\n\n.fa-pinterest:before {\n  content: \"\\F0D2\"; }\n\n.fa-pinterest-square:before {\n  content: \"\\F0D3\"; }\n\n.fa-google-plus-square:before {\n  content: \"\\F0D4\"; }\n\n.fa-google-plus:before {\n  content: \"\\F0D5\"; }\n\n.fa-money:before {\n  content: \"\\F0D6\"; }\n\n.fa-caret-down:before {\n  content: \"\\F0D7\"; }\n\n.fa-caret-up:before {\n  content: \"\\F0D8\"; }\n\n.fa-caret-left:before {\n  content: \"\\F0D9\"; }\n\n.fa-caret-right:before {\n  content: \"\\F0DA\"; }\n\n.fa-columns:before {\n  content: \"\\F0DB\"; }\n\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\"; }\n\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\"; }\n\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\"; }\n\n.fa-envelope:before {\n  content: \"\\F0E0\"; }\n\n.fa-linkedin:before {\n  content: \"\\F0E1\"; }\n\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\"; }\n\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\"; }\n\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\"; }\n\n.fa-comment-o:before {\n  content: \"\\F0E5\"; }\n\n.fa-comments-o:before {\n  content: \"\\F0E6\"; }\n\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\"; }\n\n.fa-sitemap:before {\n  content: \"\\F0E8\"; }\n\n.fa-umbrella:before {\n  content: \"\\F0E9\"; }\n\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\"; }\n\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\"; }\n\n.fa-exchange:before {\n  content: \"\\F0EC\"; }\n\n.fa-cloud-download:before {\n  content: \"\\F0ED\"; }\n\n.fa-cloud-upload:before {\n  content: \"\\F0EE\"; }\n\n.fa-user-md:before {\n  content: \"\\F0F0\"; }\n\n.fa-stethoscope:before {\n  content: \"\\F0F1\"; }\n\n.fa-suitcase:before {\n  content: \"\\F0F2\"; }\n\n.fa-bell-o:before {\n  content: \"\\F0A2\"; }\n\n.fa-coffee:before {\n  content: \"\\F0F4\"; }\n\n.fa-cutlery:before {\n  content: \"\\F0F5\"; }\n\n.fa-file-text-o:before {\n  content: \"\\F0F6\"; }\n\n.fa-building-o:before {\n  content: \"\\F0F7\"; }\n\n.fa-hospital-o:before {\n  content: \"\\F0F8\"; }\n\n.fa-ambulance:before {\n  content: \"\\F0F9\"; }\n\n.fa-medkit:before {\n  content: \"\\F0FA\"; }\n\n.fa-fighter-jet:before {\n  content: \"\\F0FB\"; }\n\n.fa-beer:before {\n  content: \"\\F0FC\"; }\n\n.fa-h-square:before {\n  content: \"\\F0FD\"; }\n\n.fa-plus-square:before {\n  content: \"\\F0FE\"; }\n\n.fa-angle-double-left:before {\n  content: \"\\F100\"; }\n\n.fa-angle-double-right:before {\n  content: \"\\F101\"; }\n\n.fa-angle-double-up:before {\n  content: \"\\F102\"; }\n\n.fa-angle-double-down:before {\n  content: \"\\F103\"; }\n\n.fa-angle-left:before {\n  content: \"\\F104\"; }\n\n.fa-angle-right:before {\n  content: \"\\F105\"; }\n\n.fa-angle-up:before {\n  content: \"\\F106\"; }\n\n.fa-angle-down:before {\n  content: \"\\F107\"; }\n\n.fa-desktop:before {\n  content: \"\\F108\"; }\n\n.fa-laptop:before {\n  content: \"\\F109\"; }\n\n.fa-tablet:before {\n  content: \"\\F10A\"; }\n\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\"; }\n\n.fa-circle-o:before {\n  content: \"\\F10C\"; }\n\n.fa-quote-left:before {\n  content: \"\\F10D\"; }\n\n.fa-quote-right:before {\n  content: \"\\F10E\"; }\n\n.fa-spinner:before {\n  content: \"\\F110\"; }\n\n.fa-circle:before {\n  content: \"\\F111\"; }\n\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\"; }\n\n.fa-github-alt:before {\n  content: \"\\F113\"; }\n\n.fa-folder-o:before {\n  content: \"\\F114\"; }\n\n.fa-folder-open-o:before {\n  content: \"\\F115\"; }\n\n.fa-smile-o:before {\n  content: \"\\F118\"; }\n\n.fa-frown-o:before {\n  content: \"\\F119\"; }\n\n.fa-meh-o:before {\n  content: \"\\F11A\"; }\n\n.fa-gamepad:before {\n  content: \"\\F11B\"; }\n\n.fa-keyboard-o:before {\n  content: \"\\F11C\"; }\n\n.fa-flag-o:before {\n  content: \"\\F11D\"; }\n\n.fa-flag-checkered:before {\n  content: \"\\F11E\"; }\n\n.fa-terminal:before {\n  content: \"\\F120\"; }\n\n.fa-code:before {\n  content: \"\\F121\"; }\n\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\"; }\n\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\"; }\n\n.fa-location-arrow:before {\n  content: \"\\F124\"; }\n\n.fa-crop:before {\n  content: \"\\F125\"; }\n\n.fa-code-fork:before {\n  content: \"\\F126\"; }\n\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\"; }\n\n.fa-question:before {\n  content: \"\\F128\"; }\n\n.fa-info:before {\n  content: \"\\F129\"; }\n\n.fa-exclamation:before {\n  content: \"\\F12A\"; }\n\n.fa-superscript:before {\n  content: \"\\F12B\"; }\n\n.fa-subscript:before {\n  content: \"\\F12C\"; }\n\n.fa-eraser:before {\n  content: \"\\F12D\"; }\n\n.fa-puzzle-piece:before {\n  content: \"\\F12E\"; }\n\n.fa-microphone:before {\n  content: \"\\F130\"; }\n\n.fa-microphone-slash:before {\n  content: \"\\F131\"; }\n\n.fa-shield:before {\n  content: \"\\F132\"; }\n\n.fa-calendar-o:before {\n  content: \"\\F133\"; }\n\n.fa-fire-extinguisher:before {\n  content: \"\\F134\"; }\n\n.fa-rocket:before {\n  content: \"\\F135\"; }\n\n.fa-maxcdn:before {\n  content: \"\\F136\"; }\n\n.fa-chevron-circle-left:before {\n  content: \"\\F137\"; }\n\n.fa-chevron-circle-right:before {\n  content: \"\\F138\"; }\n\n.fa-chevron-circle-up:before {\n  content: \"\\F139\"; }\n\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\"; }\n\n.fa-html5:before {\n  content: \"\\F13B\"; }\n\n.fa-css3:before {\n  content: \"\\F13C\"; }\n\n.fa-anchor:before {\n  content: \"\\F13D\"; }\n\n.fa-unlock-alt:before {\n  content: \"\\F13E\"; }\n\n.fa-bullseye:before {\n  content: \"\\F140\"; }\n\n.fa-ellipsis-h:before {\n  content: \"\\F141\"; }\n\n.fa-ellipsis-v:before {\n  content: \"\\F142\"; }\n\n.fa-rss-square:before {\n  content: \"\\F143\"; }\n\n.fa-play-circle:before {\n  content: \"\\F144\"; }\n\n.fa-ticket:before {\n  content: \"\\F145\"; }\n\n.fa-minus-square:before {\n  content: \"\\F146\"; }\n\n.fa-minus-square-o:before {\n  content: \"\\F147\"; }\n\n.fa-level-up:before {\n  content: \"\\F148\"; }\n\n.fa-level-down:before {\n  content: \"\\F149\"; }\n\n.fa-check-square:before {\n  content: \"\\F14A\"; }\n\n.fa-pencil-square:before {\n  content: \"\\F14B\"; }\n\n.fa-external-link-square:before {\n  content: \"\\F14C\"; }\n\n.fa-share-square:before {\n  content: \"\\F14D\"; }\n\n.fa-compass:before {\n  content: \"\\F14E\"; }\n\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\"; }\n\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\"; }\n\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\"; }\n\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\"; }\n\n.fa-gbp:before {\n  content: \"\\F154\"; }\n\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\"; }\n\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\"; }\n\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\"; }\n\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\"; }\n\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\"; }\n\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\"; }\n\n.fa-file:before {\n  content: \"\\F15B\"; }\n\n.fa-file-text:before {\n  content: \"\\F15C\"; }\n\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\"; }\n\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\"; }\n\n.fa-sort-amount-asc:before {\n  content: \"\\F160\"; }\n\n.fa-sort-amount-desc:before {\n  content: \"\\F161\"; }\n\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\"; }\n\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\"; }\n\n.fa-thumbs-up:before {\n  content: \"\\F164\"; }\n\n.fa-thumbs-down:before {\n  content: \"\\F165\"; }\n\n.fa-youtube-square:before {\n  content: \"\\F166\"; }\n\n.fa-youtube:before {\n  content: \"\\F167\"; }\n\n.fa-xing:before {\n  content: \"\\F168\"; }\n\n.fa-xing-square:before {\n  content: \"\\F169\"; }\n\n.fa-youtube-play:before {\n  content: \"\\F16A\"; }\n\n.fa-dropbox:before {\n  content: \"\\F16B\"; }\n\n.fa-stack-overflow:before {\n  content: \"\\F16C\"; }\n\n.fa-instagram:before {\n  content: \"\\F16D\"; }\n\n.fa-flickr:before {\n  content: \"\\F16E\"; }\n\n.fa-adn:before {\n  content: \"\\F170\"; }\n\n.fa-bitbucket:before {\n  content: \"\\F171\"; }\n\n.fa-bitbucket-square:before {\n  content: \"\\F172\"; }\n\n.fa-tumblr:before {\n  content: \"\\F173\"; }\n\n.fa-tumblr-square:before {\n  content: \"\\F174\"; }\n\n.fa-long-arrow-down:before {\n  content: \"\\F175\"; }\n\n.fa-long-arrow-up:before {\n  content: \"\\F176\"; }\n\n.fa-long-arrow-left:before {\n  content: \"\\F177\"; }\n\n.fa-long-arrow-right:before {\n  content: \"\\F178\"; }\n\n.fa-apple:before {\n  content: \"\\F179\"; }\n\n.fa-windows:before {\n  content: \"\\F17A\"; }\n\n.fa-android:before {\n  content: \"\\F17B\"; }\n\n.fa-linux:before {\n  content: \"\\F17C\"; }\n\n.fa-dribbble:before {\n  content: \"\\F17D\"; }\n\n.fa-skype:before {\n  content: \"\\F17E\"; }\n\n.fa-foursquare:before {\n  content: \"\\F180\"; }\n\n.fa-trello:before {\n  content: \"\\F181\"; }\n\n.fa-female:before {\n  content: \"\\F182\"; }\n\n.fa-male:before {\n  content: \"\\F183\"; }\n\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\"; }\n\n.fa-sun-o:before {\n  content: \"\\F185\"; }\n\n.fa-moon-o:before {\n  content: \"\\F186\"; }\n\n.fa-archive:before {\n  content: \"\\F187\"; }\n\n.fa-bug:before {\n  content: \"\\F188\"; }\n\n.fa-vk:before {\n  content: \"\\F189\"; }\n\n.fa-weibo:before {\n  content: \"\\F18A\"; }\n\n.fa-renren:before {\n  content: \"\\F18B\"; }\n\n.fa-pagelines:before {\n  content: \"\\F18C\"; }\n\n.fa-stack-exchange:before {\n  content: \"\\F18D\"; }\n\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\"; }\n\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\"; }\n\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\"; }\n\n.fa-dot-circle-o:before {\n  content: \"\\F192\"; }\n\n.fa-wheelchair:before {\n  content: \"\\F193\"; }\n\n.fa-vimeo-square:before {\n  content: \"\\F194\"; }\n\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\"; }\n\n.fa-plus-square-o:before {\n  content: \"\\F196\"; }\n\n.fa-space-shuttle:before {\n  content: \"\\F197\"; }\n\n.fa-slack:before {\n  content: \"\\F198\"; }\n\n.fa-envelope-square:before {\n  content: \"\\F199\"; }\n\n.fa-wordpress:before {\n  content: \"\\F19A\"; }\n\n.fa-openid:before {\n  content: \"\\F19B\"; }\n\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\"; }\n\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\"; }\n\n.fa-yahoo:before {\n  content: \"\\F19E\"; }\n\n.fa-google:before {\n  content: \"\\F1A0\"; }\n\n.fa-reddit:before {\n  content: \"\\F1A1\"; }\n\n.fa-reddit-square:before {\n  content: \"\\F1A2\"; }\n\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\"; }\n\n.fa-stumbleupon:before {\n  content: \"\\F1A4\"; }\n\n.fa-delicious:before {\n  content: \"\\F1A5\"; }\n\n.fa-digg:before {\n  content: \"\\F1A6\"; }\n\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\"; }\n\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\"; }\n\n.fa-drupal:before {\n  content: \"\\F1A9\"; }\n\n.fa-joomla:before {\n  content: \"\\F1AA\"; }\n\n.fa-language:before {\n  content: \"\\F1AB\"; }\n\n.fa-fax:before {\n  content: \"\\F1AC\"; }\n\n.fa-building:before {\n  content: \"\\F1AD\"; }\n\n.fa-child:before {\n  content: \"\\F1AE\"; }\n\n.fa-paw:before {\n  content: \"\\F1B0\"; }\n\n.fa-spoon:before {\n  content: \"\\F1B1\"; }\n\n.fa-cube:before {\n  content: \"\\F1B2\"; }\n\n.fa-cubes:before {\n  content: \"\\F1B3\"; }\n\n.fa-behance:before {\n  content: \"\\F1B4\"; }\n\n.fa-behance-square:before {\n  content: \"\\F1B5\"; }\n\n.fa-steam:before {\n  content: \"\\F1B6\"; }\n\n.fa-steam-square:before {\n  content: \"\\F1B7\"; }\n\n.fa-recycle:before {\n  content: \"\\F1B8\"; }\n\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\"; }\n\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\"; }\n\n.fa-tree:before {\n  content: \"\\F1BB\"; }\n\n.fa-spotify:before {\n  content: \"\\F1BC\"; }\n\n.fa-deviantart:before {\n  content: \"\\F1BD\"; }\n\n.fa-soundcloud:before {\n  content: \"\\F1BE\"; }\n\n.fa-database:before {\n  content: \"\\F1C0\"; }\n\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\"; }\n\n.fa-file-word-o:before {\n  content: \"\\F1C2\"; }\n\n.fa-file-excel-o:before {\n  content: \"\\F1C3\"; }\n\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\"; }\n\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\"; }\n\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\"; }\n\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\"; }\n\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\"; }\n\n.fa-file-code-o:before {\n  content: \"\\F1C9\"; }\n\n.fa-vine:before {\n  content: \"\\F1CA\"; }\n\n.fa-codepen:before {\n  content: \"\\F1CB\"; }\n\n.fa-jsfiddle:before {\n  content: \"\\F1CC\"; }\n\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\"; }\n\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\"; }\n\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\"; }\n\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\"; }\n\n.fa-git-square:before {\n  content: \"\\F1D2\"; }\n\n.fa-git:before {\n  content: \"\\F1D3\"; }\n\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\"; }\n\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\"; }\n\n.fa-qq:before {\n  content: \"\\F1D6\"; }\n\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\"; }\n\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\"; }\n\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\"; }\n\n.fa-history:before {\n  content: \"\\F1DA\"; }\n\n.fa-circle-thin:before {\n  content: \"\\F1DB\"; }\n\n.fa-header:before {\n  content: \"\\F1DC\"; }\n\n.fa-paragraph:before {\n  content: \"\\F1DD\"; }\n\n.fa-sliders:before {\n  content: \"\\F1DE\"; }\n\n.fa-share-alt:before {\n  content: \"\\F1E0\"; }\n\n.fa-share-alt-square:before {\n  content: \"\\F1E1\"; }\n\n.fa-bomb:before {\n  content: \"\\F1E2\"; }\n\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\"; }\n\n.fa-tty:before {\n  content: \"\\F1E4\"; }\n\n.fa-binoculars:before {\n  content: \"\\F1E5\"; }\n\n.fa-plug:before {\n  content: \"\\F1E6\"; }\n\n.fa-slideshare:before {\n  content: \"\\F1E7\"; }\n\n.fa-twitch:before {\n  content: \"\\F1E8\"; }\n\n.fa-yelp:before {\n  content: \"\\F1E9\"; }\n\n.fa-newspaper-o:before {\n  content: \"\\F1EA\"; }\n\n.fa-wifi:before {\n  content: \"\\F1EB\"; }\n\n.fa-calculator:before {\n  content: \"\\F1EC\"; }\n\n.fa-paypal:before {\n  content: \"\\F1ED\"; }\n\n.fa-google-wallet:before {\n  content: \"\\F1EE\"; }\n\n.fa-cc-visa:before {\n  content: \"\\F1F0\"; }\n\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\"; }\n\n.fa-cc-discover:before {\n  content: \"\\F1F2\"; }\n\n.fa-cc-amex:before {\n  content: \"\\F1F3\"; }\n\n.fa-cc-paypal:before {\n  content: \"\\F1F4\"; }\n\n.fa-cc-stripe:before {\n  content: \"\\F1F5\"; }\n\n.fa-bell-slash:before {\n  content: \"\\F1F6\"; }\n\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\"; }\n\n.fa-trash:before {\n  content: \"\\F1F8\"; }\n\n.fa-copyright:before {\n  content: \"\\F1F9\"; }\n\n.fa-at:before {\n  content: \"\\F1FA\"; }\n\n.fa-eyedropper:before {\n  content: \"\\F1FB\"; }\n\n.fa-paint-brush:before {\n  content: \"\\F1FC\"; }\n\n.fa-birthday-cake:before {\n  content: \"\\F1FD\"; }\n\n.fa-area-chart:before {\n  content: \"\\F1FE\"; }\n\n.fa-pie-chart:before {\n  content: \"\\F200\"; }\n\n.fa-line-chart:before {\n  content: \"\\F201\"; }\n\n.fa-lastfm:before {\n  content: \"\\F202\"; }\n\n.fa-lastfm-square:before {\n  content: \"\\F203\"; }\n\n.fa-toggle-off:before {\n  content: \"\\F204\"; }\n\n.fa-toggle-on:before {\n  content: \"\\F205\"; }\n\n.fa-bicycle:before {\n  content: \"\\F206\"; }\n\n.fa-bus:before {\n  content: \"\\F207\"; }\n\n.fa-ioxhost:before {\n  content: \"\\F208\"; }\n\n.fa-angellist:before {\n  content: \"\\F209\"; }\n\n.fa-cc:before {\n  content: \"\\F20A\"; }\n\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\"; }\n\n.fa-meanpath:before {\n  content: \"\\F20C\"; }\n\n.fa-buysellads:before {\n  content: \"\\F20D\"; }\n\n.fa-connectdevelop:before {\n  content: \"\\F20E\"; }\n\n.fa-dashcube:before {\n  content: \"\\F210\"; }\n\n.fa-forumbee:before {\n  content: \"\\F211\"; }\n\n.fa-leanpub:before {\n  content: \"\\F212\"; }\n\n.fa-sellsy:before {\n  content: \"\\F213\"; }\n\n.fa-shirtsinbulk:before {\n  content: \"\\F214\"; }\n\n.fa-simplybuilt:before {\n  content: \"\\F215\"; }\n\n.fa-skyatlas:before {\n  content: \"\\F216\"; }\n\n.fa-cart-plus:before {\n  content: \"\\F217\"; }\n\n.fa-cart-arrow-down:before {\n  content: \"\\F218\"; }\n\n.fa-diamond:before {\n  content: \"\\F219\"; }\n\n.fa-ship:before {\n  content: \"\\F21A\"; }\n\n.fa-user-secret:before {\n  content: \"\\F21B\"; }\n\n.fa-motorcycle:before {\n  content: \"\\F21C\"; }\n\n.fa-street-view:before {\n  content: \"\\F21D\"; }\n\n.fa-heartbeat:before {\n  content: \"\\F21E\"; }\n\n.fa-venus:before {\n  content: \"\\F221\"; }\n\n.fa-mars:before {\n  content: \"\\F222\"; }\n\n.fa-mercury:before {\n  content: \"\\F223\"; }\n\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\"; }\n\n.fa-transgender-alt:before {\n  content: \"\\F225\"; }\n\n.fa-venus-double:before {\n  content: \"\\F226\"; }\n\n.fa-mars-double:before {\n  content: \"\\F227\"; }\n\n.fa-venus-mars:before {\n  content: \"\\F228\"; }\n\n.fa-mars-stroke:before {\n  content: \"\\F229\"; }\n\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\"; }\n\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\"; }\n\n.fa-neuter:before {\n  content: \"\\F22C\"; }\n\n.fa-genderless:before {\n  content: \"\\F22D\"; }\n\n.fa-facebook-official:before {\n  content: \"\\F230\"; }\n\n.fa-pinterest-p:before {\n  content: \"\\F231\"; }\n\n.fa-whatsapp:before {\n  content: \"\\F232\"; }\n\n.fa-server:before {\n  content: \"\\F233\"; }\n\n.fa-user-plus:before {\n  content: \"\\F234\"; }\n\n.fa-user-times:before {\n  content: \"\\F235\"; }\n\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\"; }\n\n.fa-viacoin:before {\n  content: \"\\F237\"; }\n\n.fa-train:before {\n  content: \"\\F238\"; }\n\n.fa-subway:before {\n  content: \"\\F239\"; }\n\n.fa-medium:before {\n  content: \"\\F23A\"; }\n\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\"; }\n\n.fa-optin-monster:before {\n  content: \"\\F23C\"; }\n\n.fa-opencart:before {\n  content: \"\\F23D\"; }\n\n.fa-expeditedssl:before {\n  content: \"\\F23E\"; }\n\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\"; }\n\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\"; }\n\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\"; }\n\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\"; }\n\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\"; }\n\n.fa-mouse-pointer:before {\n  content: \"\\F245\"; }\n\n.fa-i-cursor:before {\n  content: \"\\F246\"; }\n\n.fa-object-group:before {\n  content: \"\\F247\"; }\n\n.fa-object-ungroup:before {\n  content: \"\\F248\"; }\n\n.fa-sticky-note:before {\n  content: \"\\F249\"; }\n\n.fa-sticky-note-o:before {\n  content: \"\\F24A\"; }\n\n.fa-cc-jcb:before {\n  content: \"\\F24B\"; }\n\n.fa-cc-diners-club:before {\n  content: \"\\F24C\"; }\n\n.fa-clone:before {\n  content: \"\\F24D\"; }\n\n.fa-balance-scale:before {\n  content: \"\\F24E\"; }\n\n.fa-hourglass-o:before {\n  content: \"\\F250\"; }\n\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\"; }\n\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\"; }\n\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\"; }\n\n.fa-hourglass:before {\n  content: \"\\F254\"; }\n\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\"; }\n\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\"; }\n\n.fa-hand-scissors-o:before {\n  content: \"\\F257\"; }\n\n.fa-hand-lizard-o:before {\n  content: \"\\F258\"; }\n\n.fa-hand-spock-o:before {\n  content: \"\\F259\"; }\n\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\"; }\n\n.fa-hand-peace-o:before {\n  content: \"\\F25B\"; }\n\n.fa-trademark:before {\n  content: \"\\F25C\"; }\n\n.fa-registered:before {\n  content: \"\\F25D\"; }\n\n.fa-creative-commons:before {\n  content: \"\\F25E\"; }\n\n.fa-gg:before {\n  content: \"\\F260\"; }\n\n.fa-gg-circle:before {\n  content: \"\\F261\"; }\n\n.fa-tripadvisor:before {\n  content: \"\\F262\"; }\n\n.fa-odnoklassniki:before {\n  content: \"\\F263\"; }\n\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\"; }\n\n.fa-get-pocket:before {\n  content: \"\\F265\"; }\n\n.fa-wikipedia-w:before {\n  content: \"\\F266\"; }\n\n.fa-safari:before {\n  content: \"\\F267\"; }\n\n.fa-chrome:before {\n  content: \"\\F268\"; }\n\n.fa-firefox:before {\n  content: \"\\F269\"; }\n\n.fa-opera:before {\n  content: \"\\F26A\"; }\n\n.fa-internet-explorer:before {\n  content: \"\\F26B\"; }\n\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\"; }\n\n.fa-contao:before {\n  content: \"\\F26D\"; }\n\n.fa-500px:before {\n  content: \"\\F26E\"; }\n\n.fa-amazon:before {\n  content: \"\\F270\"; }\n\n.fa-calendar-plus-o:before {\n  content: \"\\F271\"; }\n\n.fa-calendar-minus-o:before {\n  content: \"\\F272\"; }\n\n.fa-calendar-times-o:before {\n  content: \"\\F273\"; }\n\n.fa-calendar-check-o:before {\n  content: \"\\F274\"; }\n\n.fa-industry:before {\n  content: \"\\F275\"; }\n\n.fa-map-pin:before {\n  content: \"\\F276\"; }\n\n.fa-map-signs:before {\n  content: \"\\F277\"; }\n\n.fa-map-o:before {\n  content: \"\\F278\"; }\n\n.fa-map:before {\n  content: \"\\F279\"; }\n\n.fa-commenting:before {\n  content: \"\\F27A\"; }\n\n.fa-commenting-o:before {\n  content: \"\\F27B\"; }\n\n.fa-houzz:before {\n  content: \"\\F27C\"; }\n\n.fa-vimeo:before {\n  content: \"\\F27D\"; }\n\n.fa-black-tie:before {\n  content: \"\\F27E\"; }\n\n.fa-fonticons:before {\n  content: \"\\F280\"; }\n\n.fa-reddit-alien:before {\n  content: \"\\F281\"; }\n\n.fa-edge:before {\n  content: \"\\F282\"; }\n\n.fa-credit-card-alt:before {\n  content: \"\\F283\"; }\n\n.fa-codiepie:before {\n  content: \"\\F284\"; }\n\n.fa-modx:before {\n  content: \"\\F285\"; }\n\n.fa-fort-awesome:before {\n  content: \"\\F286\"; }\n\n.fa-usb:before {\n  content: \"\\F287\"; }\n\n.fa-product-hunt:before {\n  content: \"\\F288\"; }\n\n.fa-mixcloud:before {\n  content: \"\\F289\"; }\n\n.fa-scribd:before {\n  content: \"\\F28A\"; }\n\n.fa-pause-circle:before {\n  content: \"\\F28B\"; }\n\n.fa-pause-circle-o:before {\n  content: \"\\F28C\"; }\n\n.fa-stop-circle:before {\n  content: \"\\F28D\"; }\n\n.fa-stop-circle-o:before {\n  content: \"\\F28E\"; }\n\n.fa-shopping-bag:before {\n  content: \"\\F290\"; }\n\n.fa-shopping-basket:before {\n  content: \"\\F291\"; }\n\n.fa-hashtag:before {\n  content: \"\\F292\"; }\n\n.fa-bluetooth:before {\n  content: \"\\F293\"; }\n\n.fa-bluetooth-b:before {\n  content: \"\\F294\"; }\n\n.fa-percent:before {\n  content: \"\\F295\"; }\n\n.fa-gitlab:before {\n  content: \"\\F296\"; }\n\n.fa-wpbeginner:before {\n  content: \"\\F297\"; }\n\n.fa-wpforms:before {\n  content: \"\\F298\"; }\n\n.fa-envira:before {\n  content: \"\\F299\"; }\n\n.fa-universal-access:before {\n  content: \"\\F29A\"; }\n\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\"; }\n\n.fa-question-circle-o:before {\n  content: \"\\F29C\"; }\n\n.fa-blind:before {\n  content: \"\\F29D\"; }\n\n.fa-audio-description:before {\n  content: \"\\F29E\"; }\n\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\"; }\n\n.fa-braille:before {\n  content: \"\\F2A1\"; }\n\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\"; }\n\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\"; }\n\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\"; }\n\n.fa-glide:before {\n  content: \"\\F2A5\"; }\n\n.fa-glide-g:before {\n  content: \"\\F2A6\"; }\n\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\"; }\n\n.fa-low-vision:before {\n  content: \"\\F2A8\"; }\n\n.fa-viadeo:before {\n  content: \"\\F2A9\"; }\n\n.fa-viadeo-square:before {\n  content: \"\\F2AA\"; }\n\n.fa-snapchat:before {\n  content: \"\\F2AB\"; }\n\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\"; }\n\n.fa-snapchat-square:before {\n  content: \"\\F2AD\"; }\n\n.fa-pied-piper:before {\n  content: \"\\F2AE\"; }\n\n.fa-first-order:before {\n  content: \"\\F2B0\"; }\n\n.fa-yoast:before {\n  content: \"\\F2B1\"; }\n\n.fa-themeisle:before {\n  content: \"\\F2B2\"; }\n\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\"; }\n\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\"; }\n\n.fa-handshake-o:before {\n  content: \"\\F2B5\"; }\n\n.fa-envelope-open:before {\n  content: \"\\F2B6\"; }\n\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\"; }\n\n.fa-linode:before {\n  content: \"\\F2B8\"; }\n\n.fa-address-book:before {\n  content: \"\\F2B9\"; }\n\n.fa-address-book-o:before {\n  content: \"\\F2BA\"; }\n\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\"; }\n\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\"; }\n\n.fa-user-circle:before {\n  content: \"\\F2BD\"; }\n\n.fa-user-circle-o:before {\n  content: \"\\F2BE\"; }\n\n.fa-user-o:before {\n  content: \"\\F2C0\"; }\n\n.fa-id-badge:before {\n  content: \"\\F2C1\"; }\n\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\"; }\n\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\"; }\n\n.fa-quora:before {\n  content: \"\\F2C4\"; }\n\n.fa-free-code-camp:before {\n  content: \"\\F2C5\"; }\n\n.fa-telegram:before {\n  content: \"\\F2C6\"; }\n\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\"; }\n\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\"; }\n\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\"; }\n\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\"; }\n\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\"; }\n\n.fa-shower:before {\n  content: \"\\F2CC\"; }\n\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\"; }\n\n.fa-podcast:before {\n  content: \"\\F2CE\"; }\n\n.fa-window-maximize:before {\n  content: \"\\F2D0\"; }\n\n.fa-window-minimize:before {\n  content: \"\\F2D1\"; }\n\n.fa-window-restore:before {\n  content: \"\\F2D2\"; }\n\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\"; }\n\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\"; }\n\n.fa-bandcamp:before {\n  content: \"\\F2D5\"; }\n\n.fa-grav:before {\n  content: \"\\F2D6\"; }\n\n.fa-etsy:before {\n  content: \"\\F2D7\"; }\n\n.fa-imdb:before {\n  content: \"\\F2D8\"; }\n\n.fa-ravelry:before {\n  content: \"\\F2D9\"; }\n\n.fa-eercast:before {\n  content: \"\\F2DA\"; }\n\n.fa-microchip:before {\n  content: \"\\F2DB\"; }\n\n.fa-snowflake-o:before {\n  content: \"\\F2DC\"; }\n\n.fa-superpowers:before {\n  content: \"\\F2DD\"; }\n\n.fa-wpexplorer:before {\n  content: \"\\F2DE\"; }\n\n.fa-meetup:before {\n  content: \"\\F2E0\"; }\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0; }\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto; }\n\nbody {\n  margin: 0;\n  padding: 0; }\n\nul {\n  list-style: none; }\n\ninput {\n  width: 100%;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  font-size: 25px;\n  color: darkgray;\n  border: 1px lightgrey solid; }\n\ninput[type=submit] {\n  background-color: white; }\n\ntextarea {\n  width: 100%;\n  border: 1px lightgrey solid;\n  height: 150px;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 25px;\n  color: darkgrey; }\n\nselect {\n  border: none;\n  border-radius: 0px 0px 0px 0px;\n  border-bottom-right-radius: 0px;\n  font-size: 25px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  width: 90%;\n  margin: 5%; }\n\ninput[placeholder] {\n  color: lightgrey; }\n\ntextarea[placeholder] {\n  color: lightgrey; }\n\nh1 {\n  font-family: 'Oswald', sans-serif; }\n\nh2 {\n  font-family: 'Oswald', sans-serif; }\n\nh3 {\n  font-family: 'Oswald', sans-serif; }\n\nh4 {\n  font-family: 'Oswald', sans-serif; }\n\nh5 {\n  font-family: 'Oswald', sans-serif; }\n\nh1, h2, h3, h4, h5 {\n  color: darkgray; }\n\ni {\n  color: darkgray; }\n\np {\n  font-family: 'Alegreya', serif;\n  color: darkgray; }\n\na {\n  font-family: 'Oswald', sans-serif;\n  font-style: none;\n  text-decoration: none;\n  color: #4F6457; }\n\na:visited {\n  color: #4F6457; }\n\na:hover {\n  color: seagreen; }\n\nbody {\n  background-color: #ffffff; }\n\n.layout-content {\n  padding-left: 5px;\n  padding-right: 5px; }\n\n.layout-head {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.layout-daydash {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n._layout-diagram {\n  display: flex;\n  justify-content: center; }\n\n.component-navigation {\n  flex-grow: 1; }\n\n.component-navigation.nav-list {\n  display: inline; }\n\n.component-navigation.nav-list.nav-listitem {\n  padding: 5px; }\n\n.component-usercontext {\n  flex-grow: 1; }\n\n.component-dayblock {\n  width: 250px;\n  height: 300px;\n  cursor: pointer; }\n\n.component-dayblock:hover {\n  background-color: rgba(137, 137, 137, 0.4); }\n\n.component-user.heading {\n  margin-bottom: 2px; }\n\n._component-diagram {\n  flex-grow: 1; }\n\n.node {\n  cursor: pointer; }\n\n.node:hover {\n  stroke: #000;\n  stroke-width: 1.5px; }\n\n.node--leaf {\n  fill: white; }\n\n.label {\n  font-family: 'Oswald', sans-serif;\n  text-anchor: middle;\n  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }\n\n.label,\n.node--root,\n.node--leaf {\n  pointer-events: none; }\n\n/*\n * General Formatting\n */\nhtml {\n  height: 100%; }\n\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%; }\n\ndiv {\n  margin: 0;\n  padding: 0; }\n\n/*\n   * Sidebar\n   */\n.main-row {\n  padding: 0; }\n\n.sidebar {\n  padding: 20px;\n  overflow-x: hidden;\n  overflow-y: auto;\n  border-right: 1px solid #eee; }\n\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px; }\n\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px; }\n\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca; }\n\n/*\n   * Main content\n   */\n.main {\n  padding: 0; }\n\n/*\n   * \"Loading\" modal\n   */\n#loading-modal {\n  position: absolute;\n  z-index: 10;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n  background-color: rgba(50, 50, 50, 0.9); }\n\n#loading-modal h1 {\n  text-align: center;\n  margin-top: 30%;\n  color: #fff; }\n\n/*\n   * Design\n   */\n#viewer {\n  display: block; }\n\n#floorplanner {\n  display: none; }\n\n#add-items {\n  display: none;\n  padding: 20px;\n  overflow-y: auto; }\n\n#main-controls {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  padding: 0; }\n\n#camera-controls {\n  position: absolute;\n  bottom: 20px;\n  right: 0;\n  padding: 0 20px;\n  text-align: right; }\n\n#floorplanner-controls {\n  position: absolute;\n  left: 0;\n  top: 0;\n  margin: 20px 0;\n  padding: 0 20px;\n  width: 100%; }\n\n#draw-walls-hint {\n  position: absolute;\n  left: 20px;\n  bottom: 20px;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #ffffff;\n  padding: 5px 10px;\n  z-index: 10;\n  display: none; }\n\n.add-item {\n  cursor: pointer; }\n\n.btn-file {\n  display: inline-block;\n  cursor: pointer;\n  position: relative;\n  overflow: hidden; }\n\n.btn-file input[type=\"file\"] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  min-width: 100%;\n  min-height: 100%;\n  filter: alpha(opacity=0);\n  opacity: 0;\n  cursor: inherit;\n  display: block; }\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n/*!\n *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot?v=4.7.0") + ");\n  src: url(" + __webpack_require__("../fonts/fontawesome-webfont.eot") + "?#iefix&v=4.7.0) format(\"embedded-opentype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff2?v=4.7.0") + ") format(\"woff2\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.woff?v=4.7.0") + ") format(\"woff\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.ttf?v=4.7.0") + ") format(\"truetype\"), url(" + __webpack_require__("../fonts/fontawesome-webfont.svg?v=4.7.0") + "#fontawesomeregular) format(\"svg\");\n  font-weight: normal;\n  font-style: normal; }\n\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333em;\n  line-height: 0.75em;\n  vertical-align: -15%; }\n\n.fa-2x {\n  font-size: 2em; }\n\n.fa-3x {\n  font-size: 3em; }\n\n.fa-4x {\n  font-size: 4em; }\n\n.fa-5x {\n  font-size: 5em; }\n\n.fa-fw {\n  width: 1.28571em;\n  text-align: center; }\n\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14286em;\n  list-style-type: none; }\n  .fa-ul > li {\n    position: relative; }\n\n.fa-li {\n  position: absolute;\n  left: -2.14286em;\n  width: 2.14286em;\n  top: 0.14286em;\n  text-align: center; }\n  .fa-li.fa-lg {\n    left: -1.85714em; }\n\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em; }\n\n.fa-pull-left {\n  float: left; }\n\n.fa-pull-right {\n  float: right; }\n\n.fa.fa-pull-left {\n  margin-right: .3em; }\n\n.fa.fa-pull-right {\n  margin-left: .3em; }\n\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right; }\n\n.pull-left {\n  float: left; }\n\n.fa.pull-left {\n  margin-right: .3em; }\n\n.fa.pull-right {\n  margin-left: .3em; }\n\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear; }\n\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8); }\n\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg); } }\n\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg); }\n\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg); }\n\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg); }\n\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1); }\n\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1); }\n\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none; }\n\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle; }\n\n.fa-stack-1x, .fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center; }\n\n.fa-stack-1x {\n  line-height: inherit; }\n\n.fa-stack-2x {\n  font-size: 2em; }\n\n.fa-inverse {\n  color: #fff; }\n\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\"; }\n\n.fa-music:before {\n  content: \"\\F001\"; }\n\n.fa-search:before {\n  content: \"\\F002\"; }\n\n.fa-envelope-o:before {\n  content: \"\\F003\"; }\n\n.fa-heart:before {\n  content: \"\\F004\"; }\n\n.fa-star:before {\n  content: \"\\F005\"; }\n\n.fa-star-o:before {\n  content: \"\\F006\"; }\n\n.fa-user:before {\n  content: \"\\F007\"; }\n\n.fa-film:before {\n  content: \"\\F008\"; }\n\n.fa-th-large:before {\n  content: \"\\F009\"; }\n\n.fa-th:before {\n  content: \"\\F00A\"; }\n\n.fa-th-list:before {\n  content: \"\\F00B\"; }\n\n.fa-check:before {\n  content: \"\\F00C\"; }\n\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\"; }\n\n.fa-search-plus:before {\n  content: \"\\F00E\"; }\n\n.fa-search-minus:before {\n  content: \"\\F010\"; }\n\n.fa-power-off:before {\n  content: \"\\F011\"; }\n\n.fa-signal:before {\n  content: \"\\F012\"; }\n\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\"; }\n\n.fa-trash-o:before {\n  content: \"\\F014\"; }\n\n.fa-home:before {\n  content: \"\\F015\"; }\n\n.fa-file-o:before {\n  content: \"\\F016\"; }\n\n.fa-clock-o:before {\n  content: \"\\F017\"; }\n\n.fa-road:before {\n  content: \"\\F018\"; }\n\n.fa-download:before {\n  content: \"\\F019\"; }\n\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\"; }\n\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\"; }\n\n.fa-inbox:before {\n  content: \"\\F01C\"; }\n\n.fa-play-circle-o:before {\n  content: \"\\F01D\"; }\n\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\"; }\n\n.fa-refresh:before {\n  content: \"\\F021\"; }\n\n.fa-list-alt:before {\n  content: \"\\F022\"; }\n\n.fa-lock:before {\n  content: \"\\F023\"; }\n\n.fa-flag:before {\n  content: \"\\F024\"; }\n\n.fa-headphones:before {\n  content: \"\\F025\"; }\n\n.fa-volume-off:before {\n  content: \"\\F026\"; }\n\n.fa-volume-down:before {\n  content: \"\\F027\"; }\n\n.fa-volume-up:before {\n  content: \"\\F028\"; }\n\n.fa-qrcode:before {\n  content: \"\\F029\"; }\n\n.fa-barcode:before {\n  content: \"\\F02A\"; }\n\n.fa-tag:before {\n  content: \"\\F02B\"; }\n\n.fa-tags:before {\n  content: \"\\F02C\"; }\n\n.fa-book:before {\n  content: \"\\F02D\"; }\n\n.fa-bookmark:before {\n  content: \"\\F02E\"; }\n\n.fa-print:before {\n  content: \"\\F02F\"; }\n\n.fa-camera:before {\n  content: \"\\F030\"; }\n\n.fa-font:before {\n  content: \"\\F031\"; }\n\n.fa-bold:before {\n  content: \"\\F032\"; }\n\n.fa-italic:before {\n  content: \"\\F033\"; }\n\n.fa-text-height:before {\n  content: \"\\F034\"; }\n\n.fa-text-width:before {\n  content: \"\\F035\"; }\n\n.fa-align-left:before {\n  content: \"\\F036\"; }\n\n.fa-align-center:before {\n  content: \"\\F037\"; }\n\n.fa-align-right:before {\n  content: \"\\F038\"; }\n\n.fa-align-justify:before {\n  content: \"\\F039\"; }\n\n.fa-list:before {\n  content: \"\\F03A\"; }\n\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\"; }\n\n.fa-indent:before {\n  content: \"\\F03C\"; }\n\n.fa-video-camera:before {\n  content: \"\\F03D\"; }\n\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\"; }\n\n.fa-pencil:before {\n  content: \"\\F040\"; }\n\n.fa-map-marker:before {\n  content: \"\\F041\"; }\n\n.fa-adjust:before {\n  content: \"\\F042\"; }\n\n.fa-tint:before {\n  content: \"\\F043\"; }\n\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\"; }\n\n.fa-share-square-o:before {\n  content: \"\\F045\"; }\n\n.fa-check-square-o:before {\n  content: \"\\F046\"; }\n\n.fa-arrows:before {\n  content: \"\\F047\"; }\n\n.fa-step-backward:before {\n  content: \"\\F048\"; }\n\n.fa-fast-backward:before {\n  content: \"\\F049\"; }\n\n.fa-backward:before {\n  content: \"\\F04A\"; }\n\n.fa-play:before {\n  content: \"\\F04B\"; }\n\n.fa-pause:before {\n  content: \"\\F04C\"; }\n\n.fa-stop:before {\n  content: \"\\F04D\"; }\n\n.fa-forward:before {\n  content: \"\\F04E\"; }\n\n.fa-fast-forward:before {\n  content: \"\\F050\"; }\n\n.fa-step-forward:before {\n  content: \"\\F051\"; }\n\n.fa-eject:before {\n  content: \"\\F052\"; }\n\n.fa-chevron-left:before {\n  content: \"\\F053\"; }\n\n.fa-chevron-right:before {\n  content: \"\\F054\"; }\n\n.fa-plus-circle:before {\n  content: \"\\F055\"; }\n\n.fa-minus-circle:before {\n  content: \"\\F056\"; }\n\n.fa-times-circle:before {\n  content: \"\\F057\"; }\n\n.fa-check-circle:before {\n  content: \"\\F058\"; }\n\n.fa-question-circle:before {\n  content: \"\\F059\"; }\n\n.fa-info-circle:before {\n  content: \"\\F05A\"; }\n\n.fa-crosshairs:before {\n  content: \"\\F05B\"; }\n\n.fa-times-circle-o:before {\n  content: \"\\F05C\"; }\n\n.fa-check-circle-o:before {\n  content: \"\\F05D\"; }\n\n.fa-ban:before {\n  content: \"\\F05E\"; }\n\n.fa-arrow-left:before {\n  content: \"\\F060\"; }\n\n.fa-arrow-right:before {\n  content: \"\\F061\"; }\n\n.fa-arrow-up:before {\n  content: \"\\F062\"; }\n\n.fa-arrow-down:before {\n  content: \"\\F063\"; }\n\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\"; }\n\n.fa-expand:before {\n  content: \"\\F065\"; }\n\n.fa-compress:before {\n  content: \"\\F066\"; }\n\n.fa-plus:before {\n  content: \"\\F067\"; }\n\n.fa-minus:before {\n  content: \"\\F068\"; }\n\n.fa-asterisk:before {\n  content: \"\\F069\"; }\n\n.fa-exclamation-circle:before {\n  content: \"\\F06A\"; }\n\n.fa-gift:before {\n  content: \"\\F06B\"; }\n\n.fa-leaf:before {\n  content: \"\\F06C\"; }\n\n.fa-fire:before {\n  content: \"\\F06D\"; }\n\n.fa-eye:before {\n  content: \"\\F06E\"; }\n\n.fa-eye-slash:before {\n  content: \"\\F070\"; }\n\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\"; }\n\n.fa-plane:before {\n  content: \"\\F072\"; }\n\n.fa-calendar:before {\n  content: \"\\F073\"; }\n\n.fa-random:before {\n  content: \"\\F074\"; }\n\n.fa-comment:before {\n  content: \"\\F075\"; }\n\n.fa-magnet:before {\n  content: \"\\F076\"; }\n\n.fa-chevron-up:before {\n  content: \"\\F077\"; }\n\n.fa-chevron-down:before {\n  content: \"\\F078\"; }\n\n.fa-retweet:before {\n  content: \"\\F079\"; }\n\n.fa-shopping-cart:before {\n  content: \"\\F07A\"; }\n\n.fa-folder:before {\n  content: \"\\F07B\"; }\n\n.fa-folder-open:before {\n  content: \"\\F07C\"; }\n\n.fa-arrows-v:before {\n  content: \"\\F07D\"; }\n\n.fa-arrows-h:before {\n  content: \"\\F07E\"; }\n\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\"; }\n\n.fa-twitter-square:before {\n  content: \"\\F081\"; }\n\n.fa-facebook-square:before {\n  content: \"\\F082\"; }\n\n.fa-camera-retro:before {\n  content: \"\\F083\"; }\n\n.fa-key:before {\n  content: \"\\F084\"; }\n\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\"; }\n\n.fa-comments:before {\n  content: \"\\F086\"; }\n\n.fa-thumbs-o-up:before {\n  content: \"\\F087\"; }\n\n.fa-thumbs-o-down:before {\n  content: \"\\F088\"; }\n\n.fa-star-half:before {\n  content: \"\\F089\"; }\n\n.fa-heart-o:before {\n  content: \"\\F08A\"; }\n\n.fa-sign-out:before {\n  content: \"\\F08B\"; }\n\n.fa-linkedin-square:before {\n  content: \"\\F08C\"; }\n\n.fa-thumb-tack:before {\n  content: \"\\F08D\"; }\n\n.fa-external-link:before {\n  content: \"\\F08E\"; }\n\n.fa-sign-in:before {\n  content: \"\\F090\"; }\n\n.fa-trophy:before {\n  content: \"\\F091\"; }\n\n.fa-github-square:before {\n  content: \"\\F092\"; }\n\n.fa-upload:before {\n  content: \"\\F093\"; }\n\n.fa-lemon-o:before {\n  content: \"\\F094\"; }\n\n.fa-phone:before {\n  content: \"\\F095\"; }\n\n.fa-square-o:before {\n  content: \"\\F096\"; }\n\n.fa-bookmark-o:before {\n  content: \"\\F097\"; }\n\n.fa-phone-square:before {\n  content: \"\\F098\"; }\n\n.fa-twitter:before {\n  content: \"\\F099\"; }\n\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\"; }\n\n.fa-github:before {\n  content: \"\\F09B\"; }\n\n.fa-unlock:before {\n  content: \"\\F09C\"; }\n\n.fa-credit-card:before {\n  content: \"\\F09D\"; }\n\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\"; }\n\n.fa-hdd-o:before {\n  content: \"\\F0A0\"; }\n\n.fa-bullhorn:before {\n  content: \"\\F0A1\"; }\n\n.fa-bell:before {\n  content: \"\\F0F3\"; }\n\n.fa-certificate:before {\n  content: \"\\F0A3\"; }\n\n.fa-hand-o-right:before {\n  content: \"\\F0A4\"; }\n\n.fa-hand-o-left:before {\n  content: \"\\F0A5\"; }\n\n.fa-hand-o-up:before {\n  content: \"\\F0A6\"; }\n\n.fa-hand-o-down:before {\n  content: \"\\F0A7\"; }\n\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\"; }\n\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\"; }\n\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\"; }\n\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\"; }\n\n.fa-globe:before {\n  content: \"\\F0AC\"; }\n\n.fa-wrench:before {\n  content: \"\\F0AD\"; }\n\n.fa-tasks:before {\n  content: \"\\F0AE\"; }\n\n.fa-filter:before {\n  content: \"\\F0B0\"; }\n\n.fa-briefcase:before {\n  content: \"\\F0B1\"; }\n\n.fa-arrows-alt:before {\n  content: \"\\F0B2\"; }\n\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\"; }\n\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\"; }\n\n.fa-cloud:before {\n  content: \"\\F0C2\"; }\n\n.fa-flask:before {\n  content: \"\\F0C3\"; }\n\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\"; }\n\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\"; }\n\n.fa-paperclip:before {\n  content: \"\\F0C6\"; }\n\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\"; }\n\n.fa-square:before {\n  content: \"\\F0C8\"; }\n\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\"; }\n\n.fa-list-ul:before {\n  content: \"\\F0CA\"; }\n\n.fa-list-ol:before {\n  content: \"\\F0CB\"; }\n\n.fa-strikethrough:before {\n  content: \"\\F0CC\"; }\n\n.fa-underline:before {\n  content: \"\\F0CD\"; }\n\n.fa-table:before {\n  content: \"\\F0CE\"; }\n\n.fa-magic:before {\n  content: \"\\F0D0\"; }\n\n.fa-truck:before {\n  content: \"\\F0D1\"; }\n\n.fa-pinterest:before {\n  content: \"\\F0D2\"; }\n\n.fa-pinterest-square:before {\n  content: \"\\F0D3\"; }\n\n.fa-google-plus-square:before {\n  content: \"\\F0D4\"; }\n\n.fa-google-plus:before {\n  content: \"\\F0D5\"; }\n\n.fa-money:before {\n  content: \"\\F0D6\"; }\n\n.fa-caret-down:before {\n  content: \"\\F0D7\"; }\n\n.fa-caret-up:before {\n  content: \"\\F0D8\"; }\n\n.fa-caret-left:before {\n  content: \"\\F0D9\"; }\n\n.fa-caret-right:before {\n  content: \"\\F0DA\"; }\n\n.fa-columns:before {\n  content: \"\\F0DB\"; }\n\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\"; }\n\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\"; }\n\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\"; }\n\n.fa-envelope:before {\n  content: \"\\F0E0\"; }\n\n.fa-linkedin:before {\n  content: \"\\F0E1\"; }\n\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\"; }\n\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\"; }\n\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\"; }\n\n.fa-comment-o:before {\n  content: \"\\F0E5\"; }\n\n.fa-comments-o:before {\n  content: \"\\F0E6\"; }\n\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\"; }\n\n.fa-sitemap:before {\n  content: \"\\F0E8\"; }\n\n.fa-umbrella:before {\n  content: \"\\F0E9\"; }\n\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\"; }\n\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\"; }\n\n.fa-exchange:before {\n  content: \"\\F0EC\"; }\n\n.fa-cloud-download:before {\n  content: \"\\F0ED\"; }\n\n.fa-cloud-upload:before {\n  content: \"\\F0EE\"; }\n\n.fa-user-md:before {\n  content: \"\\F0F0\"; }\n\n.fa-stethoscope:before {\n  content: \"\\F0F1\"; }\n\n.fa-suitcase:before {\n  content: \"\\F0F2\"; }\n\n.fa-bell-o:before {\n  content: \"\\F0A2\"; }\n\n.fa-coffee:before {\n  content: \"\\F0F4\"; }\n\n.fa-cutlery:before {\n  content: \"\\F0F5\"; }\n\n.fa-file-text-o:before {\n  content: \"\\F0F6\"; }\n\n.fa-building-o:before {\n  content: \"\\F0F7\"; }\n\n.fa-hospital-o:before {\n  content: \"\\F0F8\"; }\n\n.fa-ambulance:before {\n  content: \"\\F0F9\"; }\n\n.fa-medkit:before {\n  content: \"\\F0FA\"; }\n\n.fa-fighter-jet:before {\n  content: \"\\F0FB\"; }\n\n.fa-beer:before {\n  content: \"\\F0FC\"; }\n\n.fa-h-square:before {\n  content: \"\\F0FD\"; }\n\n.fa-plus-square:before {\n  content: \"\\F0FE\"; }\n\n.fa-angle-double-left:before {\n  content: \"\\F100\"; }\n\n.fa-angle-double-right:before {\n  content: \"\\F101\"; }\n\n.fa-angle-double-up:before {\n  content: \"\\F102\"; }\n\n.fa-angle-double-down:before {\n  content: \"\\F103\"; }\n\n.fa-angle-left:before {\n  content: \"\\F104\"; }\n\n.fa-angle-right:before {\n  content: \"\\F105\"; }\n\n.fa-angle-up:before {\n  content: \"\\F106\"; }\n\n.fa-angle-down:before {\n  content: \"\\F107\"; }\n\n.fa-desktop:before {\n  content: \"\\F108\"; }\n\n.fa-laptop:before {\n  content: \"\\F109\"; }\n\n.fa-tablet:before {\n  content: \"\\F10A\"; }\n\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\"; }\n\n.fa-circle-o:before {\n  content: \"\\F10C\"; }\n\n.fa-quote-left:before {\n  content: \"\\F10D\"; }\n\n.fa-quote-right:before {\n  content: \"\\F10E\"; }\n\n.fa-spinner:before {\n  content: \"\\F110\"; }\n\n.fa-circle:before {\n  content: \"\\F111\"; }\n\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\"; }\n\n.fa-github-alt:before {\n  content: \"\\F113\"; }\n\n.fa-folder-o:before {\n  content: \"\\F114\"; }\n\n.fa-folder-open-o:before {\n  content: \"\\F115\"; }\n\n.fa-smile-o:before {\n  content: \"\\F118\"; }\n\n.fa-frown-o:before {\n  content: \"\\F119\"; }\n\n.fa-meh-o:before {\n  content: \"\\F11A\"; }\n\n.fa-gamepad:before {\n  content: \"\\F11B\"; }\n\n.fa-keyboard-o:before {\n  content: \"\\F11C\"; }\n\n.fa-flag-o:before {\n  content: \"\\F11D\"; }\n\n.fa-flag-checkered:before {\n  content: \"\\F11E\"; }\n\n.fa-terminal:before {\n  content: \"\\F120\"; }\n\n.fa-code:before {\n  content: \"\\F121\"; }\n\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\"; }\n\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\"; }\n\n.fa-location-arrow:before {\n  content: \"\\F124\"; }\n\n.fa-crop:before {\n  content: \"\\F125\"; }\n\n.fa-code-fork:before {\n  content: \"\\F126\"; }\n\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\"; }\n\n.fa-question:before {\n  content: \"\\F128\"; }\n\n.fa-info:before {\n  content: \"\\F129\"; }\n\n.fa-exclamation:before {\n  content: \"\\F12A\"; }\n\n.fa-superscript:before {\n  content: \"\\F12B\"; }\n\n.fa-subscript:before {\n  content: \"\\F12C\"; }\n\n.fa-eraser:before {\n  content: \"\\F12D\"; }\n\n.fa-puzzle-piece:before {\n  content: \"\\F12E\"; }\n\n.fa-microphone:before {\n  content: \"\\F130\"; }\n\n.fa-microphone-slash:before {\n  content: \"\\F131\"; }\n\n.fa-shield:before {\n  content: \"\\F132\"; }\n\n.fa-calendar-o:before {\n  content: \"\\F133\"; }\n\n.fa-fire-extinguisher:before {\n  content: \"\\F134\"; }\n\n.fa-rocket:before {\n  content: \"\\F135\"; }\n\n.fa-maxcdn:before {\n  content: \"\\F136\"; }\n\n.fa-chevron-circle-left:before {\n  content: \"\\F137\"; }\n\n.fa-chevron-circle-right:before {\n  content: \"\\F138\"; }\n\n.fa-chevron-circle-up:before {\n  content: \"\\F139\"; }\n\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\"; }\n\n.fa-html5:before {\n  content: \"\\F13B\"; }\n\n.fa-css3:before {\n  content: \"\\F13C\"; }\n\n.fa-anchor:before {\n  content: \"\\F13D\"; }\n\n.fa-unlock-alt:before {\n  content: \"\\F13E\"; }\n\n.fa-bullseye:before {\n  content: \"\\F140\"; }\n\n.fa-ellipsis-h:before {\n  content: \"\\F141\"; }\n\n.fa-ellipsis-v:before {\n  content: \"\\F142\"; }\n\n.fa-rss-square:before {\n  content: \"\\F143\"; }\n\n.fa-play-circle:before {\n  content: \"\\F144\"; }\n\n.fa-ticket:before {\n  content: \"\\F145\"; }\n\n.fa-minus-square:before {\n  content: \"\\F146\"; }\n\n.fa-minus-square-o:before {\n  content: \"\\F147\"; }\n\n.fa-level-up:before {\n  content: \"\\F148\"; }\n\n.fa-level-down:before {\n  content: \"\\F149\"; }\n\n.fa-check-square:before {\n  content: \"\\F14A\"; }\n\n.fa-pencil-square:before {\n  content: \"\\F14B\"; }\n\n.fa-external-link-square:before {\n  content: \"\\F14C\"; }\n\n.fa-share-square:before {\n  content: \"\\F14D\"; }\n\n.fa-compass:before {\n  content: \"\\F14E\"; }\n\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\"; }\n\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\"; }\n\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\"; }\n\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\"; }\n\n.fa-gbp:before {\n  content: \"\\F154\"; }\n\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\"; }\n\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\"; }\n\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\"; }\n\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\"; }\n\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\"; }\n\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\"; }\n\n.fa-file:before {\n  content: \"\\F15B\"; }\n\n.fa-file-text:before {\n  content: \"\\F15C\"; }\n\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\"; }\n\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\"; }\n\n.fa-sort-amount-asc:before {\n  content: \"\\F160\"; }\n\n.fa-sort-amount-desc:before {\n  content: \"\\F161\"; }\n\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\"; }\n\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\"; }\n\n.fa-thumbs-up:before {\n  content: \"\\F164\"; }\n\n.fa-thumbs-down:before {\n  content: \"\\F165\"; }\n\n.fa-youtube-square:before {\n  content: \"\\F166\"; }\n\n.fa-youtube:before {\n  content: \"\\F167\"; }\n\n.fa-xing:before {\n  content: \"\\F168\"; }\n\n.fa-xing-square:before {\n  content: \"\\F169\"; }\n\n.fa-youtube-play:before {\n  content: \"\\F16A\"; }\n\n.fa-dropbox:before {\n  content: \"\\F16B\"; }\n\n.fa-stack-overflow:before {\n  content: \"\\F16C\"; }\n\n.fa-instagram:before {\n  content: \"\\F16D\"; }\n\n.fa-flickr:before {\n  content: \"\\F16E\"; }\n\n.fa-adn:before {\n  content: \"\\F170\"; }\n\n.fa-bitbucket:before {\n  content: \"\\F171\"; }\n\n.fa-bitbucket-square:before {\n  content: \"\\F172\"; }\n\n.fa-tumblr:before {\n  content: \"\\F173\"; }\n\n.fa-tumblr-square:before {\n  content: \"\\F174\"; }\n\n.fa-long-arrow-down:before {\n  content: \"\\F175\"; }\n\n.fa-long-arrow-up:before {\n  content: \"\\F176\"; }\n\n.fa-long-arrow-left:before {\n  content: \"\\F177\"; }\n\n.fa-long-arrow-right:before {\n  content: \"\\F178\"; }\n\n.fa-apple:before {\n  content: \"\\F179\"; }\n\n.fa-windows:before {\n  content: \"\\F17A\"; }\n\n.fa-android:before {\n  content: \"\\F17B\"; }\n\n.fa-linux:before {\n  content: \"\\F17C\"; }\n\n.fa-dribbble:before {\n  content: \"\\F17D\"; }\n\n.fa-skype:before {\n  content: \"\\F17E\"; }\n\n.fa-foursquare:before {\n  content: \"\\F180\"; }\n\n.fa-trello:before {\n  content: \"\\F181\"; }\n\n.fa-female:before {\n  content: \"\\F182\"; }\n\n.fa-male:before {\n  content: \"\\F183\"; }\n\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\"; }\n\n.fa-sun-o:before {\n  content: \"\\F185\"; }\n\n.fa-moon-o:before {\n  content: \"\\F186\"; }\n\n.fa-archive:before {\n  content: \"\\F187\"; }\n\n.fa-bug:before {\n  content: \"\\F188\"; }\n\n.fa-vk:before {\n  content: \"\\F189\"; }\n\n.fa-weibo:before {\n  content: \"\\F18A\"; }\n\n.fa-renren:before {\n  content: \"\\F18B\"; }\n\n.fa-pagelines:before {\n  content: \"\\F18C\"; }\n\n.fa-stack-exchange:before {\n  content: \"\\F18D\"; }\n\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\"; }\n\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\"; }\n\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\"; }\n\n.fa-dot-circle-o:before {\n  content: \"\\F192\"; }\n\n.fa-wheelchair:before {\n  content: \"\\F193\"; }\n\n.fa-vimeo-square:before {\n  content: \"\\F194\"; }\n\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\"; }\n\n.fa-plus-square-o:before {\n  content: \"\\F196\"; }\n\n.fa-space-shuttle:before {\n  content: \"\\F197\"; }\n\n.fa-slack:before {\n  content: \"\\F198\"; }\n\n.fa-envelope-square:before {\n  content: \"\\F199\"; }\n\n.fa-wordpress:before {\n  content: \"\\F19A\"; }\n\n.fa-openid:before {\n  content: \"\\F19B\"; }\n\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\"; }\n\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\"; }\n\n.fa-yahoo:before {\n  content: \"\\F19E\"; }\n\n.fa-google:before {\n  content: \"\\F1A0\"; }\n\n.fa-reddit:before {\n  content: \"\\F1A1\"; }\n\n.fa-reddit-square:before {\n  content: \"\\F1A2\"; }\n\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\"; }\n\n.fa-stumbleupon:before {\n  content: \"\\F1A4\"; }\n\n.fa-delicious:before {\n  content: \"\\F1A5\"; }\n\n.fa-digg:before {\n  content: \"\\F1A6\"; }\n\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\"; }\n\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\"; }\n\n.fa-drupal:before {\n  content: \"\\F1A9\"; }\n\n.fa-joomla:before {\n  content: \"\\F1AA\"; }\n\n.fa-language:before {\n  content: \"\\F1AB\"; }\n\n.fa-fax:before {\n  content: \"\\F1AC\"; }\n\n.fa-building:before {\n  content: \"\\F1AD\"; }\n\n.fa-child:before {\n  content: \"\\F1AE\"; }\n\n.fa-paw:before {\n  content: \"\\F1B0\"; }\n\n.fa-spoon:before {\n  content: \"\\F1B1\"; }\n\n.fa-cube:before {\n  content: \"\\F1B2\"; }\n\n.fa-cubes:before {\n  content: \"\\F1B3\"; }\n\n.fa-behance:before {\n  content: \"\\F1B4\"; }\n\n.fa-behance-square:before {\n  content: \"\\F1B5\"; }\n\n.fa-steam:before {\n  content: \"\\F1B6\"; }\n\n.fa-steam-square:before {\n  content: \"\\F1B7\"; }\n\n.fa-recycle:before {\n  content: \"\\F1B8\"; }\n\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\"; }\n\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\"; }\n\n.fa-tree:before {\n  content: \"\\F1BB\"; }\n\n.fa-spotify:before {\n  content: \"\\F1BC\"; }\n\n.fa-deviantart:before {\n  content: \"\\F1BD\"; }\n\n.fa-soundcloud:before {\n  content: \"\\F1BE\"; }\n\n.fa-database:before {\n  content: \"\\F1C0\"; }\n\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\"; }\n\n.fa-file-word-o:before {\n  content: \"\\F1C2\"; }\n\n.fa-file-excel-o:before {\n  content: \"\\F1C3\"; }\n\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\"; }\n\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\"; }\n\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\"; }\n\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\"; }\n\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\"; }\n\n.fa-file-code-o:before {\n  content: \"\\F1C9\"; }\n\n.fa-vine:before {\n  content: \"\\F1CA\"; }\n\n.fa-codepen:before {\n  content: \"\\F1CB\"; }\n\n.fa-jsfiddle:before {\n  content: \"\\F1CC\"; }\n\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\"; }\n\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\"; }\n\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\"; }\n\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\"; }\n\n.fa-git-square:before {\n  content: \"\\F1D2\"; }\n\n.fa-git:before {\n  content: \"\\F1D3\"; }\n\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\"; }\n\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\"; }\n\n.fa-qq:before {\n  content: \"\\F1D6\"; }\n\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\"; }\n\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\"; }\n\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\"; }\n\n.fa-history:before {\n  content: \"\\F1DA\"; }\n\n.fa-circle-thin:before {\n  content: \"\\F1DB\"; }\n\n.fa-header:before {\n  content: \"\\F1DC\"; }\n\n.fa-paragraph:before {\n  content: \"\\F1DD\"; }\n\n.fa-sliders:before {\n  content: \"\\F1DE\"; }\n\n.fa-share-alt:before {\n  content: \"\\F1E0\"; }\n\n.fa-share-alt-square:before {\n  content: \"\\F1E1\"; }\n\n.fa-bomb:before {\n  content: \"\\F1E2\"; }\n\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\"; }\n\n.fa-tty:before {\n  content: \"\\F1E4\"; }\n\n.fa-binoculars:before {\n  content: \"\\F1E5\"; }\n\n.fa-plug:before {\n  content: \"\\F1E6\"; }\n\n.fa-slideshare:before {\n  content: \"\\F1E7\"; }\n\n.fa-twitch:before {\n  content: \"\\F1E8\"; }\n\n.fa-yelp:before {\n  content: \"\\F1E9\"; }\n\n.fa-newspaper-o:before {\n  content: \"\\F1EA\"; }\n\n.fa-wifi:before {\n  content: \"\\F1EB\"; }\n\n.fa-calculator:before {\n  content: \"\\F1EC\"; }\n\n.fa-paypal:before {\n  content: \"\\F1ED\"; }\n\n.fa-google-wallet:before {\n  content: \"\\F1EE\"; }\n\n.fa-cc-visa:before {\n  content: \"\\F1F0\"; }\n\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\"; }\n\n.fa-cc-discover:before {\n  content: \"\\F1F2\"; }\n\n.fa-cc-amex:before {\n  content: \"\\F1F3\"; }\n\n.fa-cc-paypal:before {\n  content: \"\\F1F4\"; }\n\n.fa-cc-stripe:before {\n  content: \"\\F1F5\"; }\n\n.fa-bell-slash:before {\n  content: \"\\F1F6\"; }\n\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\"; }\n\n.fa-trash:before {\n  content: \"\\F1F8\"; }\n\n.fa-copyright:before {\n  content: \"\\F1F9\"; }\n\n.fa-at:before {\n  content: \"\\F1FA\"; }\n\n.fa-eyedropper:before {\n  content: \"\\F1FB\"; }\n\n.fa-paint-brush:before {\n  content: \"\\F1FC\"; }\n\n.fa-birthday-cake:before {\n  content: \"\\F1FD\"; }\n\n.fa-area-chart:before {\n  content: \"\\F1FE\"; }\n\n.fa-pie-chart:before {\n  content: \"\\F200\"; }\n\n.fa-line-chart:before {\n  content: \"\\F201\"; }\n\n.fa-lastfm:before {\n  content: \"\\F202\"; }\n\n.fa-lastfm-square:before {\n  content: \"\\F203\"; }\n\n.fa-toggle-off:before {\n  content: \"\\F204\"; }\n\n.fa-toggle-on:before {\n  content: \"\\F205\"; }\n\n.fa-bicycle:before {\n  content: \"\\F206\"; }\n\n.fa-bus:before {\n  content: \"\\F207\"; }\n\n.fa-ioxhost:before {\n  content: \"\\F208\"; }\n\n.fa-angellist:before {\n  content: \"\\F209\"; }\n\n.fa-cc:before {\n  content: \"\\F20A\"; }\n\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\"; }\n\n.fa-meanpath:before {\n  content: \"\\F20C\"; }\n\n.fa-buysellads:before {\n  content: \"\\F20D\"; }\n\n.fa-connectdevelop:before {\n  content: \"\\F20E\"; }\n\n.fa-dashcube:before {\n  content: \"\\F210\"; }\n\n.fa-forumbee:before {\n  content: \"\\F211\"; }\n\n.fa-leanpub:before {\n  content: \"\\F212\"; }\n\n.fa-sellsy:before {\n  content: \"\\F213\"; }\n\n.fa-shirtsinbulk:before {\n  content: \"\\F214\"; }\n\n.fa-simplybuilt:before {\n  content: \"\\F215\"; }\n\n.fa-skyatlas:before {\n  content: \"\\F216\"; }\n\n.fa-cart-plus:before {\n  content: \"\\F217\"; }\n\n.fa-cart-arrow-down:before {\n  content: \"\\F218\"; }\n\n.fa-diamond:before {\n  content: \"\\F219\"; }\n\n.fa-ship:before {\n  content: \"\\F21A\"; }\n\n.fa-user-secret:before {\n  content: \"\\F21B\"; }\n\n.fa-motorcycle:before {\n  content: \"\\F21C\"; }\n\n.fa-street-view:before {\n  content: \"\\F21D\"; }\n\n.fa-heartbeat:before {\n  content: \"\\F21E\"; }\n\n.fa-venus:before {\n  content: \"\\F221\"; }\n\n.fa-mars:before {\n  content: \"\\F222\"; }\n\n.fa-mercury:before {\n  content: \"\\F223\"; }\n\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\"; }\n\n.fa-transgender-alt:before {\n  content: \"\\F225\"; }\n\n.fa-venus-double:before {\n  content: \"\\F226\"; }\n\n.fa-mars-double:before {\n  content: \"\\F227\"; }\n\n.fa-venus-mars:before {\n  content: \"\\F228\"; }\n\n.fa-mars-stroke:before {\n  content: \"\\F229\"; }\n\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\"; }\n\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\"; }\n\n.fa-neuter:before {\n  content: \"\\F22C\"; }\n\n.fa-genderless:before {\n  content: \"\\F22D\"; }\n\n.fa-facebook-official:before {\n  content: \"\\F230\"; }\n\n.fa-pinterest-p:before {\n  content: \"\\F231\"; }\n\n.fa-whatsapp:before {\n  content: \"\\F232\"; }\n\n.fa-server:before {\n  content: \"\\F233\"; }\n\n.fa-user-plus:before {\n  content: \"\\F234\"; }\n\n.fa-user-times:before {\n  content: \"\\F235\"; }\n\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\"; }\n\n.fa-viacoin:before {\n  content: \"\\F237\"; }\n\n.fa-train:before {\n  content: \"\\F238\"; }\n\n.fa-subway:before {\n  content: \"\\F239\"; }\n\n.fa-medium:before {\n  content: \"\\F23A\"; }\n\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\"; }\n\n.fa-optin-monster:before {\n  content: \"\\F23C\"; }\n\n.fa-opencart:before {\n  content: \"\\F23D\"; }\n\n.fa-expeditedssl:before {\n  content: \"\\F23E\"; }\n\n.fa-battery-4:before,\n.fa-battery:before,\n.fa-battery-full:before {\n  content: \"\\F240\"; }\n\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\"; }\n\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\"; }\n\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\"; }\n\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\"; }\n\n.fa-mouse-pointer:before {\n  content: \"\\F245\"; }\n\n.fa-i-cursor:before {\n  content: \"\\F246\"; }\n\n.fa-object-group:before {\n  content: \"\\F247\"; }\n\n.fa-object-ungroup:before {\n  content: \"\\F248\"; }\n\n.fa-sticky-note:before {\n  content: \"\\F249\"; }\n\n.fa-sticky-note-o:before {\n  content: \"\\F24A\"; }\n\n.fa-cc-jcb:before {\n  content: \"\\F24B\"; }\n\n.fa-cc-diners-club:before {\n  content: \"\\F24C\"; }\n\n.fa-clone:before {\n  content: \"\\F24D\"; }\n\n.fa-balance-scale:before {\n  content: \"\\F24E\"; }\n\n.fa-hourglass-o:before {\n  content: \"\\F250\"; }\n\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\"; }\n\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\"; }\n\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\"; }\n\n.fa-hourglass:before {\n  content: \"\\F254\"; }\n\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\"; }\n\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\"; }\n\n.fa-hand-scissors-o:before {\n  content: \"\\F257\"; }\n\n.fa-hand-lizard-o:before {\n  content: \"\\F258\"; }\n\n.fa-hand-spock-o:before {\n  content: \"\\F259\"; }\n\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\"; }\n\n.fa-hand-peace-o:before {\n  content: \"\\F25B\"; }\n\n.fa-trademark:before {\n  content: \"\\F25C\"; }\n\n.fa-registered:before {\n  content: \"\\F25D\"; }\n\n.fa-creative-commons:before {\n  content: \"\\F25E\"; }\n\n.fa-gg:before {\n  content: \"\\F260\"; }\n\n.fa-gg-circle:before {\n  content: \"\\F261\"; }\n\n.fa-tripadvisor:before {\n  content: \"\\F262\"; }\n\n.fa-odnoklassniki:before {\n  content: \"\\F263\"; }\n\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\"; }\n\n.fa-get-pocket:before {\n  content: \"\\F265\"; }\n\n.fa-wikipedia-w:before {\n  content: \"\\F266\"; }\n\n.fa-safari:before {\n  content: \"\\F267\"; }\n\n.fa-chrome:before {\n  content: \"\\F268\"; }\n\n.fa-firefox:before {\n  content: \"\\F269\"; }\n\n.fa-opera:before {\n  content: \"\\F26A\"; }\n\n.fa-internet-explorer:before {\n  content: \"\\F26B\"; }\n\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\"; }\n\n.fa-contao:before {\n  content: \"\\F26D\"; }\n\n.fa-500px:before {\n  content: \"\\F26E\"; }\n\n.fa-amazon:before {\n  content: \"\\F270\"; }\n\n.fa-calendar-plus-o:before {\n  content: \"\\F271\"; }\n\n.fa-calendar-minus-o:before {\n  content: \"\\F272\"; }\n\n.fa-calendar-times-o:before {\n  content: \"\\F273\"; }\n\n.fa-calendar-check-o:before {\n  content: \"\\F274\"; }\n\n.fa-industry:before {\n  content: \"\\F275\"; }\n\n.fa-map-pin:before {\n  content: \"\\F276\"; }\n\n.fa-map-signs:before {\n  content: \"\\F277\"; }\n\n.fa-map-o:before {\n  content: \"\\F278\"; }\n\n.fa-map:before {\n  content: \"\\F279\"; }\n\n.fa-commenting:before {\n  content: \"\\F27A\"; }\n\n.fa-commenting-o:before {\n  content: \"\\F27B\"; }\n\n.fa-houzz:before {\n  content: \"\\F27C\"; }\n\n.fa-vimeo:before {\n  content: \"\\F27D\"; }\n\n.fa-black-tie:before {\n  content: \"\\F27E\"; }\n\n.fa-fonticons:before {\n  content: \"\\F280\"; }\n\n.fa-reddit-alien:before {\n  content: \"\\F281\"; }\n\n.fa-edge:before {\n  content: \"\\F282\"; }\n\n.fa-credit-card-alt:before {\n  content: \"\\F283\"; }\n\n.fa-codiepie:before {\n  content: \"\\F284\"; }\n\n.fa-modx:before {\n  content: \"\\F285\"; }\n\n.fa-fort-awesome:before {\n  content: \"\\F286\"; }\n\n.fa-usb:before {\n  content: \"\\F287\"; }\n\n.fa-product-hunt:before {\n  content: \"\\F288\"; }\n\n.fa-mixcloud:before {\n  content: \"\\F289\"; }\n\n.fa-scribd:before {\n  content: \"\\F28A\"; }\n\n.fa-pause-circle:before {\n  content: \"\\F28B\"; }\n\n.fa-pause-circle-o:before {\n  content: \"\\F28C\"; }\n\n.fa-stop-circle:before {\n  content: \"\\F28D\"; }\n\n.fa-stop-circle-o:before {\n  content: \"\\F28E\"; }\n\n.fa-shopping-bag:before {\n  content: \"\\F290\"; }\n\n.fa-shopping-basket:before {\n  content: \"\\F291\"; }\n\n.fa-hashtag:before {\n  content: \"\\F292\"; }\n\n.fa-bluetooth:before {\n  content: \"\\F293\"; }\n\n.fa-bluetooth-b:before {\n  content: \"\\F294\"; }\n\n.fa-percent:before {\n  content: \"\\F295\"; }\n\n.fa-gitlab:before {\n  content: \"\\F296\"; }\n\n.fa-wpbeginner:before {\n  content: \"\\F297\"; }\n\n.fa-wpforms:before {\n  content: \"\\F298\"; }\n\n.fa-envira:before {\n  content: \"\\F299\"; }\n\n.fa-universal-access:before {\n  content: \"\\F29A\"; }\n\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\"; }\n\n.fa-question-circle-o:before {\n  content: \"\\F29C\"; }\n\n.fa-blind:before {\n  content: \"\\F29D\"; }\n\n.fa-audio-description:before {\n  content: \"\\F29E\"; }\n\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\"; }\n\n.fa-braille:before {\n  content: \"\\F2A1\"; }\n\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\"; }\n\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\"; }\n\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\"; }\n\n.fa-glide:before {\n  content: \"\\F2A5\"; }\n\n.fa-glide-g:before {\n  content: \"\\F2A6\"; }\n\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\"; }\n\n.fa-low-vision:before {\n  content: \"\\F2A8\"; }\n\n.fa-viadeo:before {\n  content: \"\\F2A9\"; }\n\n.fa-viadeo-square:before {\n  content: \"\\F2AA\"; }\n\n.fa-snapchat:before {\n  content: \"\\F2AB\"; }\n\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\"; }\n\n.fa-snapchat-square:before {\n  content: \"\\F2AD\"; }\n\n.fa-pied-piper:before {\n  content: \"\\F2AE\"; }\n\n.fa-first-order:before {\n  content: \"\\F2B0\"; }\n\n.fa-yoast:before {\n  content: \"\\F2B1\"; }\n\n.fa-themeisle:before {\n  content: \"\\F2B2\"; }\n\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\"; }\n\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\"; }\n\n.fa-handshake-o:before {\n  content: \"\\F2B5\"; }\n\n.fa-envelope-open:before {\n  content: \"\\F2B6\"; }\n\n.fa-envelope-open-o:before {\n  content: \"\\F2B7\"; }\n\n.fa-linode:before {\n  content: \"\\F2B8\"; }\n\n.fa-address-book:before {\n  content: \"\\F2B9\"; }\n\n.fa-address-book-o:before {\n  content: \"\\F2BA\"; }\n\n.fa-vcard:before,\n.fa-address-card:before {\n  content: \"\\F2BB\"; }\n\n.fa-vcard-o:before,\n.fa-address-card-o:before {\n  content: \"\\F2BC\"; }\n\n.fa-user-circle:before {\n  content: \"\\F2BD\"; }\n\n.fa-user-circle-o:before {\n  content: \"\\F2BE\"; }\n\n.fa-user-o:before {\n  content: \"\\F2C0\"; }\n\n.fa-id-badge:before {\n  content: \"\\F2C1\"; }\n\n.fa-drivers-license:before,\n.fa-id-card:before {\n  content: \"\\F2C2\"; }\n\n.fa-drivers-license-o:before,\n.fa-id-card-o:before {\n  content: \"\\F2C3\"; }\n\n.fa-quora:before {\n  content: \"\\F2C4\"; }\n\n.fa-free-code-camp:before {\n  content: \"\\F2C5\"; }\n\n.fa-telegram:before {\n  content: \"\\F2C6\"; }\n\n.fa-thermometer-4:before,\n.fa-thermometer:before,\n.fa-thermometer-full:before {\n  content: \"\\F2C7\"; }\n\n.fa-thermometer-3:before,\n.fa-thermometer-three-quarters:before {\n  content: \"\\F2C8\"; }\n\n.fa-thermometer-2:before,\n.fa-thermometer-half:before {\n  content: \"\\F2C9\"; }\n\n.fa-thermometer-1:before,\n.fa-thermometer-quarter:before {\n  content: \"\\F2CA\"; }\n\n.fa-thermometer-0:before,\n.fa-thermometer-empty:before {\n  content: \"\\F2CB\"; }\n\n.fa-shower:before {\n  content: \"\\F2CC\"; }\n\n.fa-bathtub:before,\n.fa-s15:before,\n.fa-bath:before {\n  content: \"\\F2CD\"; }\n\n.fa-podcast:before {\n  content: \"\\F2CE\"; }\n\n.fa-window-maximize:before {\n  content: \"\\F2D0\"; }\n\n.fa-window-minimize:before {\n  content: \"\\F2D1\"; }\n\n.fa-window-restore:before {\n  content: \"\\F2D2\"; }\n\n.fa-times-rectangle:before,\n.fa-window-close:before {\n  content: \"\\F2D3\"; }\n\n.fa-times-rectangle-o:before,\n.fa-window-close-o:before {\n  content: \"\\F2D4\"; }\n\n.fa-bandcamp:before {\n  content: \"\\F2D5\"; }\n\n.fa-grav:before {\n  content: \"\\F2D6\"; }\n\n.fa-etsy:before {\n  content: \"\\F2D7\"; }\n\n.fa-imdb:before {\n  content: \"\\F2D8\"; }\n\n.fa-ravelry:before {\n  content: \"\\F2D9\"; }\n\n.fa-eercast:before {\n  content: \"\\F2DA\"; }\n\n.fa-microchip:before {\n  content: \"\\F2DB\"; }\n\n.fa-snowflake-o:before {\n  content: \"\\F2DC\"; }\n\n.fa-superpowers:before {\n  content: \"\\F2DD\"; }\n\n.fa-wpexplorer:before {\n  content: \"\\F2DE\"; }\n\n.fa-meetup:before {\n  content: \"\\F2E0\"; }\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0; }\n\n.sr-only-focusable:active, .sr-only-focusable:focus {\n  position: static;\n  width: auto;\n  height: auto;\n  margin: 0;\n  overflow: visible;\n  clip: auto; }\n\nbody {\n  margin: 0;\n  padding: 0; }\n\nul {\n  list-style: none; }\n\ninput {\n  width: 100%;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  font-size: 25px;\n  color: darkgray;\n  border: 1px lightgrey solid; }\n\ninput[type=submit] {\n  background-color: white; }\n\ntextarea {\n  width: 100%;\n  border: 1px lightgrey solid;\n  height: 150px;\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 25px;\n  color: darkgrey; }\n\nselect {\n  border: none;\n  border-radius: 0px 0px 0px 0px;\n  border-bottom-right-radius: 0px;\n  font-size: 25px;\n  font-family: 'Oswald', sans-serif;\n  font-weight: '300';\n  width: 90%;\n  margin: 5%; }\n\ninput[placeholder] {\n  color: lightgrey; }\n\ntextarea[placeholder] {\n  color: lightgrey; }\n\nh1 {\n  font-family: 'Oswald', sans-serif; }\n\nh2 {\n  font-family: 'Oswald', sans-serif; }\n\nh3 {\n  font-family: 'Oswald', sans-serif; }\n\nh4 {\n  font-family: 'Oswald', sans-serif; }\n\nh5 {\n  font-family: 'Oswald', sans-serif; }\n\nh1, h2, h3, h4, h5 {\n  color: darkgray; }\n\ni {\n  color: darkgray; }\n\np {\n  font-family: 'Alegreya', serif;\n  color: darkgray; }\n\na {\n  font-family: 'Oswald', sans-serif;\n  font-style: none;\n  text-decoration: none;\n  color: #4F6457; }\n\na:visited {\n  color: #4F6457; }\n\na:hover {\n  color: seagreen; }\n\nbody {\n  background-color: #ffffff; }\n\n.layout-content {\n  padding-left: 5px;\n  padding-right: 5px; }\n\n.layout-head {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between; }\n\n.layout-daydash {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  flex-wrap: wrap; }\n\n._layout-diagram {\n  display: flex;\n  justify-content: center; }\n\n.component-navigation {\n  flex-grow: 1; }\n\n.component-navigation.nav-list {\n  display: inline; }\n\n.component-navigation.nav-list.nav-listitem {\n  padding: 5px; }\n\n.component-usercontext {\n  flex-grow: 1; }\n\n.component-dayblock {\n  width: 250px;\n  height: 300px;\n  cursor: pointer; }\n\n.component-dayblock:hover {\n  background-color: rgba(137, 137, 137, 0.4); }\n\n.component-user.heading {\n  margin-bottom: 2px; }\n\n._component-diagram {\n  flex-grow: 1; }\n\n.node {\n  cursor: pointer; }\n\n.node:hover {\n  stroke: #000;\n  stroke-width: 1.5px; }\n\n.node--leaf {\n  fill: white; }\n\n.label {\n  font-family: 'Oswald', sans-serif;\n  text-anchor: middle;\n  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }\n\n.label,\n.node--root,\n.node--leaf {\n  pointer-events: none; }\n\n/*\n * General Formatting\n */\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  box-sizing: border-box; }\n\ndiv {\n  margin: 0;\n  padding: 0; }\n\n/*\n   * Sidebar\n   */\n.main-row {\n  padding: 0; }\n\n.sidebar {\n  padding: 20px;\n  overflow-x: hidden;\n  overflow-y: auto;\n  border-right: 1px solid #eee; }\n\n.nav-sidebar {\n  margin-right: -21px;\n  /* 20px padding + 1px border */\n  margin-bottom: 20px;\n  margin-left: -20px; }\n\n.nav-sidebar > li > a {\n  padding-right: 20px;\n  padding-left: 20px; }\n\n.nav-sidebar > .active > a,\n.nav-sidebar > .active > a:hover,\n.nav-sidebar > .active > a:focus {\n  color: #fff;\n  background-color: #428bca; }\n\n/*\n   * Main content\n   */\n.main {\n  padding: 0; }\n\n/*\n   * \"Loading\" modal\n   */\n#loading-modal {\n  position: absolute;\n  z-index: 10;\n  left: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  padding: 20px;\n  background-color: rgba(50, 50, 50, 0.9); }\n\n#loading-modal h1 {\n  text-align: center;\n  margin-top: 30%;\n  color: #fff; }\n\n/*\n   * Design\n   */\n#program-window {\n  height: 100%;\n  width: 100%; }\n\n#viewer {\n  height: 100%;\n  width: 100%; }\n\n#viewer canvas {\n  height: 100%;\n  width: 100%; }\n\n#floorplanner {\n  height: 100%;\n  width: 100%; }\n\n#floorplanner canvas {\n  height: 100%;\n  width: 100%; }\n\n#add-items {\n  display: none;\n  padding: 20px;\n  overflow-y: auto; }\n\n#main-controls {\n  position: absolute;\n  top: 20px;\n  left: 20px;\n  padding: 0; }\n\n#camera-controls {\n  position: absolute;\n  bottom: 20px;\n  right: 0;\n  padding: 0 20px;\n  text-align: right; }\n\n#floorplanner-controls {\n  position: absolute;\n  left: 0;\n  top: 0;\n  margin: 20px 0;\n  padding: 0 20px;\n  width: 100%; }\n\n#draw-walls-hint {\n  position: absolute;\n  left: 20px;\n  bottom: 20px;\n  background-color: rgba(0, 0, 0, 0.5);\n  color: #ffffff;\n  padding: 5px 10px;\n  z-index: 10;\n  display: none; }\n\n.add-item {\n  cursor: pointer; }\n\n.hide {\n  display: none; }\n", ""]);
 
 // exports
 
@@ -58198,6 +58198,4702 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
+
+/***/ }),
+
+/***/ "../node_modules/three-fbx-loader/index.js":
+/***/ (function(module, exports) {
+
+/**
+ * @author Kyle-Larson https://github.com/Kyle-Larson
+ * @author Takahiro https://github.com/takahirox
+ *
+ * Loader loads FBX file and generates Group representing FBX scene.
+ * Requires FBX file to be >= 7.0 and in ASCII or to be any version in Binary format.
+ *
+ * Supports:
+ * 	Mesh Generation (Positional Data)
+ * 	Normal Data (Per Vertex Drawing Instance)
+ *  UV Data (Per Vertex Drawing Instance)
+ *  Skinning
+ *  Animation
+ * 	- Separated Animations based on stacks.
+ * 	- Skeletal & Non-Skeletal Animations
+ *  NURBS (Open, Closed and Periodic forms)
+ *
+ * Needs Support:
+ * 	Indexed Buffers
+ * 	PreRotation support.
+ */
+
+module.exports = function(THREE) {
+	/**
+	 * Generates a loader for loading FBX files from URL and parsing into
+	 * a THREE.Group.
+	 * @param {THREE.LoadingManager} manager - Loading Manager for loader to use.
+	 */
+	THREE.FBXLoader = function(manager) {
+		this.manager =
+			manager !== undefined ? manager : THREE.DefaultLoadingManager;
+	};
+
+	Object.assign(THREE.FBXLoader.prototype, {
+		/**
+		 * Loads an ASCII/Binary FBX file from URL and parses into a THREE.Group.
+		 * THREE.Group will have an animations property of AnimationClips
+		 * of the different animations exported with the FBX.
+		 * @param {string} url - URL of the FBX file.
+		 * @param {function(THREE.Group):void} onLoad - Callback for when FBX file is loaded and parsed.
+		 * @param {function(ProgressEvent):void} onProgress - Callback fired periodically when file is being retrieved from server.
+		 * @param {function(Event):void} onError - Callback fired when error occurs (Currently only with retrieving file, not with parsing errors).
+		 */
+		load: function(url, onLoad, onProgress, onError) {
+			var self = this;
+
+			var resourceDirectory = url.split(/[\\\/]/);
+			resourceDirectory.pop();
+			resourceDirectory = resourceDirectory.join("/") + "/";
+
+			var loader = new THREE.FileLoader(this.manager);
+			loader.setResponseType("arraybuffer");
+			loader.load(
+				url,
+				function(buffer) {
+					try {
+						var scene = self.parse(url, buffer, resourceDirectory);
+
+						onLoad(scene);
+					} catch (error) {
+						window.setTimeout(function() {
+							if (onError) onError(error);
+
+							self.manager.itemError(url);
+						}, 0);
+					}
+				},
+				onProgress,
+				onError
+			);
+		},
+
+		/**
+		 * Parses an ASCII/Binary FBX file and returns a THREE.Group.
+		 * THREE.Group will have an animations property of AnimationClips
+		 * of the different animations within the FBX file.
+		 * @param {string} url - URL of the FBX file.
+		 * @param {ArrayBuffer} FBXBuffer - Contents of FBX file to parse.
+		 * @param {string} resourceDirectory - Directory to load external assets (e.g. textures ) from.
+		 * @returns {THREE.Group}
+		 */
+		parse: function(url, FBXBuffer, resourceDirectory) {
+			var self = this;
+			var FBXTree;
+
+			if (isFbxFormatBinary(FBXBuffer)) {
+				FBXTree = new BinaryParser().parse(FBXBuffer);
+			} else {
+				var FBXText = convertArrayBufferToString(FBXBuffer);
+
+				if (!isFbxFormatASCII(FBXText)) {
+					self.manager.itemError(url);
+					throw new Error("FBXLoader: Unknown format.");
+				}
+
+				if (getFbxVersion(FBXText) < 7000) {
+					self.manager.itemError(url);
+					throw new Error(
+						"FBXLoader: FBX version not supported for file at " +
+							url +
+							", FileVersion: " +
+							getFbxVersion(FBXText)
+					);
+				}
+
+				FBXTree = new TextParser().parse(FBXText);
+			}
+
+			// console.log( FBXTree );
+
+			var connections = parseConnections(FBXTree);
+			var images = parseImages(FBXTree);
+			var textures = parseTextures(
+				FBXTree,
+				new THREE.TextureLoader(this.manager).setPath(
+					resourceDirectory
+				),
+				images,
+				connections
+			);
+			var materials = parseMaterials(FBXTree, textures, connections);
+			var deformers = parseDeformers(FBXTree, connections);
+			var geometryMap = parseGeometries(FBXTree, connections, deformers);
+			var sceneGraph = parseScene(
+				FBXTree,
+				connections,
+				deformers,
+				geometryMap,
+				materials
+			);
+
+			return sceneGraph;
+		}
+	});
+
+	/**
+	 * Parses map of relationships between objects.
+	 * @param {{Connections: { properties: { connections: [number, number, string][]}}}} FBXTree
+	 * @returns {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>}
+	 */
+	function parseConnections(FBXTree) {
+		/**
+		 * @type {Map<number, { parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>}
+		 */
+		var connectionMap = new Map();
+
+		if ("Connections" in FBXTree) {
+			/**
+			 * @type {[number, number, string][]}
+			 */
+			var connectionArray = FBXTree.Connections.properties.connections;
+			for (
+				var connectionArrayIndex = 0,
+					connectionArrayLength = connectionArray.length;
+				connectionArrayIndex < connectionArrayLength;
+				++connectionArrayIndex
+			) {
+				var connection = connectionArray[connectionArrayIndex];
+
+				if (!connectionMap.has(connection[0])) {
+					connectionMap.set(connection[0], {
+						parents: [],
+						children: []
+					});
+				}
+
+				var parentRelationship = {
+					ID: connection[1],
+					relationship: connection[2]
+				};
+				connectionMap
+					.get(connection[0])
+					.parents.push(parentRelationship);
+
+				if (!connectionMap.has(connection[1])) {
+					connectionMap.set(connection[1], {
+						parents: [],
+						children: []
+					});
+				}
+
+				var childRelationship = {
+					ID: connection[0],
+					relationship: connection[2]
+				};
+				connectionMap
+					.get(connection[1])
+					.children.push(childRelationship);
+			}
+		}
+
+		return connectionMap;
+	}
+
+	/**
+	 * Parses map of images referenced in FBXTree.
+	 * @param {{Objects: {subNodes: {Texture: Object.<string, FBXTextureNode>}}}} FBXTree
+	 * @returns {Map<number, string(image blob URL)>}
+	 */
+	function parseImages(FBXTree) {
+		/**
+		 * @type {Map<number, string(image blob URL)>}
+		 */
+		var imageMap = new Map();
+
+		if ("Video" in FBXTree.Objects.subNodes) {
+			var videoNodes = FBXTree.Objects.subNodes.Video;
+
+			for (var nodeID in videoNodes) {
+				var videoNode = videoNodes[nodeID];
+
+				// raw image data is in videoNode.properties.Content
+				if ("Content" in videoNode.properties) {
+					var image = parseImage(videoNodes[nodeID]);
+					imageMap.set(parseInt(nodeID), image);
+				}
+			}
+		}
+
+		return imageMap;
+	}
+
+	/**
+	 * @param {videoNode} videoNode - Node to get texture image information from.
+	 * @returns {string} - image blob URL
+	 */
+	function parseImage(videoNode) {
+		var buffer = videoNode.properties.Content;
+		var array = new Uint8Array(buffer);
+		var fileName =
+			videoNode.properties.RelativeFilename ||
+			videoNode.properties.Filename;
+		var extension = fileName
+			.slice(fileName.lastIndexOf(".") + 1)
+			.toLowerCase();
+
+		var type;
+
+		switch (extension) {
+			case "bmp":
+				type = "image/bmp";
+				break;
+
+			case "jpg":
+				type = "image/jpeg";
+				break;
+
+			case "png":
+				type = "image/png";
+				break;
+
+			case "tif":
+				type = "image/tiff";
+				break;
+
+			default:
+				console.warn("FBXLoader: No support image type " + extension);
+				return;
+		}
+
+		return window.URL.createObjectURL(new Blob([array], { type: type }));
+	}
+
+	/**
+	 * Parses map of textures referenced in FBXTree.
+	 * @param {{Objects: {subNodes: {Texture: Object.<string, FBXTextureNode>}}}} FBXTree
+	 * @param {THREE.TextureLoader} loader
+	 * @param {Map<number, string(image blob URL)>} imageMap
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @returns {Map<number, THREE.Texture>}
+	 */
+	function parseTextures(FBXTree, loader, imageMap, connections) {
+		/**
+		 * @type {Map<number, THREE.Texture>}
+		 */
+		var textureMap = new Map();
+
+		if ("Texture" in FBXTree.Objects.subNodes) {
+			var textureNodes = FBXTree.Objects.subNodes.Texture;
+			for (var nodeID in textureNodes) {
+				var texture = parseTexture(
+					textureNodes[nodeID],
+					loader,
+					imageMap,
+					connections
+				);
+				textureMap.set(parseInt(nodeID), texture);
+			}
+		}
+
+		return textureMap;
+	}
+
+	/**
+	 * @param {textureNode} textureNode - Node to get texture information from.
+	 * @param {THREE.TextureLoader} loader
+	 * @param {Map<number, string(image blob URL)>} imageMap
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @returns {THREE.Texture}
+	 */
+	function parseTexture(textureNode, loader, imageMap, connections) {
+		var FBX_ID = textureNode.id;
+
+		var name = textureNode.name;
+
+		var fileName;
+
+		var filePath = textureNode.properties.FileName;
+		var relativeFilePath = textureNode.properties.RelativeFilename;
+
+		var children = connections.get(FBX_ID).children;
+
+		if (
+			children !== undefined &&
+			children.length > 0 &&
+			imageMap.has(children[0].ID)
+		) {
+			fileName = imageMap.get(children[0].ID);
+		} else if (
+			relativeFilePath !== undefined &&
+			relativeFilePath[0] !== "/" &&
+			relativeFilePath.match(/^[a-zA-Z]:/) === null
+		) {
+			// use textureNode.properties.RelativeFilename
+			// if it exists and it doesn't seem an absolute path
+
+			fileName = relativeFilePath;
+		} else {
+			var split = filePath.split(/[\\\/]/);
+
+			if (split.length > 0) {
+				fileName = split[split.length - 1];
+			} else {
+				fileName = filePath;
+			}
+		}
+
+		var currentPath = loader.path;
+
+		if (fileName.indexOf("blob:") === 0) {
+			loader.setPath(undefined);
+		}
+
+		/**
+		 * @type {THREE.Texture}
+		 */
+		var texture = loader.load(fileName);
+		texture.name = name;
+		texture.FBX_ID = FBX_ID;
+
+		var wrapModeU = textureNode.properties.WrapModeU;
+		var wrapModeV = textureNode.properties.WrapModeV;
+
+		var valueU = wrapModeU !== undefined ? wrapModeU.value : 0;
+		var valueV = wrapModeV !== undefined ? wrapModeV.value : 0;
+
+		// http://download.autodesk.com/us/fbx/SDKdocs/FBX_SDK_Help/files/fbxsdkref/class_k_fbx_texture.html#889640e63e2e681259ea81061b85143a
+		// 0: repeat(default), 1: clamp
+
+		texture.wrapS =
+			valueU === 0 ? THREE.RepeatWrapping : THREE.ClampToEdgeWrapping;
+		texture.wrapT =
+			valueV === 0 ? THREE.RepeatWrapping : THREE.ClampToEdgeWrapping;
+
+		loader.setPath(currentPath);
+
+		return texture;
+	}
+
+	/**
+	 * Parses map of Material information.
+	 * @param {{Objects: {subNodes: {Material: Object.<number, FBXMaterialNode>}}}} FBXTree
+	 * @param {Map<number, THREE.Texture>} textureMap
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @returns {Map<number, THREE.Material>}
+	 */
+	function parseMaterials(FBXTree, textureMap, connections) {
+		var materialMap = new Map();
+
+		if ("Material" in FBXTree.Objects.subNodes) {
+			var materialNodes = FBXTree.Objects.subNodes.Material;
+			for (var nodeID in materialNodes) {
+				var material = parseMaterial(
+					materialNodes[nodeID],
+					textureMap,
+					connections
+				);
+				materialMap.set(parseInt(nodeID), material);
+			}
+		}
+
+		return materialMap;
+	}
+
+	/**
+	 * Takes information from Material node and returns a generated THREE.Material
+	 * @param {FBXMaterialNode} materialNode
+	 * @param {Map<number, THREE.Texture>} textureMap
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @returns {THREE.Material}
+	 */
+	function parseMaterial(materialNode, textureMap, connections) {
+		var FBX_ID = materialNode.id;
+		var name = materialNode.attrName;
+		var type = materialNode.properties.ShadingModel;
+
+		//Case where FBXs wrap shading model in property object.
+		if (typeof type === "object") {
+			type = type.value;
+		}
+
+		var children = connections.get(FBX_ID).children;
+
+		var parameters = parseParameters(
+			materialNode.properties,
+			textureMap,
+			children
+		);
+
+		var material;
+
+		switch (type.toLowerCase()) {
+			case "phong":
+				material = new THREE.MeshPhongMaterial();
+				break;
+			case "lambert":
+				material = new THREE.MeshLambertMaterial();
+				break;
+			default:
+				console.warn(
+					"No implementation given for material type " +
+						type +
+						" in FBXLoader.js.  Defaulting to basic material"
+				);
+				material = new THREE.MeshBasicMaterial({ color: 0x3300ff });
+				break;
+		}
+
+		material.setValues(parameters);
+		material.name = name;
+
+		return material;
+	}
+
+	/**
+	 * @typedef {{Diffuse: FBXVector3, Specular: FBXVector3, Shininess: FBXValue, Emissive: FBXVector3, EmissiveFactor: FBXValue, Opacity: FBXValue}} FBXMaterialProperties
+	 */
+	/**
+	 * @typedef {{color: THREE.Color=, specular: THREE.Color=, shininess: number=, emissive: THREE.Color=, emissiveIntensity: number=, opacity: number=, transparent: boolean=, map: THREE.Texture=}} THREEMaterialParameterPack
+	 */
+	/**
+	 * @param {FBXMaterialProperties} properties
+	 * @param {Map<number, THREE.Texture>} textureMap
+	 * @param {{ID: number, relationship: string}[]} childrenRelationships
+	 * @returns {THREEMaterialParameterPack}
+	 */
+	function parseParameters(properties, textureMap, childrenRelationships) {
+		var parameters = {};
+
+		if (properties.Diffuse) {
+			parameters.color = parseColor(properties.Diffuse);
+		}
+		if (properties.Specular) {
+			parameters.specular = parseColor(properties.Specular);
+		}
+		if (properties.Shininess) {
+			parameters.shininess = properties.Shininess.value;
+		}
+		if (properties.Emissive) {
+			parameters.emissive = parseColor(properties.Emissive);
+		}
+		if (properties.EmissiveFactor) {
+			parameters.emissiveIntensity = properties.EmissiveFactor.value;
+		}
+		if (properties.Opacity) {
+			parameters.opacity = properties.Opacity.value;
+		}
+		if (parameters.opacity < 1.0) {
+			parameters.transparent = true;
+		}
+
+		for (
+			var childrenRelationshipsIndex = 0,
+				childrenRelationshipsLength = childrenRelationships.length;
+			childrenRelationshipsIndex < childrenRelationshipsLength;
+			++childrenRelationshipsIndex
+		) {
+			var relationship =
+				childrenRelationships[childrenRelationshipsIndex];
+
+			var type = relationship.relationship;
+
+			switch (type) {
+				case "DiffuseColor":
+				case ' "DiffuseColor':
+					parameters.map = textureMap.get(relationship.ID);
+					break;
+
+				case "Bump":
+				case ' "Bump':
+					parameters.bumpMap = textureMap.get(relationship.ID);
+					break;
+
+				case "NormalMap":
+				case ' "NormalMap':
+					parameters.normalMap = textureMap.get(relationship.ID);
+					break;
+
+				case ' "AmbientColor':
+				case ' "EmissiveColor':
+				case "AmbientColor":
+				case "EmissiveColor":
+				default:
+					console.warn(
+						"Unknown texture application of type " +
+							type +
+							", skipping texture"
+					);
+					break;
+			}
+		}
+
+		return parameters;
+	}
+
+	/**
+	 * Generates map of Skeleton-like objects for use later when generating and binding skeletons.
+	 * @param {{Objects: {subNodes: {Deformer: Object.<number, FBXSubDeformerNode>}}}} FBXTree
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @returns {Map<number, {map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[], skeleton: THREE.Skeleton|null}>}
+	 */
+	function parseDeformers(FBXTree, connections) {
+		var deformers = {};
+
+		if ("Deformer" in FBXTree.Objects.subNodes) {
+			var DeformerNodes = FBXTree.Objects.subNodes.Deformer;
+
+			for (var nodeID in DeformerNodes) {
+				var deformerNode = DeformerNodes[nodeID];
+
+				if (deformerNode.attrType === "Skin") {
+					var conns = connections.get(parseInt(nodeID));
+					var skeleton = parseSkeleton(conns, DeformerNodes);
+					skeleton.FBX_ID = parseInt(nodeID);
+
+					deformers[nodeID] = skeleton;
+				}
+			}
+		}
+
+		return deformers;
+	}
+
+	/**
+	 * Generates a "Skeleton Representation" of FBX nodes based on an FBX Skin Deformer's connections and an object containing SubDeformer nodes.
+	 * @param {{parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}} connections
+	 * @param {Object.<number, FBXSubDeformerNode>} DeformerNodes
+	 * @returns {{map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[], skeleton: THREE.Skeleton|null}}
+	 */
+	function parseSkeleton(connections, DeformerNodes) {
+		var subDeformers = {};
+		var children = connections.children;
+
+		for (var i = 0, l = children.length; i < l; ++i) {
+			var child = children[i];
+
+			var subDeformerNode = DeformerNodes[child.ID];
+
+			var subDeformer = {
+				FBX_ID: child.ID,
+				index: i,
+				indices: [],
+				weights: [],
+				transform: parseMatrixArray(
+					subDeformerNode.subNodes.Transform.properties.a
+				),
+				transformLink: parseMatrixArray(
+					subDeformerNode.subNodes.TransformLink.properties.a
+				),
+				linkMode: subDeformerNode.properties.Mode
+			};
+
+			if ("Indexes" in subDeformerNode.subNodes) {
+				subDeformer.indices = parseIntArray(
+					subDeformerNode.subNodes.Indexes.properties.a
+				);
+				subDeformer.weights = parseFloatArray(
+					subDeformerNode.subNodes.Weights.properties.a
+				);
+			}
+
+			subDeformers[child.ID] = subDeformer;
+		}
+
+		return {
+			map: subDeformers,
+			bones: []
+		};
+	}
+
+	/**
+	 * Generates Buffer geometries from geometry information in FBXTree, and generates map of THREE.BufferGeometries
+	 * @param {{Objects: {subNodes: {Geometry: Object.<number, FBXGeometryNode}}}} FBXTree
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @param {Map<number, {map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[], skeleton: THREE.Skeleton|null}>} deformers
+	 * @returns {Map<number, THREE.BufferGeometry>}
+	 */
+	function parseGeometries(FBXTree, connections, deformers) {
+		var geometryMap = new Map();
+
+		if ("Geometry" in FBXTree.Objects.subNodes) {
+			var geometryNodes = FBXTree.Objects.subNodes.Geometry;
+
+			for (var nodeID in geometryNodes) {
+				var relationships = connections.get(parseInt(nodeID));
+				var geo = parseGeometry(
+					geometryNodes[nodeID],
+					relationships,
+					deformers
+				);
+				geometryMap.set(parseInt(nodeID), geo);
+			}
+		}
+
+		return geometryMap;
+	}
+
+	/**
+	 * Generates BufferGeometry from FBXGeometryNode.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @param {{parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}} relationships
+	 * @param {Map<number, {map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[]}>} deformers
+	 * @returns {THREE.BufferGeometry}
+	 */
+	function parseGeometry(geometryNode, relationships, deformers) {
+		switch (geometryNode.attrType) {
+			case "Mesh":
+				return parseMeshGeometry(
+					geometryNode,
+					relationships,
+					deformers
+				);
+				break;
+
+			case "NurbsCurve":
+				return parseNurbsGeometry(geometryNode);
+				break;
+		}
+	}
+
+	/**
+	 * Specialty function for parsing Mesh based Geometry Nodes.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @param {{parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}} relationships - Object representing relationships between specific geometry node and other nodes.
+	 * @param {Map<number, {map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[]}>} deformers - Map object of deformers and subDeformers by ID.
+	 * @returns {THREE.BufferGeometry}
+	 */
+	function parseMeshGeometry(geometryNode, relationships, deformers) {
+		for (var i = 0; i < relationships.children.length; ++i) {
+			var deformer = deformers[relationships.children[i].ID];
+			if (deformer !== undefined) break;
+		}
+
+		return genGeometry(geometryNode, deformer);
+	}
+
+	/**
+	 * @param {{map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[]}} deformer - Skeleton representation for geometry instance.
+	 * @returns {THREE.BufferGeometry}
+	 */
+	function genGeometry(geometryNode, deformer) {
+		var geometry = new Geometry();
+
+		var subNodes = geometryNode.subNodes;
+
+		// First, each index is going to be its own vertex.
+
+		var vertexBuffer = parseFloatArray(subNodes.Vertices.properties.a);
+		var indexBuffer = parseIntArray(
+			subNodes.PolygonVertexIndex.properties.a
+		);
+
+		if (subNodes.LayerElementNormal) {
+			var normalInfo = getNormals(subNodes.LayerElementNormal[0]);
+		}
+
+		if (subNodes.LayerElementUV) {
+			var uvInfo = getUVs(subNodes.LayerElementUV[0]);
+		}
+
+		if (subNodes.LayerElementColor) {
+			var colorInfo = getColors(subNodes.LayerElementColor[0]);
+		}
+
+		if (subNodes.LayerElementMaterial) {
+			var materialInfo = getMaterials(subNodes.LayerElementMaterial[0]);
+		}
+
+		var faceVertexBuffer = [];
+		var polygonIndex = 0;
+
+		for (
+			var polygonVertexIndex = 0;
+			polygonVertexIndex < indexBuffer.length;
+			polygonVertexIndex++
+		) {
+			var vertexIndex = indexBuffer[polygonVertexIndex];
+
+			var endOfFace = false;
+
+			if (vertexIndex < 0) {
+				vertexIndex = vertexIndex ^ -1;
+				indexBuffer[polygonVertexIndex] = vertexIndex;
+				endOfFace = true;
+			}
+
+			var vertex = new Vertex();
+			var weightIndices = [];
+			var weights = [];
+
+			vertex.position.fromArray(vertexBuffer, vertexIndex * 3);
+
+			if (deformer) {
+				var subDeformers = deformer.map;
+
+				for (var key in subDeformers) {
+					var subDeformer = subDeformers[key];
+					var indices = subDeformer.indices;
+
+					for (var j = 0; j < indices.length; j++) {
+						var index = indices[j];
+
+						if (index === vertexIndex) {
+							weights.push(subDeformer.weights[j]);
+							weightIndices.push(subDeformer.index);
+
+							break;
+						}
+					}
+				}
+
+				if (weights.length > 4) {
+					console.warn(
+						"FBXLoader: Vertex has more than 4 skinning weights assigned to vertex.  Deleting additional weights."
+					);
+
+					var WIndex = [0, 0, 0, 0];
+					var Weight = [0, 0, 0, 0];
+
+					weights.forEach(function(weight, weightIndex) {
+						var currentWeight = weight;
+						var currentIndex = weightIndices[weightIndex];
+
+						Weight.forEach(function(
+							comparedWeight,
+							comparedWeightIndex,
+							comparedWeightArray
+						) {
+							if (currentWeight > comparedWeight) {
+								comparedWeightArray[
+									comparedWeightIndex
+								] = currentWeight;
+								currentWeight = comparedWeight;
+
+								var tmp = WIndex[comparedWeightIndex];
+								WIndex[comparedWeightIndex] = currentIndex;
+								currentIndex = tmp;
+							}
+						});
+					});
+
+					weightIndices = WIndex;
+					weights = Weight;
+				}
+
+				for (var i = weights.length; i < 4; ++i) {
+					weights[i] = 0;
+					weightIndices[i] = 0;
+				}
+
+				vertex.skinWeights.fromArray(weights);
+				vertex.skinIndices.fromArray(weightIndices);
+			}
+
+			if (normalInfo) {
+				vertex.normal.fromArray(
+					getData(
+						polygonVertexIndex,
+						polygonIndex,
+						vertexIndex,
+						normalInfo
+					)
+				);
+			}
+
+			if (uvInfo) {
+				vertex.uv.fromArray(
+					getData(
+						polygonVertexIndex,
+						polygonIndex,
+						vertexIndex,
+						uvInfo
+					)
+				);
+			}
+
+			if (colorInfo) {
+				vertex.color.fromArray(
+					getData(
+						polygonVertexIndex,
+						polygonIndex,
+						vertexIndex,
+						colorInfo
+					)
+				);
+			}
+
+			faceVertexBuffer.push(vertex);
+
+			if (endOfFace) {
+				var face = new Face();
+				face.genTrianglesFromVertices(faceVertexBuffer);
+
+				if (materialInfo !== undefined) {
+					var materials = getData(
+						polygonVertexIndex,
+						polygonIndex,
+						vertexIndex,
+						materialInfo
+					);
+					face.materialIndex = materials[0];
+				} else {
+					// Seems like some models don't have materialInfo(subNodes.LayerElementMaterial).
+					// Set 0 in such a case.
+					face.materialIndex = 0;
+				}
+
+				geometry.faces.push(face);
+				faceVertexBuffer = [];
+				polygonIndex++;
+
+				endOfFace = false;
+			}
+		}
+
+		/**
+		 * @type {{vertexBuffer: number[], normalBuffer: number[], uvBuffer: number[], skinIndexBuffer: number[], skinWeightBuffer: number[], materialIndexBuffer: number[]}}
+		 */
+		var bufferInfo = geometry.flattenToBuffers();
+
+		var geo = new THREE.BufferGeometry();
+		geo.name = geometryNode.name;
+		geo.addAttribute(
+			"position",
+			new THREE.Float32BufferAttribute(bufferInfo.vertexBuffer, 3)
+		);
+
+		if (bufferInfo.normalBuffer.length > 0) {
+			geo.addAttribute(
+				"normal",
+				new THREE.Float32BufferAttribute(bufferInfo.normalBuffer, 3)
+			);
+		}
+		if (bufferInfo.uvBuffer.length > 0) {
+			geo.addAttribute(
+				"uv",
+				new THREE.Float32BufferAttribute(bufferInfo.uvBuffer, 2)
+			);
+		}
+		if (subNodes.LayerElementColor) {
+			geo.addAttribute(
+				"color",
+				new THREE.Float32BufferAttribute(bufferInfo.colorBuffer, 3)
+			);
+		}
+
+		if (deformer) {
+			geo.addAttribute(
+				"skinIndex",
+				new THREE.Float32BufferAttribute(bufferInfo.skinIndexBuffer, 4)
+			);
+
+			geo.addAttribute(
+				"skinWeight",
+				new THREE.Float32BufferAttribute(bufferInfo.skinWeightBuffer, 4)
+			);
+
+			geo.FBX_Deformer = deformer;
+		}
+
+		// Convert the material indices of each vertex into rendering groups on the geometry.
+
+		var materialIndexBuffer = bufferInfo.materialIndexBuffer;
+		var prevMaterialIndex = materialIndexBuffer[0];
+		var startIndex = 0;
+
+		for (var i = 0; i < materialIndexBuffer.length; ++i) {
+			if (materialIndexBuffer[i] !== prevMaterialIndex) {
+				geo.addGroup(startIndex, i - startIndex, prevMaterialIndex);
+
+				prevMaterialIndex = materialIndexBuffer[i];
+				startIndex = i;
+			}
+		}
+
+		return geo;
+	}
+
+	/**
+	 * Parses normal information for geometry.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @returns {{dataSize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}}
+	 */
+	function getNormals(NormalNode) {
+		var mappingType = NormalNode.properties.MappingInformationType;
+		var referenceType = NormalNode.properties.ReferenceInformationType;
+		var buffer = parseFloatArray(NormalNode.subNodes.Normals.properties.a);
+		var indexBuffer = [];
+		if (referenceType === "IndexToDirect") {
+			if ("NormalIndex" in NormalNode.subNodes) {
+				indexBuffer = parseIntArray(
+					NormalNode.subNodes.NormalIndex.properties.a
+				);
+			} else if ("NormalsIndex" in NormalNode.subNodes) {
+				indexBuffer = parseIntArray(
+					NormalNode.subNodes.NormalsIndex.properties.a
+				);
+			}
+		}
+
+		return {
+			dataSize: 3,
+			buffer: buffer,
+			indices: indexBuffer,
+			mappingType: mappingType,
+			referenceType: referenceType
+		};
+	}
+
+	/**
+	 * Parses UV information for geometry.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @returns {{dataSize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}}
+	 */
+	function getUVs(UVNode) {
+		var mappingType = UVNode.properties.MappingInformationType;
+		var referenceType = UVNode.properties.ReferenceInformationType;
+		var buffer = parseFloatArray(UVNode.subNodes.UV.properties.a);
+		var indexBuffer = [];
+		if (referenceType === "IndexToDirect") {
+			indexBuffer = parseIntArray(UVNode.subNodes.UVIndex.properties.a);
+		}
+
+		return {
+			dataSize: 2,
+			buffer: buffer,
+			indices: indexBuffer,
+			mappingType: mappingType,
+			referenceType: referenceType
+		};
+	}
+
+	/**
+	 * Parses Vertex Color information for geometry.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @returns {{dataSize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}}
+	 */
+	function getColors(ColorNode) {
+		var mappingType = ColorNode.properties.MappingInformationType;
+		var referenceType = ColorNode.properties.ReferenceInformationType;
+		var buffer = parseFloatArray(ColorNode.subNodes.Colors.properties.a);
+		var indexBuffer = [];
+		if (referenceType === "IndexToDirect") {
+			indexBuffer = parseFloatArray(
+				ColorNode.subNodes.ColorIndex.properties.a
+			);
+		}
+
+		return {
+			dataSize: 4,
+			buffer: buffer,
+			indices: indexBuffer,
+			mappingType: mappingType,
+			referenceType: referenceType
+		};
+	}
+
+	/**
+	 * Parses material application information for geometry.
+	 * @param {FBXGeometryNode}
+	 * @returns {{dataSize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}}
+	 */
+	function getMaterials(MaterialNode) {
+		var mappingType = MaterialNode.properties.MappingInformationType;
+		var referenceType = MaterialNode.properties.ReferenceInformationType;
+
+		if (mappingType === "NoMappingInformation") {
+			return {
+				dataSize: 1,
+				buffer: [0],
+				indices: [0],
+				mappingType: "AllSame",
+				referenceType: referenceType
+			};
+		}
+
+		var materialIndexBuffer = parseIntArray(
+			MaterialNode.subNodes.Materials.properties.a
+		);
+
+		// Since materials are stored as indices, there's a bit of a mismatch between FBX and what
+		// we expect.  So we create an intermediate buffer that points to the index in the buffer,
+		// for conforming with the other functions we've written for other data.
+		var materialIndices = [];
+
+		for (
+			var materialIndexBufferIndex = 0,
+				materialIndexBufferLength = materialIndexBuffer.length;
+			materialIndexBufferIndex < materialIndexBufferLength;
+			++materialIndexBufferIndex
+		) {
+			materialIndices.push(materialIndexBufferIndex);
+		}
+
+		return {
+			dataSize: 1,
+			buffer: materialIndexBuffer,
+			indices: materialIndices,
+			mappingType: mappingType,
+			referenceType: referenceType
+		};
+	}
+
+	/**
+	 * Function uses the infoObject and given indices to return value array of object.
+	 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+	 * @param {number} polygonIndex - Index of polygon in geometry.
+	 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+	 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+	 * @returns {number[]}
+	 */
+
+	var dataArray = [];
+
+	var GetData = {
+		ByPolygonVertex: {
+			/**
+			 * Function uses the infoObject and given indices to return value array of object.
+			 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+			 * @param {number} polygonIndex - Index of polygon in geometry.
+			 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+			 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+			 * @returns {number[]}
+			 */
+			Direct: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var from = polygonVertexIndex * infoObject.dataSize;
+				var to =
+					polygonVertexIndex * infoObject.dataSize +
+					infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			},
+
+			/**
+			 * Function uses the infoObject and given indices to return value array of object.
+			 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+			 * @param {number} polygonIndex - Index of polygon in geometry.
+			 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+			 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+			 * @returns {number[]}
+			 */
+			IndexToDirect: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var index = infoObject.indices[polygonVertexIndex];
+				var from = index * infoObject.dataSize;
+				var to = index * infoObject.dataSize + infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			}
+		},
+
+		ByPolygon: {
+			/**
+			 * Function uses the infoObject and given indices to return value array of object.
+			 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+			 * @param {number} polygonIndex - Index of polygon in geometry.
+			 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+			 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+			 * @returns {number[]}
+			 */
+			Direct: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var from = polygonIndex * infoObject.dataSize;
+				var to =
+					polygonIndex * infoObject.dataSize + infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			},
+
+			/**
+			 * Function uses the infoObject and given indices to return value array of object.
+			 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+			 * @param {number} polygonIndex - Index of polygon in geometry.
+			 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+			 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+			 * @returns {number[]}
+			 */
+			IndexToDirect: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var index = infoObject.indices[polygonIndex];
+				var from = index * infoObject.dataSize;
+				var to = index * infoObject.dataSize + infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			}
+		},
+
+		ByVertice: {
+			Direct: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var from = vertexIndex * infoObject.dataSize;
+				var to =
+					vertexIndex * infoObject.dataSize + infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			}
+		},
+
+		AllSame: {
+			/**
+			 * Function uses the infoObject and given indices to return value array of object.
+			 * @param {number} polygonVertexIndex - Index of vertex in draw order (which index of the index buffer refers to this vertex).
+			 * @param {number} polygonIndex - Index of polygon in geometry.
+			 * @param {number} vertexIndex - Index of vertex inside vertex buffer (used because some data refers to old index buffer that we don't use anymore).
+			 * @param {{datasize: number, buffer: number[], indices: number[], mappingType: string, referenceType: string}} infoObject - Object containing data and how to access data.
+			 * @returns {number[]}
+			 */
+			IndexToDirect: function(
+				polygonVertexIndex,
+				polygonIndex,
+				vertexIndex,
+				infoObject
+			) {
+				var from = infoObject.indices[0] * infoObject.dataSize;
+				var to =
+					infoObject.indices[0] * infoObject.dataSize +
+					infoObject.dataSize;
+
+				// return infoObject.buffer.slice( from, to );
+				return slice(dataArray, infoObject.buffer, from, to);
+			}
+		}
+	};
+
+	function getData(
+		polygonVertexIndex,
+		polygonIndex,
+		vertexIndex,
+		infoObject
+	) {
+		return GetData[infoObject.mappingType][infoObject.referenceType](
+			polygonVertexIndex,
+			polygonIndex,
+			vertexIndex,
+			infoObject
+		);
+	}
+
+	/**
+	 * Specialty function for parsing NurbsCurve based Geometry Nodes.
+	 * @param {FBXGeometryNode} geometryNode
+	 * @param {{parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}} relationships
+	 * @returns {THREE.BufferGeometry}
+	 */
+	function parseNurbsGeometry(geometryNode) {
+		if (THREE.NURBSCurve === undefined) {
+			console.error(
+				"THREE.FBXLoader relies on THREE.NURBSCurve for any nurbs present in the model.  Nurbs will show up as empty geometry."
+			);
+			return new THREE.BufferGeometry();
+		}
+
+		var order = parseInt(geometryNode.properties.Order);
+
+		if (isNaN(order)) {
+			console.error(
+				"FBXLoader: Invalid Order " +
+					geometryNode.properties.Order +
+					" given for geometry ID: " +
+					geometryNode.id
+			);
+			return new THREE.BufferGeometry();
+		}
+
+		var degree = order - 1;
+
+		var knots = parseFloatArray(
+			geometryNode.subNodes.KnotVector.properties.a
+		);
+		var controlPoints = [];
+		var pointsValues = parseFloatArray(
+			geometryNode.subNodes.Points.properties.a
+		);
+
+		for (var i = 0, l = pointsValues.length; i < l; i += 4) {
+			controlPoints.push(new THREE.Vector4().fromArray(pointsValues, i));
+		}
+
+		var startKnot, endKnot;
+
+		if (geometryNode.properties.Form === "Closed") {
+			controlPoints.push(controlPoints[0]);
+		} else if (geometryNode.properties.Form === "Periodic") {
+			startKnot = degree;
+			endKnot = knots.length - 1 - startKnot;
+
+			for (var i = 0; i < degree; ++i) {
+				controlPoints.push(controlPoints[i]);
+			}
+		}
+
+		var curve = new THREE.NURBSCurve(
+			degree,
+			knots,
+			controlPoints,
+			startKnot,
+			endKnot
+		);
+		var vertices = curve.getPoints(controlPoints.length * 7);
+
+		var positions = new Float32Array(vertices.length * 3);
+
+		for (var i = 0, l = vertices.length; i < l; ++i) {
+			vertices[i].toArray(positions, i * 3);
+		}
+
+		var geometry = new THREE.BufferGeometry();
+		geometry.addAttribute(
+			"position",
+			new THREE.BufferAttribute(positions, 3)
+		);
+
+		return geometry;
+	}
+
+	/**
+	 * Finally generates Scene graph and Scene graph Objects.
+	 * @param {{Objects: {subNodes: {Model: Object.<number, FBXModelNode>}}}} FBXTree
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @param {Map<number, {map: Map<number, {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}>, array: {FBX_ID: number, indices: number[], weights: number[], transform: number[], transformLink: number[], linkMode: string}[], skeleton: THREE.Skeleton|null}>} deformers
+	 * @param {Map<number, THREE.BufferGeometry>} geometryMap
+	 * @param {Map<number, THREE.Material>} materialMap
+	 * @returns {THREE.Group}
+	 */
+	function parseScene(
+		FBXTree,
+		connections,
+		deformers,
+		geometryMap,
+		materialMap
+	) {
+		var sceneGraph = new THREE.Group();
+
+		var ModelNode = FBXTree.Objects.subNodes.Model;
+
+		/**
+		 * @type {Array.<THREE.Object3D>}
+		 */
+		var modelArray = [];
+
+		/**
+		 * @type {Map.<number, THREE.Object3D>}
+		 */
+		var modelMap = new Map();
+
+		for (var nodeID in ModelNode) {
+			var id = parseInt(nodeID);
+			var node = ModelNode[nodeID];
+			var conns = connections.get(id);
+			var model = null;
+
+			for (var i = 0; i < conns.parents.length; ++i) {
+				for (var FBX_ID in deformers) {
+					var deformer = deformers[FBX_ID];
+					var subDeformers = deformer.map;
+					var subDeformer = subDeformers[conns.parents[i].ID];
+
+					if (subDeformer) {
+						var model2 = model;
+						model = new THREE.Bone();
+						deformer.bones[subDeformer.index] = model;
+
+						// seems like we need this not to make non-connected bone, maybe?
+						// TODO: confirm
+						if (model2 !== null) model.add(model2);
+					}
+				}
+			}
+
+			if (!model) {
+				switch (node.attrType) {
+					case "Mesh":
+						/**
+						 * @type {?THREE.BufferGeometry}
+						 */
+						var geometry = null;
+
+						/**
+						 * @type {THREE.MultiMaterial|THREE.Material}
+						 */
+						var material = null;
+
+						/**
+						 * @type {Array.<THREE.Material>}
+						 */
+						var materials = [];
+
+						for (
+							var childrenIndex = 0,
+								childrenLength = conns.children.length;
+							childrenIndex < childrenLength;
+							++childrenIndex
+						) {
+							var child = conns.children[childrenIndex];
+
+							if (geometryMap.has(child.ID)) {
+								geometry = geometryMap.get(child.ID);
+							}
+
+							if (materialMap.has(child.ID)) {
+								materials.push(materialMap.get(child.ID));
+							}
+						}
+						if (materials.length > 1) {
+							material = materials;
+						} else if (materials.length > 0) {
+							material = materials[0];
+						} else {
+							material = new THREE.MeshBasicMaterial({
+								color: 0x3300ff
+							});
+							materials.push(material);
+						}
+						if ("color" in geometry.attributes) {
+							for (
+								var materialIndex = 0,
+									numMaterials = materials.length;
+								materialIndex < numMaterials;
+								++materialIndex
+							) {
+								materials[materialIndex].vertexColors =
+									THREE.VertexColors;
+							}
+						}
+						if (geometry.FBX_Deformer) {
+							for (
+								var materialsIndex = 0,
+									materialsLength = materials.length;
+								materialsIndex < materialsLength;
+								++materialsIndex
+							) {
+								materials[materialsIndex].skinning = true;
+							}
+							model = new THREE.SkinnedMesh(geometry, material);
+						} else {
+							model = new THREE.Mesh(geometry, material);
+						}
+						break;
+
+					case "NurbsCurve":
+						var geometry = null;
+
+						for (
+							var childrenIndex = 0,
+								childrenLength = conns.children.length;
+							childrenIndex < childrenLength;
+							++childrenIndex
+						) {
+							var child = conns.children[childrenIndex];
+
+							if (geometryMap.has(child.ID)) {
+								geometry = geometryMap.get(child.ID);
+							}
+						}
+
+						// FBX does not list materials for Nurbs lines, so we'll just put our own in here.
+						material = new THREE.LineBasicMaterial({
+							color: 0x3300ff,
+							linewidth: 5
+						});
+						model = new THREE.Line(geometry, material);
+						break;
+
+					default:
+						model = new THREE.Object3D();
+						break;
+				}
+			}
+
+			model.name = node.attrName
+				.replace(/:/, "")
+				.replace(/_/, "")
+				.replace(/-/, "");
+			model.FBX_ID = id;
+
+			modelArray.push(model);
+			modelMap.set(id, model);
+		}
+
+		for (
+			var modelArrayIndex = 0, modelArrayLength = modelArray.length;
+			modelArrayIndex < modelArrayLength;
+			++modelArrayIndex
+		) {
+			var model = modelArray[modelArrayIndex];
+
+			var node = ModelNode[model.FBX_ID];
+
+			if ("Lcl_Translation" in node.properties) {
+				model.position.fromArray(
+					parseFloatArray(node.properties.Lcl_Translation.value)
+				);
+			}
+
+			if ("Lcl_Rotation" in node.properties) {
+				var rotation = parseFloatArray(
+					node.properties.Lcl_Rotation.value
+				).map(degreeToRadian);
+				rotation.push("ZYX");
+				model.rotation.fromArray(rotation);
+			}
+
+			if ("Lcl_Scaling" in node.properties) {
+				model.scale.fromArray(
+					parseFloatArray(node.properties.Lcl_Scaling.value)
+				);
+			}
+
+			if ("PreRotation" in node.properties) {
+				var preRotations = new THREE.Euler().setFromVector3(
+					parseVector3(node.properties.PreRotation).multiplyScalar(
+						DEG2RAD
+					),
+					"ZYX"
+				);
+				preRotations = new THREE.Quaternion().setFromEuler(
+					preRotations
+				);
+				var currentRotation = new THREE.Quaternion().setFromEuler(
+					model.rotation
+				);
+				preRotations.multiply(currentRotation);
+				model.rotation.setFromQuaternion(preRotations, "ZYX");
+			}
+
+			var conns = connections.get(model.FBX_ID);
+			for (
+				var parentIndex = 0;
+				parentIndex < conns.parents.length;
+				parentIndex++
+			) {
+				var pIndex = findIndex(modelArray, function(mod) {
+					return mod.FBX_ID === conns.parents[parentIndex].ID;
+				});
+				if (pIndex > -1) {
+					modelArray[pIndex].add(model);
+					break;
+				}
+			}
+			if (model.parent === null) {
+				sceneGraph.add(model);
+			}
+		}
+
+		// Now with the bones created, we can update the skeletons and bind them to the skinned meshes.
+		sceneGraph.updateMatrixWorld(true);
+
+		// Put skeleton into bind pose.
+		var BindPoseNode = FBXTree.Objects.subNodes.Pose;
+		for (var nodeID in BindPoseNode) {
+			if (BindPoseNode[nodeID].attrType === "BindPose") {
+				BindPoseNode = BindPoseNode[nodeID];
+				break;
+			}
+		}
+		if (BindPoseNode) {
+			var PoseNode = BindPoseNode.subNodes.PoseNode;
+			var worldMatrices = new Map();
+
+			for (
+				var PoseNodeIndex = 0, PoseNodeLength = PoseNode.length;
+				PoseNodeIndex < PoseNodeLength;
+				++PoseNodeIndex
+			) {
+				var node = PoseNode[PoseNodeIndex];
+
+				var rawMatWrd = parseMatrixArray(
+					node.subNodes.Matrix.properties.a
+				);
+
+				worldMatrices.set(parseInt(node.id), rawMatWrd);
+			}
+		}
+
+		for (var FBX_ID in deformers) {
+			var deformer = deformers[FBX_ID];
+			var subDeformers = deformer.map;
+
+			for (var key in subDeformers) {
+				var subDeformer = subDeformers[key];
+				var subDeformerIndex = subDeformer.index;
+
+				/**
+				 * @type {THREE.Bone}
+				 */
+				var bone = deformer.bones[subDeformerIndex];
+				if (!worldMatrices.has(bone.FBX_ID)) {
+					break;
+				}
+				var mat = worldMatrices.get(bone.FBX_ID);
+				bone.matrixWorld.copy(mat);
+			}
+
+			// Now that skeleton is in bind pose, bind to model.
+			deformer.skeleton = new THREE.Skeleton(deformer.bones);
+
+			var conns = connections.get(deformer.FBX_ID);
+			var parents = conns.parents;
+
+			for (
+				var parentsIndex = 0, parentsLength = parents.length;
+				parentsIndex < parentsLength;
+				++parentsIndex
+			) {
+				var parent = parents[parentsIndex];
+
+				if (geometryMap.has(parent.ID)) {
+					var geoID = parent.ID;
+					var geoConns = connections.get(geoID);
+
+					for (var i = 0; i < geoConns.parents.length; ++i) {
+						if (modelMap.has(geoConns.parents[i].ID)) {
+							var model = modelMap.get(geoConns.parents[i].ID);
+							//ASSERT model typeof SkinnedMesh
+							model.bind(deformer.skeleton, model.matrixWorld);
+							break;
+						}
+					}
+				}
+			}
+		}
+
+		//Skeleton is now bound, return objects to starting
+		//world positions.
+		sceneGraph.updateMatrixWorld(true);
+
+		// Silly hack with the animation parsing.  We're gonna pretend the scene graph has a skeleton
+		// to attach animations to, since FBXs treat animations as animations for the entire scene,
+		// not just for individual objects.
+		sceneGraph.skeleton = {
+			bones: modelArray
+		};
+
+		var animations = parseAnimations(FBXTree, connections, sceneGraph);
+
+		addAnimations(sceneGraph, animations);
+
+		return sceneGraph;
+	}
+
+	/**
+	 * Parses animation information from FBXTree and generates an AnimationInfoObject.
+	 * @param {{Objects: {subNodes: {AnimationCurveNode: any, AnimationCurve: any, AnimationLayer: any, AnimationStack: any}}}} FBXTree
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 */
+	function parseAnimations(FBXTree, connections, sceneGraph) {
+		var rawNodes = FBXTree.Objects.subNodes.AnimationCurveNode;
+		var rawCurves = FBXTree.Objects.subNodes.AnimationCurve;
+		var rawLayers = FBXTree.Objects.subNodes.AnimationLayer;
+		var rawStacks = FBXTree.Objects.subNodes.AnimationStack;
+
+		/**
+		 * @type {{
+				 curves: Map<number, {
+				 T: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				},
+				 R: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				},
+				 S: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				}
+			 }>,
+			 layers: Map<number, {
+				T: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				},
+				R: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				},
+				S: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				}
+				}[]>,
+			 stacks: Map<number, {
+				 name: string,
+				 layers: {
+					T: {
+						id: number;
+						attr: string;
+						internalID: number;
+						attrX: boolean;
+						attrY: boolean;
+						attrZ: boolean;
+						containerBoneID: number;
+						containerID: number;
+						curves: {
+							x: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							y: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							z: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+						};
+					};
+					R: {
+						id: number;
+						attr: string;
+						internalID: number;
+						attrX: boolean;
+						attrY: boolean;
+						attrZ: boolean;
+						containerBoneID: number;
+						containerID: number;
+						curves: {
+							x: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							y: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							z: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+						};
+					};
+					S: {
+						id: number;
+						attr: string;
+						internalID: number;
+						attrX: boolean;
+						attrY: boolean;
+						attrZ: boolean;
+						containerBoneID: number;
+						containerID: number;
+						curves: {
+							x: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							y: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+							z: {
+								version: any;
+								id: number;
+								internalID: number;
+								times: number[];
+								values: number[];
+								attrFlag: number[];
+								attrData: number[];
+							};
+						};
+					};
+				}[][],
+			 length: number,
+			 frames: number }>,
+			 length: number,
+			 fps: number,
+			 frames: number
+		 }}
+		 */
+		var returnObject = {
+			curves: new Map(),
+			layers: {},
+			stacks: {},
+			length: 0,
+			fps: 30,
+			frames: 0
+		};
+
+		/**
+		 * @type {Array.<{
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+			}>}
+		 */
+		var animationCurveNodes = [];
+		for (var nodeID in rawNodes) {
+			if (nodeID.match(/\d+/)) {
+				var animationNode = parseAnimationNode(
+					FBXTree,
+					rawNodes[nodeID],
+					connections,
+					sceneGraph
+				);
+				animationCurveNodes.push(animationNode);
+			}
+		}
+
+		/**
+		 * @type {Map.<number, {
+				id: number,
+				attr: string,
+				internalID: number,
+				attrX: boolean,
+				attrY: boolean,
+				attrZ: boolean,
+				containerBoneID: number,
+				containerID: number,
+				curves: {
+					x: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+					},
+					y: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+					},
+					z: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+					}
+				}
+			}>}
+		 */
+		var tmpMap = new Map();
+		for (
+			var animationCurveNodeIndex = 0;
+			animationCurveNodeIndex < animationCurveNodes.length;
+			++animationCurveNodeIndex
+		) {
+			if (animationCurveNodes[animationCurveNodeIndex] === null) {
+				continue;
+			}
+			tmpMap.set(
+				animationCurveNodes[animationCurveNodeIndex].id,
+				animationCurveNodes[animationCurveNodeIndex]
+			);
+		}
+
+		/**
+		 * @type {{
+				version: any,
+				id: number,
+				internalID: number,
+				times: number[],
+				values: number[],
+				attrFlag: number[],
+				attrData: number[],
+			}[]}
+		 */
+		var animationCurves = [];
+		for (nodeID in rawCurves) {
+			if (nodeID.match(/\d+/)) {
+				var animationCurve = parseAnimationCurve(rawCurves[nodeID]);
+
+				// seems like this check would be necessary?
+				if (!connections.has(animationCurve.id)) continue;
+
+				animationCurves.push(animationCurve);
+
+				var firstParentConn = connections.get(animationCurve.id)
+					.parents[0];
+				var firstParentID = firstParentConn.ID;
+				var firstParentRelationship = firstParentConn.relationship;
+				var axis = "";
+
+				if (firstParentRelationship.match(/X/)) {
+					axis = "x";
+				} else if (firstParentRelationship.match(/Y/)) {
+					axis = "y";
+				} else if (firstParentRelationship.match(/Z/)) {
+					axis = "z";
+				} else {
+					continue;
+				}
+
+				tmpMap.get(firstParentID).curves[axis] = animationCurve;
+			}
+		}
+
+		tmpMap.forEach(function(curveNode) {
+			var id = curveNode.containerBoneID;
+			if (!returnObject.curves.has(id)) {
+				returnObject.curves.set(id, { T: null, R: null, S: null });
+			}
+			returnObject.curves.get(id)[curveNode.attr] = curveNode;
+			if (curveNode.attr === "R") {
+				var curves = curveNode.curves;
+				curves.x.values = curves.x.values.map(degreeToRadian);
+				curves.y.values = curves.y.values.map(degreeToRadian);
+				curves.z.values = curves.z.values.map(degreeToRadian);
+
+				if (curveNode.preRotations !== null) {
+					var preRotations = new THREE.Euler().setFromVector3(
+						curveNode.preRotations,
+						"ZYX"
+					);
+					preRotations = new THREE.Quaternion().setFromEuler(
+						preRotations
+					);
+					var frameRotation = new THREE.Euler();
+					var frameRotationQuaternion = new THREE.Quaternion();
+					for (
+						var frame = 0;
+						frame < curves.x.times.length;
+						++frame
+					) {
+						frameRotation.set(
+							curves.x.values[frame],
+							curves.y.values[frame],
+							curves.z.values[frame],
+							"ZYX"
+						);
+						frameRotationQuaternion
+							.setFromEuler(frameRotation)
+							.premultiply(preRotations);
+						frameRotation.setFromQuaternion(
+							frameRotationQuaternion,
+							"ZYX"
+						);
+						curves.x.values[frame] = frameRotation.x;
+						curves.y.values[frame] = frameRotation.y;
+						curves.z.values[frame] = frameRotation.z;
+					}
+				}
+			}
+		});
+
+		for (var nodeID in rawLayers) {
+			/**
+			 * @type {{
+				T: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				},
+				R: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				},
+				S: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					},
+				}
+				}[]}
+			 */
+			var layer = [];
+			var children = connections.get(parseInt(nodeID)).children;
+
+			for (
+				var childIndex = 0;
+				childIndex < children.length;
+				childIndex++
+			) {
+				// Skip lockInfluenceWeights
+				if (tmpMap.has(children[childIndex].ID)) {
+					var curveNode = tmpMap.get(children[childIndex].ID);
+					var boneID = curveNode.containerBoneID;
+					if (layer[boneID] === undefined) {
+						layer[boneID] = {
+							T: null,
+							R: null,
+							S: null
+						};
+					}
+
+					layer[boneID][curveNode.attr] = curveNode;
+				}
+			}
+
+			returnObject.layers[nodeID] = layer;
+		}
+
+		for (var nodeID in rawStacks) {
+			var layers = [];
+			var children = connections.get(parseInt(nodeID)).children;
+			var timestamps = { max: 0, min: Number.MAX_VALUE };
+
+			for (
+				var childIndex = 0;
+				childIndex < children.length;
+				++childIndex
+			) {
+				var currentLayer = returnObject.layers[children[childIndex].ID];
+
+				if (currentLayer !== undefined) {
+					layers.push(currentLayer);
+
+					for (
+						var currentLayerIndex = 0,
+							currentLayerLength = currentLayer.length;
+						currentLayerIndex < currentLayerLength;
+						++currentLayerIndex
+					) {
+						var layer = currentLayer[currentLayerIndex];
+
+						if (layer) {
+							getCurveNodeMaxMinTimeStamps(layer, timestamps);
+						}
+					}
+				}
+			}
+
+			// Do we have an animation clip with actual length?
+			if (timestamps.max > timestamps.min) {
+				returnObject.stacks[nodeID] = {
+					name: rawStacks[nodeID].attrName,
+					layers: layers,
+					length: timestamps.max - timestamps.min,
+					frames: (timestamps.max - timestamps.min) * 30
+				};
+			}
+		}
+
+		return returnObject;
+	}
+
+	/**
+	 * @param {Object} FBXTree
+	 * @param {{id: number, attrName: string, properties: Object<string, any>}} animationCurveNode
+	 * @param {Map<number, {parents: {ID: number, relationship: string}[], children: {ID: number, relationship: string}[]}>} connections
+	 * @param {{skeleton: {bones: {FBX_ID: number}[]}}} sceneGraph
+	 */
+	function parseAnimationNode(
+		FBXTree,
+		animationCurveNode,
+		connections,
+		sceneGraph
+	) {
+		var rawModels = FBXTree.Objects.subNodes.Model;
+
+		var returnObject = {
+			/**
+			 * @type {number}
+			 */
+			id: animationCurveNode.id,
+
+			/**
+			 * @type {string}
+			 */
+			attr: animationCurveNode.attrName,
+
+			/**
+			 * @type {number}
+			 */
+			internalID: animationCurveNode.id,
+
+			/**
+			 * @type {boolean}
+			 */
+			attrX: false,
+
+			/**
+			 * @type {boolean}
+			 */
+			attrY: false,
+
+			/**
+			 * @type {boolean}
+			 */
+			attrZ: false,
+
+			/**
+			 * @type {number}
+			 */
+			containerBoneID: -1,
+
+			/**
+			 * @type {number}
+			 */
+			containerID: -1,
+
+			curves: {
+				x: null,
+				y: null,
+				z: null
+			},
+
+			/**
+			 * @type {number[]}
+			 */
+			preRotations: null
+		};
+
+		if (returnObject.attr.match(/S|R|T/)) {
+			for (var attributeKey in animationCurveNode.properties) {
+				if (attributeKey.match(/X/)) {
+					returnObject.attrX = true;
+				}
+				if (attributeKey.match(/Y/)) {
+					returnObject.attrY = true;
+				}
+				if (attributeKey.match(/Z/)) {
+					returnObject.attrZ = true;
+				}
+			}
+		} else {
+			return null;
+		}
+
+		var conns = connections.get(returnObject.id);
+		var containerIndices = conns.parents;
+
+		for (
+			var containerIndicesIndex = containerIndices.length - 1;
+			containerIndicesIndex >= 0;
+			--containerIndicesIndex
+		) {
+			var boneID = findIndex(sceneGraph.skeleton.bones, function(bone) {
+				return (
+					bone.FBX_ID === containerIndices[containerIndicesIndex].ID
+				);
+			});
+			if (boneID > -1) {
+				returnObject.containerBoneID = boneID;
+				returnObject.containerID =
+					containerIndices[containerIndicesIndex].ID;
+				var model = rawModels[returnObject.containerID.toString()];
+				if ("PreRotation" in model.properties) {
+					returnObject.preRotations = parseVector3(
+						model.properties.PreRotation
+					).multiplyScalar(Math.PI / 180);
+				}
+				break;
+			}
+		}
+
+		return returnObject;
+	}
+
+	/**
+	 * @param {{id: number, subNodes: {KeyTime: {properties: {a: string}}, KeyValueFloat: {properties: {a: string}}, KeyAttrFlags: {properties: {a: string}}, KeyAttrDataFloat: {properties: {a: string}}}}} animationCurve
+	 */
+	function parseAnimationCurve(animationCurve) {
+		return {
+			version: null,
+			id: animationCurve.id,
+			internalID: animationCurve.id,
+			times: parseFloatArray(
+				animationCurve.subNodes.KeyTime.properties.a
+			).map(convertFBXTimeToSeconds),
+			values: parseFloatArray(
+				animationCurve.subNodes.KeyValueFloat.properties.a
+			),
+
+			attrFlag: parseIntArray(
+				animationCurve.subNodes.KeyAttrFlags.properties.a
+			),
+			attrData: parseFloatArray(
+				animationCurve.subNodes.KeyAttrDataFloat.properties.a
+			)
+		};
+	}
+
+	/**
+	 * Sets the maxTimeStamp and minTimeStamp variables if it has timeStamps that are either larger or smaller
+	 * than the max or min respectively.
+	 * @param {{
+				T: {
+						id: number,
+						attr: string,
+						internalID: number,
+						attrX: boolean,
+						attrY: boolean,
+						attrZ: boolean,
+						containerBoneID: number,
+						containerID: number,
+						curves: {
+								x: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								y: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								z: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+						},
+				},
+				R: {
+						id: number,
+						attr: string,
+						internalID: number,
+						attrX: boolean,
+						attrY: boolean,
+						attrZ: boolean,
+						containerBoneID: number,
+						containerID: number,
+						curves: {
+								x: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								y: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								z: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+						},
+				},
+				S: {
+						id: number,
+						attr: string,
+						internalID: number,
+						attrX: boolean,
+						attrY: boolean,
+						attrZ: boolean,
+						containerBoneID: number,
+						containerID: number,
+						curves: {
+								x: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								y: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+								z: {
+										version: any,
+										id: number,
+										internalID: number,
+										times: number[],
+										values: number[],
+										attrFlag: number[],
+										attrData: number[],
+								},
+						},
+				},
+		}} layer
+	 */
+	function getCurveNodeMaxMinTimeStamps(layer, timestamps) {
+		if (layer.R) {
+			getCurveMaxMinTimeStamp(layer.R.curves, timestamps);
+		}
+		if (layer.S) {
+			getCurveMaxMinTimeStamp(layer.S.curves, timestamps);
+		}
+		if (layer.T) {
+			getCurveMaxMinTimeStamp(layer.T.curves, timestamps);
+		}
+	}
+
+	/**
+	 * Sets the maxTimeStamp and minTimeStamp if one of the curve's time stamps
+	 * exceeds the maximum or minimum.
+	 * @param {{
+				x: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+				},
+				y: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+				},
+				z: {
+						version: any,
+						id: number,
+						internalID: number,
+						times: number[],
+						values: number[],
+						attrFlag: number[],
+						attrData: number[],
+				}
+		}} curve
+	 */
+	function getCurveMaxMinTimeStamp(curve, timestamps) {
+		if (curve.x) {
+			getCurveAxisMaxMinTimeStamps(curve.x, timestamps);
+		}
+		if (curve.y) {
+			getCurveAxisMaxMinTimeStamps(curve.y, timestamps);
+		}
+		if (curve.z) {
+			getCurveAxisMaxMinTimeStamps(curve.z, timestamps);
+		}
+	}
+
+	/**
+	 * Sets the maxTimeStamp and minTimeStamp if one of its timestamps exceeds the maximum or minimum.
+	 * @param {{times: number[]}} axis
+	 */
+	function getCurveAxisMaxMinTimeStamps(axis, timestamps) {
+		timestamps.max =
+			axis.times[axis.times.length - 1] > timestamps.max
+				? axis.times[axis.times.length - 1]
+				: timestamps.max;
+		timestamps.min =
+			axis.times[0] < timestamps.min ? axis.times[0] : timestamps.min;
+	}
+
+	/**
+	 * @param {{
+		curves: Map<number, {
+			T: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+			R: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+			S: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+		}>;
+		layers: Map<number, {
+			T: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+			R: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+			S: {
+				id: number;
+				attr: string;
+				internalID: number;
+				attrX: boolean;
+				attrY: boolean;
+				attrZ: boolean;
+				containerBoneID: number;
+				containerID: number;
+				curves: {
+					x: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					y: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+					z: {
+						version: any;
+						id: number;
+						internalID: number;
+						times: number[];
+						values: number[];
+						attrFlag: number[];
+						attrData: number[];
+					};
+				};
+			};
+		}[]>;
+		stacks: Map<number, {
+			name: string;
+			layers: {
+				T: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				};
+				R: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				};
+				S: {
+					id: number;
+					attr: string;
+					internalID: number;
+					attrX: boolean;
+					attrY: boolean;
+					attrZ: boolean;
+					containerBoneID: number;
+					containerID: number;
+					curves: {
+						x: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						y: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+						z: {
+							version: any;
+							id: number;
+							internalID: number;
+							times: number[];
+							values: number[];
+							attrFlag: number[];
+							attrData: number[];
+						};
+					};
+				};
+			}[][];
+			length: number;
+			frames: number;
+		}>;
+		length: number;
+		fps: number;
+		frames: number;
+	}} animations,
+	 * @param {{skeleton: { bones: THREE.Bone[]}}} group
+	 */
+	function addAnimations(group, animations) {
+		if (group.animations === undefined) {
+			group.animations = [];
+		}
+
+		var stacks = animations.stacks;
+
+		for (var key in stacks) {
+			var stack = stacks[key];
+
+			/**
+			 * @type {{
+			 * name: string,
+			 * fps: number,
+			 * length: number,
+			 * hierarchy: Array.<{
+			 * 	parent: number,
+			 * 	name: string,
+			 * 	keys: Array.<{
+			 * 		time: number,
+			 * 		pos: Array.<number>,
+			 * 		rot: Array.<number>,
+			 * 		scl: Array.<number>
+			 * 	}>
+			 * }>
+			 * }}
+			 */
+			var animationData = {
+				name: stack.name,
+				fps: 30,
+				length: stack.length,
+				hierarchy: []
+			};
+
+			var bones = group.skeleton.bones;
+
+			for (
+				var bonesIndex = 0, bonesLength = bones.length;
+				bonesIndex < bonesLength;
+				++bonesIndex
+			) {
+				var bone = bones[bonesIndex];
+
+				var name = bone.name.replace(/.*:/, "");
+				var parentIndex = findIndex(bones, function(parentBone) {
+					return bone.parent === parentBone;
+				});
+				animationData.hierarchy.push({
+					parent: parentIndex,
+					name: name,
+					keys: []
+				});
+			}
+
+			for (var frame = 0; frame <= stack.frames; frame++) {
+				for (
+					var bonesIndex = 0, bonesLength = bones.length;
+					bonesIndex < bonesLength;
+					++bonesIndex
+				) {
+					var bone = bones[bonesIndex];
+					var boneIndex = bonesIndex;
+
+					var animationNode = stack.layers[0][boneIndex];
+
+					for (
+						var hierarchyIndex = 0,
+							hierarchyLength = animationData.hierarchy.length;
+						hierarchyIndex < hierarchyLength;
+						++hierarchyIndex
+					) {
+						var node = animationData.hierarchy[hierarchyIndex];
+
+						if (node.name === bone.name) {
+							node.keys.push(
+								generateKey(
+									animations,
+									animationNode,
+									bone,
+									frame
+								)
+							);
+						}
+					}
+				}
+			}
+
+			group.animations.push(
+				THREE.AnimationClip.parseAnimation(animationData, bones)
+			);
+		}
+	}
+
+	var euler = new THREE.Euler();
+	var quaternion = new THREE.Quaternion();
+
+	/**
+	 * @param {THREE.Bone} bone
+	 */
+	function generateKey(animations, animationNode, bone, frame) {
+		var key = {
+			time: frame / animations.fps,
+			pos: bone.position.toArray(),
+			rot: bone.quaternion.toArray(),
+			scl: bone.scale.toArray()
+		};
+
+		if (animationNode === undefined) return key;
+
+		try {
+			if (
+				hasCurve(animationNode, "T") &&
+				hasKeyOnFrame(animationNode.T, frame)
+			) {
+				key.pos = [
+					animationNode.T.curves.x.values[frame],
+					animationNode.T.curves.y.values[frame],
+					animationNode.T.curves.z.values[frame]
+				];
+			}
+
+			if (
+				hasCurve(animationNode, "R") &&
+				hasKeyOnFrame(animationNode.R, frame)
+			) {
+				var rotationX = animationNode.R.curves.x.values[frame];
+				var rotationY = animationNode.R.curves.y.values[frame];
+				var rotationZ = animationNode.R.curves.z.values[frame];
+
+				quaternion.setFromEuler(
+					euler.set(rotationX, rotationY, rotationZ, "ZYX")
+				);
+				key.rot = quaternion.toArray();
+			}
+
+			if (
+				hasCurve(animationNode, "S") &&
+				hasKeyOnFrame(animationNode.S, frame)
+			) {
+				key.scl = [
+					animationNode.S.curves.x.values[frame],
+					animationNode.S.curves.y.values[frame],
+					animationNode.S.curves.z.values[frame]
+				];
+			}
+		} catch (error) {
+			// Curve is not fully plotted.
+			console.log(bone);
+			console.log(error);
+		}
+
+		return key;
+	}
+
+	var AXES = ["x", "y", "z"];
+
+	function hasCurve(animationNode, attribute) {
+		if (animationNode === undefined) {
+			return false;
+		}
+
+		var attributeNode = animationNode[attribute];
+
+		if (!attributeNode) {
+			return false;
+		}
+
+		return AXES.every(function(key) {
+			return attributeNode.curves[key] !== null;
+		});
+	}
+
+	function hasKeyOnFrame(attributeNode, frame) {
+		return AXES.every(function(key) {
+			return isKeyExistOnFrame(attributeNode.curves[key], frame);
+		});
+	}
+
+	function isKeyExistOnFrame(curve, frame) {
+		return curve.values[frame] !== undefined;
+	}
+
+	/**
+	 * An instance of a Vertex with data for drawing vertices to the screen.
+	 * @constructor
+	 */
+	function Vertex() {
+		/**
+		 * Position of the vertex.
+		 * @type {THREE.Vector3}
+		 */
+		this.position = new THREE.Vector3();
+
+		/**
+		 * Normal of the vertex
+		 * @type {THREE.Vector3}
+		 */
+		this.normal = new THREE.Vector3();
+
+		/**
+		 * UV coordinates of the vertex.
+		 * @type {THREE.Vector2}
+		 */
+		this.uv = new THREE.Vector2();
+
+		/**
+		 * Color of the vertex
+		 * @type {THREE.Vector3}
+		 */
+		this.color = new THREE.Vector3();
+
+		/**
+		 * Indices of the bones vertex is influenced by.
+		 * @type {THREE.Vector4}
+		 */
+		this.skinIndices = new THREE.Vector4(0, 0, 0, 0);
+
+		/**
+		 * Weights that each bone influences the vertex.
+		 * @type {THREE.Vector4}
+		 */
+		this.skinWeights = new THREE.Vector4(0, 0, 0, 0);
+	}
+
+	Object.assign(Vertex.prototype, {
+		copy: function(target) {
+			var returnVar = target || new Vertex();
+
+			returnVar.position.copy(this.position);
+			returnVar.normal.copy(this.normal);
+			returnVar.uv.copy(this.uv);
+			returnVar.skinIndices.copy(this.skinIndices);
+			returnVar.skinWeights.copy(this.skinWeights);
+
+			return returnVar;
+		},
+
+		flattenToBuffers: function(
+			vertexBuffer,
+			normalBuffer,
+			uvBuffer,
+			colorBuffer,
+			skinIndexBuffer,
+			skinWeightBuffer
+		) {
+			this.position.toArray(vertexBuffer, vertexBuffer.length);
+			this.normal.toArray(normalBuffer, normalBuffer.length);
+			this.uv.toArray(uvBuffer, uvBuffer.length);
+			this.color.toArray(colorBuffer, colorBuffer.length);
+			this.skinIndices.toArray(skinIndexBuffer, skinIndexBuffer.length);
+			this.skinWeights.toArray(skinWeightBuffer, skinWeightBuffer.length);
+		}
+	});
+
+	/**
+	 * @constructor
+	 */
+	function Triangle() {
+		/**
+		 * @type {{position: THREE.Vector3, normal: THREE.Vector3, uv: THREE.Vector2, skinIndices: THREE.Vector4, skinWeights: THREE.Vector4}[]}
+		 */
+		this.vertices = [];
+	}
+
+	Object.assign(Triangle.prototype, {
+		copy: function(target) {
+			var returnVar = target || new Triangle();
+
+			for (var i = 0; i < this.vertices.length; ++i) {
+				this.vertices[i].copy(returnVar.vertices[i]);
+			}
+
+			return returnVar;
+		},
+
+		flattenToBuffers: function(
+			vertexBuffer,
+			normalBuffer,
+			uvBuffer,
+			colorBuffer,
+			skinIndexBuffer,
+			skinWeightBuffer
+		) {
+			var vertices = this.vertices;
+
+			for (var i = 0, l = vertices.length; i < l; ++i) {
+				vertices[i].flattenToBuffers(
+					vertexBuffer,
+					normalBuffer,
+					uvBuffer,
+					colorBuffer,
+					skinIndexBuffer,
+					skinWeightBuffer
+				);
+			}
+		}
+	});
+
+	/**
+	 * @constructor
+	 */
+	function Face() {
+		/**
+		 * @type {{vertices: {position: THREE.Vector3, normal: THREE.Vector3, uv: THREE.Vector2, skinIndices: THREE.Vector4, skinWeights: THREE.Vector4}[]}[]}
+		 */
+		this.triangles = [];
+		this.materialIndex = 0;
+	}
+
+	Object.assign(Face.prototype, {
+		copy: function(target) {
+			var returnVar = target || new Face();
+
+			for (var i = 0; i < this.triangles.length; ++i) {
+				this.triangles[i].copy(returnVar.triangles[i]);
+			}
+
+			returnVar.materialIndex = this.materialIndex;
+
+			return returnVar;
+		},
+
+		genTrianglesFromVertices: function(vertexArray) {
+			for (var i = 2; i < vertexArray.length; ++i) {
+				var triangle = new Triangle();
+				triangle.vertices[0] = vertexArray[0];
+				triangle.vertices[1] = vertexArray[i - 1];
+				triangle.vertices[2] = vertexArray[i];
+				this.triangles.push(triangle);
+			}
+		},
+
+		flattenToBuffers: function(
+			vertexBuffer,
+			normalBuffer,
+			uvBuffer,
+			colorBuffer,
+			skinIndexBuffer,
+			skinWeightBuffer,
+			materialIndexBuffer
+		) {
+			var triangles = this.triangles;
+			var materialIndex = this.materialIndex;
+
+			for (var i = 0, l = triangles.length; i < l; ++i) {
+				triangles[i].flattenToBuffers(
+					vertexBuffer,
+					normalBuffer,
+					uvBuffer,
+					colorBuffer,
+					skinIndexBuffer,
+					skinWeightBuffer
+				);
+				append(materialIndexBuffer, [
+					materialIndex,
+					materialIndex,
+					materialIndex
+				]);
+			}
+		}
+	});
+
+	/**
+	 * @constructor
+	 */
+	function Geometry() {
+		/**
+		 * @type {{triangles: {vertices: {position: THREE.Vector3, normal: THREE.Vector3, uv: THREE.Vector2, skinIndices: THREE.Vector4, skinWeights: THREE.Vector4}[]}[], materialIndex: number}[]}
+		 */
+		this.faces = [];
+
+		/**
+		 * @type {{}|THREE.Skeleton}
+		 */
+		this.skeleton = null;
+	}
+
+	Object.assign(Geometry.prototype, {
+		/**
+		 * @returns	{{vertexBuffer: number[], normalBuffer: number[], uvBuffer: number[], skinIndexBuffer: number[], skinWeightBuffer: number[], materialIndexBuffer: number[]}}
+		 */
+		flattenToBuffers: function() {
+			var vertexBuffer = [];
+			var normalBuffer = [];
+			var uvBuffer = [];
+			var colorBuffer = [];
+			var skinIndexBuffer = [];
+			var skinWeightBuffer = [];
+
+			var materialIndexBuffer = [];
+
+			var faces = this.faces;
+
+			for (var i = 0, l = faces.length; i < l; ++i) {
+				faces[i].flattenToBuffers(
+					vertexBuffer,
+					normalBuffer,
+					uvBuffer,
+					colorBuffer,
+					skinIndexBuffer,
+					skinWeightBuffer,
+					materialIndexBuffer
+				);
+			}
+
+			return {
+				vertexBuffer: vertexBuffer,
+				normalBuffer: normalBuffer,
+				uvBuffer: uvBuffer,
+				colorBuffer: colorBuffer,
+				skinIndexBuffer: skinIndexBuffer,
+				skinWeightBuffer: skinWeightBuffer,
+				materialIndexBuffer: materialIndexBuffer
+			};
+		}
+	});
+
+	function TextParser() {}
+
+	Object.assign(TextParser.prototype, {
+		getPrevNode: function() {
+			return this.nodeStack[this.currentIndent - 2];
+		},
+
+		getCurrentNode: function() {
+			return this.nodeStack[this.currentIndent - 1];
+		},
+
+		getCurrentProp: function() {
+			return this.currentProp;
+		},
+
+		pushStack: function(node) {
+			this.nodeStack.push(node);
+			this.currentIndent += 1;
+		},
+
+		popStack: function() {
+			this.nodeStack.pop();
+			this.currentIndent -= 1;
+		},
+
+		setCurrentProp: function(val, name) {
+			this.currentProp = val;
+			this.currentPropName = name;
+		},
+
+		// ----------parse ---------------------------------------------------
+		parse: function(text) {
+			this.currentIndent = 0;
+			this.allNodes = new FBXTree();
+			this.nodeStack = [];
+			this.currentProp = [];
+			this.currentPropName = "";
+
+			var split = text.split("\n");
+
+			for (var line in split) {
+				var l = split[line];
+
+				// short cut
+				if (l.match(/^[\s\t]*;/)) {
+					continue;
+				} // skip comment line
+				if (l.match(/^[\s\t]*$/)) {
+					continue;
+				} // skip empty line
+
+				// beginning of node
+				var beginningOfNodeExp = new RegExp(
+					"^\\t{" + this.currentIndent + "}(\\w+):(.*){",
+					""
+				);
+				var match = l.match(beginningOfNodeExp);
+				if (match) {
+					var nodeName = match[1]
+						.trim()
+						.replace(/^"/, "")
+						.replace(/"$/, "");
+					var nodeAttrs = match[2].split(",");
+
+					for (var i = 0, l = nodeAttrs.length; i < l; i++) {
+						nodeAttrs[i] = nodeAttrs[i]
+							.trim()
+							.replace(/^"/, "")
+							.replace(/"$/, "");
+					}
+
+					this.parseNodeBegin(l, nodeName, nodeAttrs || null);
+					continue;
+				}
+
+				// node's property
+				var propExp = new RegExp(
+					"^\\t{" + this.currentIndent + "}(\\w+):[\\s\\t\\r\\n](.*)"
+				);
+				var match = l.match(propExp);
+				if (match) {
+					var propName = match[1]
+						.replace(/^"/, "")
+						.replace(/"$/, "")
+						.trim();
+					var propValue = match[2]
+						.replace(/^"/, "")
+						.replace(/"$/, "")
+						.trim();
+
+					this.parseNodeProperty(l, propName, propValue);
+					continue;
+				}
+
+				// end of node
+				var endOfNodeExp = new RegExp(
+					"^\\t{" + (this.currentIndent - 1) + "}}"
+				);
+				if (l.match(endOfNodeExp)) {
+					this.nodeEnd();
+					continue;
+				}
+
+				// for special case,
+				//
+				//	  Vertices: *8670 {
+				//		  a: 0.0356229953467846,13.9599733352661,-0.399196773.....(snip)
+				// -0.0612030513584614,13.960485458374,-0.409748703241348,-0.10.....
+				// 0.12490539252758,13.7450733184814,-0.454119384288788,0.09272.....
+				// 0.0836158767342567,13.5432004928589,-0.435397416353226,0.028.....
+				//
+				// these case the lines must contiue with previous line
+				if (l.match(/^[^\s\t}]/)) {
+					this.parseNodePropertyContinued(l);
+				}
+			}
+
+			return this.allNodes;
+		},
+
+		parseNodeBegin: function(line, nodeName, nodeAttrs) {
+			// var nodeName = match[1];
+			var node = { name: nodeName, properties: {}, subNodes: {} };
+			var attrs = this.parseNodeAttr(nodeAttrs);
+			var currentNode = this.getCurrentNode();
+
+			// a top node
+			if (this.currentIndent === 0) {
+				this.allNodes.add(nodeName, node);
+			} else {
+				// a subnode
+
+				// already exists subnode, then append it
+				if (nodeName in currentNode.subNodes) {
+					var tmp = currentNode.subNodes[nodeName];
+
+					// console.log( "duped entry found\nkey: " + nodeName + "\nvalue: " + propValue );
+					if (this.isFlattenNode(currentNode.subNodes[nodeName])) {
+						if (attrs.id === "") {
+							currentNode.subNodes[nodeName] = [];
+							currentNode.subNodes[nodeName].push(tmp);
+						} else {
+							currentNode.subNodes[nodeName] = {};
+							currentNode.subNodes[nodeName][tmp.id] = tmp;
+						}
+					}
+
+					if (attrs.id === "") {
+						currentNode.subNodes[nodeName].push(node);
+					} else {
+						currentNode.subNodes[nodeName][attrs.id] = node;
+					}
+				} else if (
+					typeof attrs.id === "number" ||
+					attrs.id.match(/^\d+$/)
+				) {
+					currentNode.subNodes[nodeName] = {};
+					currentNode.subNodes[nodeName][attrs.id] = node;
+				} else {
+					currentNode.subNodes[nodeName] = node;
+				}
+			}
+
+			// for this		  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+			// NodeAttribute: 1001463072, "NodeAttribute::", "LimbNode" {
+			if (nodeAttrs) {
+				node.id = attrs.id;
+				node.attrName = attrs.name;
+				node.attrType = attrs.type;
+			}
+
+			this.pushStack(node);
+		},
+
+		parseNodeAttr: function(attrs) {
+			var id = attrs[0];
+
+			if (attrs[0] !== "") {
+				id = parseInt(attrs[0]);
+
+				if (isNaN(id)) {
+					// PolygonVertexIndex: *16380 {
+					id = attrs[0];
+				}
+			}
+
+			var name = "",
+				type = "";
+
+			if (attrs.length > 1) {
+				name = attrs[1].replace(/^(\w+)::/, "");
+				type = attrs[2];
+			}
+
+			return { id: id, name: name, type: type };
+		},
+
+		parseNodeProperty: function(line, propName, propValue) {
+			var currentNode = this.getCurrentNode();
+			var parentName = currentNode.name;
+
+			// special case parent node's is like "Properties70"
+			// these chilren nodes must treat with careful
+			if (parentName !== undefined) {
+				var propMatch = parentName.match(/Properties(\d)+/);
+				if (propMatch) {
+					this.parseNodeSpecialProperty(line, propName, propValue);
+					return;
+				}
+			}
+
+			// special case Connections
+			if (propName == "C") {
+				var connProps = propValue.split(",").slice(1);
+				var from = parseInt(connProps[0]);
+				var to = parseInt(connProps[1]);
+
+				var rest = propValue.split(",").slice(3);
+
+				propName = "connections";
+				propValue = [from, to];
+				append(propValue, rest);
+
+				if (currentNode.properties[propName] === undefined) {
+					currentNode.properties[propName] = [];
+				}
+			}
+
+			// special case Connections
+			if (propName == "Node") {
+				var id = parseInt(propValue);
+				currentNode.properties.id = id;
+				currentNode.id = id;
+			}
+
+			// already exists in properties, then append this
+			if (propName in currentNode.properties) {
+				// console.log( "duped entry found\nkey: " + propName + "\nvalue: " + propValue );
+				if (Array.isArray(currentNode.properties[propName])) {
+					currentNode.properties[propName].push(propValue);
+				} else {
+					currentNode.properties[propName] += propValue;
+				}
+			} else {
+				// console.log( propName + ":  " + propValue );
+				if (Array.isArray(currentNode.properties[propName])) {
+					currentNode.properties[propName].push(propValue);
+				} else {
+					currentNode.properties[propName] = propValue;
+				}
+			}
+
+			this.setCurrentProp(currentNode.properties, propName);
+		},
+
+		// TODO:
+		parseNodePropertyContinued: function(line) {
+			this.currentProp[this.currentPropName] += line;
+		},
+
+		parseNodeSpecialProperty: function(line, propName, propValue) {
+			// split this
+			// P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+			// into array like below
+			// ["Lcl Scaling", "Lcl Scaling", "", "A", "1,1,1" ]
+			var props = propValue.split('",');
+
+			for (var i = 0, l = props.length; i < l; i++) {
+				props[i] = props[i]
+					.trim()
+					.replace(/^\"/, "")
+					.replace(/\s/, "_");
+			}
+
+			var innerPropName = props[0];
+			var innerPropType1 = props[1];
+			var innerPropType2 = props[2];
+			var innerPropFlag = props[3];
+			var innerPropValue = props[4];
+
+			/*
+			if ( innerPropValue === undefined ) {
+				innerPropValue = props[3];
+			}
+			*/
+
+			// cast value in its type
+			switch (innerPropType1) {
+				case "int":
+					innerPropValue = parseInt(innerPropValue);
+					break;
+
+				case "double":
+					innerPropValue = parseFloat(innerPropValue);
+					break;
+
+				case "ColorRGB":
+				case "Vector3D":
+					innerPropValue = parseFloatArray(innerPropValue);
+					break;
+			}
+
+			// CAUTION: these props must append to parent's parent
+			this.getPrevNode().properties[innerPropName] = {
+				type: innerPropType1,
+				type2: innerPropType2,
+				flag: innerPropFlag,
+				value: innerPropValue
+			};
+
+			this.setCurrentProp(this.getPrevNode().properties, innerPropName);
+		},
+
+		nodeEnd: function() {
+			this.popStack();
+		},
+
+		/* ---------------------------------------------------------------- */
+		/*		util													  */
+		isFlattenNode: function(node) {
+			return "subNodes" in node && "properties" in node ? true : false;
+		}
+	});
+
+	// Binary format specification:
+	//   https://code.blender.org/2013/08/fbx-binary-file-format-specification/
+	//   https://wiki.rogiken.org/specifications/file-format/fbx/ (more detail but Japanese)
+	function BinaryParser() {}
+
+	Object.assign(BinaryParser.prototype, {
+		/**
+		 * Parses binary data and builds FBXTree as much compatible as possible with the one built by TextParser.
+		 * @param {ArrayBuffer} buffer
+		 * @returns {THREE.FBXTree}
+		 */
+		parse: function(buffer) {
+			var reader = new BinaryReader(buffer);
+			reader.skip(23); // skip magic 23 bytes
+
+			var version = reader.getUint32();
+
+			console.log("FBX binary version: " + version);
+
+			var allNodes = new FBXTree();
+
+			while (!this.endOfContent(reader)) {
+				var node = this.parseNode(reader, version);
+				if (node !== null) allNodes.add(node.name, node);
+			}
+
+			return allNodes;
+		},
+
+		/**
+		 * Checks if reader has reached the end of content.
+		 * @param {BinaryReader} reader
+		 * @returns {boolean}
+		 */
+		endOfContent: function(reader) {
+			// footer size: 160bytes + 16-byte alignment padding
+			// - 16bytes: magic
+			// - padding til 16-byte alignment (at least 1byte?)
+			//   (seems like some exporters embed fixed 15bytes?)
+			// - 4bytes: magic
+			// - 4bytes: version
+			// - 120bytes: zero
+			// - 16bytes: magic
+			if (reader.size() % 16 === 0) {
+				return (
+					((reader.getOffset() + 160 + 16) & ~0xf) >= reader.size()
+				);
+			} else {
+				return reader.getOffset() + 160 + 15 >= reader.size();
+			}
+		},
+
+		/**
+		 * Parses Node as much compatible as possible with the one parsed by TextParser
+		 * TODO: could be optimized more?
+		 * @param {BinaryReader} reader
+		 * @param {number} version
+		 * @returns {Object} - Returns an Object as node, or null if NULL-record.
+		 */
+		parseNode: function(reader, version) {
+			// The first three data sizes depends on version.
+			var endOffset =
+				version >= 7500 ? reader.getUint64() : reader.getUint32();
+			var numProperties =
+				version >= 7500 ? reader.getUint64() : reader.getUint32();
+			var propertyListLen =
+				version >= 7500 ? reader.getUint64() : reader.getUint32();
+			var nameLen = reader.getUint8();
+			var name = reader.getString(nameLen);
+
+			// Regards this node as NULL-record if endOffset is zero
+			if (endOffset === 0) return null;
+
+			var propertyList = [];
+
+			for (var i = 0; i < numProperties; i++) {
+				propertyList.push(this.parseProperty(reader));
+			}
+
+			// Regards the first three elements in propertyList as id, attrName, and attrType
+			var id = propertyList.length > 0 ? propertyList[0] : "";
+			var attrName = propertyList.length > 1 ? propertyList[1] : "";
+			var attrType = propertyList.length > 2 ? propertyList[2] : "";
+
+			var subNodes = {};
+			var properties = {};
+
+			var isSingleProperty = false;
+
+			// if this node represents just a single property
+			// like (name, 0) set or (name2, [0, 1, 2]) set of {name: 0, name2: [0, 1, 2]}
+			if (numProperties === 1 && reader.getOffset() === endOffset) {
+				isSingleProperty = true;
+			}
+
+			while (endOffset > reader.getOffset()) {
+				var node = this.parseNode(reader, version);
+
+				if (node === null) continue;
+
+				// special case: child node is single property
+				if (node.singleProperty === true) {
+					var value = node.propertyList[0];
+
+					if (Array.isArray(value)) {
+						// node represents
+						//	Vertices: *3 {
+						//		a: 0.01, 0.02, 0.03
+						//	}
+						// of text format here.
+
+						node.properties[node.name] = node.propertyList[0];
+						subNodes[node.name] = node;
+
+						// Later phase expects single property array is in node.properties.a as String.
+						// TODO: optimize
+						node.properties.a = value.toString();
+					} else {
+						// node represents
+						// 	Version: 100
+						// of text format here.
+
+						properties[node.name] = value;
+					}
+
+					continue;
+				}
+
+				// special case: connections
+				if (name === "Connections" && node.name === "C") {
+					var array = [];
+
+					// node.propertyList would be like
+					// ["OO", 111264976, 144038752, "d|x"] (?, from, to, additional values)
+					for (
+						var i = 1, il = node.propertyList.length;
+						i < il;
+						i++
+					) {
+						array[i - 1] = node.propertyList[i];
+					}
+
+					if (properties.connections === undefined) {
+						properties.connections = [];
+					}
+
+					properties.connections.push(array);
+
+					continue;
+				}
+
+				// special case: child node is Properties\d+
+				if (node.name.match(/^Properties\d+$/)) {
+					// move child node's properties to this node.
+
+					var keys = Object.keys(node.properties);
+
+					for (var i = 0, il = keys.length; i < il; i++) {
+						var key = keys[i];
+						properties[key] = node.properties[key];
+					}
+
+					continue;
+				}
+
+				// special case: properties
+				if (name.match(/^Properties\d+$/) && node.name === "P") {
+					var innerPropName = node.propertyList[0];
+					var innerPropType1 = node.propertyList[1];
+					var innerPropType2 = node.propertyList[2];
+					var innerPropFlag = node.propertyList[3];
+					var innerPropValue;
+
+					if (innerPropName.indexOf("Lcl ") === 0)
+						innerPropName = innerPropName.replace("Lcl ", "Lcl_");
+					if (innerPropType1.indexOf("Lcl ") === 0)
+						innerPropType1 = innerPropType1.replace("Lcl ", "Lcl_");
+
+					if (
+						innerPropType1 === "ColorRGB" ||
+						innerPropType1 === "Vector" ||
+						innerPropType1 === "Vector3D" ||
+						innerPropType1.indexOf("Lcl_") === 0
+					) {
+						innerPropValue = [
+							node.propertyList[4],
+							node.propertyList[5],
+							node.propertyList[6]
+						];
+					} else {
+						innerPropValue = node.propertyList[4];
+					}
+
+					if (innerPropType1.indexOf("Lcl_") === 0) {
+						innerPropValue = innerPropValue.toString();
+					}
+
+					// this will be copied to parent. see above.
+					properties[innerPropName] = {
+						type: innerPropType1,
+						type2: innerPropType2,
+						flag: innerPropFlag,
+						value: innerPropValue
+					};
+
+					continue;
+				}
+
+				// standard case
+				// follows TextParser's manner.
+				if (subNodes[node.name] === undefined) {
+					if (typeof node.id === "number") {
+						subNodes[node.name] = {};
+						subNodes[node.name][node.id] = node;
+					} else {
+						subNodes[node.name] = node;
+					}
+				} else {
+					if (node.id === "") {
+						if (!Array.isArray(subNodes[node.name])) {
+							subNodes[node.name] = [subNodes[node.name]];
+						}
+
+						subNodes[node.name].push(node);
+					} else {
+						if (subNodes[node.name][node.id] === undefined) {
+							subNodes[node.name][node.id] = node;
+						} else {
+							// conflict id. irregular?
+
+							if (!Array.isArray(subNodes[node.name][node.id])) {
+								subNodes[node.name][node.id] = [
+									subNodes[node.name][node.id]
+								];
+							}
+
+							subNodes[node.name][node.id].push(node);
+						}
+					}
+				}
+			}
+
+			return {
+				singleProperty: isSingleProperty,
+				id: id,
+				attrName: attrName,
+				attrType: attrType,
+				name: name,
+				properties: properties,
+				propertyList: propertyList, // raw property list, would be used by parent
+				subNodes: subNodes
+			};
+		},
+
+		parseProperty: function(reader) {
+			var type = reader.getChar();
+
+			switch (type) {
+				case "F":
+					return reader.getFloat32();
+
+				case "D":
+					return reader.getFloat64();
+
+				case "L":
+					return reader.getInt64();
+
+				case "I":
+					return reader.getInt32();
+
+				case "Y":
+					return reader.getInt16();
+
+				case "C":
+					return reader.getBoolean();
+
+				case "f":
+				case "d":
+				case "l":
+				case "i":
+				case "b":
+					var arrayLength = reader.getUint32();
+					var encoding = reader.getUint32(); // 0: non-compressed, 1: compressed
+					var compressedLength = reader.getUint32();
+
+					if (encoding === 0) {
+						switch (type) {
+							case "f":
+								return reader.getFloat32Array(arrayLength);
+
+							case "d":
+								return reader.getFloat64Array(arrayLength);
+
+							case "l":
+								return reader.getInt64Array(arrayLength);
+
+							case "i":
+								return reader.getInt32Array(arrayLength);
+
+							case "b":
+								return reader.getBooleanArray(arrayLength);
+						}
+					}
+
+					if (window.Zlib === undefined) {
+						throw new Error(
+							"FBXLoader: Import inflate.min.js from https://github.com/imaya/zlib.js"
+						);
+					}
+
+					var inflate = new Zlib.Inflate(
+						new Uint8Array(reader.getArrayBuffer(compressedLength))
+					);
+					var reader2 = new BinaryReader(inflate.decompress().buffer);
+
+					switch (type) {
+						case "f":
+							return reader2.getFloat32Array(arrayLength);
+
+						case "d":
+							return reader2.getFloat64Array(arrayLength);
+
+						case "l":
+							return reader2.getInt64Array(arrayLength);
+
+						case "i":
+							return reader2.getInt32Array(arrayLength);
+
+						case "b":
+							return reader2.getBooleanArray(arrayLength);
+					}
+
+				case "S":
+					var length = reader.getUint32();
+					return reader.getString(length);
+
+				case "R":
+					var length = reader.getUint32();
+					return reader.getArrayBuffer(length);
+
+				default:
+					throw new Error("FBXLoader: Unknown property type " + type);
+			}
+		}
+	});
+
+	function BinaryReader(buffer, littleEndian) {
+		this.dv = new DataView(buffer);
+		this.offset = 0;
+		this.littleEndian = littleEndian !== undefined ? littleEndian : true;
+	}
+
+	Object.assign(BinaryReader.prototype, {
+		getOffset: function() {
+			return this.offset;
+		},
+
+		size: function() {
+			return this.dv.buffer.byteLength;
+		},
+
+		skip: function(length) {
+			this.offset += length;
+		},
+
+		// seems like true/false representation depends on exporter.
+		//   true: 1 or 'Y'(=0x59), false: 0 or 'T'(=0x54)
+		// then sees LSB.
+		getBoolean: function() {
+			return (this.getUint8() & 1) === 1;
+		},
+
+		getBooleanArray: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getBoolean());
+			}
+
+			return a;
+		},
+
+		getInt8: function() {
+			var value = this.dv.getInt8(this.offset);
+			this.offset += 1;
+			return value;
+		},
+
+		getInt8Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getInt8());
+			}
+
+			return a;
+		},
+
+		getUint8: function() {
+			var value = this.dv.getUint8(this.offset);
+			this.offset += 1;
+			return value;
+		},
+
+		getUint8Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getUint8());
+			}
+
+			return a;
+		},
+
+		getInt16: function() {
+			var value = this.dv.getInt16(this.offset, this.littleEndian);
+			this.offset += 2;
+			return value;
+		},
+
+		getInt16Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getInt16());
+			}
+
+			return a;
+		},
+
+		getUint16: function() {
+			var value = this.dv.getUint16(this.offset, this.littleEndian);
+			this.offset += 2;
+			return value;
+		},
+
+		getUint16Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getUint16());
+			}
+
+			return a;
+		},
+
+		getInt32: function() {
+			var value = this.dv.getInt32(this.offset, this.littleEndian);
+			this.offset += 4;
+			return value;
+		},
+
+		getInt32Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getInt32());
+			}
+
+			return a;
+		},
+
+		getUint32: function() {
+			var value = this.dv.getUint32(this.offset, this.littleEndian);
+			this.offset += 4;
+			return value;
+		},
+
+		getUint32Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getUint32());
+			}
+
+			return a;
+		},
+
+		// JavaScript doesn't support 64-bit integer so attempting to calculate by ourselves.
+		// 1 << 32 will return 1 so using multiply operation instead here.
+		// There'd be a possibility that this method returns wrong value if the value
+		// is out of the range between Number.MAX_SAFE_INTEGER and Number.MIN_SAFE_INTEGER.
+		// TODO: safely handle 64-bit integer
+		getInt64: function() {
+			var low, high;
+
+			if (this.littleEndian) {
+				low = this.getUint32();
+				high = this.getUint32();
+			} else {
+				high = this.getUint32();
+				low = this.getUint32();
+			}
+
+			// calculate negative value
+			if (high & 0x80000000) {
+				high = ~high & 0xffffffff;
+				low = ~low & 0xffffffff;
+
+				if (low === 0xffffffff) high = (high + 1) & 0xffffffff;
+
+				low = (low + 1) & 0xffffffff;
+
+				return -(high * 0x100000000 + low);
+			}
+
+			return high * 0x100000000 + low;
+		},
+
+		getInt64Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getInt64());
+			}
+
+			return a;
+		},
+
+		// Note: see getInt64() comment
+		getUint64: function() {
+			var low, high;
+
+			if (this.littleEndian) {
+				low = this.getUint32();
+				high = this.getUint32();
+			} else {
+				high = this.getUint32();
+				low = this.getUint32();
+			}
+
+			return high * 0x100000000 + low;
+		},
+
+		getUint64Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getUint64());
+			}
+
+			return a;
+		},
+
+		getFloat32: function() {
+			var value = this.dv.getFloat32(this.offset, this.littleEndian);
+			this.offset += 4;
+			return value;
+		},
+
+		getFloat32Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getFloat32());
+			}
+
+			return a;
+		},
+
+		getFloat64: function() {
+			var value = this.dv.getFloat64(this.offset, this.littleEndian);
+			this.offset += 8;
+			return value;
+		},
+
+		getFloat64Array: function(size) {
+			var a = [];
+
+			for (var i = 0; i < size; i++) {
+				a.push(this.getFloat64());
+			}
+
+			return a;
+		},
+
+		getArrayBuffer: function(size) {
+			var value = this.dv.buffer.slice(this.offset, this.offset + size);
+			this.offset += size;
+			return value;
+		},
+
+		getChar: function() {
+			return String.fromCharCode(this.getUint8());
+		},
+
+		getString: function(size) {
+			var s = "";
+
+			while (size > 0) {
+				var value = this.getUint8();
+				size--;
+
+				if (value === 0) break;
+
+				s += String.fromCharCode(value);
+			}
+
+			this.skip(size);
+
+			return s;
+		}
+	});
+
+	function FBXTree() {}
+
+	Object.assign(FBXTree.prototype, {
+		add: function(key, val) {
+			this[key] = val;
+		},
+
+		searchConnectionParent: function(id) {
+			if (this.__cache_search_connection_parent === undefined) {
+				this.__cache_search_connection_parent = [];
+			}
+
+			if (this.__cache_search_connection_parent[id] !== undefined) {
+				return this.__cache_search_connection_parent[id];
+			} else {
+				this.__cache_search_connection_parent[id] = [];
+			}
+
+			var conns = this.Connections.properties.connections;
+
+			var results = [];
+			for (var i = 0; i < conns.length; ++i) {
+				if (conns[i][0] == id) {
+					// 0 means scene root
+					var res = conns[i][1] === 0 ? -1 : conns[i][1];
+					results.push(res);
+				}
+			}
+
+			if (results.length > 0) {
+				append(this.__cache_search_connection_parent[id], results);
+				return results;
+			} else {
+				this.__cache_search_connection_parent[id] = [-1];
+				return [-1];
+			}
+		},
+
+		searchConnectionChildren: function(id) {
+			if (this.__cache_search_connection_children === undefined) {
+				this.__cache_search_connection_children = [];
+			}
+
+			if (this.__cache_search_connection_children[id] !== undefined) {
+				return this.__cache_search_connection_children[id];
+			} else {
+				this.__cache_search_connection_children[id] = [];
+			}
+
+			var conns = this.Connections.properties.connections;
+
+			var res = [];
+			for (var i = 0; i < conns.length; ++i) {
+				if (conns[i][1] == id) {
+					// 0 means scene root
+					res.push(conns[i][0] === 0 ? -1 : conns[i][0]);
+					// there may more than one kid, then search to the end
+				}
+			}
+
+			if (res.length > 0) {
+				append(this.__cache_search_connection_children[id], res);
+				return res;
+			} else {
+				this.__cache_search_connection_children[id] = [];
+				return [];
+			}
+		},
+
+		searchConnectionType: function(id, to) {
+			var key = id + "," + to; // TODO: to hash
+			if (this.__cache_search_connection_type === undefined) {
+				this.__cache_search_connection_type = {};
+			}
+
+			if (this.__cache_search_connection_type[key] !== undefined) {
+				return this.__cache_search_connection_type[key];
+			} else {
+				this.__cache_search_connection_type[key] = "";
+			}
+
+			var conns = this.Connections.properties.connections;
+
+			for (var i = 0; i < conns.length; ++i) {
+				if (conns[i][0] == id && conns[i][1] == to) {
+					// 0 means scene root
+					this.__cache_search_connection_type[key] = conns[i][2];
+					return conns[i][2];
+				}
+			}
+
+			this.__cache_search_connection_type[id] = null;
+			return null;
+		}
+	});
+
+	/**
+	 * @param {ArrayBuffer} buffer
+	 * @returns {boolean}
+	 */
+	function isFbxFormatBinary(buffer) {
+		var CORRECT = "Kaydara FBX Binary  \0";
+
+		return (
+			buffer.byteLength >= CORRECT.length &&
+			CORRECT === convertArrayBufferToString(buffer, 0, CORRECT.length)
+		);
+	}
+
+	/**
+	 * @returns {boolean}
+	 */
+	function isFbxFormatASCII(text) {
+		var CORRECT = [
+			"K",
+			"a",
+			"y",
+			"d",
+			"a",
+			"r",
+			"a",
+			"\\",
+			"F",
+			"B",
+			"X",
+			"\\",
+			"B",
+			"i",
+			"n",
+			"a",
+			"r",
+			"y",
+			"\\",
+			"\\"
+		];
+
+		var cursor = 0;
+
+		function read(offset) {
+			var result = text[offset - 1];
+			text = text.slice(cursor + offset);
+			cursor++;
+			return result;
+		}
+
+		for (var i = 0; i < CORRECT.length; ++i) {
+			var num = read(1);
+			if (num == CORRECT[i]) {
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	/**
+	 * @returns {number}
+	 */
+	function getFbxVersion(text) {
+		var versionRegExp = /FBXVersion: (\d+)/;
+		var match = text.match(versionRegExp);
+		if (match) {
+			var version = parseInt(match[1]);
+			return version;
+		}
+		throw new Error(
+			"FBXLoader: Cannot find the version number for the file given."
+		);
+	}
+
+	/**
+	 * Converts FBX ticks into real time seconds.
+	 * @param {number} time - FBX tick timestamp to convert.
+	 * @returns {number} - FBX tick in real world time.
+	 */
+	function convertFBXTimeToSeconds(time) {
+		// Constant is FBX ticks per second.
+		return time / 46186158000;
+	}
+
+	/**
+	 * Parses comma separated list of float numbers and returns them in an array.
+	 * @example
+	 * // Returns [ 5.6, 9.4, 2.5, 1.4 ]
+	 * parseFloatArray( "5.6,9.4,2.5,1.4" )
+	 * @returns {number[]}
+	 */
+	function parseFloatArray(string) {
+		var array = string.split(",");
+
+		for (var i = 0, l = array.length; i < l; i++) {
+			array[i] = parseFloat(array[i]);
+		}
+
+		return array;
+	}
+
+	/**
+	 * Parses comma separated list of int numbers and returns them in an array.
+	 * @example
+	 * // Returns [ 5, 8, 2, 3 ]
+	 * parseFloatArray( "5,8,2,3" )
+	 * @returns {number[]}
+	 */
+	function parseIntArray(string) {
+		var array = string.split(",");
+
+		for (var i = 0, l = array.length; i < l; i++) {
+			array[i] = parseInt(array[i]);
+		}
+
+		return array;
+	}
+
+	/**
+	 * Parses Vector3 property from FBXTree.  Property is given as .value.x, .value.y, etc.
+	 * @param {FBXVector3} property - Property to parse as Vector3.
+	 * @returns {THREE.Vector3}
+	 */
+	function parseVector3(property) {
+		return new THREE.Vector3().fromArray(property.value);
+	}
+
+	/**
+	 * Parses Color property from FBXTree.  Property is given as .value.x, .value.y, etc.
+	 * @param {FBXVector3} property - Property to parse as Color.
+	 * @returns {THREE.Color}
+	 */
+	function parseColor(property) {
+		return new THREE.Color().fromArray(property.value);
+	}
+
+	function parseMatrixArray(floatString) {
+		return new THREE.Matrix4().fromArray(parseFloatArray(floatString));
+	}
+
+	/**
+	 * Converts ArrayBuffer to String.
+	 * @param {ArrayBuffer} buffer
+	 * @param {number} from
+	 * @param {number} to
+	 * @returns {String}
+	 */
+	function convertArrayBufferToString(buffer, from, to) {
+		if (from === undefined) from = 0;
+		if (to === undefined) to = buffer.byteLength;
+
+		var array = new Uint8Array(buffer, from, to);
+
+		if (window.TextDecoder !== undefined) {
+			return new TextDecoder().decode(array);
+		}
+
+		var s = "";
+
+		for (var i = 0, il = array.length; i < il; i++) {
+			s += String.fromCharCode(array[i]);
+		}
+
+		return s;
+	}
+
+	/**
+	 * Converts number from degrees into radians.
+	 * @param {number} value
+	 * @returns {number}
+	 */
+	function degreeToRadian(value) {
+		return value * DEG2RAD;
+	}
+
+	var DEG2RAD = Math.PI / 180;
+
+	//
+
+	function findIndex(array, func) {
+		for (var i = 0, l = array.length; i < l; i++) {
+			if (func(array[i])) return i;
+		}
+
+		return -1;
+	}
+
+	function append(a, b) {
+		for (var i = 0, j = a.length, l = b.length; i < l; i++, j++) {
+			a[j] = b[i];
+		}
+	}
+
+	function slice(a, b, from, to) {
+		for (var i = from, j = 0; i < to; i++, j++) {
+			a[j] = b[i];
+		}
+
+		return a;
+	}
+};
+
 
 /***/ }),
 
@@ -105779,8 +110475,6 @@ var _temp = function () {
 var _this = this;
 
 
-/// <reference path="floorplanner/floorplanner.ts" />
-/// <reference path="three/main.ts" />
 
 
 
@@ -105789,7 +110483,7 @@ var _this = this;
 
 var _default = function _default(options) {
 	var model = void 0;
-	var three = void 0; // Three.Main;
+	var three = void 0;
 	var floorplanner = void 0;
 
 	model = new __WEBPACK_IMPORTED_MODULE_2__model_model__["a" /* default */](options.textureDir);
@@ -105830,9 +110524,9 @@ var _temp = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return configDimUnit; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return configWallHeight; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return configWallThickness; });
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return configDimUnit; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return configWallHeight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return configWallThickness; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dimensioning__ = __webpack_require__("./blueprint/core/dimensioning.js");
 // GENERAL:
 
@@ -105852,62 +110546,60 @@ var configWallThickness = "wallThickness";
 /** Global configuration to customize the whole system.  */
 
 var _default = function () {
-  /** Configuration data loaded from/stored to extern. */
-  var data = {
-    dimUnit: __WEBPACK_IMPORTED_MODULE_0__dimensioning__["b" /* dimInch */],
+	/** Configuration data loaded from/stored to extern. */
+	var data = {
+		dimUnit: __WEBPACK_IMPORTED_MODULE_0__dimensioning__["b" /* dimCentiMeter */],
 
-    wallHeight: 250,
-    wallThickness: 10
-  };
+		wallHeight: 250,
+		wallThickness: 10
+	};
 
-  /** Set a configuration parameter. */
-  function setValue(key, value) {
-    this.data[key] = value;
-  }
+	/** Set a configuration parameter. */
+	function setValue(key, value) {
+		this.data[key] = value;
+	}
 
-  /** Get a string configuration parameter. */
-  function getStringValue(key) {
-    switch (key) {
-      case configDimUnit:
-        return data[key];
-      default:
-        throw new Error("Invalid string configuration parameter: " + key);
-    }
-  }
+	/** Get a string configuration parameter. */
+	function getStringValue(key) {
+		switch (key) {
+			case configDimUnit:
+				return data[key];
+			default:
+				throw new Error("Invalid string configuration parameter: " + key);
+		}
+	}
 
-  /** Get a numeric configuration parameter. */
-  function getNumericValue(key) {
-    switch (key) {
-      case configWallHeight:
-      case configWallThickness:
-        return data[key];
-      default:
-        throw new Error("Invalid numeric configuration parameter: " + key);
-    }
-  }
-  return {
-
-    getNumericValue: getNumericValue,
-    getStringValue: getStringValue
-
-  };
+	/** Get a numeric configuration parameter. */
+	function getNumericValue(key) {
+		switch (key) {
+			case configWallHeight:
+			case configWallThickness:
+				return data[key];
+			default:
+				throw new Error("Invalid numeric configuration parameter: " + key);
+		}
+	}
+	return {
+		getNumericValue: getNumericValue,
+		getStringValue: getStringValue
+	};
 }();
 
-/* harmony default export */ __webpack_exports__["e"] = (_default);
+/* harmony default export */ __webpack_exports__["d"] = (_default);
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(configDimUnit, "configDimUnit", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+	__REACT_HOT_LOADER__.register(configDimUnit, "configDimUnit", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
 
-  __REACT_HOT_LOADER__.register(configWallHeight, "configWallHeight", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+	__REACT_HOT_LOADER__.register(configWallHeight, "configWallHeight", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
 
-  __REACT_HOT_LOADER__.register(configWallThickness, "configWallThickness", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+	__REACT_HOT_LOADER__.register(configWallThickness, "configWallThickness", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/configuration.js");
 }();
 
 ;
@@ -105921,9 +110613,9 @@ var _temp = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return dimInch; });
+/* WEBPACK VAR INJECTION */(function(process, module) {/* unused harmony export dimInch */
 /* unused harmony export dimMeter */
-/* unused harmony export dimCentiMeter */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return dimCentiMeter; });
 /* unused harmony export dimMilliMeter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__configuration__ = __webpack_require__("./blueprint/core/configuration.js");
 var dimInch = "inch";
@@ -105948,7 +110640,7 @@ var _default = function () {
      * @returns String representation.
      */
   function cmToMeasure(cm) {
-    switch (__WEBPACK_IMPORTED_MODULE_0__configuration__["e" /* default */].getStringValue(__WEBPACK_IMPORTED_MODULE_0__configuration__["b" /* configDimUnit */])) {
+    switch (__WEBPACK_IMPORTED_MODULE_0__configuration__["d" /* default */].getStringValue(__WEBPACK_IMPORTED_MODULE_0__configuration__["a" /* configDimUnit */])) {
       case dimInch:
         var realFeet = cm * 0.3937 / 12;
         var feet = Math.floor(realFeet);
@@ -106000,7 +110692,7 @@ var _temp = function () {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process, module) {var _default = function () {
-  /** Determines the distance of a point from a line.
+	/** Determines the distance of a point from a line.
      * @param x Point's x coordinate.
      * @param y Point's y coordinate.
      * @param x1 Line-Point 1's x coordinate.
@@ -106009,14 +110701,14 @@ var _temp = function () {
      * @param y2 Line-Point 2's y coordinate.
      * @returns The distance.
      */
-  function pointDistanceFromLine(x, y, x1, y1, x2, y2) {
-    var tPoint = closestPointOnLine(x, y, x1, y1, x2, y2);
-    var tDx = x - tPoint.x;
-    var tDy = y - tPoint.y;
-    return Math.sqrt(tDx * tDx + tDy * tDy);
-  }
+	function pointDistanceFromLine(x, y, x1, y1, x2, y2) {
+		var tPoint = closestPointOnLine(x, y, x1, y1, x2, y2);
+		var tDx = x - tPoint.x;
+		var tDy = y - tPoint.y;
+		return Math.sqrt(tDx * tDx + tDy * tDy);
+	}
 
-  /** Gets the projection of a point onto a line.
+	/** Gets the projection of a point onto a line.
      * @param x Point's x coordinate.
      * @param y Point's y coordinate.
      * @param x1 Line-Point 1's x coordinate.
@@ -106025,329 +110717,332 @@ var _temp = function () {
      * @param y2 Line-Point 2's y coordinate.
      * @returns The point.
      */
-  function closestPointOnLine(x, y, x1, y1, x2, y2) {
-    // Inspired by: http://stackoverflow.com/a/6853926
-    var tA = x - x1;
-    var tB = y - y1;
-    var tC = x2 - x1;
-    var tD = y2 - y1;
+	function closestPointOnLine(x, y, x1, y1, x2, y2) {
+		// Inspired by: http://stackoverflow.com/a/6853926
+		var tA = x - x1;
+		var tB = y - y1;
+		var tC = x2 - x1;
+		var tD = y2 - y1;
 
-    var tDot = tA * tC + tB * tD;
-    var tLenSq = tC * tC + tD * tD;
-    var tParam = tDot / tLenSq;
+		var tDot = tA * tC + tB * tD;
+		var tLenSq = tC * tC + tD * tD;
+		var tParam = tDot / tLenSq;
 
-    var tXx, tYy;
+		var tXx, tYy;
 
-    if (tParam < 0 || x1 == x2 && y1 == y2) {
-      tXx = x1;
-      tYy = y1;
-    } else if (tParam > 1) {
-      tXx = x2;
-      tYy = y2;
-    } else {
-      tXx = x1 + tParam * tC;
-      tYy = y1 + tParam * tD;
-    }
+		if (tParam < 0 || x1 == x2 && y1 == y2) {
+			tXx = x1;
+			tYy = y1;
+		} else if (tParam > 1) {
+			tXx = x2;
+			tYy = y2;
+		} else {
+			tXx = x1 + tParam * tC;
+			tYy = y1 + tParam * tD;
+		}
 
-    return {
-      x: tXx,
-      y: tYy
-    };
-  }
+		return {
+			x: tXx,
+			y: tYy
+		};
+	}
 
-  /** Gets the distance of two points.
+	/** Gets the distance of two points.
      * @param x1 X part of first point.
      * @param y1 Y part of first point.
      * @param x2 X part of second point.
      * @param y2 Y part of second point.
      * @returns The distance.
      */
-  function distance(x1, y1, x2, y2) {
-    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-  }
+	function distance(x1, y1, x2, y2) {
+		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+	}
 
-  /**  Gets the angle between 0,0 -> x1,y1 and 0,0 -> x2,y2 (-pi to pi)
+	/**  Gets the angle between 0,0 -> x1,y1 and 0,0 -> x2,y2 (-pi to pi)
      * @returns The angle.
      */
-  function angle(x1, y1, x2, y2) {
-    var tDot = x1 * x2 + y1 * y2;
-    var tDet = x1 * y2 - y1 * x2;
-    var tAngle = -Math.atan2(tDet, tDot);
-    return tAngle;
-  }
+	function angle(x1, y1, x2, y2) {
+		var tDot = x1 * x2 + y1 * y2;
+		var tDet = x1 * y2 - y1 * x2;
+		var tAngle = -Math.atan2(tDet, tDot);
+		return tAngle;
+	}
 
-  /** shifts angle to be 0 to 2pi */
-  function angle2pi(x1, y1, x2, y2) {
-    var tTheta = angle(x1, y1, x2, y2);
-    if (tTheta < 0) {
-      tTheta += 2 * Math.PI;
-    }
-    return tTheta;
-  }
+	/** shifts angle to be 0 to 2pi */
+	function angle2pi(x1, y1, x2, y2) {
+		var tTheta = angle(x1, y1, x2, y2);
+		if (tTheta < 0) {
+			tTheta += 2 * Math.PI;
+		}
+		return tTheta;
+	}
 
-  /** Checks if an array of points is clockwise.
+	/** Checks if an array of points is clockwise.
      * @param points Is array of points with x,y attributes
      * @returns True if clockwise.
      */
-  function isClockwise(points) {
-    // make positive
-    var tSubX = Math.min(0, Math.min.apply(null, map(points, function (p) {
-      return p.x;
-    })));
-    var tSubY = Math.min(0, Math.min.apply(null, map(points, function (p) {
-      return p.x;
-    })));
+	function isClockwise(points) {
+		// make positive
+		var tSubX = Math.min(0, Math.min.apply(null, map(points, function (p) {
+			return p.x;
+		})));
+		var tSubY = Math.min(0, Math.min.apply(null, map(points, function (p) {
+			return p.x;
+		})));
 
-    var tNewPoints = map(points, function (p) {
-      return {
-        x: p.x - tSubX,
-        y: p.y - tSubY
-      };
-    });
+		var tNewPoints = map(points, function (p) {
+			return {
+				x: p.x - tSubX,
+				y: p.y - tSubY
+			};
+		});
 
-    // determine CW/CCW, based on:
-    // http://stackoverflow.com/questions/1165647
-    var tSum = 0;
-    for (var tI = 0; tI < tNewPoints.length; tI++) {
-      var tC1 = tNewPoints[tI];
-      var tC2;
-      if (tI == tNewPoints.length - 1) {
-        tC2 = tNewPoints[0];
-      } else {
-        tC2 = tNewPoints[tI + 1];
-      }
-      tSum += (tC2.x - tC1.x) * (tC2.y + tC1.y);
-    }
-    return tSum >= 0;
-  }
+		// determine CW/CCW, based on:
+		// http://stackoverflow.com/questions/1165647
+		var tSum = 0;
+		for (var tI = 0; tI < tNewPoints.length; tI++) {
+			var tC1 = tNewPoints[tI];
+			var tC2;
+			if (tI == tNewPoints.length - 1) {
+				tC2 = tNewPoints[0];
+			} else {
+				tC2 = tNewPoints[tI + 1];
+			}
+			tSum += (tC2.x - tC1.x) * (tC2.y + tC1.y);
+		}
+		return tSum >= 0;
+	}
 
-  /** Creates a Guid.
+	/** Creates a Guid.
      * @returns A new Guid.
      */
-  function guid() {
-    var tS4 = function tS4() {
-      return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-    };
+	function guid() {
+		var tS4 = function tS4() {
+			return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+		};
 
-    return tS4() + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + tS4() + tS4();
-  }
+		return tS4() + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + "-" + tS4() + tS4() + tS4();
+	}
 
-  /** both arguments are arrays of corners with x,y attributes */
-  function polygonPolygonIntersect(firstCorners, secondCorners) {
-    for (var tI = 0; tI < firstCorners.length; tI++) {
-      var tFirstCorner = firstCorners[tI],
-          tSecondCorner;
+	/** both arguments are arrays of corners with x,y attributes */
+	function polygonPolygonIntersect(firstCorners, secondCorners) {
+		for (var tI = 0; tI < firstCorners.length; tI++) {
+			var tFirstCorner = firstCorners[tI],
+			    tSecondCorner;
 
-      if (tI == firstCorners.length - 1) {
-        tSecondCorner = firstCorners[0];
-      } else {
-        tSecondCorner = firstCorners[tI + 1];
-      }
+			if (tI == firstCorners.length - 1) {
+				tSecondCorner = firstCorners[0];
+			} else {
+				tSecondCorner = firstCorners[tI + 1];
+			}
 
-      if (linePolygonIntersect(tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y, secondCorners)) {
-        return true;
-      }
-    }
-    return false;
-  }
+			if (linePolygonIntersect(tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y, secondCorners)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-  /** Corners is an array of points with x,y attributes */
-  function linePolygonIntersect(x1, y1, x2, y2, corners) {
-    for (var tI = 0; tI < corners.length; tI++) {
-      var tFirstCorner = corners[tI],
-          tSecondCorner;
-      if (tI == corners.length - 1) {
-        tSecondCorner = corners[0];
-      } else {
-        tSecondCorner = corners[tI + 1];
-      }
+	/** Corners is an array of points with x,y attributes */
+	function linePolygonIntersect(x1, y1, x2, y2, corners) {
+		for (var tI = 0; tI < corners.length; tI++) {
+			var tFirstCorner = corners[tI],
+			    tSecondCorner;
+			if (tI == corners.length - 1) {
+				tSecondCorner = corners[0];
+			} else {
+				tSecondCorner = corners[tI + 1];
+			}
 
-      if (lineLineIntersect(x1, y1, x2, y2, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
-        return true;
-      }
-    }
-    return false;
-  }
+			if (lineLineIntersect(x1, y1, x2, y2, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-  /** */
-  function lineLineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
-    function tCCW(p1, p2, p3) {
-      var tA = p1.x,
-          tB = p1.y,
-          tC = p2.x,
-          tD = p2.y,
-          tE = p3.x,
-          tF = p3.y;
-      return (tF - tB) * (tC - tA) > (tD - tB) * (tE - tA);
-    }
+	/** */
+	function lineLineIntersect(x1, y1, x2, y2, x3, y3, x4, y4) {
+		function tCCW(p1, p2, p3) {
+			var tA = p1.x,
+			    tB = p1.y,
+			    tC = p2.x,
+			    tD = p2.y,
+			    tE = p3.x,
+			    tF = p3.y;
+			return (tF - tB) * (tC - tA) > (tD - tB) * (tE - tA);
+		}
 
-    var tP1 = { x: x1, y: y1 },
-        tP2 = { x: x2, y: y2 },
-        tP3 = { x: x3, y: y3 },
-        tP4 = { x: x4, y: y4 };
-    return tCCW(tP1, tP3, tP4) != tCCW(tP2, tP3, tP4) && tCCW(tP1, tP2, tP3) != tCCW(tP1, tP2, tP4);
-  }
+		var tP1 = { x: x1, y: y1 },
+		    tP2 = { x: x2, y: y2 },
+		    tP3 = { x: x3, y: y3 },
+		    tP4 = { x: x4, y: y4 };
+		return tCCW(tP1, tP3, tP4) != tCCW(tP2, tP3, tP4) && tCCW(tP1, tP2, tP3) != tCCW(tP1, tP2, tP4);
+	}
 
-  /**
+	/**
      @param corners Is an array of points with x,y attributes
       @param startX X start coord for raycast
       @param startY Y start coord for raycast
     */
-  function pointInPolygon(x, y, corners, startX, startY) {
-    startX = startX || 0;
-    startY = startY || 0;
+	function pointInPolygon(x, y, corners, startX, startY) {
+		startX = startX || 0;
+		startY = startY || 0;
 
-    //ensure that point(startX, startY) is outside the polygon consists of corners
-    var tMinX = 0,
-        tMinY = 0;
+		//ensure that point(startX, startY) is outside the polygon consists of corners
+		var tMinX = 0,
+		    tMinY = 0;
 
-    if (startX === undefined || startY === undefined) {
-      for (var tI = 0; tI < corners.length; tI++) {
-        tMinX = Math.min(tMinX, corners[tI].x);
-        tMinY = Math.min(tMinX, corners[tI].y);
-      }
-      startX = tMinX - 10;
-      startY = tMinY - 10;
-    }
+		if (startX === undefined || startY === undefined) {
+			for (var tI = 0; tI < corners.length; tI++) {
+				tMinX = Math.min(tMinX, corners[tI].x);
+				tMinY = Math.min(tMinX, corners[tI].y);
+			}
+			startX = tMinX - 10;
+			startY = tMinY - 10;
+		}
 
-    var tIntersects = 0;
-    for (var tI = 0; tI < corners.length; tI++) {
-      var tFirstCorner = corners[tI],
-          tSecondCorner;
-      if (tI == corners.length - 1) {
-        tSecondCorner = corners[0];
-      } else {
-        tSecondCorner = corners[tI + 1];
-      }
+		var tIntersects = 0;
+		for (var tI = 0; tI < corners.length; tI++) {
+			var tFirstCorner = corners[tI],
+			    tSecondCorner;
+			if (tI == corners.length - 1) {
+				tSecondCorner = corners[0];
+			} else {
+				tSecondCorner = corners[tI + 1];
+			}
 
-      if (lineLineIntersect(startX, startY, x, y, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
-        tIntersects++;
-      }
-    }
-    // odd intersections means the point is in the polygon
-    return tIntersects % 2 == 1;
-  }
+			if (lineLineIntersect(startX, startY, x, y, tFirstCorner.x, tFirstCorner.y, tSecondCorner.x, tSecondCorner.y)) {
+				tIntersects++;
+			}
+		}
+		// odd intersections means the point is in the polygon
+		return tIntersects % 2 == 1;
+	}
 
-  /** Checks if all corners of insideCorners are inside the polygon described by outsideCorners */
-  function polygonInsidePolygon(insideCorners, outsideCorners, startX, startY) {
-    startX = startX || 0;
-    startY = startY || 0;
+	/** Checks if all corners of insideCorners are inside the polygon described by outsideCorners */
+	function polygonInsidePolygon(insideCorners, outsideCorners, startX, startY) {
+		startX = startX || 0;
+		startY = startY || 0;
 
-    for (var tI = 0; tI < insideCorners.length; tI++) {
-      if (!pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
-        return false;
-      }
-    }
-    return true;
-  }
+		for (var tI = 0; tI < insideCorners.length; tI++) {
+			if (!pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
+				return false;
+			}
+		}
+		return true;
+	}
 
-  /** Checks if any corners of firstCorners is inside the polygon described by secondCorners */
-  function polygonOutsidePolygon(insideCorners, outsideCorners, startX, startY) {
-    startX = startX || 0;
-    startY = startY || 0;
+	/** Checks if any corners of firstCorners is inside the polygon described by secondCorners */
+	function polygonOutsidePolygon(insideCorners, outsideCorners, startX, startY) {
+		startX = startX || 0;
+		startY = startY || 0;
 
-    for (var tI = 0; tI < insideCorners.length; tI++) {
-      if (pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
-        return false;
-      }
-    }
-    return true;
-  }
+		for (var tI = 0; tI < insideCorners.length; tI++) {
+			if (pointInPolygon(insideCorners[tI].x, insideCorners[tI].y, outsideCorners, startX, startY)) {
+				return false;
+			}
+		}
+		return true;
+	}
 
-  // arrays
+	// arrays
 
-  function forEach(array, action) {
-    for (var tI = 0; tI < array.length; tI++) {
-      action(array[tI]);
-    }
-  }
+	function forEach(array, action) {
+		for (var tI = 0; tI < array.length; tI++) {
+			action(array[tI]);
+		}
+	}
 
-  function forEachIndexed(array, action) {
-    for (var tI = 0; tI < array.length; tI++) {
-      action(tI, array[tI]);
-    }
-  }
+	function forEachIndexed(array, action) {
+		for (var tI = 0; tI < array.length; tI++) {
+			action(tI, array[tI]);
+		}
+	}
 
-  function map(array, func) {
-    var tResult = [];
-    array.forEach(function (element) {
-      tResult.push(func(element));
-    });
-    return tResult;
-  }
+	function map(array, func) {
+		if (array == undefined) return [];
+		var tResult = [];
+		array.forEach(function (element) {
+			tResult.push(func(element));
+		});
+		return tResult;
+	}
 
-  /** Remove elements in array if func(element) returns true */
-  function removeIf(array, func) {
-    var tResult = [];
-    array.forEach(function (element) {
-      if (!func(element)) {
-        tResult.push(element);
-      }
-    });
-    return tResult;
-  }
+	/** Remove elements in array if func(element) returns true */
+	function removeIf(array, func) {
+		var tResult = [];
+		array.forEach(function (element) {
+			if (!func(element)) {
+				tResult.push(element);
+			}
+		});
+		return tResult;
+	}
 
-  /** Shift the items in an array by shift (positive integer) */
-  function cycle(arr, shift) {
-    var tReturn = arr.slice(0);
-    for (var tI = 0; tI < shift; tI++) {
-      var tmp = tReturn.shift();
-      tReturn.push(tmp);
-    }
-    return tReturn;
-  }
+	/** Shift the items in an array by shift (positive integer) */
+	function cycle(arr, shift) {
+		var tReturn = arr.slice(0);
+		for (var tI = 0; tI < shift; tI++) {
+			var tmp = tReturn.shift();
+			tReturn.push(tmp);
+		}
+		return tReturn;
+	}
 
-  /** Returns in the unique elemnts in arr */
-  function unique(arr, hashFunc) {
-    var tResults = [];
-    var tMap = {};
-    for (var tI = 0; tI < arr.length; tI++) {
-      if (!tMap.hasOwnProperty(arr[tI])) {
-        tResults.push(arr[tI]);
-        tMap[hashFunc(arr[tI])] = true;
-      }
-    }
-    return tResults;
-  }
+	/** Returns in the unique elemnts in arr */
+	function unique(arr, hashFunc) {
+		var tResults = [];
+		var tMap = {};
+		for (var tI = 0; tI < arr.length; tI++) {
+			if (!tMap.hasOwnProperty(arr[tI])) {
+				tResults.push(arr[tI]);
+				tMap[hashFunc(arr[tI])] = true;
+			}
+		}
+		return tResults;
+	}
 
-  /** Remove value from array, if it is present */
-  function removeValue(array, value) {
-    for (var tI = array.length - 1; tI >= 0; tI--) {
-      if (array[tI] === value) {
-        array.splice(tI, 1);
-      }
-    }
-  }
+	/** Remove value from array, if it is present */
+	function removeValue(array, value) {
+		for (var tI = array.length - 1; tI >= 0; tI--) {
+			if (array[tI] === value) {
+				array.splice(tI, 1);
+			}
+		}
+	}
 
-  /** Checks if value is in array */
-  function hasValue(array, value) {
-    for (var tI = 0; tI < array.length; tI++) {
-      if (array[tI] === value) {
-        return true;
-      }
-    }
-    return false;
-  }
+	/** Checks if value is in array */
+	function hasValue(array, value) {
+		for (var tI = 0; tI < array.length; tI++) {
+			if (array[tI] === value) {
+				return true;
+			}
+		}
+		return false;
+	}
 
-  /** Subtracts the elements in subArray from array */
-  function subtract(array, subArray) {
-    return removeIf(array, function (el) {
-      return hasValue(subArray, el);
-    });
-  }
+	/** Subtracts the elements in subArray from array */
+	function subtract(array, subArray) {
+		return removeIf(array, function (el) {
+			return hasValue(subArray, el);
+		});
+	}
 
-  return {
-    removeIf: removeIf,
-    removeValue: removeValue,
-    subtract: subtract,
-    hasValue: hasValue,
-    isClockwise: isClockwise,
-    angle2pi: angle2pi,
-    distance: distance,
-    angle: angle,
-    map: map,
-    pointDistanceFromLine: pointDistanceFromLine
-  };
+	return {
+		removeIf: removeIf,
+		removeValue: removeValue,
+		subtract: subtract,
+		hasValue: hasValue,
+		isClockwise: isClockwise,
+		angle2pi: angle2pi,
+		distance: distance,
+		angle: angle,
+		map: map,
+		pointDistanceFromLine: pointDistanceFromLine,
+		cycle: cycle,
+		guid: guid
+	};
 }();
 
 /** Collection of utility functions. */
@@ -106355,11 +111050,11 @@ var _temp = function () {
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/utils.js");
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/core/utils.js");
 }();
 
 ;
@@ -106783,7 +111478,6 @@ var _default = function _default(floorplan, viewmodel, canvas) {
 	/** The 2D context. */
 	var context = canvasElement.getContext("2d");
 
-	// TODO: redo resize wothout jQuery
 	window.addEventListener("resize", function () {
 		return handleWindowResize();
 	});
@@ -106792,8 +111486,8 @@ var _default = function _default(floorplan, viewmodel, canvas) {
 	function handleWindowResize() {
 		var canvasSel = document.getElementById(canvas);
 		var parent = canvasSel.parentNode;
-		canvasSel.height = parent.clientHeight;
-		canvasSel.width = parent.clientWidth;
+		canvasSel.height = parent.height;
+		canvasSel.width = parent.width;
 		canvasElement.height = parent.clientHeight;
 		canvasElement.width = parent.clientWidth;
 		draw();
@@ -106881,7 +111575,6 @@ var _default = function _default(floorplan, viewmodel, canvas) {
 
 	/** */
 	function drawEdge(edge, hover) {
-
 		var self = this;
 		var color = edgeColor;
 		if (hover && viewmodel.mode == floorplannerModes.DELETE) {
@@ -107199,7 +111892,7 @@ var FloorItem = function (_Item) {
 			var rooms = this.model.floorplan.getRooms();
 			var isInARoom = false;
 			for (var i = 0; i < rooms.length; i++) {
-				if (__WEBPACK_IMPORTED_MODULE_2__core_configuration__["Utils"].pointInPolygon(vec3.x, vec3.z, rooms[i].interiorCorners) && !__WEBPACK_IMPORTED_MODULE_2__core_configuration__["Utils"].polygonPolygonIntersect(corners, rooms[i].interiorCorners)) {
+				if (__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].pointInPolygon(vec3.x, vec3.z, rooms[i].interiorCorners) && !__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].polygonPolygonIntersect(corners, rooms[i].interiorCorners)) {
 					isInARoom = true;
 				}
 			}
@@ -107207,22 +111900,6 @@ var FloorItem = function (_Item) {
 				//console.log('object not in a room');
 				return false;
 			}
-
-			// check if we are outside all other objects
-			/*
-     if (this.obstructFloorMoves) {
-         var objects = this.model.items.getItems();
-         for (var i = 0; i < objects.length; i++) {
-             if (objects[i] === this || !objects[i].obstructFloorMoves) {
-                 continue;
-             }
-             if (!utils.polygonOutsidePolygon(corners, objects[i].getCorners('x', 'z')) ||
-                 utils.polygonPolygonIntersect(corners, objects[i].getCorners('x', 'z'))) {
-                 //console.log('object not outside other objects');
-                 return false;
-             }
-         }
-     }*/
 
 			return true;
 		}
@@ -107424,10 +112101,9 @@ var Item = function (_THREE$Mesh) {
 		_this.resizable = metadata.resizable;
 
 		_this.castShadow = true;
-		_this.receiveShadow = false;
+		_this.receiveShadow = true;
 
 		_this.geometry = geometry;
-		_this.material = material;
 
 		if (position) {
 			_this.position.copy(position);
@@ -107437,9 +112113,11 @@ var Item = function (_THREE$Mesh) {
 		}
 
 		// center in its boundingbox
+
 		_this.geometry.computeBoundingBox();
 		_this.geometry.applyMatrix(new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]().makeTranslation(-0.5 * (_this.geometry.boundingBox.max.x + _this.geometry.boundingBox.min.x), -0.5 * (_this.geometry.boundingBox.max.y + _this.geometry.boundingBox.min.y), -0.5 * (_this.geometry.boundingBox.max.z + _this.geometry.boundingBox.min.z)));
 		_this.geometry.computeBoundingBox();
+
 		_this.halfSize = _this.objectHalfSize();
 
 		if (rotation) {
@@ -107547,10 +112225,7 @@ var Item = function (_THREE$Mesh) {
 			var on = this.hover || this.selected;
 			this.highlighted = on;
 			var hex = on ? this.emissiveColor : 0x000000;
-			this.material.forEach(function (material) {
-				// TODO_Ekki emissive doesn't exist anymore?
-				material.emissive.setHex(hex);
-			});
+			this.material.emissive.setHex(hex);
 		}
 
 		/** */
@@ -107613,7 +112288,7 @@ var Item = function (_THREE$Mesh) {
 		key: "rotate",
 		value: function rotate(intersection) {
 			if (intersection) {
-				var angle = Core.Utils.angle(0, 1, intersection.point.x - this.position.x, intersection.point.z - this.position.z);
+				var angle = __WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].angle(0, 1, intersection.point.x - this.position.x, intersection.point.z - this.position.z);
 
 				var snapTolerance = Math.PI / 16.0;
 
@@ -107679,7 +112354,7 @@ var Item = function (_THREE$Mesh) {
 			var c4 = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](-halfSize.x, 0, halfSize.z);
 
 			var transform = new __WEBPACK_IMPORTED_MODULE_0_three__["Matrix4"]();
-			//console.log(this.rotation.y);
+
 			transform.makeRotationY(this.rotation.y); //  + Math.PI/2)
 			c1.applyMatrix4(transform);
 			c2.applyMatrix4(transform);
@@ -107691,9 +112366,6 @@ var Item = function (_THREE$Mesh) {
 			c3.add(position);
 			c4.add(position);
 
-			//halfSize.applyMatrix4(transform);
-			//var min = position.clone().sub(halfSize);
-			//var max = position.clone().add(halfSize);
 			var corners = [{ x: c1.x, y: c1.z }, { x: c2.x, y: c2.z }, { x: c3.x, y: c3.z }, { x: c4.x, y: c4.z }];
 
 			return corners;
@@ -108181,352 +112853,408 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 
 
 
 
-
-
-/** */
-var cornerTolerance = 20;
 
 /**
    * Corners are used to define Walls.
    */
 
-var _default = function _default(floorplan, x, y, newId) {
-	var id = newId || __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].guid();
-	var wallStarts = [];
-	var wallEnds = [];
+var Corner = function () {
+	function Corner(floorplan, x, y, id) {
+		_classCallCheck(this, Corner);
 
-	var moved_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+		this.id = id || __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].guid();
 
-	/** Callbacks to be fired on removal. */
-	var deleted_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+		this.x = x;
+		this.y = y;
+		this.floorplan = floorplan;
 
-	/** Callbacks to be fired in case of action. */
-	var action_callbacks = Object(__WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */])();
+		this.wallStarts = [];
+		this.wallEnds = [];
+		this.moved_callbacks = new __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */]();
+		this.deleted_callbacks = new __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */]();
+		this.action_callbacks = new __WEBPACK_IMPORTED_MODULE_2__utils_callbacks__["a" /* default */]();
 
-	/** Add function to moved callbacks.
-     * @param func The function to be added.
-    */
-	function fireOnMove(func) {}
-	//moved_callbacks.add(func);
-
-
-	/** Add function to deleted callbacks.
-     * @param func The function to be added.
-     */
-	function fireOnDelete(func) {}
-	//deleted_callbacks.add(func);
-
-
-	/** Add function to action callbacks.
-     * @param func The function to be added.
-     */
-	function fireOnAction(func) {}
-	// action_callbacks.add(func);
-
-
-	/**
-     * @returns
-     * @deprecated
-     */
-	function getX() {
-		return x;
+		this.cornerTolerancer = 20;
 	}
 
-	/**
-     * @returns
-     * @deprecated
-     */
-	function getY() {
-		return y;
-	}
+	_createClass(Corner, [{
+		key: "fireOnMove",
+		value: function fireOnMove(func) {
+			this.moved_callbacks.add(func);
+		}
+	}, {
+		key: "fireOnDelete",
+		value: function fireOnDelete(func) {
+			this.deleted_callbacks.add(func);
+		}
+	}, {
+		key: "fireOnAction",
+		value: function fireOnAction(func) {
+			this.action_callbacks.add(func);
+		}
 
-	/**
-     * 
-     */
-	function snapToAxis(tolerance) {
-		// try to snap this corner to an axis
-		var snapped = {
-			x: false,
-			y: false
-		};
+		/**
+      * @returns
+      * @deprecated
+      */
 
-		adjacentCorners().forEach(function (corner) {
-			if (Math.abs(corner.x - x) < tolerance) {
-				x = corner.x;
-				snapped.x = true;
+	}, {
+		key: "getX",
+		value: function getX() {
+			return this.x;
+		}
+
+		/**
+      * @returns
+      * @deprecated
+      */
+
+	}, {
+		key: "getY",
+		value: function getY() {
+			return this.y;
+		}
+
+		/**
+      * 
+      */
+
+	}, {
+		key: "snapToAxis",
+		value: function snapToAxis(tolerance) {
+			// try to snap this corner to an axis
+			var snapped = {
+				x: false,
+				y: false
+			};
+
+			var scope = this;
+
+			this.adjacentCorners().forEach(function (corner) {
+				if (Math.abs(corner.x - scope.x) < tolerance) {
+					scope.x = corner.x;
+					snapped.x = true;
+				}
+				if (Math.abs(corner.y - scope.y) < tolerance) {
+					scope.y = corner.y;
+					snapped.y = true;
+				}
+			});
+			return snapped;
+		}
+
+		/** Moves corner relatively to new position.
+      * @param dx The delta x.
+      * @param dy The delta y.
+      */
+
+	}, {
+		key: "relativeMove",
+		value: function relativeMove(dx, dy) {
+			this.move(this.x + dx, this.y + dy);
+		}
+	}, {
+		key: "fireAction",
+		value: function fireAction(action) {
+			this.action_callbacks.fire(action);
+		}
+
+		/** Remove callback. Fires the delete callbacks. */
+
+	}, {
+		key: "remove",
+		value: function remove() {
+			this.deleted_callbacks.fire(this);
+		}
+
+		/** Removes all walls. */
+
+	}, {
+		key: "removeAll",
+		value: function removeAll() {
+			var i = void 0;
+			for (i = 0; i < this.wallStarts.length; i++) {
+				this.wallStarts[i].remove();
 			}
-			if (Math.abs(corner.y - y) < tolerance) {
-				y = corner.y;
-				snapped.y = true;
+			for (i = 0; i < this.wallEnds.length; i++) {
+				this.wallEnds[i].remove();
 			}
-		});
-		return snapped;
-	}
-
-	/** Moves corner relatively to new position.
-     * @param dx The delta x.
-     * @param dy The delta y.
-     */
-	function relativeMove(dx, dy) {
-		move(x + dx, y + dy);
-	}
-
-	function fireAction(action) {
-		action_callbacks.fire(action);
-	}
-
-	/** Remove callback. Fires the delete callbacks. */
-	function remove() {
-		deleted_callbacks.fire(this);
-	}
-
-	/** Removes all walls. */
-	function removeAll() {
-		for (var i = 0; i < wallStarts.length; i++) {
-			wallStarts[i].remove();
+			this.remove();
 		}
-		for (var i = 0; i < wallEnds.length; i++) {
-			wallEnds[i].remove();
+
+		/** Moves corner to new position.
+      * @param newX The new x position.
+      * @param newY The new y position.
+      */
+
+	}, {
+		key: "move",
+		value: function move(newX, newY) {
+			this.x = newX;
+			this.y = newY;
+			this.mergeWithIntersected();
+			this.moved_callbacks.fire(this.x, this.y);
+
+			this.wallStarts.forEach(function (wall) {
+				wall.fireMoved();
+			});
+
+			this.wallEnds.forEach(function (wall) {
+				wall.fireMoved();
+			});
 		}
-		remove();
-	}
 
-	/** Moves corner to new position.
-     * @param newX The new x position.
-     * @param newY The new y position.
-     */
-	function move(newX, newY) {
-		x = newX;
-		y = newY;
-		mergeWithIntersected();
-		moved_callbacks.fire(x, y);
+		/** Gets the adjacent corners.
+      * @returns Array of corners.
+      */
 
-		wallStarts.forEach(function (wall) {
-			wall.fireMoved();
-		});
-
-		wallEnds.forEach(function (wall) {
-			wall.fireMoved();
-		});
-	}
-
-	/** Gets the adjacent corners.
-     * @returns Array of corners.
-     */
-	function adjacentCorners() {
-		var retArray = [];
-		for (var i = 0; i < wallStarts.length; i++) {
-			retArray.push(wallStarts[i].getEnd());
-		}
-		for (var i = 0; i < wallEnds.length; i++) {
-			retArray.push(wallEnds[i].getStart());
-		}
-		return retArray;
-	}
-
-	/** Checks if a wall is connected.
-     * @param wall A wall.
-     * @returns True in case of connection.
-     */
-	function isWallConnected(wall) {
-		for (var i = 0; i < wallStarts.length; i++) {
-			if (wallStarts[i] == wall) {
-				return true;
+	}, {
+		key: "adjacentCorners",
+		value: function adjacentCorners() {
+			var retArray = [];
+			var i = void 0;
+			for (i = 0; i < this.wallStarts.length; i++) {
+				retArray.push(this.wallStarts[i].getEnd());
 			}
-		}
-		for (var i = 0; i < wallEnds.length; i++) {
-			if (wallEnds[i] == wall) {
-				return true;
+			for (i = 0; i < this.wallEnds.length; i++) {
+				retArray.push(this.wallEnds[i].getStart());
 			}
+			return retArray;
 		}
-		return false;
-	}
 
-	/**
-     * 
-     */
-	function distanceFrom(x, y) {
-		var distance = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].distance(x, y, x, y);
-		return distance;
-	}
+		/** Checks if a wall is connected.
+      * @param wall A wall.
+      * @returns True in case of connection.
+      */
 
-	/** Gets the distance from a wall.
-     * @param wall A wall.
-     * @returns The distance.
-     */
-	function distanceFromWall(wall) {
-		return wall.distanceFrom(x, y);
-	}
-
-	/** Gets the distance from a corner.
-     * @param corner A corner.
-     * @returns The distance.
-     */
-	function distanceFromCorner(corner) {
-		return distanceFrom(corner.x, corner.y);
-	}
-
-	/** Detaches a wall.
-     * @param wall A wall.
-     */
-	function detachWall(wall) {
-		__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(wallStarts, wall);
-		__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(wallEnds, wall);
-		if (wallStarts.length == 0 && wallEnds.length == 0) {
-			remove();
-		}
-	}
-
-	/** Attaches a start wall.
-     * @param wall A wall.
-     */
-	function attachStart(wall) {
-		wallStarts.push(wall);
-	}
-
-	/** Attaches an end wall.
-     * @param wall A wall.
-     */
-	function attachEnd(wall) {
-		wallEnds.push(wall);
-	}
-
-	/** Get wall to corner.
-     * @param corner A corner.
-     * @return The associated wall or null.
-     */
-	function wallTo(corner) {
-		for (var i = 0; i < wallStarts.length; i++) {
-			if (wallStarts[i].getEnd() === corner) {
-				return wallStarts[i];
+	}, {
+		key: "isWallConnected",
+		value: function isWallConnected(wall) {
+			var i = void 0;
+			for (i = 0; i < this.wallStarts.length; i++) {
+				if (this.wallStarts[i] == wall) {
+					return true;
+				}
 			}
-		}
-		return null;
-	}
-
-	/** Get wall from corner.
-     * @param corner A corner.
-     * @return The associated wall or null.
-     */
-	function wallFrom(corner) {
-		for (var i = 0; i < wallEnds.length; i++) {
-			if (wallEnds[i].getStart() === corner) {
-				return wallEnds[i];
+			for (i = 0; i < this.wallEnds.length; i++) {
+				if (this.wallEnds[i] == wall) {
+					return true;
+				}
 			}
+			return false;
 		}
-		return null;
-	}
 
-	/** Get wall to or from corner.
-     * @param corner A corner.
-     * @return The associated wall or null.
-     */
-	function wallToOrFrom(corner) {
-		return wallTo(corner) || wallFrom(corner);
-	}
+		/**
+      * 
+      */
 
-	/**
-     * 
-     */
-	function combineWithCorner(corner) {
-		// update position to other corner's
-		x = corner.x;
-		y = corner.y;
-		// absorb the other corner's wallStarts and wallEnds
-		for (var i = corner.wallStarts.length - 1; i >= 0; i--) {
-			corner.wallStarts[i].setStart(this);
+	}, {
+		key: "distanceFrom",
+		value: function distanceFrom(x, y) {
+			var distance = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].distance(x, y, this.x, this.y);
+			//console.log('x,y ' + x + ',' + y + ' to ' + this.getX() + ',' + this.getY() + ' is ' + distance);
+			return distance;
 		}
-		for (var i = corner.wallEnds.length - 1; i >= 0; i--) {
-			corner.wallEnds[i].setEnd(this);
-		}
-		// delete the other corner
-		corner.removeAll();
-		removeDuplicateWalls();
-		floorplan.update();
-	}
 
-	function mergeWithIntersected() {
-		//console.log('mergeWithIntersected for object: ' + type);
-		// check corners
-		for (var i = 0; i < floorplan.a().getCorners().length; i++) {
-			var corner = floorplan.getCorners()[i];
-			if (distanceFromCorner(corner) < cornerTolerance && corner != this) {
-				combineWithCorner(corner);
-				return true;
+		/** Gets the distance from a wall.
+      * @param wall A wall.
+      * @returns The distance.
+      */
+
+	}, {
+		key: "distanceFromWall",
+		value: function distanceFromWall(wall) {
+			return wall.distanceFrom(this.x, this.y);
+		}
+
+		/** Gets the distance from a corner.
+      * @param corner A corner.
+      * @returns The distance.
+      */
+
+	}, {
+		key: "distanceFromCorner",
+		value: function distanceFromCorner(corner) {
+			return this.distanceFrom(corner.x, corner.y);
+		}
+
+		/** Detaches a wall.
+      * @param wall A wall.
+      */
+
+	}, {
+		key: "detachWall",
+		value: function detachWall(wall) {
+			__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(this.wallStarts, wall);
+			__WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].removeValue(this.wallEnds, wall);
+			if (this.wallStarts.length == 0 && this.wallEnds.length == 0) {
+				this.remove();
 			}
 		}
-		// check walls
-		for (var i = 0; i < floorplan.a().getWalls().length; i++) {
-			var wall = floorplan.getWalls()[i];
-			if (distanceFromWall(wall) < cornerTolerance && !isWallConnected(wall)) {
-				// update position to be on wall
-				var intersection = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].closestPointOnLine(x, y, wall.getStart().x, wall.getStart().y, wall.getEnd().x, wall.getEnd().y);
-				x = intersection.x;
-				y = intersection.y;
-				// merge this corner into wall by breaking wall into two parts
-				floorplan.newWall(this, wall.getEnd());
-				wall.setEnd(this);
-				floorplan.update();
-				return true;
+
+		/** Attaches a start wall.
+      * @param wall A wall.
+      */
+
+	}, {
+		key: "attachStart",
+		value: function attachStart(wall) {
+			this.wallStarts.push(wall);
+		}
+
+		/** Attaches an end wall.
+      * @param wall A wall.
+      */
+
+	}, {
+		key: "attachEnd",
+		value: function attachEnd(wall) {
+			this.wallEnds.push(wall);
+		}
+
+		/** Get wall to corner.
+      * @param corner A corner.
+      * @return The associated wall or null.
+      */
+
+	}, {
+		key: "wallTo",
+		value: function wallTo(corner) {
+			for (var i = 0; i < this.wallStarts.length; i++) {
+				if (this.wallStarts[i].getEnd() === corner) {
+					return this.wallStarts[i];
+				}
+			}
+			return null;
+		}
+
+		/** Get wall from corner.
+      * @param corner A corner.
+      * @return The associated wall or null.
+      */
+
+	}, {
+		key: "wallFrom",
+		value: function wallFrom(corner) {
+			for (var i = 0; i < this.wallEnds.length; i++) {
+				if (this.wallEnds[i].getStart() === corner) {
+					return this.wallEnds[i];
+				}
+			}
+			return null;
+		}
+
+		/** Get wall to or from corner.
+      * @param corner A corner.
+      * @return The associated wall or null.
+      */
+
+	}, {
+		key: "wallToOrFrom",
+		value: function wallToOrFrom(corner) {
+			return this.wallTo(corner) || this.wallFrom(corner);
+		}
+
+		/**
+      * 
+      */
+
+	}, {
+		key: "combineWithCorner",
+		value: function combineWithCorner(corner) {
+			// update position to other corner's
+			this.x = corner.x;
+			this.y = corner.y;
+			// absorb the other corner's wallStarts and wallEnds
+			var i = void 0;
+			for (i = corner.wallStarts.length - 1; i >= 0; i--) {
+				corner.wallStarts[i].setStart(this);
+			}
+			for (i = corner.wallEnds.length - 1; i >= 0; i--) {
+				corner.wallEnds[i].setEnd(this);
+			}
+			// delete the other corner
+			corner.removeAll();
+			this.removeDuplicateWalls();
+			this.floorplan.update();
+		}
+	}, {
+		key: "mergeWithIntersected",
+		value: function mergeWithIntersected() {
+			//console.log('mergeWithIntersected for object: ' + this.type);
+			// check corners
+			var i = void 0;
+			for (i = 0; i < this.floorplan.getCorners().length; i++) {
+				var corner = this.floorplan.getCorners()[i];
+				if (this.distanceFromCorner(corner) < this.cornerTolerance && corner != this) {
+					this.combineWithCorner(corner);
+					return true;
+				}
+			}
+			// check walls
+			for (i = 0; i < this.floorplan.getWalls().length; i++) {
+				var wall = this.floorplan.getWalls()[i];
+				if (this.distanceFromWall(wall) < this.cornerTolerance && !this.isWallConnected(wall)) {
+					// update position to be on wall
+					var intersection = __WEBPACK_IMPORTED_MODULE_3__core_utils__["a" /* default */].closestPointOnLine(this.x, this.y, wall.getStart().x, wall.getStart().y, wall.getEnd().x, wall.getEnd().y);
+					this.x = intersection.x;
+					this.y = intersection.y;
+					// merge this corner into wall by breaking wall into two parts
+					this.floorplan.newWall(this, wall.getEnd());
+					wall.setEnd(this);
+					this.floorplan.update();
+					return true;
+				}
+			}
+			return false;
+		}
+
+		/** Ensure we do not have duplicate walls (i.e. same start and end points) */
+
+	}, {
+		key: "removeDuplicateWalls",
+		value: function removeDuplicateWalls() {
+			// delete the wall between these corners, if it exists
+			var wallEndpoints = {};
+			var wallStartpoints = {};
+			var i = void 0;
+			for (i = this.wallStarts.length - 1; i >= 0; i--) {
+				if (this.wallStarts[i].getEnd() === this) {
+					// remove zero length wall
+					this.wallStarts[i].remove();
+				} else if (this.wallStarts[i].getEnd().id in wallEndpoints) {
+					// remove duplicated wall
+					this.wallStarts[i].remove();
+				} else {
+					wallEndpoints[this.wallStarts[i].getEnd().id] = true;
+				}
+			}
+			for (i = this.wallEnds.length - 1; i >= 0; i--) {
+				if (this.wallEnds[i].getStart() === this) {
+					// removed zero length wall
+					this.wallEnds[i].remove();
+				} else if (this.wallEnds[i].getStart().id in wallStartpoints) {
+					// removed duplicated wall
+					this.wallEnds[i].remove();
+				} else {
+					wallStartpoints[this.wallEnds[i].getStart().id] = true;
+				}
 			}
 		}
-		return false;
-	}
+	}]);
 
-	/** Ensure we do not have duplicate walls (i.e. same start and end points) */
-	function removeDuplicateWalls() {
-		// delete the wall between these corners, if it exists
-		var wallEndpoints = {};
-		var wallStartpoints = {};
-		for (var i = wallStarts.length - 1; i >= 0; i--) {
-			if (wallStarts[i].getEnd() === this) {
-				// remove zero length wall
-				wallStarts[i].remove();
-			} else if (wallStarts[i].getEnd().id in wallEndpoints) {
-				// remove duplicated wall
-				wallStarts[i].remove();
-			} else {
-				wallEndpoints[wallStarts[i].getEnd().id] = true;
-			}
-		}
-		for (var i = wallEnds.length - 1; i >= 0; i--) {
-			if (wallEnds[i].getStart() === this) {
-				// removed zero length wall
-				wallEnds[i].remove();
-			} else if (wallEnds[i].getStart().id in wallStartpoints) {
-				// removed duplicated wall
-				wallEnds[i].remove();
-			} else {
-				wallStartpoints[wallEnds[i].getStart().id] = true;
-			}
-		}
-	}
+	return Corner;
+}();
 
-	return {
-		fireOnDelete: fireOnDelete,
-		fireAction: fireAction,
-		fireOnMove: fireOnMove,
-		attachStart: attachStart,
-		attachEnd: attachEnd,
-		adjacentCorners: adjacentCorners,
-		getX: getX,
-		getY: getY,
-		distanceFrom: distanceFrom,
-		distanceFromWall: distanceFromWall,
-		distanceFromCorner: distanceFromCorner,
-		move: move,
-		snapToAxis: snapToAxis,
-		relativeMove: relativeMove,
-		x: x,
-		y: y
-	};
-};
-
+var _default = Corner;
 /* harmony default export */ __webpack_exports__["a"] = (_default);
 ;
 
@@ -108535,7 +113263,7 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(cornerTolerance, "cornerTolerance", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js");
+	__REACT_HOT_LOADER__.register(Corner, "Corner", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js");
 
 	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/corner.js");
 }();
@@ -108584,11 +113312,11 @@ var Floorplan = function () {
 		this.walls = [];
 		this.corners = [];
 		this.rooms = [];
-		this.new_wall_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-		this.new_corner_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-		this.redraw_callbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-		this.updated_rooms = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-		this.roomLoadedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+		this.new_wall_callbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+		this.new_corner_callbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+		this.redraw_callbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+		this.updated_rooms = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+		this.roomLoadedCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
 
 		/** 
   * Floor textures are owned by the floorplan, because room objects are 
@@ -108597,6 +113325,9 @@ var Floorplan = function () {
   * url and scale attributes.
   */
 		this.floorTextures = {};
+
+		this.updateFloorTextures = this.updateFloorTextures.bind(this);
+		this.getCorners = this.getCorners.bind(this);
 	}
 
 	// hack
@@ -109011,7 +113742,6 @@ var Floorplan = function () {
 
 			function _findTightestCycle(firstCorner, secondCorner) {
 				var stack = [];
-
 				var next = {
 					corner: secondCorner,
 					previousCorners: [firstCorner]
@@ -109028,7 +113758,6 @@ var Floorplan = function () {
 					if (next.corner === firstCorner && currentCorner !== secondCorner) {
 						return next.previousCorners;
 					}
-
 					var addToStack = [];
 					var adjacentCorners = next.corner.adjacentCorners();
 					for (var i = 0; i < adjacentCorners.length; i++) {
@@ -109190,6 +113919,9 @@ var HalfEdge = function () {
 		/** */
 		this.redrawCallbacks = new __WEBPACK_IMPORTED_MODULE_1__utils_callbacks__["a" /* default */]();
 		this.generatePlane = this.generatePlane.bind(this);
+
+		this.exteriorStart = this.exteriorStart.bind(this);
+		this.exteriorEnd = this.exteriorEnd.bind(this);
 	}
 
 	/**
@@ -109254,6 +113986,7 @@ var HalfEdge = function () {
 			geometry.computeBoundingBox();
 
 			this.plane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]());
+
 			this.plane.visible = false;
 			this.plane.edge = this; // js monkey patch
 
@@ -109299,18 +114032,18 @@ var HalfEdge = function () {
 		key: "getStart",
 		value: function getStart() {
 			if (this.front) {
-				return this.wall.getStart();
+				return this.wall.start;
 			} else {
-				return this.wall.getEnd();
+				return this.wall.end;
 			}
 		}
 	}, {
 		key: "getEnd",
 		value: function getEnd() {
 			if (this.front) {
-				return this.wall.getEnd();
+				return this.wall.end;
 			} else {
-				return this.wall.getStart();
+				return this.wall.start;
 			}
 		}
 	}, {
@@ -109495,10 +114228,10 @@ var _default = function _default(textureDir) {
      */
 	var scope = _this;
 
-	var roomLoadingCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-	var roomLoadedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-	var roomSavedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
-	var roomDeletedCallbacks = Object(__WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */])();
+	var roomLoadingCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+	var roomLoadedCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+	var roomSavedCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+	var roomDeletedCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
 
 	_this.floorplan = new __WEBPACK_IMPORTED_MODULE_3__floorplan__["a" /* default */]();
 	_this.scene = new __WEBPACK_IMPORTED_MODULE_4__scene__["a" /* default */](_this, textureDir);
@@ -109551,7 +114284,8 @@ var _default = function _default(textureDir) {
 				itemName: item.item_name,
 				resizable: item.resizable,
 				itemType: item.item_type,
-				modelUrl: item.model_url
+				modelUrl: item.model_url,
+				textureMaps: item.texture_maps ? item.texture_maps : null
 			};
 			var scale = new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](item.scale_x, item.scale_y, item.scale_z);
 			scope.scene.addItem(item.item_type, item.model_url, metadata, position, item.rotation, scale, item.fixed);
@@ -109593,7 +114327,10 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__half_edge__ = __webpack_require__("./blueprint/model/half_edge.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
-var _this = this;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 
 
@@ -109602,12 +114339,6 @@ var _this = this;
 
 
 
-/*
-TODO
-var Vec2 = require('vec2')
-var segseg = require('segseg')
-var Polygon = require('polygon')
-*/
 
 /** Default texture to be used if nothing is provided. */
 var defaultRoomTexture = {
@@ -109619,136 +114350,149 @@ var defaultRoomTexture = {
    * A Room is the combination of a Floorplan with a floor plane. 
    */
 
-var _default = function _default(floorplan, corners) {
-	/** */
-	var interiorCorners = [];
+var Room = function () {
+	function Room(floorplan, corners) {
+		_classCallCheck(this, Room);
 
-	/** */
-	var edgePointer = null;
+		this.floorplan = floorplan;
+		this.corners = corners;
+		this.interiorCorners = [];
 
-	/** floor plane for intersection testing */
-	var floorPlane = null;
+		this.floorPlane = null;
+		this.customTexture = false;
+		this.edgePointer = null;
 
-	/** */
-	var customTexture = false;
-
-	/** */
-
-	/**
-     *  ordered CCW
-     */
-
-	_this.updateWalls();
-	_this.updateInteriorCorners();
-	_this.generatePlane();
-
-	function getUuid() {
-		var cornerUuids = __WEBPACK_IMPORTED_MODULE_4__core_utils__["a" /* default */].map(this.corners, function (c) {
-			return c.id;
-		});
-		cornerUuids.sort();
-		return cornerUuids.join();
+		this.floorChangeCallbacks = new __WEBPACK_IMPORTED_MODULE_6__utils_callbacks__["a" /* default */]();
+		this.updateWalls();
+		this.updateInteriorCorners();
+		this.generatePlane();
 	}
 
-	function fireOnFloorChange(callback) {
-		this.floorChangeCallbacks.add(callback);
-	}
-
-	function getTexture() {
-		var uuid = this.getUuid();
-		var tex = this.floorplan.getFloorTexture(uuid);
-		return tex || defaultRoomTexture;
-	}
-
-	/** 
-     * textureStretch always true, just an argument for consistency with walls
-     */
-	function setTexture(textureUrl, textureStretch, textureScale) {
-		var uuid = this.getUuid();
-		this.floorplan.setFloorTexture(uuid, textureUrl, textureScale);
-		this.floorChangeCallbacks.fire();
-	}
-
-	function generatePlane() {
-		var points = [];
-		this.interiorCorners.forEach(function (corner) {
-			points.push(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](corner.x, corner.y));
-		});
-		var shape = new __WEBPACK_IMPORTED_MODULE_0_three__["Shape"](points);
-		var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["ShapeGeometry"](shape);
-		this.floorPlane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
-			side: __WEBPACK_IMPORTED_MODULE_0_three__["DoubleSide"]
-		}));
-		this.floorPlane.visible = false;
-		this.floorPlane.rotation.set(Math.PI / 2, 0, 0);
-		this.floorPlane.room = this; // js monkey patch
-	}
-
-	function cycleIndex(index) {
-		if (index < 0) {
-			return index += this.corners.length;
-		} else {
-			return index % this.corners.length;
+	_createClass(Room, [{
+		key: "getUuid",
+		value: function getUuid() {
+			var cornerUuids = __WEBPACK_IMPORTED_MODULE_4__core_utils__["a" /* default */].map(this.corners, function (c) {
+				return c.id;
+			});
+			cornerUuids.sort();
+			return cornerUuids.join();
 		}
-	}
+	}, {
+		key: "fireOnFloorChange",
+		value: function fireOnFloorChange(callback) {
+			this.floorChangeCallbacks.add(callback);
+		}
+	}, {
+		key: "getTexture",
+		value: function getTexture() {
+			var uuid = this.getUuid();
+			var tex = this.floorplan.getFloorTexture(uuid);
+			return tex || defaultRoomTexture;
+		}
 
-	function updateInteriorCorners() {
-		var edge = this.edgePointer;
-		while (true) {
-			this.interiorCorners.push(edge.interiorStart());
-			edge.generatePlane();
-			if (edge.next === this.edgePointer) {
-				break;
+		/** 
+   * textureStretch always true, just an argument for consistency with walls
+      */
+
+	}, {
+		key: "setTexture",
+		value: function setTexture(textureUrl, textureStretch, textureScale) {
+			var uuid = this.getUuid();
+			this.floorplan.setFloorTexture(uuid, textureUrl, textureScale);
+			this.floorChangeCallbacks.fire();
+		}
+	}, {
+		key: "generatePlane",
+		value: function generatePlane() {
+			var points = [];
+			this.interiorCorners.forEach(function (corner) {
+				points.push(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector2"](corner.x, corner.y));
+			});
+			var shape = new __WEBPACK_IMPORTED_MODULE_0_three__["Shape"](points);
+			var geometry = new __WEBPACK_IMPORTED_MODULE_0_three__["ShapeGeometry"](shape);
+			this.floorPlane = new __WEBPACK_IMPORTED_MODULE_0_three__["Mesh"](geometry, new __WEBPACK_IMPORTED_MODULE_0_three__["MeshBasicMaterial"]({
+				side: __WEBPACK_IMPORTED_MODULE_0_three__["DoubleSide"]
+			}));
+
+			this.floorPlane.visible = false;
+			this.floorPlane.rotation.set(Math.PI / 2, 0, 0);
+			this.floorPlane.room = this; // js monkey patch
+		}
+	}, {
+		key: "cycleIndex",
+		value: function cycleIndex(index) {
+			if (index < 0) {
+				return index += this.corners.length;
 			} else {
-				edge = edge.next;
+				return index % this.corners.length;
 			}
 		}
-	}
-
-	/** 
-     * Populates each wall's half edge relating to this room
-     * this creates a fancy doubly connected edge list (DCEL)
-     */
-	function updateWalls() {
-		var prevEdge = null;
-		var firstEdge = null;
-
-		for (var i = 0; i < this.corners.length; i++) {
-			var firstCorner = this.corners[i];
-			var secondCorner = this.corners[(i + 1) % this.corners.length];
-
-			// find if wall is heading in that direction
-			var wallTo = firstCorner.wallTo(secondCorner);
-			var wallFrom = firstCorner.wallFrom(secondCorner);
-			var edge = null;
-
-			if (wallTo) {
-				edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallTo, true);
-			} else if (wallFrom) {
-				edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallFrom, false);
-			} else {
-				// something horrible has happened
-				console.log("corners arent connected by a wall, uh oh");
-			}
-
-			if (i == 0) {
-				firstEdge = edge;
-			} else {
-				edge.prev = prevEdge;
-				prevEdge.next = edge;
-				if (i + 1 == this.corners.length) {
-					firstEdge.prev = edge;
-					edge.next = firstEdge;
+	}, {
+		key: "updateInteriorCorners",
+		value: function updateInteriorCorners() {
+			var edge = this.edgePointer;
+			while (true) {
+				this.interiorCorners.push(edge.interiorStart());
+				edge.generatePlane();
+				if (edge.next === this.edgePointer) {
+					break;
+				} else {
+					edge = edge.next;
 				}
 			}
-			prevEdge = edge;
 		}
 
-		// hold on to an edge reference
-		this.edgePointer = firstEdge;
-	}
-};
+		/** 
+   * Populates each wall's half edge relating to this room
+   * this creates a fancy doubly connected edge list (DCEL)
+      */
 
+	}, {
+		key: "updateWalls",
+		value: function updateWalls() {
+			var prevEdge = null;
+			var firstEdge = null;
+
+			for (var i = 0; i < this.corners.length; i++) {
+				var firstCorner = this.corners[i];
+				var secondCorner = this.corners[(i + 1) % this.corners.length];
+
+				// find if wall is heading in that direction
+				var wallTo = firstCorner.wallTo(secondCorner);
+				var wallFrom = firstCorner.wallFrom(secondCorner);
+				var edge = null;
+
+				if (wallTo) {
+					edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallTo, true);
+				} else if (wallFrom) {
+					edge = new __WEBPACK_IMPORTED_MODULE_3__half_edge__["a" /* default */](this, wallFrom, false);
+				} else {
+					// something horrible has happened
+					console.log("corners arent connected by a wall, uh oh");
+				}
+
+				if (i == 0) {
+					firstEdge = edge;
+				} else {
+					edge.prev = prevEdge;
+					prevEdge.next = edge;
+					if (i + 1 == this.corners.length) {
+						firstEdge.prev = edge;
+						edge.next = firstEdge;
+					}
+				}
+				prevEdge = edge;
+				this.edgePointer = firstEdge;
+			}
+
+			// hold on to an edge reference
+		}
+	}]);
+
+	return Room;
+}();
+
+var _default = Room;
 /* harmony default export */ __webpack_exports__["a"] = (_default);
 ;
 
@@ -109758,6 +114502,8 @@ var _temp = function () {
 	}
 
 	__REACT_HOT_LOADER__.register(defaultRoomTexture, "defaultRoomTexture", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js");
+
+	__REACT_HOT_LOADER__.register(Room, "Room", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js");
 
 	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/model/room.js");
 }();
@@ -109774,13 +114520,15 @@ var _temp = function () {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__wall__ = __webpack_require__("./blueprint/model/wall.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__items_factory__ = __webpack_require__("./blueprint/items/factory.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__items_item__ = __webpack_require__("./blueprint/items/item.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three_fbx_loader__ = __webpack_require__("../node_modules/three-fbx-loader/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three_fbx_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_three_fbx_loader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_utils__ = __webpack_require__("./blueprint/core/utils.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__wall__ = __webpack_require__("./blueprint/model/wall.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__floorplan__ = __webpack_require__("./blueprint/model/floorplan.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__core_configuration__ = __webpack_require__("./blueprint/core/configuration.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__items_factory__ = __webpack_require__("./blueprint/items/factory.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__items_item__ = __webpack_require__("./blueprint/items/item.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
 
 
 
@@ -109790,6 +114538,10 @@ var _temp = function () {
 
 
 
+
+
+
+__WEBPACK_IMPORTED_MODULE_1_three_fbx_loader___default()(__WEBPACK_IMPORTED_MODULE_0_three__);
 
 /**
    * The Scene is a manager of Items and also links to a ThreeJS scene.
@@ -109798,12 +114550,12 @@ var _temp = function () {
 var _default = function _default(model, textureDir) {
 	/** The associated ThreeJS scene. */
 	var scene = void 0;
-	var itemLoadingCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
-	var itemLoadedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
-	/** */
+	var itemLoadingCallbacks = new __WEBPACK_IMPORTED_MODULE_8__utils_callbacks__["a" /* default */]();
+	var itemLoadedCallbacks = new __WEBPACK_IMPORTED_MODULE_8__utils_callbacks__["a" /* default */]();
+	var itemRemovedCallbacks = new __WEBPACK_IMPORTED_MODULE_8__utils_callbacks__["a" /* default */]();
+
 	var items = [];
 
-	/** */
 	var needsUpdate = false;
 
 	/**
@@ -109817,7 +114569,11 @@ var _default = function _default(model, textureDir) {
 
 	// init item loader
 	var loader = new __WEBPACK_IMPORTED_MODULE_0_three__["JSONLoader"]();
+
+	var fbxLoader = new __WEBPACK_IMPORTED_MODULE_0_three__["FBXLoader"]();
+
 	loader.crossOrigin = "";
+	fbxLoader.crossOrigin = "";
 
 	/** Adds a non-item, basically a mesh, to the scene.
      * @param mesh The mesh to be added.
@@ -109831,7 +114587,7 @@ var _default = function _default(model, textureDir) {
      */
 	function remove(mesh) {
 		scene.remove(mesh);
-		__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.items, mesh);
+		__WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].removeValue(this.items, mesh);
 	}
 
 	/** Gets the scene.
@@ -109877,7 +114633,7 @@ var _default = function _default(model, textureDir) {
 		item.removed();
 		scene.remove(item);
 		if (!dontRemove) {
-			__WEBPACK_IMPORTED_MODULE_1__core_utils__["a" /* default */].removeValue(this.items, item);
+			__WEBPACK_IMPORTED_MODULE_2__core_utils__["a" /* default */].removeValue(this.items, item);
 		}
 	}
 
@@ -109895,7 +114651,7 @@ var _default = function _default(model, textureDir) {
 		itemType = itemType || 1;
 		var scope = this;
 		var loaderCallback = function loaderCallback(geometry, materials) {
-			var item = new (__WEBPACK_IMPORTED_MODULE_5__items_factory__["a" /* default */].getClass(itemType))(model, metadata, geometry, materials, position, rotation, scale);
+			var item = new (__WEBPACK_IMPORTED_MODULE_6__items_factory__["a" /* default */].getClass(itemType))(model, metadata, geometry, materials[0], position, rotation, scale);
 			item.fixed = fixed || false;
 			scope.items.push(item);
 			scope.add(item);
@@ -109904,8 +114660,77 @@ var _default = function _default(model, textureDir) {
 		};
 
 		this.itemLoadingCallbacks.fire();
-		loader.load(fileName, loaderCallback, undefined // TODO_Ekki
-		);
+
+		if (fileName.includes(".fbx")) {
+			fbxLoader.load(fileName, function (group) {
+				var texturePromises = [];
+
+				metadata.textureMaps.forEach(function (map) {
+					texturePromises.push(loadTexture(map.type, map.url));
+				});
+
+				Promise.all(texturePromises).then(function (data) {
+					console.log("Texture was loaded", data);
+
+					var material = new __WEBPACK_IMPORTED_MODULE_0_three__["MeshStandardMaterial"]({
+						map: data.find(function (material) {
+							return material.type === "map";
+						}).texture,
+						normalMap: data.find(function (material) {
+							return material.type === "normal";
+						}).texture,
+						metalnessMap: data.find(function (material) {
+							return material.type === "metallic";
+						}).texture,
+						roughnessMap: data.find(function (material) {
+							return material.type === "roughness";
+						}).texture,
+						metalness: 1,
+						roughness: 1
+					});
+
+					group.children.forEach(function (mesh) {
+						if (mesh.children.length < 1) {
+							var item = new (__WEBPACK_IMPORTED_MODULE_6__items_factory__["a" /* default */].getClass(itemType))(model, metadata, mesh.geometry, material, position, rotation, scale);
+							item.fixed = fixed || false;
+							scope.items.push(item);
+
+							scope.add(item);
+							item.initObject();
+							scope.itemLoadedCallbacks.fire(item);
+						} else {
+							mesh.children.forEach(function (childMesh) {
+								var item = new (__WEBPACK_IMPORTED_MODULE_6__items_factory__["a" /* default */].getClass(itemType))(model, metadata, childMesh.geometry, material, position, rotation, scale);
+								item.fixed = fixed || false;
+								scope.items.push(item);
+
+								scope.add(item);
+								item.initObject();
+								scope.itemLoadedCallbacks.fire(item);
+							});
+						}
+					});
+				});
+			}, function (prog) {}, function (e) {
+				console.error(e);
+			});
+		} else {
+			loader.load(fileName, loaderCallback, undefined // TODO_Ekki
+			);
+		}
+	}
+
+	function loadTexture(type, url) {
+		return new Promise(function (resovle, reject) {
+			var _resolve = resovle;
+			var _reject = reject;
+
+			var textureLoader = new __WEBPACK_IMPORTED_MODULE_0_three__["TextureLoader"]();
+
+			textureLoader.load(url, function (texture) {
+				_resolve({ type: type, texture: texture });
+			}, _reject);
+		});
 	}
 
 	var service = {
@@ -109913,7 +114738,8 @@ var _default = function _default(model, textureDir) {
 		itemLoadingCallbacks: itemLoadingCallbacks,
 		itemLoadedCallbacks: itemLoadedCallbacks,
 		addItem: addItem,
-		getItems: getItems
+		getItems: getItems,
+		itemRemovedCallbacks: itemRemovedCallbacks
 	};
 
 	return Object.assign(scene, service);
@@ -109995,8 +114821,8 @@ var Wall = function () {
 		this.onItems = [];
 		this.frontTexture = defaultWallTexture;
 		this.backTexture = defaultWallTexture;
-		this.thickness = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["e" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["d" /* configWallThickness */]);
-		this.height = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["e" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["c" /* configWallHeight */]);
+		this.thickness = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["d" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["c" /* configWallThickness */]);
+		this.height = __WEBPACK_IMPORTED_MODULE_4__core_configuration__["d" /* default */].getNumericValue(__WEBPACK_IMPORTED_MODULE_4__core_configuration__["b" /* configWallHeight */]);
 		this.getUuid = this.getUuid.bind(this);
 
 		this.deleted_callbacks = new __WEBPACK_IMPORTED_MODULE_5__utils_callbacks__["a" /* default */]();
@@ -110224,8 +115050,8 @@ var _default = function _default(three, model, camera, element, controls, hud) {
 
 		mouse = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector2"]();
 
-		//scene.itemRemovedCallbacks.add(itemRemoved);
-		// scene.itemLoadedCallbacks.add(itemLoaded);
+		scene.itemRemovedCallbacks.add(itemRemoved);
+		scene.itemLoadedCallbacks.add(itemLoaded);
 		setGroundPlane();
 	}
 
@@ -110275,6 +115101,7 @@ var _default = function _default(three, model, camera, element, controls, hud) {
 		// ground plane used to find intersections
 		var size = 10000;
 		plane = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](new __WEBPACK_IMPORTED_MODULE_1_three__["PlaneGeometry"](size, size), new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]());
+		plane.receiveShadow = true;
 		plane.rotation.x = -Math.PI / 2;
 		plane.visible = false;
 		scene.add(plane);
@@ -110630,16 +115457,6 @@ var _temp = function () {
 /* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_callbacks__ = __webpack_require__("./utils/callbacks.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_three__ = __webpack_require__("../node_modules/three/build/three.module.js");
 
-/**
-This file is a modified version of THREE.OrbitControls
-Contributors:
- * @author qiao / https://github.com/qiao
- * @author mrdoob / http://mrdoob.com
- * @author alteredq / http://alteredqualia.com/
- * @author WestLangley / http://github.com/WestLangley
- * @author erich666 / http://erichaines.com
- */
-
 
 
 var _default = function _default(object, domElement) {
@@ -110869,7 +115686,7 @@ var _default = function _default(object, domElement) {
 		scale = 1;
 		pan.set(0, 0, 0);
 
-		// this.cameraMovedCallbacks.fire();
+		this.cameraMovedCallbacks.fire();
 		this.needsUpdate = true;
 	};
 
@@ -111206,9 +116023,9 @@ var _default = function _default(scene, edge, controls) {
 	var texture = null;
 
 	var lightMap = __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"]("assets/rooms/textures/walllightmap.png");
-	var fillerColor = 0xdddddd;
+	var fillerColor = 0xffffff;
 	var sideColor = 0xcccccc;
-	var baseColor = 0xdddddd;
+	var baseColor = 0x2c3e50;
 
 	this.visible = false;
 
@@ -111301,7 +116118,8 @@ var _default = function _default(scene, edge, controls) {
 		var stretch = textureData.stretch;
 		var url = textureData.url;
 		var scale = textureData.scale;
-		texture = __WEBPACK_IMPORTED_MODULE_1_three__["ImageUtils"].loadTexture(url, null, callback);
+		var textureloader = new __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"]();
+		texture = textureloader.load(url, callback);
 		if (!stretch) {
 			var height = wall.height;
 			var width = edge.interiorDistance();
@@ -111313,13 +116131,11 @@ var _default = function _default(scene, edge, controls) {
 	}
 
 	function updatePlanes() {
-		var wallMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+		var wallMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshStandardMaterial"]({
 			color: 0xffffff,
-			// ambientColor: 0xffffff, TODO_Ekki
-			//ambient: scope.wall.color,
 			side: __WEBPACK_IMPORTED_MODULE_1_three__["FrontSide"],
-			map: texture
-			// lightMap: lightMap TODO_Ekki
+			map: texture,
+			metalness: 0
 		});
 
 		var fillerMaterial = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
@@ -111377,7 +116193,6 @@ var _default = function _default(scene, edge, controls) {
 
 			shape.holes.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Path"](holePoints));
 		});
-
 		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["ShapeGeometry"](shape);
 
 		geometry.vertices.forEach(function (v) {
@@ -111408,6 +116223,9 @@ var _default = function _default(scene, edge, controls) {
 		geometry.computeVertexNormals();
 
 		var mesh = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, material);
+
+		mesh.receiveShadow = true;
+		mesh.castShadow = true;
 
 		return mesh;
 	}
@@ -111502,7 +116320,7 @@ var _default = function _default(scene, room) {
 		scope.room.fireOnFloorChange(redraw);
 		floorPlane = buildFloor();
 		// roofs look weird, so commented out
-		//roofPlane = buildRoof();
+		roofPlane = buildRoof();
 	}
 
 	function redraw() {
@@ -111514,7 +116332,10 @@ var _default = function _default(scene, room) {
 	function buildFloor() {
 		var textureSettings = scope.room.getTexture();
 		// setup texture
-		var floorTexture = __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"](textureSettings.url);
+
+		var textureLoader = new __WEBPACK_IMPORTED_MODULE_1_three__["TextureLoader"]();
+		var floorTexture = textureLoader.load(textureSettings.url, function (texture) {});
+
 		floorTexture.wrapS = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
 		floorTexture.wrapT = __WEBPACK_IMPORTED_MODULE_1_three__["RepeatWrapping"];
 		floorTexture.repeat.set(1, 1);
@@ -111569,14 +116390,14 @@ var _default = function _default(scene, room) {
 
 	this.addToScene = function () {
 		scene.add(floorPlane);
-		//scene.add(roofPlane);
+		scene.add(roofPlane);
 		// hack so we can do intersect testing
 		scene.add(room.floorPlane);
 	};
 
 	this.removeFromScene = function () {
 		scene.remove(floorPlane);
-		//scene.remove(roofPlane);
+		scene.remove(roofPlane);
 		scene.remove(room.floorPlane);
 	};
 };
@@ -111609,53 +116430,53 @@ var _temp = function () {
 
 
 var _default = function _default(scene, floorplan, controls) {
-  var scope = this;
+	var scope = this;
 
-  this.scene = scene;
-  this.floorplan = floorplan;
-  this.controls = controls;
+	this.scene = scene;
+	this.floorplan = floorplan;
+	this.controls = controls;
 
-  this.floors = [];
-  this.edges = [];
+	this.floors = [];
+	this.edges = [];
 
-  floorplan.fireOnUpdatedRooms(redraw);
+	floorplan.fireOnUpdatedRooms(redraw);
 
-  function redraw() {
-    // clear scene
-    scope.floors.forEach(function (floor) {
-      floor.removeFromScene();
-    });
+	function redraw() {
+		// clear scene
+		scope.floors.forEach(function (floor) {
+			floor.removeFromScene();
+		});
 
-    scope.edges.forEach(function (edge) {
-      edge.remove();
-    });
-    scope.floors = [];
-    scope.edges = [];
+		scope.edges.forEach(function (edge) {
+			edge.remove();
+		});
+		scope.floors = [];
+		scope.edges = [];
 
-    // draw floors
-    scope.floorplan.getRooms().forEach(function (room) {
-      var threeFloor = new __WEBPACK_IMPORTED_MODULE_0__floor__["a" /* default */](scene, room);
-      scope.floors.push(threeFloor);
-      threeFloor.addToScene();
-    });
+		// draw floors
+		scope.floorplan.getRooms().forEach(function (room) {
+			var threeFloor = new __WEBPACK_IMPORTED_MODULE_0__floor__["a" /* default */](scene, room);
+			scope.floors.push(threeFloor);
+			threeFloor.addToScene();
+		});
 
-    // draw edges
-    scope.floorplan.wallEdges().forEach(function (edge) {
-      var threeEdge = new __WEBPACK_IMPORTED_MODULE_1__edge__["a" /* default */](scene, edge, scope.controls);
-      scope.edges.push(threeEdge);
-    });
-  }
+		// draw edges
+		scope.floorplan.wallEdges().forEach(function (edge) {
+			var threeEdge = new __WEBPACK_IMPORTED_MODULE_1__edge__["a" /* default */](scene, edge, scope.controls);
+			scope.edges.push(threeEdge);
+		});
+	}
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (_default);
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floorplan.js");
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/floorplan.js");
 }();
 
 ;
@@ -111679,165 +116500,164 @@ var _temp = function () {
    */
 
 var _default = function _default(three) {
-  var scope = this;
+	var scope = this;
 
-  var scene = new __WEBPACK_IMPORTED_MODULE_1_three__["Scene"]();
+	var scene = new __WEBPACK_IMPORTED_MODULE_1_three__["Scene"]();
 
-  var selectedItem = null;
+	var selectedItem = null;
 
-  var rotating = false;
-  var mouseover = false;
+	var rotating = false;
+	var mouseover = false;
 
-  var tolerance = 10;
-  var height = 5;
-  var distance = 20;
-  var color = "#ffffff";
-  var hoverColor = "#f1c40f";
+	var tolerance = 10;
+	var height = 5;
+	var distance = 20;
+	var color = "#ffffff";
+	var hoverColor = "#f1c40f";
 
-  var activeObject = null;
+	var activeObject = null;
 
-  this.getScene = function () {
-    return scene;
-  };
+	this.getScene = function () {
+		return scene;
+	};
 
-  this.getObject = function () {
-    return activeObject;
-  };
+	this.getObject = function () {
+		return activeObject;
+	};
 
-  function init() {
-    //   three.itemSelectedCallbacks.add(itemSelected);
-    //   three.itemUnselectedCallbacks.add(itemUnselected);
-    //
-  }
+	function init() {
+		three.itemSelectedCallbacks.add(itemSelected);
+		three.itemUnselectedCallbacks.add(itemUnselected);
+	}
 
-  function resetSelectedItem() {
-    selectedItem = null;
-    if (activeObject) {
-      scene.remove(activeObject);
-      activeObject = null;
-    }
-  }
+	function resetSelectedItem() {
+		selectedItem = null;
+		if (activeObject) {
+			scene.remove(activeObject);
+			activeObject = null;
+		}
+	}
 
-  function itemSelected(item) {
-    if (selectedItem != item) {
-      resetSelectedItem();
-      if (item.allowRotate && !item.fixed) {
-        selectedItem = item;
-        activeObject = makeObject(selectedItem);
-        scene.add(activeObject);
-      }
-    }
-  }
+	function itemSelected(item) {
+		if (selectedItem != item) {
+			resetSelectedItem();
+			if (item.allowRotate && !item.fixed) {
+				selectedItem = item;
+				activeObject = makeObject(selectedItem);
+				scene.add(activeObject);
+			}
+		}
+	}
 
-  function itemUnselected() {
-    resetSelectedItem();
-  }
+	function itemUnselected() {
+		resetSelectedItem();
+	}
 
-  this.setRotating = function (isRotating) {
-    rotating = isRotating;
-    setColor();
-  };
+	this.setRotating = function (isRotating) {
+		rotating = isRotating;
+		setColor();
+	};
 
-  this.setMouseover = function (isMousedOver) {
-    mouseover = isMousedOver;
-    setColor();
-  };
+	this.setMouseover = function (isMousedOver) {
+		mouseover = isMousedOver;
+		setColor();
+	};
 
-  function setColor() {
-    if (activeObject) {
-      activeObject.children.forEach(function (obj) {
-        obj.material.color.set(getColor());
-      });
-    }
-    three.needsUpdate();
-  }
+	function setColor() {
+		if (activeObject) {
+			activeObject.children.forEach(function (obj) {
+				obj.material.color.set(getColor());
+			});
+		}
+		three.needsUpdate();
+	}
 
-  function getColor() {
-    return mouseover || rotating ? hoverColor : color;
-  }
+	function getColor() {
+		return mouseover || rotating ? hoverColor : color;
+	}
 
-  this.update = function () {
-    if (activeObject) {
-      activeObject.rotation.y = selectedItem.rotation.y;
-      activeObject.position.x = selectedItem.position.x;
-      activeObject.position.z = selectedItem.position.z;
-    }
-  };
+	this.update = function () {
+		if (activeObject) {
+			activeObject.rotation.y = selectedItem.rotation.y;
+			activeObject.position.x = selectedItem.position.x;
+			activeObject.position.z = selectedItem.position.z;
+		}
+	};
 
-  function makeLineGeometry(item) {
-    var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["Geometry"]();
+	function makeLineGeometry(item) {
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["Geometry"]();
 
-    geometry.vertices.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, 0), rotateVector(item));
+		geometry.vertices.push(new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, 0), rotateVector(item));
 
-    return geometry;
-  }
+		return geometry;
+	}
 
-  function rotateVector(item) {
-    var vec = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, Math.max(item.halfSize.x, item.halfSize.z) + 1.4 + distance);
-    return vec;
-  }
+	function rotateVector(item) {
+		var vec = new __WEBPACK_IMPORTED_MODULE_1_three__["Vector3"](0, 0, Math.max(item.halfSize.x, item.halfSize.z) + 1.4 + distance);
+		return vec;
+	}
 
-  function makeLineMaterial(rotating) {
-    var mat = new __WEBPACK_IMPORTED_MODULE_1_three__["LineBasicMaterial"]({
-      color: getColor(),
-      linewidth: 3
-    });
-    return mat;
-  }
+	function makeLineMaterial(rotating) {
+		var mat = new __WEBPACK_IMPORTED_MODULE_1_three__["LineBasicMaterial"]({
+			color: getColor(),
+			linewidth: 3
+		});
+		return mat;
+	}
 
-  function makeCone(item) {
-    var coneGeo = new __WEBPACK_IMPORTED_MODULE_1_three__["CylinderGeometry"](5, 0, 10);
-    var coneMat = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
-      color: getColor()
-    });
-    var cone = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](coneGeo, coneMat);
-    cone.position.copy(rotateVector(item));
+	function makeCone(item) {
+		var coneGeo = new __WEBPACK_IMPORTED_MODULE_1_three__["CylinderGeometry"](5, 0, 10);
+		var coneMat = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: getColor()
+		});
+		var cone = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](coneGeo, coneMat);
+		cone.position.copy(rotateVector(item));
 
-    cone.rotation.x = -Math.PI / 2.0;
+		cone.rotation.x = -Math.PI / 2.0;
 
-    return cone;
-  }
+		return cone;
+	}
 
-  function makeSphere(item) {
-    var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["SphereGeometry"](4, 16, 16);
-    var material = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
-      color: getColor()
-    });
-    var sphere = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, material);
-    return sphere;
-  }
+	function makeSphere(item) {
+		var geometry = new __WEBPACK_IMPORTED_MODULE_1_three__["SphereGeometry"](4, 16, 16);
+		var material = new __WEBPACK_IMPORTED_MODULE_1_three__["MeshBasicMaterial"]({
+			color: getColor()
+		});
+		var sphere = new __WEBPACK_IMPORTED_MODULE_1_three__["Mesh"](geometry, material);
+		return sphere;
+	}
 
-  function makeObject(item) {
-    var object = new __WEBPACK_IMPORTED_MODULE_1_three__["Object3D"]();
-    var line = new __WEBPACK_IMPORTED_MODULE_1_three__["Line"](makeLineGeometry(item), makeLineMaterial(scope.rotating), __WEBPACK_IMPORTED_MODULE_1_three__["LinePieces"]);
+	function makeObject(item) {
+		var object = new __WEBPACK_IMPORTED_MODULE_1_three__["Object3D"]();
+		var line = new __WEBPACK_IMPORTED_MODULE_1_three__["Line"](makeLineGeometry(item), makeLineMaterial(scope.rotating), __WEBPACK_IMPORTED_MODULE_1_three__["LinePieces"]);
 
-    var cone = makeCone(item);
-    var sphere = makeSphere(item);
+		var cone = makeCone(item);
+		var sphere = makeSphere(item);
 
-    object.add(line);
-    object.add(cone);
-    object.add(sphere);
+		object.add(line);
+		object.add(cone);
+		object.add(sphere);
 
-    object.rotation.y = item.rotation.y;
-    object.position.x = item.position.x;
-    object.position.z = item.position.z;
-    object.position.y = height;
+		object.rotation.y = item.rotation.y;
+		object.position.x = item.position.x;
+		object.position.z = item.position.z;
+		object.position.y = height;
 
-    return object;
-  }
+		return object;
+	}
 
-  init();
+	init();
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (_default);
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/hud.js");
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/blueprint/three/hud.js");
 }();
 
 ;
@@ -111860,7 +116680,7 @@ var _default = function _default(scene, floorplan) {
 	var scope = this;
 
 	var tol = 1;
-	var height = 300; // TODO: share with Blueprint.Wall
+	var height = 1000; // TODO: share with Blueprint.Wall
 
 	var dirLight;
 
@@ -111869,11 +116689,30 @@ var _default = function _default(scene, floorplan) {
 	};
 
 	function init() {
+		var center = floorplan.getCenter();
 		var light = new __WEBPACK_IMPORTED_MODULE_1_three__["HemisphereLight"](0xffffff, 0x888888, 1.1);
-		light.position.set(0, height, 0);
-		scene.add(light);
 
-		dirLight = new __WEBPACK_IMPORTED_MODULE_1_three__["DirectionalLight"](0xffffff, 0);
+		var hemHelper = new __WEBPACK_IMPORTED_MODULE_1_three__["HemisphereLightHelper"](light, 1000);
+		light.position.set(0, 30, 0);
+
+		scene.add(hemHelper);
+		scene.add(light);
+		var pointLight = new __WEBPACK_IMPORTED_MODULE_1_three__["PointLight"](0xffffff, 1, 400, 2);
+		var pointLightHelper = new __WEBPACK_IMPORTED_MODULE_1_three__["PointLightHelper"](pointLight, 100);
+		pointLight.castShadow = true;
+
+		pointLight.position.set(346.697102333121, 82.163997943445, -175.19915302127583);
+		var pointLight2 = new __WEBPACK_IMPORTED_MODULE_1_three__["PointLight"](0xffffff, 1, 400, 2);
+		var pointLightHelper2 = new __WEBPACK_IMPORTED_MODULE_1_three__["PointLightHelper"](pointLight2, 100);
+		pointLight.castShadow = true;
+
+		pointLight2.position.set(800, 250, 50);
+		scene.add(pointLightHelper2);
+		scene.add(pointLight2);
+		scene.add(pointLightHelper);
+		scene.add(pointLight);
+
+		dirLight = new __WEBPACK_IMPORTED_MODULE_1_three__["DirectionalLight"](0xffffff, 1);
 		dirLight.color.setHSL(1, 1, 0.1);
 
 		dirLight.castShadow = true;
@@ -111885,8 +116724,14 @@ var _default = function _default(scene, floorplan) {
 		dirLight.shadow.bias = -0.0001;
 		dirLight.shadow.darkness = 0.2;
 		dirLight.visible = true;
-		dirLight.shadowCameraVisible = false;
 
+		var cameraHelper = new __WEBPACK_IMPORTED_MODULE_1_three__["CameraHelper"](dirLight.shadow.camera);
+
+		var dirHelper = new __WEBPACK_IMPORTED_MODULE_1_three__["DirectionalLightHelper"](dirLight, 1000);
+
+		scene.add(cameraHelper);
+
+		scene.add(dirHelper);
 		scene.add(dirLight);
 		scene.add(dirLight.target);
 
@@ -111903,10 +116748,10 @@ var _default = function _default(scene, floorplan) {
 		dirLight.target.position.copy(center);
 		//dirLight.updateMatrix();
 		//dirLight.updateWorldMatrix()
-		dirLight.shadowCameraLeft = -d;
-		dirLight.shadowCameraRight = d;
-		dirLight.shadowCameraTop = d;
-		dirLight.shadowCameraBottom = -d;
+		dirLight.shadow.camera.left = -d;
+		dirLight.shadow.camera.right = d;
+		dirLight.shadow.camera.top = d;
+		dirLight.shadow.camera.bottom = -d;
 		// this is necessary for updates
 		if (dirLight.shadowCamera) {
 			dirLight.shadowCamera.left = dirLight.shadowCameraLeft;
@@ -111964,6 +116809,7 @@ var _default = function _default(model, element, canvasElement, opts) {
 
 	this.itemSelectedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
 	this.itemUnselectedCallbacks = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
+	this.nothingClicked = new __WEBPACK_IMPORTED_MODULE_7__utils_callbacks__["a" /* default */]();
 
 	var options = {
 		resize: true,
@@ -111993,9 +116839,6 @@ var _default = function _default(model, element, canvasElement, opts) {
 	var controller;
 	var floorplan;
 
-	//var canvas;
-	//var canvasElement = canvasElement;
-
 	var needsUpdate = false;
 
 	var lastRender = Date.now();
@@ -112018,7 +116861,8 @@ var _default = function _default(model, element, canvasElement, opts) {
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
 		});
-		renderer.autoClear = false, renderer.shadowMap.enabled = true;
+		renderer.autoClear = false;
+		renderer.shadowMap.enabled = true;
 		renderer.shadowMapSoft = true;
 		renderer.shadowMap.type = __WEBPACK_IMPORTED_MODULE_0_three__["PCFSoftShadowMap"];
 
@@ -112049,7 +116893,6 @@ var _default = function _default(model, element, canvasElement, opts) {
 		floorplan = new __WEBPACK_IMPORTED_MODULE_2__floorplan__["a" /* default */](scene, model.floorplan, scope.controls);
 
 		animate();
-		//TODO: eventhandling
 		scope.element.addEventListener("mouseenter", function () {
 			mouseOver = true;
 		});
@@ -112059,9 +116902,6 @@ var _default = function _default(model, element, canvasElement, opts) {
 		scope.element.addEventListener("click", function () {
 			hasClicked = true;
 		});
-
-		// JODO: The line below was originally commented out.
-		// canvas = new ThreeCanvas(canvasElement, scope);
 	}
 
 	function spin() {
@@ -112106,7 +116946,7 @@ var _default = function _default(model, element, canvasElement, opts) {
 	};
 	function shouldRender() {
 		// Do we need to draw a new frame
-		if (true) {
+		if (scope.controls.needsUpdate || controller.needsUpdate || needsUpdate || model.scene.needsUpdate) {
 			scope.controls.needsUpdate = false;
 			controller.needsUpdate = false;
 			needsUpdate = false;
@@ -112176,8 +117016,6 @@ var _default = function _default(model, element, canvasElement, opts) {
 		var distance = model.floorplan.getSize().z * 1.5;
 
 		var offset = pan.clone().add(new __WEBPACK_IMPORTED_MODULE_0_three__["Vector3"](0, distance, distance));
-		// Line below was originally commented out
-		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);
 
 		scope.controls.update();
@@ -112383,7 +117221,6 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_router_dom__ = __webpack_require__("../node_modules/react-router-dom/es/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__SubNav__ = __webpack_require__("./components/navigation/SubNav.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_navigation__ = __webpack_require__("./config/navigation.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -112396,90 +117233,90 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
 var Nav = function (_React$Component) {
-    _inherits(Nav, _React$Component);
+	_inherits(Nav, _React$Component);
 
-    function Nav(props) {
-        _classCallCheck(this, Nav);
+	function Nav(props) {
+		_classCallCheck(this, Nav);
 
-        var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
+		var _this = _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).call(this, props));
 
-        _this.state = {
-            routes: _this.props.routes || [],
-            links: null,
-            location: _this.props.location.pathname || '',
-            subNodes: []
-        };
+		_this.state = {
+			routes: _this.props.routes || [],
+			links: null,
+			location: _this.props.location.pathname || "",
+			subNodes: []
+		};
 
-        _this.createLinks = _this.createLinks.bind(_this);
+		_this.createLinks = _this.createLinks.bind(_this);
+		return _this;
+	}
 
-        return _this;
-    }
+	_createClass(Nav, [{
+		key: "componentDidMount",
+		value: function componentDidMount() {
+			this.createLinks();
+		}
+	}, {
+		key: "componentWillReceiveProps",
+		value: function componentWillReceiveProps(nextProps) {
+			var _this2 = this;
 
-    _createClass(Nav, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            this.createLinks();
-        }
-    }, {
-        key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(nextProps) {
-            var _this2 = this;
+			if (this.props.location.pathname !== nextProps.location.pathname) {
+				this.setState({
+					routes: nextProps.routes,
+					location: nextProps.location.pathname
+				}, function () {
+					_this2.createLinks();
+				});
+			}
+		}
+	}, {
+		key: "createLinks",
+		value: function createLinks() {
+			var _this3 = this;
 
-            if (this.props.location.pathname !== nextProps.location.pathname) {
-                this.setState({ routes: nextProps.routes, location: nextProps.location.pathname }, function () {
-                    _this2.createLinks();
-                });
-            }
-        }
-    }, {
-        key: 'createLinks',
-        value: function createLinks() {
-            var _this3 = this;
+			var links = this.state.routes.map(function (node) {
+				var isActive = _this3.state.location.includes(node.path);
+				if (isActive && node.routes) _this3.setState({ subNodes: node.routes });else _this3.setState({ subNodes: [] });
 
-            var links = this.state.routes.map(function (node) {
+				var activeClass = isActive ? " active" : "";
 
-                var isActive = _this3.state.location.includes(node.path);
-                if (isActive && node.routes) _this3.setState({ subNodes: node.routes });else _this3.setState({ subNodes: [] });
+				var classes = "component-navigation nav-list nav-listitem" + activeClass;
+				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"li",
+					{ className: classes, key: node.title },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
+						{ to: node.path },
+						node.title
+					)
+				);
+			});
 
-                var activeClass = isActive ? ' active' : '';
+			this.setState({ links: links });
+		}
+	}, {
+		key: "render",
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				"div",
+				{ className: "layout-head" },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"div",
+					{ className: "component-navigation" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"ul",
+						{ className: "component-navigation nav-list" },
+						this.state.links
+					)
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SubNav__["a" /* default */], { subNodes: this.state.subNodes })
+			);
+		}
+	}]);
 
-                var classes = 'component-navigation nav-list nav-listitem' + activeClass;
-                return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'li',
-                    { className: classes, key: node.title },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
-                        { to: node.path },
-                        node.title
-                    )
-                );
-            });
-
-            this.setState({ links: links });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'div',
-                { className: 'layout-head' },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    'div',
-                    { className: 'component-navigation' },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        'ul',
-                        { className: 'component-navigation nav-list' },
-                        this.state.links
-                    )
-                ),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__SubNav__["a" /* default */], { subNodes: this.state.subNodes })
-            );
-        }
-    }]);
-
-    return Nav;
+	return Nav;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 var _default = Nav;
@@ -112489,13 +117326,13 @@ var _default = Nav;
 ;
 
 var _temp = function () {
-    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-        return;
-    }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-    __REACT_HOT_LOADER__.register(Nav, 'Nav', '/Users/filinils/Documents/Projects/untitled/client/src/components/navigation/Nav.js');
+	__REACT_HOT_LOADER__.register(Nav, "Nav", "/Users/filinils/Documents/Projects/untitled/client/src/components/navigation/Nav.js");
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/filinils/Documents/Projects/untitled/client/src/components/navigation/Nav.js');
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/navigation/Nav.js");
 }();
 
 ;
@@ -112682,6 +117519,7 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__blueprint_blueprint3d__ = __webpack_require__("./blueprint/blueprint3d.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ModalEffects__ = __webpack_require__("./components/pages/PlannerExample/ModalEffects.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__LoadingModal__ = __webpack_require__("./components/pages/PlannerExample/LoadingModal.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__roomData__ = __webpack_require__("./components/pages/PlannerExample/roomData.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -112689,6 +117527,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -112712,19 +117551,7 @@ var PlannerExample = function (_React$Component) {
 			showLoading: false,
 			itemsLoading: 0
 		};
-
-		_this.isShiftDown = false;
-		_this.objects = [];
-
 		_this.info = {};
-
-		_this.onDocumentKeyDown = _this.onDocumentKeyDown.bind(_this);
-		_this.onDocumentKeyUp = _this.onDocumentKeyUp.bind(_this);
-		_this.onDocumentMouseDown = _this.onDocumentMouseDown.bind(_this);
-		_this.onDocumentMouseMove = _this.onDocumentMouseMove.bind(_this);
-		_this.onWindowResize = _this.onWindowResize.bind(_this);
-
-		// window.addEventListener("mousemove", this.onDocumentMouseMove);
 		return _this;
 	}
 
@@ -112747,51 +117574,17 @@ var PlannerExample = function (_React$Component) {
 
 			// This serialization format needs work
 			// Load a simple rectangle room
-			this.blueprint3d.model.loadSerialized("{\n\t\t\t\t\"floorplan\": {\n\t\t\t\t  \"corners\": {\n\t\t\t\t\t\"56d9ebd1-91b2-875c-799d-54b3785fca1f\": {\n\t\t\t\t\t  \"x\": 630.555,\n\t\t\t\t\t  \"y\": -227.58400000000006\n\t\t\t\t\t},\n\t\t\t\t\t\"8f4a050d-e102-3c3f-5af9-3d9133555d76\": {\n\t\t\t\t\t  \"x\": 294.64,\n\t\t\t\t\t  \"y\": -227.58400000000006\n\t\t\t\t\t},\n\t\t\t\t\t\"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\": { \"x\": 294.64, \"y\": 232.664 },\n\t\t\t\t\t\"254656bf-8a53-3987-c810-66b349f49b19\": {\n\t\t\t\t\t  \"x\": 745.7439999999998,\n\t\t\t\t\t  \"y\": 232.664\n\t\t\t\t\t},\n\t\t\t\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b\": {\n\t\t\t\t\t  \"x\": 1044.7019999999998,\n\t\t\t\t\t  \"y\": 232.664\n\t\t\t\t\t},\n\t\t\t\t\t\"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t\t\t\t  \"x\": 1044.7019999999998,\n\t\t\t\t\t  \"y\": -105.66399999999999\n\t\t\t\t\t},\n\t\t\t\t\t\"e7db8654-efe1-bda2-099a-70585874d8c0\": {\n\t\t\t\t\t  \"x\": 745.7439999999998,\n\t\t\t\t\t  \"y\": -105.66399999999999\n\t\t\t\t\t}\n\t\t\t\t  },\n\t\t\t\t  \"walls\": [\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t\t\t\t  \"corner2\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t\t\t\t  \"corner2\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t\t\t\t  \"corner2\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t\t\t\t  \"corner2\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t\t\t\t  \"corner2\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/light_brick.jpg\",\n\t\t\t\t\t\t\"stretch\": false,\n\t\t\t\t\t\t\"scale\": 100\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t\t\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  }\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t  \"corner1\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t\t\t\t  \"corner2\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t\t\t\t  \"frontTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": 0\n\t\t\t\t\t  },\n\t\t\t\t\t  \"backTexture\": {\n\t\t\t\t\t\t\"url\": \"assets/rooms/textures/wallmap_yellow.png\",\n\t\t\t\t\t\t\"stretch\": true,\n\t\t\t\t\t\t\"scale\": null\n\t\t\t\t\t  }\n\t\t\t\t\t}\n\t\t\t\t  ],\n\t\t\t\t  \"wallTextures\": [],\n\t\t\t\t  \"floorTextures\": {},\n\t\t\t\t  \"newFloorTextures\": {\n\t\t\t\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b,254656bf-8a53-3987-c810-66b349f49b19,e7db8654-efe1-bda2-099a-70585874d8c0,edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t\t\t\t  \"url\": \"assets/rooms/textures/light_fine_wood.jpg\",\n\t\t\t\t\t  \"scale\": 300\n\t\t\t\t\t}\n\t\t\t\t  }\n\t\t\t\t},\n\t\t\t\t\"items\": [\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Full Bed\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik_nordli_full.js\",\n\t\t\t\t\t\"xpos\": 939.5525544513545,\n\t\t\t\t\t\"ypos\": 50,\n\t\t\t\t\t\"zpos\": -15.988409993966997,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Bedside table - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-archnight-white_baked.js\",\n\t\t\t\t\t\"xpos\": 1001.0862865204286,\n\t\t\t\t\t\"ypos\": 31.15939942141,\n\t\t\t\t\t\"zpos\": 86.4297300551338,\n\t\t\t\t\t\"rotation\": -0.7872847644705953,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Open Door\",\n\t\t\t\t\t\"item_type\": 7,\n\t\t\t\t\t\"model_url\": \"assets/models/js/open_door.js\",\n\t\t\t\t\t\"xpos\": 745.2440185546875,\n\t\t\t\t\t\"ypos\": 110.5,\n\t\t\t\t\t\"zpos\": 64.8291839065202,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1.7003089598352215,\n\t\t\t\t\t\"scale_y\": 0.997292171703541,\n\t\t\t\t\t\"scale_z\": 0.999415040540576,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 886.8841174461031,\n\t\t\t\t\t\"ypos\": 139.1510114697785,\n\t\t\t\t\t\"zpos\": -105.16400146484375,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Dresser - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/we-narrow6white_baked.js\",\n\t\t\t\t\t\"xpos\": 898.0548281668393,\n\t\t\t\t\t\"ypos\": 35.611997646165,\n\t\t\t\t\t\"zpos\": 201.10860458067486,\n\t\t\t\t\t\"rotation\": -3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 534.9620937975317,\n\t\t\t\t\t\"ypos\": 137.60931398864443,\n\t\t\t\t\t\"zpos\": -227.08399963378906,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 295.1400146484375,\n\t\t\t\t\t\"ypos\": 141.43383044055196,\n\t\t\t\t\t\"zpos\": 123.2280598724867,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Media Console - White\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-clapboard_baked.js\",\n\t\t\t\t\t\"xpos\": 658.6568227980731,\n\t\t\t\t\t\"ypos\": 67.88999754395999,\n\t\t\t\t\t\"zpos\": -141.50237235990153,\n\t\t\t\t\t\"rotation\": -0.8154064090423808,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Blue Rug\",\n\t\t\t\t\t\"item_type\": 8,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-blue-block-60x96.js\",\n\t\t\t\t\t\"xpos\": 905.8690190229256,\n\t\t\t\t\t\"ypos\": 0.250005,\n\t\t\t\t\t\"zpos\": 44.59927303228528,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"NYC Poster\",\n\t\t\t\t\t\"item_type\": 2,\n\t\t\t\t\t\"model_url\": \"assets/models/js/nyc-poster2.js\",\n\t\t\t\t\t\"xpos\": 1038.448276049687,\n\t\t\t\t\t\"ypos\": 146.22618581237782,\n\t\t\t\t\t\"zpos\": 148.65033715350484,\n\t\t\t\t\t\"rotation\": -1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Sofa - Grey\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-rochelle-gray_baked.js\",\n\t\t\t\t\t\"xpos\": 356.92671999154373,\n\t\t\t\t\t\"ypos\": 42.54509923821,\n\t\t\t\t\t\"zpos\": -21.686174295784554,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Coffee Table - Wood\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik-stockholmcoffee-brown.js\",\n\t\t\t\t\t\"xpos\": 468.479104587435,\n\t\t\t\t\t\"ypos\": 24.01483158034958,\n\t\t\t\t\t\"zpos\": -23.468458996048412,\n\t\t\t\t\t\"rotation\": 1.5707963267948966,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Floor Lamp\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ore-3legged-white_baked.js\",\n\t\t\t\t\t\"xpos\": 346.697102333121,\n\t\t\t\t\t\"ypos\": 72.163997943445,\n\t\t\t\t\t\"zpos\": -175.19915302127583,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Red Chair\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/ik-ekero-orange_baked.js\",\n\t\t\t\t\t\"xpos\": 397.676038151142,\n\t\t\t\t\t\"ypos\": 37.50235073007,\n\t\t\t\t\t\"zpos\": 156.31701312594373,\n\t\t\t\t\t\"rotation\": 2.4062972386507093,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Window\",\n\t\t\t\t\t\"item_type\": 3,\n\t\t\t\t\t\"model_url\": \"assets/models/js/whitewindow.js\",\n\t\t\t\t\t\"xpos\": 374.7738207971076,\n\t\t\t\t\t\"ypos\": 138.62749831597068,\n\t\t\t\t\t\"zpos\": -227.08399963378906,\n\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Closed Door\",\n\t\t\t\t\t\"item_type\": 7,\n\t\t\t\t\t\"model_url\": \"assets/models/js/closed-door28x80_baked.js\",\n\t\t\t\t\t\"xpos\": 637.2176377788675,\n\t\t\t\t\t\"ypos\": 110.80000022010701,\n\t\t\t\t\t\"zpos\": 232.16400146484375,\n\t\t\t\t\t\"rotation\": 3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  },\n\t\t\t\t  {\n\t\t\t\t\t\"item_name\": \"Bookshelf\",\n\t\t\t\t\t\"item_type\": 1,\n\t\t\t\t\t\"model_url\": \"assets/models/js/cb-kendallbookcasewalnut_baked.js\",\n\t\t\t\t\t\"xpos\": 533.1460416453955,\n\t\t\t\t\t\"ypos\": 92.17650034119151,\n\t\t\t\t\t\"zpos\": 207.7644213268835,\n\t\t\t\t\t\"rotation\": 3.141592653589793,\n\t\t\t\t\t\"scale_x\": 1,\n\t\t\t\t\t\"scale_y\": 1,\n\t\t\t\t\t\"scale_z\": 1,\n\t\t\t\t\t\"fixed\": false\n\t\t\t\t  }\n\t\t\t\t]\n\t\t\t  }\n\t\t\t  "
+			this.blueprint3d.model.loadSerialized(__WEBPACK_IMPORTED_MODULE_8__roomData__["a" /* default */]
 			// '{"floorplan":{"corners":{"f90da5e3-9e0e-eba7-173d-eb0b071e838e":{"x":204.85099999999989,"y":289.052},"da026c08-d76a-a944-8e7b-096b752da9ed":{"x":672.2109999999999,"y":289.052},"4e3d65cb-54c0-0681-28bf-bddcc7bdb571":{"x":672.2109999999999,"y":-178.308},"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2":{"x":204.85099999999989,"y":-178.308}},"walls":[{"corner1":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","corner2":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"f90da5e3-9e0e-eba7-173d-eb0b071e838e","corner2":"da026c08-d76a-a944-8e7b-096b752da9ed","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"da026c08-d76a-a944-8e7b-096b752da9ed","corner2":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}},{"corner1":"4e3d65cb-54c0-0681-28bf-bddcc7bdb571","corner2":"71d4f128-ae80-3d58-9bd2-711c6ce6cdf2","frontTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0},"backTexture":{"url":"rooms/textures/wallmap.png","stretch":true,"scale":0}}],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},"items":[]}'
 			);
+
+			this.floorPlanner;
+			this.setState({ plannerMode: "3d" });
 		}
 	}, {
 		key: "infoElement",
 		value: function infoElement(style, innerHtml) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { style: style, dangerouslySetInnerHTML: innerHtml });
-		}
-	}, {
-		key: "onDocumentMouseMove",
-		value: function onDocumentMouseMove(event) {
-			event.preventDefault();
-			this.mouse.set(event.clientX / window.innerWidth * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1);
-
-			this.raycaster.setFromCamera(this.mouse, this.camera);
-			var intersects = this.raycaster.intersectObjects(this.objects);
-
-			if (intersects.length > 0) {
-				var intersect = intersects[0];
-				console.log(intersects[0]);
-				this.rollOverMesh.position.copy(intersect.point).add(intersect.face.normal);
-				this.rollOverMesh.position.divideScalar(50).floor().multiplyScalar(50).addScalar(25);
-			}
-		}
-	}, {
-		key: "onDocumentMouseDown",
-		value: function onDocumentMouseDown(event) {}
-	}, {
-		key: "onDocumentKeyDown",
-		value: function onDocumentKeyDown(event) {
-			switch (event.keyCode) {
-				case 16:
-					this.isShiftDown = true;
-					break;
-			}
-		}
-	}, {
-		key: "onDocumentKeyUp",
-		value: function onDocumentKeyUp(event) {
-			switch (event.keyCode) {
-				case 16:
-					this.isShiftDown = false;
-					break;
-			}
 		}
 	}, {
 		key: "onWindowResize",
@@ -112801,16 +117594,54 @@ var PlannerExample = function (_React$Component) {
 			this.renderer.setSize(window.innerWidth, window.innerHeight);
 		}
 	}, {
+		key: "plannerMode2D",
+		value: function plannerMode2D() {
+			this.blueprint3d.model.floorplan.update();
+			this.setState({ plannerMode: "2d" });
+		}
+	}, {
+		key: "plannerMode3D",
+		value: function plannerMode3D() {
+			this.blueprint3d.model.floorplan.update();
+			this.setState({ plannerMode: "3d" });
+		}
+	}, {
 		key: "render",
 		value: function render() {
+			var _this2 = this;
+
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				"div",
-				null,
+				{ id: "program-window" },
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__ModalEffects__["a" /* default */], { showLoading: this.state.itemsLoading > 0 }),
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "viewer" }),
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					"div",
-					{ id: "floorplanner" },
+					{ id: "floorplanner-controls" },
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"button",
+						{ onClick: function onClick() {
+								return _this2.plannerMode2D();
+							} },
+						"2D Planner"
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						"button",
+						{ onClick: function onClick() {
+								return _this2.plannerMode3D();
+							} },
+						"3D Planner"
+					)
+				),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+					id: "viewer",
+					className: this.state.plannerMode !== "2d" ? "" : "hide"
+				}),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					"div",
+					{
+						id: "floorplanner",
+						className: this.state.plannerMode !== "3d" ? "" : "hide"
+					},
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "floorplanner-canvas" })
 				)
 			);
@@ -112837,6 +117668,63 @@ var _temp = function () {
 ;
 
  ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/PlannerExample.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/pages/PlannerExample/ViewerFloorPlanner.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("../node_modules/react/react.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+
+
+var _default = function _default() {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		"div",
+		{ id: "floorplanner" },
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("canvas", { id: "floorplanner-canvas" })
+	);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ViewerFloorPlanner.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ViewerFloorPlanner.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/ViewerFloorPlanner.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./components/pages/PlannerExample/roomData.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {var _default = "{\n\t\"floorplan\": {\n\t  \"corners\": {\n\t\t\"56d9ebd1-91b2-875c-799d-54b3785fca1f\": {\n\t\t  \"x\": 630.555,\n\t\t  \"y\": -227.58400000000006\n\t\t},\n\t\t\"8f4a050d-e102-3c3f-5af9-3d9133555d76\": {\n\t\t  \"x\": 294.64,\n\t\t  \"y\": -227.58400000000006\n\t\t},\n\t\t\"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\": { \"x\": 294.64, \"y\": 232.664 },\n\t\t\"254656bf-8a53-3987-c810-66b349f49b19\": {\n\t\t  \"x\": 745.7439999999998,\n\t\t  \"y\": 232.664\n\t\t},\n\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b\": {\n\t\t  \"x\": 1044.7019999999998,\n\t\t  \"y\": 232.664\n\t\t},\n\t\t\"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t  \"x\": 1044.7019999999998,\n\t\t  \"y\": -105.66399999999999\n\t\t},\n\t\t\"e7db8654-efe1-bda2-099a-70585874d8c0\": {\n\t\t  \"x\": 745.7439999999998,\n\t\t  \"y\": -105.66399999999999\n\t\t}\n\t  },\n\t  \"walls\": [\n\t\t{\n\t\t  \"corner1\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t  \"corner2\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": null\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": null\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t  \"corner2\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": null\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"8f4a050d-e102-3c3f-5af9-3d9133555d76\",\n\t\t  \"corner2\": \"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": null\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"254656bf-8a53-3987-c810-66b349f49b19\",\n\t\t  \"corner2\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"11d25193-4411-fbbf-78cb-ae7c0283164b\",\n\t\t  \"corner2\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": false,\n\t\t\t\"scale\": 100\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"edf0de13-df9f-cd6a-7d11-9bd13c36ce12\",\n\t\t  \"corner2\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  }\n\t\t},\n\t\t{\n\t\t  \"corner1\": \"e7db8654-efe1-bda2-099a-70585874d8c0\",\n\t\t  \"corner2\": \"56d9ebd1-91b2-875c-799d-54b3785fca1f\",\n\t\t  \"frontTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": 0\n\t\t  },\n\t\t  \"backTexture\": {\n\t\t\t\"url\": \"assets/rooms/textures/wallmap_blue.png\",\n\t\t\t\"stretch\": true,\n\t\t\t\"scale\": null\n\t\t  }\n\t\t}\n\t  ],\n\t  \"wallTextures\": [],\n\t  \"floorTextures\": {},\n\t  \"newFloorTextures\": {\n\t\t\"11d25193-4411-fbbf-78cb-ae7c0283164b,254656bf-8a53-3987-c810-66b349f49b19,e7db8654-efe1-bda2-099a-70585874d8c0,edf0de13-df9f-cd6a-7d11-9bd13c36ce12\": {\n\t\t  \"url\": \"assets/rooms/textures/light_fine_wood.jpg\",\n\t\t  \"scale\": 300\n\t\t}\n\t  }\n\t},\n\t\"items\": [\n\n\t  {\n\t\t\"item_name\": \"Bed\",\n\t\t\"item_type\": 1,\n\t\t\"model_url\": \"assets/models/Bed/Bed_geo/bed_30k.fbx\",\n\t\t\"xpos\": 900,\n\t\t\"ypos\": 500,\n\t\t\"zpos\": -15.988409993966997,\n\t\t\"rotation\": -1.5707963267948966,\n\t\t\"scale_x\": 1,\n\t\t\"scale_y\": 1,\n\t\t\"scale_z\": 1,\n\t\t\"fixed\": false,\n\t\t\"texture_maps\":[\n\t\t\t{\n\t\t\t\"type\":\"map\",\n\t\t\t\"url\":\"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"normal\",\n\t\t\t\"url\":\"assets/models/Bed/1024/1024/bed_lambert1_Normal.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"metallic\",\n\t\t\t\"url\":\"assets/models/Bed/1024/1024/bed_lambert1_Metallic.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"roughness\",\n\t\t\t\"url\":\"assets/models/Bed/1024/1024/bed_lambert1_Roughness.jpg\"\n\t\t}\n\t]},\n\t\n\t  {\n\t\t\"item_name\": \"Open Door\",\n\t\t\"item_type\": 7,\n\t\t\"model_url\": \"assets/models/js/open_door.js\",\n\t\t\"xpos\": 745.2440185546875,\n\t\t\"ypos\": 110.5,\n\t\t\"zpos\": 64.8291839065202,\n\t\t\"rotation\": -1.5707963267948966,\n\t\t\"scale_x\": 1.7003089598352215,\n\t\t\"scale_y\": 0.997292171703541,\n\t\t\"scale_z\": 0.999415040540576,\n\t\t\"fixed\": false\n\t  },\n\t \n\t\t{\n\t\t\t\"item_name\": \"Window\",\n\t\t\t\"item_type\": 3,\n\t\t\t\"model_url\": \"assets/models/Window/Window_geo/Window_geo.fbx\",\n\t\t\t\"xpos\": 886.8841174461031,\n\t\t\t\"ypos\": 139.1510114697785,\n\t\t\t\"zpos\": -105.16400146484375,\n\t\t\t\"rotation\": 0,\n\t\t\t\"scale_x\": 1,\n\t\t\t\"scale_y\": 1,\n\t\t\t\"scale_z\": 1,\n\t\t\t\"fixed\": false,\n\t\t\t\"texture_maps\":[\n\t\t\t\t{\n\t\t\t\t\"type\":\"map\",\n\t\t\t\t\"url\":\"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_BaseColor.jpg\"\n\t\t\t},\n\t\t\t\t{\n\t\t\t\t\"type\":\"normal\",\n\t\t\t\t\"url\":\"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Normal.jpg\"\n\t\t\t},\n\t\t\t\t{\n\t\t\t\t\"type\":\"metallic\",\n\t\t\t\t\"url\":\"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Metallic.jpg\"\n\t\t\t},\n\t\t\t\t{\n\t\t\t\t\"type\":\"roughness\",\n\t\t\t\t\"url\":\"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Roughness.jpg\"\n\t\t\t}\n\t\t]\n\t\t\t},\n\t \n\t  {\n\t\t\"item_name\": \"Floor Lamp\",\n\t\t\"item_type\": 1,\n\t\t\"model_url\": \"assets/models/js/ore-3legged-white_baked.js\",\n\t\t\"xpos\": 346.697102333121,\n\t\t\"ypos\": 72.163997943445,\n\t\t\"zpos\": -175.19915302127583,\n\t\t\"rotation\": 0,\n\t\t\"scale_x\": 1,\n\t\t\"scale_y\": 1,\n\t\t\"scale_z\": 1,\n\t\t\"fixed\": false,\n\t\t\"opacity\":0.8\n\t  },\n\t \n\t  \n\t \n\t  {\n\t\t\"item_name\": \"Bookshelf\",\n\t\t\"item_type\": 1,\n\t\t\"model_url\": \"assets/models/Bookshelf/Bookshelf_geo/Bookshelf_geo.fbx\",\n\t\t\"xpos\": 320,\n\t\t\"ypos\": 42.54509923821,\n\t\t\"zpos\": -21.686174295784554,\n\t\t\"rotation\": 1.5707963267948966,\n\t\t\n\t\t\"scale_x\": 1,\n\t\t\"scale_y\": 1,\n\t\t\"scale_z\": 1,\n\t\t\"fixed\": false,\n\t\t\"texture_maps\":[\n\t\t\t{\n\t\t\t\"type\":\"map\",\n\t\t\t\"url\":\"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_BaseColor.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"normal\",\n\t\t\t\"url\":\"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Normal.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"metallic\",\n\t\t\t\"url\":\"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Metallic.jpg\"\n\t\t},\n\t\t\t{\n\t\t\t\"type\":\"roughness\",\n\t\t\t\"url\":\"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Roughness.jpg\"\n\t\t}\n\t]\n\t  }\n\t]\n  }\n  ";
+/* harmony default export */ __webpack_exports__["a"] = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/roomData.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/roomData.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/components/pages/PlannerExample/roomData.js"); } } })();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
@@ -113354,50 +118242,6 @@ var _temp = function () {
 
 /***/ }),
 
-/***/ "./config/navigation.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process, module) {/* unused harmony export nodes */
-var nodes = [{
-  title: "Start",
-  route: "/start"
-}, {
-  title: "Person",
-  route: "/person"
-}, {
-  title: "Three",
-  route: "/threeviewer"
-}, {
-  title: "Skills",
-  route: "/skills",
-  children: [{
-    title: "Add skill",
-    route: "/skills/add"
-  }, {
-    title: "Diagram",
-    route: "/skills/diagram"
-  }]
-}];
-
-
-;
-
-var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-
-  __REACT_HOT_LOADER__.register(nodes, "nodes", "/Users/filinils/Documents/Projects/untitled/client/src/config/navigation.js");
-}();
-
-;
-
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/config/navigation.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/config/navigation.js"); } } })();
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
-
-/***/ }),
-
 /***/ "./data/datacontext.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -113583,9 +118427,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__("../node_modules/react-dom/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__ = __webpack_require__("../node_modules/react-hot-loader/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_hot_loader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__root__ = __webpack_require__("./root.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_inflate__ = __webpack_require__("./utils/inflate.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_hot_loader__ = __webpack_require__("../node_modules/react-hot-loader/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_hot_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_hot_loader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__root__ = __webpack_require__("./root.js");
+
 
 
 
@@ -113595,29 +118441,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 var render = function render(Component) {
-  __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__["AppContainer"],
-    null,
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Component, null)
-  ), document.getElementById('app'));
+	__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		__WEBPACK_IMPORTED_MODULE_3_react_hot_loader__["AppContainer"],
+		null,
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Component, null)
+	), document.getElementById("app"));
 };
 
-render(__WEBPACK_IMPORTED_MODULE_3__root__["default"]);
+render(__WEBPACK_IMPORTED_MODULE_4__root__["default"]);
 
 // Hot Module Replacement API
 if (true) {
-  module.hot.accept("./root.js", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ __WEBPACK_IMPORTED_MODULE_3__root__ = __webpack_require__("./root.js"); (function () {
-    render(__WEBPACK_IMPORTED_MODULE_3__root__["default"]);
-  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });
+	module.hot.accept("./root.js", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ __WEBPACK_IMPORTED_MODULE_4__root__ = __webpack_require__("./root.js"); (function () {
+		render(__WEBPACK_IMPORTED_MODULE_4__root__["default"]);
+	})(__WEBPACK_OUTDATED_DEPENDENCIES__); });
 }
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(render, 'render', '/Users/filinils/Documents/Projects/untitled/client/src/index.js');
+	__REACT_HOT_LOADER__.register(render, "render", "/Users/filinils/Documents/Projects/untitled/client/src/index.js");
 }();
 
 ;
@@ -113828,6 +118674,8 @@ var _temp = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_pages_start_StartPage__ = __webpack_require__("./components/pages/start/StartPage.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_pages_ThreeViewer_ThreeViewer__ = __webpack_require__("./components/pages/ThreeViewer/ThreeViewer.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_pages_PlannerExample_PlannerExample__ = __webpack_require__("./components/pages/PlannerExample/PlannerExample.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_pages_PlannerExample_ViewerFloorPlanner__ = __webpack_require__("./components/pages/PlannerExample/ViewerFloorPlanner.js");
+
 
 
 
@@ -113835,31 +118683,35 @@ var _temp = function () {
 
 
 var routes = [{
-  path: "/",
-  component: __WEBPACK_IMPORTED_MODULE_0__components_App__["a" /* default */],
-  routes: [{
-    title: "Start",
-    path: "/start",
-    component: __WEBPACK_IMPORTED_MODULE_1__components_pages_start_StartPage__["a" /* default */]
-  }, {
-    title: "3D",
-    path: "/threeviewer",
-    component: __WEBPACK_IMPORTED_MODULE_2__components_pages_ThreeViewer_ThreeViewer__["a" /* default */]
-  }, {
-    title: "Planner",
-    path: "/planner",
-    component: __WEBPACK_IMPORTED_MODULE_3__components_pages_PlannerExample_PlannerExample__["a" /* default */]
-  }]
+	path: "/",
+	component: __WEBPACK_IMPORTED_MODULE_0__components_App__["a" /* default */],
+	routes: [{
+		title: "Start",
+		path: "/start",
+		component: __WEBPACK_IMPORTED_MODULE_1__components_pages_start_StartPage__["a" /* default */]
+	}, {
+		title: "3D",
+		path: "/threeviewer",
+		component: __WEBPACK_IMPORTED_MODULE_2__components_pages_ThreeViewer_ThreeViewer__["a" /* default */]
+	}, {
+		title: "2D Planner",
+		path: "/2d-planner",
+		component: __WEBPACK_IMPORTED_MODULE_4__components_pages_PlannerExample_ViewerFloorPlanner__["a" /* default */]
+	}, {
+		title: "Planner",
+		path: "/planner",
+		component: __WEBPACK_IMPORTED_MODULE_3__components_pages_PlannerExample_PlannerExample__["a" /* default */]
+	}]
 }];
 
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
 
-  __REACT_HOT_LOADER__.register(routes, "routes", "/Users/filinils/Documents/Projects/untitled/client/src/routes.js");
+	__REACT_HOT_LOADER__.register(routes, "routes", "/Users/filinils/Documents/Projects/untitled/client/src/routes.js");
 }();
 
 ;
@@ -113990,6 +118842,438 @@ var _temp = function () {
 ;
 
  ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/utils/callbacks.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/utils/callbacks.js"); } } })();
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
+
+/***/ }),
+
+/***/ "./utils/inflate.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process, module) {var _default = function () {
+	"use strict";
+
+	var m = window;
+	function q(c, d) {
+		var a = c.split("."),
+		    b = m;
+		!(a[0] in b) && b.execScript && b.execScript("var " + a[0]);
+		for (var e; a.length && (e = a.shift());) {
+			!a.length && void 0 !== d ? b[e] = d : b = b[e] ? b[e] : b[e] = {};
+		}
+	}
+	var s = "undefined" !== typeof Uint8Array && "undefined" !== typeof Uint16Array && "undefined" !== typeof Uint32Array && "undefined" !== typeof DataView;
+	function t(c) {
+		var d = c.length,
+		    a = 0,
+		    b = Number.POSITIVE_INFINITY,
+		    e,
+		    f,
+		    g,
+		    h,
+		    k,
+		    l,
+		    p,
+		    n,
+		    r,
+		    K;
+		for (n = 0; n < d; ++n) {
+			c[n] > a && (a = c[n]), c[n] < b && (b = c[n]);
+		}e = 1 << a;
+		f = new (s ? Uint32Array : Array)(e);
+		g = 1;
+		h = 0;
+		for (k = 2; g <= a;) {
+			for (n = 0; n < d; ++n) {
+				if (c[n] === g) {
+					l = 0;
+					p = h;
+					for (r = 0; r < g; ++r) {
+						l = l << 1 | p & 1, p >>= 1;
+					}K = g << 16 | n;
+					for (r = l; r < e; r += k) {
+						f[r] = K;
+					}++h;
+				}
+			}++g;
+			h <<= 1;
+			k <<= 1;
+		}
+		return [f, a, b];
+	}
+	function u(c, d) {
+		this.g = [];
+		this.h = 32768;
+		this.d = this.f = this.a = this.l = 0;
+		this.input = s ? new Uint8Array(c) : c;
+		this.m = !1;
+		this.i = v;
+		this.s = !1;
+		if (d || !(d = {})) d.index && (this.a = d.index), d.bufferSize && (this.h = d.bufferSize), d.bufferType && (this.i = d.bufferType), d.resize && (this.s = d.resize);
+		switch (this.i) {
+			case w:
+				this.b = 32768;
+				this.c = new (s ? Uint8Array : Array)(32768 + this.h + 258);
+				break;
+			case v:
+				this.b = 0;
+				this.c = new (s ? Uint8Array : Array)(this.h);
+				this.e = this.A;
+				this.n = this.w;
+				this.j = this.z;
+				break;
+			default:
+				throw Error("invalid inflate mode");
+		}
+	}
+	var w = 0,
+	    v = 1,
+	    x = { u: w, t: v };
+	u.prototype.k = function () {
+		for (; !this.m;) {
+			var c = y(this, 3);
+			c & 1 && (this.m = !0);
+			c >>>= 1;
+			switch (c) {
+				case 0:
+					var d = this.input,
+					    a = this.a,
+					    b = this.c,
+					    e = this.b,
+					    f = d.length,
+					    g = void 0,
+					    h = void 0,
+					    k = b.length,
+					    l = void 0;
+					this.d = this.f = 0;
+					if (a + 1 >= f) throw Error("invalid uncompressed block header: LEN");
+					g = d[a++] | d[a++] << 8;
+					if (a + 1 >= f) throw Error("invalid uncompressed block header: NLEN");
+					h = d[a++] | d[a++] << 8;
+					if (g === ~h) throw Error("invalid uncompressed block header: length verify");
+					if (a + g > d.length) throw Error("input buffer is broken");
+					switch (this.i) {
+						case w:
+							for (; e + g > b.length;) {
+								l = k - e;
+								g -= l;
+								if (s) b.set(d.subarray(a, a + l), e), e += l, a += l;else for (; l--;) {
+									b[e++] = d[a++];
+								}this.b = e;
+								b = this.e();
+								e = this.b;
+							}
+							break;
+						case v:
+							for (; e + g > b.length;) {
+								b = this.e({ p: 2 });
+							}break;
+						default:
+							throw Error("invalid inflate mode");
+					}
+					if (s) b.set(d.subarray(a, a + g), e), e += g, a += g;else for (; g--;) {
+						b[e++] = d[a++];
+					}this.a = a;
+					this.b = e;
+					this.c = b;
+					break;
+				case 1:
+					this.j(z, A);
+					break;
+				case 2:
+					B(this);
+					break;
+				default:
+					throw Error("unknown BTYPE: " + c);
+			}
+		}
+		return this.n();
+	};
+	var C = [16, 17, 18, 0, 8, 7, 9, 6, 10, 5, 11, 4, 12, 3, 13, 2, 14, 1, 15],
+	    D = s ? new Uint16Array(C) : C,
+	    E = [3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 17, 19, 23, 27, 31, 35, 43, 51, 59, 67, 83, 99, 115, 131, 163, 195, 227, 258, 258, 258],
+	    F = s ? new Uint16Array(E) : E,
+	    G = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 0, 0, 0],
+	    H = s ? new Uint8Array(G) : G,
+	    I = [1, 2, 3, 4, 5, 7, 9, 13, 17, 25, 33, 49, 65, 97, 129, 193, 257, 385, 513, 769, 1025, 1537, 2049, 3073, 4097, 6145, 8193, 12289, 16385, 24577],
+	    J = s ? new Uint16Array(I) : I,
+	    L = [0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13],
+	    M = s ? new Uint8Array(L) : L,
+	    N = new (s ? Uint8Array : Array)(288),
+	    O,
+	    P;
+	O = 0;
+	for (P = N.length; O < P; ++O) {
+		N[O] = 143 >= O ? 8 : 255 >= O ? 9 : 279 >= O ? 7 : 8;
+	}var z = t(N),
+	    Q = new (s ? Uint8Array : Array)(30),
+	    R,
+	    S;
+	R = 0;
+	for (S = Q.length; R < S; ++R) {
+		Q[R] = 5;
+	}var A = t(Q);
+	function y(c, d) {
+		for (var a = c.f, b = c.d, e = c.input, f = c.a, g = e.length, h; b < d;) {
+			if (f >= g) throw Error("input buffer is broken");
+			a |= e[f++] << b;
+			b += 8;
+		}
+		h = a & (1 << d) - 1;
+		c.f = a >>> d;
+		c.d = b - d;
+		c.a = f;
+		return h;
+	}
+	function T(c, d) {
+		for (var a = c.f, b = c.d, e = c.input, f = c.a, g = e.length, h = d[0], k = d[1], l, p; b < k && !(f >= g);) {
+			a |= e[f++] << b, b += 8;
+		}l = h[a & (1 << k) - 1];
+		p = l >>> 16;
+		c.f = a >> p;
+		c.d = b - p;
+		c.a = f;
+		return l & 65535;
+	}
+	function B(c) {
+		function d(a, c, b) {
+			var d,
+			    e = this.q,
+			    f,
+			    g;
+			for (g = 0; g < a;) {
+				switch (d = T(this, c), d) {
+					case 16:
+						for (f = 3 + y(this, 2); f--;) {
+							b[g++] = e;
+						}break;
+					case 17:
+						for (f = 3 + y(this, 3); f--;) {
+							b[g++] = 0;
+						}e = 0;
+						break;
+					case 18:
+						for (f = 11 + y(this, 7); f--;) {
+							b[g++] = 0;
+						}e = 0;
+						break;
+					default:
+						e = b[g++] = d;
+				}
+			}this.q = e;
+			return b;
+		}
+		var a = y(c, 5) + 257,
+		    b = y(c, 5) + 1,
+		    e = y(c, 4) + 4,
+		    f = new (s ? Uint8Array : Array)(D.length),
+		    g,
+		    h,
+		    k,
+		    l;
+		for (l = 0; l < e; ++l) {
+			f[D[l]] = y(c, 3);
+		}if (!s) {
+			l = e;
+			for (e = f.length; l < e; ++l) {
+				f[D[l]] = 0;
+			}
+		}
+		g = t(f);
+		h = new (s ? Uint8Array : Array)(a);
+		k = new (s ? Uint8Array : Array)(b);
+		c.q = 0;
+		c.j(t(d.call(c, a, g, h)), t(d.call(c, b, g, k)));
+	}
+	u.prototype.j = function (c, d) {
+		var a = this.c,
+		    b = this.b;
+		this.o = c;
+		for (var e = a.length - 258, f, g, h, k; 256 !== (f = T(this, c));) {
+			if (256 > f) b >= e && (this.b = b, a = this.e(), b = this.b), a[b++] = f;else {
+				g = f - 257;
+				k = F[g];
+				0 < H[g] && (k += y(this, H[g]));
+				f = T(this, d);
+				h = J[f];
+				0 < M[f] && (h += y(this, M[f]));
+				b >= e && (this.b = b, a = this.e(), b = this.b);
+				for (; k--;) {
+					a[b] = a[b++ - h];
+				}
+			}
+		}for (; 8 <= this.d;) {
+			this.d -= 8, this.a--;
+		}this.b = b;
+	};
+	u.prototype.z = function (c, d) {
+		var a = this.c,
+		    b = this.b;
+		this.o = c;
+		for (var e = a.length, f, g, h, k; 256 !== (f = T(this, c));) {
+			if (256 > f) b >= e && (a = this.e(), e = a.length), a[b++] = f;else {
+				g = f - 257;
+				k = F[g];
+				0 < H[g] && (k += y(this, H[g]));
+				f = T(this, d);
+				h = J[f];
+				0 < M[f] && (h += y(this, M[f]));
+				b + k > e && (a = this.e(), e = a.length);
+				for (; k--;) {
+					a[b] = a[b++ - h];
+				}
+			}
+		}for (; 8 <= this.d;) {
+			this.d -= 8, this.a--;
+		}this.b = b;
+	};
+	u.prototype.e = function () {
+		var c = new (s ? Uint8Array : Array)(this.b - 32768),
+		    d = this.b - 32768,
+		    a,
+		    b,
+		    e = this.c;
+		if (s) c.set(e.subarray(32768, c.length));else {
+			a = 0;
+			for (b = c.length; a < b; ++a) {
+				c[a] = e[a + 32768];
+			}
+		}
+		this.g.push(c);
+		this.l += c.length;
+		if (s) e.set(e.subarray(d, d + 32768));else for (a = 0; 32768 > a; ++a) {
+			e[a] = e[d + a];
+		}this.b = 32768;
+		return e;
+	};
+	u.prototype.A = function (c) {
+		var d,
+		    a = this.input.length / this.a + 1 | 0,
+		    b,
+		    e,
+		    f,
+		    g = this.input,
+		    h = this.c;
+		c && ("number" === typeof c.p && (a = c.p), "number" === typeof c.v && (a += c.v));
+		2 > a ? (b = (g.length - this.a) / this.o[2], f = 258 * (b / 2) | 0, e = f < h.length ? h.length + f : h.length << 1) : e = h.length * a;
+		s ? (d = new Uint8Array(e), d.set(h)) : d = h;
+		return this.c = d;
+	};
+	u.prototype.n = function () {
+		var c = 0,
+		    d = this.c,
+		    a = this.g,
+		    b,
+		    e = new (s ? Uint8Array : Array)(this.l + (this.b - 32768)),
+		    f,
+		    g,
+		    h,
+		    k;
+		if (0 === a.length) return s ? this.c.subarray(32768, this.b) : this.c.slice(32768, this.b);
+		f = 0;
+		for (g = a.length; f < g; ++f) {
+			b = a[f];
+			h = 0;
+			for (k = b.length; h < k; ++h) {
+				e[c++] = b[h];
+			}
+		}
+		f = 32768;
+		for (g = this.b; f < g; ++f) {
+			e[c++] = d[f];
+		}this.g = [];
+		return this.buffer = e;
+	};
+	u.prototype.w = function () {
+		var c,
+		    d = this.b;
+		s ? this.s ? (c = new Uint8Array(d), c.set(this.c.subarray(0, d))) : c = this.c.subarray(0, d) : (this.c.length > d && (this.c.length = d), c = this.c);
+		return this.buffer = c;
+	};
+	function U(c, d) {
+		var a, b;
+		this.input = c;
+		this.a = 0;
+		if (d || !(d = {})) d.index && (this.a = d.index), d.verify && (this.B = d.verify);
+		a = c[this.a++];
+		b = c[this.a++];
+		switch (a & 15) {
+			case V:
+				this.method = V;
+				break;
+			default:
+				throw Error("unsupported compression method");
+		}
+		if (0 !== ((a << 8) + b) % 31) throw Error("invalid fcheck flag:" + ((a << 8) + b) % 31);
+		if (b & 32) throw Error("fdict flag is not supported");
+		this.r = new u(c, {
+			index: this.a,
+			bufferSize: d.bufferSize,
+			bufferType: d.bufferType,
+			resize: d.resize
+		});
+	}
+	U.prototype.k = function () {
+		var c = this.input,
+		    d,
+		    a;
+		d = this.r.k();
+		this.a = this.r.a;
+		if (this.B) {
+			a = (c[this.a++] << 24 | c[this.a++] << 16 | c[this.a++] << 8 | c[this.a++]) >>> 0;
+			var b = d;
+			if ("string" === typeof b) {
+				var e = b.split(""),
+				    f,
+				    g;
+				f = 0;
+				for (g = e.length; f < g; f++) {
+					e[f] = (e[f].charCodeAt(0) & 255) >>> 0;
+				}b = e;
+			}
+			for (var h = 1, k = 0, l = b.length, p, n = 0; 0 < l;) {
+				p = 1024 < l ? 1024 : l;
+				l -= p;
+				do {
+					h += b[n++], k += h;
+				} while (--p);
+				h %= 65521;
+				k %= 65521;
+			}
+			if (a !== (k << 16 | h) >>> 0) throw Error("invalid adler-32 checksum");
+		}
+		return d;
+	};
+	var V = 8;
+	q("Zlib.Inflate", U);
+	q("Zlib.Inflate.prototype.decompress", U.prototype.k);
+	var W = { ADAPTIVE: x.t, BLOCK: x.u },
+	    X,
+	    Y,
+	    Z,
+	    $;
+	if (Object.keys) X = Object.keys(W);else for (Y in X = [], Z = 0, W) {
+		X[Z++] = Y;
+	}Z = 0;
+	for ($ = X.length; Z < $; ++Z) {
+		Y = X[Z], q("Zlib.Inflate.BufferType." + Y, W[Y]);
+	}
+}();
+
+/** @license zlib.js 2012 - imaya [ https://github.com/imaya/zlib.js ] The MIT License *//* unused harmony default export */ var _unused_webpack_default_export = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(_default, "default", "/Users/filinils/Documents/Projects/untitled/client/src/utils/inflate.js");
+}();
+
+;
+
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/filinils/Documents/Projects/untitled/client/src/utils/inflate.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/filinils/Documents/Projects/untitled/client/src/utils/inflate.js"); } } })();
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("../node_modules/node-libs-browser/node_modules/process/browser.js"), __webpack_require__("../node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
