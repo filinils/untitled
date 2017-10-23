@@ -1,155 +1,41 @@
 export default `{
-	"floorplan": {
-	  "corners": {
-		"56d9ebd1-91b2-875c-799d-54b3785fca1f": {
-		  "x": 630.555,
-		  "y": -227.58400000000006
-		},
-		"8f4a050d-e102-3c3f-5af9-3d9133555d76": {
-		  "x": 294.64,
-		  "y": -227.58400000000006
-		},
-		"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359": { "x": 294.64, "y": 232.664 },
-		"254656bf-8a53-3987-c810-66b349f49b19": {
-		  "x": 745.7439999999998,
-		  "y": 232.664
-		},
-		"11d25193-4411-fbbf-78cb-ae7c0283164b": {
-		  "x": 1044.7019999999998,
-		  "y": 232.664
-		},
-		"edf0de13-df9f-cd6a-7d11-9bd13c36ce12": {
-		  "x": 1044.7019999999998,
-		  "y": -105.66399999999999
-		},
-		"e7db8654-efe1-bda2-099a-70585874d8c0": {
-		  "x": 745.7439999999998,
-		  "y": -105.66399999999999
-		}
-	  },
-	  "walls": [
-		{
-		  "corner1": "4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
-		  "corner2": "254656bf-8a53-3987-c810-66b349f49b19",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": null
-		  }
-		},
-		{
-		  "corner1": "254656bf-8a53-3987-c810-66b349f49b19",
-		  "corner2": "e7db8654-efe1-bda2-099a-70585874d8c0",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": null
-		  }
-		},
-		{
-		  "corner1": "56d9ebd1-91b2-875c-799d-54b3785fca1f",
-		  "corner2": "8f4a050d-e102-3c3f-5af9-3d9133555d76",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": null
-		  }
-		},
-		{
-		  "corner1": "8f4a050d-e102-3c3f-5af9-3d9133555d76",
-		  "corner2": "4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": null
-		  }
-		},
-		{
-		  "corner1": "254656bf-8a53-3987-c810-66b349f49b19",
-		  "corner2": "11d25193-4411-fbbf-78cb-ae7c0283164b",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  }
-		},
-		{
-		  "corner1": "11d25193-4411-fbbf-78cb-ae7c0283164b",
-		  "corner2": "edf0de13-df9f-cd6a-7d11-9bd13c36ce12",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": false,
-			"scale": 100
-		  }
-		},
-		{
-		  "corner1": "edf0de13-df9f-cd6a-7d11-9bd13c36ce12",
-		  "corner2": "e7db8654-efe1-bda2-099a-70585874d8c0",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": 0
-		  }
-		},
-		{
-		  "corner1": "e7db8654-efe1-bda2-099a-70585874d8c0",
-		  "corner2": "56d9ebd1-91b2-875c-799d-54b3785fca1f",
-		  "frontTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": 0
-		  },
-		  "backTexture": {
-			"url": "assets/rooms/textures/wallmap_blue.png",
-			"stretch": true,
-			"scale": null
-		  }
-		}
-	  ],
-	  "wallTextures": [],
-	  "floorTextures": {},
-	  "newFloorTextures": {
-		"11d25193-4411-fbbf-78cb-ae7c0283164b,254656bf-8a53-3987-c810-66b349f49b19,e7db8654-efe1-bda2-099a-70585874d8c0,edf0de13-df9f-cd6a-7d11-9bd13c36ce12": {
-		  "url": "assets/rooms/textures/light_fine_wood.jpg",
-		  "scale": 300
-		}
-	  }
-	},
+	"floorplan": 
+	{
+		"corners":
+			{
+				"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359":{"x":294.64,"y":232.664},
+				"11d25193-4411-fbbf-78cb-ae7c0283164b":{"x":1044.7019999999998,"y":232.664},
+				"6610a7df-1982-d92d-1463-7a4249857ac9":{"x":294.64,"y":-235.71200000000002},
+				"8eff2a8a-0bbe-66c8-4181-8351ee13bd27":{"x":1044.7019999999998,"y":-235.71200000000002}
+			},
+		"walls":
+		[
+			{
+				"corner1":"6610a7df-1982-d92d-1463-7a4249857ac9",
+				"corner2":"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
+				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+			},
+			{
+				"corner1":"11d25193-4411-fbbf-78cb-ae7c0283164b",
+				"corner2":"8eff2a8a-0bbe-66c8-4181-8351ee13bd27",
+				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+			},
+			{
+				"corner1":"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
+				"corner2":"11d25193-4411-fbbf-78cb-ae7c0283164b",
+				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+			},
+			{
+				"corner1":"6610a7df-1982-d92d-1463-7a4249857ac9",
+				"corner2":"8eff2a8a-0bbe-66c8-4181-8351ee13bd27",
+				"frontTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":null}
+			}
+		],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},
+	
 	"items": [
 
 	  {
@@ -182,40 +68,8 @@ export default `{
 			"url":"assets/models/Bed/1024/1024/bed_lambert1_Roughness.jpg"
 		}
 	]},
-	
-	  {
-		"item_name": "Open Door",
-		"item_type": 7,
-		"model_url": "assets/models/js/open_door.js",
-		"xpos": 745.2440185546875,
-		"ypos": 110.5,
-		"zpos": 64.8291839065202,
-		"rotation": -1.5707963267948966,
-		"scale_x": 1.7003089598352215,
-		"scale_y": 0.997292171703541,
-		"scale_z": 0.999415040540576,
-		"fixed": false
-	  },
-	 
+		 
 		{
-			"item_name": "Door2",
-			"item_type": 7,
-			"model_url": "assets/models/js/open_door.js",
-			"xpos": 886.8841174461031,
-			"ypos": 139.1510114697785,
-			"zpos": -105.16400146484375,
-			"rotation": 0,
-			"scale_x": 1,
-			"scale_y": 1,
-			"scale_z": 1,
-			"fixed": false
-			},
-	 
-	 
-	 
-
-
-	  {
 		"item_name": "Floor Lamp",
 		"item_type": 1,
 		"model_url": "assets/models/js/ore-3legged-white_baked.js",
