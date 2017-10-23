@@ -39,8 +39,8 @@ export default function(three, model, camera, element, controls, hud) {
 
 		mouse = new THREE.Vector2();
 
-		//scene.itemRemovedCallbacks.add(itemRemoved);
-		// scene.itemLoadedCallbacks.add(itemLoaded);
+		scene.itemRemovedCallbacks.add(itemRemoved);
+		scene.itemLoadedCallbacks.add(itemLoaded);
 		setGroundPlane();
 	}
 

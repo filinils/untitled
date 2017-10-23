@@ -130,12 +130,9 @@ export default function(scene, edge, controls) {
 	function updatePlanes() {
 		var wallMaterial = new THREE.MeshStandardMaterial({
 			color: 0xffffff,
-			// ambientColor: 0xffffff, TODO_Ekki
-			//ambient: scope.wall.color,
 			side: THREE.FrontSide,
 			map: texture,
 			metalness: 0
-			// lightMap: lightMap TODO_Ekki
 		});
 
 		var fillerMaterial = new THREE.MeshBasicMaterial({

@@ -57,12 +57,12 @@ export default class FloorItem extends Item {
 		var isInARoom = false;
 		for (var i = 0; i < rooms.length; i++) {
 			if (
-				Core.Utils.pointInPolygon(
+				Utils.pointInPolygon(
 					vec3.x,
 					vec3.z,
 					rooms[i].interiorCorners
 				) &&
-				!Core.Utils.polygonPolygonIntersect(
+				!Utils.polygonPolygonIntersect(
 					corners,
 					rooms[i].interiorCorners
 				)
@@ -74,22 +74,6 @@ export default class FloorItem extends Item {
 			//console.log('object not in a room');
 			return false;
 		}
-
-		// check if we are outside all other objects
-		/*
-    if (this.obstructFloorMoves) {
-        var objects = this.model.items.getItems();
-        for (var i = 0; i < objects.length; i++) {
-            if (objects[i] === this || !objects[i].obstructFloorMoves) {
-                continue;
-            }
-            if (!utils.polygonOutsidePolygon(corners, objects[i].getCorners('x', 'z')) ||
-                utils.polygonPolygonIntersect(corners, objects[i].getCorners('x', 'z'))) {
-                //console.log('object not outside other objects');
-                return false;
-            }
-        }
-    }*/
 
 		return true;
 	}

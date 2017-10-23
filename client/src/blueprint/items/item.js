@@ -260,7 +260,7 @@ export default class Item extends THREE.Mesh {
 		var c4 = new THREE.Vector3(-halfSize.x, 0, halfSize.z);
 
 		var transform = new THREE.Matrix4();
-		//console.log(this.rotation.y);
+
 		transform.makeRotationY(this.rotation.y); //  + Math.PI/2)
 		c1.applyMatrix4(transform);
 		c2.applyMatrix4(transform);
@@ -272,9 +272,6 @@ export default class Item extends THREE.Mesh {
 		c3.add(position);
 		c4.add(position);
 
-		//halfSize.applyMatrix4(transform);
-		//var min = position.clone().sub(halfSize);
-		//var max = position.clone().add(halfSize);
 		var corners = [
 			{ x: c1.x, y: c1.z },
 			{ x: c2.x, y: c2.z },

@@ -42,9 +42,6 @@ export default function(model, element, canvasElement, opts) {
 	var controller;
 	var floorplan;
 
-	//var canvas;
-	//var canvasElement = canvasElement;
-
 	var needsUpdate = false;
 
 	var lastRender = Date.now();
@@ -104,7 +101,6 @@ export default function(model, element, canvasElement, opts) {
 		floorplan = new Floorplan(scene, model.floorplan, scope.controls);
 
 		animate();
-		//TODO: eventhandling
 		scope.element.addEventListener("mouseenter", function() {
 			mouseOver = true;
 		});
@@ -114,9 +110,6 @@ export default function(model, element, canvasElement, opts) {
 		scope.element.addEventListener("click", function() {
 			hasClicked = true;
 		});
-
-		// JODO: The line below was originally commented out.
-		// canvas = new ThreeCanvas(canvasElement, scope);
 	}
 
 	function spin() {
@@ -237,8 +230,6 @@ export default function(model, element, canvasElement, opts) {
 		var distance = model.floorplan.getSize().z * 1.5;
 
 		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
-		// Line below was originally commented out
-		//scope.controls.setOffset(offset);
 		camera.position.copy(offset);
 
 		scope.controls.update();
