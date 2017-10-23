@@ -198,9 +198,9 @@ export default `{
 	  },
 	 
 		{
-			"item_name": "Door2",
-			"item_type": 7,
-			"model_url": "assets/models/js/open_door.js",
+			"item_name": "Window",
+			"item_type": 3,
+			"model_url": "assets/models/Window/Window_geo/Window_geo.fbx",
 			"xpos": 886.8841174461031,
 			"ypos": 139.1510114697785,
 			"zpos": -105.16400146484375,
@@ -208,13 +208,27 @@ export default `{
 			"scale_x": 1,
 			"scale_y": 1,
 			"scale_z": 1,
-			"fixed": false
+			"fixed": false,
+			"texture_maps":[
+				{
+				"type":"map",
+				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_BaseColor.jpg"
+			},
+				{
+				"type":"normal",
+				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Normal.jpg"
+			},
+				{
+				"type":"metallic",
+				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Metallic.jpg"
+			},
+				{
+				"type":"roughness",
+				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Roughness.jpg"
+			}
+		]
 			},
 	 
-	 
-	 
-
-
 	  {
 		"item_name": "Floor Lamp",
 		"item_type": 1,

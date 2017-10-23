@@ -53,9 +53,12 @@ export default function(scene, floorplan) {
 		dirLight.shadow.bias = -0.0001;
 		dirLight.shadow.darkness = 0.2;
 		dirLight.visible = true;
-		dirLight.shadowCameraVisible = true;
+
+		let cameraHelper = new THREE.CameraHelper(dirLight.shadow.camera);
 
 		var dirHelper = new THREE.DirectionalLightHelper(dirLight, 1000);
+
+		scene.add(cameraHelper);
 
 		scene.add(dirHelper);
 		scene.add(dirLight);
