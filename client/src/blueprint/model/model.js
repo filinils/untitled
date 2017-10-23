@@ -5,7 +5,7 @@ import FloorPlan from "./floorplan";
 import Scene from "./scene";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 /** 
    * A Model connects a Floorplan and a Scene. 
    */
@@ -15,10 +15,10 @@ export default textureDir => {
      */
 	let scope = this;
 
-	let roomLoadingCallbacks = callbacks();
-	let roomLoadedCallbacks = callbacks();
-	let roomSavedCallbacks = callbacks();
-	let roomDeletedCallbacks = callbacks();
+	let roomLoadingCallbacks = new Callbacks();
+	let roomLoadedCallbacks = new Callbacks();
+	let roomSavedCallbacks = new Callbacks();
+	let roomDeletedCallbacks = new Callbacks();
 
 	this.floorplan = new FloorPlan();
 	this.scene = new Scene(this, textureDir);

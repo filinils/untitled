@@ -8,7 +8,7 @@ import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
 import Factory from "../items/factory";
 import Item from "../items/item";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 
 FBXLoader(THREE);
 
@@ -18,8 +18,8 @@ FBXLoader(THREE);
 export default (model, textureDir) => {
 	/** The associated ThreeJS scene. */
 	let scene;
-	let itemLoadingCallbacks = new callbacks();
-	let itemLoadedCallbacks = new callbacks();
+	let itemLoadingCallbacks = new Callbacks();
+	let itemLoadedCallbacks = new Callbacks();
 	/** */
 	let items = [];
 

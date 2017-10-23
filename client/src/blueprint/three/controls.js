@@ -1,4 +1,4 @@
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 /**
 This file is a modified version of THREE.OrbitControls
 Contributors:
@@ -18,7 +18,7 @@ export default function(object, domElement) {
 	// Set to false to disable this control
 	this.enabled = true;
 
-	this.cameraMovedCallbacks = new callbacks();
+	this.cameraMovedCallbacks = new Callbacks();
 
 	// "target" sets the location of focus, where the control orbits around
 	// and where it pans with respect to.

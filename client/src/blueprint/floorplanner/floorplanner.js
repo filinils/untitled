@@ -1,6 +1,6 @@
 import Floorplan from "../model/floorplan";
 import FloorplannerView, { floorplannerModes } from "./floorplanner_view";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 
 /** how much will we move a corner to make a wall axis aligned (cm) */
 const snapTolerance = 25;
@@ -10,7 +10,7 @@ const snapTolerance = 25;
 export default class Floorplanner {
 	constructor(canvas, floorplan) {
 		this.canvasElement = document.getElementById(canvas);
-		this.modeResetCallbacks = new callbacks();
+		this.modeResetCallbacks = new Callbacks();
 
 		this.canvas = canvas;
 		this.floorplan = floorplan;
@@ -66,7 +66,7 @@ export default class Floorplanner {
 
 		let wallWidth;
 
-		let modeResetCallbacks = new callbacks();
+		let modeResetCallbacks = new Callbacks();
 
 		let canvasElement;
 
