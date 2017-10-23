@@ -35,7 +35,7 @@ export default function(scene, floorplan) {
 		var pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 100);
 		pointLight.castShadow = true;
 
-		pointLight2.position.set(800, 250, 50);
+		pointLight2.position.set(800, 600, 50);
 		scene.add(pointLightHelper2);
 		scene.add(pointLight2);
 		scene.add(pointLightHelper);

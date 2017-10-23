@@ -155,7 +155,7 @@ export default `{
 	  {
 		"item_name": "Bed",
 		"item_type": 1,
-		"model_url": "assets/models/Bed/Bed_geo/bed_30k.fbx",
+		"model_url": "assets/models/IKEA/bed.fbx",
 		"xpos": 900,
 		"ypos": 500,
 		"zpos": -15.988409993966997,
@@ -164,22 +164,23 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
+		"options":{"ex":"hi"},
 		"texture_maps":[
 			{
 			"type":"map",
-			"url":"assets/models/Bed/1024/1024/bed_lambert1_BaseColor.jpg"
+			"url":"assets/models/IKEA/bed_baseColor_1024.jpg"
 		},
 			{
 			"type":"normal",
-			"url":"assets/models/Bed/1024/1024/bed_lambert1_Normal.jpg"
+			"url":"assets/models/IKEA/bed_normal_1024.jpg"
 		},
 			{
 			"type":"metallic",
-			"url":"assets/models/Bed/1024/1024/bed_lambert1_Metallic.jpg"
+			"url":"assets/models/IKEA/bed_metallic_1024.jpg"
 		},
 			{
 			"type":"roughness",
-			"url":"assets/models/Bed/1024/1024/bed_lambert1_Roughness.jpg"
+			"url":"assets/models/IKEA/bed_roughness_1024.jpg"
 		}
 	]},
 	
@@ -232,7 +233,7 @@ export default `{
 	  {
 		"item_name": "Floor Lamp",
 		"item_type": 1,
-		"model_url": "assets/models/js/ore-3legged-white_baked.js",
+		"model_url": "assets/models/IKEA/Lamp_geo.fbx",
 		"xpos": 346.697102333121,
 		"ypos": 72.163997943445,
 		"zpos": -175.19915302127583,
@@ -241,7 +242,25 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"opacity":0.8
+		
+		"texture_maps":[
+			{
+			"type":"map",
+			"url":"assets/models/IKEA/Lamp_geo_BaseColor_1024.jpg"
+		},
+			{
+			"type":"normal",
+			"url":"assets/models/IKEA/Lamp_geo_Normal_1024.jpg"
+		},
+			{
+			"type":"metallic",
+			"url":"assets/models/IKEA/Lamp_geo_Metallic_1024.jpg"
+		},
+			{
+			"type":"roughness",
+			"url":"assets/models/IKEA/Lamp_geo_Roughness_1024.jpg"
+		}
+	]
 	  },
 	 
 	  
