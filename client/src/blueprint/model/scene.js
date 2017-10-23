@@ -174,21 +174,43 @@ export default (model, textureDir) => {
 							roughness: 1
 						});
 
-						var item = new (Factory.getClass(itemType))(
-							model,
-							metadata,
-							group.children[0].geometry,
-							material,
-							position,
-							rotation,
-							scale
-						);
-						item.fixed = fixed || false;
-						scope.items.push(item);
+						group.children.forEach(mesh => {
+							if (mesh.children.length <1) {
+								var item = new (Factory.getClass(itemType))(
+									model,
+									metadata,
+									mesh.geometry,
+									material,
+									position,
+									rotation,
+									scale
+								);
+								item.fixed = fixed || false;
+								scope.items.push(item);
 
-						scope.add(item);
-						item.initObject();
-						scope.itemLoadedCallbacks.fire(item);
+								scope.add(item);
+								item.initObject();
+								scope.itemLoadedCallbacks.fire(item);
+							} else {
+								mesh.children.forEach(childMesh => {
+									var item = new (Factory.getClass(itemType))(
+										model,
+										metadata,
+										childMesh.geometry,
+										material,
+										position,
+										rotation,
+										scale
+									);
+									item.fixed = fixed || false;
+									scope.items.push(item);
+
+									scope.add(item);
+									item.initObject();
+									scope.itemLoadedCallbacks.fire(item);
+								});
+							}
+						});
 					});
 				},
 				prog => {},
