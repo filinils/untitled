@@ -4,7 +4,7 @@ import Wall from "./wall";
 import Room from "./room";
 import HalfEdge from "./half_edge";
 import Corner from "./corner";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 
 const defaultFloorPlanTolerance = 10.0;
 
@@ -17,11 +17,11 @@ export default class Floorplan {
 		this.walls = [];
 		this.corners = [];
 		this.rooms = [];
-		this.new_wall_callbacks = callbacks();
-		this.new_corner_callbacks = callbacks();
-		this.redraw_callbacks = callbacks();
-		this.updated_rooms = callbacks();
-		this.roomLoadedCallbacks = callbacks();
+		this.new_wall_callbacks = new Callbacks();
+		this.new_corner_callbacks = new Callbacks();
+		this.redraw_callbacks = new Callbacks();
+		this.updated_rooms = new Callbacks();
+		this.roomLoadedCallbacks = new Callbacks();
 
 		/** 
   * Floor textures are owned by the floorplan, because room objects are 

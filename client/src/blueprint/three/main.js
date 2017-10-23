@@ -5,14 +5,14 @@ import Controls from "./controls";
 import Lights from "./lights";
 import Skybox from "./skybox";
 import HUD from "./hud";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 
 export default function(model, element, canvasElement, opts) {
 	var scope = this;
 
-	this.itemSelectedCallbacks = new callbacks();
-	this.itemUnselectedCallbacks = new callbacks();
-	this.nothingClicked = new callbacks();
+	this.itemSelectedCallbacks = new Callbacks();
+	this.itemUnselectedCallbacks = new Callbacks();
+	this.nothingClicked = new Callbacks();
 
 	var options = {
 		resize: true,

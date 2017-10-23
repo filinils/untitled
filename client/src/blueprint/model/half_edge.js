@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 import Utils from "../core/utils";
 
 /**
@@ -57,7 +57,7 @@ export default class HalfEdge {
 		this.invExteriorTransform = new THREE.Matrix4();
 
 		/** */
-		this.redrawCallbacks = new callbacks();
+		this.redrawCallbacks = new Callbacks();
 		this.generatePlane = this.generatePlane.bind(this);
 
 		this.exteriorStart = this.exteriorStart.bind(this);

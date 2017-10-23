@@ -4,7 +4,7 @@ import Item from "../items/item";
 import HalfEdge from "./half_edge";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
-import callbacks from "../../utils/callbacks";
+import Callbacks from "../../utils/callbacks";
 
 /** The default wall texture. */
 const defaultWallTexture = {
@@ -45,14 +45,14 @@ export default class Wall {
 		this.height = Configuration.getNumericValue(Core.configWallHeight);
 		this.getUuid = this.getUuid.bind(this);
 
-		this.deleted_callbacks = new callbacks();
+		this.deleted_callbacks = new Callbacks();
 		/** Actions to be applied after movement. */
-		this.moved_callbacks = new callbacks();
+		this.moved_callbacks = new Callbacks();
 
 		// /** Actions to be applied on removal. */
 
 		// /** Actions to be applied explicitly. */
-		this.action_callbacks = new callbacks();
+		this.action_callbacks = new Callbacks();
 	}
 
 	getUuid() {
