@@ -56,10 +56,12 @@ export default class PlannerExample extends React.Component {
 	}
 
 	plannerMode2D() {
+		this.blueprint3d.model.floorplan.update();
 		this.setState({ plannerMode: "2d" });
 	}
 
 	plannerMode3D() {
+		this.blueprint3d.model.floorplan.update();
 		this.setState({ plannerMode: "3d" });
 	}
 

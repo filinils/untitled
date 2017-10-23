@@ -1,14 +1,4 @@
 import Callbacks from "../../utils/callbacks";
-/**
-This file is a modified version of THREE.OrbitControls
-Contributors:
- * @author qiao / https://github.com/qiao
- * @author mrdoob / http://mrdoob.com
- * @author alteredq / http://alteredqualia.com/
- * @author WestLangley / http://github.com/WestLangley
- * @author erich666 / http://erichaines.com
- */
-
 import * as THREE from "three";
 
 export default function(object, domElement) {
@@ -254,7 +244,7 @@ export default function(object, domElement) {
 		scale = 1;
 		pan.set(0, 0, 0);
 
-		// this.cameraMovedCallbacks.fire();
+		this.cameraMovedCallbacks.fire();
 		this.needsUpdate = true;
 	};
 

@@ -16,7 +16,7 @@ export default function(scene, room) {
 		scope.room.fireOnFloorChange(redraw);
 		floorPlane = buildFloor();
 		// roofs look weird, so commented out
-		//roofPlane = buildRoof();
+		roofPlane = buildRoof();
 	}
 
 	function redraw() {
@@ -30,11 +30,10 @@ export default function(scene, room) {
 		// setup texture
 
 		let textureLoader = new THREE.TextureLoader();
-		let floorTexture = textureLoader.load(textureSettings.url,(texture)=>{
-
-			
-		});
-
+		let floorTexture = textureLoader.load(
+			textureSettings.url,
+			texture => {}
+		);
 
 		floorTexture.wrapS = THREE.RepeatWrapping;
 		floorTexture.wrapT = THREE.RepeatWrapping;
@@ -95,14 +94,14 @@ export default function(scene, room) {
 
 	this.addToScene = function() {
 		scene.add(floorPlane);
-		//scene.add(roofPlane);
+		scene.add(roofPlane);
 		// hack so we can do intersect testing
 		scene.add(room.floorPlane);
 	};
 
 	this.removeFromScene = function() {
 		scene.remove(floorPlane);
-		//scene.remove(roofPlane);
+		scene.remove(roofPlane);
 		scene.remove(room.floorPlane);
 	};
 }

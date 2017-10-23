@@ -20,10 +20,10 @@ export default (model, textureDir) => {
 	let scene;
 	let itemLoadingCallbacks = new Callbacks();
 	let itemLoadedCallbacks = new Callbacks();
-	/** */
+	let itemRemovedCallbacks = new Callbacks();
+
 	let items = [];
 
-	/** */
 	let needsUpdate = false;
 
 	/**
@@ -249,7 +249,8 @@ export default (model, textureDir) => {
 		itemLoadingCallbacks,
 		itemLoadedCallbacks,
 		addItem,
-		getItems
+		getItems,
+		itemRemovedCallbacks
 	};
 
 	return Object.assign(scene, service);
