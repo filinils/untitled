@@ -159,10 +159,19 @@ export default (model, textureDir) => {
 						console.log("Texture was loaded", data);
 
 						var material = new THREE.MeshStandardMaterial({
-							map: data[0].texture,
-							normalMap: data[1].texture,
-							metalnessMap: data[2].texture,
-							roughnessMap: data[3].texture
+							map: data.find(material => material.type === "map")
+								.texture,
+							normalMap: data.find(
+								material => material.type === "normal"
+							).texture,
+							metalnessMap: data.find(
+								material => material.type === "metallic"
+							).texture,
+							roughnessMap: data.find(
+								material => material.type === "roughness"
+							).texture,
+							metalness: 1,
+							roughness: 1
 						});
 
 						var item = new (Factory.getClass(itemType))(

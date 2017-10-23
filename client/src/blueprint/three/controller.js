@@ -93,6 +93,7 @@ export default function(three, model, camera, element, controls, hud) {
 			new THREE.PlaneGeometry(size, size),
 			new THREE.MeshBasicMaterial()
 		);
+		plane.receiveShadow = true;
 		plane.rotation.x = -Math.PI / 2;
 		plane.visible = false;
 		scene.add(plane);

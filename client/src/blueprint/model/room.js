@@ -71,6 +71,7 @@ export default class Room {
 				side: THREE.DoubleSide
 			})
 		);
+
 		this.floorPlane.visible = false;
 		this.floorPlane.rotation.set(Math.PI / 2, 0, 0);
 		this.floorPlane.room = this; // js monkey patch

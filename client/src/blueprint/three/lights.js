@@ -17,19 +17,31 @@ export default function(scene, floorplan) {
 		var center = floorplan.getCenter();
 		var light = new THREE.HemisphereLight(0xffffff, 0x888888, 1.1);
 
-		var hemHelper = new THREE.HemisphereLightHelper(light, 5);
-		light.position.set(0, height, 0);
+		var hemHelper = new THREE.HemisphereLightHelper(light, 1000);
+		light.position.set(0, 30, 0);
 
 		scene.add(hemHelper);
 		scene.add(light);
-		var pointLight = new THREE.PointLight(0xff0000, 1, 100);
-		var pointLightHelper = new THREE.PointLightHelper(pointLight, 5);
+		var pointLight = new THREE.PointLight(0xffffff, 1, 400, 2);
+		var pointLightHelper = new THREE.PointLightHelper(pointLight, 100);
 		pointLight.castShadow = true;
-		pointLight.position.set(center.x + 200, 500, center.z);
+
+		pointLight.position.set(
+			346.697102333121,
+			82.163997943445,
+			-175.19915302127583
+		);
+		var pointLight2 = new THREE.PointLight(0xffffff, 1, 400, 2);
+		var pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 100);
+		pointLight.castShadow = true;
+
+		pointLight2.position.set(800, 250, 50);
+		scene.add(pointLightHelper2);
+		scene.add(pointLight2);
 		scene.add(pointLightHelper);
 		scene.add(pointLight);
 
-		dirLight = new THREE.DirectionalLight(0xffffff, 0);
+		dirLight = new THREE.DirectionalLight(0xffffff, 1);
 		dirLight.color.setHSL(1, 1, 0.1);
 
 		dirLight.castShadow = true;
@@ -43,7 +55,7 @@ export default function(scene, floorplan) {
 		dirLight.visible = true;
 		dirLight.shadowCameraVisible = true;
 
-		var dirHelper = new THREE.DirectionalLightHelper(dirLight, 5);
+		var dirHelper = new THREE.DirectionalLightHelper(dirLight, 1000);
 
 		scene.add(dirHelper);
 		scene.add(dirLight);

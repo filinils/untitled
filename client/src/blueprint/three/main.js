@@ -67,7 +67,8 @@ export default function(model, element, canvasElement, opts) {
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
 		});
-		(renderer.autoClear = false), (renderer.shadowMap.enabled = true);
+		renderer.autoClear = false;
+		renderer.shadowMap.enabled = true;
 		renderer.shadowMapSoft = true;
 		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 

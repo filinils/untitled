@@ -14,9 +14,9 @@ export default function(scene, edge, controls) {
 	var lightMap = THREE.TextureLoader(
 		"assets/rooms/textures/walllightmap.png"
 	);
-	var fillerColor = 0xdddddd;
+	var fillerColor = 0xffffff;
 	var sideColor = 0xcccccc;
-	var baseColor = 0xdddddd;
+	var baseColor = 0x2c3e50;
 
 	this.visible = false;
 
@@ -115,7 +115,8 @@ export default function(scene, edge, controls) {
 		var stretch = textureData.stretch;
 		var url = textureData.url;
 		var scale = textureData.scale;
-		texture = THREE.ImageUtils.loadTexture(url, null, callback);
+		let textureloader = new THREE.TextureLoader();
+		texture = textureloader.load(url, callback);
 		if (!stretch) {
 			var height = wall.height;
 			var width = edge.interiorDistance();
@@ -127,12 +128,13 @@ export default function(scene, edge, controls) {
 	}
 
 	function updatePlanes() {
-		var wallMaterial = new THREE.MeshBasicMaterial({
+		var wallMaterial = new THREE.MeshStandardMaterial({
 			color: 0xffffff,
 			// ambientColor: 0xffffff, TODO_Ekki
 			//ambient: scope.wall.color,
 			side: THREE.FrontSide,
-			map: texture
+			map: texture,
+			metalness: 0
 			// lightMap: lightMap TODO_Ekki
 		});
 
@@ -268,6 +270,9 @@ export default function(scene, edge, controls) {
 		geometry.computeVertexNormals();
 
 		var mesh = new THREE.Mesh(geometry, material);
+
+		mesh.receiveShadow = true;
+		mesh.castShadow = true;
 
 		return mesh;
 	}

@@ -55,7 +55,6 @@ export default class Item extends THREE.Mesh {
 		this.receiveShadow = true;
 
 		this.geometry = geometry;
-	
 
 		if (position) {
 			this.position.copy(position);
@@ -202,7 +201,7 @@ export default class Item extends THREE.Mesh {
 	/** */
 	rotate(intersection) {
 		if (intersection) {
-			var angle = Core.Utils.angle(
+			var angle = Utils.angle(
 				0,
 				1,
 				intersection.point.x - this.position.x,
