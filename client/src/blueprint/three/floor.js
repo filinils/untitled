@@ -16,7 +16,7 @@ export default function(scene, room) {
 		scope.room.fireOnFloorChange(redraw);
 		floorPlane = buildFloor();
 		// roofs look weird, so commented out
-		roofPlane = buildRoof();
+		// roofPlane = buildRoof();
 	}
 
 	function redraw() {

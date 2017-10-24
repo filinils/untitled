@@ -7,6 +7,7 @@ export default function(three, model, camera, element, controls, hud) {
 	this.enabled = true;
 
 	var scene = model.scene;
+	window.scene = model.scene;
 
 	var plane; // ground plane used for intersection testing
 
