@@ -94,7 +94,7 @@ export default function(scene, room) {
 
 	this.addToScene = function() {
 		scene.add(floorPlane);
-		scene.add(roofPlane);
+		// scene.add(roofPlane);
 		// hack so we can do intersect testing
 		scene.add(room.floorPlane);
 	};

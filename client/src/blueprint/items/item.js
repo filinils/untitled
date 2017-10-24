@@ -23,7 +23,7 @@ export default class Item extends THREE.Mesh {
 		super();
 
 		this.model = model;
-		this.scene;
+		this.metadata = metadata;
 		this.errorGlow = new THREE.Mesh();
 		this.hover = false;
 		this.selected = false;
@@ -92,6 +92,9 @@ export default class Item extends THREE.Mesh {
 		}
 
 		this.updateHighlight = this.updateHighlight.bind(this);
+		this.customIntersectionPlanes = this.customIntersectionPlanes.bind(
+			this
+		);
 	}
 
 	/** */
@@ -190,6 +193,7 @@ export default class Item extends THREE.Mesh {
 
 	/** */
 	clickDragged(intersection) {
+		console.log("DRAG");
 		if (intersection) {
 			this.moveToPosition(
 				intersection.point.sub(this.dragOffset),

@@ -74,6 +74,7 @@ export default function(model, element, canvasElement, opts) {
 		scope.controls = new Controls(camera, domElement);
 
 		hud = new HUD(scope);
+		console.log(hud);
 
 		controller = new Controller(
 			scope,
@@ -107,7 +108,7 @@ export default function(model, element, canvasElement, opts) {
 		scope.element.addEventListener("mouseenter", function() {
 			mouseOver = false;
 		});
-		scope.element.addEventListener("click", function() {
+		scope.element.addEventListener("click", function(e) {
 			hasClicked = true;
 		});
 	}

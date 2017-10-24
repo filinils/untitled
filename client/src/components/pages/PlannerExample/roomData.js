@@ -102,38 +102,19 @@ export default `{
 		]
 			},
 	 
-	  {
-		"item_name": "Floor Lamp",
-		"item_type": 1,
-		"model_url": "assets/models/IKEA/Lamp_geo.fbx",
-		"xpos": 346.697102333121,
-		"ypos": 72.163997943445,
-		"zpos": -175.19915302127583,
-		"rotation": 0,
-		"scale_x": 1,
-		"scale_y": 1,
-		"scale_z": 1,
-		"fixed": false,
-		
-		"texture_maps":[
 			{
-			"type":"map",
-			"url":"assets/models/IKEA/Lamp_geo_BaseColor_1024.jpg"
-		},
-			{
-			"type":"normal",
-			"url":"assets/models/IKEA/Lamp_geo_Normal_1024.jpg"
-		},
-			{
-			"type":"metallic",
-			"url":"assets/models/IKEA/Lamp_geo_Metallic_1024.jpg"
-		},
-			{
-			"type":"roughness",
-			"url":"assets/models/IKEA/Lamp_geo_Roughness_1024.jpg"
-		}
-	]
-	  },
+					"item_name": "Floor Lamp",
+						"item_type": 1,
+						"model_url": "assets/models/js/ore-3legged-white_baked.js",
+						"xpos": 346.697102333121,
+						"ypos": 72.163997943445,
+						"zpos": -175.19915302127583,
+						"rotation": 0,
+						"scale_x": 1,
+						"scale_y": 1,
+						"scale_z": 1,
+						"fixed": false
+					  },
 	 
 	  
 	 

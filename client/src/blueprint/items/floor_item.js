@@ -19,6 +19,7 @@ export default class FloorItem extends Item {
 
 	/** */
 	placeInRoom() {
+		console.log("floor_item", "placeINroom");
 		if (!this.position_set) {
 			var center = this.model.floorplan.getCenter();
 			this.position.x = center.x;
@@ -38,6 +39,7 @@ export default class FloorItem extends Item {
 	/** */
 	moveToPosition(vec3, intersection) {
 		// keeps the position in the room and on the floor
+		console.log("MOVETO");
 		if (!this.isValidPosition(vec3)) {
 			this.showError(vec3);
 			return;
