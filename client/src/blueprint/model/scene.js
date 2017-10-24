@@ -117,7 +117,7 @@ export default (model, textureDir) => {
      */
 	function addItem(
 		itemType,
-		fileName,
+		path,
 		metadata,
 		position,
 		rotation,
@@ -127,6 +127,7 @@ export default (model, textureDir) => {
 	) {
 		itemType = itemType || 1;
 		var scope = this;
+		let fileName = path + "/" + metadata.itemName + ".fbx";
 		var loaderCallback = function(geometry, materials) {
 			var item = new (Factory.getClass(itemType))(
 				model,
@@ -147,97 +148,94 @@ export default (model, textureDir) => {
 
 		this.itemLoadingCallbacks.fire();
 
-		if (fileName.includes(".fbx")) {
-			fbxLoader.load(
-				fileName,
-				group => {
+		fbxLoader.load(
+			fileName,
+			group => {
+				let geometries =
+					!options.isOneGeometry &&
+					group.children[0] &&
+					group.children[0].children.length > 0
+						? group.children[0].children
+						: group.children;
+
+				geometries.forEach(mesh => {
 					let texturePromises = [];
+					let material = null;
 
 					metadata.textureMaps.forEach(map => {
-						texturePromises.push(loadTexture(map.type, map.url));
+						texturePromises.push(
+							loadTexture(map.type, path, mesh.name)
+						);
 					});
 
 					Promise.all(texturePromises).then(data => {
+						let materialMap = [];
+
+						data.forEach(texture => {
+							if (texture[mesh.name].BaseColor)
+								materialMap["map"] = texture[mesh.name].BaseColor;
+							if (texture[mesh.name].Normal)
+								materialMap["normal"] = texture[mesh.name].Normal;
+							if (texture[mesh.name].Metallic)
+								materialMap["metallic"] = texture[mesh.name].Metallic;
+							if (texture[mesh.name].Roughness)
+								materialMap["roughness"] = texture[mesh.name].Roughness;
+						});
+
 						var material = new THREE.MeshStandardMaterial({
-							map: data.find(material => material.type === "map")
-								.texture,
-							normalMap: data.find(
-								material => material.type === "normal"
-							).texture,
-							metalnessMap: data.find(
-								material => material.type === "metallic"
-							).texture,
-							roughnessMap: data.find(
-								material => material.type === "roughness"
-							).texture,
+							map: materialMap["map"],
+							normalMap: materialMap["normal"],
+							metalnessMap: materialMap["metallic"],
+							roughnessMap: materialMap["roughness"],
 							metalness: 1,
 							roughness: 1
 						});
 
-						group.children.forEach(mesh => {
-							if (mesh.children.length < 1) {
-								var item = new (Factory.getClass(itemType))(
-									model,
-									metadata,
-									mesh.geometry,
-									material,
-									position,
-									rotation,
-									scale
-								);
-								item.fixed = fixed || false;
-								scope.items.push(item);
-
-								scope.add(item);
-								item.initObject();
-								scope.itemLoadedCallbacks.fire(item);
-							} else {
-								mesh.children.forEach(childMesh => {
-									var item = new (Factory.getClass(itemType))(
-										model,
-										metadata,
-										childMesh.geometry,
-										material,
-										position,
-										rotation,
-										scale
-									);
-									item.fixed = fixed || false;
-									scope.items.push(item);
-
-									scope.add(item);
-									item.initObject();
-									scope.itemLoadedCallbacks.fire(item);
-								});
-							}
-						});
+						createItem(mesh.geometry, material);
 					});
-				},
-				prog => {},
-				e => {
-					console.error(e);
-				}
-			);
-		} else {
-			loader.load(
-				fileName,
-				loaderCallback,
-				undefined // TODO_Ekki
-			);
-		}
+
+					function createItem(geometry, material) {
+						var item = new (Factory.getClass(itemType))(
+							model,
+							metadata,
+							geometry,
+							material,
+							position,
+							rotation,
+							scale
+						);
+						item.fixed = fixed || false;
+						scope.items.push(item);
+
+						scope.add(item);
+						item.initObject();
+						scope.itemLoadedCallbacks.fire(item);
+					}
+				});
+			},
+			prog => {},
+			e => {
+				console.error(e);
+			}
+		);
 	}
 
-	function loadTexture(type, url) {
+	function loadTexture(type, path, name) {
 		return new Promise((resovle, reject) => {
 			let _resolve = resovle;
 			let _reject = reject;
+			let texturePath = path + "/" + name + "_" + type + "_1024.jpg";
 
 			let textureLoader = new THREE.TextureLoader();
 
 			textureLoader.load(
-				url,
+				texturePath,
 				texture => {
-					_resolve({ type: type, texture: texture });
+					let obj = [];
+					obj[name] = [];
+
+					obj[name][type] = texture;
+					_resolve(obj);
 				},
 				_reject
 			);

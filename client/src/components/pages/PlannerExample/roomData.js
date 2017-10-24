@@ -39,9 +39,9 @@ export default `{
 	"items": [
 
 	  {
-		"item_name": "Bed",
+		"item_name": "bed",
 		"item_type": 1,
-		"model_url": "assets/models/IKEA/bed.fbx",
+		"model_url": "assets/models/IKEA",
 		"xpos": 900,
 		"ypos": 500,
 		"zpos": -15.988409993966997,
@@ -50,30 +50,30 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"options":{"ex":"hi"},
+		"options":{"isOneGeometry":true},
 		"texture_maps":[
 			{
-			"type":"map",
-			"url":"assets/models/IKEA/bed_baseColor_1024.jpg"
+			"type":"Map"
+	
 		},
 			{
-			"type":"normal",
-			"url":"assets/models/IKEA/bed_normal_1024.jpg"
+			"type":"Normal"
+			
 		},
 			{
-			"type":"metallic",
-			"url":"assets/models/IKEA/bed_metallic_1024.jpg"
+			"type":"Metallic"
+			
 		},
 			{
-			"type":"roughness",
-			"url":"assets/models/IKEA/bed_roughness_1024.jpg"
+			"type":"Roughness"
+			
 		}
 	]},
 		 
 		{
 			"item_name": "Window",
 			"item_type": 3,
-			"model_url": "assets/models/Window/Window_geo/Window_geo.fbx",
+			"model_url": "assets/models/IKEA",
 			"xpos": 886.8841174461031,
 			"ypos": 139.1510114697785,
 			"zpos": -105.16400146484375,
@@ -82,30 +82,31 @@ export default `{
 			"scale_y": 1,
 			"scale_z": 1,
 			"fixed": false,
+			"options":{"isOneGeometry":false},
 			"texture_maps":[
 				{
-				"type":"map",
-				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_BaseColor.jpg"
-			},
-				{
-				"type":"normal",
-				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Normal.jpg"
-			},
-				{
-				"type":"metallic",
-				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Metallic.jpg"
-			},
-				{
-				"type":"roughness",
-				"url":"assets/models/Window/Window_textures/1024/Window_geo_window_frame_mat_Roughness.jpg"
-			}
+					"type":"BaseColor"
+			
+				},
+					{
+					"type":"Normal"
+					
+				},
+					{
+					"type":"Metallic"
+					
+				},
+					{
+					"type":"Roughness"
+					
+				}
 		]
 			},
 	 
 	  {
-		"item_name": "Floor Lamp",
+		"item_name": "Lampgeo",
 		"item_type": 1,
-		"model_url": "assets/models/IKEA/Lamp_geo.fbx",
+		"model_url": "assets/models/IKEA",
 		"xpos": 346.697102333121,
 		"ypos": 72.163997943445,
 		"zpos": -175.19915302127583,
@@ -114,33 +115,33 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		
+		"options":{"isOneGeometry":true},
 		"texture_maps":[
 			{
-			"type":"map",
-			"url":"assets/models/IKEA/Lamp_geo_BaseColor_1024.jpg"
-		},
-			{
-			"type":"normal",
-			"url":"assets/models/IKEA/Lamp_geo_Normal_1024.jpg"
-		},
-			{
-			"type":"metallic",
-			"url":"assets/models/IKEA/Lamp_geo_Metallic_1024.jpg"
-		},
-			{
-			"type":"roughness",
-			"url":"assets/models/IKEA/Lamp_geo_Roughness_1024.jpg"
-		}
+				"type":"Map"
+		
+			},
+				{
+				"type":"Normal"
+				
+			},
+				{
+				"type":"Metallic"
+				
+			},
+				{
+				"type":"Roughness"
+				
+			}
 	]
 	  },
 	 
 	  
 	 
 	  {
-		"item_name": "Bookshelf",
+		"item_name": "bookshelf",
 		"item_type": 1,
-		"model_url": "assets/models/Bookshelf/Bookshelf_geo/Bookshelf_geo.fbx",
+		"model_url": "assets/models/IKEA",
 		"xpos": 320,
 		"ypos": 42.54509923821,
 		"zpos": -21.686174295784554,
@@ -150,25 +151,28 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
+		"options":{"isOneGeometry":true},
 		"texture_maps":[
 			{
-			"type":"map",
-			"url":"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_BaseColor.jpg"
-		},
-			{
-			"type":"normal",
-			"url":"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Normal.jpg"
-		},
-			{
-			"type":"metallic",
-			"url":"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Metallic.jpg"
-		},
-			{
-			"type":"roughness",
-			"url":"assets/models/Bookshelf/Bookshelf_textures/1024/Bookshelf_geo_bookshelf_mat_Roughness.jpg"
-		}
+				"type":"Map"
+		
+			},
+				{
+				"type":"Normal"
+				
+			},
+				{
+				"type":"Metallic"
+				
+			},
+				{
+				"type":"Roughness"
+				
+			}
 	]
-	  }
-	]
+	 
   }
-  `;
+]
+}
+
+`;

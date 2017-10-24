@@ -15,7 +15,9 @@ export default class PlannerExample extends React.Component {
 
 		this.state = {
 			showLoading: false,
-			itemsLoading: 0
+			itemsLoading: 0,
+			mode: "3d",
+			hasMonted: false
 		};
 		this.info = {};
 	}
@@ -42,6 +44,7 @@ export default class PlannerExample extends React.Component {
 		);
 
 		this.floorPlanner;
+		this.setState({ hasMonted: true });
 		this.setState({ plannerMode: "3d" });
 	}
 
@@ -55,14 +58,18 @@ export default class PlannerExample extends React.Component {
 		this.renderer.setSize(window.innerWidth, window.innerHeight);
 	}
 
-	plannerMode2D() {
+	plannerMode(mode) {
 		this.blueprint3d.model.floorplan.update();
-		this.setState({ plannerMode: "2d" });
+
+		this.setState({ plannerMode: mode });
 	}
 
-	plannerMode3D() {
-		this.blueprint3d.model.floorplan.update();
-		this.setState({ plannerMode: "3d" });
+	getViewerClass(mode) {
+		if (!this.state.hasMonted) {
+			return "";
+		}
+
+		return this.state.plannerMode !== mode ? "" : "hide";
 	}
 
 	render() {
@@ -70,21 +77,15 @@ export default class PlannerExample extends React.Component {
 			<div id="program-window">
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
 				<div id="floorplanner-controls">
-					<button onClick={() => this.plannerMode2D()}>
+					<button onClick={() => this.plannerMode("2d")}>
 						2D Planner
 					</button>
-					<button onClick={() => this.plannerMode3D()}>
+					<button onClick={() => this.plannerMode("3d")}>
 						3D Planner
 					</button>
 				</div>
-				<div
-					id="viewer"
-					className={this.state.plannerMode !== "2d" ? "" : "hide"}
-				/>
-				<div
-					id="floorplanner"
-					className={this.state.plannerMode !== "3d" ? "" : "hide"}
-				>
+				<div id="viewer" className={this.getViewerClass("2d")} />
+				<div id="floorplanner" className={this.getViewerClass("3d")}>
 					<canvas id="floorplanner-canvas" />
 				</div>
 			</div>
