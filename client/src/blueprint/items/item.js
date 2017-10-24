@@ -23,6 +23,7 @@ export default class Item extends THREE.Mesh {
 		super();
 
 		this.model = model;
+		this.metadata = metadata;
 		this.scene;
 		this.errorGlow = new THREE.Mesh();
 		this.hover = false;

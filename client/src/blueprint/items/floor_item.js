@@ -2,8 +2,8 @@ import * as THREE from "three";
 import Utils from "../core/utils";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
-
 import Item from "./item";
+
 export default class FloorItem extends Item {
 	constructor(
 		model,
@@ -20,7 +20,7 @@ export default class FloorItem extends Item {
 	/** */
 	placeInRoom() {
 		if (!this.position_set) {
-			var center = this.model.floorplan.getCenter();
+			const center = this.model.floorplan.getCenter();
 			this.position.x = center.x;
 			this.position.z = center.z;
 			this.position.y =
