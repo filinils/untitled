@@ -86,7 +86,8 @@ export default textureDir => {
 				position,
 				item.rotation,
 				scale,
-				item.fixed
+				item.fixed,
+				item.options
 			);
 		});
 	}

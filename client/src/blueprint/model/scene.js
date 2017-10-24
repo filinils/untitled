@@ -122,7 +122,8 @@ export default (model, textureDir) => {
 		position,
 		rotation,
 		scale,
-		fixed
+		fixed,
+		options
 	) {
 		itemType = itemType || 1;
 		var scope = this;
@@ -134,7 +135,8 @@ export default (model, textureDir) => {
 				materials[0],
 				position,
 				rotation,
-				scale
+				scale,
+				options | null
 			);
 			item.fixed = fixed || false;
 			scope.items.push(item);
@@ -156,8 +158,6 @@ export default (model, textureDir) => {
 					});
 
 					Promise.all(texturePromises).then(data => {
-						console.log("Texture was loaded", data);
-
 						var material = new THREE.MeshStandardMaterial({
 							map: data.find(material => material.type === "map")
 								.texture,
@@ -175,7 +175,7 @@ export default (model, textureDir) => {
 						});
 
 						group.children.forEach(mesh => {
-							if (mesh.children.length <1) {
+							if (mesh.children.length < 1) {
 								var item = new (Factory.getClass(itemType))(
 									model,
 									metadata,
