@@ -65,7 +65,7 @@ export default function(three, model, camera, element, controls, hud) {
 		}
 	}
 
-	function clickDragged(vec2) {
+	const clickDragged = vec2 => {
 		vec2 = vec2 || mouse;
 		let intersection = scope.itemIntersection(mouse, selectedObject);
 		console.log(
@@ -83,7 +83,7 @@ export default function(three, model, camera, element, controls, hud) {
 				selectedObject.clickDragged(intersection);
 			}
 		}
-	}
+	};
 
 	function itemRemoved(item) {
 		// invoked as a callback to event in Scene

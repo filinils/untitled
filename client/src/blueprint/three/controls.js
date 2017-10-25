@@ -367,6 +367,7 @@ export default function(object, domElement) {
 
 	function onMouseWheel(event) {
 		if (scope.enabled === false || scope.noZoom === true) return;
+		event.preventDefault();
 
 		var delta = 0;
 

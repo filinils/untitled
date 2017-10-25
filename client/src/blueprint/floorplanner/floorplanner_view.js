@@ -46,7 +46,7 @@ export default (floorplan, viewmodel, canvas) => {
 	/** The 2D context. */
 	let context = canvasElement.getContext("2d");
 
-	window.addEventListener("resize", () => handleWindowResize());
+	window.addEventListener("resize", handleWindowResize);
 	handleWindowResize();
 
 	function handleWindowResize() {

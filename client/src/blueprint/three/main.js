@@ -89,7 +89,7 @@ export default function(model, element, canvasElement, opts) {
 		// handle window resizing
 		scope.updateWindowSize();
 		if (options.resize) {
-			window.addEventListener("resize", () => scope.updateWindowSize);
+			window.addEventListener("resize", scope.updateWindowSize);
 		}
 
 		// setup camera nicely
