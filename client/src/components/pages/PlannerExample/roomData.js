@@ -39,7 +39,7 @@ export default `{
 	"items": [
 
 	  {
-		"item_name": "bed",
+		"item_name": "BedPillow",
 		"item_type": 1,
 		"model_url": "assets/models/IKEA",
 		"xpos": 900,
@@ -53,7 +53,7 @@ export default `{
 		"options":{"isOneGeometry":true},
 		"texture_maps":[
 			{
-			"type":"Map"
+				"type":"BaseColor"
 	
 		},
 			{
@@ -76,13 +76,13 @@ export default `{
 			"model_url": "assets/models/IKEA",
 			"xpos": 886.8841174461031,
 			"ypos": 139.1510114697785,
-			"zpos": -105.16400146484375,
+			"zpos": -227.16400146484375,
 			"rotation": 0,
 			"scale_x": 1,
 			"scale_y": 1,
 			"scale_z": 1,
 			"fixed": false,
-			"options":{"isOneGeometry":false},
+			"options":{"isOneGeometry":false,"doNotCast":true},
 			"texture_maps":[
 				{
 					"type":"BaseColor"
@@ -115,10 +115,10 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"options":{"isOneGeometry":true},
+		"options":{"isOneGeometry":true,"opacity":0.8,"transparent":true, "emissive":"0xff0000","doNotCast":true},
 		"texture_maps":[
 			{
-				"type":"Map"
+				"type":"BaseColor"
 		
 			},
 				{
@@ -142,7 +142,7 @@ export default `{
 		"item_name": "bookshelf",
 		"item_type": 1,
 		"model_url": "assets/models/IKEA",
-		"xpos": 320,
+		"xpos": 650,
 		"ypos": 42.54509923821,
 		"zpos": -21.686174295784554,
 		"rotation": 1.5707963267948966,
@@ -154,7 +154,7 @@ export default `{
 		"options":{"isOneGeometry":true},
 		"texture_maps":[
 			{
-				"type":"Map"
+				"type":"BaseColor"
 		
 			},
 				{

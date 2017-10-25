@@ -18,9 +18,11 @@ export default class Item extends THREE.Mesh {
 		material,
 		position,
 		rotation,
-		scale
+		scale,
+		options
 	) {
 		super();
+		this.name = metadata.itemName;
 
 		this.model = model;
 		this.scene;
@@ -50,8 +52,12 @@ export default class Item extends THREE.Mesh {
 		this.errorColor = 0xff0000;
 
 		this.resizable = metadata.resizable;
+		if (options.doNotCast) {
+			this.castShadow = false;
+		} else {
+			this.castShadow = true;
+		}
 
-		this.castShadow = true;
 		this.receiveShadow = true;
 
 		this.geometry = geometry;

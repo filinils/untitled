@@ -173,13 +173,17 @@ export default (model, textureDir) => {
 
 						data.forEach(texture => {
 							if (texture[mesh.name].BaseColor)
-								materialMap["map"] = texture[mesh.name].BaseColor;
+								materialMap["map"] =
+									texture[mesh.name].BaseColor;
 							if (texture[mesh.name].Normal)
-								materialMap["normal"] = texture[mesh.name].Normal;
+								materialMap["normal"] =
+									texture[mesh.name].Normal;
 							if (texture[mesh.name].Metallic)
-								materialMap["metallic"] = texture[mesh.name].Metallic;
+								materialMap["metallic"] =
+									texture[mesh.name].Metallic;
 							if (texture[mesh.name].Roughness)
-								materialMap["roughness"] = texture[mesh.name].Roughness;
+								materialMap["roughness"] =
+									texture[mesh.name].Roughness;
 						});
 
 						var material = new THREE.MeshStandardMaterial({
@@ -190,6 +194,11 @@ export default (model, textureDir) => {
 							metalness: 1,
 							roughness: 1
 						});
+
+						if (options.transparent) {
+							material.opacity = options.opacity;
+							material.transparent = true;
+						}
 
 						createItem(mesh.geometry, material);
 					});
@@ -202,7 +211,8 @@ export default (model, textureDir) => {
 							material,
 							position,
 							rotation,
-							scale
+							scale,
+							options
 						);
 						item.fixed = fixed || false;
 						scope.items.push(item);

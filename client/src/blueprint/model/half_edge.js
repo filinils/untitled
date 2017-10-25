@@ -116,6 +116,7 @@ export default class HalfEdge {
 		geometry.computeBoundingBox();
 
 		this.plane = new THREE.Mesh(geometry, new THREE.MeshBasicMaterial());
+		this.plane.castShadow = true;
 
 		this.plane.visible = false;
 		this.plane.edge = this; // js monkey patch
