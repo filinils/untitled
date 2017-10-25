@@ -25,6 +25,7 @@ export default class Wall {
      * @param end End corner.
      */
 	constructor(start, end) {
+		this.name = "wall";
 		this.start = start;
 		this.end = end;
 		this.id = this.getUuid();

@@ -55,6 +55,7 @@ export default class Floorplan {
 		var planes = [];
 		this.walls.forEach(wall => {
 			if (wall.frontEdge) {
+			
 				planes.push(wall.frontEdge.plane);
 			}
 			if (wall.backEdge) {

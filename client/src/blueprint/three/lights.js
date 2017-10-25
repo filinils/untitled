@@ -23,6 +23,8 @@ export default function(scene, floorplan) {
 		scene.add(hemHelper);
 		scene.add(light);
 		var pointLight = new THREE.PointLight(0xffffff, 1, 400, 2);
+
+		pointLight.distance = 2000;
 		var pointLightHelper = new THREE.PointLightHelper(pointLight, 100);
 		pointLight.castShadow = true;
 
@@ -31,11 +33,21 @@ export default function(scene, floorplan) {
 			82.163997943445,
 			-175.19915302127583
 		);
-		var pointLight2 = new THREE.PointLight(0xffffff, 1, 400, 2);
-		var pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 100);
 		pointLight.castShadow = true;
 
-		pointLight2.position.set(800, 600, 50);
+		var pointLight2 = new THREE.PointLight(0xffffff, 1, 400, 2);
+		pointLight2.distance = 2000;
+		pointLight2.castShadow = true;
+		var pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 100);
+		pointLight2.position.set(800, 300, 50);
+		var pointLight3 = new THREE.PointLight(0xffffff, 1, 400, 2);
+		pointLight3.distance = 2000;
+		pointLight3.castShadow = true;
+		var pointLightHelper3 = new THREE.PointLightHelper(pointLight3, 100);
+		pointLight3.position.set(900, 400, -500);
+
+		scene.add(pointLightHelper3);
+		scene.add(pointLight3);
 		scene.add(pointLightHelper2);
 		scene.add(pointLight2);
 		scene.add(pointLightHelper);

@@ -8,9 +8,19 @@ export default class InWallItem extends WallItem {
 		material,
 		position,
 		rotation,
-		scale
+		scale,
+		options
 	) {
-		super(model, metadata, geometry, material, position, rotation, scale);
+		super(
+			model,
+			metadata,
+			geometry,
+			material,
+			position,
+			rotation,
+			scale,
+			options
+		);
 		this.addToWall = true;
 	}
 

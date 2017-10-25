@@ -71,6 +71,7 @@ export default class Room {
 				side: THREE.DoubleSide
 			})
 		);
+		this.floorPlane.name = "floor";
 
 		this.floorPlane.visible = false;
 		this.floorPlane.rotation.set(Math.PI / 2, 0, 0);
