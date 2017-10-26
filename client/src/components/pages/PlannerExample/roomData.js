@@ -115,7 +115,7 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"options":{"isOneGeometry":true,"opacity":0.8,"transparent":true, "emissive":"0xff0000","doNotCast":true},
+		"options":{"isOneGeometry":true,"doNotCast":true},
 		"texture_maps":[
 			{
 				"type":"BaseColor"
