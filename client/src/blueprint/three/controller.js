@@ -69,7 +69,7 @@ export default function(three, model, camera, element, controls, hud) {
 		vec2 = vec2 || mouse;
 		let intersection = scope.itemIntersection(mouse, selectedObject);
 		console.log(
-			"intersection: ",
+			"ersection: ",
 			intersection,
 			"Mouse: ",
 			mouse,
@@ -96,12 +96,11 @@ export default function(three, model, camera, element, controls, hud) {
 
 	function setGroundPlane() {
 		// ground plane used to find intersections
-		let size = 10000;
+		var size = 10000;
 		plane = new THREE.Mesh(
 			new THREE.PlaneGeometry(size, size),
 			new THREE.MeshBasicMaterial()
 		);
-		// plane.receiveShadow = true;
 		plane.rotation.x = -Math.PI / 2;
 		plane.visible = false;
 		scene.add(plane);

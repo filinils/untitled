@@ -183,7 +183,7 @@ export default function(model, element, canvasElement, opts) {
 	}
 
 	function animate() {
-		var delay = 50;
+		const delay = 30;
 		setTimeout(function() {
 			requestAnimationFrame(animate);
 		}, delay);
