@@ -435,6 +435,10 @@ export default (() => {
 		map,
 		pointDistanceFromLine,
 		cycle,
-		guid
+		guid,
+		pointInPolygon,
+		polygonPolygonIntersect,
+		polygonInsidePolygon,
+		polygonOutsidePolygon
 	};
 })();

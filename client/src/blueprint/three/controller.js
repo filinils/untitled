@@ -30,7 +30,7 @@ export default function(three, model, camera, element, controls, hud) {
 	};
 	let state = states.UNSELECTED;
 
-	this.needsUpdate = true;
+	let needsUpdate = true;
 
 	function init() {
 		element.addEventListener("mousedown", mouseDownEvent);
@@ -47,7 +47,7 @@ export default function(three, model, camera, element, controls, hud) {
 	// invoked via callback when item is loaded
 	function itemLoaded(item) {
 		if (!item.position_set) {
-			scope.setSelectedObject(item);
+			setSelectedObject(item);
 			switchState(states.DRAGGING);
 			let pos = item.position.clone();
 			pos.y = 0;
@@ -59,7 +59,7 @@ export default function(three, model, camera, element, controls, hud) {
 
 	function clickPressed(vec2) {
 		vec2 = vec2 || mouse;
-		let intersection = scope.itemIntersection(mouse, selectedObject);
+		let intersection = itemIntersection(mouse, selectedObject);
 		if (intersection) {
 			selectedObject.clickPressed(intersection);
 		}
@@ -67,7 +67,7 @@ export default function(three, model, camera, element, controls, hud) {
 
 	const clickDragged = vec2 => {
 		vec2 = vec2 || mouse;
-		let intersection = scope.itemIntersection(mouse, selectedObject);
+		let intersection = itemIntersection(mouse, selectedObject);
 		console.log(
 			"ersection: ",
 			intersection,
@@ -111,11 +111,7 @@ export default function(three, model, camera, element, controls, hud) {
 		if (state == states.UNSELECTED && mouseoverObject == null) {
 			// check walls
 			let wallEdgePlanes = model.floorplan.wallEdgePlanes();
-			let wallIntersects = scope.getIntersections(
-				mouse,
-				wallEdgePlanes,
-				true
-			);
+			let wallIntersects = getIntersections(mouse, wallEdgePlanes, true);
 			if (wallIntersects.length > 0) {
 				let wall = wallIntersects[0].object.edge;
 				three.wallClicked.fire(wall);
@@ -124,11 +120,7 @@ export default function(three, model, camera, element, controls, hud) {
 
 			// check floors
 			let floorPlanes = model.floorplan.floorPlanes();
-			let floorIntersects = scope.getIntersections(
-				mouse,
-				floorPlanes,
-				false
-			);
+			let floorIntersects = getIntersections(mouse, floorPlanes, false);
 			if (floorIntersects.length > 0) {
 				let room = floorIntersects[0].object.room;
 				three.floorClicked.fire(room);
@@ -188,7 +180,7 @@ export default function(three, model, camera, element, controls, hud) {
 					if (rotateMouseOver) {
 						switchState(states.ROTATING);
 					} else if (intersectedObject != null) {
-						scope.setSelectedObject(intersectedObject);
+						setSelectedObject(intersectedObject);
 						if (!intersectedObject.fixed) {
 							console.log("DRAGGING");
 							switchState(states.DRAGGING);
@@ -198,7 +190,7 @@ export default function(three, model, camera, element, controls, hud) {
 					break;
 				case states.UNSELECTED:
 					if (intersectedObject != null) {
-						scope.setSelectedObject(intersectedObject);
+						setSelectedObject(intersectedObject);
 						if (!intersectedObject.fixed) {
 							switchState(states.DRAGGING);
 						}
@@ -306,7 +298,7 @@ export default function(three, model, camera, element, controls, hud) {
 		// check the rotate arrow
 		let hudObject = hud.getObject();
 		if (hudObject != null) {
-			let hudIntersects = scope.getIntersections(
+			let hudIntersects = getIntersections(
 				mouse,
 				hudObject,
 				false,
@@ -325,7 +317,7 @@ export default function(three, model, camera, element, controls, hud) {
 
 		// check objects
 		let items = model.scene.getItems();
-		let intersects = scope.getIntersections(mouse, items, false, true);
+		let intersects = getIntersections(mouse, items, false, true);
 
 		if (intersects.length > 0) {
 			intersectedObject = intersects[0].object;
@@ -361,28 +353,24 @@ export default function(three, model, camera, element, controls, hud) {
 	}
 
 	// returns the first intersection object
-	this.itemIntersection = function(vec2, item) {
+	function itemIntersection(vec2, item) {
 		let customIntersections = item.customIntersectionPlanes();
 		let intersections = null;
 		if (customIntersections && customIntersections.length > 0) {
-			intersections = this.getIntersections(
-				vec2,
-				customIntersections,
-				true
-			);
+			intersections = getIntersections(vec2, customIntersections, true);
 		} else {
-			intersections = this.getIntersections(vec2, plane);
+			intersections = getIntersections(vec2, item);
 		}
 		if (intersections.length > 0) {
 			return intersections[0];
 		} else {
 			return null;
 		}
-	};
+	}
 
 	// filter by normals will only return objects facing the camera
 	// objects can be an array of objects or a single object
-	this.getIntersections = function(
+	function getIntersections(
 		vec2,
 		objects,
 		filterByNormals,
@@ -401,11 +389,17 @@ export default function(three, model, camera, element, controls, hud) {
 		let raycaster = new THREE.Raycaster(camera.position, direction);
 		raycaster.linePrecision = linePrecision;
 		let intersections;
+
+		
 		if (objects instanceof Array) {
 			intersections = raycaster.intersectObjects(objects, recursive);
 		} else {
-			intersections = raycaster.intersectObject(objects, recursive);
+			let objArr =[];
+			objArr.push(objects);
+
+			intersections = raycaster.intersectObjects(objArr, recursive);
 		}
+		
 		// filter by visible, if true
 		if (onlyVisible) {
 			intersections = Utils.removeIf(intersections, function(
@@ -425,10 +419,10 @@ export default function(three, model, camera, element, controls, hud) {
 			});
 		}
 		return intersections;
-	};
+	}
 
 	// manage the selected object
-	this.setSelectedObject = object => {
+	function setSelectedObject(object) {
 		if (state === states.UNSELECTED) {
 			switchState(states.SELECTED);
 		}
@@ -443,8 +437,8 @@ export default function(three, model, camera, element, controls, hud) {
 			selectedObject = null;
 			three.itemUnselectedCallbacks.fire();
 		}
-		this.needsUpdate = true;
-	};
+		needsUpdate = true;
+	}
 
 	// TODO: there MUST be simpler logic for expressing this
 	function updateMouseover() {
