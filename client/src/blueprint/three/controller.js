@@ -359,7 +359,7 @@ export default function(three, model, camera, element, controls, hud) {
 		if (customIntersections && customIntersections.length > 0) {
 			intersections = getIntersections(vec2, customIntersections, true);
 		} else {
-			intersections = getIntersections(vec2, item);
+			intersections = getIntersections(vec2, plane);
 		}
 		if (intersections.length > 0) {
 			return intersections[0];
@@ -390,16 +390,12 @@ export default function(three, model, camera, element, controls, hud) {
 		raycaster.linePrecision = linePrecision;
 		let intersections;
 
-		
 		if (objects instanceof Array) {
 			intersections = raycaster.intersectObjects(objects, recursive);
 		} else {
-			let objArr =[];
-			objArr.push(objects);
-
-			intersections = raycaster.intersectObjects(objArr, recursive);
+			intersections = raycaster.intersectObject(objects, recursive);
 		}
-		
+
 		// filter by visible, if true
 		if (onlyVisible) {
 			intersections = Utils.removeIf(intersections, function(
