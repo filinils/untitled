@@ -101,8 +101,9 @@ export default function(three, model, camera, element, controls, hud) {
 			new THREE.PlaneGeometry(size, size),
 			new THREE.MeshBasicMaterial()
 		);
+		plane.position.y = plane.position.y - 2;
 		plane.rotation.x = -Math.PI / 2;
-		plane.visible = false;
+		plane.visible = true;
 		scene.add(plane);
 	}
 
@@ -386,7 +387,10 @@ export default function(three, model, camera, element, controls, hud) {
 		linePrecision = linePrecision || 20;
 
 		let direction = vector.sub(camera.position).normalize();
-		let raycaster = new THREE.Raycaster(camera.position, direction);
+		let raycaster = new THREE.Raycaster();
+
+		raycaster.set(camera.position, direction);
+
 		raycaster.linePrecision = linePrecision;
 		let intersections;
 
