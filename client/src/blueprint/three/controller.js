@@ -252,7 +252,7 @@ export default function(three, model, camera, element, controls, hud) {
 	function onEntry(state) {
 		switch (state) {
 			case states.UNSELECTED:
-				scope.setSelectedObject(null);
+				setSelectedObject(null);
 				break;
 			case states.SELECTED:
 				controls.enabled = true;
