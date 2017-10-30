@@ -87,6 +87,12 @@ export default class PlannerExample extends React.Component {
 				<div id="viewer" className={this.getViewerClass("2d")} />
 				<div id="floorplanner" className={this.getViewerClass("3d")}>
 					<canvas id="floorplanner-canvas" />
+					<button
+						className="floorplanner-done-button"
+						onClick={() => this.plannerMode("3d")}
+					>
+						Done
+					</button>
 				</div>
 			</div>
 		);

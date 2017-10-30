@@ -166,3 +166,31 @@ div {
 .hide {
 	display: none;
 }
+
+.floorplanner-done-button {
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	padding: 1em 4em;
+	border-radius: 2px;
+	border: 1px solid #437bae;
+	background-color: #437bae;
+	color: white;
+}
+
+.floorplanner {
+	.done-button {
+		position: absolute;
+		bottom: 15px;
+		right: 20px;
+		padding: 1em 4em;
+		border-radius: 2px;
+		border: 1px solid #437bae;
+		background-color: #437bae;
+		color: white;
+	}
+}
+
+.floorplanner-done-button:active {
+	outline: none;
+}
