@@ -16,10 +16,15 @@
  * General Formatting
  */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	// overflow: hidden;
 	height: 100%;
 	box-sizing: border-box;
 }
@@ -29,48 +34,9 @@ div {
 	padding: 0;
 }
 
-/*
-   * Sidebar
-   */
-
-.main-row {
-	padding: 0;
-}
-
-.sidebar {
-	padding: 20px;
-	overflow-x: hidden;
-	overflow-y: auto;
-	border-right: 1px solid #eee;
-}
-
-.nav-sidebar {
-	margin-right: -21px; /* 20px padding + 1px border */
-	margin-bottom: 20px;
-	margin-left: -20px;
-}
-.nav-sidebar > li > a {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-.nav-sidebar > .active > a,
-.nav-sidebar > .active > a:hover,
-.nav-sidebar > .active > a:focus {
-	color: #fff;
-	background-color: #428bca;
-}
-
-/*
-   * Main content
-   */
-
 .main {
 	padding: 0;
 }
-
-/*
-   * "Loading" modal
-   */
 
 #loading-modal {
 	position: absolute;
@@ -93,12 +59,13 @@ div {
    * Design
    */
 
-#program-window {
+#canvas-wrapper {
 	height: 100%;
 	width: 100%;
 }
 
 #viewer {
+	position: relative;
 	height: 100%;
 	width: 100%;
 }
@@ -115,36 +82,6 @@ div {
 
 #floorplanner canvas {
 	height: 100%;
-	width: 100%;
-}
-
-#add-items {
-	display: none;
-	padding: 20px;
-	overflow-y: auto;
-}
-
-#main-controls {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	padding: 0;
-}
-
-#camera-controls {
-	position: absolute;
-	bottom: 20px;
-	right: 0;
-	padding: 0 20px;
-	text-align: right;
-}
-
-#floorplanner-controls {
-	position: absolute;
-	left: 0;
-	top: 0;
-	margin: 20px 0;
-	padding: 0 20px;
 	width: 100%;
 }
 
@@ -167,30 +104,63 @@ div {
 	display: none;
 }
 
-.floorplanner-done-button {
+.top-bar {
 	position: absolute;
-	bottom: 15px;
-	right: 20px;
-	padding: 1em 4em;
-	border-radius: 2px;
-	border: 1px solid #437bae;
-	background-color: #437bae;
-	color: white;
-}
+	width: 100%;
+	padding: 0.5em;
 
-.floorplanner {
-	.done-button {
-		position: absolute;
-		bottom: 15px;
-		right: 20px;
-		padding: 1em 4em;
-		border-radius: 2px;
-		border: 1px solid #437bae;
-		background-color: #437bae;
-		color: white;
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
 	}
 }
 
-.floorplanner-done-button:active {
+.bottom-bar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0.5em;
+	min-height: 60px;
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+}
+
+button {
+	margin-right: 10px;
+	height: 45px;
+	padding: 1em 4em;
+	border-radius: 2px;
+	border: 1px solid #9fa09f;
+	color: black;
+	background-color: white;
+}
+
+button:last-child {
+	margin: 0;
+}
+
+button.square {
+	width: 45px;
+	padding: 0;
+	line-height: 45px;
+	font-weight: 200;
+}
+
+button:active {
 	outline: none;
+}
+
+button.primary {
+	border: 1px solid #437bae;
+	background-color: #437bae;
+	color: white;
 }

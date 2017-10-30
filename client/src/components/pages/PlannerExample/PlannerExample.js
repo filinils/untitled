@@ -20,6 +20,8 @@ export default class PlannerExample extends React.Component {
 			hasMonted: false
 		};
 		this.info = {};
+
+		this.onWindowResize = this.onWindowResize.bind(this);
 	}
 
 	ViewerFloorplanner(blueprint3d) {}
@@ -53,15 +55,20 @@ export default class PlannerExample extends React.Component {
 	}
 
 	onWindowResize() {
-		this.camera.aspect = window.innerWidth / window.innerHeight;
-		this.camera.updateProjectionMatrix();
-		this.renderer.setSize(window.innerWidth, window.innerHeight);
+		// this.camera.aspect = window.innerWidth / window.innerHeight;
+		// this.camera.updateProjectionMatrix();
+		// this.renderer.setSize(window.innerWidth, window.innerHeight);
 	}
 
 	plannerMode(mode) {
 		this.blueprint3d.model.floorplan.update();
-
 		this.setState({ plannerMode: mode });
+	}
+
+	componentDidUpdate() {
+		this.onWindowResize();
+		// this.blueprint3d.three.updateWindowSize();
+		// this.blueprint3d.floorplanner.resizeView();
 	}
 
 	getViewerClass(mode) {
@@ -74,25 +81,40 @@ export default class PlannerExample extends React.Component {
 
 	render() {
 		return (
-			<div id="program-window">
+			<div id="canvas-wrapper">
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
-				<div id="floorplanner-controls">
-					<button onClick={() => this.plannerMode("2d")}>
-						2D Planner
-					</button>
-					<button onClick={() => this.plannerMode("3d")}>
-						3D Planner
-					</button>
+				<div id="viewer" className={this.getViewerClass("2d")}>
+					<div className="top-bar">
+						<div className="left">
+							<button onClick={() => this.plannerMode("2d")}>
+								Edit floorplan
+							</button>
+						</div>
+						<div className="right">
+							<button className="square fa fa-rotate-left" />
+							<button className="square fa fa-rotate-right" />
+						</div>
+					</div>
+					<div className="bottom-bar">
+						<div className="left">
+							<button>
+								<span className="fa fa-plus" /> Add item
+							</button>
+						</div>
+					</div>
 				</div>
-				<div id="viewer" className={this.getViewerClass("2d")} />
 				<div id="floorplanner" className={this.getViewerClass("3d")}>
 					<canvas id="floorplanner-canvas" />
-					<button
-						className="floorplanner-done-button"
-						onClick={() => this.plannerMode("3d")}
-					>
-						Done
-					</button>
+					<div className="bottom-bar">
+						<div className="right">
+							<button
+								className="primary"
+								onClick={() => this.plannerMode("3d")}
+							>
+								Done
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		);
