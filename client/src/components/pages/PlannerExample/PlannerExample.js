@@ -20,11 +20,7 @@ export default class PlannerExample extends React.Component {
 			hasMonted: false
 		};
 		this.info = {};
-
-		this.onWindowResize = this.onWindowResize.bind(this);
 	}
-
-	ViewerFloorplanner(blueprint3d) {}
 
 	componentDidMount() {
 		let opts = {
@@ -35,8 +31,6 @@ export default class PlannerExample extends React.Component {
 			widget: false
 		};
 		this.blueprint3d = new Blueprint3d(opts);
-
-		this.viewerFloorplanner = new this.ViewerFloorplanner(this.blueprint3d);
 
 		// This serialization format needs work
 		// Load a simple rectangle room
@@ -54,21 +48,14 @@ export default class PlannerExample extends React.Component {
 		return <div style={style} dangerouslySetInnerHTML={innerHtml} />;
 	}
 
-	onWindowResize() {
-		// this.camera.aspect = window.innerWidth / window.innerHeight;
-		// this.camera.updateProjectionMatrix();
-		// this.renderer.setSize(window.innerWidth, window.innerHeight);
-	}
-
 	plannerMode(mode) {
 		this.blueprint3d.model.floorplan.update();
 		this.setState({ plannerMode: mode });
 	}
 
 	componentDidUpdate() {
-		this.onWindowResize();
-		// this.blueprint3d.three.updateWindowSize();
-		// this.blueprint3d.floorplanner.resizeView();
+		this.blueprint3d.three.updateWindowSize();
+		this.blueprint3d.floorplanner.resizeView();
 	}
 
 	getViewerClass(mode) {
