@@ -1,0 +1,118 @@
+.MyDebugger{
+background-color: yellow;
+}
+
+
+.D_Widget{
+  position: relative;
+  background-color: #262626;
+  border: 1px solid #070707;
+  border-radius:5px ;
+  margin-bottom: 4px;
+  padding: 5px;
+}
+
+.D_Widget input{
+  color: #f6f6f6 !important;
+  background-color: #212121;
+  text-align: center;
+  border: none;
+}
+
+.Flex-1{
+  flex: 1;
+}
+.Flex-2{
+  flex: 2;
+}
+.Flex-3{
+  flex: 3;
+}
+.Flex-Container-col{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.MyDebugger .PanelContainer {
+  position: absolute;
+  top: 0;
+
+  height: 99%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: rgb(21, 21, 21);
+  padding: 10px 5px;
+
+}
+.MyDebugger .PanelContainer h3{
+  margin-left: 5px;
+}
+.MyDebugger .PanelContainer .AddingContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  background-color: orange;
+}
+
+.left{
+  right: 280px;
+  width: 320px;
+}
+.right{
+  right: 0;
+  width: 280px;
+}
+
+a{
+  text-decoration: none !important;
+  text-align: left;
+}
+
+a:hover{
+  cursor: pointer;
+  background-color: rgba(75, 139, 193, 0.3);
+}
+
+.thin{
+  font-size: 9px;
+}
+
+.uuid{
+  color: #4e4e4e;
+}
+
+.active{
+  color: #ffffff !important;
+  border: 1px solid #363636;
+  background-color: rgba(92, 92, 92, 0.73) !important;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}

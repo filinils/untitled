@@ -1,0 +1,43 @@
+.HierarchyItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.HierarchyItem .active{
+    background-color: rgba(78, 78, 78, 0.42);
+}
+
+.HierarchyItem .disabled{
+    color: rgba(162, 162, 162, 0.42);
+    font-style: italic;
+}
+
+
+.HierarchyItem .listItem{
+    margin-bottom: 4px;
+    flex: 1;
+    color: #b4b4b4 !important;
+}
+
+.HierarchyItem:hover{
+    cursor: pointer;
+}
+
+.HierarchyItem .markerContainer{
+    max-height: 20px;
+    min-width: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.HierarchyItem .markerContainer i{
+    font-size: 19px;
+}
+.rotate{
+  transform: rotate(90deg);
+}
+
+
+
+
+

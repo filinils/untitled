@@ -1,0 +1,12 @@
+.InputWidget{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-height: 100px;
+    justify-content: flex-end;
+}
+
+.InputWidget .inputContainer{
+    display: flex;
+    justify-content: flex-end;
+}
