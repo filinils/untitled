@@ -6,8 +6,8 @@ import Scene from "./scene";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
 import Callbacks from "../../utils/callbacks";
-/** 
-   * A Model connects a Floorplan and a Scene. 
+/**
+   * A Model connects a Floorplan and a Scene.
    */
 export default textureDir => {
 	/** Constructs a new model.
@@ -28,9 +28,11 @@ export default textureDir => {
 		// TODO: a much better serialization format.
 		roomLoadingCallbacks.fire();
 
-		var data = JSON.parse(json);
-		newRoom(data.floorplan, data.items);
+		//var data = JSON.parse(json);
+    var data = json;
+    if(!data)return null;
 
+    newRoom(data.floorplan, data.items);
 		roomLoadedCallbacks.fire();
 	}
 

@@ -1,3 +1,5 @@
 export default {
-  persons: []
+  persons: [],
+  roomPresets:[],
+  room:null
 };

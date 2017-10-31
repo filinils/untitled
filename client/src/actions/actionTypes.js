@@ -6,3 +6,9 @@ export const CREATE_SKILL = 'CREATE_SKILL';
 export const UPDATE_SKILL = 'UPDATE_SKILL';
 export const LOAD_SKILLS_SUCCESS = 'LOAD_SKILLS_SUCCESS';
 
+export const LOAD_PRESETS_SUCCESS = 'LOAD_PRESETS_SUCCESS';
+export const ADD_ITEM = 'ADD_ITEM';
+export const REMOVE_ITEM = 'REMOVE_ITEM';
+export const SET_ROOM = 'SET_ROOM';
+
+
