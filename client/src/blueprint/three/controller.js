@@ -432,35 +432,7 @@ export default function(three, model, camera, element, controls, hud) {
 		if (object != null) {
 			selectedObject = object;
 			selectedObject.setSelected();
-			let outlineMaterial2 = new THREE.MeshBasicMaterial({
-				color: 0x00ff00,
-				side: THREE.BackSide
-			});
-			let outlineMesh2 = new THREE.Mesh(
-				object.geometry,
-				outlineMaterial2
-			);
-			console.log(object);
-			object.visible = false;
-			outlineMesh2.position.set(object.position.clone());
-			outlineMesh2.rotation.set(object.rotation.clone());
-			outlineMesh2.scale.multiplyScalar(1.05);
-			scene.add(outlineMesh2);
 			three.itemSelectedCallbacks.fire(object);
-
-			// var material = new THREE.MeshNormalMaterial();
-			// var sphereGeometry = new THREE.SphereGeometry(50, 32, 16);
-			// var sphere = new THREE.Mesh(sphereGeometry, material);
-			// sphere.position.set(-60, 55, 0);
-			// scene.add(sphere);
-			// var outlineMaterial1 = new THREE.MeshBasicMaterial({
-			// 	color: 0xff0000,
-			// 	side: THREE.BackSide
-			// });
-			// var outlineMesh1 = new THREE.Mesh(sphereGeometry, outlineMaterial1);
-			// outlineMesh1.position = sphere.position;
-			// outlineMesh1.scale.multiplyScalar(1.05);
-			// scene.add(outlineMesh1);
 		} else {
 			selectedObject = null;
 			three.itemUnselectedCallbacks.fire();

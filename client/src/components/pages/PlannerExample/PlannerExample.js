@@ -17,7 +17,8 @@ export default class PlannerExample extends React.Component {
 			showLoading: false,
 			itemsLoading: 0,
 			mode: "3d",
-			hasMonted: false
+			hasMonted: false,
+			showAddItemBar: false
 		};
 		this.info = {};
 	}
@@ -66,10 +67,23 @@ export default class PlannerExample extends React.Component {
 		return this.state.plannerMode !== mode ? "" : "hide";
 	}
 
+	onAddItemBarButtonClick() {
+		this.setState({ showAddItemBar: !this.state.showItemBar });
+	}
+
+	onAddItemBarCloseClick(e) {
+		e.preventDefault();
+		this.onAddItemBarButtonClick();
+	}
+
 	render() {
+		const addItemBarClass =
+			"add-item-bar" + (this.state.showAddItemBar ? "" : " hidden");
+
 		return (
 			<div id="canvas-wrapper">
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
+				{/* 3D View */}
 				<div id="viewer" className={this.getViewerClass("2d")}>
 					<div className="top-bar">
 						<div className="left">
@@ -84,12 +98,26 @@ export default class PlannerExample extends React.Component {
 					</div>
 					<div className="bottom-bar">
 						<div className="left">
-							<button>
+							<button
+								onClick={() => this.onAddItemBarButtonClick()}
+							>
 								<span className="fa fa-plus" /> Add item
 							</button>
 						</div>
 					</div>
+					<div className={addItemBarClass}>
+						<a
+							onClick={() => this.onAddItemBarCloseClick()}
+							className="close"
+							href="#"
+						>
+							<span className="fa fa-close" />
+						</a>
+					</div>
 				</div>
+				{/* End 3D View */}
+
+				{/* 2D View */}
 				<div id="floorplanner" className={this.getViewerClass("3d")}>
 					<canvas id="floorplanner-canvas" />
 					<div className="bottom-bar">
@@ -103,6 +131,7 @@ export default class PlannerExample extends React.Component {
 						</div>
 					</div>
 				</div>
+				{/* End 2D View */}
 			</div>
 		);
 	}
