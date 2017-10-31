@@ -466,5 +466,9 @@ export default function(three, model, camera, element, controls, hud) {
 		}
 	}
 
+	this.getSelectedObject = () => {
+		return selectedObject;
+	};
+
 	init();
 }

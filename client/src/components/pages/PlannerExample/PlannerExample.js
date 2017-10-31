@@ -34,13 +34,14 @@ export default class PlannerExample extends React.Component {
 			textureDir: "models/textures",
 			widget: false
 		};
-
 		this.blueprint3d = new Blueprint3d(opts);
 		this.blueprint3d.model.loadSerialized(roomData);
 
-		this.floorPlanner;
 		this.setState({ hasMonted: true });
 		this.setState({ plannerMode: "3d" });
+
+		window.blue = this.blueprint3d;
+		this.controller = this.blueprint3d.three.getController();
 	}
 
 	componentDidUpdate() {
@@ -68,6 +69,7 @@ export default class PlannerExample extends React.Component {
 				<Roomdesigner
 					showing={this.getViewerClass("2d")}
 					plannerMode={this.plannerMode}
+					controller={this.controller}
 				/>
 				<Floorplanner
 					showing={this.getViewerClass("3d")}
