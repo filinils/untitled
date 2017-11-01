@@ -12,6 +12,7 @@ import { connect } from "react-redux";
 import {bindActionCreators} from "redux";
 import * as roomActions from '../../../actions/roomActions';
 import * as roomPresetsActions from '../../../actions/roomPresetsActions';
+import MyDebugger from "../../common/MyDebugger/MyDebugger";
 
 class PlannerExample extends React.Component {
 	constructor(props) {
@@ -55,7 +56,12 @@ class PlannerExample extends React.Component {
 		this.setState({ plannerMode: "3d" });
 	}
 
-	infoElement(style, innerHtml) {
+  componentWillUnmount(){
+    this.saveScene();
+  }
+
+
+  infoElement(style, innerHtml) {
 		return <div style={style} dangerouslySetInnerHTML={innerHtml} />;
 	}
 
@@ -87,11 +93,23 @@ class PlannerExample extends React.Component {
 	saveScene(){
 	  let room = 	this.blueprint3d.model.exportRoom();
 	  this.props.roomPresetsActions.savePreset(room);
+	  this.props.roomActions.setRoom(room);
+  }
+
+  renderDebugger(){
+	  if(!this.blueprint3d)return null;
+    let scene = this.blueprint3d.model.scene;
+    return(
+      <MyDebugger root={scene}
+                  enabled={this.blueprint3d}/>
+    );
+
   }
 
 	render() {
 		return (
 			<div id="canvas-wrapper">
+        {/*{this.renderDebugger()}*/}
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
 				<div id="viewer" className={this.getViewerClass("2d")}>
 					<div className="top-bar">

@@ -15,7 +15,7 @@ FBXLoader(THREE);
 /**
    * The Scene is a manager of Items and also links to a ThreeJS scene.
    */
-export default (model, textureDir) => {
+export default  (model, textureDir) => {
 	/** The associated ThreeJS scene. */
 	let scene;
 	let itemLoadingCallbacks = new Callbacks();

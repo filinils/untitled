@@ -14,9 +14,13 @@ export default class ConfirmWidget extends Component {
                 <div className="Flex-1">
                     <p>{this.props.message}</p>
                 </div>
-                <div className="Flex-1">
-                    <button className=" btn btn-danger" onClick={()=>this.props.answer(true)}>Yes</button>
-                    <button className=" btn btn-default" onClick={()=>this.props.answer(false)}>Cancel</button>
+                <div className="Flex-1 Flex-Container-row">
+                  <div className="Flex-1">
+                    <button className=" btn" onClick={()=>this.props.answer(true)}>Yes</button>
+                  </div>
+                  <div className="Flex-1">
+                    <button className=" btn " onClick={()=>this.props.answer(false)}>Cancel</button>
+                  </div>
                 </div>
             </div>
         );

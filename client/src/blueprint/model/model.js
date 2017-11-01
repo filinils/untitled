@@ -67,8 +67,7 @@ export default textureDir => {
 			floorplan: this.floorplan.saveFloorplan(),
 			items: items_arr
 		};
-    console.log('exported room items',room.items);
-    console.log ('items',objects);
+
 		return room;
 	}
   function exportSerialized() {

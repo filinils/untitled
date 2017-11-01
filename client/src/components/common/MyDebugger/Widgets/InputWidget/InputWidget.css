@@ -1,3 +1,4 @@
+
 .InputWidget{
     display: flex;
     flex: 1;
@@ -7,6 +8,11 @@
 }
 
 .InputWidget .inputContainer{
-    display: flex;
     justify-content: flex-end;
+}
+.InputWidget input{
+  flex: 2;
+}
+.InputWidget input[type="text"]{
+  min-width: 170px;
 }

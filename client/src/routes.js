@@ -4,6 +4,7 @@ import StartPage from "./components/pages/start/StartPage";
 import ThreeViewer from "./components/pages/ThreeViewer/ThreeViewer";
 import PlannerExample from "./components/pages/PlannerExample/PlannerExample";
 import ViewerFloorPlanner from "./components/pages/PlannerExample/ViewerFloorPlanner";
+import FirstScene from "./components/pages/FirstScene/FirstScene";
 
 const routes = [
 	{
@@ -30,8 +31,14 @@ const routes = [
 				title: "Planner",
 				path: "/planner",
 				component: PlannerExample
-			}
+			},
+      {
+        title: "Test",
+        path: "/test",
+        component: FirstScene
+      },
 		]
 	}
 ];
 export { routes };
+

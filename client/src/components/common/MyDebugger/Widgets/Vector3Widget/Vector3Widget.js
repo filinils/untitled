@@ -26,7 +26,10 @@ export default class Vector3Widget extends Component {
     }
 
 
-    onValueChanged(value, axis){
+    onValueChanged(evt, axis){
+      console.log('changed',evt)
+      evt.stopPropagation();
+      let value = evt.target.value;
         let retVector = Object.assign({},this.state.values);
         retVector[axis] = value;
         this.props.onValueChanged(retVector);
@@ -35,15 +38,17 @@ export default class Vector3Widget extends Component {
     render() {
         return (
             <div className="Widget D_Widget" key={this.props.uuid}>
+              <div className="Flex-1">
                 <h4>{this.props.title}</h4>
+              </div>
                 <div className="inputsContainer">
                     <div className = "controlItem">
                         <span>x</span>
-                        <input className="D_Widget"  type="number" value={this.state.values.x} step={0.1}  onChange={(evt)=>this.onValueChanged(evt.target.value,'x')}/>
+                        <input className="D_Widget"  type="number" value={this.state.values.x} step={0.1}  onChange={(evt)=>this.onValueChanged(evt,'x')}/>
                     </div>
                     <div  className = "controlItem">
                         <span>y</span>
-                        <input className="D_Widget"   type="number" value={this.state.values.y} step={0.1}  onChange={(evt)=>this.onValueChanged(evt.target.value,'y')}/>
+                        <input className="D_Widget"   type="number" value={this.state.values.y} step={0.1}  onChange={(evt)=>this.onValueChanged(evt,'y')}/>
                     </div>
                     <div className = "controlItem">
                         <span>z</span>

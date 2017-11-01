@@ -17,6 +17,7 @@
     flex: 1;
     flex-direction: row;
     align-items: flex-end;
+    min-height: 50px;
 }
 .Widget .controlItem{
     flex: 1;
@@ -32,4 +33,5 @@
 
 .Widget .controlItem span{
     padding-right: 5px;
+  color: #9fa09f;
 }

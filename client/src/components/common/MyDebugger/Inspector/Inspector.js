@@ -4,7 +4,7 @@
 import React, {Component} from 'react'
 import "./Inspector.css"
 import Vector3Widget from "../Widgets/Vector3Widget/Vector3Widget";
-import Helper from "../Helper";
+import Helper from "../../../../lib/Three/Helper";
 import * as _ from 'lodash'
 import InputWidget from "../Widgets/InputWidget/InputWidget";
 import ConfirmWidget from "../Widgets/ConfirmWidget/ConfirmWidget";

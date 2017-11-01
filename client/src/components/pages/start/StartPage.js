@@ -18,9 +18,11 @@ class StartPage extends React.Component {
   renderPresets(){
     let presets = this.props.roomPresets;
     if(!presets.length) return null;
+
     return _.map(presets,(item,index)=>{
+      let active = (item.id ===this.props.room.id)?'active':'';
       return (
-        <div  key={index}>
+        <div  key={index} className={active}>
           <a onClick={()=>this.setRoom(item)}>{`preset id: ${item.id}`}</a>
       </div>
       );

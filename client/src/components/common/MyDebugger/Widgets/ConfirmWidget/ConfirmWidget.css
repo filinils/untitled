@@ -1,5 +1,5 @@
 .ConfirmWidget{
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,5 +8,7 @@
 }
 
 .ConfirmWidget button{
-    margin-right: 4px;
+    margin: 0;
+  padding: 0;
+  width: 100%;
 }

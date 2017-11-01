@@ -31,8 +31,8 @@ export default class HierarchyItem extends Component {
     render() {
         let item = this.props.item;
         let activeUUID = (this.props.activeObject)?this.props.activeObject.uuid:0;
-        let marker=(item.children.length)?'chevron_right':'';
-        let rotateClass = (this.state.open)?'rotate':'';
+        let rotateClass = (this.state.open)?'fa fa-chevron-right rotate':'fa fa-chevron-right';
+      let marker=(item.children.length)?(<i className={` ${rotateClass}`}/>):null;
 
         const active =(item.uuid === activeUUID)?'active':'';
         const triggerName = (item.name.length)?item.name:item.constructor.name;
@@ -41,7 +41,7 @@ export default class HierarchyItem extends Component {
            <div className={`HierarchyItem`}>
                <a className="markerContainer"
                    onClick={this.toggle.bind(this)}>
-                 <i className={`material-icons ${rotateClass}`}>{marker}</i>
+                 {marker}
                </a>
                <Collapsible open={this.state.open}
                             transitionTime ={100}

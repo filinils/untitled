@@ -2,7 +2,13 @@
 background-color: yellow;
 }
 
+.MyDebugger span{
+  font-family: sans-serif;
+}
 
+.MyDebugger p{
+  font-family: sans-serif;
+}
 .D_Widget{
   position: relative;
   background-color: #262626;
@@ -17,6 +23,8 @@ background-color: yellow;
   background-color: #212121;
   text-align: center;
   border: none;
+  width: auto;
+  font-size: 14px;
 }
 
 .Flex-1{
@@ -31,6 +39,12 @@ background-color: yellow;
 .Flex-Container-col{
   display: flex;
   flex-direction: column;
+
+}
+
+.Flex-Container-row{
+  display: flex;
+  flex-direction: row;
 
 }
 
@@ -49,6 +63,8 @@ background-color: yellow;
 }
 .MyDebugger .PanelContainer h3{
   margin-left: 5px;
+  font-size: 24px;
+  font-weight: 200;
 }
 .MyDebugger .PanelContainer .AddingContainer{
   flex: 1;
@@ -116,3 +132,10 @@ a:hover{
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+.MyDebugger button{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
