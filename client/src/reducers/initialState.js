@@ -1,5 +1,7 @@
+import emptyRoomPreset from '../data/mockup/roomDataEmpty';
+
 export default {
   persons: [],
   roomPresets:[],
-  room:null
+  room:JSON.parse(emptyRoomPreset)
 };

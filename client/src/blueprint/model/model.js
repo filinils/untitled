@@ -32,11 +32,14 @@ export default textureDir => {
     var data = json;
     if(!data)return null;
 
+    if(data.isCustom)
+      scope.scene.uuid = data.id;
+
     newRoom(data.floorplan, data.items);
 		roomLoadedCallbacks.fire();
 	}
 
-	function exportSerialized() {
+	function exportRoom() {
 		var items_arr = [];
 		var objects = scope.scene.getItems();
 		for (var i = 0; i < objects.length; i++) {
@@ -59,14 +62,18 @@ export default textureDir => {
 		}
 
 		var room = {
+      id:scope.scene.uuid,
+      isCustom:true,
 			floorplan: this.floorplan.saveFloorplan(),
 			items: items_arr
 		};
     console.log('exported room items',room.items);
     console.log ('items',objects);
-		return JSON.stringify(room);
+		return room;
 	}
-
+  function exportSerialized() {
+    return  JSON.stringify(exportRoom());
+  }
 	function newRoom(floorplan, items) {
 		scope.scene.clearItems();
 		scope.floorplan.loadFloorplan(floorplan);
@@ -101,6 +108,7 @@ export default textureDir => {
 		scene: this.scene,
 		floorplan: this.floorplan,
 		loadSerialized,
-    exportSerialized
+    exportSerialized,
+    exportRoom
 	};
 };

@@ -8,8 +8,8 @@ export function removeItem(item) {
   return { type: types.REMOVE_ITEM, item };
 }
 
-export function setRoom(serializedRoom) {
-  return { type: types.SET_ROOM, room:JSON.parse(serializedRoom) };
+export function setRoom(room) {
+  return { type: types.SET_ROOM, room };
 }
 
 

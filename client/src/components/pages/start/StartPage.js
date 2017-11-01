@@ -21,7 +21,7 @@ class StartPage extends React.Component {
     return _.map(presets,(item,index)=>{
       return (
         <div  key={index}>
-          <a onClick={()=>this.setRoom(item)}>{`preset index: ${index}`}</a>
+          <a onClick={()=>this.setRoom(item)}>{`preset id: ${item.id}`}</a>
       </div>
       );
     });

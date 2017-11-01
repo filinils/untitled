@@ -5,8 +5,8 @@ export function loadPresetsSuccess(presets) {
   return { type: types.LOAD_PRESETS_SUCCESS, presets };
 }
 
-export function addPreset(preset) {
-  return { type: types.ADD_PRESET, preset };
+export function savePreset(room) {
+  return { type: types.ADD_PRESET, room };
 }
 
 export function loadPresets() {

@@ -1,4 +1,5 @@
 import * as types from '../actions/actionTypes';
+import * as _ from 'lodash'
 
 import initialState from './initialState';
 
@@ -8,10 +9,12 @@ export default function roomPresetsReducer(state = initialState.roomPresets, act
             return action.presets;
       case types.ADD_PRESET:
         let newState = [...state];
-        newState.push(action.preset);
+        newState = _.filter(newState,item=>item.id !== action.room.id);
+        newState.push(action.room);
         return newState;
         default:
             return state;
 
     }
 }
+

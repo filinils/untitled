@@ -6,8 +6,8 @@ export default () => {
     function getAll() {
         return Promise.resolve(
           [
-            _room1,
-            _room2,
+            JSON.parse(_room1),
+            JSON.parse(_room2),
           ]
         );
     }
