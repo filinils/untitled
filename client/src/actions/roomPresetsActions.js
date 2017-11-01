@@ -5,6 +5,10 @@ export function loadPresetsSuccess(presets) {
   return { type: types.LOAD_PRESETS_SUCCESS, presets };
 }
 
+export function addPreset(preset) {
+  return { type: types.ADD_PRESET, preset };
+}
+
 export function loadPresets() {
   return function(dispatch) {
     const instance = dc();

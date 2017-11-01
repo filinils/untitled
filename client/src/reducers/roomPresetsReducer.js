@@ -6,6 +6,10 @@ export default function roomPresetsReducer(state = initialState.roomPresets, act
     switch (action.type) {
         case types.LOAD_PRESETS_SUCCESS:
             return action.presets;
+      case types.ADD_PRESET:
+        let newState = [...state];
+        newState.push(action.preset);
+        return newState;
         default:
             return state;
 

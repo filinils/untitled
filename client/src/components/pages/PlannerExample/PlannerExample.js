@@ -11,6 +11,7 @@ import roomData from "./roomData";
 import { connect } from "react-redux";
 import {bindActionCreators} from "redux";
 import * as roomActions from '../../../actions/roomActions';
+import * as roomPresetsActions from '../../../actions/roomPresetsActions';
 
 class PlannerExample extends React.Component {
 	constructor(props) {
@@ -82,6 +83,11 @@ class PlannerExample extends React.Component {
 		return this.state.plannerMode !== mode ? "" : "hide";
 	}
 
+	saveScene(){
+	  let serializedRoom = 	this.blueprint3d.model.exportSerialized();
+	  this.props.roomPresetsActions.addPreset(serializedRoom);
+  }
+
 	render() {
 		return (
 			<div id="canvas-wrapper">
@@ -103,6 +109,12 @@ class PlannerExample extends React.Component {
 							<button>
 								<span className="fa fa-plus" /> Add item
 							</button>
+              <button
+                className="primary"
+                onClick={this.saveScene.bind(this)}
+              >
+                save scene
+              </button>
 						</div>
 					</div>
 				</div>
@@ -116,6 +128,8 @@ class PlannerExample extends React.Component {
 							>
 								Done
 							</button>
+
+
 						</div>
 					</div>
 				</div>
@@ -137,6 +151,7 @@ function mapStateToProps(state, ownProps) {
 function mapDispatchToProps(dispatch) {
   return {
     roomActions: bindActionCreators(roomActions, dispatch),
+    roomPresetsActions: bindActionCreators(roomPresetsActions, dispatch),
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(PlannerExample);

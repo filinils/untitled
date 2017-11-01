@@ -52,7 +52,9 @@ export default textureDir => {
 				scale_x: object.scale.x,
 				scale_y: object.scale.y,
 				scale_z: object.scale.z,
-				fixed: object.fixed
+				fixed: object.fixed,
+        texture_maps:object.metadata.textureMaps,
+        options:object.options
 			};
 		}
 
@@ -60,7 +62,8 @@ export default textureDir => {
 			floorplan: this.floorplan.saveFloorplan(),
 			items: items_arr
 		};
-
+    console.log('exported room items',room.items);
+    console.log ('items',objects);
 		return JSON.stringify(room);
 	}
 
@@ -97,6 +100,7 @@ export default textureDir => {
 	return {
 		scene: this.scene,
 		floorplan: this.floorplan,
-		loadSerialized
+		loadSerialized,
+    exportSerialized
 	};
 };
