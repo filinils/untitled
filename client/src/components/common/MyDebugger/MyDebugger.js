@@ -69,11 +69,11 @@ export default class MyDebugger extends Component {
         if(!this.props.enabled) return null;
         return (
             <div className="MyDebugger">
-                <div className="PanelContainer left ">
+                <div className="PanelContainer ">
                     {this.renderInspector()}
                 </div>
 
-                <div className="PanelContainer right">
+                <div className="PanelContainer">
                     {this.renderHierarchy()}
                     {this.renderAddObjectSection()}
                 </div>

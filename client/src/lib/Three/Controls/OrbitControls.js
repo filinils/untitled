@@ -661,7 +661,7 @@ module.exports = function (THREE) {
         //
 
         function onMouseDown( event ) {
-
+            console.log(event);
             if ( scope.enabled === false ) return;
 
             event.preventDefault();

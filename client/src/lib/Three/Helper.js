@@ -13,7 +13,7 @@ export default class Helper {
         camera.position.set(0,3,10);
         camera.rotation.z=THREE.Math.degToRad(0);
         parent.add(camera);
-        parent.add( new THREE.CameraHelper(camera));
+        //parent.add( new THREE.CameraHelper(camera));
         return camera;
     }
 

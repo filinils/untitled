@@ -14,13 +14,23 @@ const SCENE_HEIGHT = window.innerHeight;
 
 export default class FirstScene extends Component {
 
-    deltaTime;
+    time;
+    cameras;
+    camerasCount;
+    activeCameraIndex;
+
+    cameraToTarget;
+    rotate;
 
     constructor(props) {
         super(props);
         this.state = {
             sceneReady:false,
         }
+
+      this.cameras = [];
+      this.camerasCount = 3;
+      this.activeCameraIndex=0;
 
         this.animate = this.animate.bind(this);
     }
@@ -44,19 +54,19 @@ export default class FirstScene extends Component {
         this.refs.threeDom.appendChild(this.renderer.domElement);
         this.camera = Helper.createCamera(this.scene,{aspectRatio:SCENE_WIDTH/SCENE_HEIGHT});
         this.control = new (OrbitControls(THREE))(this.camera);
-
-
         this.tControl = new (TransformControls(THREE))( this.camera, this.renderer.domElement );
 
         this.mainLight = Helper.createDirectionalLight(this.scene);
-        this.spotLight1 = Helper.createSpotLight(this.scene);
-        this.spotLight1.position.set(2,7,2);
+        this.sun = Helper.createDirectionalLight(this.scene);
         this.scene.add( new THREE.GridHelper( 1000, 10 ) );
         this.plane = Helper.createPlane(this.scene);
         this.cube = Helper.createCube(this.scene);
 
         this.tControl.attach(this.cube);
         this.scene.add(this.tControl);
+
+        this.cameras = this.createCameras(this.camerasCount);
+        this.rotate = false;
 
         window.addEventListener( 'keydown', ( event ) =>{
             if(!this.tControl)return;
@@ -83,10 +93,16 @@ export default class FirstScene extends Component {
                     this.tControl.setMode( "scale" );
                     break;
 
-                case 187:
+                case 32: //space
+                  this.changeCamera();
+                  break;
+              case 96:
+                this.toggleRotating(this.cube);
+                break;
                 case 107: // +, =, num+
                     this.tControl.setSize(  this.tControl.size + 0.1 );
                     break;
+
 
                 case 189:
                 case 109: // -, _, num-
@@ -109,21 +125,62 @@ export default class FirstScene extends Component {
             }
 
         });
-        this.deltaTime = 0;
+        this.time = 0;
 
         this.setState({sceneReady:true,root:this.scene});
     }
 
+    createCameras(count){
+      let cameras = [];
+      for(let i=0; i<count;i++){
+        let camera = Helper.createCamera(this.scene,{aspectRatio:SCENE_WIDTH/SCENE_HEIGHT});
+        camera.zoom = (Math.random()*4);
+        camera.position.x = Math.random()*10;
+        camera.position.z = Math.random()*10;
+        camera.position.y = Math.random()*7;
+        cameras.push(camera);
+      }
+      return cameras;
+    }
+
+    changeCamera(){
+      console.log('change camera');
+      this.activeCameraIndex +=1;
+      if(this.activeCameraIndex>=this.cameras.length)
+        this.activeCameraIndex=0;
+      let activeCamera = this.cameras[this.activeCameraIndex];
+      activeCamera.lookAt(this.cube.position);
+    }
+
+    toggleRotating(target){
+      this.rotate = !this.rotate;
+      let camera = this.cameras[this.activeCameraIndex];
+      this.cameraToTarget = camera.position.distanceTo(target.position);
+    }
+
+    rotateCamera(){
+      let r = this.time;
+      let camera = this.cameras[this.activeCameraIndex];
+      camera.position.x = this.cameraToTarget *Math.cos( 2 * r );
+      camera.position.y = this.cameraToTarget *Math.sin( 2 * r );
+    }
 
     animate(){
-        this.deltaTime += 0.02;
-        this.cube.position.y = 0.5*Math.sin(2*this.deltaTime) +1;
+        this.time += 0.02;
+        this.cube.position.y = 0.5*Math.sin(2*this.time) +1;
         //this.plane.rotation.y = this.deltaTime;
         this.tControl.update();
 
         if(!this.renderer)return;
+        if(this.rotate)
+          this.rotateCamera();
+        this.cameras[this.activeCameraIndex].lookAt(this.cube.position);
 
-        this.renderer.render(this.scene,this.camera);
+        this.renderer.clear();
+
+        this.renderer.setViewport( 0,0, SCENE_WIDTH, SCENE_HEIGHT );
+        this.renderer.render(this.scene,this.cameras[this.activeCameraIndex]);
+
         this.forceUpdate();
         requestAnimationFrame(this.animate);
     }

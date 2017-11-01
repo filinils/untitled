@@ -27,8 +27,6 @@ export default class Vector3Widget extends Component {
 
 
     onValueChanged(evt, axis){
-      console.log('changed',evt)
-      evt.stopPropagation();
       let value = evt.target.value;
         let retVector = Object.assign({},this.state.values);
         retVector[axis] = value;
