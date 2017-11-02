@@ -1,10 +1,10 @@
 import Utils from "../core/utils";
 import * as THREE from "three";
 
-export default function(three, model, camera, element, controls, hud) {
+export default function(three, model, _camera, element, controls, hud) {
 	let scope = this;
 	this.enabled = true;
-
+  let camera = _camera
 	let scene = model.scene;
 	window.scene = model.scene;
 
@@ -31,6 +31,13 @@ export default function(three, model, camera, element, controls, hud) {
 	let state = states.UNSELECTED;
 
 	let needsUpdate = true;
+
+	this.getCamera = function () {
+    return camera;
+  }
+  this.setCamera = function (_camera) {
+     camera = _camera;
+  }
 
 	function init() {
 		element.addEventListener("mousedown", mouseDownEvent);

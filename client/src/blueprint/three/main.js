@@ -6,25 +6,28 @@ import Lights from "./lights";
 import Skybox from "./skybox";
 import HUD from "./hud";
 import Callbacks from "../../utils/callbacks";
+import CAMERAS from '../../data/mockup/cameras';
 
 export default function(model, element, canvasElement, opts) {
-	var scope = this;
+	let scope = this;
+	let activeCameraIndex = 0;
+	let cameras = [];
 
 	this.itemSelectedCallbacks = new Callbacks();
 	this.itemUnselectedCallbacks = new Callbacks();
 	this.nothingClicked = new Callbacks();
 
-	var options = {
-		resize: true,
-		pushHref: false,
-		spin: true,
-		spinSpeed: 0.00002,
-		clickPan: true,
-		canMoveFixedItems: false
-	};
+	const options = {
+    resize: true,
+    pushHref: false,
+    spin: true,
+    spinSpeed: 0.00002,
+    clickPan: true,
+    canMoveFixedItems: false
+  };
 
 	// override with manually set options
-	for (var opt in options) {
+	for (let opt in options) {
 		if (options.hasOwnProperty(opt) && opts.hasOwnProperty(opt)) {
 			options[opt] = opts[opt];
 		}
@@ -33,22 +36,22 @@ export default function(model, element, canvasElement, opts) {
 	let scene = model.scene;
 
 	this.element = document.getElementById(element);
-	var domElement;
+	let domElement;
 
-	var camera;
-	var renderer;
+	let camera;
+	let renderer;
 	this.controls;
-	var canvas;
-	var controller;
-	var floorplan;
+	let canvas;
+	let controller;
+	let floorplan;
 
-	var needsUpdate = false;
+	let needsUpdate = false;
 
-	var lastRender = Date.now();
-	var mouseOver = false;
-	var hasClicked = false;
+	let lastRender = Date.now();
+	let mouseOver = false;
+	let hasClicked = false;
 
-	var hud;
+	let hud;
 
 	this.heightMargin;
 	this.widthMargin;
@@ -60,6 +63,7 @@ export default function(model, element, canvasElement, opts) {
 
 		domElement = scope.element; // Container
 		camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
+		cameras = createCameras();
 		renderer = new THREE.WebGLRenderer({
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
@@ -69,16 +73,16 @@ export default function(model, element, canvasElement, opts) {
 		renderer.shadowMapSoft = true;
 		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-		var skybox = new Skybox(scene);
+		const skybox = new Skybox(scene);
 
-		scope.controls = new Controls(camera, domElement);
+		scope.controls = new Controls(cameras[activeCameraIndex], domElement);
 
 		hud = new HUD(scope);
 
 		controller = new Controller(
 			scope,
 			model,
-			camera,
+      cameras[activeCameraIndex],
 			scope.element,
 			scope.controls,
 			hud
@@ -96,7 +100,7 @@ export default function(model, element, canvasElement, opts) {
 		scope.centerCamera();
 		model.floorplan.fireOnUpdatedRooms(scope.centerCamera);
 
-		var lights = new Lights(scene, model.floorplan);
+		const lights = new Lights(scene, model.floorplan);
 
 		floorplan = new Floorplan(scene, model.floorplan, scope.controls);
 
@@ -110,19 +114,63 @@ export default function(model, element, canvasElement, opts) {
 		scope.element.addEventListener("click", function() {
 			hasClicked = true;
 		});
+    window.addEventListener("keydown", function(event) {
+      switch ( event.keyCode ) {
+
+        case 32: //space
+          changeCamera();
+          break;
+
+      }
+
+      });
 	}
 
 	function spin() {
 		if (options.spin && !mouseOver && !hasClicked) {
-			var theta =
-				2 * Math.PI * options.spinSpeed * (Date.now() - lastRender);
+			const theta =
+        2 * Math.PI * options.spinSpeed * (Date.now() - lastRender);
 			scope.controls.rotateLeft(theta);
 			scope.controls.update();
 		}
 	}
+  function changeCamera(){
+	  let currentCameraIndex = activeCameraIndex;
+    console.log('change camera');
+    activeCameraIndex +=1;
+    if(activeCameraIndex>=cameras.length)
+      activeCameraIndex=0;
+    scope.controls.object = cameras[activeCameraIndex];
+    controller.setCamera(cameras[activeCameraIndex]);
+    setCameraTransform(cameras[currentCameraIndex],currentCameraIndex);
+
+  }
+  function createCameras(){
+	  let camsData = CAMERAS;
+    let cameras = [];
+   camsData.forEach((item,index)=>{
+      let camera = new THREE.PerspectiveCamera(item.fov, 1, 1, 10000);
+     setCameraTransform(camera,index);
+      cameras.push(camera);
+    });
+    return cameras;
+  }
+
+  function setCameraTransform(camera,index){
+    debugger
+    let item= CAMERAS[index];
+    camera.zoom = item.zoom;
+    camera.updateProjectionMatrix();
+    camera.position.x = item.position.x;
+    camera.position.y = item.position.y;
+    camera.position.z = item.position.z;
+    camera.rotation.x = item.rotation.x;
+    camera.rotation.y = item.rotation.y;
+    camera.rotation.z = item.rotation.y;
+  }
 
 	this.dataUrl = function() {
-		var dataUrl = renderer.domElement.toDataURL("image/png");
+		const dataUrl = renderer.domElement.toDataURL("image/png");
 		return dataUrl;
 	};
 
@@ -150,6 +198,7 @@ export default function(model, element, canvasElement, opts) {
 		return camera;
 	};
 
+
 	this.needsUpdate = function() {
 		needsUpdate = true;
 	};
@@ -172,12 +221,13 @@ export default function(model, element, canvasElement, opts) {
 	}
 
 	function render() {
+
 		spin();
 		if (shouldRender()) {
 			renderer.clear();
-			renderer.render(scene, camera);
+			renderer.render(scene, cameras[activeCameraIndex]);
 			renderer.clearDepth();
-			renderer.render(hud.getScene(), camera);
+			renderer.render(hud.getScene(), cameras[activeCameraIndex]);
 		}
 		lastRender = Date.now();
 	}
@@ -221,15 +271,15 @@ export default function(model, element, canvasElement, opts) {
 	};
 
 	this.centerCamera = function() {
-		var yOffset = 150.0;
-		var pan = model.floorplan.getCenter();
+		const yOffset = 150.0;
+		const pan = model.floorplan.getCenter();
 		pan.y = yOffset;
 
 		scope.controls.target = pan;
 
-		var distance = model.floorplan.getSize().z * 1.5;
+		const distance = model.floorplan.getSize().z * 1.5;
 
-		var offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
+		const offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
 		camera.position.copy(offset);
 
 		scope.controls.update();
@@ -240,14 +290,14 @@ export default function(model, element, canvasElement, opts) {
 	this.projectVector = function(vec3, ignoreMargin) {
 		ignoreMargin = ignoreMargin || false;
 
-		var widthHalf = scope.elementWidth / 2;
-		var heightHalf = scope.elementHeight / 2;
+		const widthHalf = scope.elementWidth / 2;
+		const heightHalf = scope.elementHeight / 2;
 
-		var vector = new THREE.Vector3();
+		const vector = new THREE.Vector3();
 		vector.copy(vec3);
 		vector.project(camera);
 
-		var vec2 = new THREE.Vector2();
+		const vec2 = new THREE.Vector2();
 
 		vec2.x = vector.x * widthHalf + widthHalf;
 		vec2.y = -(vector.y * heightHalf) + heightHalf;
