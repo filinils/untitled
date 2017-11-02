@@ -162,22 +162,29 @@ export default class FirstScene extends Component {
       let r = this.time;
       let camera = this.cameras[this.activeCameraIndex];
       camera.position.x = this.cameraToTarget *Math.cos( 2 * r );
-      camera.position.y = this.cameraToTarget *Math.sin( 2 * r );
+      camera.position.z = this.cameraToTarget *Math.sin( 2 * r );
+    }
+
+    updateCamera(){
+      if(this.rotate)
+        this.rotateCamera();
+      this.cameras[this.activeCameraIndex].lookAt(this.cube.position);
+
+    }
+
+    updateCube(){
+      this.cube.position.y = 0.5*Math.sin(2*this.time) +1;
     }
 
     animate(){
-        this.time += 0.02;
-        this.cube.position.y = 0.5*Math.sin(2*this.time) +1;
-        //this.plane.rotation.y = this.deltaTime;
-        this.tControl.update();
-
         if(!this.renderer)return;
-        if(this.rotate)
-          this.rotateCamera();
-        this.cameras[this.activeCameraIndex].lookAt(this.cube.position);
+
+        this.time += 0.02;
+        this.updateCube();
+        this.tControl.update();
+        this.updateCamera();
 
         this.renderer.clear();
-
         this.renderer.setViewport( 0,0, SCENE_WIDTH, SCENE_HEIGHT );
         this.renderer.render(this.scene,this.cameras[this.activeCameraIndex]);
 
