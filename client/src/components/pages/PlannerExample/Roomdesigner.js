@@ -68,6 +68,12 @@ export default class Roomdesigner extends React.Component {
 							>
 								Edit floorplan
 							</button>
+              <button
+                className="primary"
+                onClick={this.props.onSaveClick}
+              >
+                save scene
+              </button>
 						</div>
 						<div className="right">
 							<button className="square fa fa-rotate-left" />

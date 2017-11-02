@@ -29,7 +29,7 @@ export default [
       y: 0.6368668521698821,
       z: 0,
     },
-    fov: 45,
+    fov: 23,
     zoom: 1
   }
 ];

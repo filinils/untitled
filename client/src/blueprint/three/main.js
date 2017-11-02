@@ -63,7 +63,11 @@ export default function(model, element, canvasElement, opts) {
 
 		domElement = scope.element; // Container
 		camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
+
 		cameras = createCameras();
+		cameras.push(camera);
+		activeCameraIndex = cameras.length-1;
+
 		renderer = new THREE.WebGLRenderer({
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()

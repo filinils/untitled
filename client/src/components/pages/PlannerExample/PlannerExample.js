@@ -99,21 +99,16 @@ class PlannerExample extends React.Component {
 	render() {
 		return (
 			<div id="canvas-wrapper">
-        <div className="testControls">
-          <a onClick={this.logCamera.bind(this)}>Log camera</a>
-          <button
-            className="primary"
-            onClick={this.saveScene.bind(this)}
-          >
-            save scene
-          </button>
-        </div>
+        {/*<div className="testControls">*/}
+          {/*<a onClick={this.logCamera.bind(this)}>Log camera</a>*/}
+         {/**/}
+        {/*</div>*/}
         {/*{this.renderDebugger()}*/}
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
-
 				<Roomdesigner
 					showing={this.getViewerClass("2d")}
 					plannerMode={this.plannerMode}
+          onSaveClick={this.saveScene.bind(this)}
 					controller={this.controller}
 				/>
 				<Floorplanner
