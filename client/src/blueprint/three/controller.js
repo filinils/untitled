@@ -6,6 +6,8 @@ export default function(three, model, _camera, element, controls, hud) {
 	this.enabled = true;
   let camera = _camera
 	let scene = model.scene;
+	this.scene = scene;
+
 	window.scene = model.scene;
 
 	let plane; // ground plane used for intersection testing
@@ -472,6 +474,10 @@ export default function(three, model, _camera, element, controls, hud) {
 			scope.needsUpdate = true;
 		}
 	}
+
+	this.getSelectedObject = () => {
+		return selectedObject;
+	};
 
 	init();
 }

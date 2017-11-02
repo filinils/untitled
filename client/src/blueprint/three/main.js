@@ -157,7 +157,6 @@ export default function(model, element, canvasElement, opts) {
   }
 
   function setCameraTransform(camera,index){
-    debugger
     let item= CAMERAS[index];
     camera.zoom = item.zoom;
     camera.updateProjectionMatrix();

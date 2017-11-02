@@ -28,7 +28,7 @@ export default options => {
 
 	return {
 		model,
-		three:this.three,
+		three: this.three,
 		floorplanner
 	};
 };
