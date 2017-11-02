@@ -1,3 +1,6 @@
+const articles = require("../articles.json");
+
 export default {
-  persons: []
+	persons: [],
+	articles: articles
 };

@@ -1,0 +1,29 @@
+[
+	{
+		"articleId": "59156749",
+		"name": "Vallavik",
+		"description": "Kontinentalsäng, Hyllestad medium fast, Tussöy grå",
+		"priceIncTax": 12495,
+		"priceExTax": 9996,
+		"baseUrl": "/assets/models/Bed/",
+		"thumbnails": [
+			"vallavik-kontinentalsang-gra__0373800_PE553244_S4.JPG",
+			"vallavik-kontinentalsang-gra__0373816_PE553253_S4.JPG",
+			"vallavik-kontinentalsang-gra__0373823_PE553259_S4.JPG",
+			"vallavik-kontinentalsang-gra__0373824_PE553260_S4.JPG",
+			"vallavik-kontinentalsang-gra__0390507_PH127809_S4.JPG",
+			"vallavik-kontinentalsang-gra__0390520_PH127810_S4.JPG",
+			"vallavik-kontinentalsang-gra__0396696_PH128757_S4.JPG",
+			"vallavik-kontinentalsang-gra__0398295_PH126089_S4.JPG"
+		]
+	},
+	{
+		"articleId": "29023402",
+		"name": "Billy",
+		"description": "Bokhylla, björkfaner",
+		"priceIncTax": 1190,
+		"priceExTax": 952,
+		"baseUrl": "/assets/models/Bookshelf/",
+		"thumbnails": ["Billy1.jpg", "Billy2.jpg", "Billy3.jpg"]
+	}
+]

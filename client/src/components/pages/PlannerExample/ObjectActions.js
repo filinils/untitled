@@ -15,9 +15,17 @@ export default class ObjectActions extends React.Component {
 						left: this.props.position.x
 					}}
 				>
-					<button className="square">
-						<span className="fa fa-trash" />
-					</button>
+					<a
+						href="#"
+						className="fa fa-trash"
+						onClick={this.props.removeSelectedObject}
+					/>
+					<span className="divider"> </span>
+					<a
+						href="#"
+						className="fa fa-info-circle"
+						onClick={this.props.openInfo}
+					/>
 				</div>
 			);
 		} else {
