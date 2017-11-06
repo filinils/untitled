@@ -40,7 +40,7 @@ export default class FPController {
 
     this.velocity = new THREE.Vector3();
     this.direction= new THREE.Vector3();
-    this.raycaster = new THREE.Raycaster( new THREE.Vector3(), new THREE.Vector3( 0, - 1, 0 ), 0, 10 );
+    this.raycaster = new THREE.Raycaster( new THREE.Vector3(), new THREE.Vector3( 0, - 1, 0 ), 0, 100 );
     this.prevTime = Date.now();
     document.addEventListener('keydown', this.onKeyDown.bind(this), false);
     document.addEventListener('keyup', this.onKeyUp.bind(this), false);
@@ -70,10 +70,10 @@ export default class FPController {
         this.moveRight = true;
         break;
 
-      case 32: // space
-        if (this.canJump === true) this.velocity.y += 350;
-        this.canJump = false;
-        break;
+      // case 32: // space
+      //   if (this.canJump === true) this.velocity.y += 350;
+      //   this.canJump = false;
+      //   break;
 
     }
 
@@ -111,13 +111,21 @@ export default class FPController {
   setEnable(value){
     this.enabled = value;
     this.controls.enabled=value;
+
+    if(value){
+      let element = document.body;
+      element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
+      element.requestPointerLock();
+    }else{
+      document.exitPointerLock();
+    }
   }
 
   render() {
     if (this.enabled === true) {
 
       this.raycaster.ray.origin.copy(this.controls.getObject().position);
-      this.raycaster.ray.origin.y -= 10;
+      this.raycaster.ray.origin.y -= 100;
 
       let intersections = this.raycaster.intersectObjects(this.objects);
 
@@ -129,7 +137,7 @@ export default class FPController {
       this.velocity.x -= this.velocity.x * 10.0 * delta;
       this.velocity.z -= this.velocity.z * 10.0 * delta;
 
-      this.velocity.y -= 9.8 * 100.0 * delta; // 100.0 = mass
+      this.velocity.y -= 9.8 * 200.0 * delta; // 100.0 = mass
 
       this.direction.z = Number(this.moveForward) - Number(this.moveBackward);
       this.direction.x = Number(this.moveLeft) - Number(this.moveRight);
@@ -149,10 +157,10 @@ export default class FPController {
       this.controls.getObject().translateY(this.velocity.y * delta);
       this.controls.getObject().translateZ(this.velocity.z * delta);
 
-      if (this.controls.getObject().position.y < 20) {
+      if (this.controls.getObject().position.y < 100) {
 
         this.velocity.y = 0;
-        this.controls.getObject().position.y = 20;
+        this.controls.getObject().position.y = 100;
 
         this.canJump = true;
 

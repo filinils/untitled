@@ -147,6 +147,9 @@ export default function(model, element, canvasElement, opts) {
 		}
 	}
   function changeCamera(){
+	  if(!scope.controls.enabled||!controller.enabled)
+	    return;
+
 	  let currentCameraIndex = activeCameraIndex;
     console.log('change camera');
     activeCameraIndex +=1;
@@ -252,6 +255,7 @@ export default function(model, element, canvasElement, opts) {
 	function render() {
 
 	  if(fpController.enabled){
+      floorplan.updateEdges();
       fpController.render();
       return;
     }

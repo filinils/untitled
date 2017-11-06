@@ -19,7 +19,7 @@ export default class PointerLockControls  {
   }
 
   init(){
-    this.cameraHeight=20;
+    this.cameraHeight=100;
     this.camera.rotation.set( 0, 0, 0 );
 
     this.pitchObject = new THREE.Object3D();
