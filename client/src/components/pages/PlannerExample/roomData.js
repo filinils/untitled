@@ -115,7 +115,7 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"options":{"isOneGeometry":true,"doNotCast":true},
+		"options":{"isOneGeometry":true,"doNotCast":true,"defaultEmissiveness":"0xaaaaaa"},
 		"texture_maps":[
 			{
 				"type":"BaseColor"

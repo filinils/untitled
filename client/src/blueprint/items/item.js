@@ -59,6 +59,9 @@ export default class Item extends THREE.Mesh {
 			this.castShadow = true;
 		}
 
+		this.userSetEmissiveness = this.defaultEmissiveness = options.defaultEmissiveness || 0x000000;
+		this.material.emissive.setHex(this.defaultEmissiveness);
+
 		this.receiveShadow = true;
 
 		this.geometry = geometry;
@@ -162,7 +165,7 @@ export default class Item extends THREE.Mesh {
 	updateHighlight() {
 		var on = this.hover || this.selected;
 		this.highlighted = on;
-		var hex = on ? this.emissiveColor : 0x000000;
+		var hex = on ? this.emissiveColor : this.userSetEmissiveness;
 		this.material.emissive.setHex(hex);
 	}
 
