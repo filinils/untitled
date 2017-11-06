@@ -6,6 +6,7 @@ import WallItem from "./wall_item";
 import InWallItem from "./in_wall_item";
 import InWallFloorItem from "./in_wall_floor_item";
 import OnFloorItem from "./on_floor_item";
+import OnFloorLamp from "./on_floor_lamp";
 import WallFloorItem from "./wall_floor_item";
 
 import * as Core from "../core/configuration";
@@ -17,7 +18,8 @@ const item_types = {
 	3: InWallItem,
 	7: InWallFloorItem,
 	8: OnFloorItem,
-	9: WallFloorItem
+	9: WallFloorItem,
+	10: OnFloorLamp
 };
 
 /** Factory class to create items. */

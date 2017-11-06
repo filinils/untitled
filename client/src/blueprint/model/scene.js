@@ -214,7 +214,20 @@ export default (model, textureDir) => {
 							scale,
 							options
 						);
+
 						item.fixed = fixed || false;
+
+						if(itemType == 10) {
+
+							let light = new THREE.PointLight(0xffffff, 1, 400, 2);
+							light.castShadow = true;
+							
+							item.castShadow = false;
+							item.receiveShadow = false;
+							
+							item.add(light);
+						}
+						
 						scope.items.push(item);
 
 						scope.add(item);
