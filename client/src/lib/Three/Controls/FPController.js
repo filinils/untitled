@@ -23,9 +23,12 @@ export default class FPController {
   objects;
   prevTime;
 
-  constructor(renderer,scene) {
+  floorplan;
+
+  constructor(renderer,scene,floorplan) {
     this.scene = scene;
     this.renderer = renderer;
+    this.floorplan = floorplan;
     this.camera = new THREE.PerspectiveCamera(75, 1.4, 1, 1000);
     this.controls = new PointerLockControl(this.camera);
     this.scene.add(this.controls.getObject());
@@ -45,6 +48,14 @@ export default class FPController {
     document.addEventListener('keydown', this.onKeyDown.bind(this), false);
     document.addEventListener('keyup', this.onKeyUp.bind(this), false);
   }
+
+  keepInBounds(){
+    let target = this.controls.getObject();
+    let corners = this.floorplan.corners;
+    target.position.x=THREE.Math.clamp(target.position.x , 1.15*corners[0].x,0.95*corners[1].x);
+    target.position.z=THREE.Math.clamp(target.position.z , 1.15*corners[2].y,0.95*corners[1].y);
+  }
+
 
   onKeyDown(event) {
 
@@ -134,17 +145,17 @@ export default class FPController {
       let time = Date.now();
       let delta = ( time - this.prevTime ) / 1000;
 
-      this.velocity.x -= this.velocity.x * 10.0 * delta;
-      this.velocity.z -= this.velocity.z * 10.0 * delta;
+      // this.velocity.x -= this.velocity.x * 10.0 * delta;
+      // this.velocity.z -= this.velocity.z * 10.0 * delta;
 
-      this.velocity.y -= 9.8 * 200.0 * delta; // 100.0 = mass
 
       this.direction.z = Number(this.moveForward) - Number(this.moveBackward);
       this.direction.x = Number(this.moveLeft) - Number(this.moveRight);
       this.direction.normalize(); // this ensures consistent movements in all directions
-
-      if (this.moveForward || this.moveBackward) this.velocity.z -= this.direction.z * 400.0 * delta;
-      if (this.moveLeft || this.moveRight) this.velocity.x -= this.direction.x * 400.0 * delta;
+      if(this.direction.length()){
+        this.velocity = this.direction.multiplyScalar(-400 * delta);
+        this.velocity.y -= 9.8 * 200.0 * delta; // 100.0 = mass
+      }
 
       if (onObject === true) {
 
@@ -153,9 +164,11 @@ export default class FPController {
 
       }
 
-      this.controls.getObject().translateX(this.velocity.x * delta);
-      this.controls.getObject().translateY(this.velocity.y * delta);
-      this.controls.getObject().translateZ(this.velocity.z * delta);
+      this.controls.getObject().translateX(this.velocity.x );
+      this.controls.getObject().translateY(this.velocity.y );
+      this.controls.getObject().translateZ(this.velocity.z );
+
+      this.keepInBounds();
 
       if (this.controls.getObject().position.y < 100) {
 

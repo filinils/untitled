@@ -15,6 +15,8 @@ export default function(model, element, canvasElement, opts) {
 	let activeCameraIndex = 0;
 	let cameras = [];
 
+	console.log('floor plan',model.floorplan);
+
 	this.itemSelectedCallbacks = new Callbacks();
 	this.itemUnselectedCallbacks = new Callbacks();
 	this.nothingClicked = new Callbacks();
@@ -82,7 +84,7 @@ export default function(model, element, canvasElement, opts) {
 
 		const skybox = new Skybox(scene);
 
-    fpController = new FPController(renderer,scene);
+    fpController = new FPController(renderer,scene,model.floorplan);
 
 		scope.controls = new Controls(cameras[activeCameraIndex], domElement);
 
