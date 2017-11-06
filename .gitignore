@@ -9,3 +9,4 @@ client/assets/.DS_Store
 /client/.eslintrc
 /client/.jsbeautifyrc
 /.idea/
+/client/npm-debug.log

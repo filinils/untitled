@@ -62,11 +62,9 @@ export default function(model, element, canvasElement, opts) {
 		THREE.ImageUtils.crossOrigin = "";
 
 		domElement = scope.element; // Container
-		camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
 
 		cameras = createCameras();
-		cameras.push(camera);
-		activeCameraIndex = cameras.length-1;
+		camera=cameras[0];
 
 		renderer = new THREE.WebGLRenderer({
 			antialias: true,
@@ -145,7 +143,9 @@ export default function(model, element, canvasElement, opts) {
     if(activeCameraIndex>=cameras.length)
       activeCameraIndex=0;
     scope.controls.object = cameras[activeCameraIndex];
+    scope.controls.update();
     controller.setCamera(cameras[activeCameraIndex]);
+    floorplan.updateEdges();
     setCameraTransform(cameras[currentCameraIndex],currentCameraIndex);
 
   }
@@ -153,10 +153,11 @@ export default function(model, element, canvasElement, opts) {
 	  let camsData = CAMERAS;
     let cameras = [];
    camsData.forEach((item,index)=>{
-      let camera = new THREE.PerspectiveCamera(item.fov, 1, 1, 10000);
-     setCameraTransform(camera,index);
+      let camera = new THREE.PerspectiveCamera(item.fov, 2.1950, 1, 10000);
+      setCameraTransform(camera,index);
       cameras.push(camera);
     });
+
     return cameras;
   }
 
@@ -164,12 +165,13 @@ export default function(model, element, canvasElement, opts) {
     let item= CAMERAS[index];
     camera.zoom = item.zoom;
     camera.updateProjectionMatrix();
+    let rotation = new THREE.Euler(item.rotation.x,item.rotation.y,item.rotation.z);
     camera.position.x = item.position.x;
     camera.position.y = item.position.y;
     camera.position.z = item.position.z;
-    camera.rotation.x = item.rotation.x;
-    camera.rotation.y = item.rotation.y;
-    camera.rotation.z = item.rotation.y;
+    camera.rotation.x = rotation.x;
+    camera.rotation.y = rotation.y;
+    camera.rotation.z = rotation.y;
   }
 
 	this.dataUrl = function() {
@@ -198,7 +200,7 @@ export default function(model, element, canvasElement, opts) {
 	};
 
 	this.getCamera = function() {
-		return camera;
+		return cameras[activeCameraIndex];
 	};
 
 
@@ -225,7 +227,7 @@ export default function(model, element, canvasElement, opts) {
 
 	function render() {
 
-		spin();
+		//spin();
 		if (shouldRender()) {
 			renderer.clear();
 			renderer.render(scene, cameras[activeCameraIndex]);

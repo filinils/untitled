@@ -38,4 +38,16 @@ export default function(scene, floorplan, controls) {
 			scope.edges.push(threeEdge);
 		});
 	}
+
+	this.updateEdges = function () {
+    scope.edges.forEach(edge=>{
+      edge.updateVisibility();
+    });
+  }
+
+  return{
+    updateEdges:this.updateEdges
+  }
+
+
 }
