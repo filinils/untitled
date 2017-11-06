@@ -93,7 +93,7 @@ class PlannerExample extends React.Component {
   }
 
   logCamera(){
-    console.log('camera',this.blueprint3d.three.getCamera())
+    console.log('planner',this.blueprint3d.three.getScene())
   }
 
 	render() {

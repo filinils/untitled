@@ -7,6 +7,8 @@ import Skybox from "./skybox";
 import HUD from "./hud";
 import Callbacks from "../../utils/callbacks";
 import CAMERAS from '../../data/mockup/cameras';
+import FPController from "../../lib/Three/Controls/FPController";
+
 
 export default function(model, element, canvasElement, opts) {
 	let scope = this;
@@ -44,6 +46,8 @@ export default function(model, element, canvasElement, opts) {
 	let canvas;
 	let controller;
 	let floorplan;
+  let fpController;
+
 
 	let needsUpdate = false;
 
@@ -66,7 +70,8 @@ export default function(model, element, canvasElement, opts) {
 		cameras = createCameras();
 		camera=cameras[0];
 
-		renderer = new THREE.WebGLRenderer({
+
+    renderer = new THREE.WebGLRenderer({
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
 		});
@@ -76,6 +81,8 @@ export default function(model, element, canvasElement, opts) {
 		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 		const skybox = new Skybox(scene);
+
+    fpController = new FPController(renderer,scene);
 
 		scope.controls = new Controls(cameras[activeCameraIndex], domElement);
 
@@ -121,6 +128,9 @@ export default function(model, element, canvasElement, opts) {
 
         case 32: //space
           changeCamera();
+          break;
+        case 96: //0
+          toggleFPController();
           break;
 
       }
@@ -172,6 +182,20 @@ export default function(model, element, canvasElement, opts) {
     camera.rotation.x = rotation.x;
     camera.rotation.y = rotation.y;
     camera.rotation.z = rotation.y;
+  }
+
+  function toggleFPController() {
+    let toggle = ! fpController.enabled;
+    scope.controls.enabled=!toggle;
+    controller.enabled=!toggle;
+    fpController.setEnable( toggle);
+
+    if(!toggle){
+      scope.controls.needsUpdate=
+      controller.needsUpdate =
+      needsUpdate =
+      model.scene.needsUpdate=true;
+    }
   }
 
 	this.dataUrl = function() {
@@ -227,6 +251,10 @@ export default function(model, element, canvasElement, opts) {
 
 	function render() {
 
+	  if(fpController.enabled){
+      fpController.render();
+      return;
+    }
 		//spin();
 		if (shouldRender()) {
 			renderer.clear();
