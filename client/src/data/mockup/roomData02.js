@@ -106,7 +106,7 @@ export default `{
 	 
 	  {
 		"item_name": "Lampgeo",
-		"item_type": 1,
+		"item_type": 10,
 		"model_url": "assets/models/IKEA",
 		"xpos": 346.697102333121,
 		"ypos": 72.163997943445,
@@ -116,7 +116,7 @@ export default `{
 		"scale_y": 1,
 		"scale_z": 1,
 		"fixed": false,
-		"options":{"isOneGeometry":true,"doNotCast":true},
+		"options":{"isOneGeometry":true,"doNotCast":true,"defaultEmissiveness":"0xaaaaaa"},
 		"texture_maps":[
 			{
 				"type":"BaseColor"
