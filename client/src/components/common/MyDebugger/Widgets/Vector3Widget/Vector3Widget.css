@@ -1,0 +1,37 @@
+.Widget{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-height: 100px;
+
+
+}
+.Widget h4{
+    text-align: left;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.Widget .inputsContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 50px;
+}
+.Widget .controlItem{
+    flex: 1;
+
+}
+
+.Widget .controlItem input{
+    max-width: 65px;
+    color: #f6f6f6 !important;
+    background-color: #212121;
+    text-align: center;
+}
+
+.Widget .controlItem span{
+    padding-right: 5px;
+  color: #9fa09f;
+}

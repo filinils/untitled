@@ -2,14 +2,14 @@ import * as THREE from "three";
 import Utils from "../core/utils";
 
 export default class Item extends THREE.Mesh {
-	/** Constructs an item. 
+	/** Constructs an item.
 		 * @param model TODO
 		 * @param metadata TODO
 		 * @param geometry TODO
 		 * @param material TODO
 		 * @param position TODO
 		 * @param rotation TODO
-		 * @param scale TODO 
+		 * @param scale TODO
 		 */
 	constructor(
 		model,
@@ -34,6 +34,7 @@ export default class Item extends THREE.Mesh {
 		this.error = false;
 		this.emissiveColor = 0x444444;
 		this.errorColor = 0xff0000;
+		this.options = options;
 
 		/** Does this object affect other floor items */
 		this.obstructFloorMoves = true;
@@ -252,11 +253,11 @@ export default class Item extends THREE.Mesh {
 		return [];
 	}
 
-	/** 
+	/**
 		 * returns the 2d corners of the bounding polygon
-		 * 
+		 *
 		 * offset is Vector3 (used for getting corners of object at a new position)
-		 * 
+		 *
 		 * TODO: handle rotated objects better!
 		 */
 	getCorners(xDim, yDim, position) {

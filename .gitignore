@@ -4,3 +4,9 @@
 client/.DS_Store
 client/assets/.DS_Store
 .DS_Store
+/client/.vscode/
+/client/.editorconfig
+/client/.eslintrc
+/client/.jsbeautifyrc
+/.idea/
+/client/npm-debug.log

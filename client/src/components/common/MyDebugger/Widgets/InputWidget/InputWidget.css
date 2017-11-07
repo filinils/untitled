@@ -1,0 +1,18 @@
+
+.InputWidget{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-height: 100px;
+    justify-content: flex-end;
+}
+
+.InputWidget .inputContainer{
+    justify-content: flex-end;
+}
+.InputWidget input{
+  flex: 2;
+}
+.InputWidget input[type="text"]{
+  min-width: 170px;
+}

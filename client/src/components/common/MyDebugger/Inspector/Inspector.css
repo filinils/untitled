@@ -1,0 +1,9 @@
+.Inspector{
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+.Inspector h5{
+  color: white;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}

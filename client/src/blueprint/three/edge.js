@@ -22,13 +22,13 @@ export default function(scene, edge, controls) {
 
 	this.remove = function() {
 		edge.redrawCallbacks.remove(redraw);
-		controls.cameraMovedCallbacks.remove(updateVisibility);
+		controls.cameraMovedCallbacks.remove(scope.updateVisibility);
 		removeFromScene();
 	};
 
 	function init() {
 		edge.redrawCallbacks.add(redraw);
-		controls.cameraMovedCallbacks.add(updateVisibility);
+		controls.cameraMovedCallbacks.add(scope.updateVisibility);
 		updateTexture();
 		updatePlanes();
 		addToScene();
@@ -59,10 +59,10 @@ export default function(scene, edge, controls) {
 		basePlanes.forEach(plane => {
 			scene.add(plane);
 		});
-		updateVisibility();
+    scope.updateVisibility();
 	}
 
-	function updateVisibility() {
+	 this.updateVisibility = function() {
 		// finds the normal from the specified edge
 		var start = edge.interiorStart();
 		var end = edge.interiorEnd();
@@ -92,10 +92,10 @@ export default function(scene, edge, controls) {
 			plane.visible = scope.visible;
 		});
 
-		updateObjectVisibility();
+		scope.updateObjectVisibility();
 	}
 
-	function updateObjectVisibility() {
+	this.updateObjectVisibility= function() {
 		wall.items.forEach(item => {
 			item.updateEdgeVisibility(scope.visible, front);
 		});
@@ -330,4 +330,5 @@ export default function(scene, edge, controls) {
 	}
 
 	init();
+
 }

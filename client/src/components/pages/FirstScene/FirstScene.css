@@ -1,0 +1,18 @@
+.FirstScene{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  /*background-color: #fbfbfb;*/
+  background-color: rgba(118, 118, 118, 0.5);
+  border-radius: 2px;
+  width: 10px;
+}
+
+

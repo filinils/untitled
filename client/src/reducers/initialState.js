@@ -1,6 +1,10 @@
+import emptyRoomPreset from '../data/mockup/roomDataEmpty';
 const articles = require("../articles.json");
 
 export default {
-	persons: [],
-	articles: articles
+  persons: [],
+  roomPresets:[],
+  room:JSON.parse(emptyRoomPreset),
+  articles: articles
+
 };

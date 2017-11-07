@@ -6,8 +6,8 @@ import Scene from "./scene";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
 import Callbacks from "../../utils/callbacks";
-/** 
-   * A Model connects a Floorplan and a Scene. 
+/**
+   * A Model connects a Floorplan and a Scene.
    */
 export default textureDir => {
 	/** Constructs a new model.
@@ -28,13 +28,18 @@ export default textureDir => {
 		// TODO: a much better serialization format.
 		roomLoadingCallbacks.fire();
 
-		var data = JSON.parse(json);
-		newRoom(data.floorplan, data.items);
+		//var data = JSON.parse(json);
+    var data = json;
+    if(!data)return null;
 
+    if(data.isCustom)
+      scope.scene.uuid = data.id;
+
+    newRoom(data.floorplan, data.items);
 		roomLoadedCallbacks.fire();
 	}
 
-	function exportSerialized() {
+	function exportRoom() {
 		var items_arr = [];
 		var objects = scope.scene.getItems();
 		for (var i = 0; i < objects.length; i++) {
@@ -50,18 +55,24 @@ export default textureDir => {
 				scale_x: object.scale.x,
 				scale_y: object.scale.y,
 				scale_z: object.scale.z,
-				fixed: object.fixed
+				fixed: object.fixed,
+        texture_maps:object.metadata.textureMaps,
+        options:object.options
 			};
 		}
 
 		var room = {
+      id:scope.scene.uuid,
+      isCustom:true,
 			floorplan: this.floorplan.saveFloorplan(),
 			items: items_arr
 		};
 
-		return JSON.stringify(room);
+		return room;
 	}
-
+  function exportSerialized() {
+    return  JSON.stringify(exportRoom());
+  }
 	function newRoom(floorplan, items) {
 		scope.scene.clearItems();
 		scope.floorplan.loadFloorplan(floorplan);
@@ -95,6 +106,8 @@ export default textureDir => {
 	return {
 		scene: this.scene,
 		floorplan: this.floorplan,
-		loadSerialized
+		loadSerialized,
+    exportSerialized,
+    exportRoom
 	};
 };
