@@ -38,7 +38,7 @@ export default `{
 		],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},
 	
 	"items": [
-
+    
 	  {
 		"item_name": "BedPillow",
 		"item_type": 1,

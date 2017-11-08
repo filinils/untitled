@@ -6,12 +6,20 @@ import Lights from "./lights";
 import Skybox from "./skybox";
 import HUD from "./hud";
 import Callbacks from "../../utils/callbacks";
+<<<<<<< HEAD
 import CAMERAS from "../../data/mockup/cameras";
+=======
+import CAMERAS from '../../data/mockup/cameras';
+import FPController from "../../lib/Three/Controls/FPController";
+
+>>>>>>> origin/dev
 
 export default function(model, element, canvasElement, opts) {
 	let scope = this;
 	let activeCameraIndex = 0;
 	let cameras = [];
+
+	console.log('floor plan',model.floorplan);
 
 	this.itemSelectedCallbacks = new Callbacks();
 	this.itemUnselectedCallbacks = new Callbacks();
@@ -44,6 +52,8 @@ export default function(model, element, canvasElement, opts) {
 	let canvas;
 	let controller;
 	let floorplan;
+  let fpController;
+
 
 	let needsUpdate = false;
 
@@ -62,13 +72,17 @@ export default function(model, element, canvasElement, opts) {
 		THREE.ImageUtils.crossOrigin = "";
 
 		domElement = scope.element; // Container
-		camera = new THREE.PerspectiveCamera(45, 1, 1, 10000);
 
 		cameras = createCameras();
+<<<<<<< HEAD
 		cameras.push(camera);
 		activeCameraIndex = cameras.length - 1;
+=======
+		camera=cameras[0];
+>>>>>>> origin/dev
 
-		renderer = new THREE.WebGLRenderer({
+
+    renderer = new THREE.WebGLRenderer({
 			antialias: true,
 			preserveDrawingBuffer: true // required to support .toDataURL()
 		});
@@ -78,6 +92,8 @@ export default function(model, element, canvasElement, opts) {
 		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 		const skybox = new Skybox(scene);
+
+    fpController = new FPController(renderer,scene,model.floorplan);
 
 		scope.controls = new Controls(cameras[activeCameraIndex], domElement);
 
@@ -118,6 +134,7 @@ export default function(model, element, canvasElement, opts) {
 		scope.element.addEventListener("click", function() {
 			hasClicked = true;
 		});
+<<<<<<< HEAD
 		window.addEventListener("keydown", function(event) {
 			switch (event.keyCode) {
 				case 32: //space
@@ -125,6 +142,21 @@ export default function(model, element, canvasElement, opts) {
 					break;
 			}
 		});
+=======
+    window.addEventListener("keydown", function(event) {
+      switch ( event.keyCode ) {
+
+        case 32: //space
+          changeCamera();
+          break;
+        case 96: //0
+          toggleFPController();
+          break;
+
+      }
+
+      });
+>>>>>>> origin/dev
 	}
 
 	function spin() {
@@ -135,6 +167,7 @@ export default function(model, element, canvasElement, opts) {
 			scope.controls.update();
 		}
 	}
+<<<<<<< HEAD
 	function changeCamera() {
 		let currentCameraIndex = activeCameraIndex;
 		console.log("change camera");
@@ -166,6 +199,62 @@ export default function(model, element, canvasElement, opts) {
 		camera.rotation.y = item.rotation.y;
 		camera.rotation.z = item.rotation.y;
 	}
+=======
+  function changeCamera(){
+	  if(!scope.controls.enabled||!controller.enabled)
+	    return;
+
+	  let currentCameraIndex = activeCameraIndex;
+    console.log('change camera');
+    activeCameraIndex +=1;
+    if(activeCameraIndex>=cameras.length)
+      activeCameraIndex=0;
+    scope.controls.object = cameras[activeCameraIndex];
+    scope.controls.update();
+    controller.setCamera(cameras[activeCameraIndex]);
+    floorplan.updateEdges();
+    setCameraTransform(cameras[currentCameraIndex],currentCameraIndex);
+
+  }
+  function createCameras(){
+	  let camsData = CAMERAS;
+    let cameras = [];
+   camsData.forEach((item,index)=>{
+      let camera = new THREE.PerspectiveCamera(item.fov, 2.1950, 1, 10000);
+      setCameraTransform(camera,index);
+      cameras.push(camera);
+    });
+
+    return cameras;
+  }
+
+  function setCameraTransform(camera,index){
+    let item= CAMERAS[index];
+    camera.zoom = item.zoom;
+    camera.updateProjectionMatrix();
+    let rotation = new THREE.Euler(item.rotation.x,item.rotation.y,item.rotation.z);
+    camera.position.x = item.position.x;
+    camera.position.y = item.position.y;
+    camera.position.z = item.position.z;
+    camera.rotation.x = rotation.x;
+    camera.rotation.y = rotation.y;
+    camera.rotation.z = rotation.y;
+  }
+
+  function toggleFPController() {
+    let toggle = ! fpController.enabled;
+    scope.controls.enabled=!toggle;
+    controller.enabled=!toggle;
+    fpController.setEnable( toggle);
+
+    if(!toggle){
+      scope.controls.needsUpdate=
+      controller.needsUpdate =
+      needsUpdate =
+      model.scene.needsUpdate=true;
+    }
+  }
+>>>>>>> origin/dev
 
 	this.dataUrl = function() {
 		const dataUrl = renderer.domElement.toDataURL("image/png");
@@ -193,7 +282,7 @@ export default function(model, element, canvasElement, opts) {
 	};
 
 	this.getCamera = function() {
-		return camera;
+		return cameras[activeCameraIndex];
 	};
 
 	this.needsUpdate = function() {
@@ -218,7 +307,17 @@ export default function(model, element, canvasElement, opts) {
 	}
 
 	function render() {
+<<<<<<< HEAD
 		spin();
+=======
+
+	  if(fpController.enabled){
+      floorplan.updateEdges();
+      fpController.render();
+      return;
+    }
+		//spin();
+>>>>>>> origin/dev
 		if (shouldRender()) {
 			renderer.clear();
 			renderer.render(scene, cameras[activeCameraIndex]);

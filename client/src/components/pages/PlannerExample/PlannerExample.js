@@ -93,17 +93,16 @@ class PlannerExample extends React.Component {
   }
 
   logCamera(){
-    console.log('camera',this.blueprint3d.three.getCamera())
+    console.log('planner',this.blueprint3d.three.getScene())
   }
 
 	render() {
 		return (
 			<div id="canvas-wrapper">
-        {/*<div className="testControls">*/}
-          {/*<a onClick={this.logCamera.bind(this)}>Log camera</a>*/}
-         {/**/}
-        {/*</div>*/}
-        {/*{this.renderDebugger()}*/}
+        <div className="testControls">
+          <a onClick={this.logCamera.bind(this)}>Log camera</a>
+
+        </div>
 				<ModalEffects showLoading={this.state.itemsLoading > 0} />
 				<Roomdesigner
 					showing={this.getViewerClass("2d")}

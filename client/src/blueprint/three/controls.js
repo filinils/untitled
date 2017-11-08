@@ -288,10 +288,19 @@ export default function(object, domElement) {
 			panStart.set(event.clientX, event.clientY);
 		}
 
+
+
 		// Greggman fix: https://github.com/greggman/three.js/commit/fde9f9917d6d8381f06bf22cdff766029d1761be
 		scope.domElement.addEventListener("mousemove", onMouseMove, false);
 		scope.domElement.addEventListener("mouseup", onMouseUp, false);
 	}
+
+
+  this.resetTarget = function(){
+    scope.target = new THREE.Vector3();
+    scope.needsUpdate = true;
+  }
+
 
 	function onMouseMove(event) {
 		if (scope.enabled === false) return;
@@ -424,9 +433,7 @@ export default function(object, domElement) {
 				if (scope.noRotate === true) {
 					return;
 				}
-
 				state = STATE.TOUCH_ROTATE;
-
 				rotateStart.set(event.touches[0].pageX, event.touches[0].pageY);
 				break;
 
@@ -570,4 +577,6 @@ export default function(object, domElement) {
 	this.domElement.addEventListener("touchmove", touchmove, false);
 
 	window.addEventListener("keydown", onKeyDown, false);
+
+
 }
