@@ -5,7 +5,7 @@
 		"description": "Kontinentalsäng, Hyllestad medium fast, Tussöy grå",
 		"priceIncTax": 12495,
 		"priceExTax": 9996,
-		"baseUrl": "/assets/models/Bed/",
+		"thumbnailsUrl": "/assets/models/Bed/thumbnails/",
 		"thumbnails": [
 			"vallavik-kontinentalsang-gra__0373800_PE553244_S4.JPG",
 			"vallavik-kontinentalsang-gra__0373816_PE553253_S4.JPG",
@@ -23,7 +23,7 @@
 		"description": "Bokhylla, björkfaner",
 		"priceIncTax": 1190,
 		"priceExTax": 952,
-		"baseUrl": "/assets/models/Bookshelf/",
+		"thumbnailsUrl": "/assets/models/Bookshelf/thumbnails/",
 		"thumbnails": ["Billy1.jpg", "Billy2.jpg", "Billy3.jpg"]
 	}
 ]
