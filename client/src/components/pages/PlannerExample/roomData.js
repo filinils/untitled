@@ -39,6 +39,7 @@ export default `{
 	"items": [
 
 	  {
+		"articleId": "59156749",
 		"item_name": "BedPillow",
 		"item_type": 1,
 		"model_url": "assets/models/IKEA",
@@ -139,6 +140,7 @@ export default `{
 	  
 	 
 	  {
+		"articleId": "29023402",
 		"item_name": "bookshelf",
 		"item_type": 1,
 		"model_url": "assets/models/IKEA",
