@@ -2,15 +2,6 @@ import * as THREE from "three";
 import Utils from "../core/utils";
 
 export default class Item extends THREE.Mesh {
-	/** Constructs an item.
-		 * @param model TODO
-		 * @param metadata TODO
-		 * @param geometry TODO
-		 * @param material TODO
-		 * @param position TODO
-		 * @param rotation TODO
-		 * @param scale TODO
-		 */
 	constructor(
 		model,
 		metadata,

@@ -6,7 +6,7 @@ import Lights from "./lights";
 import Skybox from "./skybox";
 import HUD from "./hud";
 import Callbacks from "../../utils/callbacks";
-import CAMERAS from '../../data/mockup/cameras';
+import CAMERAS from "../../data/mockup/cameras";
 
 export default function(model, element, canvasElement, opts) {
 	let scope = this;
@@ -18,13 +18,13 @@ export default function(model, element, canvasElement, opts) {
 	this.nothingClicked = new Callbacks();
 
 	const options = {
-    resize: true,
-    pushHref: false,
-    spin: true,
-    spinSpeed: 0.00002,
-    clickPan: true,
-    canMoveFixedItems: false
-  };
+		resize: true,
+		pushHref: false,
+		spin: true,
+		spinSpeed: 0.00002,
+		clickPan: true,
+		canMoveFixedItems: false
+	};
 
 	// override with manually set options
 	for (let opt in options) {
@@ -66,7 +66,7 @@ export default function(model, element, canvasElement, opts) {
 
 		cameras = createCameras();
 		cameras.push(camera);
-		activeCameraIndex = cameras.length-1;
+		activeCameraIndex = cameras.length - 1;
 
 		renderer = new THREE.WebGLRenderer({
 			antialias: true,
@@ -86,7 +86,7 @@ export default function(model, element, canvasElement, opts) {
 		controller = new Controller(
 			scope,
 			model,
-      cameras[activeCameraIndex],
+			cameras[activeCameraIndex],
 			scope.element,
 			scope.controls,
 			hud
@@ -118,59 +118,54 @@ export default function(model, element, canvasElement, opts) {
 		scope.element.addEventListener("click", function() {
 			hasClicked = true;
 		});
-    window.addEventListener("keydown", function(event) {
-      switch ( event.keyCode ) {
-
-        case 32: //space
-          changeCamera();
-          break;
-
-      }
-
-      });
+		window.addEventListener("keydown", function(event) {
+			switch (event.keyCode) {
+				case 32: //space
+					changeCamera();
+					break;
+			}
+		});
 	}
 
 	function spin() {
 		if (options.spin && !mouseOver && !hasClicked) {
 			const theta =
-        2 * Math.PI * options.spinSpeed * (Date.now() - lastRender);
+				2 * Math.PI * options.spinSpeed * (Date.now() - lastRender);
 			scope.controls.rotateLeft(theta);
 			scope.controls.update();
 		}
 	}
-  function changeCamera(){
-	  let currentCameraIndex = activeCameraIndex;
-    console.log('change camera');
-    activeCameraIndex +=1;
-    if(activeCameraIndex>=cameras.length)
-      activeCameraIndex=0;
-    scope.controls.object = cameras[activeCameraIndex];
-    controller.setCamera(cameras[activeCameraIndex]);
-    setCameraTransform(cameras[currentCameraIndex],currentCameraIndex);
+	function changeCamera() {
+		let currentCameraIndex = activeCameraIndex;
+		console.log("change camera");
+		activeCameraIndex += 1;
+		if (activeCameraIndex >= cameras.length) activeCameraIndex = 0;
+		scope.controls.object = cameras[activeCameraIndex];
+		controller.setCamera(cameras[activeCameraIndex]);
+		setCameraTransform(cameras[currentCameraIndex], currentCameraIndex);
+	}
+	function createCameras() {
+		let camsData = CAMERAS;
+		let cameras = [];
+		camsData.forEach((item, index) => {
+			let camera = new THREE.PerspectiveCamera(item.fov, 1, 1, 10000);
+			setCameraTransform(camera, index);
+			cameras.push(camera);
+		});
+		return cameras;
+	}
 
-  }
-  function createCameras(){
-	  let camsData = CAMERAS;
-    let cameras = [];
-   camsData.forEach((item,index)=>{
-      let camera = new THREE.PerspectiveCamera(item.fov, 1, 1, 10000);
-     setCameraTransform(camera,index);
-      cameras.push(camera);
-    });
-    return cameras;
-  }
-
-  function setCameraTransform(camera,index){
-    let item= CAMERAS[index];
-    camera.zoom = item.zoom;
-    camera.updateProjectionMatrix();
-    camera.position.x = item.position.x;
-    camera.position.y = item.position.y;
-    camera.position.z = item.position.z;
-    camera.rotation.x = item.rotation.x;
-    camera.rotation.y = item.rotation.y;
-    camera.rotation.z = item.rotation.y;
-  }
+	function setCameraTransform(camera, index) {
+		let item = CAMERAS[index];
+		camera.zoom = item.zoom;
+		camera.updateProjectionMatrix();
+		camera.position.x = item.position.x;
+		camera.position.y = item.position.y;
+		camera.position.z = item.position.z;
+		camera.rotation.x = item.rotation.x;
+		camera.rotation.y = item.rotation.y;
+		camera.rotation.z = item.rotation.y;
+	}
 
 	this.dataUrl = function() {
 		const dataUrl = renderer.domElement.toDataURL("image/png");
@@ -201,7 +196,6 @@ export default function(model, element, canvasElement, opts) {
 		return camera;
 	};
 
-
 	this.needsUpdate = function() {
 		needsUpdate = true;
 	};
@@ -224,7 +218,6 @@ export default function(model, element, canvasElement, opts) {
 	}
 
 	function render() {
-
 		spin();
 		if (shouldRender()) {
 			renderer.clear();
@@ -282,7 +275,9 @@ export default function(model, element, canvasElement, opts) {
 
 		const distance = model.floorplan.getSize().z * 1.5;
 
-		const offset = pan.clone().add(new THREE.Vector3(0, distance, distance));
+		const offset = pan
+			.clone()
+			.add(new THREE.Vector3(0, distance, distance));
 		camera.position.copy(offset);
 
 		scope.controls.update();

@@ -4,11 +4,13 @@ import * as THREE from "three";
 export default function(three, model, _camera, element, controls, hud) {
 	let scope = this;
 	this.enabled = true;
-  let camera = _camera
+	let camera = _camera;
 	let scene = model.scene;
 	this.scene = scene;
+	this.model = model;
 
 	window.scene = model.scene;
+	window.model = model;
 
 	let plane; // ground plane used for intersection testing
 
@@ -34,12 +36,12 @@ export default function(three, model, _camera, element, controls, hud) {
 
 	let needsUpdate = true;
 
-	this.getCamera = function () {
-    return camera;
-  }
-  this.setCamera = function (_camera) {
-     camera = _camera;
-  }
+	this.getCamera = function() {
+		return camera;
+	};
+	this.setCamera = function(_camera) {
+		camera = _camera;
+	};
 
 	function init() {
 		element.addEventListener("mousedown", mouseDownEvent);
@@ -77,14 +79,7 @@ export default function(three, model, _camera, element, controls, hud) {
 	const clickDragged = vec2 => {
 		vec2 = vec2 || mouse;
 		let intersection = itemIntersection(mouse, selectedObject);
-		console.log(
-			"ersection: ",
-			intersection,
-			"Mouse: ",
-			mouse,
-			"Selected object: ",
-			selectedObject
-		);
+
 		if (intersection) {
 			if (scope.isRotating()) {
 				selectedObject.rotate(intersection);
@@ -174,7 +169,7 @@ export default function(three, model, _camera, element, controls, hud) {
 	this.isRotating = function() {
 		const isRotatingValue =
 			state == states.ROTATING || state == states.ROTATING_FREE;
-		console.log("Is rotating", isRotatingValue);
+
 		return isRotatingValue;
 	};
 
@@ -192,9 +187,7 @@ export default function(three, model, _camera, element, controls, hud) {
 					} else if (intersectedObject != null) {
 						setSelectedObject(intersectedObject);
 						if (!intersectedObject.fixed) {
-							console.log("DRAGGING");
 							switchState(states.DRAGGING);
-							console.log("State: ", state);
 						}
 					}
 					break;
@@ -477,6 +470,14 @@ export default function(three, model, _camera, element, controls, hud) {
 
 	this.getSelectedObject = () => {
 		return selectedObject;
+	};
+
+	this.removeObjectFromScene = object => {
+		debugger;
+		if (object == selectedObject) {
+			this.scene.remove(object);
+			hud.resetSelectedItem();
+		}
 	};
 
 	init();

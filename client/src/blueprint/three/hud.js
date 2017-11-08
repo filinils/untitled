@@ -7,7 +7,8 @@ import * as THREE from "three";
 export default function(three) {
 	var scope = this;
 
-	var scene = new THREE.Scene();
+	var hudScene = new THREE.Scene();
+	window.hudScene = hudScene;
 
 	var selectedItem = null;
 
@@ -23,7 +24,7 @@ export default function(three) {
 	var activeObject = null;
 
 	this.getScene = function() {
-		return scene;
+		return hudScene;
 	};
 
 	this.getObject = function() {
@@ -35,27 +36,27 @@ export default function(three) {
 		three.itemUnselectedCallbacks.add(itemUnselected);
 	}
 
-	function resetSelectedItem() {
+	this.resetSelectedItem = () => {
 		selectedItem = null;
 		if (activeObject) {
-			scene.remove(activeObject);
+			hudScene.remove(hudScene.children[0]);
 			activeObject = null;
 		}
-	}
+	};
 
 	function itemSelected(item) {
 		if (selectedItem != item) {
-			resetSelectedItem();
+			scope.resetSelectedItem();
 			if (item.allowRotate && !item.fixed) {
 				selectedItem = item;
 				activeObject = makeObject(selectedItem);
-				scene.add(activeObject);
+				hudScene.add(activeObject);
 			}
 		}
 	}
 
 	function itemUnselected() {
-		resetSelectedItem();
+		scope.resetSelectedItem();
 	}
 
 	this.setRotating = function(isRotating) {
@@ -151,6 +152,7 @@ export default function(three) {
 		object.add(cone);
 		object.add(sphere);
 
+		object.name = "Arrow";
 		object.rotation.y = item.rotation.y;
 		object.position.x = item.position.x;
 		object.position.z = item.position.z;

@@ -45,7 +45,10 @@ export default class Roomdesigner extends React.Component {
 	}
 
 	removeSelectedObject() {
-		this.props.controller.scene.remove(this.state.selectedObject);
+		console.log(this.state.selectedObject);
+		console.log(this.props.controller.scene.children);
+		this.props.controller.removeObjectFromScene(this.state.selectedObject);
+		console.log(this.props.controller.scene.children);
 		this.setState({ showObjectActions: false });
 	}
 
@@ -53,7 +56,22 @@ export default class Roomdesigner extends React.Component {
 		this.setState({ showObjectInformation: true });
 	}
 
+	addItemToScene(article) {
+		if (article && article.articleId) {
+			this.props.controller.model.addItemByArticleId(article.articleId);
+		} else {
+			console.log("Cant load item: ", article);
+		}
+	}
+
 	render() {
+		const objectInformation = this.state.showObjectInformation ? (
+			<ObjectInformation
+				articleId={this.state.selectedObject.metadata.articleId}
+				close={() => this.closeObjectInformation()}
+			/>
+		) : null;
+
 		return (
 			<div>
 				<div
@@ -68,12 +86,12 @@ export default class Roomdesigner extends React.Component {
 							>
 								Edit floorplan
 							</button>
-              <button
-                className="primary"
-                onClick={this.props.onSaveClick}
-              >
-                save scene
-              </button>
+							<button
+								className="primary"
+								onClick={this.props.onSaveClick}
+							>
+								save scene
+							</button>
 						</div>
 						<div className="right">
 							<button className="square fa fa-rotate-left" />
@@ -91,6 +109,7 @@ export default class Roomdesigner extends React.Component {
 				<AddItemBar
 					showing={this.state.showAddItemBar}
 					close={() => this.closeItemBar()}
+					addItemToScene={this.addItemToScene.bind(this)}
 				/>
 				<ObjectActions
 					showing={this.state.showObjectActions}
@@ -98,11 +117,7 @@ export default class Roomdesigner extends React.Component {
 					openInfo={() => this.showObjectInformation()}
 					removeSelectedObject={() => this.removeSelectedObject()}
 				/>
-				<ObjectInformation
-					showing={this.state.showObjectInformation}
-					articleId={29023402}
-					close={() => this.closeObjectInformation()}
-				/>
+				{objectInformation}
 			</div>
 		);
 	}
