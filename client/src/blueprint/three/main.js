@@ -127,7 +127,7 @@ export default function(model, element, canvasElement, opts) {
                 case 32: //space
                     changeCamera();
                     break;
-                case 96: //0
+                case 48: //0
                     toggleFPController();
                     break;
             }
