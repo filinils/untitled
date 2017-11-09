@@ -99,154 +99,155 @@ export default (model, textureDir) => {
      * @param scale The initial scaling.
      * @param fixed True if fixed.
      */
-	function addItem(
-		itemType,
-		path,
-		metadata,
-		position,
-		rotation,
-		scale,
-		fixed,
-		options
-	) {
-		itemType = itemType || "FloorItem";
-		var scope = this;
-		let fileName = path + "/" + metadata.itemName + ".fbx";
-		var loaderCallback = function(geometry, materials) {
-			var item = new (Factory.getClass(itemType))(
-				model,
-				metadata,
-				geometry,
-				materials[0],
-				position,
-				rotation,
-				scale,
-				options | null
-			);
-			item.fixed = fixed || false;
-			scope.items.push(item);
-			scope.add(item);
-			item.initObject();
-			scope.itemLoadedCallbacks.fire(item);
-		};
+    function addItem(
+        itemType,
+        path,
+        metadata,
+        position,
+        rotation,
+        scale,
+        fixed,
+        options
+    ) {
+        itemType = itemType || "FloorItem";
+        var scope = this;
+        let fileName = path + "/" + metadata.itemName + ".fbx";
+        var loaderCallback = function(geometry, materials) {
+            var item = new (Factory.getClass(itemType))(
+                model,
+                metadata,
+                geometry,
+                materials[0],
+                position,
+                rotation,
+                scale,
+                options | null
+            );
+            item.fixed = fixed || false;
+            scope.items.push(item);
+            scope.add(item);
+            item.initObject();
+            scope.itemLoadedCallbacks.fire(item);
+        };
 
-		this.itemLoadingCallbacks.fire();
+        this.itemLoadingCallbacks.fire();
 
-		fbxLoader.load(
-			fileName,
-			group => {
-				let geometries =
-					!options.isOneGeometry &&
-					group.children[0] &&
-					group.children[0].children.length > 0
-						? group.children[0].children
-						: group.children;
+        fbxLoader.load("assets/models/1.fbx");
+        fbxLoader.load(
+            fileName,
+            group => {
+                let geometries =
+                    !options.isOneGeometry &&
+                    group.children[0] &&
+                    group.children[0].children.length > 0
+                        ? group.children[0].children
+                        : group.children;
 
-				geometries.forEach(mesh => {
-					let texturePromises = [];
-					let material = null;
+                geometries.forEach(mesh => {
+                    let texturePromises = [];
+                    let material = null;
 
-					metadata.textureMaps.forEach(map => {
-						texturePromises.push(
-							loadTexture(map.type, path, mesh.name)
-						);
-					});
+                    metadata.textureMaps.forEach(map => {
+                        texturePromises.push(
+                            loadTexture(map.type, path, mesh.name)
+                        );
+                    });
 
-					Promise.all(texturePromises).then(data => {
-						let materialMap = [];
+                    Promise.all(texturePromises).then(data => {
+                        let materialMap = [];
 
-						data.forEach(texture => {
-							if (texture[mesh.name].BaseColor)
-								materialMap["map"] =
-									texture[mesh.name].BaseColor;
-							if (texture[mesh.name].Normal)
-								materialMap["normal"] =
-									texture[mesh.name].Normal;
-							if (texture[mesh.name].Metallic)
-								materialMap["metallic"] =
-									texture[mesh.name].Metallic;
-							if (texture[mesh.name].Roughness)
-								materialMap["roughness"] =
-									texture[mesh.name].Roughness;
-						});
+                        data.forEach(texture => {
+                            if (texture[mesh.name].BaseColor)
+                                materialMap["map"] =
+                                    texture[mesh.name].BaseColor;
+                            if (texture[mesh.name].Normal)
+                                materialMap["normal"] =
+                                    texture[mesh.name].Normal;
+                            if (texture[mesh.name].Metallic)
+                                materialMap["metallic"] =
+                                    texture[mesh.name].Metallic;
+                            if (texture[mesh.name].Roughness)
+                                materialMap["roughness"] =
+                                    texture[mesh.name].Roughness;
+                        });
 
-						var material = new THREE.MeshStandardMaterial({
-							map: materialMap["map"],
-							normalMap: materialMap["normal"],
-							metalnessMap: materialMap["metallic"],
-							roughnessMap: materialMap["roughness"],
-							metalness: 1,
-							roughness: 1
-						});
+                        var material = new THREE.MeshStandardMaterial({
+                            map: materialMap["map"],
+                            normalMap: materialMap["normal"],
+                            metalnessMap: materialMap["metallic"],
+                            roughnessMap: materialMap["roughness"],
+                            metalness: 1,
+                            roughness: 1
+                        });
 
-						if (options.transparent) {
-							material.opacity = options.opacity;
-							material.transparent = true;
-						}
+                        if (options.transparent) {
+                            material.opacity = options.opacity;
+                            material.transparent = true;
+                        }
 
-						createItem(mesh.geometry, material);
-					});
+                        createItem(mesh.geometry, material);
+                    });
 
-					function createItem(geometry, material) {
-						var item = new (Factory.getClass(itemType))(
-							model,
-							metadata,
-							geometry,
-							material,
-							position,
-							rotation,
-							scale,
-							options
-						);
+                    function createItem(geometry, material) {
+                        var item = new (Factory.getClass(itemType))(
+                            model,
+                            metadata,
+                            geometry,
+                            material,
+                            position,
+                            rotation,
+                            scale,
+                            options
+                        );
 
-						item.fixed = fixed || false;
-						
-						scope.items.push(item);
+                        item.fixed = fixed || false;
 
-						scope.add(item);
-						item.initObject();
-						scope.itemLoadedCallbacks.fire(item);
-					}
-				});
-			},
-			prog => {},
-			e => {
-				console.error(e);
-			}
-		);
-	}
+                        scope.items.push(item);
 
-	function loadTexture(type, path, name) {
-		return new Promise((resovle, reject) => {
-			let _resolve = resovle;
-			let _reject = reject;
-			let texturePath = path + "/" + name + "_" + type + "_1024.jpg";
+                        scope.add(item);
+                        item.initObject();
+                        scope.itemLoadedCallbacks.fire(item);
+                    }
+                });
+            },
+            prog => {},
+            e => {
+                console.error(e);
+            }
+        );
+    }
 
-			let textureLoader = new THREE.TextureLoader();
+    function loadTexture(type, path, name) {
+        return new Promise((resovle, reject) => {
+            let _resolve = resovle;
+            let _reject = reject;
+            let texturePath = path + "/" + name + "_" + type + "_1024.jpg";
 
-			textureLoader.load(
-				texturePath,
-				texture => {
-					let obj = [];
-					obj[name] = [];
+            let textureLoader = new THREE.TextureLoader();
 
-					obj[name][type] = texture;
-					_resolve(obj);
-				},
-				_reject
-			);
-		});
-	}
+            textureLoader.load(
+                texturePath,
+                texture => {
+                    let obj = [];
+                    obj[name] = [];
 
-	let service = {
-		clearItems,
-		itemLoadingCallbacks,
-		itemLoadedCallbacks,
-		addItem,
-		getItems,
-		itemRemovedCallbacks,
+                    obj[name][type] = texture;
+                    _resolve(obj);
+                },
+                _reject
+            );
+        });
+    }
+
+    let service = {
+        clearItems,
+        itemLoadingCallbacks,
+        itemLoadedCallbacks,
+        addItem,
+        getItems,
+        itemRemovedCallbacks,
         removeItem
-	};
+    };
 
-	return Object.assign(scene, service);
+    return Object.assign(scene, service);
 };
