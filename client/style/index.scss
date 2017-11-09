@@ -179,7 +179,8 @@ button.primary {
         width: 1px;
     }
 
-    a {
+    a,
+    input {
         padding: 0.8em;
         border-left: 1px solid #9fa09f;
         font-size: 1.2em;
@@ -187,6 +188,18 @@ button.primary {
         &:first-child {
             border: 0;
         }
+    }
+
+    input {
+        width: 0;
+        height: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+        -webkit-appearance: slider-vertical;
+        writing-mode: bt-lr;
+        orient: "vertical";
     }
 }
 
