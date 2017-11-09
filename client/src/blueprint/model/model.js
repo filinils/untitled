@@ -79,39 +79,36 @@ export default textureDir => {
     function newRoom(floorplan, items) {
         scope.scene.clearItems();
         scope.floorplan.loadFloorplan(floorplan);
-        items.forEach(item => addItemToScene(item));
+        items.forEach(item => addItemByArticleId(item.articleId));
     }
 
     const addItemToScene = item => {
-        /* JODO: Make call async */
-        setTimeout(() => {
-            const position = new THREE.Vector3(item.xpos, item.ypos, item.zpos);
-            const metadata = {
-                articleId: item.articleId,
-                itemName: item.item_name,
-                resizable: item.resizable,
-                itemType: item.item_type,
-                modelUrl: item.model_url,
-                textureMaps: item.texture_maps ? item.texture_maps : null
-            };
+        const position = new THREE.Vector3(item.xpos, item.ypos, item.zpos);
+        const metadata = {
+            articleId: item.articleId,
+            itemName: item.item_name,
+            resizable: item.resizable,
+            itemType: item.item_type,
+            modelUrl: item.model_url,
+            textureMaps: item.texture_maps ? item.texture_maps : null
+        };
 
-            const scale = new THREE.Vector3(
-                item.scale_x,
-                item.scale_y,
-                item.scale_z
-            );
+        const scale = new THREE.Vector3(
+            item.scale_x,
+            item.scale_y,
+            item.scale_z
+        );
 
-            scope.scene.addItem(
-                item.item_type,
-                item.model_url,
-                metadata,
-                position,
-                item.rotation,
-                scale,
-                item.fixed,
-                item.options
-            );
-        }, 0);
+        scope.scene.addItem(
+            item.item_type,
+            item.model_url,
+            metadata,
+            position,
+            item.rotation,
+            scale,
+            item.fixed,
+            item.options
+        );
     };
 
     const addItemByArticleId = articleId => {

@@ -11,6 +11,7 @@
 @import "./components/_component-dayblock.scss";
 @import "./components/_component-user.scss";
 @import "./components/_component-diagram.scss";
+@import "./components/add-item-bar.scss";
 
 /*
  * General Formatting
@@ -70,6 +71,8 @@ div {
 #canvas-wrapper {
     height: 95%;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 #viewer {

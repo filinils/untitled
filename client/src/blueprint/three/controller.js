@@ -291,7 +291,6 @@ export default function(three, model, _camera, element, controls, hud) {
     }
 
     this.selectedObject = function() {
-        console.log("Selected object: ", selectedObject);
         return selectedObject;
     };
 

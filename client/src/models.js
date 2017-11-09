@@ -2,7 +2,7 @@ export default [
     {
         articleId: "59156749",
         item_name: "BedPillow",
-        item_type: 1,
+        item_type: "FloorItem",
         model_url: "assets/models/IKEA",
         xpos: 900,
         ypos: 500,
@@ -29,8 +29,9 @@ export default [
         ]
     },
     {
+        articleId: "00000001",
         item_name: "Window",
-        item_type: 3,
+        item_type: "InWallItem",
         model_url: "assets/models/IKEA",
         xpos: 886.8841174461031,
         ypos: 139.1510114697785,
@@ -58,6 +59,7 @@ export default [
     },
 
     {
+        articleId: "00000000",
         item_name: "Lampgeo",
         item_type: "FloorItem",
         model_url: "assets/models/IKEA",

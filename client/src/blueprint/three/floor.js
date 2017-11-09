@@ -35,9 +35,11 @@ export default function(scene, room) {
             texture => {}
         );
 
+        floorTexture.magFilter = THREE.NearestFilter;
+        floorTexture.minFilter = THREE.LinearMipMapLinearFilter;
         floorTexture.wrapS = THREE.RepeatWrapping;
         floorTexture.wrapT = THREE.RepeatWrapping;
-        floorTexture.repeat.set(1, 1);
+        floorTexture.repeat.set(2, 1);
         var floorMaterialTop = new THREE.MeshPhongMaterial({
             map: floorTexture,
             side: THREE.DoubleSide,
