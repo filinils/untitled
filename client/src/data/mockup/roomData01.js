@@ -41,7 +41,7 @@ export default `{
     
 	  {
 		"item_name": "BedPillow",
-		"item_type": 1,
+		"item_type": "FloorItem",
 		"model_url": "assets/models/IKEA",
 		"xpos": 900,
 		"ypos": 500,
@@ -75,7 +75,7 @@ export default `{
 	 
 	  {
 		"item_name": "Lampgeo",
-		"item_type": 1,
+		"item_type": "OnFloorLamp",
 		"model_url": "assets/models/IKEA",
 		"xpos": 346.697102333121,
 		"ypos": 72.163997943445,
@@ -110,7 +110,7 @@ export default `{
 	 
 	  {
 		"item_name": "bookshelf",
-		"item_type": 1,
+		"item_type": "FloorItem",
 		"model_url": "assets/models/IKEA",
 		"xpos": 650,
 		"ypos": 42.54509923821,
@@ -144,7 +144,7 @@ export default `{
   },
    {
 		"item_name": "bookshelf2",
-		"item_type": 1,
+		"item_type": "FloorItem",
 		"model_url": "assets/models/IKEA",
 		"xpos": 650,
 		"ypos": 42.54509923821,

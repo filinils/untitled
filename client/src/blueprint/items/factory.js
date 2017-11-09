@@ -13,13 +13,13 @@ import * as Core from "../core/configuration";
 
 /** Enumeration of item types. */
 const item_types = {
-	1: FloorItem,
-	2: WallItem,
-	3: InWallItem,
-	7: InWallFloorItem,
-	8: OnFloorItem,
-	9: WallFloorItem,
-	10: OnFloorLamp
+	"FloorItem": FloorItem,
+	"WallItem": WallItem,
+	"InWallItem": InWallItem,
+	"InWallFloorItem": InWallFloorItem,
+	"OnFloorItem": OnFloorItem,
+	"WallFloorItem": WallFloorItem,
+	"OnFloorLamp": OnFloorLamp
 };
 
 /** Factory class to create items. */

@@ -125,7 +125,7 @@ export default  (model, textureDir) => {
 		fixed,
 		options
 	) {
-		itemType = itemType || 1;
+		itemType = itemType || "FloorItem";
 		var scope = this;
 		let fileName = path + "/" + metadata.itemName + ".fbx";
 		var loaderCallback = function(geometry, materials) {
@@ -216,17 +216,6 @@ export default  (model, textureDir) => {
 						);
 
 						item.fixed = fixed || false;
-
-						if(itemType == 10) {
-
-							let light = new THREE.PointLight(0xffffff, 1, 400, 2);
-							light.castShadow = true;
-							
-							item.castShadow = false;
-							item.receiveShadow = false;
-							
-							item.add(light);
-						}
 						
 						scope.items.push(item);
 

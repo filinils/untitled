@@ -63,6 +63,35 @@ export default class Roomdesigner extends React.Component {
             console.log("Cant load item: ", article);
         }
     }
+    
+    toggleLight() {
+        this.state.selectedObject.toggleLight();
+    }
+    
+    adjustLight(brightness) {
+        this.state.selectedObject.updateBrightness(brightness);
+    }
+
+    getObjectActions() {
+        let optionalProps = {};
+
+        if (this.state.selectedObject && this.state.selectedObject.toggleable) {
+            optionalProps.toggleLight = () => this.toggleLight();
+        }
+        
+        if (this.state.selectedObject && this.state.selectedObject.dimmable) {
+            optionalProps.adjustLight = (brightness) => this.adjustLight(brightness);
+            optionalProps.brightness = this.state.selectedObject.brightness;
+        }
+        
+        return (<ObjectActions
+            showing={this.state.showObjectActions}
+            position={this.state.objectActionsPosition}
+            optionalProps={optionalProps}
+            openInfo={() => this.showObjectInformation()}
+            removeSelectedObject={() => this.removeSelectedObject()}
+        />);
+    }
 
     render() {
         const objectInformation = this.state.showObjectInformation ? (
@@ -111,12 +140,7 @@ export default class Roomdesigner extends React.Component {
                     close={() => this.closeItemBar()}
                     addItemToScene={this.addItemToScene.bind(this)}
                 />
-                <ObjectActions
-                    showing={this.state.showObjectActions}
-                    position={this.state.objectActionsPosition}
-                    openInfo={() => this.showObjectInformation()}
-                    removeSelectedObject={() => this.removeSelectedObject()}
-                />
+                {this.getObjectActions()}
                 {objectInformation}
             </div>
         );
