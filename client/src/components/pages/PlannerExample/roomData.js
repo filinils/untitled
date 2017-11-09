@@ -13,26 +13,26 @@ export default `{
 			{
 				"corner1":"6610a7df-1982-d92d-1463-7a4249857ac9",
 				"corner2":"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
-				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
-				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+				"frontTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":null}
 			},
 			{
 				"corner1":"11d25193-4411-fbbf-78cb-ae7c0283164b",
 				"corner2":"8eff2a8a-0bbe-66c8-4181-8351ee13bd27",
-				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
-				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+				"frontTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":null}
 			},
 			{
 				"corner1":"4e312eca-6c4f-30d1-3d9a-a19a9d1ee359",
 				"corner2":"11d25193-4411-fbbf-78cb-ae7c0283164b",
-				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
-				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
+				"frontTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":null}
 			},
 			{
 				"corner1":"6610a7df-1982-d92d-1463-7a4249857ac9",
 				"corner2":"8eff2a8a-0bbe-66c8-4181-8351ee13bd27",
-				"frontTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":0},
-				"backTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":null}
+				"frontTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/CafeLatte.png","stretch":true,"scale":null}
 			}
 		],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},
 	

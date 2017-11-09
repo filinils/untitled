@@ -1,6 +1,6 @@
 import React from "react";
 import ObjectActions from "./ObjectActions";
-import AddItemBar from "./AddItemBar";
+import AddItemBar from "./AddItemBar/AddItemBar";
 import ObjectInformation from "./ObjectInformation";
 
 export default class Roomdesigner extends React.Component {

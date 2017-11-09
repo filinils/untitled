@@ -2,7 +2,6 @@ import * as THREE from "three";
 
 import FBXLoader from "three-fbx-loader";
 import Utils from "../core/utils";
-import Wall from "./wall";
 import FloorPlan from "./floorplan";
 import Configuration from "../core/configuration";
 import * as Core from "../core/configuration";
