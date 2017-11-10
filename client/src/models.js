@@ -61,7 +61,7 @@ export default [
     {
         articleId: "00000000",
         item_name: "Lampgeo",
-        item_type: "FloorItem",
+        item_type: "OnFloorLamp",
         model_url: "assets/models/IKEA",
         xpos: 346.697102333121,
         ypos: 72.163997943445,
