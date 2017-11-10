@@ -116,5 +116,35 @@ export default [
                 type: "Roughness"
             }
         ]
+    },
+    {
+        articleId: "00000005",
+        item_name: "Bed2",
+        item_type: "FloorItem",
+        model_url: "assets/models/IKEA",
+        xpos: 650,
+        ypos: 42.54509923821,
+        zpos: -21.686174295784554,
+        rotation: 1.5707963267948966,
+
+        scale_x: 1,
+        scale_y: 1,
+        scale_z: 1,
+        fixed: false,
+        options: { isOneGeometry: true },
+        texture_maps: [
+            {
+                type: "AlbedoTransparancy"
+            },
+            {
+                type: "Normal"
+            },
+            {
+                type: "MetallicSmoothness"
+            },
+            {
+                type: "AO"
+            }
+        ]
     }
 ];

@@ -168,13 +168,22 @@ export default (model, textureDir) => {
                             if (texture[mesh.name].Roughness)
                                 materialMap["roughness"] =
                                     texture[mesh.name].Roughness;
+                            if (texture[mesh.name].AlbedoTransparancy)
+                                materialMap["map"] =
+                                    texture[mesh.name].AlbedoTransparancy;
+                            if (texture[mesh.name].MetallicSmoothness)
+                                materialMap["MetallicSmoothness"] =
+                                    texture[mesh.name].Metallic;
+                            if (texture[mesh.name].AO)
+                                materialMap["AO"] = texture[mesh.name].AO;
                         });
 
                         var material = new THREE.MeshStandardMaterial({
-                            map: materialMap["map"],
-                            normalMap: materialMap["normal"],
-                            metalnessMap: materialMap["metallic"],
-                            roughnessMap: materialMap["roughness"],
+                            map: materialMap["map"] || null,
+                            normalMap: materialMap["normal"] || null,
+                            metalnessMap: materialMap["metallic"] || null,
+                            roughnessMap: materialMap["roughness"] || null,
+                            aoMap: materialMap["AO"] || null,
                             metalness: 1,
                             roughness: 1
                         });
