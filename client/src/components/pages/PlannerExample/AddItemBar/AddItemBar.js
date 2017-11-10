@@ -13,7 +13,7 @@ class AddItemBar extends React.Component {
 
     render() {
         const showAddItemBar =
-            "add-item-bar" + (this.props.showing ? "" : " hidden");
+            "add-item-bar" + (this.props.showing ? "" : " add-item-bar-hidden");
 
         const itemList = this.props.articles.map((article, index) => (
             <div

@@ -14,8 +14,6 @@ export default function(model, element, canvasElement, opts) {
     let activeCameraIndex = 0;
     let cameras = [];
 
-    console.log("floor plan", model.floorplan);
-
     this.itemSelectedCallbacks = new Callbacks();
     this.itemUnselectedCallbacks = new Callbacks();
     this.nothingClicked = new Callbacks();
@@ -146,7 +144,6 @@ export default function(model, element, canvasElement, opts) {
         if (!scope.controls.enabled || !controller.enabled) return;
 
         let currentCameraIndex = activeCameraIndex;
-        console.log("change camera");
         activeCameraIndex += 1;
         if (activeCameraIndex >= cameras.length) activeCameraIndex = 0;
         scope.controls.object = cameras[activeCameraIndex];
@@ -159,7 +156,12 @@ export default function(model, element, canvasElement, opts) {
         let camsData = CAMERAS;
         let cameras = [];
         camsData.forEach((item, index) => {
-            let camera = new THREE.PerspectiveCamera(item.fov, 2.195, 1, 10000);
+            let camera = new THREE.PerspectiveCamera(
+                item.fov,
+                2.195,
+                0.1,
+                1000000
+            );
             setCameraTransform(camera, index);
             cameras.push(camera);
         });

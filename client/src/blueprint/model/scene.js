@@ -132,7 +132,6 @@ export default (model, textureDir) => {
 
         this.itemLoadingCallbacks.fire();
 
-        fbxLoader.load("assets/models/1.fbx");
         fbxLoader.load(
             fileName,
             group => {
