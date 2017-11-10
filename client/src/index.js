@@ -8,19 +8,19 @@ import { AppContainer } from "react-hot-loader";
 import Root from "./root";
 
 const render = Component => {
-	ReactDOM.render(
-		<AppContainer>
-			<Component />
-		</AppContainer>,
-		document.getElementById("app")
-	);
+    ReactDOM.render(
+        <AppContainer>
+            <Component />
+        </AppContainer>,
+        document.getElementById("app")
+    );
 };
 
 render(Root);
 
 // Hot Module Replacement API
 if (module.hot) {
-	module.hot.accept("./root", () => {
-		render(Root);
-	});
+    module.hot.accept("./root", () => {
+        render(Root);
+    });
 }
