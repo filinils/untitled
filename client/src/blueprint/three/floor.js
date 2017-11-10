@@ -77,8 +77,9 @@ export default function(scene, room) {
     function buildRoof() {
         // setup texture
         var roofMaterial = new THREE.MeshBasicMaterial({
-            // side: THREE.FrontSide,
-            color: 0xe5e5e5
+            side: THREE.DoubleSide,
+            // color: 0xe5e5e5
+            color: 0xff0000
         });
 
         var points = [];
@@ -90,9 +91,11 @@ export default function(scene, room) {
         var roof = new THREE.Mesh(geometry, roofMaterial);
 
         roof.rotation.set(Math.PI / 2, 0, 0);
-        roof.position.y = 250;
+        roof.position.y = 245;
+        roof.position.x = -200;
         roof.castShadow = true;
         roof.name = "Roof";
+        roof.scale.set(1.3, 1.3, 1.3);
         return roof;
     }
 

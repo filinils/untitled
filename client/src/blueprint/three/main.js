@@ -253,7 +253,9 @@ export default function(model, element, canvasElement, opts) {
             fpController.render();
             return;
         }
-        //spin();
+
+        renderSun();
+
         if (shouldRender()) {
             renderer.clear();
             renderer.render(scene, cameras[activeCameraIndex]);
@@ -344,4 +346,6 @@ export default function(model, element, canvasElement, opts) {
     };
 
     init();
+
+    const renderSun = () => {};
 }

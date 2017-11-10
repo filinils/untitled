@@ -131,9 +131,9 @@ export default function(scene, edge, controls) {
         var wallMaterial = new THREE.MeshPhongMaterial({
             color: 0xffffff,
             side: THREE.FrontSide,
-            map: texture,
-            metalness: 0,
-            roughness: 50
+            map: texture
+            // metalness: 0,
+            // roughnes: 50
         });
 
         var fillerMaterial = new THREE.MeshBasicMaterial({
@@ -271,6 +271,7 @@ export default function(scene, edge, controls) {
 
         mesh.receiveShadow = true;
         mesh.castShadow = true;
+        mesh.name = "Wall";
 
         return mesh;
     }
@@ -296,6 +297,9 @@ export default function(scene, edge, controls) {
         });
 
         var filler = new THREE.Mesh(geometry, fillerMaterial);
+        filler.castShadow = true;
+        filler.receiveShadow = true;
+        filler.name = "Wall Filler";
         return filler;
     }
 
@@ -309,7 +313,7 @@ export default function(scene, edge, controls) {
 
         var fillerMaterial = new THREE.MeshBasicMaterial({
             color: color,
-            side: side
+            side: THREE.DoubleSide
         });
 
         var shape = new THREE.Shape(points);
