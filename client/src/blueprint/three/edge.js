@@ -12,8 +12,11 @@ export default function(scene, edge, controls) {
     var texture = null;
     var normalTexture = null;
     var aoTexture = null;
+    var metallicTexture=null;
+    var textureloader = new THREE.TextureLoader();
 
-    var lightMap = THREE.TextureLoader(
+
+  var lightMap = THREE.TextureLoader(
         "assets/rooms/textures/walllightmap.png"
     );
     var fillerColor = 0xffffff;
@@ -114,33 +117,30 @@ export default function(scene, edge, controls) {
                 scene.needsUpdate = true;
             };
         var textureData = edge.getTexture();
-      console.log('edge texture',textureData)
       var stretch = textureData.stretch;
-        var url = textureData.url;
-        var normalUrl = textureData.normal;
-        var aoUrl = textureData.ao;
-        var scale = textureData.scale;
-        let textureloader = new THREE.TextureLoader();
-        texture = textureloader.load(url, callback);
-        normalTexture = textureloader.load(normalUrl, callback);
-        aoTexture = textureloader.load(aoUrl, callback);
-        if (!stretch) {
-            var height = wall.height;
-            var width = edge.interiorDistance();
-          texture.anisotropy = 10;
-          normalTexture.anisotropy=10;
-          texture.wrapT = THREE.RepeatWrapping;
-            texture.wrapS = THREE.RepeatWrapping;
-          normalTexture.wrapT = THREE.RepeatWrapping;
-          normalTexture.wrapS = THREE.RepeatWrapping;
-          aoTexture.wrapT = THREE.RepeatWrapping;
-          aoTexture.wrapS = THREE.RepeatWrapping;
-          texture.repeat.set(2,1);
-          //aoTexture.repeat.set(2,1);
-          normalTexture.repeat.set(2,1);
-            texture.needsUpdate = true;
+      var scale = textureData.scale;
+      texture = createTexture( textureData.url,stretch,callback);
+      normalTexture = createTexture( textureData.normal,stretch,callback);
+      aoTexture = createTexture(textureData.ao,stretch,callback);
+      metallicTexture = createTexture(textureData.metallic,stretch,callback);
 
+    }
+
+    function createTexture(textureUrl,stretch,callback) {
+      var texture = textureloader.load(textureUrl,function () {
+        if (!stretch) {
+          var height = wall.height;
+          var width = edge.interiorDistance();
+          texture.anisotropy = 10;
+          texture.wrapT = THREE.RepeatWrapping;
+          texture.wrapS = THREE.RepeatWrapping;
+          texture.repeat.set(2,1);
+          texture.needsUpdate = true;
         }
+        callback();
+      });
+
+      return texture;
     }
 
     function updatePlanes() {
@@ -150,8 +150,8 @@ export default function(scene, edge, controls) {
             map: texture,
             normalMap:normalTexture,
            //aoMap:aoTexture,
-            // metalness: 0,
-            // roughnes: 50
+            //specularMap:metallicTexture,
+
         });
 
         var fillerMaterial = new THREE.MeshBasicMaterial({

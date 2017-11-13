@@ -11,7 +11,7 @@ const defaultWallTexture = {
     url: "assets/rooms/textures/Wall1_AlbedoTransparency.png",
     normal:"assets/rooms/textures/Wall1_Normal.png",
     ao:"assets/rooms/textures/Wall1_AO.png",
-    metallic:"",
+    metallic:"assets/rooms/textures/Wall1_MetallicSmoothness.png",
     stretch: false,
     scale: 0
 };
