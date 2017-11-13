@@ -32,8 +32,8 @@ export default `{
 			{
 				"corner1":"6610a7df-1982-d92d-1463-7a4249857ac9",
 				"corner2":"8eff2a8a-0bbe-66c8-4181-8351ee13bd27",
-				"frontTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":0},
-				"backTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":null}
+				"frontTexture":{"url":"assets/rooms/textures/wallmap.png","stretch":true,"scale":0},
+				"backTexture":{"url":"assets/rooms/textures/wallmap_blue.png","stretch":true,"scale":null}
 			}
 		],"wallTextures":[],"floorTextures":{},"newFloorTextures":{}},
 	

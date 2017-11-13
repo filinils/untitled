@@ -13,13 +13,13 @@ const defaultWallTexture = {
     scale: 0
 };
 
-/** 
+/**
    * A Wall is the basic element to create Rooms.
-   * 
+   *
    * Walls consists of two half edges.
    */
 export default class Wall {
-    /** 
+    /**
      * Constructs a new wall.
      * @param start Start corner.
      * @param end End corner.

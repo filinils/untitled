@@ -8,7 +8,7 @@ import Callbacks from "../../utils/callbacks";
 
 const defaultFloorPlanTolerance = 10.0;
 
-/** 
+/**
  * A Floorplan represents a number of Walls, Corners and Rooms.
  */
 export default class Floorplan {
@@ -23,8 +23,8 @@ export default class Floorplan {
 		this.updated_rooms = new Callbacks();
 		this.roomLoadedCallbacks = new Callbacks();
 
-		/** 
-  * Floor textures are owned by the floorplan, because room objects are 
+		/**
+  * Floor textures are owned by the floorplan, because room objects are
   * destroyed and created each time we change the floorplan.
   * floorTextures is a map of room UUIDs (string) to a object with
   * url and scale attributes.
@@ -55,7 +55,7 @@ export default class Floorplan {
 		var planes = [];
 		this.walls.forEach(wall => {
 			if (wall.frontEdge) {
-			
+
 				planes.push(wall.frontEdge.plane);
 			}
 			if (wall.backEdge) {
@@ -246,9 +246,10 @@ export default class Floorplan {
 		}
 	}
 
-	setFloorTexture(uuid, url, scale) {
+	setFloorTexture(uuid, url,normalUrl, scale) {
 		this.floorTextures[uuid] = {
 			url: url,
+      normalUrl:normalUrl,
 			scale: scale
 		};
 	}
@@ -267,19 +268,19 @@ export default class Floorplan {
 
 	/** */
 	reset() {
-		var tmpCorners = this.corners.slice(0);
-		var tmpWalls = this.walls.slice(0);
-		tmpCorners.forEach(corner => {
-			corner.remove();
-		});
-		tmpWalls.forEach(wall => {
-			wall.remove();
-		});
+		// var tmpCorners = this.corners.slice(0);
+		// var tmpWalls = this.walls.slice(0);
+		// tmpCorners.forEach(corner => {
+		// 	corner.remove();
+		// });
+		// tmpWalls.forEach(wall => {
+		// 	wall.remove();
+		// });
 		this.corners = [];
 		this.walls = [];
 	}
 
-	/** 
+	/**
    * Update rooms
    */
 	update() {
@@ -299,7 +300,7 @@ export default class Floorplan {
 		this.updated_rooms.fire();
 	}
 
-	/** 
+	/**
    * Returns the center of the floorplan in the y plane
    */
 	getCenter() {

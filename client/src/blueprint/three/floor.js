@@ -34,14 +34,20 @@ export default function(scene, room) {
             textureSettings.url,
             texture => {}
         );
+      let floorNormalTexture = textureLoader.load(
+        textureSettings.normalUrl,
+        texture => {}
+      );
 
-        floorTexture.magFilter = THREE.NearestFilter;
+      floorTexture.anisotropy = 10;
+      floorTexture.magFilter = THREE.NearestFilter;
         floorTexture.minFilter = THREE.LinearMipMapLinearFilter;
         floorTexture.wrapS = THREE.RepeatWrapping;
         floorTexture.wrapT = THREE.RepeatWrapping;
         floorTexture.repeat.set(2, 1);
         var floorMaterialTop = new THREE.MeshPhongMaterial({
             map: floorTexture,
+            normal:floorNormalTexture,
             side: THREE.DoubleSide,
             // ambient: 0xffffff, TODO_Ekki
             color: 0xcccccc,
@@ -91,7 +97,7 @@ export default function(scene, room) {
         var roof = new THREE.Mesh(geometry, roofMaterial);
 
         roof.rotation.set(Math.PI / 2, 0, 0);
-        roof.position.y = 255;
+        roof.position.y = 230;
         roof.position.x = -200;
         roof.castShadow = true;
         roof.receiveShadow = false;
