@@ -168,12 +168,12 @@ export default (model, textureDir) => {
                             if (texture[mesh.name].Roughness)
                                 materialMap["roughness"] =
                                     texture[mesh.name].Roughness;
-                            if (texture[mesh.name].AlbedoTransparancy)
+                            if (texture[mesh.name].AlbedoTransparency)
                                 materialMap["map"] =
-                                    texture[mesh.name].AlbedoTransparancy;
+                                    texture[mesh.name].AlbedoTransparency;
                             if (texture[mesh.name].MetallicSmoothness)
-                                materialMap["MetallicSmoothness"] =
-                                    texture[mesh.name].Metallic;
+                                materialMap["metallic"] =
+                                    texture[mesh.name].MetallicSmoothness;
                             if (texture[mesh.name].AO)
                                 materialMap["AO"] = texture[mesh.name].AO;
                         });

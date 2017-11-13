@@ -128,7 +128,7 @@ export default function(scene, edge, controls) {
     }
 
     function updatePlanes() {
-        var wallMaterial = new THREE.MeshPhongMaterial({
+        var wallMaterial = new THREE.MeshStandardMaterial({
             color: 0xffffff,
             side: THREE.FrontSide,
             map: texture,

@@ -131,10 +131,10 @@ export default [
         scale_y: 1,
         scale_z: 1,
         fixed: false,
-        options: { isOneGeometry: true },
+        options: { isOneGeometry: false },
         texture_maps: [
             {
-                type: "AlbedoTransparancy"
+                type: "AlbedoTransparency"
             },
             {
                 type: "Normal"
