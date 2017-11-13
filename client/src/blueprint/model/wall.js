@@ -8,8 +8,11 @@ import Callbacks from "../../utils/callbacks";
 
 /** The default wall texture. */
 const defaultWallTexture = {
-    url: "assets/rooms/textures/wallmap.png",
-    stretch: true,
+    url: "assets/rooms/textures/Wall1_AlbedoTransparency.png",
+    normal:"assets/rooms/textures/Wall1_Normal.png",
+    ao:"assets/rooms/textures/Wall1_AO.png",
+    metallic:"",
+    stretch: false,
     scale: 0
 };
 

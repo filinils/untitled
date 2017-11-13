@@ -45,9 +45,12 @@ export default function(scene, room) {
         floorTexture.wrapS = THREE.RepeatWrapping;
         floorTexture.wrapT = THREE.RepeatWrapping;
         floorTexture.repeat.set(2, 1);
+      floorNormalTexture.wrapS = THREE.RepeatWrapping;
+      floorNormalTexture.wrapT = THREE.RepeatWrapping;
+        floorNormalTexture.repeat.set(2,1);
         var floorMaterialTop = new THREE.MeshPhongMaterial({
             map: floorTexture,
-            normal:floorNormalTexture,
+            normalMap:floorNormalTexture,
             side: THREE.DoubleSide,
             // ambient: 0xffffff, TODO_Ekki
             color: 0xcccccc,
@@ -85,7 +88,7 @@ export default function(scene, room) {
         var roofMaterial = new THREE.MeshBasicMaterial({
             side: THREE.DoubleSide,
             // color: 0xe5e5e5
-            color: 0xff0000
+            color: 0xcecece
         });
 
         var points = [];
@@ -97,7 +100,7 @@ export default function(scene, room) {
         var roof = new THREE.Mesh(geometry, roofMaterial);
 
         roof.rotation.set(Math.PI / 2, 0, 0);
-        roof.position.y = 230;
+        roof.position.y = 250;
         roof.position.x = -200;
         roof.castShadow = true;
         roof.receiveShadow = false;

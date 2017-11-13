@@ -95,6 +95,7 @@ export default class Floorplan {
    */
 	newWall(start, end) {
 		var wall = new Wall(start, end);
+		console.log('Wall', wall);
 		this.walls.push(wall);
 		var scope = this;
 		wall.fireOnDelete(() => {
