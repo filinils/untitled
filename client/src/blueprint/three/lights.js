@@ -30,13 +30,29 @@ export default function(scene, floorplan) {
         sunLight.distance = 2000;
         sunLight.castShadow = true;
         var pointLightHelper2 = new THREE.PointLightHelper(sunLight, 100);
-        sunLight.position.set(900, 400, -500);
+
+        sunLight.states = {
+            night: { x: 400, y: 200, z: -500 },
+            morning: { x: 600, y: 300, z: -500 },
+            noon: { x: 900, y: 400, z: -500 },
+            evening: { x: 1100, y: 300, z: -500 },
+            night2: { x: 1100, y: 200, z: -500 }
+        };
+
+        sunLight.position.set(
+            sunLight.states.noon.x,
+            sunLight.states.noon.y,
+            sunLight.states.noon.y
+        );
+
+        sunLight.state = "noon";
 
         pointLightHelper2.name = "Sun helper";
         scene.add(pointLightHelper2);
         sunLight.name = "Sun";
         window.sun = sunLight;
         scene.add(sunLight);
+        scene.sun = sunLight;
 
         /* */
         // dirLight = new THREE.DirectionalLight(0xffffff, 1);

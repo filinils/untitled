@@ -91,9 +91,10 @@ export default function(scene, room) {
         var roof = new THREE.Mesh(geometry, roofMaterial);
 
         roof.rotation.set(Math.PI / 2, 0, 0);
-        roof.position.y = 245;
+        roof.position.y = 255;
         roof.position.x = -200;
         roof.castShadow = true;
+        roof.receiveShadow = false;
         roof.name = "Roof";
         roof.scale.set(1.3, 1.3, 1.3);
         return roof;

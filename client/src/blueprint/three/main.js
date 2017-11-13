@@ -13,6 +13,7 @@ export default function(model, element, canvasElement, opts) {
     let scope = this;
     let activeCameraIndex = 0;
     let cameras = [];
+    let sun = undefined;
 
     this.itemSelectedCallbacks = new Callbacks();
     this.itemUnselectedCallbacks = new Callbacks();
@@ -256,12 +257,12 @@ export default function(model, element, canvasElement, opts) {
 
         renderSun();
 
-        if (shouldRender()) {
-            renderer.clear();
-            renderer.render(scene, cameras[activeCameraIndex]);
-            renderer.clearDepth();
-            renderer.render(hud.getScene(), cameras[activeCameraIndex]);
-        }
+        // if (shouldRender()) {
+        renderer.clear();
+        renderer.render(scene, cameras[activeCameraIndex]);
+        renderer.clearDepth();
+        renderer.render(hud.getScene(), cameras[activeCameraIndex]);
+        // }
         lastRender = Date.now();
     }
 
@@ -345,7 +346,18 @@ export default function(model, element, canvasElement, opts) {
         return vec2;
     };
 
+    const renderSun = () => {
+        if (sun === undefined) {
+            sun = scene.sun;
+            return;
+        } else {
+            /* Rendering sun */
+            sun.position.set(
+                sun.states[sun.state].x,
+                sun.states[sun.state].y,
+                sun.states[sun.state].z
+            );
+        }
+    };
     init();
-
-    const renderSun = () => {};
 }
