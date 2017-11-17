@@ -20,6 +20,8 @@ export default (model, textureDir) => {
     let itemLoadedCallbacks = new Callbacks();
     let itemRemovedCallbacks = new Callbacks();
 
+    this.sun = undefined;
+
     let items = [];
 
     let needsUpdate = false;

@@ -8,18 +8,21 @@ import Callbacks from "../../utils/callbacks";
 
 /** The default wall texture. */
 const defaultWallTexture = {
-    url: "assets/rooms/textures/wallmap.png",
-    stretch: true,
+    url: "assets/rooms/textures/Wall1_AlbedoTransparency.png",
+    normal:"assets/rooms/textures/Wall1_Normal.png",
+    ao:"assets/rooms/textures/Wall1_AO.png",
+    metallic:"assets/rooms/textures/Wall1_MetallicSmoothness.png",
+    stretch: false,
     scale: 0
 };
 
-/** 
+/**
    * A Wall is the basic element to create Rooms.
-   * 
+   *
    * Walls consists of two half edges.
    */
 export default class Wall {
-    /** 
+    /**
      * Constructs a new wall.
      * @param start Start corner.
      * @param end End corner.

@@ -34,14 +34,23 @@ export default function(scene, room) {
             textureSettings.url,
             texture => {}
         );
+      let floorNormalTexture = textureLoader.load(
+        textureSettings.normalUrl,
+        texture => {}
+      );
 
-        floorTexture.magFilter = THREE.NearestFilter;
+      floorTexture.anisotropy = 10;
+      floorTexture.magFilter = THREE.NearestFilter;
         floorTexture.minFilter = THREE.LinearMipMapLinearFilter;
         floorTexture.wrapS = THREE.RepeatWrapping;
         floorTexture.wrapT = THREE.RepeatWrapping;
         floorTexture.repeat.set(2, 1);
+      floorNormalTexture.wrapS = THREE.RepeatWrapping;
+      floorNormalTexture.wrapT = THREE.RepeatWrapping;
+        floorNormalTexture.repeat.set(2,1);
         var floorMaterialTop = new THREE.MeshPhongMaterial({
             map: floorTexture,
+            normalMap:floorNormalTexture,
             side: THREE.DoubleSide,
             // ambient: 0xffffff, TODO_Ekki
             color: 0xcccccc,
@@ -77,8 +86,9 @@ export default function(scene, room) {
     function buildRoof() {
         // setup texture
         var roofMaterial = new THREE.MeshBasicMaterial({
-            // side: THREE.FrontSide,
-            color: 0xe5e5e5
+            side: THREE.DoubleSide,
+            // color: 0xe5e5e5
+            color: 0xcecece
         });
 
         var points = [];
@@ -91,8 +101,11 @@ export default function(scene, room) {
 
         roof.rotation.set(Math.PI / 2, 0, 0);
         roof.position.y = 250;
+        roof.position.x = -200;
         roof.castShadow = true;
+        roof.receiveShadow = false;
         roof.name = "Roof";
+        roof.scale.set(1.3, 1.3, 1.3);
         return roof;
     }
 

@@ -4,9 +4,9 @@ import Utils from "../core/utils";
 
 /**
    * Half Edges are created by Room.
-   * 
+   *
    * Once rooms have been identified, Half Edges are created for each interior wall.
-   * 
+   *
    * A wall can have two half edges if it is visible from both sides.
    */
 export default class HalfEdge {
@@ -65,7 +65,7 @@ export default class HalfEdge {
     }
 
     /**
-     * 
+     *
      */
     getTexture() {
         if (this.front) {
@@ -76,7 +76,7 @@ export default class HalfEdge {
     }
 
     /**
-     * 
+     *
      */
     setTexture(textureUrl, textureStretch, textureScale) {
         var texture = {
@@ -92,7 +92,7 @@ export default class HalfEdge {
         this.redrawCallbacks.fire();
     }
 
-    /** 
+    /**
      * this feels hacky, but need wall items
      */
     generatePlane() {
@@ -248,7 +248,7 @@ export default class HalfEdge {
         ];
     }
 
-    /** 
+    /**
      * Gets CCW angle from v1 to v2
      */
     halfAngleVector(v1, v2) {

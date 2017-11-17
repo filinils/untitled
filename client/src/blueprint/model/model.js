@@ -79,7 +79,15 @@ export default textureDir => {
     function newRoom(floorplan, items) {
         scope.scene.clearItems();
         scope.floorplan.loadFloorplan(floorplan);
-        items.forEach(item => addItemByArticleId(item.articleId));
+        items.forEach(item =>
+            addItemByArticleId(
+                item.articleId,
+                item.xpos,
+                item.ypos,
+                item.zpos,
+                item.rotation
+            )
+        );
     }
 
     const addItemToScene = item => {
@@ -111,10 +119,15 @@ export default textureDir => {
         );
     };
 
-    const addItemByArticleId = articleId => {
+    const addItemByArticleId = (articleId, x = 0, y = 0, z = 0, rot = 0) => {
         const model = models.filter(model => model.articleId == articleId)[0];
 
         if (model) {
+            model.xpos = x;
+            model.ypos = y;
+            model.zpos = z;
+            model.rotation = rot;
+            console.log(model);
             addItemToScene(model);
         } else {
             console.log("Couldn't find model with articleId: ", articleId);

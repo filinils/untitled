@@ -10,6 +10,10 @@ export default function(scene, edge, controls) {
     var planes = [];
     var basePlanes = []; // always visible
     var texture = null;
+    var normalTexture = null;
+    var aoTexture = null;
+    var metallicTexture = null;
+    var textureloader = new THREE.TextureLoader();
 
     var lightMap = THREE.TextureLoader(
         "assets/rooms/textures/walllightmap.png"
@@ -113,27 +117,42 @@ export default function(scene, edge, controls) {
             };
         var textureData = edge.getTexture();
         var stretch = textureData.stretch;
-        var url = textureData.url;
         var scale = textureData.scale;
-        let textureloader = new THREE.TextureLoader();
-        texture = textureloader.load(url, callback);
-        if (!stretch) {
-            var height = wall.height;
-            var width = edge.interiorDistance();
-            texture.wrapT = THREE.RepeatWrapping;
-            texture.wrapS = THREE.RepeatWrapping;
-            // texture.repeat.set(width / scale, height / scale);
-            texture.needsUpdate = true;
-        }
+        texture = createTexture(textureData.url, stretch, callback);
+        normalTexture = createTexture(textureData.normal, stretch, callback);
+        aoTexture = createTexture(textureData.ao, stretch, callback);
+        metallicTexture = createTexture(
+            textureData.metallic,
+            stretch,
+            callback
+        );
+    }
+
+    function createTexture(textureUrl, stretch, callback) {
+        var texture = textureloader.load(textureUrl, function() {
+            if (!stretch) {
+                var height = wall.height;
+                var width = edge.interiorDistance();
+                texture.anisotropy = 10;
+                texture.wrapT = THREE.RepeatWrapping;
+                texture.wrapS = THREE.RepeatWrapping;
+                texture.repeat.set(2, 1);
+                texture.needsUpdate = true;
+            }
+            callback();
+        });
+
+        return texture;
     }
 
     function updatePlanes() {
-        var wallMaterial = new THREE.MeshStandardMaterial({
-            color: 0xffffff,
-            side: THREE.FrontSide,
+        var wallMaterial = new THREE.MeshPhongMaterial({
+            color: 0xcccccc,
+            side: THREE.DoubleSide,
             map: texture,
-            metalness: 0,
-            roughness: 50
+            normalMap: normalTexture
+            //aoMap:aoTexture,
+            //specularMap:metallicTexture,
         });
 
         var fillerMaterial = new THREE.MeshBasicMaterial({
@@ -271,6 +290,7 @@ export default function(scene, edge, controls) {
 
         mesh.receiveShadow = true;
         mesh.castShadow = true;
+        mesh.name = "Wall";
 
         return mesh;
     }
@@ -296,6 +316,9 @@ export default function(scene, edge, controls) {
         });
 
         var filler = new THREE.Mesh(geometry, fillerMaterial);
+        filler.castShadow = true;
+        filler.receiveShadow = true;
+        filler.name = "Wall Filler";
         return filler;
     }
 
@@ -309,7 +332,7 @@ export default function(scene, edge, controls) {
 
         var fillerMaterial = new THREE.MeshBasicMaterial({
             color: color,
-            side: side
+            side: THREE.DoubleSide
         });
 
         var shape = new THREE.Shape(points);

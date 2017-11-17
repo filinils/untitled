@@ -2,92 +2,108 @@ import Utils from "../core/utils";
 import * as THREE from "three";
 
 export default function(scene, floorplan) {
-	var scope = this;
+    var scope = this;
 
-	var tol = 1;
-	var height = 1000; // TODO: share with Blueprint.Wall
+    var tol = 1;
+    var height = 1000; // TODO: share with Blueprint.Wall
 
-	var dirLight;
+    var dirLight;
 
-	this.getDirLight = function() {
-		return dirLight;
-	};
+    this.getDirLight = function() {
+        return dirLight;
+    };
 
-	function init() {
-		var center = floorplan.getCenter();
-		var light = new THREE.HemisphereLight(0xffffff, 0x888888, 1.1);
+    function init() {
+        var center = floorplan.getCenter();
 
-		// var hemHelper = new THREE.HemisphereLightHelper(light, 1000);
-		light.position.set(0, 30, 0);
+        /* Daylight */
+        var light = new THREE.HemisphereLight(0xffffff, 0x888888, 1.1);
+        // light.position.set(0, 30, 0);
+        light.position.set(center.x, center.y, center.z);
 
-		// scene.add(hemHelper);
-		scene.add(light);
+        // var hemHelper = new THREE.HemisphereLightHelper(light, 1000);
+        // scene.add(hemHelper);
+        scene.add(light);
 
-		var pointLight1 = new THREE.PointLight(0xffffff, 1, 400, 2);
-		pointLight1.distance = 2000;
-		pointLight1.castShadow = true;
-		var pointLightHelper1 = new THREE.PointLightHelper(pointLight1, 100);
-		pointLight1.position.set(800, 300, 50);
-		var pointLight2 = new THREE.PointLight(0xffffff, 1, 400, 2);
-		pointLight2.distance = 2000;
-		pointLight2.castShadow = true;
-		var pointLightHelper2 = new THREE.PointLightHelper(pointLight2, 100);
-		pointLight2.position.set(900, 400, -500);
+        /* Sun */
+        let sunLight = new THREE.PointLight(0xffffff, 1, 400, 2);
+        sunLight.distance = 2000;
+        sunLight.castShadow = true;
+        var pointLightHelper2 = new THREE.PointLightHelper(sunLight, 100);
 
-		// scene.add(pointLightHelper2);
-		scene.add(pointLight2);
-		// scene.add(pointLightHelper1);
-		scene.add(pointLight1);
+        sunLight.states = {
+            night: { x: 400, y: 200, z: -500 },
+            morning: { x: 600, y: 300, z: -500 },
+            noon: { x: 900, y: 400, z: -500 },
+            evening: { x: 1100, y: 300, z: -500 },
+            night2: { x: 1100, y: 200, z: -500 }
+        };
 
-		dirLight = new THREE.DirectionalLight(0xffffff, 1);
-		dirLight.color.setHSL(1, 1, 0.1);
+        sunLight.position.set(
+            sunLight.states.noon.x,
+            sunLight.states.noon.y,
+            sunLight.states.noon.y
+        );
 
-		dirLight.castShadow = true;
+        sunLight.state = "noon";
 
-		dirLight.shadow.mapSize.width = 1024;
-		dirLight.shadow.mapSize.height = 1024;
+        pointLightHelper2.name = "Sun helper";
+        scene.add(pointLightHelper2);
+        sunLight.name = "Sun";
+        window.sun = sunLight;
+        scene.add(sunLight);
+        scene.sun = sunLight;
 
-		dirLight.shadow.camera.far = height + tol;
-		dirLight.shadow.bias = -0.0001;
-		dirLight.shadow.darkness = 0.2;
-		dirLight.visible = true;
+        /* */
+        // dirLight = new THREE.DirectionalLight(0xffffff, 1);
+        // dirLight.color.setHSL(1, 1, 0.1);
 
-		// let cameraHelper = new THREE.CameraHelper(dirLight.shadow.camera);
+        // dirLight.castShadow = true;
 
-		var dirHelper = new THREE.DirectionalLightHelper(dirLight, 1000);
+        // dirLight.shadow.mapSize.width = 1024;
+        // dirLight.shadow.mapSize.height = 1024;
 
-		// scene.add(cameraHelper);
+        // dirLight.shadow.camera.far = height + tol;
+        // dirLight.shadow.bias = -0.0001;
+        // dirLight.shadow.darkness = 0.2;
+        // dirLight.visible = true;
 
-		scene.add(dirHelper);
-		scene.add(dirLight);
-		scene.add(dirLight.target);
+        // // let cameraHelper = new THREE.CameraHelper(dirLight.shadow.camera);
 
-		floorplan.fireOnUpdatedRooms(updateShadowCamera);
-	}
+        // var dirHelper = new THREE.DirectionalLightHelper(dirLight, 1000);
 
-	function updateShadowCamera() {
-		var size = floorplan.getSize();
-		var d = (Math.max(size.z, size.x) + tol) / 2.0;
+        // // scene.add(cameraHelper);
 
-		var center = floorplan.getCenter();
-		var pos = new THREE.Vector3(center.x, height, center.z);
-		dirLight.position.copy(pos);
-		dirLight.target.position.copy(center);
-		//dirLight.updateMatrix();
-		//dirLight.updateWorldMatrix()
-		dirLight.shadow.camera.left = -d;
-		dirLight.shadow.camera.right = d;
-		dirLight.shadow.camera.top = d;
-		dirLight.shadow.camera.bottom = -d;
-		// this is necessary for updates
-		if (dirLight.shadowCamera) {
-			dirLight.shadowCamera.left = dirLight.shadowCameraLeft;
-			dirLight.shadowCamera.right = dirLight.shadowCameraRight;
-			dirLight.shadowCamera.top = dirLight.shadowCameraTop;
-			dirLight.shadowCamera.bottom = dirLight.shadowCameraBottom;
-			dirLight.shadowCamera.updateProjectionMatrix();
-		}
-	}
+        // scene.add(dirHelper);
+        // scene.add(dirLight);
+        // scene.add(dirLight.target);
 
-	init();
+        floorplan.fireOnUpdatedRooms(updateShadowCamera);
+    }
+
+    function updateShadowCamera() {
+        var size = floorplan.getSize();
+        var d = (Math.max(size.z, size.x) + tol) / 2.0;
+
+        var center = floorplan.getCenter();
+        var pos = new THREE.Vector3(center.x, height, center.z);
+        // dirLight.position.copy(pos);
+        // dirLight.target.position.copy(center);
+        //dirLight.updateMatrix();
+        //dirLight.updateWorldMatrix()
+        // dirLight.shadow.camera.left = -d;
+        // dirLight.shadow.camera.right = d;
+        // dirLight.shadow.camera.top = d;
+        // dirLight.shadow.camera.bottom = -d;
+        // this is necessary for updates
+        // if (dirLight.shadowCamera) {
+        //     dirLight.shadowCamera.left = dirLight.shadowCameraLeft;
+        //     dirLight.shadowCamera.right = dirLight.shadowCameraRight;
+        //     dirLight.shadowCamera.top = dirLight.shadowCameraTop;
+        //     dirLight.shadowCamera.bottom = dirLight.shadowCameraBottom;
+        //     dirLight.shadowCamera.updateProjectionMatrix();
+        // }
+    }
+
+    init();
 }

@@ -8,12 +8,13 @@ import Callbacks from "../../utils/callbacks";
 
 /** Default texture to be used if nothing is provided. */
 const defaultRoomTexture = {
-	url: "assets/rooms/textures/hardwood.png",
-	scale: 400
+	url: "assets/rooms/textures/bois001_albedo.png",
+	url_normal: "assets/rooms/textures/bois001_normal.png",
+	scale: 1000
 };
 
-/** 
-   * A Room is the combination of a Floorplan with a floor plane. 
+/**
+   * A Room is the combination of a Floorplan with a floor plane.
    */
 export default class Room {
 	constructor(floorplan, corners) {
@@ -49,12 +50,12 @@ export default class Room {
 		return tex || defaultRoomTexture;
 	}
 
-	/** 
+	/**
 	 * textureStretch always true, just an argument for consistency with walls
      */
-	setTexture(textureUrl, textureStretch, textureScale) {
+	setTexture(textureUrl,normalUrl, textureStretch, textureScale) {
 		var uuid = this.getUuid();
-		this.floorplan.setFloorTexture(uuid, textureUrl, textureScale);
+		this.floorplan.setFloorTexture(uuid, textureUrl,normalUrl, textureScale);
 		this.floorChangeCallbacks.fire();
 	}
 
@@ -99,7 +100,7 @@ export default class Room {
 		}
 	}
 
-	/** 
+	/**
 	 * Populates each wall's half edge relating to this room
 	 * this creates a fancy doubly connected edge list (DCEL)
      */
