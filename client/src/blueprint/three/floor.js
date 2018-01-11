@@ -16,7 +16,7 @@ export default function(scene, room) {
         scope.room.fireOnFloorChange(redraw);
         floorPlane = buildFloor();
         // roofs look weird, so commented out
-        roofPlane = buildRoof();
+        // roofPlane = buildRoof();
     }
 
     function redraw() {
@@ -34,23 +34,23 @@ export default function(scene, room) {
             textureSettings.url,
             texture => {}
         );
-      let floorNormalTexture = textureLoader.load(
-        textureSettings.normalUrl,
-        texture => {}
-      );
+        let floorNormalTexture = textureLoader.load(
+            textureSettings.normalUrl,
+            texture => {}
+        );
 
-      floorTexture.anisotropy = 10;
-      floorTexture.magFilter = THREE.NearestFilter;
+        floorTexture.anisotropy = 10;
+        floorTexture.magFilter = THREE.NearestFilter;
         floorTexture.minFilter = THREE.LinearMipMapLinearFilter;
         floorTexture.wrapS = THREE.RepeatWrapping;
         floorTexture.wrapT = THREE.RepeatWrapping;
         floorTexture.repeat.set(2, 1);
-      floorNormalTexture.wrapS = THREE.RepeatWrapping;
-      floorNormalTexture.wrapT = THREE.RepeatWrapping;
-        floorNormalTexture.repeat.set(2,1);
+        // floorNormalTexture.wrapS = THREE.RepeatWrapping;
+        // floorNormalTexture.wrapT = THREE.RepeatWrapping;
+        // floorNormalTexture.repeat.set(2, 1);
         var floorMaterialTop = new THREE.MeshPhongMaterial({
             map: floorTexture,
-            normalMap:floorNormalTexture,
+            //normalMap: floorNormalTexture,
             side: THREE.DoubleSide,
             // ambient: 0xffffff, TODO_Ekki
             color: 0xcccccc,
